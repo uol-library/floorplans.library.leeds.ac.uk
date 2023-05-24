@@ -1,0 +1,162 @@
+/**
+ * Layout variables
+ */
+
+/* top navigation bar */
+$topbarheight: 73px;
+$topbarpadding: 10px;
+
+/* footer bar */
+$footerheight: 30px;
+$footerpaddingx: 10px;
+$footerpaddingy: 7px;
+
+/* breakpoints */
+$breakpoint-large: 1000px;
+$breakpoint-med: 600px;
+$breakpoint-small: 400px;
+
+/**
+ * Colours
+ */
+
+/* uol design system colours */
+$color-brand--dark: #910000;
+$color-brand: #c70000;
+$color-brand--bright: #ff4e36;
+$color-brand--pastel: #ff8a7a;
+$color-brand--faded: #ffeded;
+$color-black--dark: #0a0202;
+$color-black: #212121;
+$color-black--light: #6e6b6b;
+$color-black--faded: #dedede;
+$color-brand-2--dark: #156265;
+$color-grey--dark: #6a645d;
+$color-grey--medium: #bcb8b3;
+$color-grey: #ddd9d5;
+$color-grey--light: #eae8e6;
+$color-grey--faded: #f3f2f1;
+$color-warmgrey--dark: #5f5754;
+$color-warmgrey--medium: #81746e;
+$color-warmgrey: #b7aaa4;
+$color-warmgrey--light: #cac2ba;
+$color-warmgrey--faded: #efeae6;
+$color-cream--dark: #ddcfc0;
+$color-cream--medium: #e9e1d8;
+$color-cream: #f6eee5;
+$color-cream--light: #faf6f1;
+$color-white--dark: #fffbf5;
+$color-white: #ffffff;
+$color-blue--dark: #00323d;
+$color-blue: #003a52;
+$color-blue--bright: #1a84c7;
+$color-font--dark: #0e0c0c;
+$color-font: #212529;
+$color-font--light: #3B3B3B;
+$color-font--x-light: #636363;
+$color-link: #910000;
+$color-link--hover: #0e0c0c;
+$color-link--visited: #570000;
+$color-link--active: #570000;
+$color-border--light: #c9c8c5;
+$color-border: #51504c;
+$color-alert--error: #d4351c;
+$color-alert--warning: #e76f16;$closebutton-active: $color-white;
+$color-alert--info: #1993bd;
+
+/* general colors */
+$separatorcolor: $color-grey--medium;
+$bg: $color-white;
+$fg: $color-black;
+
+/* top navigation bar */
+$topbarbg: $color-black;
+$topbarbgactive: $color-black--dark;
+$topbarcolor: $color-white;
+
+/* footer bar */
+$footerbg: $color-black;
+$footercolor: $color-white;
+
+/* recentre button */
+$recentrebuttoncolor: $color-blue;
+$recentrebuttonbg: $color-white;
+$recentrebuttoncolor-hover: $color-blue--bright;
+$recentrebuttonbg-hover: $color-white;;
+$recentrebuttonbordercolor: $color-blue;
+$recentrebuttonbordercolor-hover: $color-blue--bright;
+
+
+/* links */
+$linkcolor: $color-link;
+$linkcolor-active: $color-link--active;
+$linkcolor-visited: $color-link--visited;
+$linkcolor-hover: $color-link--hover;
+
+/* modal */
+$modalbg: $color-white;
+$modalborder: $color-black--light;
+$modaloverlay: $color-white; /* set to .8 opacity */
+$closebutton: $color-white;
+$closebuttonbg: $color-black;
+$closebutton-active: $color-white;
+$closebuttonbg-active: $color-black;
+$closebutton-outline: $color-grey;
+
+/* buttons */
+$buttoncolor: $color-white;
+$buttonborder: $color-black;
+$buttonbg: $color-black;
+$buttoncolor-active: $color-black;
+$buttonborder-active: $color-black;
+$buttonbg-active: $color-white;
+$buttoncolor-primary: $color-white;
+$buttonborder-primary: $color-brand-2--dark;
+$buttonbg-primary: $color-brand-2--dark;
+$buttoncolor-secondary: $color-brand-2--dark;
+$buttonborder-secondary: $color-brand-2--dark;
+$buttonbg-secondary: $color-white;
+$button-shadow: $color-black;
+$buttonfocusbg: $color-brand--dark;
+$buttonfocuscolor: $color-white;
+
+/* geolocation button */
+$geobuttoncolor: $color-black;
+$geobuttonbg: $color-white;
+$geobuttoncolor-hover: $color-black--dark;
+$geobuttonbg-hover: $color-white;
+$geobuttoncolor-disabled: $color-grey--dark;
+$geobuttonbg-disabled: $color-grey;
+$geobuttoncolor-active: $color-white;
+$geobuttonbg-active: $color-blue;
+
+
+/* map */
+$marker-fill: $color-brand;
+$marker-stroke: $color-brand--dark;
+$person-fill: $color-blue--bright;
+$person-stroke: $color-blue;
+
+$shelf-classes: 'd1' 'd2' 'd3' 'd4' 'd5' 'd6' 'd7' 'd8' 'd9' 'd10' 'd11' 'd12' 'd13' 'd14' 'd15' 'd16' 'd17' 'd18' 'd19' 'd20' 'd21' 'd22' 'd23' 'd24';
+$shelf-colors: '#ff3b8d' '#009e8c' '#ff426c' '#00999a' '#ff4647' '#0098a9' '#fd4d00' '#0094b4' '#d57300' '#0092c5' '#b98300' '#008fdb' '#9c8b00' '#0089fc' '#819300' '#657eff' '#5c9b00' '#9b70ff' '#00a21f' '#d150ff' '#00a05a' '#f911e0' '#009f78' '#ff2fb2';
+@each $cls in $shelf-classes {
+    $i: index($shelf-classes, $cls);
+    $c: nth($shelf-colors, $i);
+	path.#{$cls} {
+		fill: #{$c};
+		color: #{$c};
+	}
+	ul.shelflist li.#{$cls} {
+		&::before {
+		    background-color: #{$c};
+		}
+		button {
+			&:hover, &:focus {
+				border-color: #{$c};
+			}
+		}
+	}
+}
+path.location {
+	fill: #aaa;
+}
