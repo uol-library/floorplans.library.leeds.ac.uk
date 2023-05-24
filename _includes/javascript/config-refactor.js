@@ -44,7 +44,7 @@ floorplans.imagelayers = [
             {
                 "floorid": "brotherton-m1",
                 "floorname": "Brotherton Library Main building, level 1",
-                "imageurl": floorplans.imgconf.baseURL + "/assets/images/full/brotherton-m1.png",
+                "imageurl": floorplans.imgconf.baseURL + "/assets/images/svg/brotherton-m1.svg",
                 "dataurl": floorplans.imgconf.baseURL + "/assets/features/brotherton-m1.json",
                 "width": 5077,
                 "height": 5988

@@ -8,6 +8,7 @@ description: >-
 environment: development
 baseurl: "/floorplans"
 url: "https://uol-library.github.io"
+destination: ./public
 host: "localhost"
 google_analytics: "G-6LHKST5028"
 photo_dir: "/assets/photos/"

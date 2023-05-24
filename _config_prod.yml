@@ -9,6 +9,7 @@ environment: development
 baseurl: ""
 url: "https://proud-meadow-0e2f04803.3.azurestaticapps.net"
 host: "localhost"
+destination: ./public
 google_analytics: "G-6LHKST5028"
 photo_dir: "/assets/photos/"
 lang: "en"
