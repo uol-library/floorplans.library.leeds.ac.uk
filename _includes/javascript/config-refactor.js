@@ -4,7 +4,7 @@ floorplans.imgconf = {
     startZoom: 1,
     startLat: 0,
     startLng: 0,
-    baseURL: window.location.protocol + '//' + window.location.host + '/floorplans'
+    baseURL: {{ site.url }}{{ site.baseurl }}
 };
 floorplans.maxHeight = 0;
 floorplans.maxWidth = 0;
