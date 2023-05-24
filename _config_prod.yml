@@ -1,0 +1,29 @@
+title: University of Leeds Library Floor Plans
+email: p.l.edwards@leeds.ac.uk
+description: >-
+  The University of Leeds Library Floor Plans are
+  an application using the Leaflet mapping library
+  to enable indoor wayfinding in the University's
+  library spaces.
+environment: development
+baseurl: ""
+url: "https://proud-meadow-0e2f04803.3.azurestaticapps.net"
+host: "localhost"
+google_analytics: "G-6LHKST5028"
+photo_dir: "/assets/photos/"
+lang: "en"
+dc:
+  creator: "University of Leeds"
+  dateCreated: "2022-06-06"
+  dateModified: "2022-10-13"
+  publisher: "University of Leeds"
+  spatialCoverage: "University of Leeds campus"
+  types:
+    - "InteractiveResource"
+  subjects:
+    - "Digital mapping"
+    - "College Campuses"
+sass:
+  style: compressed
+plugins:
+  - jekyll-feed
