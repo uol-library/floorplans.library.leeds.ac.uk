@@ -16,7 +16,23 @@ function setupSelecterControl() {
     L.Control.LibrarySelecter = L.Control.extend({
         onAdd: function(map) {
             /* container */
-            floorplans.controls = L.DomUtil.create( 'div', 'leaflet-control leaflet-bar leaflet-control-floorplans' );
+            floorplans.controlsContainer = L.DomUtil.create( 'div', 'leaflet-control leaflet-bar leaflet-control-floorplans' );
+
+            /* title bar */
+            let fs = L.DomUtil.create( 'fieldset', 'floorplans-selecter', floorplans.controlsContainer );
+            let ld = L.DomUtil.create( 'legend', '', fs );
+            let btn = L.DomUtil.create( 'button', 'accordion-trigger', ld );
+            btn.setAttribute( 'id', 'selecter-trigger' );
+            btn.setAttribute( 'type', 'button' );
+            btn.setAttribute( 'aria-controls', 'selecter-controls' );
+            btn.setAttribute( 'aria-expanded', 'true' );
+            btn.setAttribute( 'tabindex', '0' );
+            btn.textContent = 'Library Floorplans';
+
+            floorplans.controls = L.DomUtil.create( 'div', 'accordion-content', fs );
+            floorplans.controls.setAttribute( 'id', 'selecter-controls' );
+            floorplans.controls.setAttribute( 'aria-hidden', 'false' );
+            floorplans.controls.setAttribute( 'aria-labelledby', 'selecter-trigger' );
             
             /* floor selecter drop-down */
             let floorselecterLabel = L.DomUtil.create( 'label', 'selecter__label', floorplans.controls );
@@ -64,6 +80,11 @@ function setupSelecterControl() {
                     floorplans.map.eachLayer( function( layer ) {
                         floorplans.map.removeLayer( layer );
                     });
+                    /* empty the current lists */
+                    ['shelfselecter', 'locationselecter' ].forEach( s => {
+                        L.DomUtil.empty( L.DomUtil.get( s + 'list' ) );
+                        L.DomUtil.addClass( L.DomUtil.get( s ), 'hidden' );
+                    });
                     /* go through data looking for a floor to match the dropdown value */
                     floorplans.imagelayers.forEach( lib => {
                         lib.floors.forEach( floor => {
@@ -75,6 +96,7 @@ function setupSelecterControl() {
                                     buildFeatureSelects( floor );
                                     sortFeatureSelects( floor );
                                     floorlayer.addTo( floorplans.map );
+                                    floorplans.map.flyToBounds( floor.imageBounds, {paddingTopLeft: floorplans.imgconf.paddingTopLeft} );
                                     floorplans.map.pm.setGlobalOptions( { layerGroup: floorlayer } );
                                     splog( 'Added layer for floor '+floor.floorname , 'refactor.js' );
                                 });
@@ -83,7 +105,7 @@ function setupSelecterControl() {
                     });
                 }
             });
-            return floorplans.controls;
+            return floorplans.controlsContainer;
         },
     
         onRemove: function(map) {
@@ -110,8 +132,6 @@ function buildFeatureSelects( floor ) {
         /* get the container and the list */
         let listcontainer = L.DomUtil.get( s + 'selecter' );
         let list = L.DomUtil.get( s + 'selecterlist' );
-        /* empty the list */
-        L.DomUtil.empty( list );
 
         /**
          * The floor.selecters object is built by addFloorLayer() and contains two
@@ -138,9 +158,6 @@ function buildFeatureSelects( floor ) {
             });
             /* show the selecter */
             L.DomUtil.removeClass( listcontainer, 'hidden' );
-        } else {
-            /* hide the (empty) selecter */
-            L.DomUtil.addClass( listcontainer, 'hidden' );
         }
     }
 }
