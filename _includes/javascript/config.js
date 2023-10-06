@@ -18,7 +18,7 @@ const floorplans = {
 		startLat: 0,
 		startLng: 0,
 		paddingTopLeft: [300,0],
-		baseURL: window.location.protocol + '//' + window.location.host
+		baseURL: '{{ site.url }}{{site.baseurl}}'
 	},
 	maxHeight: 0,
 	maxWidth: 0,
