@@ -57,6 +57,7 @@ var addFloorLayer = function( floor ) {
     /* first check to see if the floor has layers set up in the UI already */
     if ( floor.floorlayer ) {
         return new Promise( (resolve, reject) => {
+            splog( 'addFloorLayer - floor layer already present for ' + floor, 'core.js' );
             resolve( floor.floorlayer );
         });
     } else {
@@ -75,7 +76,7 @@ var addFloorLayer = function( floor ) {
              * add that
              */
             im.onload = function() {
-                console.log(floor.imageurl);
+                splog( 'addFloorLayer - image loaded for ' + floor.floorname, 'core.js' );
                 let floorimg = L.imageOverlay( floor.imageurl, floor.imageBounds );
                 let floorlayer = L.layerGroup([floorimg]);
                 
@@ -86,6 +87,7 @@ var addFloorLayer = function( floor ) {
                         let shelfClassID = 1;
                         let featureClass = 'leaflet-interactive';
                         floor.selecters = { "shelf": [], "location": [] };
+                        splog( 'addFloorLayer - GeoJSON loaded for ' + floor.floorname, 'core.js' );
                         floor.features = L.geoJSON( data, {
                             /**
                              * Add event handlers to features, and collect the features

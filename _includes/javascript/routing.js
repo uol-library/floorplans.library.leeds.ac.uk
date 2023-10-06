@@ -2,11 +2,16 @@
  * Functions to help with routing:
  * - what to load into the app initially
  * - changing the URI of the app for different views
- * 
- * Primo creates links like this:
- * https://floorplans.library.leeds.ac.uk/floorplan?library=LL&classmark=Sociology+A-0.06+DUR%2FG&floor=ll3
  */
 
+/**
+ * Gets any parameters passed to the page in the querystring. This will load the 
+ * appropriate library floor into the app if possible, and select a feature. The 
+ * querystring is either one direct from Primo, or one from the old version of the
+ * floorplans which used to be served from different directories.
+ * 
+ * @returns {Object} parameters from querystring
+ */
 function getStartParams() {
     let params = {
         library: false,
@@ -19,6 +24,7 @@ function getStartParams() {
     if ( window.location.search ) {
         const searchParams = new URLSearchParams( window.location.search );
         params.search = searchParams.toString();
+        let floorName = false;
         if ( searchParams.has( 'path' ) ) {
             let pathParams = searchParams.get( 'path' ).split('/');
             if ( pathParams.length && pathParams[0] === 'floorplan' ) {
@@ -35,6 +41,7 @@ function getStartParams() {
                             params.floorid = 'health-sciences';
                         } else if ( searchParams.has( 'floor' ) ) {
                             params.floorid = getFloorID( searchParams.get( 'floor' ) );
+                            floorName = params.floorid.split('-').pop();
                         }
                     }
                 }
@@ -47,7 +54,7 @@ function getStartParams() {
                  */
                 params.library = pathParams[0];
                 if ( pathParams.length >= 3 ) {
-                    let floorName = pathParams[2];
+                    floorName = pathParams[2];
                     if ( "brotherton" === params.library ) {
                         if ( ["m1", "m2", "m3", "m4", "w2", "w3"].indexOf( floorName ) !== -1 ) {
                             params.floorid = params.library + '-' + floorName;
@@ -68,7 +75,8 @@ function getStartParams() {
         }
         if ( searchParams.has( 'classmark' ) ) {
             params.classmark = normaliseClassmark( searchParams.get( 'classmark' ) );
-            let feature = getFeatureFromClassmark( params.library, params.classmark );
+            let feature = getFeatureFromClassmark( params.library, floorName, params.classmark );
+            console.log(params);
             if ( feature ) {
                 if ( ! params.floorid ) {
                     params.floorid = feature.floorid;
@@ -125,6 +133,10 @@ function loadStartFloor() {
     }
 }
 
+/**
+ * Selects a floor from the dropdown list
+ * @param {String} floorid 
+ */
 function selectFloor( floorid ) {
     let sel = document.getElementById( 'floorselecter' );
     if ( sel ) {
@@ -136,6 +148,13 @@ function selectFloor( floorid ) {
     }
 }
 
+/**
+ * Selects a feature on the floor from the list of features
+ * 
+ * @uses selectFeature()
+ * @param {Object} floor - used to access the lists of features
+ * @param {string} classmark - the Label for the given feature
+ */
 function selectShelf( floor, classmark ) {
     floor.selecters.shelf.forEach( s => {
         if ( s.label.match( classmark ) ) {
@@ -144,6 +163,12 @@ function selectShelf( floor, classmark ) {
     });
 }
 
+/**
+ * Gets the id of a library (as used in this app) from a code used in Primo
+ * 
+ * @param {String} param - Primo Library code
+ * @returns {String} library ID
+ */
 function getLibraryID( param ) {
     let libraries = {
         'LL': 'laidlaw',
@@ -156,6 +181,13 @@ function getLibraryID( param ) {
     }
     return false;
 }
+
+/**
+ * Gets the id of a library floor (as used in this app) from a code used in Primo
+ * 
+ * @param {String} param - Primo floor code
+ * @returns {String} floor ID
+ */
 function getFloorID( param ) {
     let floors = {
         'llhdc': 'laidlaw-ground',
@@ -182,11 +214,20 @@ function getFloorID( param ) {
     }
     return false;
 }
-function getFeatureFromClassmark( library, classmark ) {
+
+/**
+ * Gets the details of a shelf feature from a classmark used in Primo
+ *
+ * @uses getFeatures() 
+ * @param {String} library - library ID
+ * @param {String} classmark - Primo classmark
+ * @returns {Object} feature details
+ */
+function getFeatureFromClassmark( library, floorName, classmark ) {
     let features = getFeatures();
     let ret = false;
     for ( let i = 0; i < features.length; i++ ) {
-        let libraryRE = '^'+library + '.*$';
+        let libraryRE = getLibraryRegex( library, floorName );
         if ( features[i][1].match( libraryRE ) ) {
             let featureRE = getFeatureRegex( features[i][0] );
             if ( classmark.match( featureRE ) ) {
@@ -203,15 +244,38 @@ function getFeatureFromClassmark( library, classmark ) {
     }
     return ret;
 }
-function getFeatureRegex( term ) {
-    // replace some characters in classmarks
-    term = term.replaceAll( '/(\[|\])/', '' );
+
+/**
+ * Takes a feature name and creates a RegEx to match against a Primo classmark
+ * 
+ * @param {String} featureName - Feature name
+ * @returns {String} Regualr Expression
+ */
+function getFeatureRegex( featureName ) {
+    // replace some characters in feature names
+    featureName = featureName.replaceAll( '/(\[|\])/', '' );
     // split comma-separated lists to match any of the parts
-    if ( term.indexOf(', ') !== -1 ) {
-        term = '(' + ( term.split( ', ' ).join( '|' ) ) + ')';
+    if ( featureName.indexOf(', ') !== -1 ) {
+        featureName = '(' + ( featureName.split( ', ' ).join( '|' ) ) + ')';
     }
-    return '^' + term + '.*$';
+    return '^' + featureName + '.*$';
 }
+
+function getLibraryRegex( library, floorName ) {
+    if ( ! floorName ) {
+        return '^'+library + '.*$';
+    } else {
+        return '^'+library + '-' + floorName + '.*$';
+    }
+}
+
+/**
+ * Takes a Primo classmark and Normalises it in order to maximise the possibility
+ * of matching it to a feature name
+ * 
+ * @param {String} classmark 
+ * @returns 
+ */
 function normaliseClassmark( classmark ) {
     if ( classmark.match( '^Video' ) ) {
         return 'DVD';
