@@ -16,23 +16,15 @@ function setupSelecterControl() {
     L.Control.LibrarySelecter = L.Control.extend({
         onAdd: function(map) {
             /* container */
-            floorplans.controlsContainer = L.DomUtil.create( 'div', 'leaflet-control leaflet-bar leaflet-control-floorplans' );
+            floorplans.controlsContainer = L.DomUtil.create( 'div', 'leaflet-control leaflet-control-floorplans' );
 
             /* title bar */
             let fs = L.DomUtil.create( 'fieldset', 'floorplans-selecter', floorplans.controlsContainer );
-            let ld = L.DomUtil.create( 'legend', '', fs );
-            let btn = L.DomUtil.create( 'button', 'accordion-trigger', ld );
-            btn.setAttribute( 'id', 'selecter-trigger' );
-            btn.setAttribute( 'type', 'button' );
-            btn.setAttribute( 'aria-controls', 'selecter-controls' );
-            btn.setAttribute( 'aria-expanded', 'true' );
-            btn.setAttribute( 'tabindex', '0' );
-            btn.textContent = 'Library Floorplans';
+            let ld = L.DomUtil.create( 'legend', 'floorplans-selecter-header', fs );
+            ld.textContent = 'Library Floorplans';
 
-            floorplans.controls = L.DomUtil.create( 'div', 'accordion-content', fs );
-            floorplans.controls.setAttribute( 'id', 'selecter-controls' );
-            floorplans.controls.setAttribute( 'aria-hidden', 'false' );
-            floorplans.controls.setAttribute( 'aria-labelledby', 'selecter-trigger' );
+            floorplans.controls = L.DomUtil.create( 'div', 'floorplans-selecter-content', fs );
+            floorplans.controls.setAttribute( 'id', 'floorplans-selecter-controls' );
             
             /* floor selecter drop-down */
             let floorselecterLabel = L.DomUtil.create( 'label', 'selecter__label', floorplans.controls );
@@ -96,7 +88,8 @@ function setupSelecterControl() {
                                     buildFeatureSelects( floor );
                                     sortFeatureSelects( floor );
                                     floorlayer.addTo( floorplans.map );
-                                    floorplans.map.flyToBounds( floor.imageBounds, {paddingTopLeft: floorplans.imgconf.paddingTopLeft} );
+                                    floorplans.map.fitBounds( floor.imageBounds, {paddingTopLeft: floorplans.imgconf.paddingTopLeft} );
+                                    floorplans.map.setView( floor.imageBounds.getCenter() );
                                     floorplans.map.pm.setGlobalOptions( { layerGroup: floorlayer } );
                                     splog( 'Added layer for floor '+floor.floorname , 'refactor.js' );
                                 });
@@ -105,6 +98,12 @@ function setupSelecterControl() {
                     });
                 }
             });
+            /* init accordions */
+            const accordions = document.querySelectorAll( '.accordion' );
+            accordions.forEach( accordionEl => {
+                new Accordion( accordionEl );
+            });
+
             return floorplans.controlsContainer;
         },
     
@@ -118,6 +117,7 @@ function setupSelecterControl() {
         return new L.Control.LibrarySelecter(opts);
     }
 
+   
     /* instantiate the floor selecter control */
     L.control.libraryselecter({ position: 'topleft' }).addTo( floorplans.map );
 }

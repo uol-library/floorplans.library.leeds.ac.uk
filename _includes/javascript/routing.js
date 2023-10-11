@@ -19,7 +19,8 @@ function getStartParams() {
         shelfid: false,
         shelfname: false,
         classmark: false,
-        search: false
+        search: false,
+        path: false
     }
     if ( window.location.search ) {
         const searchParams = new URLSearchParams( window.location.search );
@@ -27,6 +28,7 @@ function getStartParams() {
         let floorName = false;
         if ( searchParams.has( 'path' ) ) {
             let pathParams = searchParams.get( 'path' ).split('/');
+            params.path = pathParams;
             if ( pathParams.length && pathParams[0] === 'floorplan' ) {
                 /**
                  * Primo link - like this:
@@ -74,7 +76,9 @@ function getStartParams() {
             }
         }
         if ( searchParams.has( 'classmark' ) ) {
-            params.classmark = normaliseClassmark( searchParams.get( 'classmark' ) );
+            console.log( searchParams.get( 'classmark' ) );
+            params.classmark = normaliseClassmark( searchParams.get( 'classmark' ), params );
+            console.log( 'Normalised:' + params.classmark );
             let feature = getFeatureFromClassmark( params.library, floorName, params.classmark );
             console.log(params);
             if ( feature ) {
@@ -156,7 +160,9 @@ function selectFloor( floorid ) {
  * @param {string} classmark - the Label for the given feature
  */
 function selectShelf( floor, classmark ) {
+    console.log( classmark );
     floor.selecters.shelf.forEach( s => {
+        console.log(s.label);
         if ( s.label.match( classmark ) ) {
             selectFeature( s.value );
         }
@@ -276,9 +282,39 @@ function getLibraryRegex( library, floorName ) {
  * @param {String} classmark 
  * @returns 
  */
-function normaliseClassmark( classmark ) {
+function normaliseClassmark( classmark, params ) {
+    classmark = decodeURIComponent( classmark );
     if ( classmark.match( '^Video' ) ) {
         return 'DVD';
+    }
+    if ( classmark.match( 'Atlas Case' ) ) {
+        return 'Atlases';
+    }
+    if ( params.floorid ) {
+        switch ( params.floorid ) {
+            case 'brotherton-w2':
+                if ( classmark.match( 'Large .*' ) || classmark.match( 'Newspapers' ) ) {
+                    return 'All Large Journals & Foreign Newspapers';
+                }
+                if ( classmark.match( '([a-zA-Z ]+) A-0\.01' ) ) {
+                    let res = classmark.match( '([a-zA-Z ]+) A-0\.01' );
+                    return res[1];
+                }
+                if ( classmark.match( 'Stack Large' ) ) {
+                    return 'All Stack Large A-Z';
+                }
+                break;
+            case 'brotherton-w3':
+                if ( classmark.match( ' A-0\.01' ) ) {
+                    return 'Current Periodicals';
+                }
+                break;
+            case 'health-sciences':
+                if ( classmark.match( 'Pamphlet' ) ) {
+                    return 'Pamphlets';
+                }
+                break;
+        }
     }
     return classmark;
 }

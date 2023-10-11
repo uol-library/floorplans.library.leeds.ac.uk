@@ -11,7 +11,8 @@ document.addEventListener( "DOMContentLoaded", function() {
 		minZoom: floorplans.imgconf.minZoom,
 		maxZoom: floorplans.imgconf.maxZoom,
 		zoomControl: false,
-		paddingTopLeft: floorplans.imgconf.paddingTopLeft
+		paddingTopLeft: floorplans.imgconf.paddingTopLeft,
+		paddingBottomRight: floorplans.imgconf.paddingBottomRight
 	});
 	/* Add zoom control to to right */
 	L.control.zoom( { position: 'topright' } ).addTo( floorplans.map );
@@ -28,7 +29,7 @@ document.addEventListener( "DOMContentLoaded", function() {
 		floorplans.map.unproject( [ floorplans.maxWidth, 0 ], floorplans.imgconf.maxZoom )
 	);
 	/* add a little padding */
-	floorplans.maxBounds = floorplans.mapBounds.pad( 0.1 );
+	floorplans.maxBounds = floorplans.mapBounds;//.pad( 0.1 );
 	/* set the max bounds so images bounce back */
 	floorplans.map.setMaxBounds( floorplans.maxBounds );
 	/* pan to the centre - not sure if this is needed */
@@ -65,11 +66,11 @@ var addFloorLayer = function( floor ) {
         return new Promise( ( resolve, reject ) => {
             /* get the image */
             let im = new Image();
-            im.src = floor.imageurl;
-            floor.imageBounds = [
+            /* set the map bounds */
+            floor.imageBounds = L.latLngBounds(
                 floorplans.map.unproject([ 0, 0 ], floorplans.imgconf.maxZoom),
                 floorplans.map.unproject([ floor.width, floor.height ], floorplans.imgconf.maxZoom)
-            ];
+            );
             /**
              * When the image has loaded, add it to an imageOverlay, then
              * add that to a LayerGroup, then get the features geoJSON and
@@ -79,6 +80,12 @@ var addFloorLayer = function( floor ) {
                 splog( 'addFloorLayer - image loaded for ' + floor.floorname, 'core.js' );
                 let floorimg = L.imageOverlay( floor.imageurl, floor.imageBounds );
                 let floorlayer = L.layerGroup([floorimg]);
+                floorplans.map.fitBounds( floor.imageBounds, {
+                    paddingTopLeft: floorplans.imgconf.paddingTopLeft,
+                    paddingBottomRight: floorplans.imgconf.paddingBottomRight
+                } );
+                floorplans.map.setView( floor.imageBounds.getCenter() );
+
                 
                 getJSON({
                     "url": floor.dataurl,
@@ -133,6 +140,7 @@ var addFloorLayer = function( floor ) {
                     }
                 });
             }
+            im.src = floor.imageurl;
         });
     }
 };

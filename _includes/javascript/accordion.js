@@ -19,6 +19,7 @@ class Accordion {
 	}
 
 	onButtonClick( event ) {
+		console.log(event);
 		event.preventDefault();
 		this.toggle(!this.open);
 	}

@@ -1,6 +1,6 @@
 const floorplans = {
 	conf: {
-        debug: true,
+        debug: false,
 		maxZoom: 25,
 		minZoom: 0,
 		startZoom: 19,
@@ -18,6 +18,7 @@ const floorplans = {
 		startLat: 0,
 		startLng: 0,
 		paddingTopLeft: [300,0],
+		paddingBottomRight: [0,0],
 		baseURL: '{{ site.url }}{{site.baseurl}}'
 	},
 	maxHeight: 0,
