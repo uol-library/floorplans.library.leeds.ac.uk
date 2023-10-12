@@ -30,5 +30,6 @@ exclude:
   - package*
   - Gemfile*
   - README.md
+  - floorplans-broker.php
   - .htaccess
 
