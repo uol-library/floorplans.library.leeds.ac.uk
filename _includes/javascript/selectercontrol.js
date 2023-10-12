@@ -13,10 +13,10 @@ function setupSelecterControl() {
      * When selected, additional dropdowns will appear for shelves / subjects and 
      * other locations on the floor, built using buildFeatureSelects()
      */
-    L.Control.LibrarySelecter = L.Control.extend({
-        onAdd: function(map) {
+    //L.Control.LibrarySelecter = L.Control.extend({
+    //    onAdd: function(map) {
             /* container */
-            floorplans.controlsContainer = L.DomUtil.create( 'div', 'leaflet-control leaflet-control-floorplans' );
+            floorplans.controlsContainer = L.DomUtil.get( 'floorplan-controls' );
 
             /* title bar */
             let fs = L.DomUtil.create( 'fieldset', 'floorplans-selecter', floorplans.controlsContainer );
@@ -87,8 +87,9 @@ function setupSelecterControl() {
                                     /* build select controls for shelves and locations */
                                     buildFeatureSelects( floor );
                                     sortFeatureSelects( floor );
+                                    /* add the floor layer to the map and center it */
                                     floorlayer.addTo( floorplans.map );
-                                    floorplans.map.fitBounds( floor.imageBounds, {paddingTopLeft: floorplans.imgconf.paddingTopLeft} );
+                                    floorplans.map.fitBounds( floor.imageBounds );
                                     floorplans.map.setView( floor.imageBounds.getCenter() );
                                     floorplans.map.pm.setGlobalOptions( { layerGroup: floorlayer } );
                                     splog( 'Added layer for floor '+floor.floorname , 'refactor.js' );
@@ -98,28 +99,31 @@ function setupSelecterControl() {
                     });
                 }
             });
-            /* init accordions */
-            const accordions = document.querySelectorAll( '.accordion' );
-            accordions.forEach( accordionEl => {
-                new Accordion( accordionEl );
-            });
 
-            return floorplans.controlsContainer;
-        },
+            var menuButton = document.getElementById( 'menu-close-button' );
+            var menuContainer = document.getElementById( 'floorplan-controls' );
+            menuButton.addEventListener( 'click', e => {
+                if ( menuButton.classList.contains( 'close' ) ) {
+                    menuButton.classList.remove( 'close' );
+                    menuContainer.classList.add( 'closed' );
+                } else {
+                    menuButton.classList.add( 'close' );
+                    menuContainer.classList.remove( 'closed' );
+                }
+            });
+            //return floorplans.controlsContainer;
+        //},
     
-        onRemove: function(map) {
-            // Nothing to do here
-        }
-    });
+    //});
 
     /* factory */
-    L.control.libraryselecter = function(opts) {
-        return new L.Control.LibrarySelecter(opts);
-    }
+//    L.control.libraryselecter = function(opts) {
+//        return new L.Control.LibrarySelecter(opts);
+//    }
 
    
     /* instantiate the floor selecter control */
-    L.control.libraryselecter({ position: 'topleft' }).addTo( floorplans.map );
+//    L.control.libraryselecter({ position: 'topleft' }).addTo( floorplans.map );
 }
 
 /**
@@ -208,11 +212,4 @@ function selectFeature( featureid ) {
             fb.focus();
         }
     }
-}
-function initAccordions() {
-    /* init accordions */
-    const accordions = document.querySelectorAll( '.accordion' );
-    accordions.forEach( accordionEl => {
-        new Accordion( accordionEl );
-    });
 }

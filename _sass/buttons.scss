@@ -1,0 +1,82 @@
+.btn-menu {
+	width: 32px;
+	height: 32px;
+	border: 3px solid $white;
+	background: $menubutton-bg;
+	border-bottom-right-radius: 3px;
+	display: block;
+	cursor: pointer;
+	position: absolute;
+    right: 10px;
+	&.close:hover,
+	&:hover {
+		background: $menubutton-bg-hover;
+		span,
+		span:before,
+		span:after {
+		    background-color: $menubutton-hover;
+		}
+	}
+    span {
+        position: absolute;
+        top: 12px;
+        left: 2px;
+        background-color: $menubutton;
+        transform: rotate(0deg);
+        &:before {
+            position: absolute;
+            top: -8px;
+            left: 0;
+            content: ' ';
+            background-color: $menubutton;
+	    }
+        &:after {
+            position: absolute;
+            top: 8px;
+            left: 0;
+            content: ' ';
+            background-color: $menubutton;
+        }
+    }
+    &.close {
+		&:hover span {
+			background: none;
+		}
+        span {
+            position: absolute;
+            background: none;
+            &:after {
+                position: absolute;
+                left: 0;
+                top: 0;
+                transform: rotate(45deg);
+            }
+            &:before {
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                transform: rotate(-45deg);
+            }
+        }
+    }
+    span,
+    span:before,
+    span:after,
+    &.close span,
+    &.close span:before,
+    &.close span:after {
+        width: 24px;
+        height: 4px;
+        border-radius: 2px;
+    }
+    span:before,
+	span:after {
+		transition: transform .5s cubic-bezier(0.5,-0.6,0.19,1);
+		transition: top .5s cubic-bezier(0.5,-0.6,0.19,1);
+	}
+    &.close span:before,
+    &.close span:after {
+		transition: transform .5s cubic-bezier(0.5,-0.6,0.19,1);
+	}
+}

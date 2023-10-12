@@ -1,12 +1,28 @@
-.leaflet-control.leaflet-control-floorplans {
+#floorplan-controls {
+    position: relative;
+    margin: 0;
     font-size: 1rem;
-    width: 280px;
+    width: $controlsWidth;
     padding: .5rem;
     background: $white;
-    height: calc(100vh - 20px);
+    margin-left: 0;
+    transition: margin-left .3s linear;
+    &.closed {
+        margin-left: -($controlsWidth - 12px);
+    }
+    .menubar {
+        width: $controlsWidth;
+        background: transparent;
+        position: absolute;
+        left: 32px;
+        top: 0;
+        z-index:1;
+        padding:0;
+    }
     .floorplans-selecter {
         padding: .5rem;
         border: 0;
+        z-index:2;
     }
     .floorplans-selecter-header {
         font-size: 1rem;
@@ -63,32 +79,32 @@
 	}
 }
 @media (min-height:20rem) {
-	.leaflet-control.leaflet-control-floorplans ul.selecter__list {
+	#floorplan-controls ul.selecter__list {
 		max-height: 23vh;
     }
 }
 @media (min-height:25rem) {
-	.leaflet-control.leaflet-control-floorplans ul.selecter__list {
+	#floorplan-controls ul.selecter__list {
 		max-height: 26vh;
     }
 }
 @media (min-height:30rem) {
-	.leaflet-control.leaflet-control-floorplans ul.selecter__list {
+	#floorplan-controls ul.selecter__list {
 		max-height: 29vh;
     }
 }
 @media (min-height:35rem) {
-	.leaflet-control.leaflet-control-floorplans ul.selecter__list {
+	#floorplan-controls ul.selecter__list {
 		max-height: 32vh;
     }
 }
 @media (min-height:40rem) {
-	.leaflet-control.leaflet-control-floorplans ul.selecter__list {
+	#floorplan-controls ul.selecter__list {
 		max-height: 35vh;
     }
 }
 @media (min-height:45rem) {
-	.leaflet-control.leaflet-control-floorplans ul.selecter__list {
+	#floorplan-controls ul.selecter__list {
 		max-height: 38vh;
     }
 }

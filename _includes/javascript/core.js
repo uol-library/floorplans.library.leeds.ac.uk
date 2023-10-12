@@ -10,9 +10,7 @@ document.addEventListener( "DOMContentLoaded", function() {
 		center: [ floorplans.imgconf.startLat, floorplans.imgconf.startLng ],
 		minZoom: floorplans.imgconf.minZoom,
 		maxZoom: floorplans.imgconf.maxZoom,
-		zoomControl: false,
-		paddingTopLeft: floorplans.imgconf.paddingTopLeft,
-		paddingBottomRight: floorplans.imgconf.paddingBottomRight
+		zoomControl: false
 	});
 	/* Add zoom control to to right */
 	L.control.zoom( { position: 'topright' } ).addTo( floorplans.map );
@@ -29,13 +27,12 @@ document.addEventListener( "DOMContentLoaded", function() {
 		floorplans.map.unproject( [ floorplans.maxWidth, 0 ], floorplans.imgconf.maxZoom )
 	);
 	/* add a little padding */
-	floorplans.maxBounds = floorplans.mapBounds;//.pad( 0.1 );
+	floorplans.maxBounds = floorplans.mapBounds;
 	/* set the max bounds so images bounce back */
 	floorplans.map.setMaxBounds( floorplans.maxBounds );
-	/* pan to the centre - not sure if this is needed */
-	floorplans.map.panTo( floorplans.map.unproject( [ ( floorplans.maxWidth / 2 ), ( floorplans.maxHeight / 2 ) ], floorplans.imgconf.maxZoom ) );
-	/* zoommap to fit */
+	/* zoom map to fit */
 	floorplans.map.fitBounds( floorplans.mapBounds );
+    /* show LatLng when map is clicked */
 	if ( floorplans.conf.debug ) {
 		floorplans.map.on("click", function(e) {
 			console.log(e.latlng.lng + ", " + e.latlng.lat);
@@ -80,12 +77,6 @@ var addFloorLayer = function( floor ) {
                 splog( 'addFloorLayer - image loaded for ' + floor.floorname, 'core.js' );
                 let floorimg = L.imageOverlay( floor.imageurl, floor.imageBounds );
                 let floorlayer = L.layerGroup([floorimg]);
-                floorplans.map.fitBounds( floor.imageBounds, {
-                    paddingTopLeft: floorplans.imgconf.paddingTopLeft,
-                    paddingBottomRight: floorplans.imgconf.paddingBottomRight
-                } );
-                floorplans.map.setView( floor.imageBounds.getCenter() );
-
                 
                 getJSON({
                     "url": floor.dataurl,
@@ -144,6 +135,85 @@ var addFloorLayer = function( floor ) {
         });
     }
 };
+
+/**
+ * Loads a floor when the application loads. The floor to load is determined by
+ * getStartParams()
+ */
+function loadStartFloor() {
+    let params = getStartParams();
+    let foundFloor = false;
+    if ( params.floorid ) {
+        floorplans.imagelayers.forEach( lib => {
+            lib.floors.forEach( floor => {
+                if ( floor.floorid === params.floorid ) {
+                    /* floor found - load data for floor */
+                    foundFloor = true;
+                    addFloorLayer( floor ).then( ( floorlayer ) => {
+                        buildFeatureSelects( floor );
+                        sortFeatureSelects( floor );
+                        /* add the floor to the map */
+                        floorlayer.addTo( floorplans.map );
+                        /* position floor */
+                        floorplans.map.fitBounds( floor.imageBounds );
+                        floorplans.map.setView( floor.imageBounds.getCenter() );
+                        /* select the floor in the select list */
+                        selectFloor( params.floorid );
+                        /* find the shelf for the classmark */
+                        selectShelf( floor, params.shelfname )
+                        /* load data for all the other floors */
+                        floorplans.imagelayers.forEach( l => {
+                            l.floors.forEach( f => {
+                                addFloorLayer( f );
+                            });
+                        });
+                    });
+                }
+            });
+        });
+    }
+    if ( ! foundFloor ) {
+        /* no start floor - just load data for all floors */
+        floorplans.imagelayers.forEach( l => {
+            l.floors.forEach( f => {
+                addFloorLayer( f );
+            });
+        });
+    }
+}
+
+/**
+ * Selects a floor from the dropdown list
+ * @param {String} floorid 
+ */
+function selectFloor( floorid ) {
+    console.log( floorid );
+    let sel = document.getElementById( 'floorselecter' );
+    if ( sel ) {
+        for (var i = 0; i < sel.options.length; i++) {
+            if ( sel.options[i].value === floorid ) {
+                sel.options[i].selected = true;
+            }
+        }
+    }
+}
+
+/**
+ * Selects a feature on the floor from the list of features
+ * 
+ * @uses selectFeature()
+ * @param {Object} floor - used to access the lists of features
+ * @param {string} classmark - the Label for the given feature
+ */
+function selectShelf( floor, classmark ) {
+    console.log( classmark );
+    floor.selecters.shelf.forEach( s => {
+        console.log(s.label);
+        if ( s.label.match( classmark ) ) {
+            selectFeature( s.value );
+        }
+    });
+}
 
 /**
  * Highlights a feature on the plan
