@@ -92,10 +92,6 @@ function getStartParams() {
     return params;
 }
 
-function manageURL() {
-
-}
-
 /**
  * Gets the id of a library (as used in this app) from a code used in Primo
  * 
