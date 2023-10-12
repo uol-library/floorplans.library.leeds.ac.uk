@@ -5,10 +5,10 @@ description: >-
   an application using the Leaflet mapping library
   to enable indoor wayfinding in the University's
   library spaces.
-environment: development
-url: "https://uol-library.github.io"
-baseurl: "/floorplans.library.leeds.ac.uk"
-destination: _site/
+environment: production
+url: "https://floorplans.library.leeds.ac.uk"
+baseurl: ""
+destination: public/
 host: "localhost"
 google_analytics: ""
 photo_dir: "/assets/photos/"
@@ -30,5 +30,5 @@ exclude:
   - package*
   - Gemfile*
   - README.md
-  - .htaccess
+  - tests.md
 
