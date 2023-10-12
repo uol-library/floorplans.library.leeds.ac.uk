@@ -27,11 +27,11 @@ document.addEventListener( "DOMContentLoaded", function() {
 		floorplans.map.unproject( [ floorplans.maxWidth, 0 ], floorplans.imgconf.maxZoom )
 	);
 	/* add a little padding */
-	floorplans.maxBounds = floorplans.mapBounds;
+	//floorplans.maxBounds = floorplans.mapBounds;
 	/* set the max bounds so images bounce back */
-	floorplans.map.setMaxBounds( floorplans.maxBounds );
+	//floorplans.map.setMaxBounds( floorplans.maxBounds );
 	/* zoom map to fit */
-	floorplans.map.fitBounds( floorplans.mapBounds );
+	//floorplans.map.fitBounds( floorplans.mapBounds );
     /* show LatLng when map is clicked */
 	if ( floorplans.conf.debug ) {
 		floorplans.map.on("click", function(e) {
@@ -102,9 +102,9 @@ var addFloorLayer = function( floor ) {
                                 layer.bindPopup( feature.properties.name, { className: 'feature-tooltip' } );
                                 layer.on({
                                     mouseover: highlightFeature,
-                                    mouseout: resetFeature,
+                                    //mouseout: resetFeature,
                                     focus: highlightFeature,
-                                    blur: resetFeature
+                                    //blur: resetFeature
                                 });
                             },
                             /* style each feature and add appropriate className */
@@ -187,7 +187,6 @@ function loadStartFloor() {
  * @param {String} floorid 
  */
 function selectFloor( floorid ) {
-    console.log( floorid );
     let sel = document.getElementById( 'floorselecter' );
     if ( sel ) {
         for (var i = 0; i < sel.options.length; i++) {
@@ -203,13 +202,11 @@ function selectFloor( floorid ) {
  * 
  * @uses selectFeature()
  * @param {Object} floor - used to access the lists of features
- * @param {string} classmark - the Label for the given feature
+ * @param {string} shelfName - the Label for the given feature
  */
-function selectShelf( floor, classmark ) {
-    console.log( classmark );
+function selectShelf( floor, shelfName ) {
     floor.selecters.shelf.forEach( s => {
-        console.log(s.label);
-        if ( s.label.match( classmark ) ) {
+        if ( s.label.match( shelfName) ) {
             selectFeature( s.value );
         }
     });

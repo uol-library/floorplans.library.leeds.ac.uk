@@ -1,129 +1,113 @@
 /**
  * This file contains all the functions used to create the floor selecter control
- * on the floorplans "map"
+ * on the floorplans map
  */
 
 /**
- * This sets up the selecter control and adds it to the map
+ * This sets up the selecter control and adds it to the controls container element
  */
 function setupSelecterControl() {
     /**
      * Library selecter control
      * This contains (initially) a drop-down list of library floorplans
-     * When selected, additional dropdowns will appear for shelves / subjects and 
+     * When one is selected, additional dropdowns will appear for shelves / subjects and 
      * other locations on the floor, built using buildFeatureSelects()
      */
-    //L.Control.LibrarySelecter = L.Control.extend({
-    //    onAdd: function(map) {
-            /* container */
-            floorplans.controlsContainer = L.DomUtil.get( 'floorplan-controls' );
+    floorplans.controlsContainer = L.DomUtil.get( 'floorplan-controls' );
 
-            /* title bar */
-            let fs = L.DomUtil.create( 'fieldset', 'floorplans-selecter', floorplans.controlsContainer );
-            let ld = L.DomUtil.create( 'legend', 'floorplans-selecter-header', fs );
-            ld.textContent = 'Library Floorplans';
+    /* title bar */
+    let fs = L.DomUtil.create( 'fieldset', 'floorplans-selecter', floorplans.controlsContainer );
+    let ld = L.DomUtil.create( 'legend', 'floorplans-selecter-header', fs );
+    ld.textContent = 'Library Floorplans';
 
-            floorplans.controls = L.DomUtil.create( 'div', 'floorplans-selecter-content', fs );
-            floorplans.controls.setAttribute( 'id', 'floorplans-selecter-controls' );
-            
-            /* floor selecter drop-down */
-            let floorselecterLabel = L.DomUtil.create( 'label', 'selecter__label', floorplans.controls );
-            floorselecterLabel.textContent = "Select a Library / floor";
-            floorselecterLabel.setAttribute( 'id', 'floorselecterlabel' );
-            floorselecterLabel.setAttribute( 'for', 'floorselecter' );
-            let floorselecter = L.DomUtil.create( 'select', 'selecter__select', floorselecterLabel  );
-            floorselecter.setAttribute( 'id', 'floorselecter' );
-            
-            /* build the select list to show all available floors */
-            let nullopt = L.DomUtil.create( 'option', '', floorselecter );
-            nullopt.textContent = "Select a Library / floor";
+    floorplans.controls = L.DomUtil.create( 'div', 'floorplans-selecter-content', fs );
+    floorplans.controls.setAttribute( 'id', 'floorplans-selecter-controls' );
+    
+    /* floor selecter drop-down */
+    let floorselecterLabel = L.DomUtil.create( 'label', 'selecter__label', floorplans.controls );
+    floorselecterLabel.textContent = "Select a Library / floor";
+    floorselecterLabel.setAttribute( 'id', 'floorselecterlabel' );
+    floorselecterLabel.setAttribute( 'for', 'floorselecter' );
+    let floorselecter = L.DomUtil.create( 'select', 'selecter__select', floorselecterLabel  );
+    floorselecter.setAttribute( 'id', 'floorselecter' );
+    
+    /* build the select list to show all available floors */
+    let nullopt = L.DomUtil.create( 'option', '', floorselecter );
+    nullopt.textContent = "Select a Library / floor";
+    floorplans.imagelayers.forEach( lib => {
+        let optgrp = L.DomUtil.create( 'optgroup', '', floorselecter );
+        optgrp.setAttribute( 'label', lib.title );
+        lib.floors.forEach( floor => {
+            let flooropt = L.DomUtil.create( 'option', '', optgrp );
+            flooropt.textContent = floor.floorname;
+            flooropt.setAttribute( 'value', floor.floorid );
+        });
+    });
+
+    /* shelf selecter drop-down - subjects */
+    let shelfSelecter = L.DomUtil.create( 'div', 'hidden', floorplans.controls );
+    shelfSelecter.setAttribute( 'id', 'shelfselecter' );
+    let shelfselecterHeading = L.DomUtil.create( 'h3', '', shelfSelecter );
+    shelfselecterHeading.textContent = 'Subjects on this floor';
+    /* shelf selecter list - subjects */
+    let shelfselecterList = L.DomUtil.create( 'ul', 'selecter__list', shelfSelecter );
+    shelfselecterList.setAttribute( 'id', 'shelfselecterlist' );
+    
+    /* location selecter drop-down - areas of interest */
+    let locationSelecter = L.DomUtil.create( 'div', 'hidden', floorplans.controls );
+    locationSelecter.setAttribute( 'id', 'locationselecter' );
+    let locationselecterHeading = L.DomUtil.create( 'h3', '', locationSelecter );
+    locationselecterHeading.textContent = 'Also on this floor';
+    /* location selecter list - other features on this floor */
+    let locationselecterList = L.DomUtil.create( 'ul', 'selecter__list', locationSelecter );
+    locationselecterList.setAttribute( 'id', 'locationselecterlist' );
+
+    /* Listen for changes to floor selecter */
+    L.DomEvent.on( floorselecter, 'change', function(){
+        if ( this.options[this.selectedIndex].value !== '' ) {
+            /* remove all layers from map */
+            floorplans.map.eachLayer( function( layer ) {
+                floorplans.map.removeLayer( layer );
+            });
+            /* empty the current lists */
+            ['shelfselecter', 'locationselecter' ].forEach( s => {
+                L.DomUtil.empty( L.DomUtil.get( s + 'list' ) );
+                L.DomUtil.addClass( L.DomUtil.get( s ), 'hidden' );
+            });
+            /* go through data looking for a floor to match the dropdown value */
             floorplans.imagelayers.forEach( lib => {
-                let optgrp = L.DomUtil.create( 'optgroup', '', floorselecter );
-                optgrp.setAttribute( 'label', lib.title );
                 lib.floors.forEach( floor => {
-                    let flooropt = L.DomUtil.create( 'option', '', optgrp );
-                    flooropt.textContent = floor.floorname;
-                    flooropt.setAttribute( 'value', floor.floorid );
+                    if ( floor.floorid == this.options[this.selectedIndex].value ) {
+                        /* add floor layer */
+                        addFloorLayer( floor )
+                        .then( ( floorlayer ) => {
+                            /* build select controls for shelves and locations */
+                            buildFeatureSelects( floor );
+                            sortFeatureSelects( floor );
+                            /* add the floor layer to the map and center it */
+                            floorlayer.addTo( floorplans.map );
+                            floorplans.map.fitBounds( floor.imageBounds );
+                            floorplans.map.setView( floor.imageBounds.getCenter() );
+                            splog( 'Added layer for floor '+floor.floorname , 'refactor.js' );
+                        });
+                    }
                 });
             });
+        }
+    });
 
-            /* shelf selecter drop-down - subjects */
-            let shelfSelecter = L.DomUtil.create( 'div', 'hidden', floorplans.controls );
-            shelfSelecter.setAttribute( 'id', 'shelfselecter' );
-            let shelfselecterHeading = L.DomUtil.create( 'h3', '', shelfSelecter );
-            shelfselecterHeading.textContent = 'Subjects on this floor';
-            /* shelf selecter list - subjects */
-            let shelfselecterList = L.DomUtil.create( 'ul', 'selecter__list', shelfSelecter );
-            shelfselecterList.setAttribute( 'id', 'shelfselecterlist' );
-            
-            /* location selecter drop-down - areas of interest */
-            let locationSelecter = L.DomUtil.create( 'div', 'hidden', floorplans.controls );
-            locationSelecter.setAttribute( 'id', 'locationselecter' );
-            let locationselecterHeading = L.DomUtil.create( 'h3', '', locationSelecter );
-            locationselecterHeading.textContent = 'Also on this floor';
-            /* location selecter list - other features on this floor */
-            let locationselecterList = L.DomUtil.create( 'ul', 'selecter__list', locationSelecter );
-            locationselecterList.setAttribute( 'id', 'locationselecterlist' );
-
-            /* Listen for changes to floor selecter */
-            L.DomEvent.on( floorselecter, 'change', function(){
-                if ( this.options[this.selectedIndex].value !== '' ) {
-                    /* remove all layers from map */
-                    floorplans.map.eachLayer( function( layer ) {
-                        floorplans.map.removeLayer( layer );
-                    });
-                    /* empty the current lists */
-                    ['shelfselecter', 'locationselecter' ].forEach( s => {
-                        L.DomUtil.empty( L.DomUtil.get( s + 'list' ) );
-                        L.DomUtil.addClass( L.DomUtil.get( s ), 'hidden' );
-                    });
-                    /* go through data looking for a floor to match the dropdown value */
-                    floorplans.imagelayers.forEach( lib => {
-                        lib.floors.forEach( floor => {
-                            if ( floor.floorid == this.options[this.selectedIndex].value ) {
-                                /* add floor layer */
-                                addFloorLayer( floor )
-                                .then( ( floorlayer ) => {
-                                    /* build select controls for shelves and locations */
-                                    buildFeatureSelects( floor );
-                                    sortFeatureSelects( floor );
-                                    /* add the floor layer to the map and center it */
-                                    floorlayer.addTo( floorplans.map );
-                                    floorplans.map.fitBounds( floor.imageBounds );
-                                    floorplans.map.setView( floor.imageBounds.getCenter() );
-                                    floorplans.map.pm.setGlobalOptions( { layerGroup: floorlayer } );
-                                    splog( 'Added layer for floor '+floor.floorname , 'refactor.js' );
-                                });
-                            }
-                        });
-                    });
-                }
-            });
-
-            var menuButton = document.getElementById( 'menu-close-button' );
-            var menuContainer = document.getElementById( 'floorplan-controls' );
-            menuButton.addEventListener( 'click', e => {
-                if ( menuButton.classList.contains( 'close' ) ) {
-                    menuButton.classList.remove( 'close' );
-                    menuContainer.classList.add( 'closed' );
-                } else {
-                    menuButton.classList.add( 'close' );
-                    menuContainer.classList.remove( 'closed' );
-                }
-            });
-            //return floorplans.controlsContainer;
-        //},
-    
-    //});
-
-    /* factory */
-//    L.control.libraryselecter = function(opts) {
-//        return new L.Control.LibrarySelecter(opts);
-//    }
-
-   
-    /* instantiate the floor selecter control */
-//    L.control.libraryselecter({ position: 'topleft' }).addTo( floorplans.map );
+    /* activate the menu button to allow the selecter to be shuffled off screen */
+    var menuButton = document.getElementById( 'menu-close-button' );
+    var menuContainer = document.getElementById( 'floorplan-controls' );
+    menuButton.addEventListener( 'click', e => {
+        if ( menuButton.classList.contains( 'close' ) ) {
+            menuButton.classList.remove( 'close' );
+            menuContainer.classList.add( 'closed' );
+        } else {
+            menuButton.classList.add( 'close' );
+            menuContainer.classList.remove( 'closed' );
+        }
+    });
 }
 
 /**
@@ -185,6 +169,7 @@ function sortFeatureSelects( floor ) {
         });
     }
 }
+
 /**
  * This takes the ID of a feature in a geoJSON layer
  * and returns the layer object which cointains the feature
@@ -200,8 +185,11 @@ function getFeature( featureid ) {
     });
     return feature;
 }
+
 /**
- * 
+ * This selects a feature by firing the mouseover event on the feature
+ * layer. It then highlights the feature in the selecter control by 
+ * focussing it.
  */
 function selectFeature( featureid ) {
     let layer = getFeature( featureid );

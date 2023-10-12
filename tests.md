@@ -2,7 +2,7 @@
 layout: default
 permalink: /tests/
 ---
-
+<div class="tests">
 {% for group in site.data.test_urls %}
   <h2>{{ group.groupname }}</h2>
   <ul>
@@ -11,3 +11,4 @@ permalink: /tests/
   {% endfor %}
   </ul>
 {% endfor %}
+</div>

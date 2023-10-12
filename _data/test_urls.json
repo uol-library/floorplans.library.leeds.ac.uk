@@ -1,5 +1,14 @@
 [
     {
+        "groupname": "Broken SHIT for Brotherton",
+        "urls": [
+            "/?path=brotherton/floors/&classmark=Ancient%2BHistory%2BL-5%2BANT/G",
+            "/?path=brotherton/floors/&classmark=English+A-0.01+SAV",
+            "/?path=brotherton/floors/&classmark=General+Literature+A-0.02+UNI",
+            "/?path=brotherton/floors/&classmark=German+A-0.2+BRA",
+        ]
+    },
+    {
         "groupname": "Existing site: Brotherton",
         "urls": [
             "/?path=brotherton/floors/m1/",

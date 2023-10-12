@@ -73,6 +73,8 @@ function getStartParams() {
                         }
                     }
                 }
+            } else {
+
             }
         }
         if ( searchParams.has( 'classmark' ) ) {
@@ -80,7 +82,6 @@ function getStartParams() {
             params.classmark = normaliseClassmark( searchParams.get( 'classmark' ), params );
             console.log( 'Normalised:' + params.classmark );
             let feature = getFeatureFromClassmark( params.library, floorName, params.classmark );
-            console.log(params);
             if ( feature ) {
                 if ( ! params.floorid ) {
                     params.floorid = feature.floorid;
@@ -92,6 +93,10 @@ function getStartParams() {
     }
     console.log(params);
     return params;
+}
+
+function manageURL() {
+
 }
 
 /**
@@ -161,6 +166,7 @@ function getFeatureFromClassmark( library, floorName, classmark ) {
         let libraryRE = getLibraryRegex( library, floorName );
         if ( features[i][1].match( libraryRE ) ) {
             let featureRE = getFeatureRegex( features[i][0] );
+            console.log( 'feature regex: '+featureRE );
             if ( classmark.match( featureRE ) ) {
                 let featureDetails = features[i][1].split( '-' );
                 ret = {
@@ -215,15 +221,15 @@ function normaliseClassmark( classmark, params ) {
     if ( classmark.match( 'Atlas Case' ) ) {
         return 'Atlases';
     }
+    if ( classmark.match( '([a-zA-Z ]+) A-0\.01' ) ) {
+        let res = classmark.match( '([a-zA-Z ]+) A-0\.01' );
+        return res[1]+' Journals';
+    }
     if ( params.floorid ) {
         switch ( params.floorid ) {
             case 'brotherton-w2':
                 if ( classmark.match( 'Large .*' ) || classmark.match( 'Newspapers' ) ) {
                     return 'All Large Journals & Foreign Newspapers';
-                }
-                if ( classmark.match( '([a-zA-Z ]+) A-0\.01' ) ) {
-                    let res = classmark.match( '([a-zA-Z ]+) A-0\.01' );
-                    return res[1];
                 }
                 if ( classmark.match( 'Stack Large' ) ) {
                     return 'All Stack Large A-Z';
