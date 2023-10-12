@@ -78,9 +78,7 @@ function getStartParams() {
             }
         }
         if ( searchParams.has( 'classmark' ) ) {
-            console.log( searchParams.get( 'classmark' ) );
             params.classmark = normaliseClassmark( searchParams.get( 'classmark' ), params );
-            console.log( 'Normalised:' + params.classmark );
             let feature = getFeatureFromClassmark( params.library, floorName, params.classmark );
             if ( feature ) {
                 if ( ! params.floorid ) {
@@ -91,7 +89,6 @@ function getStartParams() {
             }
         }
     }
-    console.log(params);
     return params;
 }
 
@@ -166,7 +163,6 @@ function getFeatureFromClassmark( library, floorName, classmark ) {
         let libraryRE = getLibraryRegex( library, floorName );
         if ( features[i][1].match( libraryRE ) ) {
             let featureRE = getFeatureRegex( features[i][0] );
-            console.log( 'feature regex: '+featureRE );
             if ( classmark.match( featureRE ) ) {
                 let featureDetails = features[i][1].split( '-' );
                 ret = {
