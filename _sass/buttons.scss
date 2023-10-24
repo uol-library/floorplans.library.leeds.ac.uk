@@ -17,7 +17,7 @@
 		    background-color: $menubutton-hover;
 		}
 	}
-    span {
+    span.icon {
         position: absolute;
         top: 12px;
         left: 2px;
@@ -39,10 +39,10 @@
         }
     }
     &.close {
-		&:hover span {
+		&:hover span.icon {
 			background: none;
 		}
-        span {
+        span.icon {
             position: absolute;
             background: none;
             &:after {
@@ -60,23 +60,23 @@
             }
         }
     }
-    span,
-    span:before,
-    span:after,
-    &.close span,
-    &.close span:before,
-    &.close span:after {
+    span.icon,
+    span.icon:before,
+    span.icon:after,
+    &.close span.icon,
+    &.close span.icon:before,
+    &.close span.icon:after {
         width: 24px;
         height: 4px;
         border-radius: 2px;
     }
-    span:before,
-	span:after {
+    span.icon:before,
+	span.icon:after {
 		transition: transform .5s cubic-bezier(0.5,-0.6,0.19,1);
 		transition: top .5s cubic-bezier(0.5,-0.6,0.19,1);
 	}
-    &.close span:before,
-    &.close span:after {
+    &.close span.icon:before,
+    &.close span.icon:after {
 		transition: transform .5s cubic-bezier(0.5,-0.6,0.19,1);
 	}
 }

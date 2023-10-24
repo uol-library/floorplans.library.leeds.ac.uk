@@ -16,9 +16,11 @@ function setupSelecterControl() {
     floorplans.controlsContainer = L.DomUtil.get( 'floorplan-controls' );
 
     /* title bar */
+    let header = L.DomUtil.create( 'h2', 'floorplans-selecter-header', floorplans.controlsContainer );
+    header.textContent = 'Library Floorplans Navigation';
     let fs = L.DomUtil.create( 'fieldset', 'floorplans-selecter', floorplans.controlsContainer );
-    let ld = L.DomUtil.create( 'legend', 'floorplans-selecter-header', fs );
-    ld.textContent = 'Library Floorplans';
+    let ld = L.DomUtil.create( 'legend', 'floorplans-selecter-legend visuallyhidden', fs );
+    ld.textContent = 'Floorplan controls';
 
     floorplans.controls = L.DomUtil.create( 'div', 'floorplans-selecter-content', fs );
     floorplans.controls.setAttribute( 'id', 'floorplans-selecter-controls' );
@@ -28,7 +30,7 @@ function setupSelecterControl() {
     floorselecterLabel.textContent = "Select a Library / floor";
     floorselecterLabel.setAttribute( 'id', 'floorselecterlabel' );
     floorselecterLabel.setAttribute( 'for', 'floorselecter' );
-    let floorselecter = L.DomUtil.create( 'select', 'selecter__select', floorselecterLabel  );
+    let floorselecter = L.DomUtil.create( 'select', 'selecter__select', floorplans.controls  );
     floorselecter.setAttribute( 'id', 'floorselecter' );
     
     /* build the select list to show all available floors */
