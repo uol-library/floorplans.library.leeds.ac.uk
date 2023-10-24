@@ -4,5 +4,6 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^/?floorplan$ /floorplans-broker.php [NC,L]
 
 RewriteCond %{REQUEST_URI} !^/index.html$
+RewriteCond %{REQUEST_URI} !^/floorplans-broker.php$
 RewriteCond %{REQUEST_URI} !\.(json|jpe?g|png|css|js)$
 RewriteRule ^(.*)$ /index.html?path=$0 [NC,L,R=302,QSA]
