@@ -88,6 +88,24 @@ function getStartParams() {
                 params.shelfname = feature.name;
             }
         }
+    } else if ( window.location.hash !== '' ) {
+        let paramhash = window.location.hash.substring(1).split('/');
+        if ( paramhash[0] === 'health-sciences' ) {
+            params.library = 'health-sciences';
+            params.floorid = 'health-sciences';
+        } else {
+            params.library = paramhash[0];
+        }
+        if ( paramhash.length > 1 ) {
+            if ( params.library === 'health-sciences' ) {
+                params.shelfname = paramhash[1];
+            } else {
+                params.floorid = paramhash[0] + '-' + paramhash[1];
+                if ( paramhash.length > 2 ) {
+                    params.shelfname = paramhash[2];
+                }
+            }
+        }
     }
     return params;
 }
