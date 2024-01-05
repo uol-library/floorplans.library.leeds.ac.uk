@@ -70,30 +70,30 @@ function updateOccupancy() {
 }
 
 document.addEventListener( 'DOMContentLoaded', () => {
-    document.addEventListener( 'fpmapready', () => {
-        
-    });
     L.DomEvent.on( floorselecter, 'change', function(){
         let c = document.getElementById('occupancyContainer');
         if ( this.options[this.selectedIndex].value !== '' ) {
             let floorid = this.options[this.selectedIndex].value;
-            
-            if ( floorid.match( '(edward|laidlaw)' ) ) {
-                console.log(floorid);
-                c.classList.remove('hidden');
-                let activemsg, inactivemsg;
-                if ( floorid.match( 'edward' ) ) {
-                    activemsg = document.querySelector('.edwardboylemsg');
-                    inactivemsg = document.querySelector('.laidlawmsg');
-                } else {
-                    inactivemsg = document.querySelector('.edwardboylemsg');
-                    activemsg = document.querySelector('.laidlawmsg');
-                }
-                inactivemsg.classList.add('hidden');
-                activemsg.classList.remove('hidden');
-            } else {
-                c.classList.add('hidden');
-            }
+            showOccupancyMessage( floorid );
         }
     });
 });
+
+function showOccupancyMessage( floorid ) {
+    let c = document.getElementById('occupancyContainer');
+    if ( floorid.match( '(edward|laidlaw)' ) ) {
+        c.classList.remove('hidden');
+        let activemsg, inactivemsg;
+        if ( floorid.match( 'edward' ) ) {
+            activemsg = document.querySelector('.edwardboylemsg');
+            inactivemsg = document.querySelector('.laidlawmsg');
+        } else {
+            inactivemsg = document.querySelector('.edwardboylemsg');
+            activemsg = document.querySelector('.laidlawmsg');
+        }
+        inactivemsg.classList.add('hidden');
+        activemsg.classList.remove('hidden');
+    } else {
+        c.classList.add('hidden');
+    }
+}

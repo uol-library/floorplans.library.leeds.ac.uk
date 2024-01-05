@@ -145,6 +145,7 @@ function loadStartFloor() {
         floorplans.imagelayers.forEach( lib => {
             lib.floors.forEach( floor => {
                 if ( floor.floorid === params.floorid ) {
+                    showOccupancyMessage( params.floorid );
                     /* floor found - load data for floor */
                     foundFloor = true;
                     addFloorLayer( floor ).then( ( floorlayer ) => {
