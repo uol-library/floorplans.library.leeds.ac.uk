@@ -86,17 +86,17 @@ function getWithExpiry( key ) {
         options.expires = 24;
     }
     if ( storageAvailable( 'localStorage' ) && getWithExpiry( options.key ) ) {
-        splog( "getting data '"+options.key+"' from local storage", "utilities.js" );
+        fplog( "getting data '"+options.key+"' from local storage" );
         if ( options.hasOwnProperty( 'callback' ) && typeof options.callback == 'function' ) {
             options.callback( JSON.parse( getWithExpiry( options.key ) ) );
         }
     } else {
-        splog( "getting data '"+options.key+"' from "+options.url, "utilities.js" );
+        fplog( "getting data '"+options.key+"' from "+options.url );
         var oReq = new XMLHttpRequest();
         oReq.addEventListener( 'load', function(){
             if ( storageAvailable( 'localStorage' ) ) {
                 var expires = new Date().getTime() + ( options.expires * 60 * 60 * 1000 );
-                splog( "storing data '" + options.key + "' in localstorage - expires " + expires, "utilities.js" );
+                fplog( "storing data '" + options.key + "' in localstorage - expires " + expires );
                 setWithExpiry( options.key, this.responseText, options.expires );
             }
             if ( options.hasOwnProperty( 'callback' ) && typeof options.callback == 'function' ) {
@@ -130,12 +130,11 @@ function getSVG( url, callback ) {
 /**
  * Logs messages to console if debug flag is set
  * @param {string} message
- * @param {string} filename
  */
- function splog( message, filename ) {
+function fplog( message ) {
     if ( floorplans.conf.debug ) {
         let now = new Date();
-        console.log( now.getHours() + ':' + now.getMinutes().toString().padStart(2, '0') + ':' + now.getSeconds().toString().padStart(2, '0') + '.' + now.getMilliseconds().toString().padStart(3, '0') + ' ' + filename.padEnd(12) + ' - ' + message );
+        console.log( now.getHours() + ':' + now.getMinutes().toString().padStart(2, '0') + ':' + now.getSeconds().toString().padStart(2, '0') + '.' + now.getMilliseconds().toString().padStart(3, '0') + ' ' + message );
     }
 }
 
@@ -329,12 +328,6 @@ document.addEventListener( "DOMContentLoaded", function() {
 		floorplans.map.unproject( [ 0, floorplans.maxHeight ], floorplans.imgconf.maxZoom ),
 		floorplans.map.unproject( [ floorplans.maxWidth, 0 ], floorplans.imgconf.maxZoom )
 	);
-	/* add a little padding */
-	//floorplans.maxBounds = floorplans.mapBounds;
-	/* set the max bounds so images bounce back */
-	//floorplans.map.setMaxBounds( floorplans.maxBounds );
-	/* zoom map to fit */
-	//floorplans.map.fitBounds( floorplans.mapBounds );
     /* show LatLng when map is clicked */
 	if ( floorplans.conf.debug ) {
 		floorplans.map.on("click", function(e) {
@@ -345,6 +338,8 @@ document.addEventListener( "DOMContentLoaded", function() {
 	setupSelecterControl();
 	/* load the starting floor (if there is one) */
 	loadStartFloor();
+    /* fire loaded event */
+    document.dispatchEvent( new Event( 'fpmapready' ) );
 });
        
         
@@ -358,7 +353,7 @@ var addFloorLayer = function( floor ) {
     /* first check to see if the floor has layers set up in the UI already */
     if ( floor.floorlayer ) {
         return new Promise( (resolve, reject) => {
-            splog( 'addFloorLayer - floor layer already present for ' + floor, 'core.js' );
+            fplog( 'addFloorLayer - floor layer already present for ' + floor );
             resolve( floor.floorlayer );
         });
     } else {
@@ -377,7 +372,7 @@ var addFloorLayer = function( floor ) {
              * add that
              */
             im.onload = function() {
-                splog( 'addFloorLayer - image loaded for ' + floor.floorname, 'core.js' );
+                fplog( 'addFloorLayer - image loaded for ' + floor.floorname );
                 let floorimg = L.imageOverlay( floor.imageurl, floor.imageBounds );
                 let floorlayer = L.layerGroup([floorimg]);
                 
@@ -388,7 +383,7 @@ var addFloorLayer = function( floor ) {
                         let shelfClassID = 1;
                         let featureClass = 'leaflet-interactive';
                         floor.selecters = { "shelf": [], "location": [] };
-                        splog( 'addFloorLayer - GeoJSON loaded for ' + floor.floorname, 'core.js' );
+                        fplog( 'addFloorLayer - GeoJSON loaded for ' + floor.floorname );
                         floor.features = L.geoJSON( data, {
                             /**
                              * Add event handlers to features, and collect the features
@@ -426,7 +421,7 @@ var addFloorLayer = function( floor ) {
                         });
                         /* add the features geoJSON layer to the LayerGroup */
                         floorlayer.addLayer( floor.features );
-                        splog( "Added shelf features for "+floor.floorname , 'refactor.js' );
+                        fplog( "Added shelf features for "+floor.floorname );
                         /* store the LayerGroup in the floor object for later... */
                         floor.floorlayer = floorlayer;
                         /* return the LayerGroup */
@@ -635,6 +630,24 @@ function getStartParams() {
                 }
                 params.shelfid = feature.featureid;
                 params.shelfname = feature.name;
+            }
+        }
+    } else if ( window.location.hash !== '' ) {
+        let paramhash = window.location.hash.substring(1).split('/');
+        if ( paramhash[0] === 'health-sciences' ) {
+            params.library = 'health-sciences';
+            params.floorid = 'health-sciences';
+        } else {
+            params.library = paramhash[0];
+        }
+        if ( paramhash.length > 1 ) {
+            if ( params.library === 'health-sciences' ) {
+                params.shelfname = paramhash[1];
+            } else {
+                params.floorid = paramhash[0] + '-' + paramhash[1];
+                if ( paramhash.length > 2 ) {
+                    params.shelfname = paramhash[2];
+                }
             }
         }
     }
@@ -882,7 +895,7 @@ function setupSelecterControl() {
                             floorlayer.addTo( floorplans.map );
                             floorplans.map.fitBounds( floor.imageBounds );
                             floorplans.map.setView( floor.imageBounds.getCenter() );
-                            splog( 'Added layer for floor '+floor.floorname , 'refactor.js' );
+                            fplog( 'Added layer for floor '+floor.floorname );
                         });
                     }
                 });
@@ -996,3 +1009,102 @@ function selectFeature( featureid ) {
     }
 }
 
+/**
+ * Displays occupancy data for two libraries
+ * Set up data container
+ */
+floorplans.occupancyData = {
+    "Edward Boyle": {
+        "floorid": "edwardboyle",
+        "capacity": 1800,
+        "occupancy": 0
+    },
+    "Laidlaw": {
+        "floorid": "laidlaw",
+        "capacity": 640,
+        "occupancy": 0
+    }
+};
+
+/**
+ * Adds a control to the floorplans to display occupancy
+ */
+document.addEventListener( 'fpmapready', e => {
+    L.Control.Occupancy = L.Control.extend({
+        onAdd: function(map) {
+            let c = L.DomUtil.create( 'div', 'hidden' );
+            c.setAttribute( 'id', 'occupancyContainer' );
+            for( lib in floorplans.occupancyData ) {
+                L.DomUtil.create( 'p', 'hidden '+floorplans.occupancyData[lib].floorid+'msg', c );
+            }
+            return c;
+        },
+    
+        onRemove: function(map) {
+            // Nothing to do here
+        }
+    });
+    
+    L.control.occupancy = function( opts ) {
+        return new L.Control.Occupancy( opts );
+    }
+    
+    L.control.occupancy({ position: 'topleft' }).addTo( floorplans.map );
+
+    updateOccupancy();
+    setInterval( updateOccupancy, 5000 );
+});
+/**
+ * get occupancy data from remote JSON file and update 
+ * spacefinder.occupancyData
+ */
+function updateOccupancy() {
+    fplog( 'updateOccupancy' );
+    let options = {
+        url: "https://resources.library.leeds.ac.uk/occupancy.json",
+        key: "libraryOccupancy",
+        expires: 0.015,
+        callback: function( data ) {
+			for( lib in floorplans.occupancyData ) {
+				if ( data.hasOwnProperty( lib ) ) {
+                    fplog( 'Updating occupancy for spaces in '+lib+' to '+data[lib] );
+                    floorplans.occupancyData[lib].occupancy = data[lib];
+                    let msgObj = document.querySelector('.'+floorplans.occupancyData[lib].floorid+'msg');
+                    msgObj.innerHTML = 'There are currently <strong>'+floorplans.occupancyData[lib].occupancy+'</strong> people in <strong>'+lib+' library</strong> which has a seating capacity of approximately <strong>'+floorplans.occupancyData[lib].capacity+'</strong>';
+				} else {
+                    fplog("No occupancy data for "+lib);
+                }
+			}
+        }
+    }
+    getJSON( options );
+}
+
+document.addEventListener( 'DOMContentLoaded', () => {
+    document.addEventListener( 'fpmapready', () => {
+        
+    });
+    L.DomEvent.on( floorselecter, 'change', function(){
+        let c = document.getElementById('occupancyContainer');
+        if ( this.options[this.selectedIndex].value !== '' ) {
+            let floorid = this.options[this.selectedIndex].value;
+            
+            if ( floorid.match( '(edward|laidlaw)' ) ) {
+                console.log(floorid);
+                c.classList.remove('hidden');
+                let activemsg, inactivemsg;
+                if ( floorid.match( 'edward' ) ) {
+                    activemsg = document.querySelector('.edwardboylemsg');
+                    inactivemsg = document.querySelector('.laidlawmsg');
+                } else {
+                    inactivemsg = document.querySelector('.edwardboylemsg');
+                    activemsg = document.querySelector('.laidlawmsg');
+                }
+                inactivemsg.classList.add('hidden');
+                activemsg.classList.remove('hidden');
+            } else {
+                c.classList.add('hidden');
+            }
+        }
+    });
+});

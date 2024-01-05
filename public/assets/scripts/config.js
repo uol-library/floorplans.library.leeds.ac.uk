@@ -1,6 +1,6 @@
 const floorplans = {
 	conf: {
-        debug: false,
+        debug: true,
 		maxZoom: 25,
 		minZoom: 0,
 		startZoom: 19,
