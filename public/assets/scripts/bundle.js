@@ -1070,7 +1070,7 @@ function updateOccupancy() {
                     fplog( 'Updating occupancy for spaces in '+lib+' to '+data[lib] );
                     floorplans.occupancyData[lib].occupancy = data[lib];
                     let msgObj = document.querySelector('.'+floorplans.occupancyData[lib].floorid+'msg');
-                    msgObj.innerHTML = 'There are currently <strong>'+floorplans.occupancyData[lib].occupancy+'</strong> people in <strong>'+lib+' library</strong> which has a seating capacity of approximately <strong>'+floorplans.occupancyData[lib].capacity+'</strong>';
+                    msgObj.innerHTML = 'There are currently <strong>'+floorplans.occupancyData[lib].occupancy+'</strong> people in the <strong>'+lib+' library</strong>, which has a seating capacity of approximately <strong>'+floorplans.occupancyData[lib].capacity+'</strong>';
 				} else {
                     fplog("No occupancy data for "+lib);
                 }
