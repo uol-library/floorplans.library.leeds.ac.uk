@@ -445,7 +445,6 @@ function loadStartFloor() {
         floorplans.imagelayers.forEach( lib => {
             lib.floors.forEach( floor => {
                 if ( floor.floorid === params.floorid ) {
-                    showOccupancyMessage( params.floorid );
                     /* floor found - load data for floor */
                     foundFloor = true;
                     addFloorLayer( floor ).then( ( floorlayer ) => {
@@ -459,7 +458,8 @@ function loadStartFloor() {
                         /* select the floor in the select list */
                         selectFloor( params.floorid );
                         /* find the shelf for the classmark */
-                        selectShelf( floor, params.shelfname )
+                        selectShelf( floor, params.shelfname );
+                        showOccupancyMessage( params.floorid );
                         /* load data for all the other floors */
                         floorplans.imagelayers.forEach( l => {
                             l.floors.forEach( f => {
