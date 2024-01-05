@@ -86,17 +86,17 @@ function getWithExpiry( key ) {
         options.expires = 24;
     }
     if ( storageAvailable( 'localStorage' ) && getWithExpiry( options.key ) ) {
-        splog( "getting data '"+options.key+"' from local storage", "utilities.js" );
+        fplog( "getting data '"+options.key+"' from local storage" );
         if ( options.hasOwnProperty( 'callback' ) && typeof options.callback == 'function' ) {
             options.callback( JSON.parse( getWithExpiry( options.key ) ) );
         }
     } else {
-        splog( "getting data '"+options.key+"' from "+options.url, "utilities.js" );
+        fplog( "getting data '"+options.key+"' from "+options.url );
         var oReq = new XMLHttpRequest();
         oReq.addEventListener( 'load', function(){
             if ( storageAvailable( 'localStorage' ) ) {
                 var expires = new Date().getTime() + ( options.expires * 60 * 60 * 1000 );
-                splog( "storing data '" + options.key + "' in localstorage - expires " + expires, "utilities.js" );
+                fplog( "storing data '" + options.key + "' in localstorage - expires " + expires );
                 setWithExpiry( options.key, this.responseText, options.expires );
             }
             if ( options.hasOwnProperty( 'callback' ) && typeof options.callback == 'function' ) {
@@ -130,11 +130,10 @@ function getSVG( url, callback ) {
 /**
  * Logs messages to console if debug flag is set
  * @param {string} message
- * @param {string} filename
  */
- function splog( message, filename ) {
+function fplog( message ) {
     if ( floorplans.conf.debug ) {
         let now = new Date();
-        console.log( now.getHours() + ':' + now.getMinutes().toString().padStart(2, '0') + ':' + now.getSeconds().toString().padStart(2, '0') + '.' + now.getMilliseconds().toString().padStart(3, '0') + ' ' + filename.padEnd(12) + ' - ' + message );
+        console.log( now.getHours() + ':' + now.getMinutes().toString().padStart(2, '0') + ':' + now.getSeconds().toString().padStart(2, '0') + '.' + now.getMilliseconds().toString().padStart(3, '0') + ' ' + message );
     }
 }

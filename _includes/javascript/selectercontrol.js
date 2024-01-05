@@ -90,7 +90,7 @@ function setupSelecterControl() {
                             floorlayer.addTo( floorplans.map );
                             floorplans.map.fitBounds( floor.imageBounds );
                             floorplans.map.setView( floor.imageBounds.getCenter() );
-                            splog( 'Added layer for floor '+floor.floorname , 'refactor.js' );
+                            fplog( 'Added layer for floor '+floor.floorname );
                         });
                     }
                 });

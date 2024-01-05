@@ -28,12 +28,6 @@ document.addEventListener( "DOMContentLoaded", function() {
 		floorplans.map.unproject( [ 0, floorplans.maxHeight ], floorplans.imgconf.maxZoom ),
 		floorplans.map.unproject( [ floorplans.maxWidth, 0 ], floorplans.imgconf.maxZoom )
 	);
-	/* add a little padding */
-	//floorplans.maxBounds = floorplans.mapBounds;
-	/* set the max bounds so images bounce back */
-	//floorplans.map.setMaxBounds( floorplans.maxBounds );
-	/* zoom map to fit */
-	//floorplans.map.fitBounds( floorplans.mapBounds );
     /* show LatLng when map is clicked */
 	if ( floorplans.conf.debug ) {
 		floorplans.map.on("click", function(e) {
@@ -44,6 +38,8 @@ document.addEventListener( "DOMContentLoaded", function() {
 	setupSelecterControl();
 	/* load the starting floor (if there is one) */
 	loadStartFloor();
+    /* fire loaded event */
+    document.dispatchEvent( new Event( 'fpmapready' ) );
 });
        
         
@@ -57,7 +53,7 @@ var addFloorLayer = function( floor ) {
     /* first check to see if the floor has layers set up in the UI already */
     if ( floor.floorlayer ) {
         return new Promise( (resolve, reject) => {
-            splog( 'addFloorLayer - floor layer already present for ' + floor, 'core.js' );
+            fplog( 'addFloorLayer - floor layer already present for ' + floor );
             resolve( floor.floorlayer );
         });
     } else {
@@ -76,7 +72,7 @@ var addFloorLayer = function( floor ) {
              * add that
              */
             im.onload = function() {
-                splog( 'addFloorLayer - image loaded for ' + floor.floorname, 'core.js' );
+                fplog( 'addFloorLayer - image loaded for ' + floor.floorname );
                 let floorimg = L.imageOverlay( floor.imageurl, floor.imageBounds );
                 let floorlayer = L.layerGroup([floorimg]);
                 
@@ -87,7 +83,7 @@ var addFloorLayer = function( floor ) {
                         let shelfClassID = 1;
                         let featureClass = 'leaflet-interactive';
                         floor.selecters = { "shelf": [], "location": [] };
-                        splog( 'addFloorLayer - GeoJSON loaded for ' + floor.floorname, 'core.js' );
+                        fplog( 'addFloorLayer - GeoJSON loaded for ' + floor.floorname );
                         floor.features = L.geoJSON( data, {
                             /**
                              * Add event handlers to features, and collect the features
@@ -125,7 +121,7 @@ var addFloorLayer = function( floor ) {
                         });
                         /* add the features geoJSON layer to the LayerGroup */
                         floorlayer.addLayer( floor.features );
-                        splog( "Added shelf features for "+floor.floorname , 'refactor.js' );
+                        fplog( "Added shelf features for "+floor.floorname );
                         /* store the LayerGroup in the floor object for later... */
                         floor.floorlayer = floorlayer;
                         /* return the LayerGroup */
