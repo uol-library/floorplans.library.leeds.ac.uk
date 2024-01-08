@@ -50,16 +50,19 @@ document.addEventListener( 'fpmapready', e => {
 function updateOccupancy() {
     fplog( 'updateOccupancy' );
     let options = {
-        url: "https://resources.library.leeds.ac.uk/occupancy.json",
+        url: "https://resources.library.leeds.ac.uk/capacity.json",
         key: "libraryOccupancy",
         expires: 0.015,
         callback: function( data ) {
 			for( lib in floorplans.occupancyData ) {
 				if ( data.hasOwnProperty( lib ) ) {
-                    fplog( 'Updating occupancy for spaces in '+lib+' to '+data[lib] );
-                    floorplans.occupancyData[lib].occupancy = data[lib];
+                    fplog( 'Updating occupancy for spaces in '+lib+' to '+data[lib].occupancy );
+                    floorplans.occupancyData[lib].occupancy = parseInt(data[lib].occupancy);
+                    floorplans.occupancyData[lib].capacity = parseInt(data[lib].capacity);
                     let msgObj = document.querySelector('.'+floorplans.occupancyData[lib].floorid+'msg');
-                    msgObj.innerHTML = 'There are currently <strong>'+floorplans.occupancyData[lib].occupancy+'</strong> people in the <strong>'+lib+' library</strong>, which has a seating capacity of approximately <strong>'+floorplans.occupancyData[lib].capacity+'</strong>';
+                    let occupancyMsg = floorplans.occupancyData[lib].occupancy < 50? "less than 50": floorplans.occupancyData[lib].occupancy.toLocaleString('en');
+                    let capacityMsg = floorplans.occupancyData[lib].capacity.toLocaleString('en')
+                    msgObj.innerHTML = 'There are currently <strong>'+occupancyMsg+'</strong> people in the <strong>'+lib+' library</strong>, which has a seating capacity of approximately <strong>'+capacityMsg+'</strong>';
 				} else {
                     fplog("No occupancy data for "+lib);
                 }
