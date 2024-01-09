@@ -60,7 +60,7 @@ function updateOccupancy() {
                     floorplans.occupancyData[lib].occupancy = parseInt(data[lib].occupancy);
                     floorplans.occupancyData[lib].capacity = parseInt(data[lib].capacity);
                     let msgObj = document.querySelector('.'+floorplans.occupancyData[lib].floorid+'msg');
-                    let occupancyMsg = floorplans.occupancyData[lib].occupancy < 50? "less than 50": floorplans.occupancyData[lib].occupancy.toLocaleString('en');
+                    let occupancyMsg = floorplans.occupancyData[lib].occupancy < 50? "fewer than 50": floorplans.occupancyData[lib].occupancy.toLocaleString('en');
                     let capacityMsg = floorplans.occupancyData[lib].capacity.toLocaleString('en')
                     msgObj.innerHTML = 'There are currently <strong>'+occupancyMsg+'</strong> people in the <strong>'+lib+' library</strong>, which has a seating capacity of approximately <strong>'+capacityMsg+'</strong>';
 				} else {
