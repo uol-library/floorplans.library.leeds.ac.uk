@@ -13,6 +13,9 @@ host: "localhost"
 google_analytics: ""
 photo_dir: "/assets/photos/"
 lang: "en"
+headers:
+  - name: "content-security-policy"
+    content: "default-src 'none'; script-src 'self' https://*.floorplans.leeds.ac.uk https://cdn.jsdelivr.net/npm/a11y-dialog@7.0.0/dist/a11y-dialog.min.js https://unpkg.com/leaflet@1.9.3/dist/leaflet.js https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v2.8.6/dist/cookieconsent.js https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js; style-src 'self' https://*.floorplans.leeds.ac.uk https://unpkg.com; object-src 'none'; base-uri 'self'; connect-src 'self' https://*.floorplans.leeds.ac.uk https://resources.library.leeds.ac.uk/capacity.json; font-src 'self' https://*.spacefinder.leeds.ac.uk; frame-src 'self'; img-src 'self' https://*.floorplans.leeds.ac.uk data: *.tile.openstreetmap.org server.arcgisonline.com; manifest-src 'self'; media-src 'self'; form-action 'none'; frame-ancestors 'none'; worker-src 'none';"
 dc:
   creator: "University of Leeds"
   dateCreated: "2022-06-06"
