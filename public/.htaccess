@@ -4,7 +4,14 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^/?floorplan$ /floorplans-broker.php [NC,L]
 
 RewriteCond %{REQUEST_URI} !^/floorplans-broker.php$
+RewriteCond %{REQUEST_URI} !^/$
 RewriteCond %{REQUEST_URI} !^/index.html$
 RewriteCond %{REQUEST_URI} !\.(json|jpe?g|png|css|js|woff2?|txt)$
 RewriteRule ^(.*)$ /index.html?path=$0 [NC,L,R=302,QSA]
 
+<IfModule mod_headers.c>
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set Permissions-Policy "geolocation=(self), fullscreen=(self), camera=()"
+    Header set Referrer-Policy "no-referrer-when-downgrade"
+    Header set Content-Security-Policy "default-src 'none'; script-src 'self' https://*.floorplans.leeds.ac.uk https://unpkg.com/leaflet@1.9.3/dist/leaflet.js; style-src 'self' https://*.floorplans.leeds.ac.uk https://unpkg.com/leaflet@1.9.3/dist/leaflet.css; object-src 'none'; base-uri 'self'; connect-src 'self' https://*.floorplans.leeds.ac.uk https://resources.library.leeds.ac.uk/capacity.json; font-src 'self'; frame-src 'self'; img-src 'self' https://*.floorplans.leeds.ac.uk data: *.tile.openstreetmap.org server.arcgisonline.com; manifest-src 'self'; media-src 'self'; form-action 'none'; frame-ancestors 'https://library.leeds.ac.uk'; worker-src 'none';"
+</IfModule>
