@@ -32,3 +32,4 @@ exclude:
   - README.md
   - tests.md
   - node_modules
+  - sync.sh
