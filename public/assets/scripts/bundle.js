@@ -1053,7 +1053,7 @@ document.addEventListener( 'fpmapready', e => {
     L.control.occupancy({ position: 'topleft' }).addTo( floorplans.map );
 
     updateOccupancy();
-    setInterval( updateOccupancy, 5000 );
+    setInterval( updateOccupancy, 60000 );
 });
 /**
  * get occupancy data from remote JSON file and update 
