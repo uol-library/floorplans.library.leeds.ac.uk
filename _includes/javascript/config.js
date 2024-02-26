@@ -1,6 +1,6 @@
 const floorplans = {
 	conf: {
-        debug: true,
+        debug: {% if site.environment == "development" %}true{% else %}false{% endif %},
 		maxZoom: 25,
 		minZoom: 0,
 		startZoom: 19,
