@@ -1,1 +1,1022 @@
-{"type":"FeatureCollection","features":[{"type":"Feature","id":1,"properties":{"name":"Reshelving Area (Silent Study Area)","type":"shelf","class":"d1","desc":""},"geometry":{"type":"Polygon","coordinates":[[[21.3125,-4.1875],[21.4,-4.9875],[35.84375,-3.84375],[35.79,-3.03125]]]}},{"type":"Feature","id":2,"properties":{"name":"Education","type":"shelf","class":"d2","desc":""},"geometry":{"type":"Polygon","coordinates":[[[20.44,-6.56],[20.44,-7.78],[36.03,-7.78],[36.03,-6.56]],[[20.44,-10.03],[20.44,-11.3],[36.03,-11.3],[36.03,-10.03]],[[20.44,-13.56],[20.44,-14.77],[36.03,-14.77],[36.03,-13.56]]]}},{"type":"Feature","id":3,"properties":{"name":"Economics","type":"shelf","class":"d3","desc":""},"geometry":{"type":"Polygon","coordinates":[[[20.44,-17.13],[20.44,-18.29],[36.03,-18.29],[36.03,-17.13]],[[20.44,-20.63],[20.44,-21.78],[36.03,-21.78],[36.03,-20.63]],[[22.62,-26.09],[22.62,-26.71],[25,-26.71],[25,-27.34375],[36.03,-27.38],[36.03,-26.09]]]}},{"type":"Feature","id":4,"properties":{"name":"Computer Studies","type":"shelf","class":"d4","desc":""},"geometry":{"type":"Polygon","coordinates":[[[22.62,-26.71],[25,-26.71],[25,-27.34375],[22.62,-27.34375]],[[20.44,-30.22],[20.44,-30.8125],[33.6,-30.8125],[33.6,-31.41],[36.03,-31.41],[36.03,-30.22]]]}},{"type":"Feature","id":5,"properties":{"name":"Communication Studies","type":"shelf","class":"d5","desc":""},"geometry":{"type":"Polygon","coordinates":[[[20.44,-30.8125],[20.44,-31.41],[33.6,-31.41],[33.6,-30.8125]],[[20.44,-33.75],[20.44,-34.94],[36.03,-34.94],[36.03,-33.75]],[[20.44,-37.25],[20.44,-37.81],[24.91,-37.81],[24.91,-37.25]]]}},{"type":"Feature","id":6,"properties":{"name":"Colour Chemistry","type":"shelf","class":"d6","desc":""},"geometry":{"type":"Polygon","coordinates":[[[24.91,-37.25],[24.91,-37.81],[27.06,-37.81],[27.06,-37.25]]]}},{"type":"Feature","id":7,"properties":{"name":"Civil Engineering","type":"shelf","class":"d7","desc":""},"geometry":{"type":"Polygon","coordinates":[[[27.06,-37.25],[27.06,-38.44],[36.03,-38.44],[36.03,-37.22]]]}},{"type":"Feature","id":8,"properties":{"name":"Chinese","type":"shelf","class":"d8","desc":""},"geometry":{"type":"Polygon","coordinates":[[[24.91,-37.81],[24.91,-38.44],[27.06,-38.44],[27.06,-37.81]]]}},{"type":"Feature","id":9,"properties":{"name":"Chemistry","type":"shelf","class":"d9","desc":""},"geometry":{"type":"Polygon","coordinates":[[[20.44,-37.81],[20.44,-38.44],[24.91,-38.44],[24.91,-37.81]],[[20.44,-40.75],[20.44,-41.33],[27.06,-41.33],[27.06,-40.75]]]}},{"type":"Feature","id":10,"properties":{"name":"Chemical Engineering","type":"shelf","class":"d10","desc":""},"geometry":{"type":"Polygon","coordinates":[[[27.06,-40.75],[27.06,-41.33],[31.43,-41.33],[31.43,-40.75]]]}},{"type":"Feature","id":11,"properties":{"name":"Botany","type":"shelf","class":"d11","desc":""},"geometry":{"type":"Polygon","coordinates":[[[31.43,-40.75],[31.43,-41.33],[33.59,-41.33],[33.59,-40.75]]]}},{"type":"Feature","id":12,"properties":{"name":"Bibliography","type":"shelf","class":"d12","desc":""},"geometry":{"type":"Polygon","coordinates":[[[33.59,-40.75],[33.59,-41.91],[36.03,-41.91],[36.03,-40.75]]]}},{"type":"Feature","id":13,"properties":{"name":"Astronomy","type":"shelf","class":"d13","desc":""},"geometry":{"type":"Polygon","coordinates":[[[31.43,-41.33],[31.43,-41.91],[33.59,-41.91],[33.59,-41.33]]]}},{"type":"Feature","id":14,"properties":{"name":"Art","type":"shelf","class":"d14","desc":""},"geometry":{"type":"Polygon","coordinates":[[[20.44,-41.33],[20.44,-41.91],[31.43,-41.91],[31.43,-41.33]],[[20.44,-44.25],[20.44,-44.83],[24.9,-44.83],[24.9,-45.44],[31.62,-45.44],[31.62,-44.25]],[[33.5,-44.25],[33.5,-45.44],[36.03,-45.44],[36.03,-44.25]]]}},{"type":"Feature","id":15,"properties":{"name":"Architecture","type":"shelf","class":"d15","desc":""},"geometry":{"type":"Polygon","coordinates":[[[20.44,-44.83],[20.44,-45.44],[24.9,-45.44],[24.9,-44.83]]]}},{"type":"Feature","id":16,"properties":{"name":"Archaeology","type":"shelf","class":"d16","desc":""},"geometry":{"type":"Polygon","coordinates":[[[20.44,-47.75],[20.44,-48.36],[22.71,-48.36],[22.71,-47.75]]]}},{"type":"Feature","id":17,"properties":{"name":"Applied Biology","type":"shelf","class":"d17","desc":""},"geometry":{"type":"Polygon","coordinates":[[[22.71,-47.75],[22.71,-48.36],[27.06,-48.36],[27.06,-47.75]]]}},{"type":"Feature","id":18,"properties":{"name":"Anthropology","type":"shelf","class":"d18","desc":""},"geometry":{"type":"Polygon","coordinates":[[[27.06,-47.75],[27.06,-48.36],[29.25,-48.36],[29.25,-47.75]]]}},{"type":"Feature","id":19,"properties":{"name":"Ancient History","type":"shelf","class":"d19","desc":""},"geometry":{"type":"Polygon","coordinates":[[[20.44,-48.36],[20.44,-48.97],[36.03,-48.97],[36.03,-47.75],[29.25,-47.75],[29.25,-48.36]]]}},{"type":"Feature","id":20,"properties":{"name":"Reshelving Area (Group Study Area)","type":"shelf","class":"d20","desc":""},"geometry":{"type":"Polygon","coordinates":[[[67.92,-23.93],[68.5,-24.0625],[71.21875,-13.34375],[70.66,-13.25]]]}},{"type":"Feature","id":21,"properties":{"name":"Electrical Engineering","type":"shelf","class":"d21","desc":""},"geometry":{"type":"Polygon","coordinates":[[[68.5,-24.0625],[69.16,-24.22],[70.6875,-17.78125],[70.125,-17.625]]]}},{"type":"Feature","id":22,"properties":{"name":"Engineering","type":"shelf","class":"d22","desc":""},"geometry":{"type":"Polygon","coordinates":[[[70.125,-17.625],[70.6875,-17.78125],[71.81,-13.53],[71.21875,-13.34375]]]}},{"type":"Feature","id":23,"properties":{"name":"English","type":"shelf","class":"d23","desc":""},"geometry":{"type":"Polygon","coordinates":[[[71.28125,-24.78125],[72.4375,-25.0625],[75.15625,-14.34375],[74.03125,-14.0625]],[[74.65625,-25.625],[75.8125,-25.90625],[78.53125,-15.1875],[77.375,-14.875]],[[78.5625,-24.40625],[79.71875,-24.6875],[81.90625,-16.03125],[80.78125,-15.71875]],[[82.75,-27.6875],[83.90625,-27.9375],[86.625,-17.25],[85.4375,-16.9375]],[[86.125,-28.5],[87.28125,-28.8125],[90,-18.125],[88.84375,-17.78125]]]}},{"type":"Feature","id":24,"properties":{"name":"Food","type":"shelf","class":"d24","desc":""},"geometry":{"type":"Polygon","coordinates":[[[89.46875,-29.375],[90.65625,-29.65625],[91.1875,-27.4375],[90.625,-27.28125],[92.78125,-18.78125],[92.25,-18.625]]]}},{"type":"Feature","id":25,"properties":{"name":"French","type":"shelf","class":"d1","desc":""},"geometry":{"type":"Polygon","coordinates":[[[90.625,-27.283],[91.1875,-27.4375],[93.375,-18.9375],[92.78125,-18.78125]],[[94.71875,-28.53],[95.875,-28.8125],[96.4375,-26.5625],[95.875,-26.395],[97.5,-20],[96.90625,-19.84375]]]}},{"type":"Feature","id":26,"properties":{"name":"Fuel","type":"shelf","class":"d2","desc":""},"geometry":{"type":"Polygon","coordinates":[[[95.875,-26.395],[96.4375,-26.5625],[96.96875,-24.46875],[96.40625,-24.3125]]]}},{"type":"Feature","id":27,"properties":{"name":"General Biology","type":"shelf","class":"d3","desc":""},"geometry":{"type":"Polygon","coordinates":[[[96.40625,-24.3125],[96.96875,-24.46875],[98.09375,-20.15625],[97.5,-20]],[[97.5625,-31.46875],[98.71875,-31.71875],[101.46875,-21],[100.28125,-20.6875]],[[100.90625,-32.28125],[102.09375,-32.59375],[104.84375,-21.875],[103.65625,-21.53125]]]}},{"type":"Feature","id":28,"properties":{"name":"General Languages","type":"shelf","class":"d4","desc":""},"geometry":{"type":"Polygon","coordinates":[[[106.3125,-25.21875],[106.91,-25.38],[107.1,-24.81],[106.46875,-24.625]]]}},{"type":"Feature","id":29,"properties":{"name":"General Classics","type":"shelf","class":"d5","desc":""},"geometry":{"type":"Polygon","coordinates":[[[106.46875,-24.625],[107.1,-24.81],[107.625,-22.5625],[107.03125,-22.40625]]]}},{"type":"Feature","id":30,"properties":{"name":"General Science","type":"shelf","class":"d6","desc":""},"geometry":{"type":"Polygon","coordinates":[[[107.1,-24.81],[107.61,-24.95],[108.21875,-22.6875],[107.625,-22.5625]]]}},{"type":"Feature","id":31,"properties":{"name":"General Literature","type":"shelf","class":"d7","desc":""},"geometry":{"type":"Polygon","coordinates":[[[104.28125,-33.15625],[105.46875,-33.40625],[107.61,-24.95],[107.1,-24.81],[106.91,-25.38],[106.3125,-25.21875]]]}},{"type":"Feature","id":32,"properties":{"name":"Skills","type":"shelf","class":"d8","desc":""},"geometry":{"type":"Polygon","coordinates":[[[121.9375,-50.90625],[122.53125,-51.0625],[124.15625,-44.21875],[123.53125,-44.03125]]]}},{"type":"Feature","id":33,"properties":{"name":"Group Study Area","type":"location","desc":"","class":"location"},"geometry":{"type":"Polygon","coordinates":[[[64.25,-22.875],[67.375,-23.625],[70,-12.375],[108.625,-22.375],[106,-33.25],[125,-38.25],[126.75,-32.125],[112.125,-28.5],[115.625,-15.625],[69.25,-3.75]]]}},{"type":"Feature","id":34,"properties":{"name":"Group Booths","type":"location","desc":"","class":"location"},"geometry":{"type":"Polygon","coordinates":[[[91.53125,-36.625],[108.46875,-40.46875],[106.03125,-51.65625],[89,-47.71875]]]}},{"type":"Feature","id":35,"properties":{"name":"Teaching Rooms","type":"location","desc":"","class":"location"},"geometry":{"type":"Polygon","coordinates":[[[63.4375,-56.625],[104.4375,-56.625],[104.5,-79.8125],[63.4375,-79.8125]]]}},{"type":"Feature","id":36,"properties":{"name":"Silent Study Area","type":"location","desc":"","class":"location"},"geometry":{"type":"Polygon","coordinates":[[[3.1875,-5.75],[19.375,-5.125],[19.9375,-49.375],[36.375,-49.4375],[36.3125,-5.875],[20.6875,-5.9375],[38.5625,-3.0625],[38.5,-20.5],[40,-20.8125],[40.0625,-55.6875],[38.25,-55.625],[38.375,-65.6875],[40,-65.875],[40,-70.375],[43.3125,-70.875],[42.75,-79.6875],[29.6875,-79.5]]]}},{"type":"Feature","id":37,"properties":{"name":"Skills@Library Office","type":"location","desc":"Find out more about the services offered by Skills@Library <a class=\"external\" target=\"_blank\" href=\"https://library.leeds.ac.uk/skills\">on the Skills@Library website.</a>","class":"location"},"geometry":{"type":"Polygon","coordinates":[[[122,-56.125],[134.375,-56.125],[134.375,-79.5625],[121.9375,-79.3125]]]}},{"type":"Feature","id":38,"properties":{"name":"Footsteps Fund Room","type":"location","desc":"","class":"location"},"geometry":{"type":"Polygon","coordinates":[[[130.75,-18.4375],[155.25,-24.5625],[150.3125,-43],[126.0625,-36.6875]]]}},{"type":"Feature","id":39,"properties":{"name":"Skills@Library Zone","type":"location","desc":"","class":"location"},"geometry":{"type":"Polygon","coordinates":[[[125.9375,-37.1875],[150.25,-43.875],[147.1875,-55.875],[121.9375,-55.1875]]]}},{"type":"Feature","id":40,"properties":{"name":"Skills Meeting Pods","type":"location","desc":"The Skills Pods are used for 1-1 appointments with our Learning Advisors. Our Skills@Library team can help you with developing a wide range of academic skills and strategies, on topics including academic writing, reading and finding information. <a class=\"external\" target=\"_blank\" href=\"https://library.leeds.ac.uk/skills-1-to-1-support\">Find out more.</a>.","class":"location"},"geometry":{"type":"Polygon","coordinates":[[[108.6875,-40.65625],[123.46875,-43.78125],[121.71875,-50.9375],[107.09375,-47.625]]]}},{"type":"Feature","id":41,"properties":{"name":"Print, Scan, Copy","type":"location","desc":"Find out more about Print, scan and copy at the Library, including how and where you can print, copy and scan and buying print credit <a class=\"external\" target=\"_blank\" href=\"https://it.leeds.ac.uk/info/65/print_scan_and_copy\">on the IT website.</a>","class":"location"},"geometry":{"type":"Polygon","coordinates":[[[40.5,-26],[47.8125,-25.86],[47.8125,-35.5],[40.5625,-35.4375]]]}},{"type":"Feature","id":42,"properties":{"name":"PC Availability","type":"location","desc":"","class":"location"},"geometry":{"type":"Polygon","coordinates":[[[48,-35],[53,-35],[53,-26],[48,-26]]]}}]}
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": 1,
+      "properties": {
+        "name": "Reshelving Area (Silent Study Area)",
+        "type": "shelf",
+        "class": "d1",
+        "desc": ""
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [21.3125, -4.1875],
+            [21.4, -4.9875],
+            [35.84375, -3.84375],
+            [35.79, -3.03125]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 2,
+      "properties": {
+        "name": "Education",
+        "type": "shelf",
+        "class": "d2",
+        "desc": ""
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [20.44, -6.56],
+            [20.44, -7.78],
+            [36.03, -7.78],
+            [36.03, -6.56]
+          ],
+          [
+            [20.44, -10.03],
+            [20.44, -11.3],
+            [36.03, -11.3],
+            [36.03, -10.03]
+          ],
+          [
+            [20.44, -13.56],
+            [20.44, -14.77],
+            [36.03, -14.77],
+            [36.03, -13.56]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3,
+      "properties": {
+        "name": "Economics",
+        "type": "shelf",
+        "class": "d3",
+        "desc": ""
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [20.44, -17.13],
+            [20.44, -18.29],
+            [36.03, -18.29],
+            [36.03, -17.13]
+          ],
+          [
+            [20.44, -20.63],
+            [20.44, -21.78],
+            [36.03, -21.78],
+            [36.03, -20.63]
+          ],
+          [
+            [22.62, -26.09],
+            [22.62, -26.71],
+            [25, -26.71],
+            [25, -27.34375],
+            [36.03, -27.38],
+            [36.03, -26.09]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4,
+      "properties": {
+        "name": "Computer Studies",
+        "type": "shelf",
+        "class": "d4",
+        "desc": ""
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [22.62, -26.71],
+            [25, -26.71],
+            [25, -27.34375],
+            [22.62, -27.34375]
+          ],
+          [
+            [20.44, -30.22],
+            [20.44, -30.8125],
+            [33.6, -30.8125],
+            [33.6, -31.41],
+            [36.03, -31.41],
+            [36.03, -30.22]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5,
+      "properties": {
+        "name": "Communication Studies",
+        "type": "shelf",
+        "class": "d5",
+        "desc": ""
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [20.44, -30.8125],
+            [20.44, -31.41],
+            [33.6, -31.41],
+            [33.6, -30.8125]
+          ],
+          [
+            [20.44, -33.75],
+            [20.44, -34.94],
+            [36.03, -34.94],
+            [36.03, -33.75]
+          ],
+          [
+            [20.44, -37.25],
+            [20.44, -37.81],
+            [24.91, -37.81],
+            [24.91, -37.25]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6,
+      "properties": {
+        "name": "Colour Chemistry",
+        "type": "shelf",
+        "class": "d6",
+        "desc": ""
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [24.91, -37.25],
+            [24.91, -37.81],
+            [27.06, -37.81],
+            [27.06, -37.25]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 7,
+      "properties": {
+        "name": "Civil Engineering",
+        "type": "shelf",
+        "class": "d7",
+        "desc": ""
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [27.06, -37.25],
+            [27.06, -38.44],
+            [36.03, -38.44],
+            [36.03, -37.22]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 8,
+      "properties": {
+        "name": "Chinese",
+        "type": "shelf",
+        "class": "d8",
+        "desc": ""
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [24.91, -37.81],
+            [24.91, -38.44],
+            [27.06, -38.44],
+            [27.06, -37.81]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 9,
+      "properties": {
+        "name": "Chemistry",
+        "type": "shelf",
+        "class": "d9",
+        "desc": ""
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [20.44, -37.81],
+            [20.44, -38.44],
+            [24.91, -38.44],
+            [24.91, -37.81]
+          ],
+          [
+            [20.44, -40.75],
+            [20.44, -41.33],
+            [27.06, -41.33],
+            [27.06, -40.75]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10,
+      "properties": {
+        "name": "Chemical Engineering",
+        "type": "shelf",
+        "class": "d10",
+        "desc": ""
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [27.06, -40.75],
+            [27.06, -41.33],
+            [31.43, -41.33],
+            [31.43, -40.75]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11,
+      "properties": {
+        "name": "Botany",
+        "type": "shelf",
+        "class": "d11",
+        "desc": ""
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [31.43, -40.75],
+            [31.43, -41.33],
+            [33.59, -41.33],
+            [33.59, -40.75]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12,
+      "properties": {
+        "name": "Bibliography",
+        "type": "shelf",
+        "class": "d12",
+        "desc": ""
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [33.59, -40.75],
+            [33.59, -41.91],
+            [36.03, -41.91],
+            [36.03, -40.75]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 13,
+      "properties": {
+        "name": "Astronomy",
+        "type": "shelf",
+        "class": "d13",
+        "desc": ""
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [31.43, -41.33],
+            [31.43, -41.91],
+            [33.59, -41.91],
+            [33.59, -41.33]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 14,
+      "properties": {
+        "name": "Art",
+        "type": "shelf",
+        "class": "d14",
+        "desc": ""
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [20.44, -41.33],
+            [20.44, -41.91],
+            [31.43, -41.91],
+            [31.43, -41.33]
+          ],
+          [
+            [20.44, -44.25],
+            [20.44, -44.83],
+            [24.9, -44.83],
+            [24.9, -45.44],
+            [31.62, -45.44],
+            [31.62, -44.25]
+          ],
+          [
+            [33.5, -44.25],
+            [33.5, -45.44],
+            [36.03, -45.44],
+            [36.03, -44.25]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 15,
+      "properties": {
+        "name": "Architecture",
+        "type": "shelf",
+        "class": "d15",
+        "desc": ""
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [20.44, -44.83],
+            [20.44, -45.44],
+            [24.9, -45.44],
+            [24.9, -44.83]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 16,
+      "properties": {
+        "name": "Archaeology",
+        "type": "shelf",
+        "class": "d16",
+        "desc": ""
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [20.44, -47.75],
+            [20.44, -48.36],
+            [22.71, -48.36],
+            [22.71, -47.75]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 17,
+      "properties": {
+        "name": "Applied Biology",
+        "type": "shelf",
+        "class": "d17",
+        "desc": ""
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [22.71, -47.75],
+            [22.71, -48.36],
+            [27.06, -48.36],
+            [27.06, -47.75]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 18,
+      "properties": {
+        "name": "Anthropology",
+        "type": "shelf",
+        "class": "d18",
+        "desc": ""
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [27.06, -47.75],
+            [27.06, -48.36],
+            [29.25, -48.36],
+            [29.25, -47.75]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 19,
+      "properties": {
+        "name": "Ancient History",
+        "type": "shelf",
+        "class": "d19",
+        "desc": ""
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [20.44, -48.36],
+            [20.44, -48.97],
+            [36.03, -48.97],
+            [36.03, -47.75],
+            [29.25, -47.75],
+            [29.25, -48.36]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 20,
+      "properties": {
+        "name": "Reshelving Area (Group Study Area)",
+        "type": "shelf",
+        "class": "d20",
+        "desc": ""
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [67.92, -23.93],
+            [68.5, -24.0625],
+            [71.21875, -13.34375],
+            [70.66, -13.25]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 21,
+      "properties": {
+        "name": "Electrical Engineering",
+        "type": "shelf",
+        "class": "d21",
+        "desc": ""
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [68.5, -24.0625],
+            [69.16, -24.22],
+            [70.6875, -17.78125],
+            [70.125, -17.625]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 22,
+      "properties": {
+        "name": "Engineering",
+        "type": "shelf",
+        "class": "d22",
+        "desc": ""
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [70.125, -17.625],
+            [70.6875, -17.78125],
+            [71.81, -13.53],
+            [71.21875, -13.34375]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 23,
+      "properties": {
+        "name": "English",
+        "type": "shelf",
+        "class": "d23",
+        "desc": ""
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [71.28125, -24.78125],
+            [72.4375, -25.0625],
+            [75.15625, -14.34375],
+            [74.03125, -14.0625]
+          ],
+          [
+            [74.65625, -25.625],
+            [75.8125, -25.90625],
+            [78.53125, -15.1875],
+            [77.375, -14.875]
+          ],
+          [
+            [78.5625, -24.40625],
+            [79.71875, -24.6875],
+            [81.90625, -16.03125],
+            [80.78125, -15.71875]
+          ],
+          [
+            [82.75, -27.6875],
+            [83.90625, -27.9375],
+            [86.625, -17.25],
+            [85.4375, -16.9375]
+          ],
+          [
+            [86.125, -28.5],
+            [87.28125, -28.8125],
+            [90, -18.125],
+            [88.84375, -17.78125]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 24,
+      "properties": {
+        "name": "Food",
+        "type": "shelf",
+        "class": "d24",
+        "desc": ""
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [89.46875, -29.375],
+            [90.65625, -29.65625],
+            [91.1875, -27.4375],
+            [90.625, -27.28125],
+            [92.78125, -18.78125],
+            [92.25, -18.625]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 25,
+      "properties": {
+        "name": "French",
+        "type": "shelf",
+        "class": "d1",
+        "desc": ""
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [90.625, -27.283],
+            [91.1875, -27.4375],
+            [93.375, -18.9375],
+            [92.78125, -18.78125]
+          ],
+          [
+            [94.71875, -28.53],
+            [95.875, -28.8125],
+            [96.4375, -26.5625],
+            [95.875, -26.395],
+            [97.5, -20],
+            [96.90625, -19.84375]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 26,
+      "properties": {
+        "name": "Fuel",
+        "type": "shelf",
+        "class": "d2",
+        "desc": ""
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.875, -26.395],
+            [96.4375, -26.5625],
+            [96.96875, -24.46875],
+            [96.40625, -24.3125]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 27,
+      "properties": {
+        "name": "General Biology",
+        "type": "shelf",
+        "class": "d3",
+        "desc": ""
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [96.40625, -24.3125],
+            [96.96875, -24.46875],
+            [98.09375, -20.15625],
+            [97.5, -20]
+          ],
+          [
+            [97.5625, -31.46875],
+            [98.71875, -31.71875],
+            [101.46875, -21],
+            [100.28125, -20.6875]
+          ],
+          [
+            [100.90625, -32.28125],
+            [102.09375, -32.59375],
+            [104.84375, -21.875],
+            [103.65625, -21.53125]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 28,
+      "properties": {
+        "name": "General Languages",
+        "type": "shelf",
+        "class": "d4",
+        "desc": ""
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [106.3125, -25.21875],
+            [106.91, -25.38],
+            [107.1, -24.81],
+            [106.46875, -24.625]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 29,
+      "properties": {
+        "name": "General Classics",
+        "type": "shelf",
+        "class": "d5",
+        "desc": ""
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [106.46875, -24.625],
+            [107.1, -24.81],
+            [107.625, -22.5625],
+            [107.03125, -22.40625]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 30,
+      "properties": {
+        "name": "General Science",
+        "type": "shelf",
+        "class": "d6",
+        "desc": ""
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [107.1, -24.81],
+            [107.61, -24.95],
+            [108.21875, -22.6875],
+            [107.625, -22.5625]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 31,
+      "properties": {
+        "name": "General Literature",
+        "type": "shelf",
+        "class": "d7",
+        "desc": ""
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [104.28125, -33.15625],
+            [105.46875, -33.40625],
+            [107.61, -24.95],
+            [107.1, -24.81],
+            [106.91, -25.38],
+            [106.3125, -25.21875]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 32,
+      "properties": {
+        "name": "Skills",
+        "type": "shelf",
+        "class": "d8",
+        "desc": ""
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [121.9375, -50.90625],
+            [122.53125, -51.0625],
+            [124.15625, -44.21875],
+            [123.53125, -44.03125]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 33,
+      "properties": {
+        "name": "Group Study Area",
+        "type": "location",
+        "desc": "",
+        "class": "location"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [64.25, -22.875],
+            [67.375, -23.625],
+            [70, -12.375],
+            [108.625, -22.375],
+            [106, -33.25],
+            [125, -38.25],
+            [126.75, -32.125],
+            [112.125, -28.5],
+            [115.625, -15.625],
+            [69.25, -3.75]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 34,
+      "properties": {
+        "name": "Group Booths",
+        "type": "location",
+        "desc": "",
+        "class": "location"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [91.53125, -36.625],
+            [108.46875, -40.46875],
+            [106.03125, -51.65625],
+            [89, -47.71875]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 35,
+      "properties": {
+        "name": "Teaching Rooms",
+        "type": "location",
+        "desc": "",
+        "class": "location"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [63.4375, -56.625],
+            [104.4375, -56.625],
+            [104.5, -79.8125],
+            [63.4375, -79.8125]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 36,
+      "properties": {
+        "name": "Silent Study Area",
+        "type": "location",
+        "desc": "",
+        "class": "location"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [3.1875, -5.75],
+            [19.375, -5.125],
+            [19.9375, -49.375],
+            [36.375, -49.4375],
+            [36.3125, -5.875],
+            [20.6875, -5.9375],
+            [38.5625, -3.0625],
+            [38.5, -20.5],
+            [40, -20.8125],
+            [40.0625, -55.6875],
+            [38.25, -55.625],
+            [38.375, -65.6875],
+            [40, -65.875],
+            [40, -70.375],
+            [43.3125, -70.875],
+            [42.75, -79.6875],
+            [29.6875, -79.5]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 37,
+      "properties": {
+        "name": "Silent Study Area",
+        "type": "location",
+        "desc": "",
+        "class": "location"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [122, -56.125],
+            [134.375, -56.125],
+            [134.375, -79.5625],
+            [121.9375, -79.3125]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 38,
+      "properties": {
+        "name": "Footsteps Fund Room",
+        "type": "location",
+        "desc": "",
+        "class": "location"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [130.75, -18.4375],
+            [155.25, -24.5625],
+            [150.3125, -43],
+            [126.0625, -36.6875]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 39,
+      "properties": {
+        "name": "Skills@Library Zone",
+        "type": "location",
+        "desc": "",
+        "class": "location"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [125.9375, -37.1875],
+            [150.25, -43.875],
+            [147.1875, -55.875],
+            [121.9375, -55.1875]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 40,
+      "properties": {
+        "name": "Skills Meeting Pods",
+        "type": "location",
+        "desc": "The Skills Pods are used for 1-1 appointments with our Learning Advisors. Our Skills@Library team can help you with developing a wide range of academic skills and strategies, on topics including academic writing, reading and finding information. <a class=\"external\" target=\"_blank\" href=\"https://library.leeds.ac.uk/skills-1-to-1-support\">Find out more.</a>.",
+        "class": "location"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [108.6875, -40.65625],
+            [123.46875, -43.78125],
+            [121.71875, -50.9375],
+            [107.09375, -47.625]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 41,
+      "properties": {
+        "name": "Print, Scan, Copy",
+        "type": "location",
+        "desc": "Find out more about Print, scan and copy at the Library, including how and where you can print, copy and scan and buying print credit <a class=\"external\" target=\"_blank\" href=\"https://it.leeds.ac.uk/info/65/print_scan_and_copy\">on the IT website.</a>",
+        "class": "location"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [40.5, -26],
+            [47.8125, -25.86],
+            [47.8125, -35.5],
+            [40.5625, -35.4375]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 42,
+      "properties": {
+        "name": "PC Availability",
+        "type": "location",
+        "desc": "",
+        "class": "location"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [48, -35],
+            [53, -35],
+            [53, -26],
+            [48, -26]
+          ]
+        ]
+      }
+    }
+  ]
+}

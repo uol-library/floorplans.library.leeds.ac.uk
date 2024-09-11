@@ -14,3 +14,10 @@ fs.writeFileSync( path.resolve( __dirname, '../assets/scripts/bundle.min.js' ), 
      "selectercontrol.js": fs.readFileSync( path.resolve( __dirname, jsdir, 'selectercontrol.js' ), "utf8" ),
      "occupancycontrol.js": fs.readFileSync( path.resolve( __dirname, jsdir, 'occupancycontrol.js' ), "utf8" )
 }, { toplevel: true } ).code, "utf8" );
+
+fs.writeFileSync( path.resolve( __dirname, '../assets/scripts/editor-bundle.min.js' ), UglifyJS.minify({
+     "utilities.js": fs.readFileSync( path.resolve( __dirname, jsdir, 'utilities.js' ), "utf8" ),
+     "pole-of-inaccessibility.js": fs.readFileSync( path.resolve( __dirname, jsdir, 'pole-of-inaccessibility.js' ), "utf8" ),
+     "editor.js": fs.readFileSync( path.resolve( __dirname, jsdir, 'editor.js' ), "utf8" ),
+     "selectercontrol.js": fs.readFileSync( path.resolve( __dirname, jsdir, 'editorcontrol.js' ), "utf8" )
+}, { toplevel: true } ).code, "utf8" );
