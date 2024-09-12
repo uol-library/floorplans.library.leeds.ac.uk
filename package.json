@@ -4,7 +4,8 @@
   "description": "University of Leeds Library floorplans",
   "main": "index.js",
   "scripts": {
-    "minify": "node _scripts/minify.js"
+    "minify": "node _scripts/minify.js",
+    "updateClassmarks": "node _scripts/getClassmarks.js"
   },
   "repository": {
     "type": "git",

@@ -1,3 +1,7 @@
+/**
+ * Trawls through the GeoJSON files for features in all libraries and builds
+ * a data structure for Classmarks used in routing from Primo requests
+ */
 const fs = require('fs');
 const path = require('path');
 const featuresJSON = fs.readdirSync( path.resolve( __dirname, '../assets/features' ), { encoding: 'utf8' } );
