@@ -1,5 +1,5 @@
 /**
- * Minifies javascript using UglifyJS and SVG using SVGO
+ * Minifies javascript using UglifyJS and minifies features JSON
  */
 const fs = require('fs');
 const path = require('path');
@@ -14,3 +14,12 @@ fs.writeFileSync( path.resolve( __dirname, '../assets/scripts/bundle.min.js' ), 
      "selectercontrol.js": fs.readFileSync( path.resolve( __dirname, jsdir, 'selectercontrol.js' ), "utf8" ),
      "occupancycontrol.js": fs.readFileSync( path.resolve( __dirname, jsdir, 'occupancycontrol.js' ), "utf8" )
 }, { toplevel: true } ).code, "utf8" );
+
+const featuresJSON = fs.readdirSync( path.resolve( __dirname, '../assets/features' ), { encoding: 'utf8' } );
+featuresJSON.forEach( filename => {
+    if ( filename !== '.' && filename !== '..' ) {
+        let data = fs.readFileSync( path.resolve( __dirname, '../assets/features/', filename ) );
+        let jsondata = JSON.parse( data );
+        fs.writeFileSync( path.resolve( __dirname, '../assets/features/', filename ), JSON.stringify( jsondata ) );
+    }
+});
