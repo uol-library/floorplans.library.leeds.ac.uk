@@ -5,9 +5,10 @@ description: >-
   an application using the Leaflet mapping library
   to enable indoor wayfinding in the University's
   library spaces.
-environment: development
-url: "https://floorplans.onrender.com"
+environment: production
+url: "https://dev-floorplans.library.leeds.ac.uk"
 baseurl: ""
+destination: public_dev/
 host: "localhost"
 google_analytics: ""
 photo_dir: "/assets/photos/"
@@ -31,3 +32,6 @@ exclude:
   - README.md
   - tests.md
   - node_modules
+  - sync.sh
+  - public
+  - customHttp.yml

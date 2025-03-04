@@ -33,3 +33,5 @@ exclude:
   - tests.md
   - node_modules
   - sync.sh
+  - public_dev
+  - customHttp.yml
