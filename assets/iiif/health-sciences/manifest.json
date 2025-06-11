@@ -13,7 +13,52 @@
             "type": "Canvas",
             "height": 3840,
             "width": 5952,
-            "items": []
+            "label": {
+                "en": [
+                    "Health Sciences Library"
+                ]
+            },
+            "items": [
+                {
+                    "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/health-sciences/canvas/p1/1",
+                    "type": "AnnotationPage",
+                    "items": [
+                        {
+                            "@context": "http://iiif.io/api/presentation/3/context.json",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/health-sciences/canvas/p1/1/image",
+                            "type": "Annotation",
+                            "motivation": "painting",
+                            "body": {
+                                "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/health-sciences/full/max/0/default.jpg",
+                                "type": "Image",
+                                "label": {
+                                    "en": [
+                                        "Health Sciences Library"
+                                    ]
+                                },
+                                "format": "image/jpeg",
+                                "service": [
+                                    {
+                                        "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/health-sciences/",
+                                        "type": "ImageService3",
+                                        "profile": "level0"
+                                    }
+                                ],
+                                "height": 3840,
+                                "width": 5952
+                            },
+                            "target": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/health-sciences/canvas/p1"
+                        }
+                    ]
+                }
+            ],
+            "annotations": [
+                {
+                    "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/health-sciences/canvas/p1/1",
+                    "type": "AnnotationPage",
+                    "items": []
+                }
+            ]
         }
     ]
 }

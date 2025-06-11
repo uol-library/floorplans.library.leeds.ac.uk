@@ -114,7 +114,44 @@ featuresXML.forEach( filename => {
                     "type": "Canvas",
                     "height": parseInt(jsondata.svg['@_viewBox'].split(',')[2])+metadata[floorID].adjust_y,
                     "width": parseInt(jsondata.svg['@_viewBox'].split(',')[3])+metadata[floorID].adjust_y,
-                    "items": getAnnotations(floorID, jsondata)
+                    "label": { "en": [ metadata[floorID].title ] },
+                    "items": [
+                        {
+                            "id": baseURI+"canvas/p1/1",
+                            "type": "AnnotationPage",
+                            "items": [
+                                {  
+                                    "@context": "http://iiif.io/api/presentation/3/context.json",
+                                    "id": baseURI+"canvas/p1/1/image",
+                                    "type": "Annotation",
+                                    "motivation": "painting",
+                                    "body": {
+                                        "id": baseURI+"full/max/0/default.jpg",
+                                        "type": "Image",
+                                        "label": { "en": [ metadata[floorID].title ] },
+                                        "format": "image/jpeg",
+                                        "service": [
+                                            {
+                                                "id": baseURI,
+                                                "type": "ImageService3",
+                                                "profile": "level0",
+                                            }
+                                        ],
+                                        "height": parseInt(jsondata.svg['@_viewBox'].split(',')[2])+metadata[floorID].adjust_y,
+                                        "width": parseInt(jsondata.svg['@_viewBox'].split(',')[3])+metadata[floorID].adjust_y,
+                                    },
+                                    "target": baseURI+"canvas/p1"
+                                }
+                            ]
+                        }
+                    ],
+                    "annotations":  [
+                        {
+                            "id": baseURI+"canvas/p1/1",
+                            "type": "AnnotationPage",
+                            "items": getAnnotations(floorID, jsondata)
+                        }
+                    ]
                 }
             ]
         };

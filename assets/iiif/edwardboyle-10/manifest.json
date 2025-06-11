@@ -13,7 +13,52 @@
             "type": "Canvas",
             "height": 5000,
             "width": 2327,
-            "items": []
+            "label": {
+                "en": [
+                    "Edward Boyle Library - level 10"
+                ]
+            },
+            "items": [
+                {
+                    "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-10/canvas/p1/1",
+                    "type": "AnnotationPage",
+                    "items": [
+                        {
+                            "@context": "http://iiif.io/api/presentation/3/context.json",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-10/canvas/p1/1/image",
+                            "type": "Annotation",
+                            "motivation": "painting",
+                            "body": {
+                                "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-10/full/max/0/default.jpg",
+                                "type": "Image",
+                                "label": {
+                                    "en": [
+                                        "Edward Boyle Library - level 10"
+                                    ]
+                                },
+                                "format": "image/jpeg",
+                                "service": [
+                                    {
+                                        "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-10/",
+                                        "type": "ImageService3",
+                                        "profile": "level0"
+                                    }
+                                ],
+                                "height": 5000,
+                                "width": 2327
+                            },
+                            "target": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-10/canvas/p1"
+                        }
+                    ]
+                }
+            ],
+            "annotations": [
+                {
+                    "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-10/canvas/p1/1",
+                    "type": "AnnotationPage",
+                    "items": []
+                }
+            ]
         }
     ]
 }

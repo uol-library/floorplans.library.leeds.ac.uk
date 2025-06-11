@@ -13,7 +13,52 @@
             "type": "Canvas",
             "height": 5064,
             "width": 6933,
-            "items": []
+            "label": {
+                "en": [
+                    "Brotherton Library West Wing - level 3"
+                ]
+            },
+            "items": [
+                {
+                    "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/brotherton-w2/canvas/p1/1",
+                    "type": "AnnotationPage",
+                    "items": [
+                        {
+                            "@context": "http://iiif.io/api/presentation/3/context.json",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/brotherton-w2/canvas/p1/1/image",
+                            "type": "Annotation",
+                            "motivation": "painting",
+                            "body": {
+                                "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/brotherton-w2/full/max/0/default.jpg",
+                                "type": "Image",
+                                "label": {
+                                    "en": [
+                                        "Brotherton Library West Wing - level 3"
+                                    ]
+                                },
+                                "format": "image/jpeg",
+                                "service": [
+                                    {
+                                        "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/brotherton-w2/",
+                                        "type": "ImageService3",
+                                        "profile": "level0"
+                                    }
+                                ],
+                                "height": 5064,
+                                "width": 6933
+                            },
+                            "target": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/brotherton-w2/canvas/p1"
+                        }
+                    ]
+                }
+            ],
+            "annotations": [
+                {
+                    "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/brotherton-w2/canvas/p1/1",
+                    "type": "AnnotationPage",
+                    "items": []
+                }
+            ]
         }
     ]
 }
