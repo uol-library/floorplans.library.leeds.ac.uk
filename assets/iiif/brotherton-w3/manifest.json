@@ -1,6 +1,6 @@
 {
     "@context": "http://iiif.io/api/presentation/3/context.json",
-    "id": "https://floorplans.library.leeds.ac.uk/assets/iiif/brotherton-w3/manifest.json",
+    "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/brotherton-w3/manifest.json",
     "type": "Manifest",
     "label": {
         "en": [
@@ -9,10 +9,10 @@
     },
     "items": [
         {
-            "id": "https://floorplans.library.leeds.ac.uk/assets/iiif/brotherton-w3/canvas/p1",
+            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/brotherton-w3/canvas/p1",
             "type": "Canvas",
-            "height": "5049",
-            "width": "6734",
+            "height": 5049,
+            "width": 6734,
             "items": []
         }
     ]

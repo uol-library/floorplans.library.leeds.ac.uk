@@ -26,7 +26,7 @@
   } ],
   "profile" : "level0",
   "width" : 5077,
-  "id" : "https://floorplans.library.leeds.ac.uk/assets/iiif/brotherton-m3",
+  "id" : "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/brotherton-m3",
   "type" : "ImageService3",
   "@context" : "http://iiif.io/api/image/3/context.json",
   "height" : 5784

@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "minify": "node _scripts/minify.js",
-    "updateClassmarks": "node _scripts/getClassmarks.js"
+    "updateClassmarks": "node _scripts/getClassmarks.js",
+    "makeManifests": "node _scripts/makeManifests.js"
   },
   "repository": {
     "type": "git",

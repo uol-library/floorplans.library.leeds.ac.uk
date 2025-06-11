@@ -26,7 +26,7 @@
   } ],
   "profile" : "level0",
   "width" : 3840,
-  "id" : "https://floorplans.library.leeds.ac.uk/assets/iiif/health-sciences",
+  "id" : "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/health-sciences",
   "type" : "ImageService3",
   "@context" : "http://iiif.io/api/image/3/context.json",
   "height" : 5952

@@ -99,7 +99,7 @@ const metadata = {
 featuresXML.forEach( filename => {
     if ( filename !== '.' && filename !== '..' ) {
         let floorID = filename.substring(0,filename.length-4);
-        let baseURI = "https://floorplans.library.leeds.ac.uk/assets/iiif/"+floorID+"/";
+        let baseURI = "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/"+floorID+"/";
         let XMLdata = fs.readFileSync( path.resolve( __dirname, '../assets/svg/', filename ) );
         let jsondata = parser.parse(XMLdata);
         console.log(jsondata);
