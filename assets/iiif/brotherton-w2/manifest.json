@@ -1,0 +1,19 @@
+{
+    "@context": "http://iiif.io/api/presentation/3/context.json",
+    "id": "https://floorplans.library.leeds.ac.uk/assets/iiif/brotherton-w2/manifest.json",
+    "type": "Manifest",
+    "label": {
+        "en": [
+            "Brotherton Library West Wing - level 3"
+        ]
+    },
+    "items": [
+        {
+            "id": "https://floorplans.library.leeds.ac.uk/assets/iiif/brotherton-w2/canvas/p1",
+            "type": "Canvas",
+            "height": "5064",
+            "width": "6933",
+            "items": []
+        }
+    ]
+}

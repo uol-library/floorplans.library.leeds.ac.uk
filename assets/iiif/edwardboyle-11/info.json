@@ -1,0 +1,33 @@
+{
+  "tiles" : [ {
+    "scaleFactors" : [ 32, 16, 8, 4, 2, 1 ],
+    "width" : 1024,
+    "height" : 1024
+  } ],
+  "protocol" : "http://iiif.io/api/image",
+  "sizes" : [ {
+    "width" : 157,
+    "height" : 89
+  }, {
+    "width" : 313,
+    "height" : 178
+  }, {
+    "width" : 625,
+    "height" : 356
+  }, {
+    "width" : 1250,
+    "height" : 712
+  }, {
+    "width" : 2500,
+    "height" : 1424
+  }, {
+    "width" : 5000,
+    "height" : 2847
+  } ],
+  "profile" : "level0",
+  "width" : 5000,
+  "id" : "https://floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11",
+  "type" : "ImageService3",
+  "@context" : "http://iiif.io/api/image/3/context.json",
+  "height" : 2847
+}

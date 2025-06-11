@@ -1,0 +1,19 @@
+{
+    "@context": "http://iiif.io/api/presentation/3/context.json",
+    "id": "https://floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-ground/manifest.json",
+    "type": "Manifest",
+    "label": {
+        "en": [
+            "Laidlaw Library - Ground Floor"
+        ]
+    },
+    "items": [
+        {
+            "id": "https://floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-ground/canvas/p1",
+            "type": "Canvas",
+            "height": "5000",
+            "width": "2614",
+            "items": []
+        }
+    ]
+}

@@ -1,0 +1,33 @@
+{
+  "tiles" : [ {
+    "scaleFactors" : [ 32, 16, 8, 4, 2, 1 ],
+    "width" : 1024,
+    "height" : 1024
+  } ],
+  "protocol" : "http://iiif.io/api/image",
+  "sizes" : [ {
+    "width" : 158,
+    "height" : 211
+  }, {
+    "width" : 316,
+    "height" : 421
+  }, {
+    "width" : 632,
+    "height" : 842
+  }, {
+    "width" : 1263,
+    "height" : 1684
+  }, {
+    "width" : 2525,
+    "height" : 3367
+  }, {
+    "width" : 5049,
+    "height" : 6734
+  } ],
+  "profile" : "level0",
+  "width" : 5049,
+  "id" : "https://floorplans.library.leeds.ac.uk/assets/iiif/brotherton-w3",
+  "type" : "ImageService3",
+  "@context" : "http://iiif.io/api/image/3/context.json",
+  "height" : 6734
+}

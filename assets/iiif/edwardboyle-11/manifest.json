@@ -1,0 +1,19 @@
+{
+    "@context": "http://iiif.io/api/presentation/3/context.json",
+    "id": "https://floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/manifest.json",
+    "type": "Manifest",
+    "label": {
+        "en": [
+            "Edward Boyle Library - level 11"
+        ]
+    },
+    "items": [
+        {
+            "id": "https://floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
+            "type": "Canvas",
+            "height": "5000",
+            "width": "2847",
+            "items": []
+        }
+    ]
+}
