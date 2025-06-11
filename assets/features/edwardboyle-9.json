@@ -1,1 +1,692 @@
-{"type":"FeatureCollection","features":[{"type":"Feature","id":1,"properties":{"name":"Timed-access PCs","type":"location","desc":"","class":"location"},"geometry":{"type":"Polygon","coordinates":[[[96.47,-20.7],[102.13,-20.7],[102.13,-25.16],[96.47,-25.16]]]}},{"type":"Feature","id":2,"properties":{"name":"Timed-access PCs","type":"location","desc":"","class":"location"},"geometry":{"type":"Polygon","coordinates":[[[87.56,-20.7],[93.03,-20.7],[93.03,-25.16],[87.56,-25.16]]]}},{"type":"Feature","id":3,"properties":{"name":"Self Issue Units","type":"location","desc":"Find out more about Self-service at the Library, including what exactly can be done during self-service hours <a class=\"external\" target=\"_blank\" href=\"https://library.leeds.ac.uk/self-service/\">on the Library website.</a>","class":"location"},"geometry":{"type":"Polygon","coordinates":[[[93.03,-25.37],[96.47,-25.37],[96.47,-33.16],[93.03,-33.16]]]}},{"type":"Feature","id":4,"properties":{"name":"Requested Items Area","type":"location","desc":"","class":"location"},"geometry":{"type":"Polygon","coordinates":[[[125.03,-48.75],[131.94,-48.75],[131.94,-59.69],[125.03,-59.69]]]}},{"type":"Feature","id":5,"properties":{"name":"Laptop Loans","type":"location","desc":"","class":"location"},"geometry":{"type":"Polygon","coordinates":[[[104.78,-13.53],[110.16,-13.53],[110.16,-20.6],[104.78,-20.6]]]}},{"type":"Feature","id":6,"properties":{"name":"Money Loader","type":"location","desc":"","class":"location"},"geometry":{"type":"Polygon","coordinates":[[[104.78,-21.31],[110.16,-21.31],[110.16,-23.69],[104.78,-23.69]]]}},{"type":"Feature","id":7,"properties":{"name":"Change Machine","type":"location","desc":"","class":"location"},"geometry":{"type":"Polygon","coordinates":[[[104.78,-24.41],[110.16,-24.41],[110.16,-26.75],[104.78,-26.75]]]}},{"type":"Feature","id":8,"properties":{"name":"Book Return (incl. out of hours)","type":"location","desc":"","class":"location"},"geometry":{"type":"Polygon","coordinates":[[[45.875,-74],[49.156,-74],[49.156,-78.7],[45.875,-78.7]]]}},{"type":"Feature","id":9,"properties":{"name":"Print, Copy, Scan","type":"location","desc":"Find out more about Print, scan and copy at the Library, including how and where you can print, copy and scan and buying print credit <a class=\"external\" target=\"_blank\" href=\"https://it.leeds.ac.uk/info/65/print_scan_and_copy\">on the IT website.</a>","class":"location"},"geometry":{"type":"Polygon","coordinates":[[[93.41,-18.5],[96.22,-18.5],[96.22,-25.37],[93.41,-25.37]]]}},{"type":"Feature","id":10,"properties":{"name":"Welcome Desk","type":"location","desc":"","class":"location"},"geometry":{"type":"Polygon","coordinates":[[[90.44,-57.44],[99.56,-57.44],[99.56,-64],[90.44,-64]]]}},{"type":"Feature","id":11,"properties":{"name":"Group Booth 9.4","type":"location","desc":"","class":"location"},"geometry":{"type":"Polygon","coordinates":[[[75,-14],[81,-14],[81,-19.6],[75,-19.6]]]}},{"type":"Feature","id":12,"properties":{"name":"Group Training Room","type":"location","desc":"","class":"location"},"geometry":{"type":"Polygon","coordinates":[[[26.38,-12.44],[59.63,-12.63],[59.63,-36.38],[54,-36.25],[54,-34.69],[26.75,-34.75]]]}},{"type":"Feature","id":13,"properties":{"name":"Book Return","type":"location","desc":"","class":"location"},"geometry":{"type":"Polygon","coordinates":[[[112.9,-49.25],[120.2,-49.25],[120.2,-53.47],[112.9,-53.47]]]}},{"type":"Feature","id":14,"properties":{"name":"Book Return","type":"location","desc":"","class":"location"},"geometry":{"type":"Polygon","coordinates":[[[106.31,-66.25],[109.78,-66.25],[109.78,-71.09],[106.31,-71.09]]]}},{"type":"Feature","id":15,"properties":{"name":"Day Tickets","type":"location","desc":"","class":"location"},"geometry":{"type":"Polygon","coordinates":[[[106.09,-62.22],[109.91,-62.22],[109.91,-64.31],[106.09,-64.31]]]}},{"type":"Feature","id":16,"properties":{"name":"Cafe","type":"location","desc":"","class":"location"},"geometry":{"type":"Polygon","coordinates":[[[29.75,-54.8125],[48.44,-54.8125],[48.44,-59.625],[54,-59.5625],[54,-56.875],[79.25,-56.9375],[79.375,-72.5],[49.75,-72.5625],[49.75,-71.5],[46.25,-71.5],[46.25,-73.625],[34.5625,-73.5625],[34.5625,-72.6875],[33.5625,-72.6875],[23.125,-73],[23.0625,-60.8125],[29.6875,-60.8125]]]}},{"type":"Feature","id":17,"properties":{"name":"Accessible Study Room 9.3","type":"location","desc":"","class":"location"},"geometry":{"type":"Polygon","coordinates":[[[50,-6.59],[64,-6.59],[64,-12.46],[50,-12.46]]]}},{"type":"Feature","id":26,"properties":{"name":"Online Meeting Room 9.8","type":"location","desc":"","class":"location"},"geometry":{"type":"Polygon","coordinates":[[[48.6,-54.75],[53.75,-54.75],[53.75,-59.25],[48.6,-59.25]]]}},{"type":"Feature","id":18,"properties":{"name":"Accessible Study Room 9.2","type":"location","desc":"","class":"location"},"geometry":{"type":"Polygon","coordinates":[[[60,-28],[65.8,-28],[65.8,-36.5],[60,-36.5]]]}},{"type":"Feature","id":19,"properties":{"name":"Accessible Study Room 9.1","type":"location","desc":"","class":"location"},"geometry":{"type":"Polygon","coordinates":[[[66.16,-28],[71.88,-28],[71.88,-36.5],[66.16,-36.5]]]}},{"type":"Feature","id":20,"properties":{"name":"Enquiry & Help Zone","type":"location","desc":"","class":"location"},"geometry":{"type":"Polygon","coordinates":[[[100,-30.75],[105.5,-30.75],[105.5,-33.3],[100,-33.3]]]}},{"type":"Feature","id":21,"properties":{"name":"Group Study Area","type":"location","desc":"","class":"location"},"geometry":{"type":"Polygon","coordinates":[[[59.94,-12.625],[74.38,-12.625],[74.38,-27.19],[59.94,-27.19]]]}},{"type":"Feature","id":22,"properties":{"name":"Group Booth 9.5","type":"location","desc":"","class":"location"},"geometry":{"type":"Polygon","coordinates":[[[75,-19.6],[81,-19.6],[81,-25],[75,-25]]]}},{"type":"Feature","id":23,"properties":{"name":"Entrance Lobby","type":"location","desc":"","class":"location"},"geometry":{"type":"Polygon","coordinates":[[[90,-64],[100,-64],[100,-73],[90,-73]]]}},{"type":"Feature","id":24,"properties":{"name":"Guest PCs","type":"location","desc":"","class":"location"},"geometry":{"type":"Polygon","coordinates":[[[96.47,-18.4],[102.13,-18.4],[102.13,-20.7],[96.47,-20.7]]]}},{"type":"Feature","id":25,"properties":{"name":"Water Dispenser","type":"location","desc":"","class":"location"},"geometry":{"type":"Polygon","coordinates":[[[130.8,-41.1],[134.8,-41.1],[134.8,-43.8],[130.8,-43.8]]]}}]}
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "id": 1,
+            "properties": {
+                "name": "Wellbeing space",
+                "type": "location",
+                "desc": "",
+                "class": "location"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            95.375,
+                            -6.34375
+                        ],
+                        [
+                            109.65625,
+                            -6.34375
+                        ],
+                        [
+                            109.65625,
+                            -12.75
+                        ],
+                        [
+                            95.375,
+                            -12.75
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 3,
+            "properties": {
+                "name": "Self Issue Units",
+                "type": "location",
+                "desc": "Find out more about Self-service at the Library, including what exactly can be done during self-service hours <a class=\"external\" target=\"_blank\" href=\"https://library.leeds.ac.uk/self-service/\">on the Library website.</a>",
+                "class": "location"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            93.03,
+                            -25.37
+                        ],
+                        [
+                            96.47,
+                            -25.37
+                        ],
+                        [
+                            96.47,
+                            -33.16
+                        ],
+                        [
+                            93.03,
+                            -33.16
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 5,
+            "properties": {
+                "name": "Laptop Loans",
+                "type": "location",
+                "desc": "",
+                "class": "location"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            104.78,
+                            -13.43
+                        ],
+                        [
+                            110.16,
+                            -13.43
+                        ],
+                        [
+                            110.16,
+                            -20.6
+                        ],
+                        [
+                            104.78,
+                            -20.6
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 6,
+            "properties": {
+                "name": "Money Loader",
+                "type": "location",
+                "desc": "",
+                "class": "location"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            104.78,
+                            -21.31
+                        ],
+                        [
+                            110.16,
+                            -21.31
+                        ],
+                        [
+                            110.16,
+                            -23.69
+                        ],
+                        [
+                            104.78,
+                            -23.69
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 7,
+            "properties": {
+                "name": "Change Machine",
+                "type": "location",
+                "desc": "",
+                "class": "location"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            104.78,
+                            -24.41
+                        ],
+                        [
+                            110.16,
+                            -24.41
+                        ],
+                        [
+                            110.16,
+                            -26.75
+                        ],
+                        [
+                            104.78,
+                            -26.75
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 9,
+            "properties": {
+                "name": "Print, Copy, Scan",
+                "type": "location",
+                "desc": "Find out more about Print, scan and copy at the Library, including how and where you can print, copy and scan and buying print credit <a class=\"external\" target=\"_blank\" href=\"https://it.leeds.ac.uk/info/65/print_scan_and_copy\">on the IT website.</a>",
+                "class": "location"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            93.41,
+                            -18.5
+                        ],
+                        [
+                            96.22,
+                            -18.5
+                        ],
+                        [
+                            96.22,
+                            -25.37
+                        ],
+                        [
+                            93.41,
+                            -25.37
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 10,
+            "properties": {
+                "name": "Reception and Enquiry Desk",
+                "type": "location",
+                "desc": "",
+                "class": "location"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            90.44,
+                            -57.44
+                        ],
+                        [
+                            99.56,
+                            -57.44
+                        ],
+                        [
+                            99.56,
+                            -64
+                        ],
+                        [
+                            90.44,
+                            -64
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 11,
+            "properties": {
+                "name": "Group Booth 9.4",
+                "type": "location",
+                "desc": "",
+                "class": "location"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            75,
+                            -14
+                        ],
+                        [
+                            81,
+                            -14
+                        ],
+                        [
+                            81,
+                            -19.6
+                        ],
+                        [
+                            75,
+                            -19.6
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 12,
+            "properties": {
+                "name": "Makerspace",
+                "type": "location",
+                "desc": "",
+                "class": "location"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            26.38,
+                            -12.44
+                        ],
+                        [
+                            59.63,
+                            -12.63
+                        ],
+                        [
+                            59.63,
+                            -36.38
+                        ],
+                        [
+                            54,
+                            -36.25
+                        ],
+                        [
+                            54,
+                            -34.69
+                        ],
+                        [
+                            26.75,
+                            -34.75
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 13,
+            "properties": {
+                "name": "Requested Items Area",
+                "type": "location",
+                "desc": "",
+                "class": "location"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            112.9,
+                            -49.25
+                        ],
+                        [
+                            120.2,
+                            -49.25
+                        ],
+                        [
+                            120.2,
+                            -53.47
+                        ],
+                        [
+                            112.9,
+                            -53.47
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 15,
+            "properties": {
+                "name": "Day Tickets",
+                "type": "location",
+                "desc": "",
+                "class": "location"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            95,
+                            -64.59375
+                        ],
+                        [
+                            99.625,
+                            -64.59375
+                        ],
+                        [
+                            99.625,
+                            -66.3125
+                        ],
+                        [
+                            95,
+                            -66.3125
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 16,
+            "properties": {
+                "name": "Cafe",
+                "type": "location",
+                "desc": "",
+                "class": "location"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            29.75,
+                            -54.8125
+                        ],
+                        [
+                            48.44,
+                            -54.8125
+                        ],
+                        [
+                            48.44,
+                            -59.625
+                        ],
+                        [
+                            54,
+                            -59.5625
+                        ],
+                        [
+                            54,
+                            -56.875
+                        ],
+                        [
+                            79.25,
+                            -56.9375
+                        ],
+                        [
+                            79.375,
+                            -72.5
+                        ],
+                        [
+                            49.75,
+                            -72.5625
+                        ],
+                        [
+                            49.75,
+                            -71.5
+                        ],
+                        [
+                            46.25,
+                            -71.5
+                        ],
+                        [
+                            46.25,
+                            -73.625
+                        ],
+                        [
+                            34.5625,
+                            -73.5625
+                        ],
+                        [
+                            34.5625,
+                            -72.6875
+                        ],
+                        [
+                            33.5625,
+                            -72.6875
+                        ],
+                        [
+                            23.125,
+                            -73
+                        ],
+                        [
+                            23.0625,
+                            -60.8125
+                        ],
+                        [
+                            29.6875,
+                            -60.8125
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 17,
+            "properties": {
+                "name": "Accessible Study Room 9.3",
+                "type": "location",
+                "desc": "",
+                "class": "location"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            50,
+                            -6.59
+                        ],
+                        [
+                            64,
+                            -6.59
+                        ],
+                        [
+                            64,
+                            -12.46
+                        ],
+                        [
+                            50,
+                            -12.46
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 26,
+            "properties": {
+                "name": "Online Meeting Room 9.8",
+                "type": "location",
+                "desc": "",
+                "class": "location"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            48.6,
+                            -54.75
+                        ],
+                        [
+                            53.75,
+                            -54.75
+                        ],
+                        [
+                            53.75,
+                            -59.25
+                        ],
+                        [
+                            48.6,
+                            -59.25
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 18,
+            "properties": {
+                "name": "Accessible Study Room 9.2",
+                "type": "location",
+                "desc": "",
+                "class": "location"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            60,
+                            -28
+                        ],
+                        [
+                            65.8,
+                            -28
+                        ],
+                        [
+                            65.8,
+                            -36.5
+                        ],
+                        [
+                            60,
+                            -36.5
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 19,
+            "properties": {
+                "name": "Accessible Study Room 9.1",
+                "type": "location",
+                "desc": "",
+                "class": "location"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            66.16,
+                            -28
+                        ],
+                        [
+                            71.88,
+                            -28
+                        ],
+                        [
+                            71.88,
+                            -36.5
+                        ],
+                        [
+                            66.16,
+                            -36.5
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 21,
+            "properties": {
+                "name": "Group Study Area",
+                "type": "location",
+                "desc": "",
+                "class": "location"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            59.94,
+                            -12.625
+                        ],
+                        [
+                            74.38,
+                            -12.625
+                        ],
+                        [
+                            74.38,
+                            -27.19
+                        ],
+                        [
+                            59.94,
+                            -27.19
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 22,
+            "properties": {
+                "name": "Group Booth 9.5",
+                "type": "location",
+                "desc": "",
+                "class": "location"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            75,
+                            -19.6
+                        ],
+                        [
+                            81,
+                            -19.6
+                        ],
+                        [
+                            81,
+                            -25
+                        ],
+                        [
+                            75,
+                            -25
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 25,
+            "properties": {
+                "name": "Water Dispenser",
+                "type": "location",
+                "desc": "",
+                "class": "location"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            130.8,
+                            -41.1
+                        ],
+                        [
+                            134.8,
+                            -41.1
+                        ],
+                        [
+                            134.8,
+                            -43.8
+                        ],
+                        [
+                            130.8,
+                            -43.8
+                        ]
+                    ]
+                ]
+            }
+        }
+    ]
+}
