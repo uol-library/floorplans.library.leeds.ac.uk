@@ -99,34 +99,34 @@ const metadata = {
 featuresXML.forEach( filename => {
     if ( filename !== '.' && filename !== '..' ) {
         let floorID = filename.substring(0,filename.length-4);
-        let baseURI = "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/"+floorID+"/";
+        let baseURI = "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/"+floorID;
         let XMLdata = fs.readFileSync( path.resolve( __dirname, '../assets/svg/', filename ) );
         let jsondata = parser.parse(XMLdata);
         console.log(jsondata);
         let manifest = {
             "@context": "http://iiif.io/api/presentation/3/context.json",
-            "id": baseURI+"manifest.json",
+            "id": baseURI+"/manifest.json",
             "type": "Manifest",
             "label": { "en": [ metadata[floorID].title ] },
             "items": [
                 {
-                    "id": baseURI+"canvas/p1",
+                    "id": baseURI+"/canvas/p1",
                     "type": "Canvas",
                     "height": parseInt(jsondata.svg['@_viewBox'].split(',')[2])+metadata[floorID].adjust_y,
                     "width": parseInt(jsondata.svg['@_viewBox'].split(',')[3])+metadata[floorID].adjust_y,
                     "label": { "en": [ metadata[floorID].title ] },
                     "items": [
                         {
-                            "id": baseURI+"canvas/p1/1",
+                            "id": baseURI+"/canvas/p1/1",
                             "type": "AnnotationPage",
                             "items": [
                                 {  
                                     "@context": "http://iiif.io/api/presentation/3/context.json",
-                                    "id": baseURI+"canvas/p1/1/image",
+                                    "id": baseURI+"/canvas/p1/1/image",
                                     "type": "Annotation",
                                     "motivation": "painting",
                                     "body": {
-                                        "id": baseURI+"full/max/0/default.jpg",
+                                        "id": baseURI+"/full/max/0/default.jpg",
                                         "type": "Image",
                                         "label": { "en": [ metadata[floorID].title ] },
                                         "format": "image/jpeg",
@@ -140,14 +140,14 @@ featuresXML.forEach( filename => {
                                         "height": parseInt(jsondata.svg['@_viewBox'].split(',')[2])+metadata[floorID].adjust_y,
                                         "width": parseInt(jsondata.svg['@_viewBox'].split(',')[3])+metadata[floorID].adjust_y,
                                     },
-                                    "target": baseURI+"canvas/p1"
+                                    "target": baseURI+"/canvas/p1"
                                 }
                             ]
                         }
                     ],
                     "annotations":  [
                         {
-                            "id": baseURI+"canvas/p1/1",
+                            "id": baseURI+"/canvas/p1/2",
                             "type": "AnnotationPage",
                             "items": getAnnotations(floorID, jsondata)
                         }
