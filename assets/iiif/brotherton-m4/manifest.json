@@ -39,7 +39,7 @@
                                 "format": "image/jpeg",
                                 "service": [
                                     {
-                                        "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/brotherton-m4/",
+                                        "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/brotherton-m4",
                                         "type": "ImageService3",
                                         "profile": "level0"
                                     }
@@ -54,7 +54,7 @@
             ],
             "annotations": [
                 {
-                    "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/brotherton-m4/canvas/p1/1",
+                    "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/brotherton-m4/canvas/p1/2",
                     "type": "AnnotationPage",
                     "items": []
                 }
