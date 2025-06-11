@@ -101,8 +101,8 @@ featuresXML.forEach( filename => {
         let floorID = filename.substring(0,filename.length-4);
         let baseURI = "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/"+floorID;
         let XMLdata = fs.readFileSync( path.resolve( __dirname, '../assets/svg/', filename ) );
-        let jsondata = parser.parse(XMLdata);
-        console.log(jsondata);
+        let svgdata = parser.parse(XMLdata);
+        console.log(svgdata);
         let manifest = {
             "@context": "http://iiif.io/api/presentation/3/context.json",
             "id": baseURI+"/manifest.json",
@@ -112,8 +112,8 @@ featuresXML.forEach( filename => {
                 {
                     "id": baseURI+"/canvas/p1",
                     "type": "Canvas",
-                    "height": parseInt(jsondata.svg['@_viewBox'].split(',')[2])+metadata[floorID].adjust_y,
-                    "width": parseInt(jsondata.svg['@_viewBox'].split(',')[3])+metadata[floorID].adjust_y,
+                    "height": parseInt(svgdata.svg['@_viewBox'].split(',')[2])+metadata[floorID].adjust_y,
+                    "width": parseInt(svgdata.svg['@_viewBox'].split(',')[3])+metadata[floorID].adjust_y,
                     "label": { "en": [ metadata[floorID].title ] },
                     "items": [
                         {
@@ -137,8 +137,8 @@ featuresXML.forEach( filename => {
                                                 "profile": "level0",
                                             }
                                         ],
-                                        "height": parseInt(jsondata.svg['@_viewBox'].split(',')[2])+metadata[floorID].adjust_y,
-                                        "width": parseInt(jsondata.svg['@_viewBox'].split(',')[3])+metadata[floorID].adjust_y,
+                                        "height": parseInt(svgdata.svg['@_viewBox'].split(',')[2])+metadata[floorID].adjust_y,
+                                        "width": parseInt(svgdata.svg['@_viewBox'].split(',')[3])+metadata[floorID].adjust_y,
                                     },
                                     "target": baseURI+"/canvas/p1"
                                 }
@@ -149,7 +149,7 @@ featuresXML.forEach( filename => {
                         {
                             "id": baseURI+"/canvas/p1/2",
                             "type": "AnnotationPage",
-                            "items": getAnnotations(floorID, jsondata)
+                            "items": getAnnotations(floorID, svgdata)
                         }
                     ]
                 }
@@ -158,7 +158,7 @@ featuresXML.forEach( filename => {
         fs.writeFileSync( path.resolve( __dirname, '../assets/iiif/', floorID, 'manifest.json'), JSON.stringify( manifest, null, 4 ) );
     }
 });
-function getAnnotations(floorID, jsondata) {
+function getAnnotations(floorID, svgdata) {
     return [];
 }
 // {
