@@ -161,8 +161,9 @@ featuresXML.forEach( filename => {
 function getAnnotations( baseURI, svgdata, metadata ) {
     let annotations = [];
     if (svgdata.svg.polygon.length) {
-        let counter = 2;
+        let counter = 1;
         svgdata.svg.polygon.forEach( a => {
+            counter++;
             let pointsArr = a['@_points'].split(' ');
             let pointsArrAdjusted = [];
             pointsArr.forEach( p => {
@@ -198,7 +199,6 @@ function getAnnotations( baseURI, svgdata, metadata ) {
                 }
             );
         });
-        counter++;
     }
     return annotations;
 }
