@@ -56,7 +56,1108 @@
                 {
                     "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/canvas/p1/2",
                     "type": "AnnotationPage",
-                    "items": []
+                    "items": [
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/page/p2/2",
+                            "type": "AnnotationPage",
+                            "items": [
+                                {
+                                    "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-secondpage/p2/2/annotation/p2-svg",
+                                    "type": "Annotation",
+                                    "motivation": "tagging",
+                                    "body": {
+                                        "type": "TextualBody",
+                                        "value": "Music",
+                                        "language": "en",
+                                        "format": "text/plain"
+                                    },
+                                    "target": {
+                                        "type": "SpecificResource",
+                                        "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/canvas/p1",
+                                        "selector": {
+                                            "type": "SvgSelector",
+                                            "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g><polygon points=\"2159,2337 2178,2337 2178,1997 2197,1997 2197,1791 2159,1791\" fill=\"rgba(0,0,0,0)\" cursor=\"pointer\"><title>Music</title></polygon></g></svg>"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/page/p2/2",
+                            "type": "AnnotationPage",
+                            "items": [
+                                {
+                                    "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-secondpage/p2/2/annotation/p2-svg",
+                                    "type": "Annotation",
+                                    "motivation": "tagging",
+                                    "body": {
+                                        "type": "TextualBody",
+                                        "value": "Modern History",
+                                        "language": "en",
+                                        "format": "text/plain"
+                                    },
+                                    "target": {
+                                        "type": "SpecificResource",
+                                        "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/canvas/p1",
+                                        "selector": {
+                                            "type": "SvgSelector",
+                                            "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g><polygon points=\"2179,2336 2197,2337 2197,1997 2178,1997\" fill=\"rgba(0,0,0,0)\" cursor=\"pointer\"><title>Modern History</title></polygon></g></svg>"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/page/p2/2",
+                            "type": "AnnotationPage",
+                            "items": [
+                                {
+                                    "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-secondpage/p2/2/annotation/p2-svg",
+                                    "type": "Annotation",
+                                    "motivation": "tagging",
+                                    "body": {
+                                        "type": "TextualBody",
+                                        "value": "Modern History",
+                                        "language": "en",
+                                        "format": "text/plain"
+                                    },
+                                    "target": {
+                                        "type": "SpecificResource",
+                                        "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/canvas/p1",
+                                        "selector": {
+                                            "type": "SvgSelector",
+                                            "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g><polygon points=\"2268,2337 2307,2337 2307,1792 2268,1792\" fill=\"rgba(0,0,0,0)\" cursor=\"pointer\"><title>Modern History</title></polygon></g></svg>"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/page/p2/2",
+                            "type": "AnnotationPage",
+                            "items": [
+                                {
+                                    "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-secondpage/p2/2/annotation/p2-svg",
+                                    "type": "Annotation",
+                                    "motivation": "tagging",
+                                    "body": {
+                                        "type": "TextualBody",
+                                        "value": "Modern History",
+                                        "language": "en",
+                                        "format": "text/plain"
+                                    },
+                                    "target": {
+                                        "type": "SpecificResource",
+                                        "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/canvas/p1",
+                                        "selector": {
+                                            "type": "SvgSelector",
+                                            "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g><polygon points=\"2376,2337 2413,2337 2413,1792 2375,1792\" fill=\"rgba(0,0,0,0)\" cursor=\"pointer\"><title>Modern History</title></polygon></g></svg>"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/page/p2/2",
+                            "type": "AnnotationPage",
+                            "items": [
+                                {
+                                    "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-secondpage/p2/2/annotation/p2-svg",
+                                    "type": "Annotation",
+                                    "motivation": "tagging",
+                                    "body": {
+                                        "type": "TextualBody",
+                                        "value": "Modern History",
+                                        "language": "en",
+                                        "format": "text/plain"
+                                    },
+                                    "target": {
+                                        "type": "SpecificResource",
+                                        "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/canvas/p1",
+                                        "selector": {
+                                            "type": "SvgSelector",
+                                            "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g><polygon points=\"2485,2337 2522,2337 2522,1792 2485,1792\" fill=\"rgba(0,0,0,0)\" cursor=\"pointer\"><title>Modern History</title></polygon></g></svg>"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/page/p2/2",
+                            "type": "AnnotationPage",
+                            "items": [
+                                {
+                                    "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-secondpage/p2/2/annotation/p2-svg",
+                                    "type": "Annotation",
+                                    "motivation": "tagging",
+                                    "body": {
+                                        "type": "TextualBody",
+                                        "value": "Modern History",
+                                        "language": "en",
+                                        "format": "text/plain"
+                                    },
+                                    "target": {
+                                        "type": "SpecificResource",
+                                        "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/canvas/p1",
+                                        "selector": {
+                                            "type": "SvgSelector",
+                                            "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g><polygon points=\"2590,2337 2632,2337 2632,1856 2590,1856\" fill=\"rgba(0,0,0,0)\" cursor=\"pointer\"><title>Modern History</title></polygon></g></svg>"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/page/p2/2",
+                            "type": "AnnotationPage",
+                            "items": [
+                                {
+                                    "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-secondpage/p2/2/annotation/p2-svg",
+                                    "type": "Annotation",
+                                    "motivation": "tagging",
+                                    "body": {
+                                        "type": "TextualBody",
+                                        "value": "Modern History",
+                                        "language": "en",
+                                        "format": "text/plain"
+                                    },
+                                    "target": {
+                                        "type": "SpecificResource",
+                                        "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/canvas/p1",
+                                        "selector": {
+                                            "type": "SvgSelector",
+                                            "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g><polygon points=\"2698,2337 2717,2337 2717,2131 2698,2131\" fill=\"rgba(0,0,0,0)\" cursor=\"pointer\"><title>Modern History</title></polygon></g></svg>"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/page/p2/2",
+                            "type": "AnnotationPage",
+                            "items": [
+                                {
+                                    "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-secondpage/p2/2/annotation/p2-svg",
+                                    "type": "Annotation",
+                                    "motivation": "tagging",
+                                    "body": {
+                                        "type": "TextualBody",
+                                        "value": "Mining",
+                                        "language": "en",
+                                        "format": "text/plain"
+                                    },
+                                    "target": {
+                                        "type": "SpecificResource",
+                                        "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/canvas/p1",
+                                        "selector": {
+                                            "type": "SvgSelector",
+                                            "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g><polygon points=\"2698,2131 2717,2131 2717,2064 2698,2064\" fill=\"rgba(0,0,0,0)\" cursor=\"pointer\"><title>Mining</title></polygon></g></svg>"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/page/p2/2",
+                            "type": "AnnotationPage",
+                            "items": [
+                                {
+                                    "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-secondpage/p2/2/annotation/p2-svg",
+                                    "type": "Annotation",
+                                    "motivation": "tagging",
+                                    "body": {
+                                        "type": "TextualBody",
+                                        "value": "Mechanical Engineering",
+                                        "language": "en",
+                                        "format": "text/plain"
+                                    },
+                                    "target": {
+                                        "type": "SpecificResource",
+                                        "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/canvas/p1",
+                                        "selector": {
+                                            "type": "SvgSelector",
+                                            "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g><polygon points=\"2698,2064 2717,2064 2717,1864 2735,1864 2735,1791 2698,1791\" fill=\"rgba(0,0,0,0)\" cursor=\"pointer\"><title>Mechanical Engineering</title></polygon></g></svg>"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/page/p2/2",
+                            "type": "AnnotationPage",
+                            "items": [
+                                {
+                                    "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-secondpage/p2/2/annotation/p2-svg",
+                                    "type": "Annotation",
+                                    "motivation": "tagging",
+                                    "body": {
+                                        "type": "TextualBody",
+                                        "value": "Mathematics",
+                                        "language": "en",
+                                        "format": "text/plain"
+                                    },
+                                    "target": {
+                                        "type": "SpecificResource",
+                                        "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/canvas/p1",
+                                        "selector": {
+                                            "type": "SvgSelector",
+                                            "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g><polygon points=\"2717,2337 2735,2337 2735,1864 2717,1864\" fill=\"rgba(0,0,0,0)\" cursor=\"pointer\"><title>Mathematics</title></polygon></g></svg>"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/page/p2/2",
+                            "type": "AnnotationPage",
+                            "items": [
+                                {
+                                    "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-secondpage/p2/2/annotation/p2-svg",
+                                    "type": "Annotation",
+                                    "motivation": "tagging",
+                                    "body": {
+                                        "type": "TextualBody",
+                                        "value": "Mathematics",
+                                        "language": "en",
+                                        "format": "text/plain"
+                                    },
+                                    "target": {
+                                        "type": "SpecificResource",
+                                        "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/canvas/p1",
+                                        "selector": {
+                                            "type": "SvgSelector",
+                                            "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g><polygon points=\"2806,2336 2824,2336 2824,2063 2806,2063\" fill=\"rgba(0,0,0,0)\" cursor=\"pointer\"><title>Mathematics</title></polygon></g></svg>"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/page/p2/2",
+                            "type": "AnnotationPage",
+                            "items": [
+                                {
+                                    "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-secondpage/p2/2/annotation/p2-svg",
+                                    "type": "Annotation",
+                                    "motivation": "tagging",
+                                    "body": {
+                                        "type": "TextualBody",
+                                        "value": "Materials",
+                                        "language": "en",
+                                        "format": "text/plain"
+                                    },
+                                    "target": {
+                                        "type": "SpecificResource",
+                                        "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/canvas/p1",
+                                        "selector": {
+                                            "type": "SvgSelector",
+                                            "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g><polygon points=\"2806,2063 2824,2063 2824,1996 2806,1996\" fill=\"rgba(0,0,0,0)\" cursor=\"pointer\"><title>Materials</title></polygon></g></svg>"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/page/p2/2",
+                            "type": "AnnotationPage",
+                            "items": [
+                                {
+                                    "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-secondpage/p2/2/annotation/p2-svg",
+                                    "type": "Annotation",
+                                    "motivation": "tagging",
+                                    "body": {
+                                        "type": "TextualBody",
+                                        "value": "Management",
+                                        "language": "en",
+                                        "format": "text/plain"
+                                    },
+                                    "target": {
+                                        "type": "SpecificResource",
+                                        "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/canvas/p1",
+                                        "selector": {
+                                            "type": "SvgSelector",
+                                            "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g><polygon points=\"2806,1996 2824,1996 2824,2336 2843,2336 2843,1792 2806,1792\" fill=\"rgba(0,0,0,0)\" cursor=\"pointer\"><title>Management</title></polygon></g></svg>"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/page/p2/2",
+                            "type": "AnnotationPage",
+                            "items": [
+                                {
+                                    "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-secondpage/p2/2/annotation/p2-svg",
+                                    "type": "Annotation",
+                                    "motivation": "tagging",
+                                    "body": {
+                                        "type": "TextualBody",
+                                        "value": "Management",
+                                        "language": "en",
+                                        "format": "text/plain"
+                                    },
+                                    "target": {
+                                        "type": "SpecificResource",
+                                        "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/canvas/p1",
+                                        "selector": {
+                                            "type": "SvgSelector",
+                                            "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g><polygon points=\"2914,2337 2955,2337 2955,1792 2914,1792\" fill=\"rgba(0,0,0,0)\" cursor=\"pointer\"><title>Management</title></polygon></g></svg>"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/page/p2/2",
+                            "type": "AnnotationPage",
+                            "items": [
+                                {
+                                    "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-secondpage/p2/2/annotation/p2-svg",
+                                    "type": "Annotation",
+                                    "motivation": "tagging",
+                                    "body": {
+                                        "type": "TextualBody",
+                                        "value": "Management",
+                                        "language": "en",
+                                        "format": "text/plain"
+                                    },
+                                    "target": {
+                                        "type": "SpecificResource",
+                                        "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/canvas/p1",
+                                        "selector": {
+                                            "type": "SvgSelector",
+                                            "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g><polygon points=\"3022,2337 3061,2337 3061,1792 3022,1792\" fill=\"rgba(0,0,0,0)\" cursor=\"pointer\"><title>Management</title></polygon></g></svg>"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/page/p2/2",
+                            "type": "AnnotationPage",
+                            "items": [
+                                {
+                                    "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-secondpage/p2/2/annotation/p2-svg",
+                                    "type": "Annotation",
+                                    "motivation": "tagging",
+                                    "body": {
+                                        "type": "TextualBody",
+                                        "value": "Reshelving Area",
+                                        "language": "en",
+                                        "format": "text/plain"
+                                    },
+                                    "target": {
+                                        "type": "SpecificResource",
+                                        "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/canvas/p1",
+                                        "selector": {
+                                            "type": "SvgSelector",
+                                            "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g><polygon points=\"2190,767 2227,775 2318,435 2280,424\" fill=\"rgba(0,0,0,0)\" cursor=\"pointer\"><title>Reshelving Area</title></polygon></g></svg>"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/page/p2/2",
+                            "type": "AnnotationPage",
+                            "items": [
+                                {
+                                    "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-secondpage/p2/2/annotation/p2-svg",
+                                    "type": "Annotation",
+                                    "motivation": "tagging",
+                                    "body": {
+                                        "type": "TextualBody",
+                                        "value": "Geography",
+                                        "language": "en",
+                                        "format": "text/plain"
+                                    },
+                                    "target": {
+                                        "type": "SpecificResource",
+                                        "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/canvas/p1",
+                                        "selector": {
+                                            "type": "SvgSelector",
+                                            "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g><polygon points=\"2298,795 2335,805 2425,462 2388,452\" fill=\"rgba(0,0,0,0)\" cursor=\"pointer\"><title>Geography</title></polygon></g></svg>"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/page/p2/2",
+                            "type": "AnnotationPage",
+                            "items": [
+                                {
+                                    "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-secondpage/p2/2/annotation/p2-svg",
+                                    "type": "Annotation",
+                                    "motivation": "tagging",
+                                    "body": {
+                                        "type": "TextualBody",
+                                        "value": "Geography",
+                                        "language": "en",
+                                        "format": "text/plain"
+                                    },
+                                    "target": {
+                                        "type": "SpecificResource",
+                                        "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/canvas/p1",
+                                        "selector": {
+                                            "type": "SvgSelector",
+                                            "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g><polygon points=\"2405,824 2442,833 2534,491 2496,480\" fill=\"rgba(0,0,0,0)\" cursor=\"pointer\"><title>Geography</title></polygon></g></svg>"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/page/p2/2",
+                            "type": "AnnotationPage",
+                            "items": [
+                                {
+                                    "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-secondpage/p2/2/annotation/p2-svg",
+                                    "type": "Annotation",
+                                    "motivation": "tagging",
+                                    "body": {
+                                        "type": "TextualBody",
+                                        "value": "Geography",
+                                        "language": "en",
+                                        "format": "text/plain"
+                                    },
+                                    "target": {
+                                        "type": "SpecificResource",
+                                        "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/canvas/p1",
+                                        "selector": {
+                                            "type": "SvgSelector",
+                                            "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g><polygon points=\"2530,785 2568,795 2640,519 2603,508\" fill=\"rgba(0,0,0,0)\" cursor=\"pointer\"><title>Geography</title></polygon></g></svg>"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/page/p2/2",
+                            "type": "AnnotationPage",
+                            "items": [
+                                {
+                                    "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-secondpage/p2/2/annotation/p2-svg",
+                                    "type": "Annotation",
+                                    "motivation": "tagging",
+                                    "body": {
+                                        "type": "TextualBody",
+                                        "value": "Geography",
+                                        "language": "en",
+                                        "format": "text/plain"
+                                    },
+                                    "target": {
+                                        "type": "SpecificResource",
+                                        "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/canvas/p1",
+                                        "selector": {
+                                            "type": "SvgSelector",
+                                            "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g><polygon points=\"2663,891 2700,902 2719,831 2701,825 2771,554 2754,548\" fill=\"rgba(0,0,0,0)\" cursor=\"pointer\"><title>Geography</title></polygon></g></svg>"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/page/p2/2",
+                            "type": "AnnotationPage",
+                            "items": [
+                                {
+                                    "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-secondpage/p2/2/annotation/p2-svg",
+                                    "type": "Annotation",
+                                    "motivation": "tagging",
+                                    "body": {
+                                        "type": "TextualBody",
+                                        "value": "Geology",
+                                        "language": "en",
+                                        "format": "text/plain"
+                                    },
+                                    "target": {
+                                        "type": "SpecificResource",
+                                        "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/canvas/p1",
+                                        "selector": {
+                                            "type": "SvgSelector",
+                                            "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g><polygon points=\"2701,825 2719,831 2791,558 2772,553\" fill=\"rgba(0,0,0,0)\" cursor=\"pointer\"><title>Geology</title></polygon></g></svg>"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/page/p2/2",
+                            "type": "AnnotationPage",
+                            "items": [
+                                {
+                                    "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-secondpage/p2/2/annotation/p2-svg",
+                                    "type": "Annotation",
+                                    "motivation": "tagging",
+                                    "body": {
+                                        "type": "TextualBody",
+                                        "value": "Geology",
+                                        "language": "en",
+                                        "format": "text/plain"
+                                    },
+                                    "target": {
+                                        "type": "SpecificResource",
+                                        "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/canvas/p1",
+                                        "selector": {
+                                            "type": "SvgSelector",
+                                            "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g><polygon points=\"2771,919 2789,925 2880,582 2861,577\" fill=\"rgba(0,0,0,0)\" cursor=\"pointer\"><title>Geology</title></polygon></g></svg>"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/page/p2/2",
+                            "type": "AnnotationPage",
+                            "items": [
+                                {
+                                    "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-secondpage/p2/2/annotation/p2-svg",
+                                    "type": "Annotation",
+                                    "motivation": "tagging",
+                                    "body": {
+                                        "type": "TextualBody",
+                                        "value": "German",
+                                        "language": "en",
+                                        "format": "text/plain"
+                                    },
+                                    "target": {
+                                        "type": "SpecificResource",
+                                        "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/canvas/p1",
+                                        "selector": {
+                                            "type": "SvgSelector",
+                                            "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g><polygon points=\"2789,925 2808,930 2861,725 2843,720\" fill=\"rgba(0,0,0,0)\" cursor=\"pointer\"><title>German</title></polygon></g></svg>"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/page/p2/2",
+                            "type": "AnnotationPage",
+                            "items": [
+                                {
+                                    "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-secondpage/p2/2/annotation/p2-svg",
+                                    "type": "Annotation",
+                                    "motivation": "tagging",
+                                    "body": {
+                                        "type": "TextualBody",
+                                        "value": "Greek",
+                                        "language": "en",
+                                        "format": "text/plain"
+                                    },
+                                    "target": {
+                                        "type": "SpecificResource",
+                                        "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/canvas/p1",
+                                        "selector": {
+                                            "type": "SvgSelector",
+                                            "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g><polygon points=\"2843,720 2861,725 2898,587 2880,582\" fill=\"rgba(0,0,0,0)\" cursor=\"pointer\"><title>Greek</title></polygon></g></svg>"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/page/p2/2",
+                            "type": "AnnotationPage",
+                            "items": [
+                                {
+                                    "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-secondpage/p2/2/annotation/p2-svg",
+                                    "type": "Annotation",
+                                    "motivation": "tagging",
+                                    "body": {
+                                        "type": "TextualBody",
+                                        "value": "Greek",
+                                        "language": "en",
+                                        "format": "text/plain"
+                                    },
+                                    "target": {
+                                        "type": "SpecificResource",
+                                        "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/canvas/p1",
+                                        "selector": {
+                                            "type": "SvgSelector",
+                                            "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g><polygon points=\"2878,949 2897,954 2987,610 2968,605\" fill=\"rgba(0,0,0,0)\" cursor=\"pointer\"><title>Greek</title></polygon></g></svg>"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/page/p2/2",
+                            "type": "AnnotationPage",
+                            "items": [
+                                {
+                                    "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-secondpage/p2/2/annotation/p2-svg",
+                                    "type": "Annotation",
+                                    "motivation": "tagging",
+                                    "body": {
+                                        "type": "TextualBody",
+                                        "value": "History of Science",
+                                        "language": "en",
+                                        "format": "text/plain"
+                                    },
+                                    "target": {
+                                        "type": "SpecificResource",
+                                        "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/canvas/p1",
+                                        "selector": {
+                                            "type": "SvgSelector",
+                                            "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g><polygon points=\"2897,954 2915,958 3006,615 2987,610\" fill=\"rgba(0,0,0,0)\" cursor=\"pointer\"><title>History of Science</title></polygon></g></svg>"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/page/p2/2",
+                            "type": "AnnotationPage",
+                            "items": [
+                                {
+                                    "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-secondpage/p2/2/annotation/p2-svg",
+                                    "type": "Annotation",
+                                    "motivation": "tagging",
+                                    "body": {
+                                        "type": "TextualBody",
+                                        "value": "History of Science",
+                                        "language": "en",
+                                        "format": "text/plain"
+                                    },
+                                    "target": {
+                                        "type": "SpecificResource",
+                                        "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/canvas/p1",
+                                        "selector": {
+                                            "type": "SvgSelector",
+                                            "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g><polygon points=\"3083,783 3101,787 3138,650 3119,645\" fill=\"rgba(0,0,0,0)\" cursor=\"pointer\"><title>History of Science</title></polygon></g></svg>"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/page/p2/2",
+                            "type": "AnnotationPage",
+                            "items": [
+                                {
+                                    "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-secondpage/p2/2/annotation/p2-svg",
+                                    "type": "Annotation",
+                                    "motivation": "tagging",
+                                    "body": {
+                                        "type": "TextualBody",
+                                        "value": "Icelandic",
+                                        "language": "en",
+                                        "format": "text/plain"
+                                    },
+                                    "target": {
+                                        "type": "SpecificResource",
+                                        "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/canvas/p1",
+                                        "selector": {
+                                            "type": "SvgSelector",
+                                            "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g><polygon points=\"3065,850 3084,855 3101,787 3083,783\" fill=\"rgba(0,0,0,0)\" cursor=\"pointer\"><title>Icelandic</title></polygon></g></svg>"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/page/p2/2",
+                            "type": "AnnotationPage",
+                            "items": [
+                                {
+                                    "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-secondpage/p2/2/annotation/p2-svg",
+                                    "type": "Annotation",
+                                    "motivation": "tagging",
+                                    "body": {
+                                        "type": "TextualBody",
+                                        "value": "Italian",
+                                        "language": "en",
+                                        "format": "text/plain"
+                                    },
+                                    "target": {
+                                        "type": "SpecificResource",
+                                        "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/canvas/p1",
+                                        "selector": {
+                                            "type": "SvgSelector",
+                                            "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g><polygon points=\"3065,927 3084,931 3138,726 3119,721\" fill=\"rgba(0,0,0,0)\" cursor=\"pointer\"><title>Italian</title></polygon></g></svg>"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/page/p2/2",
+                            "type": "AnnotationPage",
+                            "items": [
+                                {
+                                    "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-secondpage/p2/2/annotation/p2-svg",
+                                    "type": "Annotation",
+                                    "motivation": "tagging",
+                                    "body": {
+                                        "type": "TextualBody",
+                                        "value": "Japanese",
+                                        "language": "en",
+                                        "format": "text/plain"
+                                    },
+                                    "target": {
+                                        "type": "SpecificResource",
+                                        "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/canvas/p1",
+                                        "selector": {
+                                            "type": "SvgSelector",
+                                            "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g><polygon points=\"3119,721 3138,726 3156,654 3138,650\" fill=\"rgba(0,0,0,0)\" cursor=\"pointer\"><title>Japanese</title></polygon></g></svg>"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/page/p2/2",
+                            "type": "AnnotationPage",
+                            "items": [
+                                {
+                                    "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-secondpage/p2/2/annotation/p2-svg",
+                                    "type": "Annotation",
+                                    "motivation": "tagging",
+                                    "body": {
+                                        "type": "TextualBody",
+                                        "value": "Latin",
+                                        "language": "en",
+                                        "format": "text/plain"
+                                    },
+                                    "target": {
+                                        "type": "SpecificResource",
+                                        "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/canvas/p1",
+                                        "selector": {
+                                            "type": "SvgSelector",
+                                            "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g><polygon points=\"3173,877 3192,883 3246,678 3227,673\" fill=\"rgba(0,0,0,0)\" cursor=\"pointer\"><title>Latin</title></polygon></g></svg>"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/page/p2/2",
+                            "type": "AnnotationPage",
+                            "items": [
+                                {
+                                    "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-secondpage/p2/2/annotation/p2-svg",
+                                    "type": "Annotation",
+                                    "motivation": "tagging",
+                                    "body": {
+                                        "type": "TextualBody",
+                                        "value": "Law",
+                                        "language": "en",
+                                        "format": "text/plain"
+                                    },
+                                    "target": {
+                                        "type": "SpecificResource",
+                                        "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/canvas/p1",
+                                        "selector": {
+                                            "type": "SvgSelector",
+                                            "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g><polygon points=\"3136,1018 3174,1028 3264,683 3246,678 3192,883 3173,877\" fill=\"rgba(0,0,0,0)\" cursor=\"pointer\"><title>Law</title></polygon></g></svg>"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/page/p2/2",
+                            "type": "AnnotationPage",
+                            "items": [
+                                {
+                                    "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-secondpage/p2/2/annotation/p2-svg",
+                                    "type": "Annotation",
+                                    "motivation": "tagging",
+                                    "body": {
+                                        "type": "TextualBody",
+                                        "value": "Law",
+                                        "language": "en",
+                                        "format": "text/plain"
+                                    },
+                                    "target": {
+                                        "type": "SpecificResource",
+                                        "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/canvas/p1",
+                                        "selector": {
+                                            "type": "SvgSelector",
+                                            "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g><polygon points=\"3244,1046 3281,1056 3335,850 3317,845 3353,706 3334,701\" fill=\"rgba(0,0,0,0)\" cursor=\"pointer\"><title>Law</title></polygon></g></svg>"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/page/p2/2",
+                            "type": "AnnotationPage",
+                            "items": [
+                                {
+                                    "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-secondpage/p2/2/annotation/p2-svg",
+                                    "type": "Annotation",
+                                    "motivation": "tagging",
+                                    "body": {
+                                        "type": "TextualBody",
+                                        "value": "Linguistics",
+                                        "language": "en",
+                                        "format": "text/plain"
+                                    },
+                                    "target": {
+                                        "type": "SpecificResource",
+                                        "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/canvas/p1",
+                                        "selector": {
+                                            "type": "SvgSelector",
+                                            "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g><polygon points=\"3317,845 3335,850 3372,711 3353,706\" fill=\"rgba(0,0,0,0)\" cursor=\"pointer\"><title>Linguistics</title></polygon></g></svg>"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/page/p2/2",
+                            "type": "AnnotationPage",
+                            "items": [
+                                {
+                                    "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-secondpage/p2/2/annotation/p2-svg",
+                                    "type": "Annotation",
+                                    "motivation": "tagging",
+                                    "body": {
+                                        "type": "TextualBody",
+                                        "value": "Linguistics",
+                                        "language": "en",
+                                        "format": "text/plain"
+                                    },
+                                    "target": {
+                                        "type": "SpecificResource",
+                                        "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/canvas/p1",
+                                        "selector": {
+                                            "type": "SvgSelector",
+                                            "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g><polygon points=\"3351,1075 3389,1085 3480,739 3442,729\" fill=\"rgba(0,0,0,0)\" cursor=\"pointer\"><title>Linguistics</title></polygon></g></svg>"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/page/p2/2",
+                            "type": "AnnotationPage",
+                            "items": [
+                                {
+                                    "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-secondpage/p2/2/annotation/p2-svg",
+                                    "type": "Annotation",
+                                    "motivation": "tagging",
+                                    "body": {
+                                        "type": "TextualBody",
+                                        "value": "Group Study Area 1",
+                                        "language": "en",
+                                        "format": "text/plain"
+                                    },
+                                    "target": {
+                                        "type": "SpecificResource",
+                                        "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/canvas/p1",
+                                        "selector": {
+                                            "type": "SvgSelector",
+                                            "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g><polygon points=\"2464,1568 2464,1760 2880,1760 2880,1568\" fill=\"rgba(0,0,0,0)\" cursor=\"pointer\"><title>Group Study Area 1</title></polygon></g></svg>"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/page/p2/2",
+                            "type": "AnnotationPage",
+                            "items": [
+                                {
+                                    "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-secondpage/p2/2/annotation/p2-svg",
+                                    "type": "Annotation",
+                                    "motivation": "tagging",
+                                    "body": {
+                                        "type": "TextualBody",
+                                        "value": "Group Booths",
+                                        "language": "en",
+                                        "format": "text/plain"
+                                    },
+                                    "target": {
+                                        "type": "SpecificResource",
+                                        "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/canvas/p1",
+                                        "selector": {
+                                            "type": "SvgSelector",
+                                            "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g><polygon points=\"2848,1536 3200,1632 3296,1280 2912,1184\" fill=\"rgba(0,0,0,0)\" cursor=\"pointer\"><title>Group Booths</title></polygon></g></svg>"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/page/p2/2",
+                            "type": "AnnotationPage",
+                            "items": [
+                                {
+                                    "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-secondpage/p2/2/annotation/p2-svg",
+                                    "type": "Annotation",
+                                    "motivation": "tagging",
+                                    "body": {
+                                        "type": "TextualBody",
+                                        "value": "Group Room 7",
+                                        "language": "en",
+                                        "format": "text/plain"
+                                    },
+                                    "target": {
+                                        "type": "SpecificResource",
+                                        "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/canvas/p1",
+                                        "selector": {
+                                            "type": "SvgSelector",
+                                            "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g><polygon points=\"1311,1212 1311,1573 1529,1579 1528,1208\" fill=\"rgba(0,0,0,0)\" cursor=\"pointer\"><title>Group Room 7</title></polygon></g></svg>"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/page/p2/2",
+                            "type": "AnnotationPage",
+                            "items": [
+                                {
+                                    "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-secondpage/p2/2/annotation/p2-svg",
+                                    "type": "Annotation",
+                                    "motivation": "tagging",
+                                    "body": {
+                                        "type": "TextualBody",
+                                        "value": "Silent Study Area 1",
+                                        "language": "en",
+                                        "format": "text/plain"
+                                    },
+                                    "target": {
+                                        "type": "SpecificResource",
+                                        "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/canvas/p1",
+                                        "selector": {
+                                            "type": "SvgSelector",
+                                            "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g><polygon points=\"2230,134 2066,740 2176,776 2276,418 3483,733 3391,1085 3508,1124 3674,478\" fill=\"rgba(0,0,0,0)\" cursor=\"pointer\"><title>Silent Study Area 1</title></polygon></g></svg>"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/page/p2/2",
+                            "type": "AnnotationPage",
+                            "items": [
+                                {
+                                    "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-secondpage/p2/2/annotation/p2-svg",
+                                    "type": "Annotation",
+                                    "motivation": "tagging",
+                                    "body": {
+                                        "type": "TextualBody",
+                                        "value": "Silent Study Area 2",
+                                        "language": "en",
+                                        "format": "text/plain"
+                                    },
+                                    "target": {
+                                        "type": "SpecificResource",
+                                        "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/canvas/p1",
+                                        "selector": {
+                                            "type": "SvgSelector",
+                                            "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g><polygon points=\"3158,2540 3158,2342 2074,2342 2074,2540\" fill=\"rgba(0,0,0,0)\" cursor=\"pointer\"><title>Silent Study Area 2</title></polygon></g></svg>"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/page/p2/2",
+                            "type": "AnnotationPage",
+                            "items": [
+                                {
+                                    "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-secondpage/p2/2/annotation/p2-svg",
+                                    "type": "Annotation",
+                                    "motivation": "tagging",
+                                    "body": {
+                                        "type": "TextualBody",
+                                        "value": "Silent Study Area 3",
+                                        "language": "en",
+                                        "format": "text/plain"
+                                    },
+                                    "target": {
+                                        "type": "SpecificResource",
+                                        "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/canvas/p1",
+                                        "selector": {
+                                            "type": "SvgSelector",
+                                            "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g><polygon points=\"104,184 928,2528 1328,2516 1252,128\" fill=\"rgba(0,0,0,0)\" cursor=\"pointer\"><title>Silent Study Area 3</title></polygon></g></svg>"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/page/p2/2",
+                            "type": "AnnotationPage",
+                            "items": [
+                                {
+                                    "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-secondpage/p2/2/annotation/p2-svg",
+                                    "type": "Annotation",
+                                    "motivation": "tagging",
+                                    "body": {
+                                        "type": "TextualBody",
+                                        "value": "Print, Scan, Copy",
+                                        "language": "en",
+                                        "format": "text/plain"
+                                    },
+                                    "target": {
+                                        "type": "SpecificResource",
+                                        "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/canvas/p1",
+                                        "selector": {
+                                            "type": "SvgSelector",
+                                            "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g><polygon points=\"1364,890 1360,1060 1526,1060 1532,898\" fill=\"rgba(0,0,0,0)\" cursor=\"pointer\"><title>Print, Scan, Copy</title></polygon></g></svg>"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/page/p2/2",
+                            "type": "AnnotationPage",
+                            "items": [
+                                {
+                                    "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-secondpage/p2/2/annotation/p2-svg",
+                                    "type": "Annotation",
+                                    "motivation": "tagging",
+                                    "body": {
+                                        "type": "TextualBody",
+                                        "value": "PC Availability",
+                                        "language": "en",
+                                        "format": "text/plain"
+                                    },
+                                    "target": {
+                                        "type": "SpecificResource",
+                                        "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/canvas/p1",
+                                        "selector": {
+                                            "type": "SvgSelector",
+                                            "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g><polygon points=\"1536,1120 1696,1120 1696,832 1536,832\" fill=\"rgba(0,0,0,0)\" cursor=\"pointer\"><title>PC Availability</title></polygon></g></svg>"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/page/p2/2",
+                            "type": "AnnotationPage",
+                            "items": [
+                                {
+                                    "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-secondpage/p2/2/annotation/p2-svg",
+                                    "type": "Annotation",
+                                    "motivation": "tagging",
+                                    "body": {
+                                        "type": "TextualBody",
+                                        "value": "Accessible Student Study 1",
+                                        "language": "en",
+                                        "format": "text/plain"
+                                    },
+                                    "target": {
+                                        "type": "SpecificResource",
+                                        "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/canvas/p1",
+                                        "selector": {
+                                            "type": "SvgSelector",
+                                            "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g><polygon points=\"1306,390 1306,650 1562,650 1562,390\" fill=\"rgba(0,0,0,0)\" cursor=\"pointer\"><title>Accessible Student Study 1</title></polygon></g></svg>"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    ]
                 }
             ]
         }

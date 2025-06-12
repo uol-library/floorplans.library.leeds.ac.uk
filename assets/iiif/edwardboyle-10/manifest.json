@@ -56,7 +56,258 @@
                 {
                     "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-10/canvas/p1/2",
                     "type": "AnnotationPage",
-                    "items": []
+                    "items": [
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-10/page/p2/2",
+                            "type": "AnnotationPage",
+                            "items": [
+                                {
+                                    "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-10page/p2/2/annotation/p2-svg",
+                                    "type": "Annotation",
+                                    "motivation": "tagging",
+                                    "body": {
+                                        "type": "TextualBody",
+                                        "value": "Silent Study Area",
+                                        "language": "en",
+                                        "format": "text/plain"
+                                    },
+                                    "target": {
+                                        "type": "SpecificResource",
+                                        "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-10/canvas/p1",
+                                        "selector": {
+                                            "type": "SvgSelector",
+                                            "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g><polygon points=\"216,416 602,418 598,962 743,960 744,2056 216,2054\" fill=\"rgba(0,0,0,0)\" cursor=\"pointer\"><title>Silent Study Area</title></polygon></g></svg>"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-10/page/p2/2",
+                            "type": "AnnotationPage",
+                            "items": [
+                                {
+                                    "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-10page/p2/2/annotation/p2-svg",
+                                    "type": "Annotation",
+                                    "motivation": "tagging",
+                                    "body": {
+                                        "type": "TextualBody",
+                                        "value": "Teaching Room",
+                                        "language": "en",
+                                        "format": "text/plain"
+                                    },
+                                    "target": {
+                                        "type": "SpecificResource",
+                                        "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-10/canvas/p1",
+                                        "selector": {
+                                            "type": "SvgSelector",
+                                            "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g><polygon points=\"612,386 1518,382 1518,420 1580,426 1574,948 608,944\" fill=\"rgba(0,0,0,0)\" cursor=\"pointer\"><title>Teaching Room</title></polygon></g></svg>"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-10/page/p2/2",
+                            "type": "AnnotationPage",
+                            "items": [
+                                {
+                                    "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-10page/p2/2/annotation/p2-svg",
+                                    "type": "Annotation",
+                                    "motivation": "tagging",
+                                    "body": {
+                                        "type": "TextualBody",
+                                        "value": "Group Study Area",
+                                        "language": "en",
+                                        "format": "text/plain"
+                                    },
+                                    "target": {
+                                        "type": "SpecificResource",
+                                        "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-10/canvas/p1",
+                                        "selector": {
+                                            "type": "SvgSelector",
+                                            "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g><polygon points=\"1584,160 4444,160 4444,1100 764,1100 764,960 1584,960\" fill=\"rgba(0,0,0,0)\" cursor=\"pointer\"><title>Group Study Area</title></polygon></g></svg>"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-10/page/p2/2",
+                            "type": "AnnotationPage",
+                            "items": [
+                                {
+                                    "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-10page/p2/2/annotation/p2-svg",
+                                    "type": "Annotation",
+                                    "motivation": "tagging",
+                                    "body": {
+                                        "type": "TextualBody",
+                                        "value": "Group Study Area",
+                                        "language": "en",
+                                        "format": "text/plain"
+                                    },
+                                    "target": {
+                                        "type": "SpecificResource",
+                                        "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-10/canvas/p1",
+                                        "selector": {
+                                            "type": "SvgSelector",
+                                            "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g><polygon points=\"752,1632 4502,1632 4502,2084 752,2084\" fill=\"rgba(0,0,0,0)\" cursor=\"pointer\"><title>Group Study Area</title></polygon></g></svg>"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-10/page/p2/2",
+                            "type": "AnnotationPage",
+                            "items": [
+                                {
+                                    "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-10page/p2/2/annotation/p2-svg",
+                                    "type": "Annotation",
+                                    "motivation": "tagging",
+                                    "body": {
+                                        "type": "TextualBody",
+                                        "value": "Print Zone",
+                                        "language": "en",
+                                        "format": "text/plain"
+                                    },
+                                    "target": {
+                                        "type": "SpecificResource",
+                                        "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-10/canvas/p1",
+                                        "selector": {
+                                            "type": "SvgSelector",
+                                            "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g><polygon points=\"1700,1210 1790,1210 1790,1360 1700,1360\" fill=\"rgba(0,0,0,0)\" cursor=\"pointer\"><title>Print Zone</title></polygon></g></svg>"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-10/page/p2/2",
+                            "type": "AnnotationPage",
+                            "items": [
+                                {
+                                    "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-10page/p2/2/annotation/p2-svg",
+                                    "type": "Annotation",
+                                    "motivation": "tagging",
+                                    "body": {
+                                        "type": "TextualBody",
+                                        "value": "Timed Access PCs",
+                                        "language": "en",
+                                        "format": "text/plain"
+                                    },
+                                    "target": {
+                                        "type": "SpecificResource",
+                                        "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-10/canvas/p1",
+                                        "selector": {
+                                            "type": "SvgSelector",
+                                            "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g><polygon points=\"1790,1210 1955,1210 1955,1360 1790,1360\" fill=\"rgba(0,0,0,0)\" cursor=\"pointer\"><title>Timed Access PCs</title></polygon></g></svg>"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-10/page/p2/2",
+                            "type": "AnnotationPage",
+                            "items": [
+                                {
+                                    "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-10page/p2/2/annotation/p2-svg",
+                                    "type": "Annotation",
+                                    "motivation": "tagging",
+                                    "body": {
+                                        "type": "TextualBody",
+                                        "value": "Print Zone",
+                                        "language": "en",
+                                        "format": "text/plain"
+                                    },
+                                    "target": {
+                                        "type": "SpecificResource",
+                                        "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-10/canvas/p1",
+                                        "selector": {
+                                            "type": "SvgSelector",
+                                            "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g><polygon points=\"4058,1216 4149,1216 4149,1363 4058,1363\" fill=\"rgba(0,0,0,0)\" cursor=\"pointer\"><title>Print Zone</title></polygon></g></svg>"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-10/page/p2/2",
+                            "type": "AnnotationPage",
+                            "items": [
+                                {
+                                    "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-10page/p2/2/annotation/p2-svg",
+                                    "type": "Annotation",
+                                    "motivation": "tagging",
+                                    "body": {
+                                        "type": "TextualBody",
+                                        "value": "Timed Access PCs",
+                                        "language": "en",
+                                        "format": "text/plain"
+                                    },
+                                    "target": {
+                                        "type": "SpecificResource",
+                                        "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-10/canvas/p1",
+                                        "selector": {
+                                            "type": "SvgSelector",
+                                            "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g><polygon points=\"4149,1216 4315,1216 4315,1363 4149,1363\" fill=\"rgba(0,0,0,0)\" cursor=\"pointer\"><title>Timed Access PCs</title></polygon></g></svg>"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-10/page/p2/2",
+                            "type": "AnnotationPage",
+                            "items": [
+                                {
+                                    "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-10page/p2/2/annotation/p2-svg",
+                                    "type": "Annotation",
+                                    "motivation": "tagging",
+                                    "body": {
+                                        "type": "TextualBody",
+                                        "value": "Water Dispenser",
+                                        "language": "en",
+                                        "format": "text/plain"
+                                    },
+                                    "target": {
+                                        "type": "SpecificResource",
+                                        "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-10/canvas/p1",
+                                        "selector": {
+                                            "type": "SvgSelector",
+                                            "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g><polygon points=\"4166,1417 4357,1417 4357,1496 4166,1496\" fill=\"rgba(0,0,0,0)\" cursor=\"pointer\"><title>Water Dispenser</title></polygon></g></svg>"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-10/page/p2/2",
+                            "type": "AnnotationPage",
+                            "items": [
+                                {
+                                    "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-10page/p2/2/annotation/p2-svg",
+                                    "type": "Annotation",
+                                    "motivation": "tagging",
+                                    "body": {
+                                        "type": "TextualBody",
+                                        "value": "Accessible Room 10.1",
+                                        "language": "en",
+                                        "format": "text/plain"
+                                    },
+                                    "target": {
+                                        "type": "SpecificResource",
+                                        "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-10/canvas/p1",
+                                        "selector": {
+                                            "type": "SvgSelector",
+                                            "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g><polygon points=\"755,1126 1068,1126 1068,1333 755,1333\" fill=\"rgba(0,0,0,0)\" cursor=\"pointer\"><title>Accessible Room 10.1</title></polygon></g></svg>"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    ]
                 }
             ]
         }

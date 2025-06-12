@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/uol-library/floorplans",
   "devDependencies": {
+    "fast-xml-parser": "^5.2.5",
     "uglify-js": "^3.17.4"
   }
 }
