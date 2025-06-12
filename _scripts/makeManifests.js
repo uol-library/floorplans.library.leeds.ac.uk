@@ -173,29 +173,23 @@ function getAnnotations( baseURI, svgdata, metadata ) {
             let newpoints = pointsArrAdjusted.join(' ');
             annotations.push(
                 {
-                    "id": baseURI + "/page/p2/" + counter,
-                    "type": "AnnotationPage",
-                    "items": [
-                        {
-                            "id": baseURI + "page/p2/" + counter + "/annotation/p" + counter + "-svg",
-                            "type": "Annotation",
-                            "motivation": "tagging",
-                            "body": {
-                                "type": "TextualBody",
-                                "value": a.title,
-                                "language": "en",
-                                "format": "text/plain"
-                            },
-                            "target": {
-                                "type": "SpecificResource",
-                                "source": baseURI + "/canvas/p1",
-                                "selector": {
-                                    "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g><polygon points=\"" + newpoints + "\" fill=\"" + a['@_fill'] + "\" cursor=\"pointer\"><title>" + a.title + "</title></polygon></g></svg>"
-                                }
-                            }
+                    "id": baseURI + "page/p2/" + counter + "/annotation/p" + counter + "-svg",
+                    "type": "Annotation",
+                    "motivation": "tagging",
+                    "body": {
+                        "type": "TextualBody",
+                        "value": a.title,
+                        "language": "en",
+                        "format": "text/plain"
+                    },
+                    "target": {
+                        "type": "SpecificResource",
+                        "source": baseURI + "/canvas/p1",
+                        "selector": {
+                            "type": "SvgSelector",
+                            "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g><polygon points=\"" + newpoints + "\" fill=\"" + a['@_fill'] + "\" cursor=\"pointer\"><title>" + a.title + "</title></polygon></g></svg>"
                         }
-                    ]
+                    }
                 }
             );
         });
