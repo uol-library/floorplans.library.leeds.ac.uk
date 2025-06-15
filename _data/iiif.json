@@ -1,0 +1,124 @@
+[
+    {
+        "name": "Brotherton Library",
+        "floors": [
+            {
+                "key": "brotherton-m1",
+                "title": "Brotherton Library Main Building - level 1",
+                "adjust_x": 0,
+                "adjust_y": 0
+            },
+            {
+                "key": "brotherton-m2",
+                "title": "Brotherton Library Main Building - level 2",
+                "adjust_x": 0,
+                "adjust_y": 0
+            },
+            {
+                "key": "brotherton-m3",
+                "title": "Brotherton Library Main Building - level 3",
+                "adjust_x": 0,
+                "adjust_y": 0
+            },
+            {
+                "key": "brotherton-m4",
+                "title": "Brotherton Library Main Building - level 4",
+                "adjust_x": 0,
+                "adjust_y": 0
+            },
+            {
+                "key": "brotherton-w2",
+                "title": "Brotherton Library West Wing - level 3",
+                "adjust_x": 0,
+                "adjust_y": 0
+            },
+            {
+                "key": "brotherton-w3",
+                "title": "Brotherton Library West Wing - level 3",
+                "adjust_x": 0,
+                "adjust_y": 0
+            }
+        ]
+    },
+    {
+        "name": "Edward Boyle Library",
+        "floors": [
+            {
+                "key": "edwardboyle-8",
+                "title": "Edward Boyle Library - level 8",
+                "adjust_x": 0,
+                "adjust_y": 0
+            },
+            {
+                "key": "edwardboyle-9",
+                "title": "Edward Boyle Library - level 9",
+                "adjust_x": 0,
+                "adjust_y": 0
+            },
+            {
+                "key": "edwardboyle-10",
+                "title": "Edward Boyle Library - level 10",
+                "adjust_x": 0,
+                "adjust_y": 0
+            },
+            {
+                "key": "edwardboyle-11",
+                "title": "Edward Boyle Library - level 11",
+                "adjust_x": 0,
+                "adjust_y": 0
+            },
+            {
+                "key": "edwardboyle-12",
+                "title": "Edward Boyle Library - level 12",
+                "adjust_x": 0,
+                "adjust_y": 0,
+            },
+            {
+                "key": "edwardboyle-13",
+                "title": "Edward Boyle Library - level 13",
+                "adjust_x": 0,
+                "adjust_y": 0
+            }
+        ]
+    },
+    {
+        "name": "Health Sciences Library",
+        "floors": [
+            {
+                "key": "health-sciences",
+                "title": "Health Sciences Library",
+                "adjust_x": 0,
+                "adjust_y": 0
+            }
+        ]
+    },
+    {
+        "name": "Laidlaw Library",
+        "floors": [
+            {
+                "key": "laidlaw-first",
+                "title": "Laidlaw Library - First Floor",
+                "adjust_x": 0,
+                "adjust_y": 0
+            },
+            {
+                "key": "laidlaw-ground",
+                "title": "Laidlaw Library - Ground Floor",
+                "adjust_x": 0,
+                "adjust_y": 0
+            },
+            {
+                "key": "laidlaw-second",
+                "title": "Laidlaw Library - Second Floor",
+                "adjust_x": 0,
+                "adjust_y": 0
+            },
+            {
+                "key": "laidlaw-third",
+                "title": "Laidlaw Library - Third Floor",
+                "adjust_x": 0,
+                "adjust_y": 0
+            }
+        ]
+    }
+]

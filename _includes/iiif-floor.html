@@ -1,0 +1,14 @@
+      <h3>{{ include.floor.title }}</h3>
+      <p>Image: 
+        <a href="http://iiif.gdmrdigital.com/openseadragon/index.html?image=https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/{{ include.floor.key }}/info.json">View image in OpenSeaDragon</a>
+      </p>
+      <p>Manifest: 
+        <a href="{{ site.url }}{{site.baseurl }}/assets/iiif/{{ include.floor.key }}/manifest.json">JSON-LD</a> | 
+        <a href="https://projectmirador.org/embed/?iiif-content={{ site.url }}{{site.baseurl }}/assets/iiif/{{ include.floor.key }}/manifest.json" data-iiif-content="{{ site.url }}{{site.baseurl }}/assets/iiif/{{ include.floor.key }}/manifest.json" target="_blank">View in Mirador</a> | 
+        <a href="https://uv-v3.netlify.app/#?c=&amp;m=&amp;s=&amp;cv=&amp;manifest={{ site.url }}{{site.baseurl }}/assets/iiif/{{ include.floor.key }}/manifest.json" class="" data-iiif-content="{{ site.url }}{{site.baseurl }}/assets/iiif/{{ include.floor.key }}/manifest.json" target="_blank">View in Universal Viewer</a>        | 
+        <a href="https://ncsu-libraries.github.io/annona/tools/#/display?url={{ site.url }}{{site.baseurl }}/assets/iiif/{{ include.floor.key }}/manifest.json&amp;viewtype=iiif-storyboard&amp;settings=%7B%22fullpage%22%3Atrue%7D" class="" data-iiif-content="{{ site.url }}{{site.baseurl }}/assets/iiif/{{ include.floor.key }}/manifest.json" target="_blank">View in Annona</a> | 
+        <a href="https://samvera-labs.github.io/clover-iiif/docs/viewer/demo?iiif-content={{ site.url }}{{site.baseurl }}/assets/iiif/{{ include.floor.key }}/manifest.json" class="" data-iiif-content="{{ site.url }}{{site.baseurl }}/assets/iiif/{{ include.floor.key }}/manifest.json" target="_blank">View in Clover</a> | 
+        <a href="https://demo.viewer.glycerine.io/viewer?iiif-content={{ site.url }}{{site.baseurl }}/assets/iiif/{{ include.floor.key }}/manifest.json" class="" data-iiif-content="{{ site.url }}{{site.baseurl }}/assets/iiif/{{ include.floor.key }}/manifest.json" target="_blank">View in Glycerine Viewer</a> | 
+        <a href="https://theseusviewer.org/?iiif-content={{ site.url }}{{site.baseurl }}/assets/iiif/{{ include.floor.key }}/manifest.json" class="" data-iiif-content="{{ site.url }}{{site.baseurl }}/assets/iiif/{{ include.floor.key }}/manifest.json" target="_blank">View in Theseus</a> | 
+        <a href="http://codh.rois.ac.jp/software/iiif-curation-viewer/demo/?manifest={{ site.url }}{{site.baseurl }}/assets/iiif/{{ include.floor.key }}/manifest.json" class="" data-iiif-content="{{ site.url }}{{site.baseurl }}/assets/iiif/{{ include.floor.key }}/manifest.json" target="_blank">View in IIIF Curation Viewer</a>
+      </p>
