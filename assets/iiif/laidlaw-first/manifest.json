@@ -28,6 +28,7 @@
                             "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-first/canvas/p1/1/image",
                             "type": "Annotation",
                             "motivation": "painting",
+                            "target": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-first/canvas/p1",
                             "body": {
                                 "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-first/full/max/0/default.jpg",
                                 "type": "Image",
@@ -64,8 +65,7 @@
                                 ],
                                 "width": 5000,
                                 "height": 2585
-                            },
-                            "target": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-first/canvas/p1"
+                            }
                         }
                     ]
                 }

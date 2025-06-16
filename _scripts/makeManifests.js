@@ -111,14 +111,14 @@ featuresXML.forEach( filename => {
             "label": { "en": [ metadata[floorID].title ] },
             "items": [
                 {
-                    "id": baseURI+"/canvas/p1",
+                    "id": baseURI + "/canvas/p1",
                     "type": "Canvas",
                     "width": width,
                     "height": height,
                     "label": { "en": [ metadata[floorID].title ] },
                     "items": [
                         {
-                            "id": baseURI+"/canvas/p1/1",
+                            "id": baseURI + "/canvas/p1/1",
                             "type": "AnnotationPage",
                             "items": [
                                 {  
@@ -126,6 +126,7 @@ featuresXML.forEach( filename => {
                                     "id": baseURI+"/canvas/p1/1/image",
                                     "type": "Annotation",
                                     "motivation": "painting",
+                                    "target": baseURI + "/canvas/p1",
                                     "body": {
                                         "id": baseURI+"/full/max/0/default.jpg",
                                         "type": "Image",
@@ -151,8 +152,7 @@ featuresXML.forEach( filename => {
                                         ],
                                         "width": width,
                                         "height": height,
-                                    },
-                                    "target": baseURI + "/canvas/p1"
+                                    }
                                 }
                             ]
                         }
