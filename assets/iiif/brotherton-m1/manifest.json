@@ -11,8 +11,8 @@
         {
             "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/brotherton-m1/canvas/p1",
             "type": "Canvas",
-            "height": 5077,
-            "width": 5988,
+            "width": 5077,
+            "height": 5988,
             "label": {
                 "en": [
                     "Brotherton Library Main Building - level 1"
@@ -44,8 +44,8 @@
                                         "profile": "level0"
                                     }
                                 ],
-                                "height": 5077,
-                                "width": 5988
+                                "width": 5077,
+                                "height": 5988
                             },
                             "target": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/brotherton-m1/canvas/p1"
                         }
@@ -72,7 +72,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/brotherton-m1/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g><polygon points=\"3679,1260 3741,1308 3809,1373 3873,1443 3933,1520 3990,1601 4043,1688 4058,1720 4634,1412 4546,1259 4469,1146 4386,1040 4295,940 4198,845 4085,748 3679,1260\" fill=\"rgba(0,0,0,0)\" cursor=\"pointer\"><title>YAHS</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5077,5988'><g><polygon points='3679,1260 3741,1308 3809,1373 3873,1443 3933,1520 3990,1601 4043,1688 4058,1720 4634,1412 4546,1259 4469,1146 4386,1040 4295,940 4198,845 4085,748 3679,1260' fill='rgba(0,0,0,0)' cursor='pointer'><title>YAHS</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -91,7 +91,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/brotherton-m1/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g><polygon points=\"4058,1720 4098,1794 4131,1869 4160,1946 4184,2025 4203,2107 4217,2191 4227,2277 4232,2366 4232,2456 4227,2550 4218,2645 4216,2659 4198,2753 4175,2843 4147,2930 4114,3014 4077,3094 4035,3171 3988,3244 3936,3314 3880,3381 3819,3444 3749,3510 3679,3570 3614,3618 3570,3650 4004,4337 4102,4266 4188,4196 4304,4100 4374,4032 4260,3914 4275,3908 4367,3804 4451,3698 4527,3589 4597,3479 4658,3367 4712,3252 4759,3136 4798,3018 4830,2897 4854,2775 4858,2742 4874,2613 4883,2485 4884,2359 4878,2235 4865,2113 4844,1992 4816,1873 4781,1755 4739,1639 4689,1525 4634,1412 4058,1720\" fill=\"rgba(0,0,0,0)\" cursor=\"pointer\"><title>Theology</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5077,5988'><g><polygon points='4058,1720 4098,1794 4131,1869 4160,1946 4184,2025 4203,2107 4217,2191 4227,2277 4232,2366 4232,2456 4227,2550 4218,2645 4216,2659 4198,2753 4175,2843 4147,2930 4114,3014 4077,3094 4035,3171 3988,3244 3936,3314 3880,3381 3819,3444 3749,3510 3679,3570 3614,3618 3570,3650 4004,4337 4102,4266 4188,4196 4304,4100 4374,4032 4260,3914 4275,3908 4367,3804 4451,3698 4527,3589 4597,3479 4658,3367 4712,3252 4759,3136 4798,3018 4830,2897 4854,2775 4858,2742 4874,2613 4883,2485 4884,2359 4878,2235 4865,2113 4844,1992 4816,1873 4781,1755 4739,1639 4689,1525 4634,1412 4058,1720' fill='rgba(0,0,0,0)' cursor='pointer'><title>Theology</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -110,7 +110,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/brotherton-m1/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g><polygon points=\"2774,2076 2892,2104 2985,2153 3051,2225 3091,2310 3106,2405 3096,2500 3061,2589 3002,2665 2928,2718 3407,3560 3584,3446 3733,3314 3854,3166 3949,3005 4018,2834 4061,2657 4079,2476 4073,2294 4043,2115 3989,1941 3913,1775 3814,1620 3693,1480 3551,1357 3389,1255 3206,1176 3004,1123 2774,1099 2774,2076\" fill=\"rgba(0,0,0,0)\" cursor=\"pointer\"><title>Chinese</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5077,5988'><g><polygon points='2774,2076 2892,2104 2985,2153 3051,2225 3091,2310 3106,2405 3096,2500 3061,2589 3002,2665 2928,2718 3407,3560 3584,3446 3733,3314 3854,3166 3949,3005 4018,2834 4061,2657 4079,2476 4073,2294 4043,2115 3989,1941 3913,1775 3814,1620 3693,1480 3551,1357 3389,1255 3206,1176 3004,1123 2774,1099 2774,2076' fill='rgba(0,0,0,0)' cursor='pointer'><title>Chinese</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -129,7 +129,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/brotherton-m1/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g><polygon points=\"3570,3650 3493,3698 3415,3738 3349,3769 3291,3792 3607,4540 3698,4496 3786,4452 3880,4405 3952,4362 4004,4337 3570,3650\" fill=\"rgba(0,0,0,0)\" cursor=\"pointer\"><title>Chinese</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5077,5988'><g><polygon points='3570,3650 3493,3698 3415,3738 3349,3769 3291,3792 3607,4540 3698,4496 3786,4452 3880,4405 3952,4362 4004,4337 3570,3650' fill='rgba(0,0,0,0)' cursor='pointer'><title>Chinese</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -148,7 +148,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/brotherton-m1/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g><polygon points=\"2833,2748 3043,3697 3104,3680 3169,3659 3242,3634 3323,3599 3407,3560 2928,2718 2880,2737 2833,2748\" fill=\"rgba(0,0,0,0)\" cursor=\"pointer\"><title>Japanese</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5077,5988'><g><polygon points='2833,2748 3043,3697 3104,3680 3169,3659 3242,3634 3323,3599 3407,3560 2928,2718 2880,2737 2833,2748' fill='rgba(0,0,0,0)' cursor='pointer'><title>Japanese</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -167,7 +167,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/brotherton-m1/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g><polygon points=\"2709,2752 2664,2741 2622,2725 2584,2706 2550,2684 2520,2657 2493,2627 2470,2593 1642,3099 1722,3218 1823,3337 1938,3440 2067,3529 2211,3603 2368,3662 2539,3707 2624,3717 2696,3722 2774,3722 2853,3720 2941,3710 2996,3702 3043,3697 2833,2748 2771,2755 2709,2752\" fill=\"rgba(0,0,0,0)\" cursor=\"pointer\"><title>Slavonic</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5077,5988'><g><polygon points='2709,2752 2664,2741 2622,2725 2584,2706 2550,2684 2520,2657 2493,2627 2470,2593 1642,3099 1722,3218 1823,3337 1938,3440 2067,3529 2211,3603 2368,3662 2539,3707 2624,3717 2696,3722 2774,3722 2853,3720 2941,3710 2996,3702 3043,3697 2833,2748 2771,2755 2709,2752' fill='rgba(0,0,0,0)' cursor='pointer'><title>Slavonic</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -186,7 +186,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/brotherton-m1/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g><polygon points=\"2421,2447 2420,2422 2420,2397 2421,2374 2425,2350 2430,2330 1488,2077 1463,2177 1450,2274 1443,2373 1444,2475 1452,2579 1464,2648 1477,2714 1494,2774 1508,2826 1527,2877 1551,2940 1575,2990 1605,3047 1642,3099 2470,2593 2435,2517 2421,2447\" fill=\"rgba(0,0,0,0)\" cursor=\"pointer\"><title>Semitic</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5077,5988'><g><polygon points='2421,2447 2420,2422 2420,2397 2421,2374 2425,2350 2430,2330 1488,2077 1463,2177 1450,2274 1443,2373 1444,2475 1452,2579 1464,2648 1477,2714 1494,2774 1508,2826 1527,2877 1551,2940 1575,2990 1605,3047 1642,3099 2470,2593 2435,2517 2421,2447' fill='rgba(0,0,0,0)' cursor='pointer'><title>Semitic</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -205,7 +205,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/brotherton-m1/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g><polygon points=\"2430,2330 2443,2288 2459,2255 2485,2216 2509,2191 1779,1530 1740,1583 1700,1632 1661,1689 1628,1742 1591,1808 1562,1865 1537,1926 1514,1984 1498,2033 1488,2077 2430,2330\" fill=\"rgba(0,0,0,0)\" cursor=\"pointer\"><title>Linguistics</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5077,5988'><g><polygon points='2430,2330 2443,2288 2459,2255 2485,2216 2509,2191 1779,1530 1740,1583 1700,1632 1661,1689 1628,1742 1591,1808 1562,1865 1537,1926 1514,1984 1498,2033 1488,2077 2430,2330' fill='rgba(0,0,0,0)' cursor='pointer'><title>Linguistics</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -224,7 +224,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/brotherton-m1/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g><polygon points=\"1756,1332 1797,1291 1833,1260 1871,1231 1910,1203 1950,1177 1991,1153 2033,1130 2077,1109 1704,380 1633,420 1566,460 1501,501 1438,543 1379,586 1322,629 1269,673 1225,717 1756,1332\" fill=\"rgba(0,0,0,0)\" cursor=\"pointer\"><title>General Languages</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5077,5988'><g><polygon points='1756,1332 1797,1291 1833,1260 1871,1231 1910,1203 1950,1177 1991,1153 2033,1130 2077,1109 1704,380 1633,420 1566,460 1501,501 1438,543 1379,586 1322,629 1269,673 1225,717 1756,1332' fill='rgba(0,0,0,0)' cursor='pointer'><title>General Languages</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -243,7 +243,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/brotherton-m1/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g><polygon points=\"1286,2419 1282,2369 1285,2319 1291,2265 1296,2214 1304,2161 1315,2103 1327,2051 1337,2020 1361,1949 1388,1880 1416,1813 1448,1748 1481,1686 1517,1625 1555,1567 1595,1511 1638,1458 1683,1406 1719,1363 1756,1332 1225,717 1160,777 1102,836 1220,953 1152,1028 1088,1105 1028,1186 972,1270 919,1357 871,1447 826,1540 786,1636 749,1735 716,1837 683,1966 665,2056 648,2187 639,2345 644,2416 1286,2419\" fill=\"rgba(0,0,0,0)\" cursor=\"pointer\"><title>Italian</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5077,5988'><g><polygon points='1286,2419 1282,2369 1285,2319 1291,2265 1296,2214 1304,2161 1315,2103 1327,2051 1337,2020 1361,1949 1388,1880 1416,1813 1448,1748 1481,1686 1517,1625 1555,1567 1595,1511 1638,1458 1683,1406 1719,1363 1756,1332 1225,717 1160,777 1102,836 1220,953 1152,1028 1088,1105 1028,1186 972,1270 919,1357 871,1447 826,1540 786,1636 749,1735 716,1837 683,1966 665,2056 648,2187 639,2345 644,2416 1286,2419' fill='rgba(0,0,0,0)' cursor='pointer'><title>Italian</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -262,7 +262,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/brotherton-m1/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g><polygon points=\"3431,1102 3514,1145 3593,1194 3669,1248 3682,1260 4085,748 3981,674 3862,598 3736,528 3431,1102\" fill=\"rgba(0,0,0,0)\" cursor=\"pointer\"><title>Microfilm</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5077,5988'><g><polygon points='3431,1102 3514,1145 3593,1194 3669,1248 3682,1260 4085,748 3981,674 3862,598 3736,528 3431,1102' fill='rgba(0,0,0,0)' cursor='pointer'><title>Microfilm</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -281,7 +281,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/brotherton-m1/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g><polygon points=\"2056,3714 1949,3650 1791,3524 1654,3390 1539,3248 1445,3098 1373,2941 1322,2775 1293,2601 1286,2419 644,2416 662,2697 708,2952 785,3195 892,3424 1031,3641 1200,3846 1400,4038 1631,4217 1557,4336 1624,4379 1697,4420 2056,3714\" fill=\"rgba(0,0,0,0)\" cursor=\"pointer\"><title>German</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5077,5988'><g><polygon points='2056,3714 1949,3650 1791,3524 1654,3390 1539,3248 1445,3098 1373,2941 1322,2775 1293,2601 1286,2419 644,2416 662,2697 708,2952 785,3195 892,3424 1031,3641 1200,3846 1400,4038 1631,4217 1557,4336 1624,4379 1697,4420 2056,3714' fill='rgba(0,0,0,0)' cursor='pointer'><title>German</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -300,7 +300,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/brotherton-m1/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g><polygon points=\"2169,3770 2107,3740 2056,3714 1697,4420 1774,4457 1861,4497 2169,3770\" fill=\"rgba(0,0,0,0)\" cursor=\"pointer\"><title>Recently Returned</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5077,5988'><g><polygon points='2169,3770 2107,3740 2056,3714 1697,4420 1774,4457 1861,4497 2169,3770' fill='rgba(0,0,0,0)' cursor='pointer'><title>Recently Returned</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -319,7 +319,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/brotherton-m1/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g><polygon points=\"3027,956 3198,1000 3428,1095 3804,393 3040,205 3027,956\" fill=\"rgba(0,0,0,0)\" cursor=\"pointer\"><title>Microfilm Store</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5077,5988'><g><polygon points='3027,956 3198,1000 3428,1095 3804,393 3040,205 3027,956' fill='rgba(0,0,0,0)' cursor='pointer'><title>Microfilm Store</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -338,7 +338,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/brotherton-m1/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g><polygon points=\"2774,2076 2774,1101 2636,1102 2506,1122 2392,1148 2280,1184 2178,1228 2076,1288 1988,1342 1888,1424 1785,1532 2509,2191 2523,2179 2537,2166 2559,2149 2581,2132 2632,2106 2679,2088 2725,2079 2774,2076\" fill=\"rgba(0,0,0,0)\" cursor=\"pointer\"><title>CD, DVD (All Subjects)</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5077,5988'><g><polygon points='2774,2076 2774,1101 2636,1102 2506,1122 2392,1148 2280,1184 2178,1228 2076,1288 1988,1342 1888,1424 1785,1532 2509,2191 2523,2179 2537,2166 2559,2149 2581,2132 2632,2106 2679,2088 2725,2079 2774,2076' fill='rgba(0,0,0,0)' cursor='pointer'><title>CD, DVD (All Subjects)</title></polygon></g></svg>"
                                 }
                             }
                         }

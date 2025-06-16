@@ -6,37 +6,43 @@
                 "key": "brotherton-m1",
                 "title": "Brotherton Library Main Building - level 1",
                 "adjust_x": 0,
-                "adjust_y": 0
+                "adjust_y": 0,
+                "thumb": "assets/iiif/brotherton-m1/full/159,188/0/default.jpg"
             },
             {
                 "key": "brotherton-m2",
                 "title": "Brotherton Library Main Building - level 2",
                 "adjust_x": 0,
-                "adjust_y": 0
+                "adjust_y": 0,
+                "thumb": "assets/iiif/brotherton-m2/full/159,183/0/default.jpg"
             },
             {
                 "key": "brotherton-m3",
                 "title": "Brotherton Library Main Building - level 3",
                 "adjust_x": 0,
-                "adjust_y": 0
+                "adjust_y": 0,
+                "thumb": "assets/iiif/brotherton-m3/full/159,181/0/default.jpg"
             },
             {
                 "key": "brotherton-m4",
                 "title": "Brotherton Library Main Building - level 4",
                 "adjust_x": 0,
-                "adjust_y": 0
+                "adjust_y": 0,
+                "thumb": "assets/iiif/brotherton-m4/full/159,192/0/default.jpg"
             },
             {
                 "key": "brotherton-w2",
                 "title": "Brotherton Library West Wing - level 3",
                 "adjust_x": 0,
-                "adjust_y": 0
+                "adjust_y": 0,
+                "thumb": "assets/iiif/brotherton-w2/full/159,217/0/default.jpg"
             },
             {
                 "key": "brotherton-w3",
                 "title": "Brotherton Library West Wing - level 3",
                 "adjust_x": 0,
-                "adjust_y": 0
+                "adjust_y": 0,
+                "thumb": "assets/iiif/brotherton-w3/full/158,211/0/default.jpg"
             }
         ]
     },
@@ -47,37 +53,43 @@
                 "key": "edwardboyle-8",
                 "title": "Edward Boyle Library - level 8",
                 "adjust_x": 0,
-                "adjust_y": 0
+                "adjust_y": 0,
+                "thumb": "assets/iiif/edwardboyle-8/full/157,81/0/default.jpg"
             },
             {
                 "key": "edwardboyle-9",
                 "title": "Edward Boyle Library - level 9",
                 "adjust_x": 0,
-                "adjust_y": 0
+                "adjust_y": 0,
+                "thumb": "assets/iiif/edwardboyle-9/full/157,85/0/default.jpg"
             },
             {
                 "key": "edwardboyle-10",
                 "title": "Edward Boyle Library - level 10",
                 "adjust_x": 0,
-                "adjust_y": 0
+                "adjust_y": 0,
+                "thumb": "assets/iiif/edwardboyle-10/full/157,73/0/default.jpg"
             },
             {
                 "key": "edwardboyle-11",
                 "title": "Edward Boyle Library - level 11",
                 "adjust_x": 0,
-                "adjust_y": 0
+                "adjust_y": 0,
+                "thumb": "assets/iiif/edwardboyle-11/full/157,89/0/default.jpg"
             },
             {
                 "key": "edwardboyle-12",
                 "title": "Edward Boyle Library - level 12",
                 "adjust_x": 0,
                 "adjust_y": 0,
+                "thumb": "assets/iiif/edwardboyle-12/full/157,92/0/default.jpg"
             },
             {
                 "key": "edwardboyle-13",
                 "title": "Edward Boyle Library - level 13",
                 "adjust_x": 0,
-                "adjust_y": 0
+                "adjust_y": 0,
+                "thumb": "assets/iiif/edwardboyle-13/full/157,88/0/default.jpg"
             }
         ]
     },
@@ -88,7 +100,8 @@
                 "key": "health-sciences",
                 "title": "Health Sciences Library",
                 "adjust_x": 0,
-                "adjust_y": 0
+                "adjust_y": 0,
+                "thumb": "assets/iiif/health-sciences/full/120,186/0/default.jpg"
             }
         ]
     },
@@ -96,28 +109,32 @@
         "name": "Laidlaw Library",
         "floors": [
             {
-                "key": "laidlaw-first",
-                "title": "Laidlaw Library - First Floor",
-                "adjust_x": 0,
-                "adjust_y": 0
-            },
-            {
                 "key": "laidlaw-ground",
                 "title": "Laidlaw Library - Ground Floor",
                 "adjust_x": 0,
-                "adjust_y": 0
+                "adjust_y": 0,
+                "thumb": "assets/iiif/laidlaw-ground/full/157,82/0/default.jpg"
+            },
+            {
+                "key": "laidlaw-first",
+                "title": "Laidlaw Library - First Floor",
+                "adjust_x": 0,
+                "adjust_y": 0,
+                "thumb": "assets/iiif/laidlaw-first/full/157,81/0/default.jpg"
             },
             {
                 "key": "laidlaw-second",
                 "title": "Laidlaw Library - Second Floor",
                 "adjust_x": 0,
-                "adjust_y": 0
+                "adjust_y": 0,
+                "thumb": "assets/iiif/laidlaw-second/full/157,81/0/default.jpg"
             },
             {
                 "key": "laidlaw-third",
                 "title": "Laidlaw Library - Third Floor",
                 "adjust_x": 0,
-                "adjust_y": 0
+                "adjust_y": 0,
+                "thumb": "assets/iiif/laidlaw-third/full/157,109/0/default.jpg"
             }
         ]
     }

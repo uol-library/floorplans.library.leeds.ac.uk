@@ -11,8 +11,8 @@
         {
             "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/brotherton-w3/canvas/p1",
             "type": "Canvas",
-            "height": 5049,
-            "width": 6734,
+            "width": 5049,
+            "height": 6734,
             "label": {
                 "en": [
                     "Brotherton Library West Wing - level 3"
@@ -44,8 +44,8 @@
                                         "profile": "level0"
                                     }
                                 ],
-                                "height": 5049,
-                                "width": 6734
+                                "width": 5049,
+                                "height": 6734
                             },
                             "target": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/brotherton-w3/canvas/p1"
                         }
@@ -72,7 +72,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/brotherton-w3/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g><polygon points=\"1988,3568 2146,3568 2146,5308 1988,5308\" fill=\"rgba(0,0,0,0)\" cursor=\"pointer\"><title>Library PCs</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5049,6734'><g><polygon points='1988,3568 2146,3568 2146,5308 1988,5308' fill='rgba(0,0,0,0)' cursor='pointer'><title>Library PCs</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -91,7 +91,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/brotherton-w3/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g><polygon points=\"1792,4800 2304,4800 2304,5216 1792,5216\" fill=\"rgba(0,0,0,0)\" cursor=\"pointer\"><title>Print, Copy, Scan</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5049,6734'><g><polygon points='1792,4800 2304,4800 2304,5216 1792,5216' fill='rgba(0,0,0,0)' cursor='pointer'><title>Print, Copy, Scan</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -110,7 +110,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/brotherton-w3/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g><polygon points=\"2768,4312 4288,4312 4288,5272 2768,5272\" fill=\"rgba(0,0,0,0)\" cursor=\"pointer\"><title>Group Study Area</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5049,6734'><g><polygon points='2768,4312 4288,4312 4288,5272 2768,5272' fill='rgba(0,0,0,0)' cursor='pointer'><title>Group Study Area</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -129,7 +129,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/brotherton-w3/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g><polygon points=\"2210,197 4374,197 4374,1562 2210,1562\" fill=\"rgba(0,0,0,0)\" cursor=\"pointer\"><title>IT Cluster</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5049,6734'><g><polygon points='2210,197 4374,197 4374,1562 2210,1562' fill='rgba(0,0,0,0)' cursor='pointer'><title>IT Cluster</title></polygon></g></svg>"
                                 }
                             }
                         }

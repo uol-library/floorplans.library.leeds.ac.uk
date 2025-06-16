@@ -1,8 +1,7 @@
 ---
-layout: default
+layout: iiif
 permalink: /iiif/
 ---
-<div class="iiif">
 {% for library in site.data.iiif %}
   <h2>{{ library.name }}</h2>
   <ul class="iiif-floors">

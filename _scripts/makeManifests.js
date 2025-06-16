@@ -112,8 +112,8 @@ featuresXML.forEach( filename => {
                 {
                     "id": baseURI+"/canvas/p1",
                     "type": "Canvas",
-                    "height": parseInt(svgdata.svg['@_viewBox'].split(',')[2])+metadata[floorID].adjust_y,
-                    "width": parseInt(svgdata.svg['@_viewBox'].split(',')[3])+metadata[floorID].adjust_y,
+                    "width": parseInt(svgdata.svg['@_viewBox'].split(',')[2])+metadata[floorID].adjust_x,
+                    "height": parseInt(svgdata.svg['@_viewBox'].split(',')[3])+metadata[floorID].adjust_y,
                     "label": { "en": [ metadata[floorID].title ] },
                     "items": [
                         {
@@ -137,8 +137,8 @@ featuresXML.forEach( filename => {
                                                 "profile": "level0",
                                             }
                                         ],
-                                        "height": parseInt(svgdata.svg['@_viewBox'].split(',')[2])+metadata[floorID].adjust_y,
-                                        "width": parseInt( svgdata.svg['@_viewBox'].split(',')[3])+metadata[floorID].adjust_y,
+                                        "width": parseInt(svgdata.svg['@_viewBox'].split(',')[2])+metadata[floorID].adjust_x,
+                                        "height": parseInt( svgdata.svg['@_viewBox'].split(',')[3])+metadata[floorID].adjust_y,
                                     },
                                     "target": baseURI + "/canvas/p1"
                                 }
@@ -149,7 +149,7 @@ featuresXML.forEach( filename => {
                         {
                             "id": baseURI + "/canvas/p1/2",
                             "type": "AnnotationPage",
-                            "items": getAnnotations( baseURI, svgdata, metadata[floorID] )
+                            "items": getAnnotations( baseURI, svgdata, metadata[floorID], floorID )
                         }
                     ]
                 }
@@ -158,10 +158,12 @@ featuresXML.forEach( filename => {
         fs.writeFileSync( path.resolve( __dirname, '../assets/iiif/', floorID, 'manifest.json'), JSON.stringify( manifest, null, 4 ) );
     }
 });
-function getAnnotations( baseURI, svgdata, metadata ) {
+function getAnnotations( baseURI, svgdata, metadata, floorID ) {
     let annotations = [];
     if (svgdata.svg.polygon.length) {
         let counter = 1;
+        let width = parseInt( svgdata.svg['@_viewBox'].split( ',' )[2] ) + metadata.adjust_x;
+        let height = parseInt( svgdata.svg['@_viewBox'].split( ',' )[3] ) + metadata.adjust_y;
         svgdata.svg.polygon.forEach( a => {
             counter++;
             let pointsArr = a['@_points'].split(' ');
@@ -171,6 +173,11 @@ function getAnnotations( baseURI, svgdata, metadata ) {
                 pointsArrAdjusted.push( ( parseInt( points[0] ) + metadata.adjust_x ) + ',' + ( parseInt( points[1] ) + metadata.adjust_y ) );
             });
             let newpoints = pointsArrAdjusted.join(' ');
+            let svgBody = "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0," + width + "," + height + "'><g><polygon points='" + newpoints + "' fill='" + a['@_fill'] + "' cursor='pointer'><title>" + a.title + "</title></polygon></g></svg>";
+            if ( ! fs.existsSync( path.resolve( __dirname, '../assets/iiif/', floorID, 'svg') ) ) {
+                fs.mkdirSync( path.resolve( __dirname, '../assets/iiif/', floorID, 'svg') );
+            }
+            fs.writeFileSync( path.resolve( __dirname, '../assets/iiif/', floorID, 'svg/p'+counter+'.svg'), svgBody );
             annotations.push(
                 {
                     "id": baseURI + "page/p2/" + counter + "/annotation/p" + counter + "-svg",
@@ -187,7 +194,7 @@ function getAnnotations( baseURI, svgdata, metadata ) {
                         "source": baseURI + "/canvas/p1",
                         "selector": {
                             "type": "SvgSelector",
-                            "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g><polygon points=\"" + newpoints + "\" fill=\"" + a['@_fill'] + "\" cursor=\"pointer\"><title>" + a.title + "</title></polygon></g></svg>"
+                            "value": svgBody
                         }
                     }
                 }
