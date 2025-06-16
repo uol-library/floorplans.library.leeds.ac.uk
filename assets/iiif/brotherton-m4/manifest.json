@@ -39,9 +39,27 @@
                                 "format": "image/jpeg",
                                 "service": [
                                     {
+                                        "@context": "http://iiif.io/api/image/2/context.json",
                                         "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/brotherton-m4",
                                         "type": "ImageService3",
-                                        "profile": "level0"
+                                        "profile": "level0",
+                                        "protocol": "http://iiif.io/api/image",
+                                        "tiles": [
+                                            {
+                                                "scaleFactors": [
+                                                    1,
+                                                    2,
+                                                    4,
+                                                    8,
+                                                    16,
+                                                    32
+                                                ],
+                                                "width": 1024,
+                                                "height": 1024
+                                            }
+                                        ],
+                                        "width": 5061,
+                                        "height": 6120
                                     }
                                 ],
                                 "width": 5061,

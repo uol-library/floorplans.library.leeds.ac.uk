@@ -102,7 +102,8 @@ featuresXML.forEach( filename => {
         let baseURI = "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/"+floorID;
         let XMLdata = fs.readFileSync( path.resolve( __dirname, '../assets/svg/', filename ) );
         let svgdata = parser.parse(XMLdata);
-        console.log(svgdata.svg.polygon);
+        let width = parseInt(svgdata.svg['@_viewBox'].split(',')[2])+metadata[floorID].adjust_x;
+        let height = parseInt(svgdata.svg['@_viewBox'].split(',')[3])+metadata[floorID].adjust_y;
         let manifest = {
             "@context": "http://iiif.io/api/presentation/3/context.json",
             "id": baseURI+"/manifest.json",
@@ -112,8 +113,8 @@ featuresXML.forEach( filename => {
                 {
                     "id": baseURI+"/canvas/p1",
                     "type": "Canvas",
-                    "width": parseInt(svgdata.svg['@_viewBox'].split(',')[2])+metadata[floorID].adjust_x,
-                    "height": parseInt(svgdata.svg['@_viewBox'].split(',')[3])+metadata[floorID].adjust_y,
+                    "width": width,
+                    "height": height,
                     "label": { "en": [ metadata[floorID].title ] },
                     "items": [
                         {
@@ -132,13 +133,24 @@ featuresXML.forEach( filename => {
                                         "format": "image/jpeg",
                                         "service": [
                                             {
+                                                "@context": "http://iiif.io/api/image/2/context.json",
                                                 "id": baseURI,
                                                 "type": "ImageService3",
                                                 "profile": "level0",
+                                                "protocol": "http://iiif.io/api/image",
+                                                "tiles": [
+                                                    {
+                                                        "scaleFactors": [1, 2, 4, 8, 16, 32],
+                                                        "width": 1024,
+                                                        "height": 1024
+                                                    }
+                                                ],
+                                                "width": width,
+                                                "height": height
                                             }
                                         ],
-                                        "width": parseInt(svgdata.svg['@_viewBox'].split(',')[2])+metadata[floorID].adjust_x,
-                                        "height": parseInt( svgdata.svg['@_viewBox'].split(',')[3])+metadata[floorID].adjust_y,
+                                        "width": width,
+                                        "height": height,
                                     },
                                     "target": baseURI + "/canvas/p1"
                                 }
