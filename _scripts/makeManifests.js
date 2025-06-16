@@ -173,7 +173,7 @@ function getAnnotations( baseURI, svgdata, metadata, floorID ) {
                 pointsArrAdjusted.push( ( parseInt( points[0] ) + metadata.adjust_x ) + ',' + ( parseInt( points[1] ) + metadata.adjust_y ) );
             });
             let newpoints = pointsArrAdjusted.join(' ');
-            let svgBody = "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0," + width + "," + height + "'><g><polygon points='" + newpoints + "' fill='" + a['@_fill'] + "' cursor='pointer'><title>" + a.title + "</title></polygon></g></svg>";
+            let svgBody = "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0," + width + "," + height + "'><g><polygon points='" + newpoints + "'><title>" + a.title + "</title></polygon></g></svg>";
             if ( ! fs.existsSync( path.resolve( __dirname, '../assets/iiif/', floorID, 'svg') ) ) {
                 fs.mkdirSync( path.resolve( __dirname, '../assets/iiif/', floorID, 'svg') );
             }

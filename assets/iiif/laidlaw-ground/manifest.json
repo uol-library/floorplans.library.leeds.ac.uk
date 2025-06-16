@@ -72,7 +72,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-ground/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2614'><g><polygon points='3632,1786 3632,2584 2000,2584 2000,1786' fill='rgba(0,0,0,0)' cursor='pointer'><title>Skills Space</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2614'><g><polygon points='3632,1786 3632,2584 2000,2584 2000,1786'><title>Skills Space</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -91,7 +91,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-ground/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2614'><g><polygon points='1764,1606 1760,1836 2046,1822 2044,1622' fill='rgba(0,0,0,0)' cursor='pointer'><title>Book Return</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2614'><g><polygon points='1764,1606 1760,1836 2046,1822 2044,1622'><title>Book Return</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -110,7 +110,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-ground/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2614'><g><polygon points='588,1782 584,1904 954,1902 956,1788' fill='rgba(0,0,0,0)' cursor='pointer'><title>Book Return (incl. out of hours)</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2614'><g><polygon points='588,1782 584,1904 954,1902 956,1788'><title>Book Return (incl. out of hours)</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -129,7 +129,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-ground/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2614'><g><polygon points='3716,468 3534,1118 4544,1336 4608,1094 4850,1142 4990,780' fill='rgba(0,0,0,0)' cursor='pointer'><title>Caffé Nero</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2614'><g><polygon points='3716,468 3534,1118 4544,1336 4608,1094 4850,1142 4990,780'><title>Caffé Nero</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -148,7 +148,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-ground/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2614'><g><polygon points='2200,136 2028,746 3524,1122 3690,516' fill='rgba(0,0,0,0)' cursor='pointer'><title>Group Study Area</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2614'><g><polygon points='2200,136 2028,746 3524,1122 3690,516'><title>Group Study Area</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -167,7 +167,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-ground/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2614'><g><polygon points='975,1238 972,1681 1488,1687 1488,1236' fill='rgba(0,0,0,0)' cursor='pointer'><title>Group Study Area</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2614'><g><polygon points='975,1238 972,1681 1488,1687 1488,1236'><title>Group Study Area</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -186,7 +186,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-ground/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2614'><g><polygon points='1175,1175 1280,1175 1280,1020 1175,1020' fill='rgba(0,0,0,0)' cursor='pointer'><title>Print, Copy, Scan</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2614'><g><polygon points='1175,1175 1280,1175 1280,1020 1175,1020'><title>Print, Copy, Scan</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -205,7 +205,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-ground/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2614'><g><polygon points='3068,1960 3229,1960 3229,1812 3068,1812' fill='rgba(0,0,0,0)' cursor='pointer'><title>Print, Copy, Scan</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2614'><g><polygon points='3068,1960 3229,1960 3229,1812 3068,1812'><title>Print, Copy, Scan</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -224,7 +224,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-ground/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2614'><g><polygon points='2852,1214 2828,1312 2822,1432 2990,1436 3110,1434 3156,1290' fill='rgba(0,0,0,0)' cursor='pointer'><title>Reception</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2614'><g><polygon points='2852,1214 2828,1312 2822,1432 2990,1436 3110,1434 3156,1290'><title>Reception</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -243,7 +243,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-ground/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2614'><g><polygon points='1933,1311 1933,1432 2112,1432 2112,1311' fill='rgba(0,0,0,0)' cursor='pointer'><title>Self Issue Units</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2614'><g><polygon points='1933,1311 1933,1432 2112,1432 2112,1311'><title>Self Issue Units</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -262,7 +262,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-ground/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2614'><g><polygon points='3889,1815 3886,2579 4308,2579 4303,1804' fill='rgba(0,0,0,0)' cursor='pointer'><title>Weston Room Community Classroom</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2614'><g><polygon points='3889,1815 3886,2579 4308,2579 4303,1804'><title>Weston Room Community Classroom</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -281,7 +281,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-ground/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2614'><g><polygon points='2168,1046 2386,1100 2398,1034 2186,980' fill='rgba(0,0,0,0)' cursor='pointer'><title>PC Availability</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2614'><g><polygon points='2168,1046 2386,1100 2398,1034 2186,980'><title>PC Availability</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -300,7 +300,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-ground/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2614'><g><polygon points='1008,992 1408,992 1408,896 1008,896' fill='rgba(0,0,0,0)' cursor='pointer'><title>PC Availability</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2614'><g><polygon points='1008,992 1408,992 1408,896 1008,896'><title>PC Availability</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -319,7 +319,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-ground/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2614'><g><polygon points='3014,1724 3014,1780 3418,1780 3418,1724' fill='rgba(0,0,0,0)' cursor='pointer'><title>PC Availability</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2614'><g><polygon points='3014,1724 3014,1780 3418,1780 3418,1724'><title>PC Availability</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -338,7 +338,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-ground/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2614'><g><polygon points='1965,936 1923,1085 2131,1136 2166,989' fill='rgba(0,0,0,0)' cursor='pointer'><title>Laptop Locker Availability</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2614'><g><polygon points='1965,936 1923,1085 2131,1136 2166,989'><title>Laptop Locker Availability</title></polygon></g></svg>"
                                 }
                             }
                         }
