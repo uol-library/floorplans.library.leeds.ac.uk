@@ -72,7 +72,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='783,1934 820,1934 820,2323 783,2323'><title>Large</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='783,1934 820,1934 820,2323 783,2323' fill='rgba(204,0,0,0.5)'><title>Large</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -91,7 +91,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='879,1934 917,1934 917,2323 879,2323'><title>Large</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='879,1934 917,1934 917,2323 879,2323' fill='rgba(204,0,0,0.5)'><title>Large</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -110,7 +110,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='976,1934 1014,1934 1014,2323 976,2323'><title>Large</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='976,1934 1014,1934 1014,2323 976,2323' fill='rgba(204,0,0,0.5)'><title>Large</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -129,7 +129,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='1074,1998 1111,1998 1111,2323 1074,2323'><title>Large</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='1074,1998 1111,1998 1111,2323 1074,2323' fill='rgba(204,0,0,0.5)'><title>Large</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -148,7 +148,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='4420,556 4442,556 4442,947 4420,947'><title>Recently Returned</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='4420,556 4442,556 4442,947 4420,947' fill='rgba(204,0,0,0.5)'><title>Recently Returned</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -167,7 +167,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='4420,2140 4442,2140 4442,2531 4420,2531'><title>Recently Returned</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='4420,2140 4442,2140 4442,2531 4420,2531' fill='rgba(204,0,0,0.5)'><title>Recently Returned</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -186,7 +186,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='783,768 801,768 801,1158 783,1158'><title>Business Reference</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='783,768 801,768 801,1158 783,1158' fill='rgba(204,0,0,0.5)'><title>Business Reference</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -205,7 +205,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='801,768 821,768 821,1158 801,1158'><title>Economics</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='801,768 821,768 821,1158 801,1158' fill='rgba(204,0,0,0.5)'><title>Economics</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -224,7 +224,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='880,768 917,768 917,1158 880,1158'><title>Economics</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='880,768 917,768 917,1158 880,1158' fill='rgba(204,0,0,0.5)'><title>Economics</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -243,7 +243,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='976,768 1014,768 1014,1158 976,1158'><title>Economics</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='976,768 1014,768 1014,1158 976,1158' fill='rgba(204,0,0,0.5)'><title>Economics</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -262,7 +262,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='1073,768 1111,768 1111,1028 1073,1028'><title>Economics</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='1073,768 1111,768 1111,1028 1073,1028' fill='rgba(204,0,0,0.5)'><title>Economics</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -281,7 +281,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='1073,1092 1111,1092 1111,1158 1073,1158'><title>Economics</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='1073,1092 1111,1092 1111,1158 1073,1158' fill='rgba(204,0,0,0.5)'><title>Economics</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -300,7 +300,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='1171,768 1209,768 1209,1158 1171,1158'><title>Economics</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='1171,768 1209,768 1209,1158 1171,1158' fill='rgba(204,0,0,0.5)'><title>Economics</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -319,7 +319,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='1268,768 1306,768 1306,1158 1268,1158'><title>Economics</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='1268,768 1306,768 1306,1158 1268,1158' fill='rgba(204,0,0,0.5)'><title>Economics</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -338,7 +338,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='1365,768 1403,768 1403,1158 1365,1158'><title>Economics</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='1365,768 1403,768 1403,1158 1365,1158' fill='rgba(204,0,0,0.5)'><title>Economics</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -357,7 +357,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='2046,621 2084,621 2084,947 2046,947'><title>Economics</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='2046,621 2084,621 2084,947 2046,947' fill='rgba(204,0,0,0.5)'><title>Economics</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -376,7 +376,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='2144,556 2181,556 2181,947 2144,947'><title>Economics</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='2144,556 2181,556 2181,947 2144,947' fill='rgba(204,0,0,0.5)'><title>Economics</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -395,7 +395,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='2240,556 2260,556 2260,947 2240,947'><title>Economics</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='2240,556 2260,556 2260,947 2240,947' fill='rgba(204,0,0,0.5)'><title>Economics</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -414,7 +414,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='2260,556 2278,556 2278,947 2260,947'><title>Education</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='2260,556 2278,556 2278,947 2260,947' fill='rgba(204,0,0,0.5)'><title>Education</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -433,7 +433,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='2339,556 2376,556 2376,947 2339,947'><title>Education</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='2339,556 2376,556 2376,947 2339,947' fill='rgba(204,0,0,0.5)'><title>Education</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -452,7 +452,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='2435,556 2473,556 2473,947 2435,947'><title>Education</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='2435,556 2473,556 2473,947 2435,947' fill='rgba(204,0,0,0.5)'><title>Education</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -471,7 +471,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='2531,621 2570,621 2570,947 2531,947'><title>Education</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='2531,621 2570,621 2570,947 2531,947' fill='rgba(204,0,0,0.5)'><title>Education</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -490,7 +490,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='2628,556 2666,556 2666,947 2628,947'><title>Education</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='2628,556 2666,556 2666,947 2628,947' fill='rgba(204,0,0,0.5)'><title>Education</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -509,7 +509,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='2725,556 2765,556 2765,947 2725,947'><title>Education</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='2725,556 2765,556 2765,947 2725,947' fill='rgba(204,0,0,0.5)'><title>Education</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -528,7 +528,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='2824,556 2862,556 2862,947 2824,947'><title>Education</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='2824,556 2862,556 2862,947 2824,947' fill='rgba(204,0,0,0.5)'><title>Education</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -547,7 +547,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='2920,556 2958,556 2958,947 2920,947'><title>Education</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='2920,556 2958,556 2958,947 2920,947' fill='rgba(204,0,0,0.5)'><title>Education</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -566,7 +566,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='3016,621 3054,621 3054,947 3016,947'><title>Education</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='3016,621 3054,621 3054,947 3016,947' fill='rgba(204,0,0,0.5)'><title>Education</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -585,7 +585,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='3114,556 3152,556 3152,947 3114,947'><title>Education</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='3114,556 3152,556 3152,947 3114,947' fill='rgba(204,0,0,0.5)'><title>Education</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -604,7 +604,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='3211,556 3250,556 3250,947 3211,947'><title>Education</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='3211,556 3250,556 3250,947 3211,947' fill='rgba(204,0,0,0.5)'><title>Education</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -623,7 +623,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='3309,556 3346,556 3346,947 3309,947'><title>Law</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='3309,556 3346,556 3346,947 3309,947' fill='rgba(204,0,0,0.5)'><title>Law</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -642,7 +642,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='3405,556 3443,556 3443,947 3405,947'><title>Law</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='3405,556 3443,556 3443,947 3405,947' fill='rgba(204,0,0,0.5)'><title>Law</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -661,7 +661,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='3502,621 3541,621 3541,947 3502,947'><title>Law</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='3502,621 3541,621 3541,947 3502,947' fill='rgba(204,0,0,0.5)'><title>Law</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -680,7 +680,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='3600,556 3637,556 3637,947 3600,947'><title>Law</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='3600,556 3637,556 3637,947 3600,947' fill='rgba(204,0,0,0.5)'><title>Law</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -699,7 +699,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='3698,556 3735,556 3735,947 3698,947'><title>Law</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='3698,556 3735,556 3735,947 3698,947' fill='rgba(204,0,0,0.5)'><title>Law</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -718,7 +718,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='3794,556 3832,556 3832,947 3794,947'><title>Law</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='3794,556 3832,556 3832,947 3794,947' fill='rgba(204,0,0,0.5)'><title>Law</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -737,7 +737,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='3891,556 3930,556 3930,947 3891,947'><title>Law</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='3891,556 3930,556 3930,947 3891,947' fill='rgba(204,0,0,0.5)'><title>Law</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -756,7 +756,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='3988,621 4027,621 4027,947 3988,947'><title>Law</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='3988,621 4027,621 4027,947 3988,947' fill='rgba(204,0,0,0.5)'><title>Law</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -775,7 +775,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='3697,2140 3735,2140 3735,2531 3697,2531'><title>Law</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='3697,2140 3735,2140 3735,2531 3697,2531' fill='rgba(204,0,0,0.5)'><title>Law</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -794,7 +794,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='3794,2140 3832,2140 3832,2531 3794,2531'><title>Law</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='3794,2140 3832,2140 3832,2531 3794,2531' fill='rgba(204,0,0,0.5)'><title>Law</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -813,7 +813,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='3891,2140 3930,2140 3930,2531 3891,2531'><title>Law</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='3891,2140 3930,2140 3930,2531 3891,2531' fill='rgba(204,0,0,0.5)'><title>Law</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -832,7 +832,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='3988,2140 4027,2140 4027,2465 3988,2465'><title>Law</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='3988,2140 4027,2140 4027,2465 3988,2465' fill='rgba(204,0,0,0.5)'><title>Law</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -851,7 +851,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='3618,2140 3637,2140 3637,2531 3618,2531'><title>Law Reference</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='3618,2140 3637,2140 3637,2531 3618,2531' fill='rgba(204,0,0,0.5)'><title>Law Reference</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -870,7 +870,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='3229,2140 3249,2140 3249,2531 3229,2531'><title>Management</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='3229,2140 3249,2140 3249,2531 3229,2531' fill='rgba(204,0,0,0.5)'><title>Management</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -889,7 +889,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='3308,2140 3346,2140 3346,2531 3308,2531'><title>Management</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='3308,2140 3346,2140 3346,2531 3308,2531' fill='rgba(204,0,0,0.5)'><title>Management</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -908,7 +908,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='3405,2140 3444,2140 3444,2531 3405,2531'><title>Management</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='3405,2140 3444,2140 3444,2531 3405,2531' fill='rgba(204,0,0,0.5)'><title>Management</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -927,7 +927,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='3503,2140 3540,2140 3540,2465 3503,2465'><title>Management</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='3503,2140 3540,2140 3540,2465 3503,2465' fill='rgba(204,0,0,0.5)'><title>Management</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -946,7 +946,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='3599,2140 3618,2140 3618,2531 3599,2531'><title>Management</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='3599,2140 3618,2140 3618,2531 3599,2531' fill='rgba(204,0,0,0.5)'><title>Management</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -965,7 +965,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='3211,2140 3229,2140 3229,2531 3211,2531'><title>Politics</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='3211,2140 3229,2140 3229,2531 3211,2531' fill='rgba(204,0,0,0.5)'><title>Politics</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -984,7 +984,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='3114,2140 3152,2140 3152,2531 3114,2531'><title>Politics</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='3114,2140 3152,2140 3152,2531 3114,2531' fill='rgba(204,0,0,0.5)'><title>Politics</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -1003,7 +1003,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='3016,2140 3054,2140 3054,2465 3016,2465'><title>Politics</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='3016,2140 3054,2140 3054,2465 3016,2465' fill='rgba(204,0,0,0.5)'><title>Politics</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -1022,7 +1022,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='2920,2140 2958,2140 2958,2531 2920,2531'><title>Politics</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='2920,2140 2958,2140 2958,2531 2920,2531' fill='rgba(204,0,0,0.5)'><title>Politics</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -1041,7 +1041,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='2823,2140 2861,2140 2861,2531 2823,2531'><title>Politics</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='2823,2140 2861,2140 2861,2531 2823,2531' fill='rgba(204,0,0,0.5)'><title>Politics</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -1060,7 +1060,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='2726,2140 2764,2140 2764,2531 2726,2531'><title>Politics</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='2726,2140 2764,2140 2764,2531 2726,2531' fill='rgba(204,0,0,0.5)'><title>Politics</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -1079,7 +1079,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='2628,2140 2666,2140 2666,2531 2628,2531'><title>Politics</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='2628,2140 2666,2140 2666,2531 2628,2531' fill='rgba(204,0,0,0.5)'><title>Politics</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -1098,7 +1098,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='2550,2140 2569,2140 2569,2466 2550,2466'><title>Politics</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='2550,2140 2569,2140 2569,2466 2550,2466' fill='rgba(204,0,0,0.5)'><title>Politics</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -1117,7 +1117,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='2531,2140 2550,2140 2550,2466 2531,2466'><title>Social Policy</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='2531,2140 2550,2140 2550,2466 2531,2466' fill='rgba(204,0,0,0.5)'><title>Social Policy</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -1136,7 +1136,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='2435,2140 2473,2140 2473,2531 2435,2531'><title>Social Policy</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='2435,2140 2473,2140 2473,2531 2435,2531' fill='rgba(204,0,0,0.5)'><title>Social Policy</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -1155,7 +1155,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='2338,2140 2377,2140 2377,2531 2338,2531'><title>Sociology</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='2338,2140 2377,2140 2377,2531 2338,2531' fill='rgba(204,0,0,0.5)'><title>Sociology</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -1174,7 +1174,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='2240,2140 2278,2140 2278,2531 2240,2531'><title>Sociology</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='2240,2140 2278,2140 2278,2531 2240,2531' fill='rgba(204,0,0,0.5)'><title>Sociology</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -1193,7 +1193,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='2143,2140 2181,2140 2181,2531 2143,2531'><title>Sociology</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='2143,2140 2181,2140 2181,2531 2143,2531' fill='rgba(204,0,0,0.5)'><title>Sociology</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -1212,7 +1212,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='2047,2140 2084,2140 2084,2465 2047,2465'><title>Sociology</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='2047,2140 2084,2140 2084,2465 2047,2465' fill='rgba(204,0,0,0.5)'><title>Sociology</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -1231,7 +1231,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='1268,1934 1306,1934 1306,2323 1268,2323'><title>Sociology</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='1268,1934 1306,1934 1306,2323 1268,2323' fill='rgba(204,0,0,0.5)'><title>Sociology</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -1250,7 +1250,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='1365,1934 1402,1934 1402,2323 1365,2323'><title>Sociology</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='1365,1934 1402,1934 1402,2323 1365,2323' fill='rgba(204,0,0,0.5)'><title>Sociology</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -1269,7 +1269,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='1171,1934 1209,1934 1209,2323 1171,2323'><title>Universities</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='1171,1934 1209,1934 1209,2323 1171,2323' fill='rgba(204,0,0,0.5)'><title>Universities</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -1288,7 +1288,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='1624,584 1798,584 1798,752 1624,752'><title>Silent Study Area</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='1624,584 1798,584 1798,752 1624,752' fill='rgba(204,0,0,0.5)'><title>Silent Study Area</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -1307,7 +1307,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='1624,2168 1798,2168 1798,2335 1624,2335'><title>Silent Study Area</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='1624,2168 1798,2168 1798,2335 1624,2335' fill='rgba(204,0,0,0.5)'><title>Silent Study Area</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -1326,7 +1326,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='315,1389 489,1389 489,1559 315,1559'><title>Silent Study Area</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='315,1389 489,1389 489,1559 315,1559' fill='rgba(204,0,0,0.5)'><title>Silent Study Area</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -1345,7 +1345,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='1703,1379 1790,1379 1790,1527 1703,1527'><title>Print Zone</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='1703,1379 1790,1379 1790,1527 1703,1527' fill='rgba(204,0,0,0.5)'><title>Print Zone</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -1364,7 +1364,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='1790,1379 1965,1379 1965,1527 1790,1527'><title>Timed Access PCs</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='1790,1379 1965,1379 1965,1527 1790,1527' fill='rgba(204,0,0,0.5)'><title>Timed Access PCs</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -1383,7 +1383,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='4063,1379 4152,1379 4152,1527 4063,1527'><title>Print Zone</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='4063,1379 4152,1379 4152,1527 4063,1527' fill='rgba(204,0,0,0.5)'><title>Print Zone</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -1402,7 +1402,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='4152,1379 4312,1379 4312,1527 4152,1527'><title>Timed Access PCs</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='4152,1379 4312,1379 4312,1527 4152,1527' fill='rgba(204,0,0,0.5)'><title>Timed Access PCs</title></polygon></g></svg>"
                                 }
                             }
                         },
@@ -1421,7 +1421,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='4182,1588 4367,1588 4367,1666 4182,1666'><title>Water Dispenser</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2932'><g><polygon points='4182,1588 4367,1588 4367,1666 4182,1666' fill='rgba(204,0,0,0.5)'><title>Water Dispenser</title></polygon></g></svg>"
                                 }
                             }
                         }
