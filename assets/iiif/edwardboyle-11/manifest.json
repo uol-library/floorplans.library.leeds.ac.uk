@@ -76,7 +76,7 @@
                     "type": "AnnotationPage",
                     "items": [
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11page/p2/2/annotation/p2-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1/2/annotation1-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -90,12 +90,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon points='781,1869 821,1869 821,2258 781,2258' fill='rgba(204,0,0,0.5)'><title>Large</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='781,1869 821,1869 821,2258 781,2258'><title>Large</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11page/p2/3/annotation/p3-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1/2/annotation2-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -109,12 +109,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon points='879,1869 898,1869 898,2258 879,2258' fill='rgba(204,0,0,0.5)'><title>Large</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='879,1869 898,1869 898,2258 879,2258'><title>Large</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11page/p2/4/annotation/p4-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1/2/annotation3-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -128,12 +128,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon points='2142,587 2162,587 2162,977 2142,977' fill='rgba(204,0,0,0.5)'><title>Colour Chemistry</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='2142,587 2162,587 2162,977 2142,977'><title>Colour Chemistry</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11page/p2/5/annotation/p5-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1/2/annotation4-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -147,12 +147,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon points='2162,587 2181,587 2181,977 2162,977' fill='rgba(204,0,0,0.5)'><title>Computer Studies</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='2162,587 2181,587 2181,977 2162,977'><title>Computer Studies</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11page/p2/6/annotation/p6-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1/2/annotation5-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -166,12 +166,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon points='2238,587 2278,587 2278,977 2238,977' fill='rgba(204,0,0,0.5)'><title>Computer Studies</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='2238,587 2278,587 2278,977 2238,977'><title>Computer Studies</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11page/p2/7/annotation/p7-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1/2/annotation6-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -185,12 +185,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon points='2336,587 2376,587 2376,977 2336,977' fill='rgba(204,0,0,0.5)'><title>Computer Studies</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='2336,587 2376,587 2376,977 2336,977'><title>Computer Studies</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11page/p2/8/annotation/p8-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1/2/annotation7-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -204,12 +204,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon points='2434,587 2473,587 2473,977 2434,977' fill='rgba(204,0,0,0.5)'><title>Computer Studies</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='2434,587 2473,587 2473,977 2434,977'><title>Computer Studies</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11page/p2/9/annotation/p9-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1/2/annotation8-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -223,12 +223,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon points='2529,587 2567,587 2567,977 2529,977' fill='rgba(204,0,0,0.5)'><title>Electrical Engineering</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='2529,587 2567,587 2567,977 2529,977'><title>Electrical Engineering</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11page/p2/10/annotation/p10-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1/2/annotation9-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -242,12 +242,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon points='2626,587 2664,587 2664,977 2626,977' fill='rgba(204,0,0,0.5)'><title>Electrical Engineering</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='2626,587 2664,587 2664,977 2626,977'><title>Electrical Engineering</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11page/p2/11/annotation/p11-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1/2/annotation10-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -261,12 +261,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon points='897,1869 917,1869 917,2258 897,2258' fill='rgba(204,0,0,0.5)'><title>Zoology</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='897,1869 917,1869 917,2258 897,2258'><title>Zoology</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11page/p2/12/annotation/p12-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1/2/annotation11-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -280,12 +280,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon points='976,1869 1014,1869 1014,2258 976,2258' fill='rgba(204,0,0,0.5)'><title>Zoology</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='976,1869 1014,1869 1014,2258 976,2258'><title>Zoology</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11page/p2/13/annotation/p13-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1/2/annotation12-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -299,12 +299,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon points='1073,1933 1092,1933 1092,2258 1073,2258' fill='rgba(204,0,0,0.5)'><title>Zoology</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='1073,1933 1092,1933 1092,2258 1073,2258'><title>Zoology</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11page/p2/14/annotation/p14-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1/2/annotation13-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -318,12 +318,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon points='2745,587 2762,587 2762,977 2745,977' fill='rgba(204,0,0,0.5)'><title>Food</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='2745,587 2762,587 2762,977 2745,977'><title>Food</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11page/p2/15/annotation/p15-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1/2/annotation14-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -337,12 +337,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon points='2821,587 2859,587 2859,977 2821,977' fill='rgba(204,0,0,0.5)'><title>Food</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='2821,587 2859,587 2859,977 2821,977'><title>Food</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11page/p2/16/annotation/p16-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1/2/annotation15-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -356,12 +356,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon points='2918,587 2956,587 2956,977 2918,977' fill='rgba(204,0,0,0.5)'><title>Fuel</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='2918,587 2956,587 2956,977 2918,977'><title>Fuel</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11page/p2/17/annotation/p17-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1/2/annotation16-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -375,12 +375,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon points='3014,587 3052,587 3052,977 3014,977' fill='rgba(204,0,0,0.5)'><title>General Biology</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='3014,587 3052,587 3052,977 3014,977'><title>General Biology</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11page/p2/18/annotation/p18-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1/2/annotation17-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -394,12 +394,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon points='3112,587 3150,587 3150,977 3112,977' fill='rgba(204,0,0,0.5)'><title>General Biology</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='3112,587 3150,587 3150,977 3112,977'><title>General Biology</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11page/p2/19/annotation/p19-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1/2/annotation18-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -413,12 +413,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon points='3209,587 3247,587 3247,977 3209,977' fill='rgba(204,0,0,0.5)'><title>General Biology</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='3209,587 3247,587 3247,977 3209,977'><title>General Biology</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11page/p2/20/annotation/p20-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1/2/annotation19-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -432,12 +432,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon points='3307,587 3344,587 3344,977 3307,977' fill='rgba(204,0,0,0.5)'><title>General Biology</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='3307,587 3344,587 3344,977 3307,977'><title>General Biology</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11page/p2/21/annotation/p21-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1/2/annotation20-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -451,12 +451,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon points='3403,587 3422,587 3422,977 3403,977' fill='rgba(204,0,0,0.5)'><title>General Biology</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='3403,587 3422,587 3422,977 3403,977'><title>General Biology</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11page/p2/22/annotation/p22-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1/2/annotation21-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -470,12 +470,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon points='3422,587 3441,587 3442,977 3422,977' fill='rgba(204,0,0,0.5)'><title>General Science</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='3422,587 3441,587 3442,977 3422,977'><title>General Science</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11page/p2/23/annotation/p23-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1/2/annotation22-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -489,12 +489,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon points='3499,587 3538,587 3538,977 3499,977' fill='rgba(204,0,0,0.5)'><title>Geography</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='3499,587 3538,587 3538,977 3499,977'><title>Geography</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11page/p2/24/annotation/p24-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1/2/annotation23-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -508,12 +508,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon points='3597,587 3635,587 3635,977 3597,977' fill='rgba(204,0,0,0.5)'><title>Geography</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='3597,587 3635,587 3635,977 3597,977'><title>Geography</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11page/p2/25/annotation/p25-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1/2/annotation24-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -527,12 +527,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon points='3694,587 3733,587 3733,977 3694,977' fill='rgba(204,0,0,0.5)'><title>Geography</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='3694,587 3733,587 3733,977 3694,977'><title>Geography</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11page/p2/26/annotation/p26-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1/2/annotation25-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -546,12 +546,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon points='3792,587 3830,587 3830,977 3792,977' fill='rgba(204,0,0,0.5)'><title>Geography</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='3792,587 3830,587 3830,977 3792,977'><title>Geography</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11page/p2/27/annotation/p27-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1/2/annotation26-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -565,12 +565,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon points='3889,587 3927,587 3927,977 3889,977' fill='rgba(204,0,0,0.5)'><title>Geography</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='3889,587 3927,587 3927,977 3889,977'><title>Geography</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11page/p2/28/annotation/p28-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1/2/annotation27-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -584,12 +584,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon points='3986,587 4024,587 4024,977 3986,977' fill='rgba(204,0,0,0.5)'><title>Geography</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='3986,587 4024,587 4024,977 3986,977'><title>Geography</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11page/p2/29/annotation/p29-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1/2/annotation28-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -603,12 +603,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon points='3794,1976 3831,1976 3831,2304 3794,2304' fill='rgba(204,0,0,0.5)'><title>Geology</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='3794,1976 3831,1976 3831,2304 3794,2304'><title>Geology</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11page/p2/30/annotation/p30-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1/2/annotation29-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -622,12 +622,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon points='3889,1976 3928,1976 3928,2304 3889,2304' fill='rgba(204,0,0,0.5)'><title>Geology</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='3889,1976 3928,1976 3928,2304 3889,2304'><title>Geology</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11page/p2/31/annotation/p31-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1/2/annotation30-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -641,12 +641,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon points='3986,1976 4026,1976 4026,2304 3986,2304' fill='rgba(204,0,0,0.5)'><title>Geology</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='3986,1976 4026,1976 4026,2304 3986,2304'><title>Geology</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11page/p2/32/annotation/p32-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1/2/annotation31-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -660,12 +660,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon points='3306,1976 3347,1976 3347,2304 3306,2304' fill='rgba(204,0,0,0.5)'><title>History of Science</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='3306,1976 3347,1976 3347,2304 3306,2304'><title>History of Science</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11page/p2/33/annotation/p33-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1/2/annotation32-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -679,12 +679,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon points='3404,1976 3443,1976 3443,2304 3404,2304' fill='rgba(204,0,0,0.5)'><title>History of Science</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='3404,1976 3443,1976 3443,2304 3404,2304'><title>History of Science</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11page/p2/34/annotation/p34-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1/2/annotation33-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -698,12 +698,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon points='3501,1976 3539,1976 3539,2304 3501,2304' fill='rgba(204,0,0,0.5)'><title>History of Science</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='3501,1976 3539,1976 3539,2304 3501,2304'><title>History of Science</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11page/p2/35/annotation/p35-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1/2/annotation34-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -717,12 +717,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon points='3599,1976 3637,1976 3637,2304 3599,2304' fill='rgba(204,0,0,0.5)'><title>History of Science</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='3599,1976 3637,1976 3637,2304 3599,2304'><title>History of Science</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11page/p2/36/annotation/p36-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1/2/annotation35-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -736,12 +736,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon points='3697,1976 3734,1976 3734,2304 3697,2304' fill='rgba(204,0,0,0.5)'><title>History of Science</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='3697,1976 3734,1976 3734,2304 3697,2304'><title>History of Science</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11page/p2/37/annotation/p37-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1/2/annotation36-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -755,12 +755,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon points='3112,1976 3150,1976 3150,2304 3112,2304' fill='rgba(204,0,0,0.5)'><title>Materials</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='3112,1976 3150,1976 3150,2304 3112,2304'><title>Materials</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11page/p2/38/annotation/p38-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1/2/annotation37-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -774,12 +774,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon points='3033,2106 3052,2106 3052,2304 3033,2304' fill='rgba(204,0,0,0.5)'><title>Materials</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='3033,2106 3052,2106 3052,2304 3033,2304'><title>Materials</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11page/p2/39/annotation/p39-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1/2/annotation38-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -793,12 +793,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon points='3209,1976 3247,1976 3247,2304 3209,2304' fill='rgba(204,0,0,0.5)'><title>Materials</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='3209,1976 3247,1976 3247,2304 3209,2304'><title>Materials</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11page/p2/40/annotation/p40-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1/2/annotation39-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -812,12 +812,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon points='2528,1976 2567,1976 2567,2304 2528,2304' fill='rgba(204,0,0,0.5)'><title>Mathematics</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='2528,1976 2567,1976 2567,2304 2528,2304'><title>Mathematics</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11page/p2/41/annotation/p41-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1/2/annotation40-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -831,12 +831,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon points='2452,2106 2471,2106 2471,2304 2452,2304' fill='rgba(204,0,0,0.5)'><title>Mathematics</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='2452,2106 2471,2106 2471,2304 2452,2304'><title>Mathematics</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11page/p2/42/annotation/p42-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1/2/annotation41-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -850,12 +850,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon points='2724,1976 2762,1976 2762,2304 2724,2304' fill='rgba(204,0,0,0.5)'><title>Mathematics</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='2724,1976 2762,1976 2762,2304 2724,2304'><title>Mathematics</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11page/p2/43/annotation/p43-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1/2/annotation42-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -869,12 +869,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon points='2821,1976 2859,1976 2859,2304 2821,2304' fill='rgba(204,0,0,0.5)'><title>Mathematics</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='2821,1976 2859,1976 2859,2304 2821,2304'><title>Mathematics</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11page/p2/44/annotation/p44-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1/2/annotation43-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -888,12 +888,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon points='2918,1976 2956,1976 2956,2304 2918,2304' fill='rgba(204,0,0,0.5)'><title>Mathematics</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='2918,1976 2956,1976 2956,2304 2918,2304'><title>Mathematics</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11page/p2/45/annotation/p45-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1/2/annotation44-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -907,12 +907,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon points='2626,1976 2666,1976 2666,2304 2626,2304' fill='rgba(204,0,0,0.5)'><title>Mathematics</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='2626,1976 2666,1976 2666,2304 2626,2304'><title>Mathematics</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11page/p2/46/annotation/p46-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1/2/annotation45-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -926,12 +926,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon points='3014,1976 3052,1976 3052,2106 3033,2106 3033,2304 3014,2304' fill='rgba(204,0,0,0.5)'><title>Mathematics</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='3014,1976 3052,1976 3052,2106 3033,2106 3033,2304 3014,2304'><title>Mathematics</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11page/p2/47/annotation/p47-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1/2/annotation46-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -945,12 +945,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon points='2336,1976 2374,1976 2374,2304 2336,2304' fill='rgba(204,0,0,0.5)'><title>Mechanical Engineering</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='2336,1976 2374,1976 2374,2304 2336,2304'><title>Mechanical Engineering</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11page/p2/48/annotation/p48-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1/2/annotation47-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -964,12 +964,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon points='2256,2106 2276,2106 2276,2304 2256,2304' fill='rgba(204,0,0,0.5)'><title>Mechanical Engineering</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='2256,2106 2276,2106 2276,2304 2256,2304'><title>Mechanical Engineering</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11page/p2/49/annotation/p49-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1/2/annotation48-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -983,12 +983,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon points='2433,1976 2471,1976 2471,2106 2452,2106 2452,2304 2433,2304' fill='rgba(204,0,0,0.5)'><title>Mechanical Engineering</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='2433,1976 2471,1976 2471,2106 2452,2106 2452,2304 2433,2304'><title>Mechanical Engineering</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11page/p2/50/annotation/p50-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1/2/annotation49-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -1002,12 +1002,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon points='2238,1976 2276,1976 2276,2106 2256,2106 2256,2171 2238,2171' fill='rgba(204,0,0,0.5)'><title>Mining</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='2238,1976 2276,1976 2276,2106 2256,2106 2256,2171 2238,2171'><title>Mining</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11page/p2/51/annotation/p51-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1/2/annotation50-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -1021,12 +1021,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon points='2044,1976 2083,1976 2083,2304 2044,2304' fill='rgba(204,0,0,0.5)'><title>Physics</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='2044,1976 2083,1976 2083,2304 2044,2304'><title>Physics</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11page/p2/52/annotation/p52-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1/2/annotation51-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -1040,12 +1040,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon points='2141,1976 2179,1976 2179,2304 2141,2304' fill='rgba(204,0,0,0.5)'><title>Physics</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='2141,1976 2179,1976 2179,2304 2141,2304'><title>Physics</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11page/p2/53/annotation/p53-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1/2/annotation52-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -1059,12 +1059,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon points='2238,2171 2256,2171 2256,2304 2238,2304' fill='rgba(204,0,0,0.5)'><title>Physics</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='2238,2171 2256,2171 2256,2304 2238,2304'><title>Physics</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11page/p2/54/annotation/p54-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1/2/annotation53-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -1078,12 +1078,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon points='4414,587 4433,587 4433,977 4414,977' fill='rgba(204,0,0,0.5)'><title>Recently Returned</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='4414,587 4433,587 4433,977 4414,977'><title>Recently Returned</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11page/p2/55/annotation/p55-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1/2/annotation54-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -1097,12 +1097,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon points='4414,1976 4433,1976 4433,2304 4414,2304' fill='rgba(204,0,0,0.5)'><title>Recently Returned</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='4414,1976 4433,1976 4433,2304 4414,2304'><title>Recently Returned</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11page/p2/56/annotation/p56-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1/2/annotation55-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -1116,12 +1116,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon points='1446,1110 1528,1110 1528,1210 1446,1210' fill='rgba(204,0,0,0.5)'><title>Atlas Case</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='1446,1110 1528,1110 1528,1210 1446,1210'><title>Atlas Case</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11page/p2/57/annotation/p57-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1/2/annotation56-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -1135,12 +1135,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon points='782,653 801,653 801,784 821,784 821,1043 782,1043' fill='rgba(204,0,0,0.5)'><title>Applied Biology</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='782,653 801,653 801,784 821,784 821,1043 782,1043'><title>Applied Biology</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11page/p2/58/annotation/p58-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1/2/annotation57-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -1154,12 +1154,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon points='801,653 821,653 821,784 801,784' fill='rgba(204,0,0,0.5)'><title>Astronomy</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='801,653 821,653 821,784 801,784'><title>Astronomy</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11page/p2/59/annotation/p59-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1/2/annotation58-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -1173,12 +1173,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon points='880,653 898,653 898,1043 880,1043' fill='rgba(204,0,0,0.5)'><title>Astronomy</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='880,653 898,653 898,1043 880,1043'><title>Astronomy</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11page/p2/60/annotation/p60-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1/2/annotation59-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -1192,12 +1192,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon points='898,653 917,653 916,1043 898,1043' fill='rgba(204,0,0,0.5)'><title>Botany</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='898,653 917,653 916,1043 898,1043'><title>Botany</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11page/p2/61/annotation/p61-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1/2/annotation60-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -1211,12 +1211,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon points='976,653 995,653 995,978 1014,978 1014,1043 976,1043' fill='rgba(204,0,0,0.5)'><title>Botany</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='976,653 995,653 995,978 1014,978 1014,1043 976,1043'><title>Botany</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11page/p2/62/annotation/p62-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1/2/annotation61-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -1230,12 +1230,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon points='995,653 1014,653 1014,978 995,978' fill='rgba(204,0,0,0.5)'><title>Chemical Engineering</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='995,653 1014,653 1014,978 995,978'><title>Chemical Engineering</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11page/p2/63/annotation/p63-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1/2/annotation62-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -1249,12 +1249,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon points='1073,653 1092,653 1092,978 1073,978' fill='rgba(204,0,0,0.5)'><title>Chemical Engineering</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='1073,653 1092,653 1092,978 1073,978'><title>Chemical Engineering</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11page/p2/64/annotation/p64-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1/2/annotation63-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -1268,12 +1268,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon points='1091,653 1110,653 1110,978 1091,978' fill='rgba(204,0,0,0.5)'><title>Chemistry</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='1091,653 1110,653 1110,978 1091,978'><title>Chemistry</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11page/p2/65/annotation/p65-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1/2/annotation64-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -1287,12 +1287,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon points='1199,653 1235,653 1235,1043 1199,1043' fill='rgba(204,0,0,0.5)'><title>Chemistry</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='1199,653 1235,653 1235,1043 1199,1043'><title>Chemistry</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11page/p2/66/annotation/p66-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1/2/annotation65-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -1306,12 +1306,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon points='1295,653 1314,653 1314,848 1332,849 1332,1043 1295,1043' fill='rgba(204,0,0,0.5)'><title>Chemistry</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='1295,653 1314,653 1314,848 1332,849 1332,1043 1295,1043'><title>Chemistry</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11page/p2/67/annotation/p67-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1/2/annotation66-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -1325,12 +1325,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon points='1314,653 1332,653 1332,849 1314,849' fill='rgba(204,0,0,0.5)'><title>Civil Engineering</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='1314,653 1332,653 1332,849 1314,849'><title>Civil Engineering</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11page/p2/68/annotation/p68-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1/2/annotation67-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -1344,12 +1344,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon points='1392,653 1429,653 1429,1043 1392,1043' fill='rgba(204,0,0,0.5)'><title>Civil Engineering</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='1392,653 1429,653 1429,1043 1392,1043'><title>Civil Engineering</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11page/p2/69/annotation/p69-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1/2/annotation68-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -1363,12 +1363,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon points='2046,587 2082,587 2082,977 2046,977' fill='rgba(204,0,0,0.5)'><title>Civil Engineering</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='2046,587 2082,587 2082,977 2046,977'><title>Civil Engineering</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11page/p2/70/annotation/p70-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1/2/annotation69-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -1382,12 +1382,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon points='1392,1869 1429,1869 1429,2258 1392,2258' fill='rgba(204,0,0,0.5)'><title>Sports Science</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='1392,1869 1429,1869 1429,2258 1392,2258'><title>Sports Science</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11page/p2/71/annotation/p71-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1/2/annotation70-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -1401,12 +1401,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon points='1091,1933 1110,1933 1110,2258 1091,2258' fill='rgba(204,0,0,0.5)'><title>Transport</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='1091,1933 1110,1933 1110,2258 1091,2258'><title>Transport</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11page/p2/72/annotation/p72-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1/2/annotation71-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -1420,12 +1420,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon points='1199,1869 1235,1869 1235,2258 1199,2258' fill='rgba(204,0,0,0.5)'><title>Transport</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='1199,1869 1235,1869 1235,2258 1199,2258'><title>Transport</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11page/p2/73/annotation/p73-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1/2/annotation72-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -1439,12 +1439,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon points='1295,1869 1333,1869 1333,2258 1295,2258' fill='rgba(204,0,0,0.5)'><title>Transport</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='1295,1869 1333,1869 1333,2258 1295,2258'><title>Transport</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11page/p2/74/annotation/p74-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1/2/annotation73-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -1458,12 +1458,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon points='897,1869 917,1869 917,2258 897,2258' fill='rgba(204,0,0,0.5)'><title>Zoology</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='897,1869 917,1869 917,2258 897,2258'><title>Zoology</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11page/p2/75/annotation/p75-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1/2/annotation74-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -1477,12 +1477,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon points='976,1869 1014,1869 1014,2258 976,2258' fill='rgba(204,0,0,0.5)'><title>Zoology</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='976,1869 1014,1869 1014,2258 976,2258'><title>Zoology</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11page/p2/76/annotation/p76-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1/2/annotation75-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -1496,12 +1496,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon points='1073,1933 1092,1933 1092,2258 1073,2258' fill='rgba(204,0,0,0.5)'><title>Zoology</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='1073,1933 1092,1933 1092,2258 1073,2258'><title>Zoology</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11page/p2/77/annotation/p77-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1/2/annotation76-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -1515,12 +1515,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon points='2724,587 2745,587 2745,977 2724,977' fill='rgba(204,0,0,0.5)'><title>Engineering</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='2724,587 2745,587 2745,977 2724,977'><title>Engineering</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11page/p2/78/annotation/p78-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1/2/annotation77-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -1534,12 +1534,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon points='1627,619 1800,619 1800,789 1627,789' fill='rgba(204,0,0,0.5)'><title>Silent Study Area</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='1627,619 1800,619 1800,789 1627,789'><title>Silent Study Area</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11page/p2/79/annotation/p79-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1/2/annotation78-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -1553,12 +1553,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon points='1627,1966 1800,1966 1800,2136 1627,2136' fill='rgba(204,0,0,0.5)'><title>Silent Study Area</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='1627,1966 1800,1966 1800,2136 1627,2136'><title>Silent Study Area</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11page/p2/80/annotation/p80-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1/2/annotation79-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -1572,12 +1572,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon points='299,1334 471,1334 471,1504 299,1504' fill='rgba(204,0,0,0.5)'><title>Silent Study Area</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='299,1334 471,1334 471,1504 299,1504'><title>Silent Study Area</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11page/p2/81/annotation/p81-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1/2/annotation80-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -1591,12 +1591,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon points='4024,2454 4280,2453 4280,2502 4494,2500 4494,2516 4468,2518 4468,2546 4032,2544 4031,2514 4014,2515' fill='rgba(204,0,0,0.5)'><title>Prayer Room</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='4024,2454 4280,2453 4280,2502 4494,2500 4494,2516 4468,2518 4468,2546 4032,2544 4031,2514 4014,2515'><title>Prayer Room</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11page/p2/82/annotation/p82-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1/2/annotation81-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -1610,12 +1610,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon points='1703,1315 1790,1315 1790,1463 1703,1463' fill='rgba(204,0,0,0.5)'><title>Print Zone</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='1703,1315 1790,1315 1790,1463 1703,1463'><title>Print Zone</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11page/p2/83/annotation/p83-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1/2/annotation82-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -1629,12 +1629,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon points='1790,1315 1965,1315 1965,1463 1790,1463' fill='rgba(204,0,0,0.5)'><title>Timed Access PCs</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='1790,1315 1965,1315 1965,1463 1790,1463'><title>Timed Access PCs</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11page/p2/84/annotation/p84-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1/2/annotation83-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -1648,12 +1648,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon points='4063,1315 4152,1315 4152,1463 4063,1463' fill='rgba(204,0,0,0.5)'><title>Print Zone</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='4063,1315 4152,1315 4152,1463 4063,1463'><title>Print Zone</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11page/p2/85/annotation/p85-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1/2/annotation84-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -1667,12 +1667,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon points='4152,1315 4312,1315 4312,1463 4152,1463' fill='rgba(204,0,0,0.5)'><title>Timed Access PCs</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='4152,1315 4312,1315 4312,1463 4152,1463'><title>Timed Access PCs</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11page/p2/86/annotation/p86-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1/2/annotation85-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -1686,7 +1686,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon points='4182,1524 4367,1524 4367,1602 4182,1602' fill='rgba(204,0,0,0.5)'><title>Water Dispenser</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2847'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='4182,1524 4367,1524 4367,1602 4182,1602'><title>Water Dispenser</title></polygon></g></svg>"
                                 }
                             }
                         }

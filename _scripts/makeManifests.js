@@ -173,9 +173,15 @@ featuresXML.forEach( filename => {
 function getAnnotations( baseURI, svgdata, metadata, floorID ) {
     let annotations = [];
     if (svgdata.svg.polygon.length) {
-        let counter = 1;
+        let counter = 0;
         let width = parseInt( svgdata.svg['@_viewBox'].split( ',' )[2] ) + metadata.adjust_x;
         let height = parseInt( svgdata.svg['@_viewBox'].split( ',' )[3] ) + metadata.adjust_y;
+        let svgDir = path.resolve( __dirname, '../assets/iiif/', floorID, 'svg')
+        if ( ! fs.existsSync( svgDir ) ) {
+            fs.mkdirSync( svgDir );
+        } else {
+            fs.readdirSync( svgDir ).forEach( f => fs.unlinkSync(`${svgDir}/${f}`) );
+        }
         svgdata.svg.polygon.forEach( a => {
             counter++;
             let pointsArr = a['@_points'].split(' ');
@@ -185,14 +191,11 @@ function getAnnotations( baseURI, svgdata, metadata, floorID ) {
                 pointsArrAdjusted.push( ( parseInt( points[0] ) + metadata.adjust_x ) + ',' + ( parseInt( points[1] ) + metadata.adjust_y ) );
             });
             let newpoints = pointsArrAdjusted.join(' ');
-            let svgBody = "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0," + width + "," + height + "'><g><polygon points='" + newpoints + "' fill='rgba(204,0,0,0.5)'><title>" + a.title + "</title></polygon></g></svg>";
-            if ( ! fs.existsSync( path.resolve( __dirname, '../assets/iiif/', floorID, 'svg') ) ) {
-                fs.mkdirSync( path.resolve( __dirname, '../assets/iiif/', floorID, 'svg') );
-            }
-            fs.writeFileSync( path.resolve( __dirname, '../assets/iiif/', floorID, 'svg/p'+counter+'.svg'), svgBody );
+            let svgBody = "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0," + width + "," + height + "'><g><polygon style='fill:#aa0000;stroke:#888888;stroke-width:3' points='" + newpoints + "'><title>" + a.title + "</title></polygon></g></svg>";
+            fs.writeFileSync( svgDir + '/p' + counter + '.svg', svgBody );
             annotations.push(
                 {
-                    "id": baseURI + "page/p2/" + counter + "/annotation/p" + counter + "-svg",
+                    "id": baseURI + "/canvas/p1/2/annotation" + counter + "-svg",
                     "type": "Annotation",
                     "motivation": "tagging",
                     "body": {

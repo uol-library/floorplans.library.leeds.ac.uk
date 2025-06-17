@@ -76,7 +76,7 @@
                     "type": "AnnotationPage",
                     "items": [
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-10page/p2/2/annotation/p2-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-10/canvas/p1/2/annotation1-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -90,12 +90,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-10/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2327'><g><polygon points='216,416 602,418 598,962 743,960 744,2056 216,2054' fill='rgba(204,0,0,0.5)'><title>Silent Study Area</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2327'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='216,416 602,418 598,962 743,960 744,2056 216,2054'><title>Silent Study Area</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-10page/p2/3/annotation/p3-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-10/canvas/p1/2/annotation2-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -109,12 +109,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-10/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2327'><g><polygon points='612,386 1518,382 1518,420 1580,426 1574,948 608,944' fill='rgba(204,0,0,0.5)'><title>Teaching Room</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2327'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='612,386 1518,382 1518,420 1580,426 1574,948 608,944'><title>Teaching Room</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-10page/p2/4/annotation/p4-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-10/canvas/p1/2/annotation3-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -128,12 +128,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-10/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2327'><g><polygon points='1584,160 4444,160 4444,1100 764,1100 764,960 1584,960' fill='rgba(204,0,0,0.5)'><title>Group Study Area</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2327'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='1584,160 4444,160 4444,1100 764,1100 764,960 1584,960'><title>Group Study Area</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-10page/p2/5/annotation/p5-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-10/canvas/p1/2/annotation4-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -147,12 +147,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-10/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2327'><g><polygon points='752,1632 4502,1632 4502,2084 752,2084' fill='rgba(204,0,0,0.5)'><title>Group Study Area</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2327'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='752,1632 4502,1632 4502,2084 752,2084'><title>Group Study Area</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-10page/p2/6/annotation/p6-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-10/canvas/p1/2/annotation5-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -166,12 +166,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-10/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2327'><g><polygon points='1700,1210 1790,1210 1790,1360 1700,1360' fill='rgba(204,0,0,0.5)'><title>Print Zone</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2327'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='1700,1210 1790,1210 1790,1360 1700,1360'><title>Print Zone</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-10page/p2/7/annotation/p7-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-10/canvas/p1/2/annotation6-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -185,12 +185,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-10/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2327'><g><polygon points='1790,1210 1955,1210 1955,1360 1790,1360' fill='rgba(204,0,0,0.5)'><title>Timed Access PCs</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2327'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='1790,1210 1955,1210 1955,1360 1790,1360'><title>Timed Access PCs</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-10page/p2/8/annotation/p8-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-10/canvas/p1/2/annotation7-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -204,12 +204,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-10/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2327'><g><polygon points='4058,1216 4149,1216 4149,1363 4058,1363' fill='rgba(204,0,0,0.5)'><title>Print Zone</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2327'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='4058,1216 4149,1216 4149,1363 4058,1363'><title>Print Zone</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-10page/p2/9/annotation/p9-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-10/canvas/p1/2/annotation8-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -223,12 +223,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-10/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2327'><g><polygon points='4149,1216 4315,1216 4315,1363 4149,1363' fill='rgba(204,0,0,0.5)'><title>Timed Access PCs</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2327'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='4149,1216 4315,1216 4315,1363 4149,1363'><title>Timed Access PCs</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-10page/p2/10/annotation/p10-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-10/canvas/p1/2/annotation9-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -242,12 +242,12 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-10/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2327'><g><polygon points='4166,1417 4357,1417 4357,1496 4166,1496' fill='rgba(204,0,0,0.5)'><title>Water Dispenser</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2327'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='4166,1417 4357,1417 4357,1496 4166,1496'><title>Water Dispenser</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-10page/p2/11/annotation/p11-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-10/canvas/p1/2/annotation10-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -261,7 +261,7 @@
                                 "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-10/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2327'><g><polygon points='755,1126 1068,1126 1068,1333 755,1333' fill='rgba(204,0,0,0.5)'><title>Accessible Room 10.1</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5000,2327'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='755,1126 1068,1126 1068,1333 755,1333'><title>Accessible Room 10.1</title></polygon></g></svg>"
                                 }
                             }
                         }
