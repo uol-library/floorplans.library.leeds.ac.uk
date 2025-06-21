@@ -1,0 +1,33 @@
+{
+  "tiles" : [ {
+    "scaleFactors" : [ 32, 16, 8, 4, 2, 1 ],
+    "width" : 1024,
+    "height" : 1024
+  } ],
+  "protocol" : "http://iiif.io/api/image",
+  "sizes" : [ {
+    "width" : 172,
+    "height" : 198
+  }, {
+    "width" : 344,
+    "height" : 395
+  }, {
+    "width" : 687,
+    "height" : 790
+  }, {
+    "width" : 1374,
+    "height" : 1580
+  }, {
+    "width" : 2748,
+    "height" : 3160
+  }, {
+    "width" : 5496,
+    "height" : 6320
+  } ],
+  "profile" : "level0",
+  "width" : 5496,
+  "id" : "http://localhost:8887/iiif/brotherton-w3",
+  "type" : "ImageService3",
+  "@context" : "http://iiif.io/api/image/3/context.json",
+  "height" : 6320
+}

@@ -1,0 +1,33 @@
+{
+  "tiles" : [ {
+    "scaleFactors" : [ 32, 16, 8, 4, 2, 1 ],
+    "width" : 1024,
+    "height" : 1024
+  } ],
+  "protocol" : "http://iiif.io/api/image",
+  "sizes" : [ {
+    "width" : 157,
+    "height" : 87
+  }, {
+    "width" : 313,
+    "height" : 174
+  }, {
+    "width" : 626,
+    "height" : 347
+  }, {
+    "width" : 1251,
+    "height" : 694
+  }, {
+    "width" : 2502,
+    "height" : 1388
+  }, {
+    "width" : 5003,
+    "height" : 2775
+  } ],
+  "profile" : "level0",
+  "width" : 5003,
+  "id" : "http://localhost:8887/iiif/edwardboyle-12",
+  "type" : "ImageService3",
+  "@context" : "http://iiif.io/api/image/3/context.json",
+  "height" : 2775
+}
