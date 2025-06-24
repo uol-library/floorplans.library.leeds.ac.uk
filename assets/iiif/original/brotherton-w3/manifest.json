@@ -1,6 +1,6 @@
 {
     "@context": "http://iiif.io/api/presentation/3/context.json",
-    "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/brotherton-w3/manifest.json",
+    "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/original/brotherton-w3/manifest.json",
     "type": "Manifest",
     "label": {
         "en": [
@@ -9,7 +9,7 @@
     },
     "items": [
         {
-            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/brotherton-w3/canvas/p1",
+            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/original/brotherton-w3/canvas/p1",
             "type": "Canvas",
             "width": 5049,
             "height": 6734,
@@ -20,17 +20,17 @@
             },
             "items": [
                 {
-                    "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/brotherton-w3/canvas/p1/1",
+                    "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/original/brotherton-w3/canvas/p1/1",
                     "type": "AnnotationPage",
                     "items": [
                         {
                             "@context": "http://iiif.io/api/presentation/3/context.json",
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/brotherton-w3/canvas/p1/1/image",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/original/brotherton-w3/canvas/p1/1/image",
                             "type": "Annotation",
                             "motivation": "painting",
-                            "target": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/brotherton-w3/canvas/p1",
+                            "target": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/original/brotherton-w3/canvas/p1",
                             "body": {
-                                "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/brotherton-w3/full/max/0/default.jpg",
+                                "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/original/brotherton-w3/full/max/0/default.jpg",
                                 "type": "Image",
                                 "label": {
                                     "en": [
@@ -41,7 +41,7 @@
                                 "service": [
                                     {
                                         "@context": "http://iiif.io/api/image/2/context.json",
-                                        "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/brotherton-w3",
+                                        "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/original/brotherton-w3",
                                         "type": "ImageService3",
                                         "profile": "level0",
                                         "protocol": "http://iiif.io/api/image",
@@ -72,11 +72,11 @@
             ],
             "annotations": [
                 {
-                    "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/brotherton-w3/canvas/p1/2",
+                    "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/original/brotherton-w3/canvas/p1/2",
                     "type": "AnnotationPage",
                     "items": [
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/brotherton-w3/canvas/p1/2/annotation1-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/original/brotherton-w3/canvas/p1/2/annotation1-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -87,15 +87,15 @@
                             },
                             "target": {
                                 "type": "SpecificResource",
-                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/brotherton-w3/canvas/p1",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/original/brotherton-w3/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5049,6734'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='1988,3568 2146,3568 2146,5308 1988,5308'><title>Library PCs</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5049,6734'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='1988,3568 2146,3568 2146,5308 1988,5308'><title>Library PCs</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/brotherton-w3/canvas/p1/2/annotation2-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/original/brotherton-w3/canvas/p1/2/annotation2-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -106,15 +106,15 @@
                             },
                             "target": {
                                 "type": "SpecificResource",
-                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/brotherton-w3/canvas/p1",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/original/brotherton-w3/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5049,6734'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='1792,4800 2304,4800 2304,5216 1792,5216'><title>Print, Copy, Scan</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5049,6734'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='1792,4800 2304,4800 2304,5216 1792,5216'><title>Print, Copy, Scan</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/brotherton-w3/canvas/p1/2/annotation3-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/original/brotherton-w3/canvas/p1/2/annotation3-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -125,15 +125,15 @@
                             },
                             "target": {
                                 "type": "SpecificResource",
-                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/brotherton-w3/canvas/p1",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/original/brotherton-w3/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5049,6734'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='2768,4312 4288,4312 4288,5272 2768,5272'><title>Group Study Area</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5049,6734'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='2768,4312 4288,4312 4288,5272 2768,5272'><title>Group Study Area</title></polygon></g></svg>"
                                 }
                             }
                         },
                         {
-                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/brotherton-w3/canvas/p1/2/annotation4-svg",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/original/brotherton-w3/canvas/p1/2/annotation4-svg",
                             "type": "Annotation",
                             "motivation": "tagging",
                             "body": {
@@ -144,10 +144,10 @@
                             },
                             "target": {
                                 "type": "SpecificResource",
-                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/brotherton-w3/canvas/p1",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/original/brotherton-w3/canvas/p1",
                                 "selector": {
                                     "type": "SvgSelector",
-                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5049,6734'><g><polygon style='fill:#aa00cc;stroke:#880088;stroke-width:3' points='2210,197 4374,197 4374,1562 2210,1562'><title>IT Cluster</title></polygon></g></svg>"
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5049,6734'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='2210,197 4374,197 4374,1562 2210,1562'><title>IT Cluster</title></polygon></g></svg>"
                                 }
                             }
                         }
