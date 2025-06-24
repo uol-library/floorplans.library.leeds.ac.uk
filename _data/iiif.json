@@ -64,8 +64,8 @@
             {
                 "key": "edwardboyle-8",
                 "title": "Edward Boyle Library - level 8",
-                "adjust_x": -3,
-                "adjust_y": -73,
+                "adjust_x": 3,
+                "adjust_y": 73,
                 "adjust_scale": 1,
                 "thumb_original": "assets/iiif/original/edwardboyle-8/full/157,81/0/default.jpg",
                 "thumb_cropped": "assets/iiif/cropped/edwardboyle-8/full/157,87/0/default.jpg"
@@ -73,8 +73,8 @@
             {
                 "key": "edwardboyle-9",
                 "title": "Edward Boyle Library - level 9",
-                "adjust_x": -3,
-                "adjust_y": -17,
+                "adjust_x": 3,
+                "adjust_y": 17,
                 "adjust_scale": 1,
                 "thumb_original": "assets/iiif/original/edwardboyle-9/full/157,85/0/default.jpg",
                 "thumb_cropped": "assets/iiif/cropped/edwardboyle-9/full/157,87/0/default.jpg"
@@ -83,7 +83,7 @@
                 "key": "edwardboyle-10",
                 "title": "Edward Boyle Library - level 10",
                 "adjust_x": 0,
-                "adjust_y": -17,
+                "adjust_y": 17,
                 "adjust_scale": 1,
                 "thumb_original": "assets/iiif/original/edwardboyle-10/full/157,73/0/default.jpg",
                 "thumb_cropped": "assets/iiif/cropped/edwardboyle-10/full/157,87/0/default.jpg"
@@ -91,8 +91,8 @@
             {
                 "key": "edwardboyle-11",
                 "title": "Edward Boyle Library - level 11",
-                "adjust_x": -1,
-                "adjust_y": -1,
+                "adjust_x": 1,
+                "adjust_y": 1,
                 "adjust_scale": 1,
                 "thumb_original": "assets/iiif/original/edwardboyle-11/full/157,89/0/default.jpg",
                 "thumb_cropped": "assets/iiif/cropped/edwardboyle-11/full/157,87/0/default.jpg"
@@ -100,7 +100,7 @@
             {
                 "key": "edwardboyle-12",
                 "title": "Edward Boyle Library - level 12",
-                "adjust_x": -1,
+                "adjust_x": 1,
                 "adjust_y": 157,
                 "adjust_scale": 1,
                 "thumb_original": "assets/iiif/original/edwardboyle-12/full/157,92/0/default.jpg",
@@ -109,7 +109,7 @@
             {
                 "key": "edwardboyle-13",
                 "title": "Edward Boyle Library - level 13",
-                "adjust_x": -2,
+                "adjust_x": 2,
                 "adjust_y": 51,
                 "adjust_scale": 1,
                 "thumb_original": "assets/iiif/original/edwardboyle-13/full/157,88/0/default.jpg",
