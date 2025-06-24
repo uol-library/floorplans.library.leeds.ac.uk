@@ -1,0 +1,33 @@
+{
+  "tiles" : [ {
+    "scaleFactors" : [ 32, 16, 8, 4, 2, 1 ],
+    "width" : 1024,
+    "height" : 1024
+  } ],
+  "protocol" : "http://iiif.io/api/image",
+  "sizes" : [ {
+    "width" : 157,
+    "height" : 109
+  }, {
+    "width" : 313,
+    "height" : 217
+  }, {
+    "width" : 625,
+    "height" : 433
+  }, {
+    "width" : 1250,
+    "height" : 865
+  }, {
+    "width" : 2500,
+    "height" : 1730
+  }, {
+    "width" : 5000,
+    "height" : 3460
+  } ],
+  "profile" : "level0",
+  "width" : 5000,
+  "id" : "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-third",
+  "type" : "ImageService3",
+  "@context" : "http://iiif.io/api/image/3/context.json",
+  "height" : 3460
+}
