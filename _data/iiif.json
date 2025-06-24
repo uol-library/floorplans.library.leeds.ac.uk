@@ -5,8 +5,8 @@
             {
                 "key": "brotherton-m1",
                 "title": "Brotherton Library Main Building - level 1",
-                "adjust_x": 226,
-                "adjust_y": 68,
+                "adjust_x": -452,
+                "adjust_y": -136,
                 "thumb_original": "assets/iiif/original/brotherton-m1/full/159,188/0/default.jpg",
                 "thumb_cropped": "assets/iiif/cropped/brotherton-m1/full/145,147/0/default.jpg"
             },
