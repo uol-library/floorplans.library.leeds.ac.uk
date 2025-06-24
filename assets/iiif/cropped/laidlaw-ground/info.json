@@ -26,7 +26,7 @@
   } ],
   "profile" : "level0",
   "width" : 5000,
-  "id" : "http://localhost:8887/iiif/laidlaw-ground",
+  "id" : "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/laidlaw-ground",
   "type" : "ImageService3",
   "@context" : "http://iiif.io/api/image/3/context.json",
   "height" : 2614
