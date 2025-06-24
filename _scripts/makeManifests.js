@@ -108,9 +108,10 @@ function getAnnotations( baseURI, svgdata, metadata, set, width, height ) {
             let pointsArrAdjusted = [];
             let adj_x = ( set === 'cropped' ) ? metadata.adjust_x: 0;
             let adj_y = ( set === 'cropped' ) ? metadata.adjust_y: 0;
+            let adj_s = ( set === 'cropped' ) ? metadata.adjust_scale: 1;
             pointsArr.forEach( p => {
                 let points = p.split(',');
-                pointsArrAdjusted.push( ( parseInt( points[0] ) + adj_x) + ',' + ( parseInt( points[1] ) + adj_y ) );
+                pointsArrAdjusted.push( Math.floor( ( parseInt( points[0] ) + adj_x ) * adj_s ) + ',' + Math.floor( ( parseInt( points[1] ) + adj_y ) * adj_s ) );
             });
             let newpoints = pointsArrAdjusted.join(' ');
             let svgBody = "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0," + width + "," + height + "'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='" + newpoints + "'><title>" + a.title + "</title></polygon></g></svg>";
