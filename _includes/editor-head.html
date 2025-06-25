@@ -1,0 +1,24 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <meta http-equiv="Expires" content="0"/>
+    {%- if site.headers -%}
+    {% for header in site.headers %}
+    <meta http-equiv="{{ header.name }}" content="{{ header.content }}">
+    {%- endfor -%}{%- endif -%}
+    <meta name="description" content="{{ site.description }}">
+    {%- if site.environment == "development" -%}
+    <meta name="robots" content="noindex">
+    {%- endif -%}
+    {% include dc.html %}
+    <title>{{ site.title }}</title>
+    <link rel="stylesheet" href="{{ "/assets/css/editor-style.css" | absolute_url }}">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin=""/>
+    <link rel="stylesheet" href="https://unpkg.com/@geoman-io/leaflet-geoman-free@2.17.0/dist/leaflet-geoman.css"/>
+    <script src="{{ "/assets/scripts/config.js" | absolute_url }}"></script>
+    {% include favicons.html %}
+    {% include custom-head.html %}
+</head>

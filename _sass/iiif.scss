@@ -1,0 +1,15 @@
+div.iiif {
+    padding: 2em;
+
+    ul.iiif-floors li {
+        list-style:none;
+        div.iiif-links {
+            max-width: 60em;
+            display: flex;
+            figure, div {
+                flex: 1 1 auto;
+                padding: 1em 2em;
+            }
+        }
+    }
+}
