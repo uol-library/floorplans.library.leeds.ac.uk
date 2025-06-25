@@ -50,7 +50,7 @@ document.addEventListener( 'fpmapready', e => {
 function updateOccupancy() {
     fplog( 'updateOccupancy' );
     let options = {
-        url: "https://resources.library.leeds.ac.uk/capacity.json",
+        url: "https://floorplans.library.leeds.ac.uk/capacity.json",
         key: "libraryOccupancy",
         expires: 0.015,
         callback: function( data ) {
