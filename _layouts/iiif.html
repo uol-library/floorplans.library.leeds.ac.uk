@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+{% include editor-head.html %}
+
+<body>
+  <main id="maincontainer">
+    <div class="iiif">
+    {{ content }}
+    </div>
+  </main>
+  {% include editor-foot.html %}
+</body>
+</html>

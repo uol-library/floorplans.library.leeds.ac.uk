@@ -1,0 +1,9 @@
+<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+<script src="https://unpkg.com/@geoman-io/leaflet-geoman-free@2.17.0/dist/leaflet-geoman.js" integrity="sha256-pX70+HFTovwMt6Er9D4aTigqATNq8Cz/bY8Zj3DH66g=" crossorigin="anonymous"></script>
+{% include custom-foot.html %}
+
+{%- if site.environment == "development" -%}
+<script src="{{ "/assets/scripts/editor-bundle.js" | absolute_url }}"></script>
+{%- else -%}
+<script src="{{ "/assets/scripts/editor-bundle.min.js" | absolute_url }}"></script>
+{%- endif -%}
