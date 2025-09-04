@@ -110,7 +110,7 @@ document.addEventListener( "DOMContentLoaded", function() {
             L.DomUtil.remove( exportdiv );
         });
         let ta = L.DomUtil.create( 'textarea', 'geojson-container', exportdiv );
-        ta.textContent = JSON.stringify(floorplans.activeFloorLayer.toGeoJSON());
+        ta.textContent = JSON.stringify(floorplans.map.pm.getGeomanLayers(true).toGeoJSON(), null, 4);
         L.DomUtil.toFront( exportdiv );
     });
     
@@ -209,19 +209,7 @@ var addFloorLayer = function( floor ) {
         });
     }
 };
-L.LayerGroup.prototype.addLayerOrg = L.LayerGroup.prototype.addLayer;
-L.LayerGroup.prototype.addLayer = function (layer) {
-  layer.addEventParent(this);
-  this.addLayerOrg(layer);
-  return this.fire("layeradd", { layer: layer });
-};
 
-L.LayerGroup.prototype.removeLayerOrg = L.LayerGroup.prototype.removeLayer;
-L.LayerGroup.prototype.removeLayer = function (layer) {
-  layer.removeEventParent(this);
-  this.removeLayerOrg(layer);
-  return this.fire("layerremove", { layer: layer });
-};
 
 /**
  * Selects a floor from the dropdown list
