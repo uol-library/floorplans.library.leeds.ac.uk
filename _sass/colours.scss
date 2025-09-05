@@ -101,32 +101,46 @@ $shelf-colors: '#ff3b8d' '#009e8c' '#ff426c' '#00999a' '#ff4647' '#0098a9' '#fd4
 		}
 	}
 }
-path.location {
-	fill: #aaa;
+path.group-study-location {
+	fill: rgb(255, 134, 28);
 }
+path.silent-study-location {
+	fill: rgb(28, 172, 255);
+}
+
 path.group-study {
-    fill: transparent;
+    fill: rgb(255, 134, 28);
+	fill-opacity: 0.2;
 	stroke: #ff861c;
 	stroke-width: 2;
 	stroke-opacity: 1;
 }
 ul.selecter__list li.group-study button {
 	&::before {
-		border: 3px solid #ff861c;
+		border: 3px solid rgb(255, 134, 28);
+		background: rgba(255, 134, 28, 0.2)
 	}
 	&:hover, &:focus {
+		&::before {
+			
+		}
 	}
 }
 path.silent-study {
-    fill: transparent;
+    fill: rgb(28, 172, 255);
+	fill-opacity: 0.2;
 	stroke: #1cacff;
 	stroke-width: 2;
 	stroke-opacity: 1;
 }
 ul.selecter__list li.silent-study button {
 	&::before {
-		border: 3px solid #1cacff
+		border: 3px solid rgb(28, 172, 255);
+		background: rgba(28, 172, 255, 0.2);
 	}
 	&:hover, &:focus {
+		&::before {
+			
+		}
 	}
 }

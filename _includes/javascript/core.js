@@ -98,16 +98,16 @@ var addFloorLayer = function( floor ) {
                                 layer.bindPopup( feature.properties.name, { className: 'feature-tooltip' } );
                                 layer.on({
                                     mouseover: highlightFeature,
-                                    //mouseout: resetFeature,
+                                    mouseout: resetFeature,
                                     focus: highlightFeature,
-                                    //blur: resetFeature
+                                    blur: resetFeature
                                 });
                             },
                             /* style each feature and add appropriate className */
                             style: function( feature ) {
-                                let op = 0.5;
-                                if ( feature.properties.type == 'location' ) {
-                                    op = 0;
+                                let op = 0;
+                                if ( feature.properties.type !== 'area' ) {
+                                    op = 0.5;
                                 }
                                 return {
                                     weight: 0,
@@ -215,10 +215,8 @@ function selectShelf( floor, shelfName ) {
  */
 function highlightFeature( e ) {
     let layer = e.target;
-    if ( layer.id && layer.feature.properties.type == 'shelf' ) {
+    if ( layer.id ) {
         layer.setStyle({ fillOpacity: 0.75 } );
-    } else if ( layer.id && layer.feature.properties.type == 'location' ) {
-        layer.setStyle({ fillOpacity: 0.4 } );
     }
     if ( e.latlng ) {
         layer.openPopup(e.latlng);
@@ -233,10 +231,8 @@ function highlightFeature( e ) {
  */
 function resetFeature( e ) {
     let layer = e.target;
-    if ( layer.id && layer.feature.properties.type == 'shelf' ) {
+    if ( layer.id ) {
         layer.setStyle({ fillOpacity: 0.5 } );
-    } else if ( layer.id && layer.feature.properties.type == 'location' ) {
-        layer.setStyle({ fillOpacity: 0 } );
     }
     layer.closePopup();
 }
