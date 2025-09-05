@@ -104,3 +104,29 @@ $shelf-colors: '#ff3b8d' '#009e8c' '#ff426c' '#00999a' '#ff4647' '#0098a9' '#fd4
 path.location {
 	fill: #aaa;
 }
+path.group-study {
+    fill: transparent;
+	stroke: #ff861c;
+	stroke-width: 2;
+	stroke-opacity: 1;
+}
+ul.selecter__list li.group-study button {
+	&::before {
+		border: 3px solid #ff861c;
+	}
+	&:hover, &:focus {
+	}
+}
+path.silent-study {
+    fill: transparent;
+	stroke: #1cacff;
+	stroke-width: 2;
+	stroke-opacity: 1;
+}
+ul.selecter__list li.silent-study button {
+	&::before {
+		border: 3px solid #1cacff
+	}
+	&:hover, &:focus {
+	}
+}

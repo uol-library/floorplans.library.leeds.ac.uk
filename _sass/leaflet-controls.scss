@@ -51,7 +51,8 @@
 		margin: 0;
 		li {
 			padding: .1rem;
-            &.item-shelf {
+            &.item-shelf,
+            &.item-area {
                 button {
                     padding: .2rem .2rem .2rem 2.2rem;
                     &::before {

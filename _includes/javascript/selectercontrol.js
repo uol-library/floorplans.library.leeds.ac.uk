@@ -46,6 +46,15 @@ function setupSelecterControl() {
         });
     });
 
+    /* areas */
+    let areaSelecter = L.DomUtil.create( 'div', 'hidden', floorplans.controls );
+    areaSelecter.setAttribute( 'id', 'areaselecter' );
+    let areaselecterHeading = L.DomUtil.create( 'h3', '', areaSelecter );
+    areaselecterHeading.textContent = 'Study Areas';
+    /* area selecter list */
+    let areaselecterList = L.DomUtil.create( 'ul', 'selecter__list', areaSelecter );
+    areaselecterList.setAttribute( 'id', 'areaselecterlist' );
+
     /* shelf selecter drop-down - subjects */
     let shelfSelecter = L.DomUtil.create( 'div', 'hidden', floorplans.controls );
     shelfSelecter.setAttribute( 'id', 'shelfselecter' );
@@ -72,7 +81,7 @@ function setupSelecterControl() {
                 floorplans.map.removeLayer( layer );
             });
             /* empty the current lists */
-            ['shelfselecter', 'locationselecter' ].forEach( s => {
+            ['areaselecter', 'shelfselecter', 'locationselecter' ].forEach( s => {
                 L.DomUtil.empty( L.DomUtil.get( s + 'list' ) );
                 L.DomUtil.addClass( L.DomUtil.get( s ), 'hidden' );
             });

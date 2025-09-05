@@ -82,7 +82,7 @@ var addFloorLayer = function( floor ) {
                     "callback": function( data ) {
                         let shelfClassID = 1;
                         let featureClass = 'leaflet-interactive';
-                        floor.selecters = { "shelf": [], "location": [] };
+                        floor.selecters = {};
                         fplog( 'addFloorLayer - GeoJSON loaded for ' + floor.floorname );
                         floor.features = L.geoJSON( data, {
                             /**
@@ -90,13 +90,11 @@ var addFloorLayer = function( floor ) {
                              * in arrays so we can build the selecters
                              */
                             onEachFeature: function( feature, layer ) {
-                                if ( feature.properties.type == 'shelf' ) {
-                                    layer.id = 'shelf' + feature.id;
-                                    floor.selecters.shelf.push( { 'value': layer.id, 'label': feature.properties.name, 'class': feature.properties.class } );
-                                } else if ( feature.properties.type == 'location' ) {
-                                    layer.id = 'location' + feature.id;
-                                    floor.selecters.location.push( { 'value': layer.id, 'label': feature.properties.name, 'class': feature.properties.class } );
+                                layer.id = feature.properties.type + feature.id;
+                                if ( ! floor.selecters.hasOwnProperty(feature.properties.type) ) {
+                                    floor.selecters[feature.properties.type] = [];
                                 }
+                                floor.selecters[feature.properties.type].push( { 'value': layer.id, 'label': feature.properties.name, 'class': feature.properties.class } );
                                 layer.bindPopup( feature.properties.name, { className: 'feature-tooltip' } );
                                 layer.on({
                                     mouseover: highlightFeature,

@@ -33,4 +33,4 @@ exclude:
   - public
   - node_modules
   - sync.sh
-
+  - vendor

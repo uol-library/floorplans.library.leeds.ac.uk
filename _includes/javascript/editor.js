@@ -108,7 +108,7 @@ document.addEventListener( "DOMContentLoaded", function() {
             L.DomUtil.remove( exportdiv );
         });
         let ta = L.DomUtil.create( 'textarea', 'geojson-container', exportdiv );
-        ta.textContent = JSON.stringify(floorplans.map.pm.getGeomanLayers(true).toGeoJSON());
+        ta.textContent = JSON.stringify(floorplans.map.pm.getGeomanLayers(true).toGeoJSON(), null, 4);
         L.DomUtil.toFront( exportdiv );
     });
     
@@ -208,6 +208,7 @@ var addFloorLayer = function( floor ) {
         });
     }
 };
+
 
 /**
  * Selects a floor from the dropdown list

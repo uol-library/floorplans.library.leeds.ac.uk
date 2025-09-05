@@ -65,6 +65,11 @@
     height: 80vh;
     background: $white;
     z-index: 1000001;
+    textarea.geojson-container {
+        border: none;
+        width: 100%;
+        height: 100%;
+    }
 }
 .leaflet-tooltip-top:before, 
 .leaflet-tooltip-bottom:before, 
