@@ -78,6 +78,14 @@
 					background: #efefef;
 				}
 			}
+            span.feature-description {
+                display: block;
+                background: $white;
+                font-size: .8rem;
+                margin: 0;
+                padding-left:2.2rem;
+                font-style: italic;
+            }
 		}
 	}
 }

@@ -154,6 +154,11 @@ function buildFeatureSelects( floor ) {
                     let layer = getFeature( e.target.getAttribute( 'data-featureid' ) );
                     layer.fire( 'mouseout', {}, true );
                 });
+                if ( o.desc && o.desc !== '' ) {
+                    itembutton.title = o.desc;
+                    //let desc = L.DomUtil.create('span', 'feature-description', itemli );
+                    //desc.innerText = o.desc;
+                }
             });
             /* show the selecter */
             L.DomUtil.removeClass( listcontainer, 'hidden' );

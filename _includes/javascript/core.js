@@ -94,8 +94,8 @@ var addFloorLayer = function( floor ) {
                                 if ( ! floor.selecters.hasOwnProperty(feature.properties.type) ) {
                                     floor.selecters[feature.properties.type] = [];
                                 }
-                                floor.selecters[feature.properties.type].push( { 'value': layer.id, 'label': feature.properties.name, 'class': feature.properties.class } );
-                                layer.bindPopup( feature.properties.name, { className: 'feature-tooltip' } );
+                                floor.selecters[feature.properties.type].push( { 'value': layer.id, 'label': feature.properties.name, 'desc': feature.properties.desc, 'class': feature.properties.class } );
+                                layer.bindPopup( buildFeaturePopup(feature), { className: 'feature-tooltip' } );
                                 layer.on({
                                     mouseover: highlightFeature,
                                     mouseout: resetFeature,
@@ -132,6 +132,16 @@ var addFloorLayer = function( floor ) {
     }
 };
 
+/**
+ * Creates text for the popups
+ */
+function buildFeaturePopup( feature ) {
+    let popupText = '<strong>' + feature.properties.name + '</strong>';
+    if ( feature.properties.desc && feature.properties.desc !== '' ) {
+        popupText += '<br>' + feature.properties.desc;
+    }
+    return popupText;
+}
 /**
  * Loads a floor when the application loads. The floor to load is determined by
  * getStartParams()
