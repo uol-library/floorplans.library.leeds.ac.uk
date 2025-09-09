@@ -2934,9 +2934,9 @@
             "type": "Feature",
             "id": 11,
             "properties": {
-                "name": "Print Zone",
+                "name": "Print, Copy, Scan",
                 "type": "location",
-                "desc": "",
+                "desc": "Find out more about Print, scan and copy at the Library, including how and where you can print, copy and scan and buying print credit <a class=\"external\" target=\"_blank\" href=\"https://myprint.leeds.ac.uk/user\">on the MyPrint website</a>",
                 "class": "group-study-location"
             },
             "geometry": {
@@ -2966,24 +2966,24 @@
                     ],
                     [
                         [
-                            96.6,
-                            -42.1
+                            96.28125,
+                            -47
                         ],
                         [
-                            100.3,
-                            -42.1
+                            96.28125,
+                            -41
                         ],
                         [
-                            100.3,
-                            -46.9
+                            100.40625,
+                            -41
                         ],
                         [
-                            96.6,
-                            -46.9
+                            100.40625,
+                            -47
                         ],
                         [
-                            96.6,
-                            -42.1
+                            96.28125,
+                            -47
                         ]
                     ]
                 ]
@@ -3428,6 +3428,64 @@
                         [
                             9.4,
                             -11
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Timed access PCs",
+                "type": "location",
+                "desc": "",
+                "class": "group-study-location"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            100.75,
+                            -47
+                        ],
+                        [
+                            100.75,
+                            -41
+                        ],
+                        [
+                            104.78125,
+                            -41
+                        ],
+                        [
+                            104.78125,
+                            -47
+                        ],
+                        [
+                            100.75,
+                            -47
+                        ]
+                    ],
+                    [
+                        [
+                            55.40625,
+                            -47
+                        ],
+                        [
+                            55.40625,
+                            -41
+                        ],
+                        [
+                            59.15625,
+                            -41
+                        ],
+                        [
+                            59.15625,
+                            -47
+                        ],
+                        [
+                            55.40625,
+                            -47
                         ]
                     ]
                 ]

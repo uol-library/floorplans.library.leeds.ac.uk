@@ -98,9 +98,7 @@ var addFloorLayer = function( floor ) {
                                 layer.bindPopup( buildFeaturePopup(feature), { className: 'feature-tooltip' } );
                                 layer.on({
                                     mouseover: highlightFeature,
-                                    mouseout: resetFeature,
                                     focus: highlightFeature,
-                                    blur: resetFeature
                                 });
                             },
                             /* style each feature and add appropriate className */
@@ -224,6 +222,7 @@ function selectShelf( floor, shelfName ) {
  * @param {Event} e 
  */
 function highlightFeature( e ) {
+    resetFeatures();
     let layer = e.target;
     if ( layer.id ) {
         layer.setStyle({ fillOpacity: 0.75 } );
@@ -239,10 +238,12 @@ function highlightFeature( e ) {
  * Reset the highlight for a feature on the plan
  * @param {Event} e 
  */
-function resetFeature( e ) {
-    let layer = e.target;
-    if ( layer.id ) {
-        layer.setStyle({ fillOpacity: 0.5 } );
+function resetFeatures() {
+    if ( floorplans.currentFloor && floorplans.currentFloor.features ) {
+        floorplans.currentFloor.features.eachLayer( function( layer ) {
+            if ( layer.id ) {
+                layer.setStyle({ fillOpacity: 0.5 } );
+            }
+        });
     }
-    layer.closePopup();
 }

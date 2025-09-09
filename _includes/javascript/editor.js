@@ -113,6 +113,9 @@ document.addEventListener( "DOMContentLoaded", function() {
     });
     
     floorplans.map.pm.addControls();
+    floorplans.map.pm.setGlobalOptions({
+        snappable: false
+    });
 
     /* fire loaded event */
     document.dispatchEvent( new Event( 'fpmapready' ) );

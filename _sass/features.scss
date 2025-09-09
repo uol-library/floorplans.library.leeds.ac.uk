@@ -26,6 +26,30 @@ path.group-study-location {
 path.silent-study-location {
 	fill: rgb(28, 172, 255);
 }
+path.public-location {
+	fill: rgb(0, 153, 51);
+}
+path.staff-location {
+	fill: #cccccc;
+}
+path.public {
+    fill: #009933;
+	fill-opacity: 0.2;
+	stroke: #009933;
+	stroke-width: 2;
+	stroke-opacity: 1;
+}
+ul.selecter__list li.public button {
+	&::before {
+		border: 3px solid rgb(0, 153, 51);
+		background: rgba(0, 153, 51, 0.2)
+	}
+	&:hover, &:focus {
+		&::before {
+			
+		}
+	}
+}
 
 path.group-study {
     fill: rgb(255, 134, 28);
@@ -63,3 +87,21 @@ ul.selecter__list li.silent-study button {
 		}
 	}
 }
+path.staff {
+    fill: #cccccc;
+	stroke: #cccccc;
+	stroke-width: 2;
+	stroke-opacity: 1;
+}
+ul.selecter__list li.staff button {
+	&::before {
+		border: 3px solid #999999;
+		background: rgba(88,88,88, 0.2);
+	}
+	&:hover, &:focus {
+		&::before {
+			
+		}
+	}
+}
+

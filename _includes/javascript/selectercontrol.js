@@ -97,6 +97,7 @@ function setupSelecterControl() {
                             sortFeatureSelects( floor );
                             /* add the floor layer to the map and center it */
                             floorlayer.addTo( floorplans.map );
+                            floorplans.currentFloor = floor;
                             floorplans.map.fitBounds( floor.imageBounds );
                             floorplans.map.setView( floor.imageBounds.getCenter() );
                             fplog( 'Added layer for floor '+floor.floorname );
