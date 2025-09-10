@@ -131,12 +131,16 @@
                             -72.8125
                         ],
                         [
-                            48.9375,
-                            -72.84375
+                            49.78125,
+                            -71.5
                         ],
                         [
-                            48.90625,
-                            -73.8125
+                            46.1875,
+                            -71.5625
+                        ],
+                        [
+                            46.28125,
+                            -73.65625
                         ],
                         [
                             34.65625,
@@ -1434,9 +1438,9 @@
             "type": "Feature",
             "id": 14,
             "properties": {
-                "name": "Cafe",
+                "name": "Edit Room Café",
                 "type": "location",
-                "desc": "",
+                "desc": "Provides an eclectic mix of grab and go food and drinks for everyone to enjoy at any time of the day. <a href=\"https://gfal.leeds.ac.uk/where-to-eat/cafes/the-edit-room/\" target=\"_blank\">Find out more on the GFAL website</a>.",
                 "class": "public-location"
             },
             "geometry": {

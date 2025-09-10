@@ -3,7 +3,7 @@
     margin: 0;
     font-size: 1rem;
     padding: .5rem;
-    background: $white;
+    background: var(--white);
     margin-left: 0;
     .floorplans-selecter {
         padding: .5rem;
@@ -15,7 +15,7 @@
         width:100%;
     }
 	ul.selecter__list {
-        background: $lightgrey;
+        background: var(--lightgrey);
 		max-height: 20vh;
 		overflow: auto;
 		list-style: none;
@@ -63,7 +63,7 @@
     top: 10vh;
     width: 80vw;
     height: 80vh;
-    background: $white;
+    background: var(--white);
     z-index: 1000001;
     textarea.geojson-container {
         border: none;

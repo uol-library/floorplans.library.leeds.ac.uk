@@ -10,14 +10,14 @@ body, h1, h2, h3, h4, button {
     font-family: 'PT Sans', sans-serif;
 }
 a {
-    color: $linkcolor;
+    color: var(--linkcolor);
     &:hover {
-        color: $linkcolor-hover;
+        color: var(--linkcolor-hover);
     }
     &:visited {
-        color: $linkcolor-visited;
+        color: var(--linkcolor-visited);
     }
     &:active {
-        color: $linkcolor-active;
+        color: var(--linkcolor-active);
     }
 }

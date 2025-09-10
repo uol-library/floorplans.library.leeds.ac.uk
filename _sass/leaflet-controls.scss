@@ -4,7 +4,7 @@
     font-size: 1rem;
     width: $controlsWidth;
     padding: .5rem;
-    background: $white;
+    background: var(--white);
     margin-left: 0;
     transition: margin-left .3s linear;
     &.closed {
@@ -43,7 +43,7 @@
         width:100%;
     }
 	ul.selecter__list {
-        background: $lightgrey;
+        background: var(--lightgrey);
 		max-height: 20vh;
 		overflow: auto;
 		list-style: none;
@@ -80,7 +80,7 @@
 			}
             span.feature-description {
                 display: block;
-                background: $white;
+                background: var(--white);
                 font-size: .8rem;
                 margin: 0;
                 padding-left:2.2rem;
@@ -127,25 +127,25 @@
     padding: 0;
     margin: 0;
     font-size: 1.5rem;
-    background: $geobuttonbg;
-    color: $geobuttoncolor;
+    background: var(--geobuttonbg);
+    color: var(--geobuttoncolor);
     user-select: none;
     cursor: pointer;
     &::before {
         margin:0;
     }
     &:hover {
-        background: $geobuttonbg-hover;
-        color: $geobuttoncolor-hover;
+        background: var(--geobuttonbg-hover);
+        color: var(--geobuttoncolor-hover);
     }
     &.active {
-        background: $geobuttonbg-active;
-        color: $geobuttoncolor-active;
+        background: var(--geobuttonbg-active);
+        color: var(--geobuttoncolor-active);
     }
     &[disabled] {
         cursor: default;
-        background: $geobuttonbg-disabled;
-        color: $geobuttoncolor-disabled;
+        background: var(--geobuttonbg-disabled);
+        color: var(--geobuttoncolor-disabled);
     }
 }
 .leaflet-tooltip-top:before, 
@@ -165,6 +165,6 @@
     margin: 0 4em;
     font-size: 1rem;
     strong {
-        color: $color-brand--dark;
+        color: var(--occupancyno);
     }
 }

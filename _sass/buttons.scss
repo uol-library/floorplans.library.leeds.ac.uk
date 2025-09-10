@@ -1,8 +1,8 @@
 .btn-menu {
 	width: 32px;
 	height: 32px;
-	border: 3px solid $white;
-	background: $menubutton-bg;
+	border: 3px solid var(--white);
+	background: var(--menubutton-bg);
 	border-bottom-right-radius: 3px;
 	display: block;
 	cursor: pointer;
@@ -10,32 +10,32 @@
     right: 10px;
 	&.close:hover,
 	&:hover {
-		background: $menubutton-bg-hover;
+		background: var(--menubutton-bg-hover);
 		span,
 		span:before,
 		span:after {
-		    background-color: $menubutton-hover;
+		    background-color: var(--menubutton-hover);
 		}
 	}
     span.icon {
         position: absolute;
         top: 12px;
         left: 2px;
-        background-color: $menubutton;
+        background-color: var(--menubutton);
         transform: rotate(0deg);
         &:before {
             position: absolute;
             top: -8px;
             left: 0;
             content: ' ';
-            background-color: $menubutton;
+            background-color: var(--menubutton);
 	    }
         &:after {
             position: absolute;
             top: 8px;
             left: 0;
             content: ' ';
-            background-color: $menubutton;
+            background-color: var(--menubutton);
         }
     }
     &.close {

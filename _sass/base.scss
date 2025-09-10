@@ -16,7 +16,7 @@ html, body, #maincontainer {
 #floorplan-controls {
     width: $controlsWidth;
     height: 100%;
-    background: $white;
+    background: var(--white);
 }
 #floorplan {
     height: 100%;

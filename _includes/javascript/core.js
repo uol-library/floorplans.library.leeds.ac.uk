@@ -227,16 +227,27 @@ function highlightFeature( e ) {
     if ( layer.id ) {
         layer.setStyle({ fillOpacity: 0.75 } );
     }
-    if ( e.latlng ) {
-        layer.openPopup(e.latlng);
+    // GeoJSON multiple polygons
+    if ( layer.feature && layer.feature.geometry && layer.feature.geometry.coordinates && layer.feature.geometry.coordinates.length > 1 ) {
+        // not sure how to handle this!
+        if ( e.latLng ) {
+            layer.openPopup( e.latlng );
+        } else {
+            layer.openPopup();
+        }
+        // layer.openPopup( polylabel( layer.feature.geometry.coordinates ) );
     } else {
-        layer.openPopup( polylabel( layer.feature.geometry.coordinates ) );
+        if ( e.latLng ) {
+            layer.openPopup( e.latlng );
+        } else {
+            layer.openPopup();
+        }
     }
 }
 
 /**
- * Reset the highlight for a feature on the plan
- * @param {Event} e 
+ * Reset the highlight for all features on the current floor
+ * 
  */
 function resetFeatures() {
     if ( floorplans.currentFloor && floorplans.currentFloor.features ) {
