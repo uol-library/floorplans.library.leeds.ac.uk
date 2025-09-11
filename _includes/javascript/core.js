@@ -230,18 +230,15 @@ function highlightFeature( e ) {
     // GeoJSON multiple polygons
     if ( layer.feature && layer.feature.geometry && layer.feature.geometry.coordinates && layer.feature.geometry.coordinates.length > 1 ) {
         // not sure how to handle this!
-        if ( e.latLng ) {
+        console.log(e);
+        if ( e.latlng ) {
             layer.openPopup( e.latlng );
         } else {
             layer.openPopup();
         }
         // layer.openPopup( polylabel( layer.feature.geometry.coordinates ) );
     } else {
-        if ( e.latLng ) {
-            layer.openPopup( e.latlng );
-        } else {
-            layer.openPopup();
-        }
+        layer.openPopup();
     }
 }
 
