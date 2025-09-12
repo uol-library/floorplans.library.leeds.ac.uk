@@ -1,0 +1,128 @@
+{
+  "type": "AnnotationPage",
+  "@context": "http://www.w3.org/ns/anno.jsonld",
+  "items": [
+    {
+      "id": "https://annotations.allmaps.org/maps/d74ea7d506e7c6ca",
+      "type": "Annotation",
+      "@context": [
+        "http://iiif.io/api/extension/georef/1/context.json",
+        "http://iiif.io/api/presentation/3/context.json"
+      ],
+      "created": "2025-06-24T19:28:59.431Z",
+      "modified": "2025-06-24T19:28:59.431Z",
+      "motivation": "georeferencing",
+      "target": {
+        "type": "SpecificResource",
+        "source": {
+          "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/laidlaw-ground",
+          "type": "ImageService3",
+          "height": 2614,
+          "width": 5000,
+          "partOf": [
+            {
+              "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/laidlaw-ground/canvas/p1",
+              "type": "Canvas",
+              "label": {
+                "en": [
+                  "Laidlaw Library - Ground Floor"
+                ]
+              },
+              "partOf": [
+                {
+                  "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/laidlaw-ground/manifest.json",
+                  "type": "Manifest",
+                  "label": {
+                    "en": [
+                      "Laidlaw Library - Ground Floor"
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "selector": {
+          "type": "SvgSelector",
+          "value": "<svg width=\"5000\" height=\"2614\"><polygon points=\"0,0 0,2614 5000,2614 5000,0\" /></svg>"
+        }
+      },
+      "body": {
+        "type": "FeatureCollection",
+        "transformation": {
+          "type": "helmert"
+        },
+        "features": [
+          {
+            "type": "Feature",
+            "properties": {
+              "resourceCoords": [
+                4989,
+                788
+              ]
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                -1.5517636,
+                53.8070679
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "resourceCoords": [
+                0,
+                241
+              ]
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                -1.5523353,
+                53.8065466
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "resourceCoords": [
+                840,
+                2602
+              ]
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                -1.5517993,
+                53.806515
+              ]
+            }
+          }
+        ],
+        "_allmaps": {
+          "id": "https://annotations.allmaps.org/maps/d74ea7d506e7c6ca",
+          "version": "https://annotations.allmaps.org/maps/d74ea7d506e7c6ca@376b31458080ccc3",
+          "image": {
+            "id": "https://annotations.allmaps.org/images/447034c419b2ef5b",
+            "version": "https://annotations.allmaps.org/images/447034c419b2ef5b@8ee1d030bde96b6e",
+            "canvases": [
+              {
+                "id": "https://annotations.allmaps.org/canvases/3d1c719b01faa4ed",
+                "manifests": [
+                  {
+                    "id": "https://annotations.allmaps.org/manifests/a3547420f4435d9c"
+                  }
+                ]
+              }
+            ]
+          },
+          "scale": 141.807209,
+          "area": 649.95
+        }
+      }
+    }
+  ]
+}

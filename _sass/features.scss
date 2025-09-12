@@ -4,7 +4,7 @@ $shelf-classes: 'd1' 'd2' 'd3' 'd4' 'd5' 'd6' 'd7' 'd8' 'd9' 'd10' 'd11' 'd12' '
 		fill: var(--#{$cls});
 		color: var(--#{$cls});
 	}
-	ul.selecter__list li.#{$cls}.item-shelf button {
+	ul.selecter__list li.item-shelf button.#{$cls} {
 		&::before {
 		    background-color: var(--#{$cls});
 			opacity: 0.5;
@@ -54,8 +54,9 @@ path {
 		stroke-opacity: 1;
 	}
 }
-ul.selecter__list li {
-    &.public button {
+ul.selecter__list li button {
+
+    &.public {
 		&::before {
 			border: 3px solid rgb(var(--publicarea));
 			background: rgba(var(--publicarea), 0.2)
@@ -66,7 +67,7 @@ ul.selecter__list li {
 			}
 		}
 	}
-    &.group-study button {
+    &.group-study {
 		&::before {
 			border: 3px solid rgb(var(--groupstudyarea));
 			background: rgba(var(--groupstudyarea), 0.2 );
@@ -77,7 +78,7 @@ ul.selecter__list li {
 			}
 		}
 	}
-    &.silent-study button {
+    &.silent-study {
 		&::before {
 			border: 3px solid rgb(var(--silentstudyarea));
 			background: rgba(var(--silentstudyarea), 0.2);
@@ -88,7 +89,7 @@ ul.selecter__list li {
 			}
 		}
 	}
-	&.staff button {
+	&.staff {
 		&::before {
 			border: 3px solid rgb(var(--staffarea));
 			background: rgba(var(--staffarea), 0.2);

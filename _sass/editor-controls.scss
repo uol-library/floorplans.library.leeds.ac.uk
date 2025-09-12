@@ -43,8 +43,8 @@
                 display: block;
 				width: 100%;
 				text-align: left;
-				border: .1rem solid #fff;
-				background: #fff;
+				border: .1rem solid var(--white);
+				background: var(--white);
 				&:hover, &:focus {
 					background: #efefef;
 				}
