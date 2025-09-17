@@ -100,5 +100,16 @@ ul.selecter__list li button {
 			}
 		}
 	}
+	&.locationbutton {
+		&::before {
+			display: inline-block;
+			margin-right: 1em;
+		}
+		&:hover, &:focus {
+			&::before {
+				
+			}
+		}
+	}
 }
 

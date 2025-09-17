@@ -83,6 +83,7 @@ var addFloorLayer = function( floor ) {
                         let shelfClassID = 1;
                         let featureClass = 'leaflet-interactive';
                         floor.selecters = {};
+                        floor.iconlayer = L.layerGroup();
                         fplog( 'addFloorLayer - GeoJSON loaded for ' + floor.floorname );
                         floor.features = L.geoJSON( data, {
                             /**
@@ -94,8 +95,36 @@ var addFloorLayer = function( floor ) {
                                 if ( ! floor.selecters.hasOwnProperty(feature.properties.type) ) {
                                     floor.selecters[feature.properties.type] = [];
                                 }
+                                if ( feature.properties.type === 'location' && feature.properties.hasOwnProperty('icon') ) {
+                                    let featureIcon = getSVGIcon(feature.properties.icon);
+                                    layer._latlngs.forEach(pp => {
+                                        console.log(feature.properties.name);
+                                        console.log(pp);
+                                        let poly = L.polygon(pp);
+                                        let polyBounds = poly.getBounds();
+                                        let polyCentre = polyBounds.getCenter();
+                                        console.log(polyCentre);
+                                        console.log(polyCentre.toBounds(4));
+                                        floor.iconlayer.addLayer( L.svgOverlay(featureIcon, polyCentre.toBounds(40)) );
+                                        // console.log(polyCentre);
+                                        // let topLeft = L.latLng({'lat': polyCentre.lat + 1, 'lng': polyCentre.lng + 1});
+                                        // let bottomRight = L.latLng({'lat': topLeft.lat - 1, 'lng': topLeft.lng - 1});
+                                        // let svgbounds = L.latLngBounds(topLeft, bottomRight);
+                                        // floor.iconlayer.addLayer( L.svgOverlay(featureIcon, svgbounds) );
+                                    });
+                                    // let topLeft = layer._latlngs[0][0];
+                                    // let bottomRight = L.latLng({'lat': topLeft.lat - 1, 'lng': topLeft.lng - 1});
+                                    // let svgbounds = L.latLngBounds(topLeft, bottomRight);
+                                    // floor.iconlayer.addLayer( L.svgOverlay(featureIcon, svgbounds) );
+                                    // let featureIcon = L.divIcon({className: feature.properties.class});
+                                    // floor.iconlayer.addLayer(L.marker.autoresizable(layer._latlngs[0][0], {icon:featureIcon}));
+                                }
                                 floor.selecters[feature.properties.type].push( { 'value': layer.id, 'label': feature.properties.name, 'desc': feature.properties.desc, 'class': feature.properties.class } );
-                                layer.bindPopup( buildFeaturePopup(feature), { className: 'feature-tooltip' } );
+                                if ( feature.properties.type === 'area' ) {
+                                    layer.bindTooltip( buildFeaturePopup(feature), { className: 'area-tooltip' } );
+                                } else {
+                                    layer.bindPopup( buildFeaturePopup(feature), { className: 'feature-tooltip' } );
+                                }
                                 layer.on({
                                     mouseover: highlightFeature,
                                     focus: highlightFeature,
@@ -117,6 +146,7 @@ var addFloorLayer = function( floor ) {
                         });
                         /* add the features geoJSON layer to the LayerGroup */
                         floorlayer.addLayer( floor.features );
+                        floorlayer.addLayer( floor.iconlayer );
                         fplog( "Added shelf features for "+floor.floorname );
                         /* store the LayerGroup in the floor object for later... */
                         floor.floorlayer = floorlayer;
@@ -230,7 +260,6 @@ function highlightFeature( e ) {
     // GeoJSON multiple polygons
     if ( layer.feature && layer.feature.geometry && layer.feature.geometry.coordinates && layer.feature.geometry.coordinates.length > 1 ) {
         // not sure how to handle this!
-        console.log(e);
         if ( e.latlng ) {
             layer.openPopup( e.latlng );
         } else {

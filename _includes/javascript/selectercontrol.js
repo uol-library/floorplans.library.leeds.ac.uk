@@ -142,7 +142,7 @@ function buildFeatureSelects( floor ) {
             floor.selecters[s].forEach( o => {
                 let itemli = L.DomUtil.create('li', 'item-' + s, list );
                 itemli.setAttribute( 'data-sortkey', o.label.toLowerCase().replace( /\W/g, '' ).replace( /8([7-9])$/, '80$1' ) );
-                let itembutton = L.DomUtil.create('button', 'shelfbutton ' + o.class, itemli );
+                let itembutton = L.DomUtil.create('button', s+'button ' + o.class, itemli );
                 itembutton.innerText = o.label;
                 itembutton.setAttribute( 'data-featureid', o.value );
                 /* add event to highlight a feature */
