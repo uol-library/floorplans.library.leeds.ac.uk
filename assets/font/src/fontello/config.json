@@ -297,6 +297,12 @@
       "css": "arrows",
       "code": 59443,
       "src": "fontawesome"
+    },
+    {
+      "uid": "872d9516df93eb6b776cc4d94bd97dac",
+      "css": "film",
+      "code": 59444,
+      "src": "fontawesome"
     }
   ]
 }

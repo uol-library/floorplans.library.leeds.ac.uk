@@ -86,3 +86,7 @@ The URLs of the manifests of these images can then be used in the [Allmaps edito
 * https://allmaps.xyz/images/447034c419b2ef5b/{z}/{x}/{y}@2x.png
 
 Both the Health Sciences library and the West wing of the Brotherton are proving tricky because I'm not sure where exactly they are on OpenStreetMap(!). The same applies to St. James Hospital library, but I don't have the plans for that one (yet).
+
+### Icons
+
+The floorplans have started using an icon font made using fontello. All the files needed for the font are in the `assets/font/src` folder, including any custom icons and the fontello configuration file. In addition, icons are included in the plans as inline SVG overlays - these are generated from a set of SVG icons in the `assets/icons` folder, which are in turn generated either using FontForge or [https://iconly.io/tools/font-to-icons-converter](https://iconly.io/tools/font-to-icons-converter).

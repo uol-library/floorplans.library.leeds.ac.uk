@@ -95,17 +95,17 @@ var addFloorLayer = function( floor ) {
                                 if ( ! floor.selecters.hasOwnProperty(feature.properties.type) ) {
                                     floor.selecters[feature.properties.type] = [];
                                 }
-                                if ( feature.properties.type === 'location' && feature.properties.hasOwnProperty('icon') ) {
-                                    let featureIcon = getSVGIcon(feature.properties.icon);
+                                let featureIcon = feature.properties.hasOwnProperty('icon') ? feature.properties.icon : false;
+                                if ( feature.properties.type === 'location' && featureIcon ) {
                                     layer._latlngs.forEach(pp => {
-                                        console.log(feature.properties.name);
-                                        console.log(pp);
                                         let poly = L.polygon(pp);
                                         let polyBounds = poly.getBounds();
                                         let polyCentre = polyBounds.getCenter();
-                                        console.log(polyCentre);
-                                        console.log(polyCentre.toBounds(4));
-                                        floor.iconlayer.addLayer( L.svgOverlay(featureIcon, polyCentre.toBounds(40)) );
+                                        let polyCentrePoint = floorplans.map.latLngToContainerPoint(polyCentre);
+                                        let topLeftPoint = polyCentrePoint.add({x: -2, y: -2});
+                                        let bottomRightPoint = polyCentrePoint.add({x: 2, y: 2});
+                                        let svgBounds = L.latLngBounds( floorplans.map.containerPointToLatLng(topLeftPoint), floorplans.map.containerPointToLatLng(bottomRightPoint) );
+                                        floor.iconlayer.addLayer( L.svgOverlay(getSVGIcon(feature.properties.icon), svgBounds) );
                                         // console.log(polyCentre);
                                         // let topLeft = L.latLng({'lat': polyCentre.lat + 1, 'lng': polyCentre.lng + 1});
                                         // let bottomRight = L.latLng({'lat': topLeft.lat - 1, 'lng': topLeft.lng - 1});
@@ -119,7 +119,7 @@ var addFloorLayer = function( floor ) {
                                     // let featureIcon = L.divIcon({className: feature.properties.class});
                                     // floor.iconlayer.addLayer(L.marker.autoresizable(layer._latlngs[0][0], {icon:featureIcon}));
                                 }
-                                floor.selecters[feature.properties.type].push( { 'value': layer.id, 'label': feature.properties.name, 'desc': feature.properties.desc, 'class': feature.properties.class } );
+                                floor.selecters[feature.properties.type].push( { 'value': layer.id, 'label': feature.properties.name, 'desc': feature.properties.desc, 'icon': featureIcon, 'class': feature.properties.class } );
                                 if ( feature.properties.type === 'area' ) {
                                     layer.bindTooltip( buildFeaturePopup(feature), { className: 'area-tooltip' } );
                                 } else {
@@ -255,7 +255,7 @@ function highlightFeature( e ) {
     resetFeatures();
     let layer = e.target;
     if ( layer.id ) {
-        layer.setStyle({ fillOpacity: 0.75 } );
+        layer.setStyle({ fillOpacity: 0.75, opacity: 1 } );
     }
     // GeoJSON multiple polygons
     if ( layer.feature && layer.feature.geometry && layer.feature.geometry.coordinates && layer.feature.geometry.coordinates.length > 1 ) {
@@ -279,8 +279,24 @@ function resetFeatures() {
     if ( floorplans.currentFloor && floorplans.currentFloor.features ) {
         floorplans.currentFloor.features.eachLayer( function( layer ) {
             if ( layer.id ) {
-                layer.setStyle({ fillOpacity: 0.5 } );
+                layer.setStyle({ fillOpacity: 0.5, opacity: 0 } );
             }
         });
     }
+}
+
+/**
+ * Get an SVG icon by name
+ * @param {String} icon 
+ * @returns SVG Element or false if not found
+ */
+function getSVGIcon(icon) {
+    if ( floorplans.icons.hasOwnProperty(icon) ) {
+        const svgElement = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+        svgElement.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
+        svgElement.setAttribute('viewBox', floorplans.icons[icon].viewBox);
+        svgElement.innerHTML = floorplans.icons[icon].path;
+        return svgElement;
+    }
+    return false;
 }

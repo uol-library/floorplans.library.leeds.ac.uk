@@ -1818,7 +1818,7 @@
                 "type": "location",
                 "desc": "Find out more about Print, scan and copy at the Library, including how and where you can print, copy and scan and buying print credit <a class=\"external\" target=\"_blank\" href=\"https://myprint.leeds.ac.uk/user\">on the MyPrint website</a>",
                 "icon": "print",
-                "class": "group-study-location icon-print"
+                "class": "group-study-location"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1874,11 +1874,11 @@
             "type": "Feature",
             "id": 18,
             "properties": {
-                "name": "Timed Access PCs",
+                "name": "Desktop computers",
                 "type": "location",
                 "desc": "",
                 "icon": "monitor",
-                "class": "group-study-location icon-monitor"
+                "class": "group-study-location"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1938,7 +1938,7 @@
                 "type": "location",
                 "desc": "",
                 "icon": "water",
-                "class": "group-study-location icon-water"
+                "class": "group-study-location"
             },
             "geometry": {
                 "type": "Polygon",
