@@ -5,6 +5,123 @@
             "type": "Feature",
             "id": 1,
             "properties": {
+                "name": "Public Area",
+                "type": "area",
+                "desc": "Hot Food and Drink allowed. Respectful volume level allowed.",
+                "class": "public"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            68.3125,
+                            -116.25
+                        ],
+                        [
+                            72.25,
+                            -117.6875
+                        ],
+                        [
+                            75.75,
+                            -118.6875
+                        ],
+                        [
+                            80.5625,
+                            -119.4375
+                        ],
+                        [
+                            85.4375,
+                            -119.5625
+                        ],
+                        [
+                            90.875,
+                            -119.5625
+                        ],
+                        [
+                            96.625,
+                            -118.75
+                        ],
+                        [
+                            104.25,
+                            -116.1875
+                        ],
+                        [
+                            112.75,
+                            -140.1875
+                        ],
+                        [
+                            107.3125,
+                            -141.9375
+                        ],
+                        [
+                            102.4375,
+                            -143.0625
+                        ],
+                        [
+                            102.5,
+                            -147.6875
+                        ],
+                        [
+                            70.25,
+                            -147.625
+                        ],
+                        [
+                            68.6875,
+                            -147.6875
+                        ],
+                        [
+                            68.625,
+                            -150.75
+                        ],
+                        [
+                            62.625,
+                            -149.1875
+                        ],
+                        [
+                            56.6875,
+                            -147.125
+                        ],
+                        [
+                            50.3125,
+                            -144.125
+                        ],
+                        [
+                            46.625,
+                            -141.9375
+                        ],
+                        [
+                            43.25,
+                            -139.8125
+                        ],
+                        [
+                            47.25,
+                            -133.5
+                        ],
+                        [
+                            50.9375,
+                            -136
+                        ],
+                        [
+                            54.625,
+                            -137.8125
+                        ],
+                        [
+                            60,
+                            -140.125
+                        ],
+                        [
+                            68.3125,
+                            -116.25
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 2,
+            "properties": {
                 "name": "Silent Study",
                 "type": "area",
                 "desc": "No food, only covered drinks allowed. Silence expected.",
@@ -252,7 +369,7 @@
         },
         {
             "type": "Feature",
-            "id": 2,
+            "id": 3,
             "properties": {
                 "name": "Pamphlets",
                 "type": "shelf",
@@ -301,7 +418,7 @@
         },
         {
             "type": "Feature",
-            "id": 3,
+            "id": 4,
             "properties": {
                 "name": "Large Latin",
                 "type": "shelf",
@@ -346,7 +463,7 @@
         },
         {
             "type": "Feature",
-            "id": 4,
+            "id": 5,
             "properties": {
                 "name": "Large Greek",
                 "type": "shelf",
@@ -391,7 +508,7 @@
         },
         {
             "type": "Feature",
-            "id": 5,
+            "id": 6,
             "properties": {
                 "name": "Large General Classics",
                 "type": "shelf",
@@ -440,7 +557,7 @@
         },
         {
             "type": "Feature",
-            "id": 6,
+            "id": 7,
             "properties": {
                 "name": "Large Ancient History",
                 "type": "shelf",
@@ -497,7 +614,7 @@
         },
         {
             "type": "Feature",
-            "id": 7,
+            "id": 8,
             "properties": {
                 "name": "General Reference",
                 "type": "shelf",
@@ -644,7 +761,7 @@
         },
         {
             "type": "Feature",
-            "id": 8,
+            "id": 9,
             "properties": {
                 "name": "Atlases",
                 "type": "shelf",
@@ -689,7 +806,7 @@
         },
         {
             "type": "Feature",
-            "id": 9,
+            "id": 10,
             "properties": {
                 "name": "Latin",
                 "type": "shelf",
@@ -802,7 +919,7 @@
         },
         {
             "type": "Feature",
-            "id": 10,
+            "id": 11,
             "properties": {
                 "name": "Greek",
                 "type": "shelf",
@@ -883,7 +1000,7 @@
         },
         {
             "type": "Feature",
-            "id": 11,
+            "id": 12,
             "properties": {
                 "name": "General Classics",
                 "type": "shelf",
@@ -940,7 +1057,7 @@
         },
         {
             "type": "Feature",
-            "id": 12,
+            "id": 13,
             "properties": {
                 "name": "Ancient History",
                 "type": "shelf",
@@ -1053,7 +1170,7 @@
         },
         {
             "type": "Feature",
-            "id": 13,
+            "id": 14,
             "properties": {
                 "name": "Recently Returned",
                 "type": "shelf",
@@ -1090,7 +1207,7 @@
         },
         {
             "type": "Feature",
-            "id": 14,
+            "id": 15,
             "properties": {
                 "name": "Journals",
                 "type": "shelf",
@@ -1135,7 +1252,7 @@
         },
         {
             "type": "Feature",
-            "id": 15,
+            "id": 16,
             "properties": {
                 "name": "Desktop computers",
                 "type": "location",
@@ -1273,7 +1390,7 @@
         },
         {
             "type": "Feature",
-            "id": 16,
+            "id": 17,
             "properties": {
                 "name": "Self-service units",
                 "type": "location",
@@ -1319,7 +1436,7 @@
         },
         {
             "type": "Feature",
-            "id": 17,
+            "id": 18,
             "properties": {
                 "name": "Reception",
                 "type": "location",
@@ -1369,7 +1486,7 @@
         },
         {
             "type": "Feature",
-            "id": 18,
+            "id": 19,
             "properties": {
                 "name": "Book Return",
                 "type": "location",

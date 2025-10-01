@@ -3,7 +3,7 @@
     "features": [
         {
             "type": "Feature",
-            "id": 1                                 ,
+            "id": 1,
             "properties": {
                 "name": "Silent Study",
                 "type": "area",

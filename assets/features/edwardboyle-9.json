@@ -1,7 +1,7 @@
 {
     "type": "FeatureCollection",
     "features": [
-      {
+        {
             "type": "Feature",
             "id": 1,
             "properties": {
@@ -185,7 +185,7 @@
                     ]
                 ]
             }
-        }, 
+        },
         {
             "type": "Feature",
             "id": 2,
