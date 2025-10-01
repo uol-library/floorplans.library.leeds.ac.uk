@@ -159,7 +159,7 @@ function buildFeatureSelects( floor ) {
                     let layer = getFeature( e.target.getAttribute( 'data-featureid' ) );
                     layer.fire( 'mouseout', {}, true );
                 });
-                if ( o.desc && o.desc !== '' ) {
+                if ( o.desc && o.desc !== '' && !o.icon ) {
                     itembutton.title = o.desc;
                     //let desc = L.DomUtil.create('span', 'feature-description', itemli );
                     //desc.innerText = o.desc;
