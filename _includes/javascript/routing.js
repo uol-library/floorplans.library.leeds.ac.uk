@@ -205,6 +205,7 @@ function getFeatureRegex( featureName ) {
     if ( featureName.indexOf(', ') !== -1 ) {
         featureName = '(' + ( featureName.split( ', ' ).join( '|' ) ) + ')';
     }
+    console.log(featureName);
     return '^' + featureName + '.*$';
 }
 
@@ -253,6 +254,11 @@ function normaliseClassmark( classmark, params ) {
             case 'health-sciences':
                 if ( classmark.match( 'Pamphlet' ) ) {
                     return 'Pamphlets';
+                } else {
+                    var classmark_parts = classmark.match( /.* (Abstract|AVC|BF|BL|BM|GN|HM|HV|Pamphlets|Periodicals|Psychology|QA|QB|QC|QD|QH|QL|QP|QS|QT|QU|QV|QW|QY|QZ|Reference|Requested Items|Statistics|WA|WB|WC|WD|WE|WF|WG|WH|WI|WJ|WK|WL|WM|WN|WO|WP|WQ|WR|WS|WT|WU|WV|WW|WX|WY|WZ|Q|Z|W) .*/ );
+                    if ( classmark_parts !== null ) {
+                        return classmark_parts[1];
+                    }
                 }
                 break;
         }

@@ -92,9 +92,13 @@ var addFloorLayer = function( floor ) {
                              */
                             onEachFeature: function( feature, layer ) {
                                 layer.id = feature.properties.type + feature.id;
-                                if ( ! floor.selecters.hasOwnProperty(feature.properties.type) ) {
-                                    floor.selecters[feature.properties.type] = [];
-                                }
+                                /**
+                                 * Add icons to features on the map. These are SVG overlays which are positioned
+                                 * in the centre of each GeoJSON Polygon. At the moment, this accesses the _latlngs
+                                 * property of the layer (which I presume is intended to be private) so it would
+                                 * be good to use another means to loop through GeoJSON features which are comprised
+                                 * of multiple polygons.
+                                 */
                                 let featureIcon = feature.properties.hasOwnProperty('icon') ? feature.properties.icon : false;
                                 if ( feature.properties.type === 'location' && featureIcon ) {
                                     layer._latlngs.forEach(pp => {
@@ -105,26 +109,29 @@ var addFloorLayer = function( floor ) {
                                         let topLeftPoint = polyCentrePoint.add({x: -2, y: -2});
                                         let bottomRightPoint = polyCentrePoint.add({x: 2, y: 2});
                                         let svgBounds = L.latLngBounds( floorplans.map.containerPointToLatLng(topLeftPoint), floorplans.map.containerPointToLatLng(bottomRightPoint) );
-                                        floor.iconlayer.addLayer( L.svgOverlay(getSVGIcon(feature.properties.icon), svgBounds) );
-                                        // console.log(polyCentre);
-                                        // let topLeft = L.latLng({'lat': polyCentre.lat + 1, 'lng': polyCentre.lng + 1});
-                                        // let bottomRight = L.latLng({'lat': topLeft.lat - 1, 'lng': topLeft.lng - 1});
-                                        // let svgbounds = L.latLngBounds(topLeft, bottomRight);
-                                        // floor.iconlayer.addLayer( L.svgOverlay(featureIcon, svgbounds) );
+                                        floor.iconlayer.addLayer( L.svgOverlay(getSVGIcon(featureIcon), svgBounds) );
                                     });
-                                    // let topLeft = layer._latlngs[0][0];
-                                    // let bottomRight = L.latLng({'lat': topLeft.lat - 1, 'lng': topLeft.lng - 1});
-                                    // let svgbounds = L.latLngBounds(topLeft, bottomRight);
-                                    // floor.iconlayer.addLayer( L.svgOverlay(featureIcon, svgbounds) );
-                                    // let featureIcon = L.divIcon({className: feature.properties.class});
-                                    // floor.iconlayer.addLayer(L.marker.autoresizable(layer._latlngs[0][0], {icon:featureIcon}));
+                                }
+                                /**
+                                 * Build data for the selecters which allow users to select
+                                 * features on the plans
+                                 */
+                                if ( ! floor.selecters.hasOwnProperty(feature.properties.type) ) {
+                                    floor.selecters[feature.properties.type] = [];
                                 }
                                 floor.selecters[feature.properties.type].push( { 'value': layer.id, 'label': feature.properties.name, 'desc': feature.properties.desc, 'icon': featureIcon, 'class': feature.properties.class } );
+                                /**
+                                 * Add tooltips / popups
+                                 */
                                 if ( feature.properties.type === 'area' ) {
                                     layer.bindTooltip( buildFeaturePopup(feature), { className: 'area-tooltip' } );
                                 } else {
                                     layer.bindPopup( buildFeaturePopup(feature), { className: 'feature-tooltip' } );
                                 }
+                                /**
+                                 * Add interaction highlighting (only when entering the feature - the
+                                 * highlighting function needs to reset first)
+                                 */
                                 layer.on({
                                     mouseover: highlightFeature,
                                     focus: highlightFeature,
@@ -132,22 +139,19 @@ var addFloorLayer = function( floor ) {
                             },
                             /* style each feature and add appropriate className */
                             style: function( feature ) {
-                                let op = 0;
-                                if ( feature.properties.type !== 'area' ) {
-                                    op = 0.5;
-                                }
                                 return {
                                     weight: 0,
                                     opacity: 0,
-                                    fillOpacity: op,
+                                    fillOpacity: ( ( feature.properties.type !== 'area' ) ? 0.5: 0 ),
                                     className: feature.properties.class
                                 };
                             }
                         });
                         /* add the features geoJSON layer to the LayerGroup */
                         floorlayer.addLayer( floor.features );
+                        /* add the SVG Icons layer to the LayerGroup */
                         floorlayer.addLayer( floor.iconlayer );
-                        fplog( "Added shelf features for "+floor.floorname );
+                        fplog( "Added shelves, features for "+floor.floorname );
                         /* store the LayerGroup in the floor object for later... */
                         floor.floorlayer = floorlayer;
                         /* return the LayerGroup */
@@ -241,7 +245,7 @@ function selectFloor( floorid ) {
  */
 function selectShelf( floor, shelfName ) {
     floor.selecters.shelf.forEach( s => {
-        if ( s.label.match( shelfName) ) {
+        if ( s.label.match( shelfName ) ) {
             selectFeature( s.value );
         }
     });
