@@ -18,48 +18,47 @@ $shelf-classes: 'd1' 'd2' 'd3' 'd4' 'd5' 'd6' 'd7' 'd8' 'd9' 'd10' 'd11' 'd12' '
 	}
 }
 path {
-	&.group-study-location,
-	&.group-study {
-	    fill: rgb(var(--groupstudyarea));
-		stroke: rgb(var(--groupstudyarea));
+	&.group-space-location,
+	&.group-space {
+	    fill: rgb(var(--groupspacearea));
+		stroke: rgb(var(--groupspacearea));
 	}
-	&.silent-study-location,
-	&.silent-study {
-		fill: rgb(var(--silentstudyarea));
-		stroke: rgb(var(--silentstudyarea));
+	&.silent-space-location,
+	&.silent-space {
+		fill: rgb(var(--silentspacearea));
+		stroke: rgb(var(--silentspacearea));
 	}
-	&.public-location,
-	&.public {
-		fill: rgb(var(--publicarea));
-		stroke: rgb(var(--publicarea));
+	&.public-space-location,
+	&.public-space {
+		fill: rgb(var(--publicspacearea));
+		stroke: rgb(var(--publicspacearea));
 	}
 	&.staff-location,
 	&.staff {
 		fill: rgb(var(--staffarea));
 		stroke: rgb(var(--staffarea));
 	}
-	&.group-study,
-	&.silent-study,
-	&.public,
+	&.group-space,
+	&.silent-space,
+	&.public-space,
 	&.staff {
 		stroke-width: 2;
 		fill-opacity: 0.2;
 		stroke-opacity: 1;
 	}
-	&.public-location,
-	&.silent-study-location,
-	&.group-study-location,
-	&.public-location {
+	&.silent-space-location,
+	&.group-space-location,
+	&.public-space-location {
 		stroke-width: 4;
 		stroke-dasharray: 6;
 	}
 }
 ul.selecter__list li button {
 
-    &.public {
+    &.public-space {
 		&::before {
-			border: 3px solid rgb(var(--publicarea));
-			background: rgba(var(--publicarea), 0.2)
+			border: 3px solid rgb(var(--publicspacearea));
+			background: rgba(var(--publicspacearea), 0.2)
 		}
 		&:hover, &:focus {
 			&::before {
@@ -67,10 +66,10 @@ ul.selecter__list li button {
 			}
 		}
 	}
-    &.group-study {
+    &.group-space {
 		&::before {
-			border: 3px solid rgb(var(--groupstudyarea));
-			background: rgba(var(--groupstudyarea), 0.2 );
+			border: 3px solid rgb(var(--groupspacearea));
+			background: rgba(var(--groupspacearea), 0.2 );
 		}
 		&:hover, &:focus {
 			&::before {
@@ -78,10 +77,10 @@ ul.selecter__list li button {
 			}
 		}
 	}
-    &.silent-study {
+    &.silent-space {
 		&::before {
-			border: 3px solid rgb(var(--silentstudyarea));
-			background: rgba(var(--silentstudyarea), 0.2);
+			border: 3px solid rgb(var(--silentspacearea));
+			background: rgba(var(--silentspacearea), 0.2);
 		}
 		&:hover, &:focus {
 			&::before {

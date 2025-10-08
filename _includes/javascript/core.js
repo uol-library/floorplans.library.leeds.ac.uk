@@ -106,8 +106,8 @@ var addFloorLayer = function( floor ) {
                                         let polyBounds = poly.getBounds();
                                         let polyCentre = polyBounds.getCenter();
                                         let polyCentrePoint = floorplans.map.latLngToContainerPoint(polyCentre);
-                                        let topLeftPoint = polyCentrePoint.add({x: -2, y: -2});
-                                        let bottomRightPoint = polyCentrePoint.add({x: 2, y: 2});
+                                        let topLeftPoint = polyCentrePoint.add({x: -2.5, y: -2.5});
+                                        let bottomRightPoint = polyCentrePoint.add({x: 2.5, y: 2.5});
                                         let svgBounds = L.latLngBounds( floorplans.map.containerPointToLatLng(topLeftPoint), floorplans.map.containerPointToLatLng(bottomRightPoint) );
                                         floor.iconlayer.addLayer( L.svgOverlay(getSVGIcon(featureIcon), svgBounds) );
                                     });

@@ -5,10 +5,10 @@
             "type": "Feature",
             "id": 1,
             "properties": {
-                "name": "Silent Study",
+                "name": "Silent Space",
                 "type": "area",
                 "desc": "No food, only covered drinks allowed. Silence expected.",
-                "class": "silent-study"
+                "class": "silent-space"
             },
             "geometry": {
                 "type": "Polygon",
@@ -3205,7 +3205,7 @@
                 "type": "location",
                 "desc": "",
                 "icon": "monitor",
-                "class": "silent-study-location"
+                "class": "silent-space-location"
             },
             "geometry": {
                 "type": "Polygon",

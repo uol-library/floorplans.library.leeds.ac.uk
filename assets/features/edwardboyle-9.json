@@ -5,10 +5,10 @@
             "type": "Feature",
             "id": 1,
             "properties": {
-                "name": "Public Area",
+                "name": "Public Space",
                 "type": "area",
                 "desc": "Hot Food and Drink allowed. Respectful volume level allowed.",
-                "class": "public"
+                "class": "public-space"
             },
             "geometry": {
                 "type": "Polygon",
@@ -190,10 +190,10 @@
             "type": "Feature",
             "id": 2,
             "properties": {
-                "name": "Group/Collaborative Work Area.",
+                "name": "Group Space",
                 "type": "area",
                 "desc": "Cold food & covered drinks allowed. Conversation allowed.",
-                "class": "group-study"
+                "class": "group-space"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1052,7 +1052,7 @@
                 "type": "location",
                 "desc": "",
                 "icon": "wellbeing",
-                "class": "group-study-location"
+                "class": "group-space-location"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1086,7 +1086,7 @@
                 "type": "location",
                 "desc": "Find out more about Self-service at the Library, including what exactly can be done during self-service hours <a class=\"external\" target=\"_blank\" href=\"https://library.leeds.ac.uk/self-service/\">on the Library website.</a>",
                 "icon": "selfissue",
-                "class": "group-study-location"
+                "class": "group-space-location"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1124,7 +1124,7 @@
                 "type": "location",
                 "desc": "",
                 "icon": "laptop",
-                "class": "group-study-location"
+                "class": "group-space-location"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1158,7 +1158,7 @@
                 "type": "location",
                 "desc": "",
                 "icon": "coins",
-                "class": "group-study-location"
+                "class": "group-space-location"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1192,7 +1192,7 @@
                 "type": "location",
                 "desc": "",
                 "icon": "coins",
-                "class": "group-study-location"
+                "class": "group-space-location"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1226,7 +1226,7 @@
                 "type": "location",
                 "desc": "Find out more about Print, scan and copy at the Library, including how and where you can print, copy and scan and buying print credit <a class=\"external\" target=\"_blank\" href=\"https://myprint.leeds.ac.uk/user\">on the MyPrint website</a>",
                 "icon": "print",
-                "class": "group-study-location"
+                "class": "group-space-location"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1298,7 +1298,7 @@
                 "type": "location",
                 "desc": "The Library Makerspace has a wide range of equipment, IT and software for creative projects of all kinds. It is open to all students and staff, for personal, individual or group projects. <a href=\"https://library.leeds.ac.uk/homepage/67/makerspace\" target=\"_blank\">Find out more on the Library website</a>",
                 "icon": "wrench",
-                "class": "group-study-location"
+                "class": "group-space-location"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1384,7 +1384,7 @@
                 "type": "location",
                 "desc": "",
                 "icon": "book",
-                "class": "group-study-location"
+                "class": "group-space-location"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1418,7 +1418,7 @@
                 "type": "location",
                 "desc": "",
                 "icon": "ticket",
-                "class": "public-location"
+                "class": "public-space-location"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1452,7 +1452,7 @@
                 "type": "location",
                 "desc": "Provides an eclectic mix of grab and go food and drinks for everyone to enjoy at any time of the day. <a href=\"https://gfal.leeds.ac.uk/where-to-eat/cafes/the-edit-room/\" target=\"_blank\">Find out more on the GFAL website</a>.",
                 "icon": "cafe",
-                "class": "public-location"
+                "class": "public-space-location"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1538,7 +1538,7 @@
                 "type": "location",
                 "desc": "",
                 "icon": "wheelchair",
-                "class": "group-study-location"
+                "class": "group-space-location"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1572,7 +1572,7 @@
                 "type": "location",
                 "desc": "",
                 "icon": "cubes",
-                "class": "group-study-location"
+                "class": "group-space-location"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1606,7 +1606,7 @@
                 "type": "location",
                 "desc": "",
                 "icon": "wheelchair",
-                "class": "group-study-location"
+                "class": "group-space-location"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1640,7 +1640,7 @@
                 "type": "location",
                 "desc": "",
                 "icon": "wheelchair",
-                "class": "group-study-location"
+                "class": "group-space-location"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1674,7 +1674,7 @@
                 "type": "location",
                 "desc": "",
                 "icon": "cubes",
-                "class": "group-study-location"
+                "class": "group-space-location"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1712,7 +1712,7 @@
                 "type": "location",
                 "desc": "",
                 "icon": "cubes",
-                "class": "group-study-location"
+                "class": "group-space-location"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1750,7 +1750,7 @@
                 "type": "location",
                 "desc": "",
                 "icon": "water",
-                "class": "group-study-location"
+                "class": "group-space-location"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1784,7 +1784,7 @@
                 "type": "location",
                 "desc": "",
                 "icon": "sensory",
-                "class": "group-study-location"
+                "class": "group-space-location"
             },
             "geometry": {
                 "type": "Polygon",
