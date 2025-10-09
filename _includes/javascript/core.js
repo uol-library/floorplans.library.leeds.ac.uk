@@ -93,6 +93,16 @@ var addFloorLayer = function( floor ) {
                             onEachFeature: function( feature, layer ) {
                                 layer.id = feature.properties.type + feature.id;
                                 /**
+                                 * Add icons to the map
+                                 * TODO: This will currently add an icon, but the bounds are not set correctly.
+                                 * Ideally the GeoJSON would contain a point feature for each icon, but for now
+                                 * we will just use the polygon bounds.
+                                 */
+                                // if ( feature.properties.type === 'icon' ) {
+                                //     floor.iconlayer.addLayer( L.svgOverlay(getSVGIcon(feature.properties.icon), layer._latlngs) );
+                                //     return;    
+                                // }
+                                /**
                                  * Add icons to features on the map. These are SVG overlays which are positioned
                                  * in the centre of each GeoJSON Polygon. At the moment, this accesses the _latlngs
                                  * property of the layer (which I presume is intended to be private) so it would
