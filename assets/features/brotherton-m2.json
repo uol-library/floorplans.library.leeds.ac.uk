@@ -1798,7 +1798,7 @@
             "type": "Feature",
             "id": 13,
             "properties": {
-                "name": "Group Study Room and phone zone",
+                "name": "Group Study Room",
                 "type": "location",
                 "desc": "",
                 "icon": "group",

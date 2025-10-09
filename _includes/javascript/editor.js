@@ -112,7 +112,7 @@ document.addEventListener( "DOMContentLoaded", function() {
         L.DomUtil.toFront( exportdiv );
     });
     
-    floorplans.map.pm.enableGlobalRotateMode();
+    //floorplans.map.pm.enableGlobalRotateMode();
     floorplans.map.pm.addControls();
     floorplans.map.pm.setGlobalOptions({
         snappable: false

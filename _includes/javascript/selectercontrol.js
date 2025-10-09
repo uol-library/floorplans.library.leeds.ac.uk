@@ -82,7 +82,10 @@ function setupSelecterControl() {
             });
             /* empty the current lists */
             ['areaselecter', 'shelfselecter', 'locationselecter' ].forEach( s => {
-                L.DomUtil.empty( L.DomUtil.get( s + 'list' ) );
+                let listcontainer = L.DomUtil.get( s + 'list' );
+                if ( listcontainer && listcontainer.hasChildNodes() ) {
+                    L.DomUtil.empty( listcontainer );
+                }
                 L.DomUtil.addClass( L.DomUtil.get( s ), 'hidden' );
             });
             /* go through data looking for a floor to match the dropdown value */

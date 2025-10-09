@@ -43,7 +43,6 @@ path {
 	&.public-space,
 	&.staff {
 		stroke-width: 2;
-		fill-opacity: 0.2;
 		stroke-opacity: 1;
 	}
 	&.silent-space-location,
@@ -54,6 +53,8 @@ path {
 	}
 }
 ul.selecter__list li button {
+	border: .1rem solid var(--selecterbuttonborder);
+	background: var(--selecterbuttonbg);
 
     &.public-space {
 		&::before {
@@ -61,8 +62,9 @@ ul.selecter__list li button {
 			background: rgba(var(--publicspacearea), 0.2)
 		}
 		&:hover, &:focus {
+			background: rgba(var(--publicspacearea), 0.2);
 			&::before {
-				
+				background: rgba(var(--publicspacearea), 0.4);
 			}
 		}
 	}
@@ -72,8 +74,9 @@ ul.selecter__list li button {
 			background: rgba(var(--groupspacearea), 0.2 );
 		}
 		&:hover, &:focus {
+			background: rgba(var(--groupspacearea), 0.2 );
 			&::before {
-				
+				background: rgba(var(--groupspacearea), 0.4 );
 			}
 		}
 	}
@@ -83,8 +86,9 @@ ul.selecter__list li button {
 			background: rgba(var(--silentspacearea), 0.2);
 		}
 		&:hover, &:focus {
+			background: rgba(var(--silentspacearea), 0.2);
 			&::before {
-				
+				background: rgba(var(--silentspacearea), 0.4);
 			}
 		}
 	}
@@ -94,20 +98,20 @@ ul.selecter__list li button {
 			background: rgba(var(--staffarea), 0.2);
 		}
 		&:hover, &:focus {
+			background: rgba(var(--staffarea), 0.2);
 			&::before {
-				
+				background: rgba(var(--staffarea), 0.4);
 			}
 		}
 	}
 	&.locationbutton {
 		&::before {
-			display: inline-block;
+			/*display: inline-block;*/
 			margin-right: 1em;
 		}
 		&:hover, &:focus {
-			&::before {
-				
-			}
+			border: .1rem solid var(--selecterbuttonborder-hover);
+			background: var(--selecterbuttonbg-hover);
 		}
 	}
 }

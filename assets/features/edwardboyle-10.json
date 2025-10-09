@@ -426,7 +426,7 @@
                 "name": "Teaching Room",
                 "type": "location",
                 "desc": "",
-                "icon": "group",
+                "icon": "mortarboard",
                 "class": "group-space-location"
             },
             "geometry": {

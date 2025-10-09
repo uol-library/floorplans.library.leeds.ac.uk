@@ -145,6 +145,8 @@ var addFloorLayer = function( floor ) {
                                 layer.on({
                                     mouseover: highlightFeature,
                                     focus: highlightFeature,
+                                    mouseout: resetFeatures,
+                                    blur: resetFeatures,
                                 });
                             },
                             /* style each feature and add appropriate className */
@@ -152,7 +154,7 @@ var addFloorLayer = function( floor ) {
                                 return {
                                     weight: 0,
                                     opacity: 0,
-                                    fillOpacity: ( ( feature.properties.type !== 'area' ) ? 0.5: 0 ),
+                                    fillOpacity: ( ( feature.properties.type !== 'area' ) ? 0.5: 0.2 ),
                                     className: feature.properties.class
                                 };
                             }
@@ -269,7 +271,15 @@ function highlightFeature( e ) {
     resetFeatures();
     let layer = e.target;
     if ( layer.id ) {
-        layer.setStyle({ fillOpacity: 0.75, opacity: 1 } );
+        
+        if ( layer.id.startsWith('area') ) {
+            floorplans.map.closePopup();
+            layer.openTooltip();
+            layer.setStyle({ fillOpacity: 0.4, opacity: 1 } );
+            return;
+        } else {
+            layer.setStyle({ fillOpacity: 0.75, opacity: 1 } );
+        }
     }
     // GeoJSON multiple polygons
     if ( layer.feature && layer.feature.geometry && layer.feature.geometry.coordinates && layer.feature.geometry.coordinates.length > 1 ) {
@@ -293,7 +303,11 @@ function resetFeatures() {
     if ( floorplans.currentFloor && floorplans.currentFloor.features ) {
         floorplans.currentFloor.features.eachLayer( function( layer ) {
             if ( layer.id ) {
-                layer.setStyle({ fillOpacity: 0.5, opacity: 0 } );
+                if ( layer.id.startsWith('area') ) {
+                    layer.setStyle({ fillOpacity: 0.2, opacity: 0 } );
+                } else {
+                    layer.setStyle({ fillOpacity: 0.5, opacity: 0 } );
+                }
             }
         });
     }

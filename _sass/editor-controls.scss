@@ -15,7 +15,6 @@
         width:100%;
     }
 	ul.selecter__list {
-        background: var(--lightgrey);
 		max-height: 20vh;
 		overflow: auto;
 		list-style: none;
@@ -43,11 +42,6 @@
                 display: block;
 				width: 100%;
 				text-align: left;
-				border: .1rem solid var(--white);
-				background: var(--white);
-				&:hover, &:focus {
-					background: #efefef;
-				}
 			}
 		}
 	}

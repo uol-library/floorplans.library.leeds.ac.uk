@@ -55,33 +55,41 @@ $fg: $color-black;
 
 
 :root {
-    --white: $color-white;
-    --lightgrey: $color-grey--light;
+    --white: #{$color-white};
+    --lightgrey: #{$color-grey--light};
 
     /* occupancy numbers */
-    --occupancyno: $color-brand--dark;
+    --occupancyno: #{$color-brand--dark};
     
     /* links */
-    --linkcolor: $color-link;
-    --linkcolor-active: $color-link--active;
-    --linkcolor-visited: $color-link--visited;
-    --linkcolor-hover: $color-link--hover;
+    --linkcolor: #{$color-link};
+    --linkcolor-active: #{$color-link--active};
+    --linkcolor-visited: #{$color-link--visited};
+    --linkcolor-hover: #{$color-link--hover};
 
     /* menu/close button */
-    --menubutton: $color-black;
-    --menubutton-bg: $color-white;
-    --menubutton-hover: $color-black;
-    --menubutton-bg-hover: $color-grey--light;
+    --menubutton: #{$color-black};
+    --menubutton-bg: #{$color-white};
+    --menubutton-hover: #{$color-black};
+    --menubutton-bg-hover: #{$color-grey--light};
 
     /* geolocation button */
-    --geobuttoncolor: $color-black;
-    --geobuttonbg: $color-white;
-    --geobuttoncolor-hover: $color-black--dark;
-    --geobuttonbg-hover: $color-white;
-    --geobuttoncolor-disabled: $color-grey--dark;
-    --geobuttonbg-disabled: $color-grey;
-    --geobuttoncolor-active: $color-white;
-    --geobuttonbg-active: $color-blue;
+    --geobuttoncolor: #{$color-black};
+    --geobuttonbg: #{$color-white};
+    --geobuttoncolor-hover: #{$color-black--dark};
+    --geobuttonbg-hover: #{$color-white};
+    --geobuttoncolor-disabled: #{$color-grey--dark};
+    --geobuttonbg-disabled: #{$color-grey};
+    --geobuttoncolor-active: #{$color-white};
+    --geobuttonbg-active: #{$color-blue};
+
+    /* selecter buttons */
+    --selecterbuttoncolor: #{$color-black};
+    --selecterbuttonbg: #{$color-white};
+    --selecterbuttonborder: #{$color-white};
+    --selecterbuttoncolor-hover: #{$color-black--dark};
+    --selecterbuttonbg-hover: #{$color-grey--light};
+    --selecterbuttonborder-hover: #{$color-grey};
 
     /* area colours */
     --groupspacearea: 255, 134, 28;
