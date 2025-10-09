@@ -1858,6 +1858,154 @@
                     ]
                 ]
             }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Lift to all floors",
+                "type": "icon",
+                "icon": "elevator",
+                "class": "",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            43.034756,
+                            -140.114106
+                        ],
+                        [
+                            46.280333,
+                            -134.919699
+                        ],
+                        [
+                            51.527744,
+                            -138.198394
+                        ],
+                        [
+                            48.282167,
+                            -143.392801
+                        ],
+                        [
+                            43.034756,
+                            -140.114106
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Stairs to all floors",
+                "type": "icon",
+                "icon": "stairs",
+                "class": "",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            61.4,
+                            -141.1
+                        ],
+                        [
+                            61.4,
+                            -135.1
+                        ],
+                        [
+                            67.4,
+                            -135.1
+                        ],
+                        [
+                            67.4,
+                            -141.1
+                        ],
+                        [
+                            61.4,
+                            -141.1
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Fire exit",
+                "type": "icon",
+                "icon": "fire-exit",
+                "class": "",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            67.8,
+                            -141.1
+                        ],
+                        [
+                            67.8,
+                            -135.1
+                        ],
+                        [
+                            73.8,
+                            -135.1
+                        ],
+                        [
+                            73.8,
+                            -141.1
+                        ],
+                        [
+                            67.8,
+                            -141.1
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Male toilet",
+                "type": "icon",
+                "icon": "toilet-male",
+                "class": "",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            74.2,
+                            -141.1
+                        ],
+                        [
+                            74.2,
+                            -135.1
+                        ],
+                        [
+                            80.2,
+                            -135.1
+                        ],
+                        [
+                            80.2,
+                            -141.1
+                        ],
+                        [
+                            74.2,
+                            -141.1
+                        ]
+                    ]
+                ]
+            }
         }
     ]
 }
