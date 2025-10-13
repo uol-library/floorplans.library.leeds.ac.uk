@@ -173,12 +173,22 @@ function getFloorID( param ) {
 function getFeatureFromClassmark( library, floorName, classmark ) {
     let features = getFeatures();
     let ret = false;
+    if ( library === 'health-sciences' ) {
+
+    }
     for ( let i = 0; i < features.length; i++ ) {
         let libraryRE = getLibraryRegex( library, floorName );
         if ( features[i][1].match( libraryRE ) ) {
             let featureRE = getFeatureRegex( features[i][0] );
-            if ( classmark.match( featureRE ) ) {
-                let featureDetails = features[i][1].split( '-' );
+            let featureDetails = false;
+            if ( library === 'health-sciences' ) {
+                if ( classmark === features[i][0] ) {
+                    featureDetails = features[i][1].split( '-' );
+                }
+            } else if ( classmark.match( featureRE ) ) {
+                featureDetails = features[i][1].split( '-' );
+            }
+            if ( featureDetails ) {
                 ret = {
                     "name": features[i][0],
                     "library": featureDetails[0],
@@ -205,7 +215,6 @@ function getFeatureRegex( featureName ) {
     if ( featureName.indexOf(', ') !== -1 ) {
         featureName = '(' + ( featureName.split( ', ' ).join( '|' ) ) + ')';
     }
-    console.log(featureName);
     return '^' + featureName + '.*$';
 }
 

@@ -13,13 +13,7 @@ featuresJSON.forEach( filename => {
         jsondata.features.forEach( feature => {
             let featureid = path.parse( filename ).name + '-' + feature.id;
             if ( feature.properties.type === 'shelf' ) {
-                let hslcmre = /^(AVC|BF|BL|BM|GN|HM|HV|Q|QA|QB|QC|QD|QH|QL|QP|QS|QT|QU|QV|QW|QY|QZ|W|WA|WB|WC|WD|WE|WF|WG|WH|WI|WJ|WK|WL|WM|WN|WO|WP|WQ|WR|WS|WT|WU|WV|WW|WX|WY|WZ|Z) .*/;
-                let hslcm = feature.properties.name.match( hslcmre );
-                if ( hslcm !== null ) {
-                    classmarks.push( [ hslcm[1], featureid])
-                } else {
-                    classmarks.push( [ feature.properties.name, featureid ] );
-                }
+                classmarks.push( [ feature.properties.name, featureid ] );
             }
         });
     }
