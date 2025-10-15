@@ -216,10 +216,10 @@ function getFeatureRegex( featureName ) {
         featureName = '(' + ( featureName.split( ', ' ).join( '|' ) ) + ')';
     }
     // special cases
-    if ( featureName === 'Modern History A-P' ) {
+    if ( featureName === 'Modern History A–O' ) {
         return '^Modern History [A-O]-.*$';
     }
-    if ( featureName === 'Modern History P-Z' ) {
+    if ( featureName === 'Modern History P–Z' ) {
         return '^Modern History [P-Z]-.*$';
     }
     return new RegExp('^' + featureName + '.*$', 'i');

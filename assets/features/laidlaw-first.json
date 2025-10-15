@@ -487,52 +487,6 @@
                             2.125,
                             -5.40625
                         ]
-                    ],
-                    [
-                        [
-                            121.875,
-                            -56.0625
-                        ],
-                        [
-                            133.9375,
-                            -56
-                        ],
-                        [
-                            133.9375,
-                            -56.71875
-                        ],
-                        [
-                            134.34375,
-                            -56.71875
-                        ],
-                        [
-                            134.375,
-                            -63.75
-                        ],
-                        [
-                            134.78125,
-                            -63.78125
-                        ],
-                        [
-                            134.78125,
-                            -80.15625
-                        ],
-                        [
-                            130.28125,
-                            -80.09375
-                        ],
-                        [
-                            130.34375,
-                            -79.625
-                        ],
-                        [
-                            121.90625,
-                            -79.65625
-                        ],
-                        [
-                            121.875,
-                            -56.0625
-                        ]
                     ]
                 ]
             }
@@ -635,6 +589,52 @@
                         [
                             40.8125,
                             -20.375
+                        ]
+                    ],
+                    [
+                        [
+                            121.875,
+                            -56.0625
+                        ],
+                        [
+                            133.9375,
+                            -56
+                        ],
+                        [
+                            133.9375,
+                            -56.71875
+                        ],
+                        [
+                            134.34375,
+                            -56.71875
+                        ],
+                        [
+                            134.375,
+                            -63.75
+                        ],
+                        [
+                            134.78125,
+                            -63.78125
+                        ],
+                        [
+                            134.78125,
+                            -80.15625
+                        ],
+                        [
+                            130.28125,
+                            -80.09375
+                        ],
+                        [
+                            130.34375,
+                            -79.625
+                        ],
+                        [
+                            121.90625,
+                            -79.65625
+                        ],
+                        [
+                            121.875,
+                            -56.0625
                         ]
                     ]
                 ]
@@ -2200,7 +2200,7 @@
             "properties": {
                 "name": "Skills Meeting Pods",
                 "type": "location",
-                "desc": "The Skills Pods are used for 1-1 appointments with our Learning Advisors. Our Skills@Library team can help you with developing a wide range of academic skills and strategies, on topics including academic writing, reading and finding information. <a class=\"external\" target=\"_blank\" href=\"https://library.leeds.ac.uk/skills-1-to-1-support\">Find out more.</a>.",
+                "desc": "The Skills Pods are used for 1-1 appointments with our learning advisors. Our Skills@Library team can help you to <a class=\"external\" target=\"_blank\" href=\"https://library.leeds.ac.uk/info/1401/academic-skills\">develop a wide range of academic skills and strategies</a>.",
                 "icon": "skill",
                 "class": "group-space-location"
             },
@@ -2291,6 +2291,68 @@
                         [
                             48,
                             -26
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 43,
+            "properties": {
+                "name": "Skills@Library office",
+                "type": "location",
+                "desc": "",
+                "icon": "skill",
+                "class": "staff-location"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            121.875,
+                            -56.0625
+                        ],
+                        [
+                            133.9375,
+                            -56
+                        ],
+                        [
+                            133.9375,
+                            -56.71875
+                        ],
+                        [
+                            134.34375,
+                            -56.71875
+                        ],
+                        [
+                            134.375,
+                            -63.75
+                        ],
+                        [
+                            134.78125,
+                            -63.78125
+                        ],
+                        [
+                            134.78125,
+                            -80.15625
+                        ],
+                        [
+                            130.28125,
+                            -80.09375
+                        ],
+                        [
+                            130.34375,
+                            -79.625
+                        ],
+                        [
+                            121.90625,
+                            -79.65625
+                        ],
+                        [
+                            121.875,
+                            -56.0625
                         ]
                     ]
                 ]

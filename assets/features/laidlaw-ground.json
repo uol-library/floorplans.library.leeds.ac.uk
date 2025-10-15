@@ -7,7 +7,7 @@
             "properties": {
                 "name": "Public Space",
                 "type": "area",
-                "desc": "Hot Food and Drink allowed. Respectful volume level allowed.",
+                "desc": "Hot food and drink allowed. Respectful volume level allowed.",
                 "class": "public-space"
             },
             "geometry": {
@@ -275,8 +275,16 @@
                             -21
                         ],
                         [
-                            110.375,
-                            -35.9375
+                            63.25,
+                            -23.375
+                        ],
+                        [
+                            65.875,
+                            -12.875
+                        ],
+                        [
+                            113.03125,
+                            -24.875
                         ],
                         [
                             115.75,
@@ -480,12 +488,12 @@
                             -4.40625
                         ],
                         [
-                            63.21875,
-                            -23.40625
+                            65.875,
+                            -12.9375
                         ],
                         [
-                            110.3125,
-                            -35.9375
+                            113.0625,
+                            -24.875
                         ],
                         [
                             115.1875,
