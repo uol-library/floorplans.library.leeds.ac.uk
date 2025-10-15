@@ -2,4 +2,6 @@ Gemfile.lock
 _site
 node_modules
 .bundle
+.idea
 vendor
+index.js

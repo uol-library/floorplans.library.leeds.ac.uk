@@ -204,6 +204,7 @@ function loadStartFloor() {
                         sortFeatureSelects( floor );
                         /* add the floor to the map */
                         floorlayer.addTo( floorplans.map );
+                        floorplans.currentFloor = floor;
                         /* position floor */
                         floorplans.map.fitBounds( floor.imageBounds );
                         floorplans.map.setView( floor.imageBounds.getCenter() );

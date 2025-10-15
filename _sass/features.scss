@@ -11,6 +11,7 @@ $shelf-classes: 'd1' 'd2' 'd3' 'd4' 'd5' 'd6' 'd7' 'd8' 'd9' 'd10' 'd11' 'd12' '
 		}
 		&:hover, &:focus {
 			border-color: var(--#{$cls});
+			outline: none;
 			&::before {
 				opacity: 0.75;
 			}
@@ -42,14 +43,13 @@ path {
 	&.silent-space,
 	&.public-space,
 	&.staff {
-		stroke-width: 2;
-		stroke-opacity: 1;
+		stroke-width: 0;
+		stroke-opacity: 0;
 	}
 	&.silent-space-location,
 	&.group-space-location,
 	&.public-space-location {
 		stroke-width: 4;
-		stroke-dasharray: 6;
 	}
 }
 ul.selecter__list li button {

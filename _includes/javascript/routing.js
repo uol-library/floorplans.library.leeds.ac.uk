@@ -215,7 +215,14 @@ function getFeatureRegex( featureName ) {
     if ( featureName.indexOf(', ') !== -1 ) {
         featureName = '(' + ( featureName.split( ', ' ).join( '|' ) ) + ')';
     }
-    return '^' + featureName + '.*$';
+    // special cases
+    if ( featureName === 'Modern History A-P' ) {
+        return '^Modern History [A-O]-.*$';
+    }
+    if ( featureName === 'Modern History P-Z' ) {
+        return '^Modern History [P-Z]-.*$';
+    }
+    return new RegExp('^' + featureName + '.*$', 'i');
 }
 
 function getLibraryRegex( library, floorName ) {
