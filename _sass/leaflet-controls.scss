@@ -71,7 +71,10 @@
                 display: flex;
 				width: 100%;
 				text-align: left;
-			}
+                &:focus {
+                  outline: none;
+                }
+            }
             span.feature-description {
                 display: block;
                 background: var(--white);

@@ -272,7 +272,10 @@ function highlightFeature( e ) {
     resetFeatures();
     let layer = e.target;
     if ( layer.id ) {
-        
+        let fb = document.querySelector('button[data-featureid="'+layer.id+'"]');
+        if ( fb ) {
+            fb.focus();
+        }
         if ( layer.id.startsWith('area') ) {
             floorplans.map.closePopup();
             layer.openTooltip();
