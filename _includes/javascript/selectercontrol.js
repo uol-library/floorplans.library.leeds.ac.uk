@@ -194,34 +194,3 @@ function sortFeatureSelects( floor ) {
     }
 }
 
-/**
- * This takes the ID of a feature in a geoJSON layer
- * and returns the layer object which cointains the feature
- * @param {String} featureid 
- * @returns {Object} layer
- */
-function getFeature( featureid ) {
-    let feature = false;
-    floorplans.map.eachLayer( layer => {
-        if ( layer.id && layer.id === featureid ) {
-            feature = layer;
-        }
-    });
-    return feature;
-}
-
-/**
- * This selects a feature by firing the mouseover event on the feature
- * layer. It then highlights the feature in the selecter control by 
- * focussing it.
- */
-function selectFeature( featureid ) {
-    let layer = getFeature( featureid );
-    if ( layer !== false ) {
-        layer.fire( 'mouseover', {}, true );
-        let fb = document.querySelector('button[data-featureid="'+featureid+'"]');
-        if ( fb ) {
-            fb.focus();
-        }
-    }
-}
