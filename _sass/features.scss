@@ -3,6 +3,7 @@ $shelf-classes: 'd1' 'd2' 'd3' 'd4' 'd5' 'd6' 'd7' 'd8' 'd9' 'd10' 'd11' 'd12' '
 	path.#{$cls} {
 		fill: var(--#{$cls});
 		color: var(--#{$cls});
+		stroke-width: 0;
 	}
 	ul.selecter__list li.item-shelf button.#{$cls} {
 		&::before {
