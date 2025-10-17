@@ -216,11 +216,11 @@ function getFeatureRegex( featureName ) {
         featureName = '(' + ( featureName.split( ', ' ).join( '|' ) ) + ')';
     }
     // special cases
-    if ( featureName === 'Modern History A–O' ) {
-        return '^Modern History [A-O]-.*$';
+    if ( featureName.startsWith('Modern History A') ) {
+        featureName = 'Modern History [A-O]';
     }
-    if ( featureName === 'Modern History P–Z' ) {
-        return '^Modern History [P-Z]-.*$';
+    if ( featureName.startsWith('Modern History P') ) {
+        featureName = 'Modern History [P-Z]';
     }
     return new RegExp('^' + featureName + '.*$', 'i');
 }
@@ -241,7 +241,7 @@ function getLibraryRegex( library, floorName ) {
  * @returns 
  */
 function normaliseClassmark( classmark, params ) {
-    classmark = decodeURIComponent( classmark );
+    classmark = decodeURIComponent( classmark.replace(/\+/g, '%20') );
     if ( classmark.match( '^Video' ) ) {
         return 'DVD';
     }
