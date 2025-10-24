@@ -8,7 +8,8 @@
     "updateClassmarks": "node _scripts/getClassmarks.js",
     "makeManifests": "node _scripts/makeManifests.js",
     "geo": "node _scripts/georeferenceFeatures.mjs",
-    "icons": "node _scripts/makeIcons.js"
+    "icons": "node _scripts/makeIcons.js",
+    "build": "node _scripts/getClassmarks.js && node _scripts/makeIcons.js && node _scripts/minify.js"
   },
   "repository": {
     "type": "git",

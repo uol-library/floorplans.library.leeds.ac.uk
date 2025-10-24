@@ -18,5 +18,5 @@ featuresJSON.forEach( filename => {
         });
     }
 });
-var featuresJS = "function getFeatures() {\n    return " + JSON.stringify( classmarks.reverse() ) + ";\n};";
-fs.writeFileSync( path.resolve( __dirname, '../_includes/javascript/features.js' ), featuresJS );
+var featuresJS = "floorplans.features = " + JSON.stringify( classmarks.reverse() ) + ";\n";
+fs.writeFileSync( path.resolve( __dirname, '../_includes/javascript/config/features.js' ), featuresJS );

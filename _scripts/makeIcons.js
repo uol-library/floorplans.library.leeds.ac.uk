@@ -24,4 +24,4 @@ iconFiles.forEach( filename => {
         icons[iconName] = { 'viewBox': viewBox, 'path': pathElement };
     }
 });
-fs.writeFileSync( path.resolve( __dirname, '../_includes/javascript/icons.js' ), 'floorplans.icons = ' + JSON.stringify(icons, null, 4) + ';', { encoding: 'utf8' } );
+fs.writeFileSync( path.resolve( __dirname, '../_includes/javascript/config/icons.js' ), 'floorplans.icons = ' + JSON.stringify(icons) + ';', { encoding: 'utf8' } );
