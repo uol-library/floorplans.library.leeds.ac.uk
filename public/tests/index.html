@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <meta http-equiv="Expires" content="0"/><meta name="description" content="The University of Leeds Library Floor Plans are an application using the Leaflet mapping library to enable indoor wayfinding in the University's library spaces."><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/">
+    <meta name="DC.Title" content="University of Leeds Library Floor Plans">
+    <meta name="DC.Description" content="The University of Leeds Library Floor Plans are an application using the Leaflet mapping library to enable indoor wayfinding in the University's library spaces.">
+    <meta name="DC.Creator" content="University of Leeds">
+    <meta name="DC.Publisher" content="University of Leeds">
+    <meta name="DCTERMS.Created" content="2022-06-06">
+    <meta name="DCTERMS.Modified" content="2025-10-31">
+    <meta name="DC.Type" content="InteractiveResource">
+    <meta name="DC.Subject" scheme="DCTERMS.LCSH" content="Digital mapping">
+    <meta name="DC.Subject" scheme="DCTERMS.LCSH" content="College Campuses">
+    <meta name="DCTERMS.Spatial" content="University of Leeds campus">
+    <meta name="DC.Identifier" content="http://localhost:4000">
+    <meta name="DC.Language" content="en">
+    <title>University of Leeds Library Floor Plans</title>
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin=""/>
+    <script src="http://localhost:4000/assets/scripts/config.js"></script>
+    
+    <link rel="apple-touch-icon" sizes="57x57" href="http://localhost:4000/assets/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="http://localhost:4000/assets/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="http://localhost:4000/assets/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="http://localhost:4000/assets/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="http://localhost:4000/assets/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="http://localhost:4000/assets/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="http://localhost:4000/assets/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="http://localhost:4000/assets/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="http://localhost:4000/assets/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="http://localhost:4000/assets/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:4000/assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="http://localhost:4000/assets/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:4000/assets/favicons/favicon-16x16.png">
+    <!-- <link rel="manifest" href="http://localhost:4000/assets/favicons/manifest.json"> -->
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="http://localhost:4000/assets/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    
+
+</head>
+
+<body>
+    <main id="maincontainer">
+        <div class="tests">
+
+  <h2>Broken SHIT for Brotherton</h2>
+  <ul>
+  
+    <li><a href="http://localhost:4000/?path=brotherton/floors/&amp;classmark=Ancient%2BHistory%2BL-5%2BANT/G">/?path=brotherton/floors/&amp;classmark=Ancient%2BHistory%2BL-5%2BANT/G</a></li>
+  
+    <li><a href="http://localhost:4000/?path=brotherton/floors/&amp;classmark=English+A-0.01+SAV">/?path=brotherton/floors/&amp;classmark=English+A-0.01+SAV</a></li>
+  
+    <li><a href="http://localhost:4000/?path=brotherton/floors/&amp;classmark=General+Literature+A-0.02+UNI">/?path=brotherton/floors/&amp;classmark=General+Literature+A-0.02+UNI</a></li>
+  
+    <li><a href="http://localhost:4000/?path=brotherton/floors/&amp;classmark=German+A-0.2+BRA">/?path=brotherton/floors/&amp;classmark=German+A-0.2+BRA</a></li>
+  
+  </ul>
+
+  <h2>Existing site: Brotherton</h2>
+  <ul>
+  
+    <li><a href="http://localhost:4000/?path=brotherton/floors/m1/">/?path=brotherton/floors/m1/</a></li>
+  
+    <li><a href="http://localhost:4000/?path=brotherton/floors/m2/">/?path=brotherton/floors/m2/</a></li>
+  
+    <li><a href="http://localhost:4000/?path=brotherton/floors/m3/">/?path=brotherton/floors/m3/</a></li>
+  
+    <li><a href="http://localhost:4000/?path=brotherton/floors/m3/">/?path=brotherton/floors/m3/</a></li>
+  
+    <li><a href="http://localhost:4000/?path=brotherton/floors/w2/">/?path=brotherton/floors/w2/</a></li>
+  
+    <li><a href="http://localhost:4000/?path=brotherton/floors/w3/">/?path=brotherton/floors/w3/</a></li>
+  
+  </ul>
+
+  <h2>Existing site: Edward Boyle</h2>
+  <ul>
+  
+    <li><a href="http://localhost:4000/?path=edwardboyle/floors/8/">/?path=edwardboyle/floors/8/</a></li>
+  
+    <li><a href="http://localhost:4000/?path=edwardboyle/floors/9/">/?path=edwardboyle/floors/9/</a></li>
+  
+    <li><a href="http://localhost:4000/?path=edwardboyle/floors/10/">/?path=edwardboyle/floors/10/</a></li>
+  
+    <li><a href="http://localhost:4000/?path=edwardboyle/floors/11/">/?path=edwardboyle/floors/11/</a></li>
+  
+    <li><a href="http://localhost:4000/?path=edwardboyle/floors/12/">/?path=edwardboyle/floors/12/</a></li>
+  
+    <li><a href="http://localhost:4000/?path=edwardboyle/floors/13/">/?path=edwardboyle/floors/13/</a></li>
+  
+  </ul>
+
+  <h2>Existing site: Health Sciences</h2>
+  <ul>
+  
+    <li><a href="http://localhost:4000/?path=healthsciences/floors/">/?path=healthsciences/floors/</a></li>
+  
+  </ul>
+
+  <h2>Existing site: Laidlaw</h2>
+  <ul>
+  
+    <li><a href="http://localhost:4000/?path=laidlaw/floors/ground/">/?path=laidlaw/floors/ground/</a></li>
+  
+    <li><a href="http://localhost:4000/?path=laidlaw/floors/first/">/?path=laidlaw/floors/first/</a></li>
+  
+    <li><a href="http://localhost:4000/?path=laidlaw/floors/second/">/?path=laidlaw/floors/second/</a></li>
+  
+    <li><a href="http://localhost:4000/?path=laidlaw/floors/third/">/?path=laidlaw/floors/third/</a></li>
+  
+  </ul>
+
+  <h2>Primo Links: Brotherton</h2>
+  <ul>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Ancient%2BHistory%2BL-5%2BANT/G&amp;floor=blw2">/?path=floorplan&amp;library=BL&amp;classmark=Ancient%2BHistory%2BL-5%2BANT/G&amp;floor=blw2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Ancient+History+A-0.09+CAM&amp;floor=blm3">/?path=floorplan&amp;library=BL&amp;classmark=Ancient+History+A-0.09+CAM&amp;floor=blm3</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Art%2BC-0%2BREM/C&amp;floor=blm3">/?path=floorplan&amp;library=BL&amp;classmark=Art%2BC-0%2BREM/C&amp;floor=blm3</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Art+A-0.01+THI&amp;floor=blw2a">/?path=floorplan&amp;library=BL&amp;classmark=Art+A-0.01+THI&amp;floor=blw2a</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Bibliography+G-1.3+DOE&amp;floor=blm4">/?path=floorplan&amp;library=BL&amp;classmark=Bibliography+G-1.3+DOE&amp;floor=blm4</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=BL+Microfilm+2294&amp;floor=blmic">/?path=floorplan&amp;library=BL&amp;classmark=BL+Microfilm+2294&amp;floor=blmic</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Chinese+P-17+MU&amp;floor=blm1">/?path=floorplan&amp;library=BL&amp;classmark=Chinese+P-17+MU&amp;floor=blm1</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Communications+Studies+B-1+ALB&amp;floor=blw2">/?path=floorplan&amp;library=BL&amp;classmark=Communications+Studies+B-1+ALB&amp;floor=blw2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=English%2BU-35%2BFIT/B&amp;floor=blm4">/?path=floorplan&amp;library=BL&amp;classmark=English%2BU-35%2BFIT/B&amp;floor=blm4</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=English+A-0.01+SAV&amp;floor=blw2a">/?path=floorplan&amp;library=BL&amp;classmark=English+A-0.01+SAV&amp;floor=blw2a</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=French%2BM-80%2BPRO/K&amp;floor=blm2">/?path=floorplan&amp;library=BL&amp;classmark=French%2BM-80%2BPRO/K&amp;floor=blm2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=General+Journals+JEW&amp;floor=blw2a">/?path=floorplan&amp;library=BL&amp;classmark=General+Journals+JEW&amp;floor=blw2a</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=General+Literature+A-0.02+UNI&amp;floor=blm4">/?path=floorplan&amp;library=BL&amp;classmark=General+Literature+A-0.02+UNI&amp;floor=blm4</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=German+A-0.2+BRA&amp;floor=blm1">/?path=floorplan&amp;library=BL&amp;classmark=German+A-0.2+BRA&amp;floor=blm1</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Greek+A-0.2+TAY&amp;floor=blm3">/?path=floorplan&amp;library=BL&amp;classmark=Greek+A-0.2+TAY&amp;floor=blm3</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Large%2BAncient%2BHistory%2BL-4%2BBUT/H&amp;floor=blm3">/?path=floorplan&amp;library=BL&amp;classmark=Large%2BAncient%2BHistory%2BL-4%2BBUT/H&amp;floor=blm3</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Large+Ancient+History+K-2.1+PEL%2FP&amp;floor=blm3">/?path=floorplan&amp;library=BL&amp;classmark=Large+Ancient+History+K-2.1+PEL%2FP&amp;floor=blm3</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Large+English+P-56+JOY&amp;floor=blm4">/?path=floorplan&amp;library=BL&amp;classmark=Large+English+P-56+JOY&amp;floor=blm4</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Latin%2BC-5%2BNEP/S&amp;floor=blw2">/?path=floorplan&amp;library=BL&amp;classmark=Latin%2BC-5%2BNEP/S&amp;floor=blw2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Latin+C-6.01+GRE&amp;floor=blm3">/?path=floorplan&amp;library=BL&amp;classmark=Latin+C-6.01+GRE&amp;floor=blm3</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Linguistics+A-0.19+CRY&amp;floor=blm1">/?path=floorplan&amp;library=BL&amp;classmark=Linguistics+A-0.19+CRY&amp;floor=blm1</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Modern%2BHistory%2BL-6.401%2BSTA/T&amp;floor=blm2">/?path=floorplan&amp;library=BL&amp;classmark=Modern%2BHistory%2BL-6.401%2BSTA/T&amp;floor=blm2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Modern+History+A-0.031+FAV&amp;floor=blm2">/?path=floorplan&amp;library=BL&amp;classmark=Modern+History+A-0.031+FAV&amp;floor=blm2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Music%2BJ-5.2%2BDYL/M&amp;floor=blw2">/?path=floorplan&amp;library=BL&amp;classmark=Music%2BJ-5.2%2BDYL/M&amp;floor=blw2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Music+J-2+WAD&amp;floor=blw2">/?path=floorplan&amp;library=BL&amp;classmark=Music+J-2+WAD&amp;floor=blw2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Philosophy%2BB-5%2BPLA/R&amp;floor=blm2">/?path=floorplan&amp;library=BL&amp;classmark=Philosophy%2BB-5%2BPLA/R&amp;floor=blm2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Philosophy+O-0+FOU&amp;floor=blm2">/?path=floorplan&amp;library=BL&amp;classmark=Philosophy+O-0+FOU&amp;floor=blm2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Slavonic+B-0.1+BYF&amp;floor=blm1">/?path=floorplan&amp;library=BL&amp;classmark=Slavonic+B-0.1+BYF&amp;floor=blm1</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Spanish%2BP-36%2BGUI/S&amp;floor=blm2">/?path=floorplan&amp;library=BL&amp;classmark=Spanish%2BP-36%2BGUI/S&amp;floor=blm2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Stack%2BModern%2BHistory%2BP-9.41%2BKEY/A&amp;floor=blw2">/?path=floorplan&amp;library=BL&amp;classmark=Stack%2BModern%2BHistory%2BP-9.41%2BKEY/A&amp;floor=blw2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Stack+Anthropology+D-3+BEI&amp;floor=blw2">/?path=floorplan&amp;library=BL&amp;classmark=Stack+Anthropology+D-3+BEI&amp;floor=blw2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Stack+Architecture+C-1.28+BOL%2FS&amp;floor=blw2">/?path=floorplan&amp;library=BL&amp;classmark=Stack+Architecture+C-1.28+BOL%2FS&amp;floor=blw2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Stack+Celtic+A-0.03+INT&amp;floor=blw2">/?path=floorplan&amp;library=BL&amp;classmark=Stack+Celtic+A-0.03+INT&amp;floor=blw2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Stack+Chinese+A-0.06+STE&amp;floor=blw2">/?path=floorplan&amp;library=BL&amp;classmark=Stack+Chinese+A-0.06+STE&amp;floor=blw2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Stack+English+B-10+ANG&amp;floor=blw2">/?path=floorplan&amp;library=BL&amp;classmark=Stack+English+B-10+ANG&amp;floor=blw2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Stack+Holden+Library+Y-0.02+THO&amp;floor=blw2">/?path=floorplan&amp;library=BL&amp;classmark=Stack+Holden+Library+Y-0.02+THO&amp;floor=blw2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Stack+Large+Archaeology+C-3+DAV&amp;floor=blw2">/?path=floorplan&amp;library=BL&amp;classmark=Stack+Large+Archaeology+C-3+DAV&amp;floor=blw2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Textiles+F-1+SHA&amp;floor=blw2">/?path=floorplan&amp;library=BL&amp;classmark=Textiles+F-1+SHA&amp;floor=blw2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Theatre%2BQ-11%2BCAR/P&amp;floor=blw2">/?path=floorplan&amp;library=BL&amp;classmark=Theatre%2BQ-11%2BCAR/P&amp;floor=blw2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Theatre+E-0+LUS&amp;floor=blw2">/?path=floorplan&amp;library=BL&amp;classmark=Theatre+E-0+LUS&amp;floor=blw2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Theology+F-3.1+KAN&amp;floor=blm1">/?path=floorplan&amp;library=BL&amp;classmark=Theology+F-3.1+KAN&amp;floor=blm1</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Yorkshire+H-Lee-0.5+HAR&amp;floor=blm2">/?path=floorplan&amp;library=BL&amp;classmark=Yorkshire+H-Lee-0.5+HAR&amp;floor=blm2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Communications+Studies+E-3.21072+ROM&amp;floor=blw2">/?path=floorplan&amp;library=BL&amp;classmark=Communications+Studies+E-3.21072+ROM&amp;floor=blw2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Modern+History+L-9.93+NAR&amp;floor=blm2">/?path=floorplan&amp;library=BL&amp;classmark=Modern+History+L-9.93+NAR&amp;floor=blm2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Modern+History+D-6.09+PAR&amp;floor=blm2">/?path=floorplan&amp;library=BL&amp;classmark=Modern+History+D-6.09+PAR&amp;floor=blm2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Video+Film+MID&amp;floor=blm1">/?path=floorplan&amp;library=BL&amp;classmark=Video+Film+MID&amp;floor=blm1</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Modern+History+K-2+WIL&amp;floor=blm2">/?path=floorplan&amp;library=BL&amp;classmark=Modern+History+K-2+WIL&amp;floor=blm2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=English+H-0.33+BAR&amp;floor=blm4">/?path=floorplan&amp;library=BL&amp;classmark=English+H-0.33+BAR&amp;floor=blm4</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Modern+History+N-97.8+MAC&amp;floor=blm2">/?path=floorplan&amp;library=BL&amp;classmark=Modern+History+N-97.8+MAC&amp;floor=blm2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Communications+Studies+E-2.3+HAR&amp;floor=blw2">/?path=floorplan&amp;library=BL&amp;classmark=Communications+Studies+E-2.3+HAR&amp;floor=blw2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Greek+G-2.8+PLA%2FP&amp;floor=blm3">/?path=floorplan&amp;library=BL&amp;classmark=Greek+G-2.8+PLA%2FP&amp;floor=blm3</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Modern+History+S-6.012+GLA&amp;floor=blm2">/?path=floorplan&amp;library=BL&amp;classmark=Modern+History+S-6.012+GLA&amp;floor=blm2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=French+B-0.31+FOE&amp;floor=blm2">/?path=floorplan&amp;library=BL&amp;classmark=French+B-0.31+FOE&amp;floor=blm2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Latin+K-19+ERA&amp;floor=blm3">/?path=floorplan&amp;library=BL&amp;classmark=Latin+K-19+ERA&amp;floor=blm3</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=CHINESE+I-0.03+MAO&amp;floor=blm1">/?path=floorplan&amp;library=BL&amp;classmark=CHINESE+I-0.03+MAO&amp;floor=blm1</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Music+J-32+BAR&amp;floor=blw2">/?path=floorplan&amp;library=BL&amp;classmark=Music+J-32+BAR&amp;floor=blw2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Music+J-34+RIV&amp;floor=blw2">/?path=floorplan&amp;library=BL&amp;classmark=Music+J-34+RIV&amp;floor=blw2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=French+B-25+LEB&amp;floor=blm2">/?path=floorplan&amp;library=BL&amp;classmark=French+B-25+LEB&amp;floor=blm2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Modern+History+U-6.06+LEU&amp;floor=blm2">/?path=floorplan&amp;library=BL&amp;classmark=Modern+History+U-6.06+LEU&amp;floor=blm2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Modern+History+B-3.03+SCH&amp;floor=blm2">/?path=floorplan&amp;library=BL&amp;classmark=Modern+History+B-3.03+SCH&amp;floor=blm2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Ancient+History+H-1.4+VER&amp;floor=blm3">/?path=floorplan&amp;library=BL&amp;classmark=Ancient+History+H-1.4+VER&amp;floor=blm3</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Modern+History+P-1.3+WHI&amp;floor=blm2">/?path=floorplan&amp;library=BL&amp;classmark=Modern+History+P-1.3+WHI&amp;floor=blm2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=English+Q-50+BYA%2FC&amp;floor=blm4">/?path=floorplan&amp;library=BL&amp;classmark=English+Q-50+BYA%2FC&amp;floor=blm4</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=English+U-71+TAY&amp;floor=blm4">/?path=floorplan&amp;library=BL&amp;classmark=English+U-71+TAY&amp;floor=blm4</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Modern+History+B-0.65+SWE&amp;floor=blm2">/?path=floorplan&amp;library=BL&amp;classmark=Modern+History+B-0.65+SWE&amp;floor=blm2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Modern+History+N-98.05+POR&amp;floor=blm2">/?path=floorplan&amp;library=BL&amp;classmark=Modern+History+N-98.05+POR&amp;floor=blm2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Theatre+Q-11+PRE&amp;floor=blw2">/?path=floorplan&amp;library=BL&amp;classmark=Theatre+Q-11+PRE&amp;floor=blw2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Modern+History+R-1.2+DOW&amp;floor=blm2">/?path=floorplan&amp;library=BL&amp;classmark=Modern+History+R-1.2+DOW&amp;floor=blm2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Stack+Architecture+B-3.53+JEN&amp;floor=blw2">/?path=floorplan&amp;library=BL&amp;classmark=Stack+Architecture+B-3.53+JEN&amp;floor=blw2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Modern+History+P-8+GIL&amp;floor=blm2">/?path=floorplan&amp;library=BL&amp;classmark=Modern+History+P-8+GIL&amp;floor=blm2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Modern+History+E-2.406+CRU&amp;floor=blm2">/?path=floorplan&amp;library=BL&amp;classmark=Modern+History+E-2.406+CRU&amp;floor=blm2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Pamphlets+German+H-60+BLU&amp;floor=blm1">/?path=floorplan&amp;library=BL&amp;classmark=Pamphlets+German+H-60+BLU&amp;floor=blm1</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Modern+History+C-1.06+JON&amp;floor=blm2">/?path=floorplan&amp;library=BL&amp;classmark=Modern+History+C-1.06+JON&amp;floor=blm2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Modern+History+G-8+BUE&amp;floor=blm2">/?path=floorplan&amp;library=BL&amp;classmark=Modern+History+G-8+BUE&amp;floor=blm2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Chinese+N-42+CHENG&amp;floor=blm1">/?path=floorplan&amp;library=BL&amp;classmark=Chinese+N-42+CHENG&amp;floor=blm1</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Modern+History+F-0.306+MAC&amp;floor=blm2">/?path=floorplan&amp;library=BL&amp;classmark=Modern+History+F-0.306+MAC&amp;floor=blm2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=German+N-0.3+GRI&amp;floor=blm1">/?path=floorplan&amp;library=BL&amp;classmark=German+N-0.3+GRI&amp;floor=blm1</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Large+Greek+A-0.28+AME&amp;floor=blm3">/?path=floorplan&amp;library=BL&amp;classmark=Large+Greek+A-0.28+AME&amp;floor=blm3</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Chinese+J-4.69+SHI&amp;floor=blm1">/?path=floorplan&amp;library=BL&amp;classmark=Chinese+J-4.69+SHI&amp;floor=blm1</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=English+U-22+MEL%2FR&amp;floor=blm4">/?path=floorplan&amp;library=BL&amp;classmark=English+U-22+MEL%2FR&amp;floor=blm4</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=YAHS+Yorkshire+H-Sca-0.5+BAY&amp;floor=blm1">/?path=floorplan&amp;library=BL&amp;classmark=YAHS+Yorkshire+H-Sca-0.5+BAY&amp;floor=blm1</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Modern+History+N-60.4+SPE&amp;floor=blm2">/?path=floorplan&amp;library=BL&amp;classmark=Modern+History+N-60.4+SPE&amp;floor=blm2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Modern+history+N-73.012+AUS&amp;floor=blm2">/?path=floorplan&amp;library=BL&amp;classmark=Modern+history+N-73.012+AUS&amp;floor=blm2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Large+Ancient+History+B-3+CUR&amp;floor=blm3">/?path=floorplan&amp;library=BL&amp;classmark=Large+Ancient+History+B-3+CUR&amp;floor=blm3</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Greek+K-5.9+PLU%2FD&amp;floor=blm3">/?path=floorplan&amp;library=BL&amp;classmark=Greek+K-5.9+PLU%2FD&amp;floor=blm3</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Video+General+Languages+OMS&amp;floor=blm1">/?path=floorplan&amp;library=BL&amp;classmark=Video+General+Languages+OMS&amp;floor=blm1</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=English+V-7.2+TOE&amp;floor=blm4">/?path=floorplan&amp;library=BL&amp;classmark=English+V-7.2+TOE&amp;floor=blm4</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Chinese+I-6+XU&amp;floor=blm1">/?path=floorplan&amp;library=BL&amp;classmark=Chinese+I-6+XU&amp;floor=blm1</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Textiles+E-30.1+RAM&amp;floor=blw2">/?path=floorplan&amp;library=BL&amp;classmark=Textiles+E-30.1+RAM&amp;floor=blw2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Music+J-3.25+BRA&amp;floor=blw2">/?path=floorplan&amp;library=BL&amp;classmark=Music+J-3.25+BRA&amp;floor=blw2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=English+G-0.28+LEV&amp;floor=blm4">/?path=floorplan&amp;library=BL&amp;classmark=English+G-0.28+LEV&amp;floor=blm4</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Ancient+History+A-0.08+HUG&amp;floor=blm3">/?path=floorplan&amp;library=BL&amp;classmark=Ancient+History+A-0.08+HUG&amp;floor=blm3</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Stack+Large+Art+R-0+POL&amp;floor=blw2">/?path=floorplan&amp;library=BL&amp;classmark=Stack+Large+Art+R-0+POL&amp;floor=blw2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Communications+Studies+D-5.5+KAY&amp;floor=blw2">/?path=floorplan&amp;library=BL&amp;classmark=Communications+Studies+D-5.5+KAY&amp;floor=blw2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Communications+Studies+E-3.2101+PAT&amp;floor=blw2">/?path=floorplan&amp;library=BL&amp;classmark=Communications+Studies+E-3.2101+PAT&amp;floor=blw2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Art+A-0.05+WEB&amp;floor=blw2">/?path=floorplan&amp;library=BL&amp;classmark=Art+A-0.05+WEB&amp;floor=blw2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Modern+History+M-1.06+MAC&amp;floor=blm2">/?path=floorplan&amp;library=BL&amp;classmark=Modern+History+M-1.06+MAC&amp;floor=blm2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Italian+C-7+DAN%2FB&amp;floor=blm1">/?path=floorplan&amp;library=BL&amp;classmark=Italian+C-7+DAN%2FB&amp;floor=blm1</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Modern+History+V-3.36+KOR&amp;floor=blm2">/?path=floorplan&amp;library=BL&amp;classmark=Modern+History+V-3.36+KOR&amp;floor=blm2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Modern+History+P-7.03+KEN%2FC&amp;floor=blm2">/?path=floorplan&amp;library=BL&amp;classmark=Modern+History+P-7.03+KEN%2FC&amp;floor=blm2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=CHINESE+G-1.45+LUNG&amp;floor=blm1">/?path=floorplan&amp;library=BL&amp;classmark=CHINESE+G-1.45+LUNG&amp;floor=blm1</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Modern+History+R-2.6+DAR&amp;floor=blm2">/?path=floorplan&amp;library=BL&amp;classmark=Modern+History+R-2.6+DAR&amp;floor=blm2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=German+P-0.06+BOL&amp;floor=blm1">/?path=floorplan&amp;library=BL&amp;classmark=German+P-0.06+BOL&amp;floor=blm1</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Large+Ancient+History+L-5+KON&amp;floor=blm3">/?path=floorplan&amp;library=BL&amp;classmark=Large+Ancient+History+L-5+KON&amp;floor=blm3</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Theatre+Q-1+COO&amp;floor=blw2">/?path=floorplan&amp;library=BL&amp;classmark=Theatre+Q-1+COO&amp;floor=blw2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=English+P-0.34+BEA&amp;floor=blm4">/?path=floorplan&amp;library=BL&amp;classmark=English+P-0.34+BEA&amp;floor=blm4</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Modern+History+P-9.5012+MAY&amp;floor=blm2">/?path=floorplan&amp;library=BL&amp;classmark=Modern+History+P-9.5012+MAY&amp;floor=blm2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Modern+History+L-6.1+LEN&amp;floor=blm2">/?path=floorplan&amp;library=BL&amp;classmark=Modern+History+L-6.1+LEN&amp;floor=blm2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Slavonic+G-9+TOL&amp;floor=blm1">/?path=floorplan&amp;library=BL&amp;classmark=Slavonic+G-9+TOL&amp;floor=blm1</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Linguistics+A-1+HUD&amp;floor=blm1">/?path=floorplan&amp;library=BL&amp;classmark=Linguistics+A-1+HUD&amp;floor=blm1</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Modern+History+R-1.2+DOW&amp;floor=blm2">/?path=floorplan&amp;library=BL&amp;classmark=Modern+History+R-1.2+DOW&amp;floor=blm2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=English+R-1+ANT&amp;floor=blm4">/?path=floorplan&amp;library=BL&amp;classmark=English+R-1+ANT&amp;floor=blm4</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Theatre+Q-50+BAR&amp;floor=blw2">/?path=floorplan&amp;library=BL&amp;classmark=Theatre+Q-50+BAR&amp;floor=blw2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Music+A-1.3+KAN&amp;floor=blw2">/?path=floorplan&amp;library=BL&amp;classmark=Music+A-1.3+KAN&amp;floor=blw2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Modern+History+R-2+JAC&amp;floor=blm2">/?path=floorplan&amp;library=BL&amp;classmark=Modern+History+R-2+JAC&amp;floor=blm2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Modern+History+T-0.06+FRE&amp;floor=blm2">/?path=floorplan&amp;library=BL&amp;classmark=Modern+History+T-0.06+FRE&amp;floor=blm2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=English+P-1+SHE&amp;floor=blm4">/?path=floorplan&amp;library=BL&amp;classmark=English+P-1+SHE&amp;floor=blm4</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Greek+K-6+APP%2FM&amp;floor=blm3">/?path=floorplan&amp;library=BL&amp;classmark=Greek+K-6+APP%2FM&amp;floor=blm3</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Modern+History+V-0.1+GLI&amp;floor=blm2">/?path=floorplan&amp;library=BL&amp;classmark=Modern+History+V-0.1+GLI&amp;floor=blm2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=English+Q-40+MAC&amp;floor=blm4">/?path=floorplan&amp;library=BL&amp;classmark=English+Q-40+MAC&amp;floor=blm4</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Stack+Large+Music+H-0.05+NER%2FC&amp;floor=blw2">/?path=floorplan&amp;library=BL&amp;classmark=Stack+Large+Music+H-0.05+NER%2FC&amp;floor=blw2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=English+V-6.8+COE%2FS&amp;floor=blm4">/?path=floorplan&amp;library=BL&amp;classmark=English+V-6.8+COE%2FS&amp;floor=blm4</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Art+B-0+GOM&amp;floor=blw2">/?path=floorplan&amp;library=BL&amp;classmark=Art+B-0+GOM&amp;floor=blw2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Modern+History+Z-3+CAM&amp;floor=blm2">/?path=floorplan&amp;library=BL&amp;classmark=Modern+History+Z-3+CAM&amp;floor=blm2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Modern+History+E-2.59+CAR&amp;floor=blm2">/?path=floorplan&amp;library=BL&amp;classmark=Modern+History+E-2.59+CAR&amp;floor=blm2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Modern+History+F-6.12+BEN&amp;floor=blm2">/?path=floorplan&amp;library=BL&amp;classmark=Modern+History+F-6.12+BEN&amp;floor=blm2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=English+J-24+SWI&amp;floor=blm4">/?path=floorplan&amp;library=BL&amp;classmark=English+J-24+SWI&amp;floor=blm4</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Philosophy+E-1.2+MIL&amp;floor=blm2">/?path=floorplan&amp;library=BL&amp;classmark=Philosophy+E-1.2+MIL&amp;floor=blm2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Theatre+B-3+HEN&amp;floor=blw2">/?path=floorplan&amp;library=BL&amp;classmark=Theatre+B-3+HEN&amp;floor=blw2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Theatre+E-2+AIT&amp;floor=blw2">/?path=floorplan&amp;library=BL&amp;classmark=Theatre+E-2+AIT&amp;floor=blw2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Modern+History+G-8.06+ELE&amp;floor=blm2">/?path=floorplan&amp;library=BL&amp;classmark=Modern+History+G-8.06+ELE&amp;floor=blm2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Modern+History+P-9.48+ADD&amp;floor=blm2">/?path=floorplan&amp;library=BL&amp;classmark=Modern+History+P-9.48+ADD&amp;floor=blm2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Modern+History+Q-2+DIA&amp;floor=blm2">/?path=floorplan&amp;library=BL&amp;classmark=Modern+History+Q-2+DIA&amp;floor=blm2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Modern+History+A-0.01+MID&amp;floor=blw2a">/?path=floorplan&amp;library=BL&amp;classmark=Modern+History+A-0.01+MID&amp;floor=blw2a</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Modern+History+C-66.6+COM&amp;floor=blm2">/?path=floorplan&amp;library=BL&amp;classmark=Modern+History+C-66.6+COM&amp;floor=blm2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=English+P-50+RHY&amp;floor=blm4">/?path=floorplan&amp;library=BL&amp;classmark=English+P-50+RHY&amp;floor=blm4</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=English+P-50+RHY&amp;floor=acq">/?path=floorplan&amp;library=BL&amp;classmark=English+P-50+RHY&amp;floor=acq</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Art+R-0+SAL&amp;floor=blw2">/?path=floorplan&amp;library=BL&amp;classmark=Art+R-0+SAL&amp;floor=blw2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Communications+Studies+A-0.05+BER&amp;floor=blw2">/?path=floorplan&amp;library=BL&amp;classmark=Communications+Studies+A-0.05+BER&amp;floor=blw2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Linguistics+J-0+HAL&amp;floor=blm1">/?path=floorplan&amp;library=BL&amp;classmark=Linguistics+J-0+HAL&amp;floor=blm1</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Modern+History+G-8+TAL&amp;floor=blm2">/?path=floorplan&amp;library=BL&amp;classmark=Modern+History+G-8+TAL&amp;floor=blm2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Modern+History+E-2.59+DEM&amp;floor=blm2">/?path=floorplan&amp;library=BL&amp;classmark=Modern+History+E-2.59+DEM&amp;floor=blm2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Theatre+Q-2.8+BRO&amp;floor=blw2">/?path=floorplan&amp;library=BL&amp;classmark=Theatre+Q-2.8+BRO&amp;floor=blw2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Textiles+F-1+TON&amp;floor=blw2">/?path=floorplan&amp;library=BL&amp;classmark=Textiles+F-1+TON&amp;floor=blw2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Modern+History+P-5.21+BOL%2FN&amp;floor=blm2">/?path=floorplan&amp;library=BL&amp;classmark=Modern+History+P-5.21+BOL%2FN&amp;floor=blm2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Modern+History+C-83+MOR&amp;floor=blm2">/?path=floorplan&amp;library=BL&amp;classmark=Modern+History+C-83+MOR&amp;floor=blm2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=English+P-48+ORW&amp;floor=blm4">/?path=floorplan&amp;library=BL&amp;classmark=English+P-48+ORW&amp;floor=blm4</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Chinese+V-0.084+CAO&amp;floor=blm1">/?path=floorplan&amp;library=BL&amp;classmark=Chinese+V-0.084+CAO&amp;floor=blm1</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=English+P-55+WOO%2FA&amp;floor=blm4">/?path=floorplan&amp;library=BL&amp;classmark=English+P-55+WOO%2FA&amp;floor=blm4</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Modern+History+C-90.5+WAR&amp;floor=blm2">/?path=floorplan&amp;library=BL&amp;classmark=Modern+History+C-90.5+WAR&amp;floor=blm2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Theology+J-0+OSH%2FU&amp;floor=blm1">/?path=floorplan&amp;library=BL&amp;classmark=Theology+J-0+OSH%2FU&amp;floor=blm1</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Stack+General+Classics+A-0.03+HOE&amp;floor=blw2">/?path=floorplan&amp;library=BL&amp;classmark=Stack+General+Classics+A-0.03+HOE&amp;floor=blw2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Music+A-1.6+CHA&amp;floor=blw2">/?path=floorplan&amp;library=BL&amp;classmark=Music+A-1.6+CHA&amp;floor=blw2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=English+P-50+RHY&amp;floor=acq">/?path=floorplan&amp;library=BL&amp;classmark=English+P-50+RHY&amp;floor=acq</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Theology+J-2.1+MAC&amp;floor=blm1">/?path=floorplan&amp;library=BL&amp;classmark=Theology+J-2.1+MAC&amp;floor=blm1</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=BL&amp;classmark=Chinese+H-1.653+MAO%2FJ&amp;floor=blm1">/?path=floorplan&amp;library=BL&amp;classmark=Chinese+H-1.653+MAO%2FJ&amp;floor=blm1</a></li>
+  
+  </ul>
+
+  <h2>Primo Links: Edward Boyle</h2>
+  <ul>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=Astronomy+T-0+TAY&amp;floor=ebl11">/?path=floorplan&amp;library=EBL&amp;classmark=Astronomy+T-0+TAY&amp;floor=ebl11</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=Chemical+Engineering+R-4.31+MEY&amp;floor=ebl11">/?path=floorplan&amp;library=EBL&amp;classmark=Chemical+Engineering+R-4.31+MEY&amp;floor=ebl11</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=Chemistry+Q-75+JAC&amp;floor=ebl11">/?path=floorplan&amp;library=EBL&amp;classmark=Chemistry+Q-75+JAC&amp;floor=ebl11</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=Civil+Engineering+P-0+DAV&amp;floor=ebl11">/?path=floorplan&amp;library=EBL&amp;classmark=Civil+Engineering+P-0+DAV&amp;floor=ebl11</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=Computer+Studies+H-2+ENG&amp;floor=ebl11">/?path=floorplan&amp;library=EBL&amp;classmark=Computer+Studies+H-2+ENG&amp;floor=ebl11</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=Economics%2BA-0.05%2BMAR/H&amp;floor=ebl12">/?path=floorplan&amp;library=EBL&amp;classmark=Economics%2BA-0.05%2BMAR/H&amp;floor=ebl12</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=Economics+B-4.1+DAV&amp;floor=ebl12">/?path=floorplan&amp;library=EBL&amp;classmark=Economics+B-4.1+DAV&amp;floor=ebl12</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=Education%2B370.1%2BLYO/D&amp;floor=ebl12">/?path=floorplan&amp;library=EBL&amp;classmark=Education%2B370.1%2BLYO/D&amp;floor=ebl12</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=Education+306.43+LEV&amp;floor=ebl12">/?path=floorplan&amp;library=EBL&amp;classmark=Education+306.43+LEV&amp;floor=ebl12</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=Electrical+Engineering+P-14+ROB&amp;floor=ebl11">/?path=floorplan&amp;library=EBL&amp;classmark=Electrical+Engineering+P-14+ROB&amp;floor=ebl11</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=Engineering+A-0.01+FIL&amp;floor=ebl8">/?path=floorplan&amp;library=EBL&amp;classmark=Engineering+A-0.01+FIL&amp;floor=ebl8</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=Food+D-1+BRO&amp;floor=ebl11">/?path=floorplan&amp;library=EBL&amp;classmark=Food+D-1+BRO&amp;floor=ebl11</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=General+Biology+A-1+CAM&amp;floor=ebl11">/?path=floorplan&amp;library=EBL&amp;classmark=General+Biology+A-1+CAM&amp;floor=ebl11</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=General+Science+A-0.01+NAT&amp;floor=ebl8">/?path=floorplan&amp;library=EBL&amp;classmark=General+Science+A-0.01+NAT&amp;floor=ebl8</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=Geography+A-0.01+PRO&amp;floor=ebl8">/?path=floorplan&amp;library=EBL&amp;classmark=Geography+A-0.01+PRO&amp;floor=ebl8</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=Geology%2BA-0.02%2BMEM/34&amp;floor=ebl11">/?path=floorplan&amp;library=EBL&amp;classmark=Geology%2BA-0.02%2BMEM/34&amp;floor=ebl11</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=Geology+F-8+SCH&amp;floor=ebl11">/?path=floorplan&amp;library=EBL&amp;classmark=Geology+F-8+SCH&amp;floor=ebl11</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=History+of+Science+P-10+NAT&amp;floor=ebl11">/?path=floorplan&amp;library=EBL&amp;classmark=History+of+Science+P-10+NAT&amp;floor=ebl11</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=Large+Economics+B-3.2+MAC&amp;floor=ebl12">/?path=floorplan&amp;library=EBL&amp;classmark=Large+Economics+B-3.2+MAC&amp;floor=ebl12</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=Law+A-0.01+CRI&amp;floor=ebl8">/?path=floorplan&amp;library=EBL&amp;classmark=Law+A-0.01+CRI&amp;floor=ebl8</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=Mathematics+K-5.9+HIL&amp;floor=ebl11">/?path=floorplan&amp;library=EBL&amp;classmark=Mathematics+K-5.9+HIL&amp;floor=ebl11</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=Mechanical+Engineering+H-0+HIB&amp;floor=ebl11">/?path=floorplan&amp;library=EBL&amp;classmark=Mechanical+Engineering+H-0+HIB&amp;floor=ebl11</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=Official%2BPublications%2BBritish%2BDECC/Nat&amp;floor=ebl8">/?path=floorplan&amp;library=EBL&amp;classmark=Official%2BPublications%2BBritish%2BDECC/Nat&amp;floor=ebl8</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=Physics+D-0+KIT&amp;floor=ebl11">/?path=floorplan&amp;library=EBL&amp;classmark=Physics+D-0+KIT&amp;floor=ebl11</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=Politics%2BH-7.3%2BOBA/R&amp;floor=ebl12">/?path=floorplan&amp;library=EBL&amp;classmark=Politics%2BH-7.3%2BOBA/R&amp;floor=ebl12</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=Politics+C-6+ODO&amp;floor=ebl12">/?path=floorplan&amp;library=EBL&amp;classmark=Politics+C-6+ODO&amp;floor=ebl12</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=Social+Policy+K-9+TRE&amp;floor=ebl12">/?path=floorplan&amp;library=EBL&amp;classmark=Social+Policy+K-9+TRE&amp;floor=ebl12</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=Sociology+A-0.05+BHA&amp;floor=ebl12">/?path=floorplan&amp;library=EBL&amp;classmark=Sociology+A-0.05+BHA&amp;floor=ebl12</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=Stack%2BLarge%2BGeography%2BA-0.02%2BLEE/W&amp;floor=ebl8">/?path=floorplan&amp;library=EBL&amp;classmark=Stack%2BLarge%2BGeography%2BA-0.02%2BLEE/W&amp;floor=ebl8</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=Stack+Electrical+Engineering+R-8+MAL&amp;floor=ebl8">/?path=floorplan&amp;library=EBL&amp;classmark=Stack+Electrical+Engineering+R-8+MAL&amp;floor=ebl8</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=Stack+Geography+D-0+MAS&amp;floor=ebl8">/?path=floorplan&amp;library=EBL&amp;classmark=Stack+Geography+D-0+MAS&amp;floor=ebl8</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=Stack+Official+Publications+British+DEn%2FPPG&amp;floor=ebl8">/?path=floorplan&amp;library=EBL&amp;classmark=Stack+Official+Publications+British+DEn%2FPPG&amp;floor=ebl8</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=Transport%2BA-0.02%2BTRB/SPE&amp;floor=ebl11">/?path=floorplan&amp;library=EBL&amp;classmark=Transport%2BA-0.02%2BTRB/SPE&amp;floor=ebl11</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=Transport+J-3+PAC&amp;floor=ebl11">/?path=floorplan&amp;library=EBL&amp;classmark=Transport+J-3+PAC&amp;floor=ebl11</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=843.9+LEISURE&amp;floor=ebl9">/?path=floorplan&amp;library=EBL&amp;classmark=843.9+LEISURE&amp;floor=ebl9</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=Mathematics+K-9+JOL&amp;floor=ebl11">/?path=floorplan&amp;library=EBL&amp;classmark=Mathematics+K-9+JOL&amp;floor=ebl11</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=Social+Policy+B-3.55+GOU&amp;floor=ebl12">/?path=floorplan&amp;library=EBL&amp;classmark=Social+Policy+B-3.55+GOU&amp;floor=ebl12</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=Management+T-2+ROW&amp;floor=ebl12">/?path=floorplan&amp;library=EBL&amp;classmark=Management+T-2+ROW&amp;floor=ebl12</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=Transport+G-0+GIO&amp;floor=ebl11">/?path=floorplan&amp;library=EBL&amp;classmark=Transport+G-0+GIO&amp;floor=ebl11</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=Computer+Studies+V-6+DAV&amp;floor=ebl11">/?path=floorplan&amp;library=EBL&amp;classmark=Computer+Studies+V-6+DAV&amp;floor=ebl11</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=Mechanical+Engineering+A-1+MAR&amp;floor=ebl11">/?path=floorplan&amp;library=EBL&amp;classmark=Mechanical+Engineering+A-1+MAR&amp;floor=ebl11</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=Stack+General+Biology+U-5.4+EAL&amp;floor=ebl8">/?path=floorplan&amp;library=EBL&amp;classmark=Stack+General+Biology+U-5.4+EAL&amp;floor=ebl8</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=Economics+D-50+PET&amp;floor=ebl12">/?path=floorplan&amp;library=EBL&amp;classmark=Economics+D-50+PET&amp;floor=ebl12</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=Management+A-0.01+ORG&amp;floor=ebl8">/?path=floorplan&amp;library=EBL&amp;classmark=Management+A-0.01+ORG&amp;floor=ebl8</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=Mathematics+K-6+LON&amp;floor=ebl11">/?path=floorplan&amp;library=EBL&amp;classmark=Mathematics+K-6+LON&amp;floor=ebl11</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=Management+K-1+WON&amp;floor=ebl12">/?path=floorplan&amp;library=EBL&amp;classmark=Management+K-1+WON&amp;floor=ebl12</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=Politics+Q-4.88+CAT&amp;floor=ebl12">/?path=floorplan&amp;library=EBL&amp;classmark=Politics+Q-4.88+CAT&amp;floor=ebl12</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=Economics+E-24.68+SAR&amp;floor=ebl12">/?path=floorplan&amp;library=EBL&amp;classmark=Economics+E-24.68+SAR&amp;floor=ebl12</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=Politics+R-5.4+KAN&amp;floor=ebl12">/?path=floorplan&amp;library=EBL&amp;classmark=Politics+R-5.4+KAN&amp;floor=ebl12</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=Social+Policy+F-3+STI&amp;floor=ebl12">/?path=floorplan&amp;library=EBL&amp;classmark=Social+Policy+F-3+STI&amp;floor=ebl12</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=Geography+K-34+FLE&amp;floor=ebl11">/?path=floorplan&amp;library=EBL&amp;classmark=Geography+K-34+FLE&amp;floor=ebl11</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=Sociology+F-0.28+HUY&amp;floor=ebl12">/?path=floorplan&amp;library=EBL&amp;classmark=Sociology+F-0.28+HUY&amp;floor=ebl12</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark={call_number}&amp;floor=ebl8">/?path=floorplan&amp;library=EBL&amp;classmark={call_number}&amp;floor=ebl8</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=616.8+WELLBEING&amp;floor=ebl9">/?path=floorplan&amp;library=EBL&amp;classmark=616.8+WELLBEING&amp;floor=ebl9</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=Geography+P-3+ERM&amp;floor=ebl11">/?path=floorplan&amp;library=EBL&amp;classmark=Geography+P-3+ERM&amp;floor=ebl11</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=Education+371.94+RIC&amp;floor=ebl12">/?path=floorplan&amp;library=EBL&amp;classmark=Education+371.94+RIC&amp;floor=ebl12</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=Stack+Transport+A-0.05+TRA&amp;floor=ebl8">/?path=floorplan&amp;library=EBL&amp;classmark=Stack+Transport+A-0.05+TRA&amp;floor=ebl8</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=Politics+C-6.5+GRA%2FS&amp;floor=ebl12">/?path=floorplan&amp;library=EBL&amp;classmark=Politics+C-6.5+GRA%2FS&amp;floor=ebl12</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=Education+370.1+FRE&amp;floor=ebl12">/?path=floorplan&amp;library=EBL&amp;classmark=Education+370.1+FRE&amp;floor=ebl12</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=Stack+Politics+A-0.05+CAS&amp;floor=ebl8">/?path=floorplan&amp;library=EBL&amp;classmark=Stack+Politics+A-0.05+CAS&amp;floor=ebl8</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=Politics+R-5+ONE&amp;floor=ebl12">/?path=floorplan&amp;library=EBL&amp;classmark=Politics+R-5+ONE&amp;floor=ebl12</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=History+of+Science+G-8+DRA&amp;floor=ebl11">/?path=floorplan&amp;library=EBL&amp;classmark=History+of+Science+G-8+DRA&amp;floor=ebl11</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=Mathematics+E-5+YAN&amp;floor=ebl11">/?path=floorplan&amp;library=EBL&amp;classmark=Mathematics+E-5+YAN&amp;floor=ebl11</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=Sociology+F-1.5+BRE&amp;floor=ebl12">/?path=floorplan&amp;library=EBL&amp;classmark=Sociology+F-1.5+BRE&amp;floor=ebl12</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=Economics+B-4.73+JON&amp;floor=ebl12">/?path=floorplan&amp;library=EBL&amp;classmark=Economics+B-4.73+JON&amp;floor=ebl12</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=Education+374+JAR&amp;floor=ebl12">/?path=floorplan&amp;library=EBL&amp;classmark=Education+374+JAR&amp;floor=ebl12</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=Economics+E-0.03+STR&amp;floor=ebl12">/?path=floorplan&amp;library=EBL&amp;classmark=Economics+E-0.03+STR&amp;floor=ebl12</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=Politics+H-6.8+LON&amp;floor=ebl12">/?path=floorplan&amp;library=EBL&amp;classmark=Politics+H-6.8+LON&amp;floor=ebl12</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=Social+Policy+K-6.2+LYN&amp;floor=ebl12">/?path=floorplan&amp;library=EBL&amp;classmark=Social+Policy+K-6.2+LYN&amp;floor=ebl12</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=Economics+N-6+FER&amp;floor=ebl12">/?path=floorplan&amp;library=EBL&amp;classmark=Economics+N-6+FER&amp;floor=ebl12</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=Materials+D-13.1+DAV&amp;floor=ebl11">/?path=floorplan&amp;library=EBL&amp;classmark=Materials+D-13.1+DAV&amp;floor=ebl11</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=Economics+N-6.731+CHA&amp;floor=ebl12">/?path=floorplan&amp;library=EBL&amp;classmark=Economics+N-6.731+CHA&amp;floor=ebl12</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=Food+F-3+BAL&amp;floor=ebl11">/?path=floorplan&amp;library=EBL&amp;classmark=Food+F-3+BAL&amp;floor=ebl11</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=History+of+Science+G-4+GIS&amp;floor=ebl11">/?path=floorplan&amp;library=EBL&amp;classmark=History+of+Science+G-4+GIS&amp;floor=ebl11</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=Sociology+F-3.5+JUE&amp;floor=ebl12">/?path=floorplan&amp;library=EBL&amp;classmark=Sociology+F-3.5+JUE&amp;floor=ebl12</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=Official+Publications+British+GoAD%2FMisc+A&amp;floor=ebl8">/?path=floorplan&amp;library=EBL&amp;classmark=Official+Publications+British+GoAD%2FMisc+A&amp;floor=ebl8</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=Social+Policy+K-9+KOL&amp;floor=ebl12">/?path=floorplan&amp;library=EBL&amp;classmark=Social+Policy+K-9+KOL&amp;floor=ebl12</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=History+of+Science+H-1+SUG&amp;floor=ebl11">/?path=floorplan&amp;library=EBL&amp;classmark=History+of+Science+H-1+SUG&amp;floor=ebl11</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=Education+376.973+POT&amp;floor=ebl12">/?path=floorplan&amp;library=EBL&amp;classmark=Education+376.973+POT&amp;floor=ebl12</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=Economics+F-2.44+HEN&amp;floor=ebl12">/?path=floorplan&amp;library=EBL&amp;classmark=Economics+F-2.44+HEN&amp;floor=ebl12</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=Geology+H-15+CRO&amp;floor=ebl11">/?path=floorplan&amp;library=EBL&amp;classmark=Geology+H-15+CRO&amp;floor=ebl11</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=Education+Reference+371.912+BRI&amp;floor=ebl12">/?path=floorplan&amp;library=EBL&amp;classmark=Education+Reference+371.912+BRI&amp;floor=ebl12</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=Computer+Studies+M-1+HIG&amp;floor=ebl11">/?path=floorplan&amp;library=EBL&amp;classmark=Computer+Studies+M-1+HIG&amp;floor=ebl11</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=History+of+Science+H-1+WAD&amp;floor=ebl11">/?path=floorplan&amp;library=EBL&amp;classmark=History+of+Science+H-1+WAD&amp;floor=ebl11</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=Geography+K-34+CAR&amp;floor=ebl11">/?path=floorplan&amp;library=EBL&amp;classmark=Geography+K-34+CAR&amp;floor=ebl11</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=Geography+K-20+WAL&amp;floor=ebl11">/?path=floorplan&amp;library=EBL&amp;classmark=Geography+K-20+WAL&amp;floor=ebl11</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=Education+375.4180076+BAC&amp;floor=ebl12">/?path=floorplan&amp;library=EBL&amp;classmark=Education+375.4180076+BAC&amp;floor=ebl12</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=Electrical+Engineering+V-0+BRA&amp;floor=ebl11">/?path=floorplan&amp;library=EBL&amp;classmark=Electrical+Engineering+V-0+BRA&amp;floor=ebl11</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=Law+E-34+BEL&amp;floor=ebl12">/?path=floorplan&amp;library=EBL&amp;classmark=Law+E-34+BEL&amp;floor=ebl12</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=Sociology+H-5.5+LEW&amp;floor=ebl12">/?path=floorplan&amp;library=EBL&amp;classmark=Sociology+H-5.5+LEW&amp;floor=ebl12</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=Politics+F-0+HEP&amp;floor=ebl12">/?path=floorplan&amp;library=EBL&amp;classmark=Politics+F-0+HEP&amp;floor=ebl12</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=Zoology+E-3+NIE&amp;floor=ebl11">/?path=floorplan&amp;library=EBL&amp;classmark=Zoology+E-3+NIE&amp;floor=ebl11</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=EBL&amp;classmark=Sociology+F-4.5+DUB&amp;floor=ebl12">/?path=floorplan&amp;library=EBL&amp;classmark=Sociology+F-4.5+DUB&amp;floor=ebl12</a></li>
+  
+  </ul>
+
+  <h2>Primo Links: Health Sciences</h2>
+  <ul>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=HSL&amp;classmark=Health+Sciences+BF+713+BRO&amp;floor=mdl">/?path=floorplan&amp;library=HSL&amp;classmark=Health+Sciences+BF+713+BRO&amp;floor=mdl</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=HSL&amp;classmark=Health+Sciences+Periodicals+HEA&amp;floor=mdl">/?path=floorplan&amp;library=HSL&amp;classmark=Health+Sciences+Periodicals+HEA&amp;floor=mdl</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=HSL&amp;classmark=Pamphlets+Health+Sciences+WY+85+NUR&amp;floor=mdl">/?path=floorplan&amp;library=HSL&amp;classmark=Pamphlets+Health+Sciences+WY+85+NUR&amp;floor=mdl</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=HSL&amp;classmark=Psychology+A-9+DAV&amp;floor=mdl">/?path=floorplan&amp;library=HSL&amp;classmark=Psychology+A-9+DAV&amp;floor=mdl</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=HSL&amp;classmark=Health+Sciences+WB+400+LAM&amp;floor=mdl">/?path=floorplan&amp;library=HSL&amp;classmark=Health+Sciences+WB+400+LAM&amp;floor=mdl</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=HSL&amp;classmark=Health+Sciences+WM+430+ASE&amp;floor=mdl">/?path=floorplan&amp;library=HSL&amp;classmark=Health+Sciences+WM+430+ASE&amp;floor=mdl</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=HSL&amp;classmark=Health+Sciences+QV+77.5+PAP&amp;floor=mdl">/?path=floorplan&amp;library=HSL&amp;classmark=Health+Sciences+QV+77.5+PAP&amp;floor=mdl</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=HSL&amp;classmark=Health+Sciences+WM+425+ROE&amp;floor=mdl">/?path=floorplan&amp;library=HSL&amp;classmark=Health+Sciences+WM+425+ROE&amp;floor=mdl</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=HSL&amp;classmark=Health+Sciences+WA+320+MIL&amp;floor=mdl">/?path=floorplan&amp;library=HSL&amp;classmark=Health+Sciences+WA+320+MIL&amp;floor=mdl</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=HSL&amp;classmark=Psychology+E-2+MOW&amp;floor=mdl">/?path=floorplan&amp;library=HSL&amp;classmark=Psychology+E-2+MOW&amp;floor=mdl</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=HSL&amp;classmark=Health+Sciences+BF+448+GIG&amp;floor=mdl">/?path=floorplan&amp;library=HSL&amp;classmark=Health+Sciences+BF+448+GIG&amp;floor=mdl</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=HSL&amp;classmark=Health+Sciences+BF+448+GIG&amp;floor=mdl">/?path=floorplan&amp;library=HSL&amp;classmark=Health+Sciences+BF+448+GIG&amp;floor=mdl</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=HSL&amp;classmark=Health+Sciences+BF+448+GIG&amp;floor=mdl">/?path=floorplan&amp;library=HSL&amp;classmark=Health+Sciences+BF+448+GIG&amp;floor=mdl</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=HSL&amp;classmark=Health+Sciences+WQ+100+WIC&amp;floor=mdl">/?path=floorplan&amp;library=HSL&amp;classmark=Health+Sciences+WQ+100+WIC&amp;floor=mdl</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=HSL&amp;classmark=Health+Sciences+WU+95+JAR&amp;floor=mdl">/?path=floorplan&amp;library=HSL&amp;classmark=Health+Sciences+WU+95+JAR&amp;floor=mdl</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=HSL&amp;classmark=Pamphlets+Health+Sciences+WA+530+BLO&amp;floor=mdl">/?path=floorplan&amp;library=HSL&amp;classmark=Pamphlets+Health+Sciences+WA+530+BLO&amp;floor=mdl</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=HSL&amp;classmark=Health+Sciences+WU+113.5+POL&amp;floor=mdl">/?path=floorplan&amp;library=HSL&amp;classmark=Health+Sciences+WU+113.5+POL&amp;floor=mdl</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=HSL&amp;classmark=Health+Sciences+WM+420+PAY&amp;floor=mdl">/?path=floorplan&amp;library=HSL&amp;classmark=Health+Sciences+WM+420+PAY&amp;floor=mdl</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=HSL&amp;classmark=Health+Sciences+WY+160+WRI&amp;floor=mdl">/?path=floorplan&amp;library=HSL&amp;classmark=Health+Sciences+WY+160+WRI&amp;floor=mdl</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=HSL&amp;classmark=Health+Sciences+QT+104+MAR&amp;floor=mdl">/?path=floorplan&amp;library=HSL&amp;classmark=Health+Sciences+QT+104+MAR&amp;floor=mdl</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=HSL&amp;classmark=Health+Sciences+WA+105+ROT&amp;floor=mdl">/?path=floorplan&amp;library=HSL&amp;classmark=Health+Sciences+WA+105+ROT&amp;floor=mdl</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=HSL&amp;classmark=Health+Sciences+WB+102.5+AVE&amp;floor=mdl">/?path=floorplan&amp;library=HSL&amp;classmark=Health+Sciences+WB+102.5+AVE&amp;floor=mdl</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=HSL&amp;classmark=Health+Sciences+QW+160+FIE&amp;floor=mdl">/?path=floorplan&amp;library=HSL&amp;classmark=Health+Sciences+QW+160+FIE&amp;floor=mdl</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=HSL&amp;classmark=Psychology+Q-5+MAC&amp;floor=mdl">/?path=floorplan&amp;library=HSL&amp;classmark=Psychology+Q-5+MAC&amp;floor=mdl</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=HSL&amp;classmark=Health+Sciences+WM+425+SHE&amp;floor=mdl">/?path=floorplan&amp;library=HSL&amp;classmark=Health+Sciences+WM+425+SHE&amp;floor=mdl</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=HSL&amp;classmark=Health+Sciences+WU+530+POU&amp;floor=mdl">/?path=floorplan&amp;library=HSL&amp;classmark=Health+Sciences+WU+530+POU&amp;floor=mdl</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=HSL&amp;classmark=Health+Sciences+WF+600+BAR&amp;floor=mdl">/?path=floorplan&amp;library=HSL&amp;classmark=Health+Sciences+WF+600+BAR&amp;floor=mdl</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=HSL&amp;classmark=Health+Sciences+BF+76.7+AME&amp;floor=mdl">/?path=floorplan&amp;library=HSL&amp;classmark=Health+Sciences+BF+76.7+AME&amp;floor=mdl</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=HSL&amp;classmark=Health+Sciences+WE+725+WHI&amp;floor=mdl">/?path=floorplan&amp;library=HSL&amp;classmark=Health+Sciences+WE+725+WHI&amp;floor=mdl</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=HSL&amp;classmark=Health+Sciences+QS+530+ROS&amp;floor=mdl">/?path=floorplan&amp;library=HSL&amp;classmark=Health+Sciences+QS+530+ROS&amp;floor=mdl</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=HSL&amp;classmark=Health+Sciences+WA+525+GLO&amp;floor=mdl">/?path=floorplan&amp;library=HSL&amp;classmark=Health+Sciences+WA+525+GLO&amp;floor=mdl</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=HSL&amp;classmark=Health+Sciences+Periodicals+INT&amp;floor=mdl">/?path=floorplan&amp;library=HSL&amp;classmark=Health+Sciences+Periodicals+INT&amp;floor=mdl</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=HSL&amp;classmark=Health+Sciences+BF+448+KAH&amp;floor=mdl">/?path=floorplan&amp;library=HSL&amp;classmark=Health+Sciences+BF+448+KAH&amp;floor=mdl</a></li>
+  
+  </ul>
+
+  <h2>Primo Links: Laidlaw</h2>
+  <ul>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=Ancient%2BHistory%2BL-5%2BANT/G&amp;floor=ll1">/?path=floorplan&amp;library=LL&amp;classmark=Ancient%2BHistory%2BL-5%2BANT/G&amp;floor=ll1</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=Art+A-0.06+DAL&amp;floor=ll1">/?path=floorplan&amp;library=LL&amp;classmark=Art+A-0.06+DAL&amp;floor=ll1</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=Article+72&amp;floor=llhdc">/?path=floorplan&amp;library=LL&amp;classmark=Article+72&amp;floor=llhdc</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=Civil+Engineering+A-5+SMI&amp;floor=ll1">/?path=floorplan&amp;library=LL&amp;classmark=Civil+Engineering+A-5+SMI&amp;floor=ll1</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=Communications+Studies+E-3.2+OSH&amp;floor=ll1">/?path=floorplan&amp;library=LL&amp;classmark=Communications+Studies+E-3.2+OSH&amp;floor=ll1</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=Computer+Studies+G-6+FLO&amp;floor=ll1">/?path=floorplan&amp;library=LL&amp;classmark=Computer+Studies+G-6+FLO&amp;floor=ll1</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=Economics%2BA-0.05%2BMAR/H&amp;floor=ll1">/?path=floorplan&amp;library=LL&amp;classmark=Economics%2BA-0.05%2BMAR/H&amp;floor=ll1</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=Economics+A-0.05+SMI%2FF&amp;floor=ll1">/?path=floorplan&amp;library=LL&amp;classmark=Economics+A-0.05+SMI%2FF&amp;floor=ll1</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=Education%2B370.1%2BLYO/D&amp;floor=ll1">/?path=floorplan&amp;library=LL&amp;classmark=Education%2B370.1%2BLYO/D&amp;floor=ll1</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=Education+370+CUR&amp;floor=ll1">/?path=floorplan&amp;library=LL&amp;classmark=Education+370+CUR&amp;floor=ll1</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=Electrical+Engineering+Z-5+DOR&amp;floor=llhdc">/?path=floorplan&amp;library=LL&amp;classmark=Electrical+Engineering+Z-5+DOR&amp;floor=llhdc</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=English%2BC-8.4%2BCHA/P&amp;floor=ll1">/?path=floorplan&amp;library=LL&amp;classmark=English%2BC-8.4%2BCHA/P&amp;floor=ll1</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=English+V-8.4+SEL%2FN&amp;floor=ll1">/?path=floorplan&amp;library=LL&amp;classmark=English+V-8.4+SEL%2FN&amp;floor=ll1</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=Food+B-4.2+PEA&amp;floor=ll1">/?path=floorplan&amp;library=LL&amp;classmark=Food+B-4.2+PEA&amp;floor=ll1</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=French%2BM-80%2BPRO/K&amp;floor=ll1">/?path=floorplan&amp;library=LL&amp;classmark=French%2BM-80%2BPRO/K&amp;floor=ll1</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=French+A-0.31+HAW&amp;floor=ll1">/?path=floorplan&amp;library=LL&amp;classmark=French+A-0.31+HAW&amp;floor=ll1</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=General+Biology+U-1+VOE&amp;floor=ll1">/?path=floorplan&amp;library=LL&amp;classmark=General+Biology+U-1+VOE&amp;floor=ll1</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=General+Literature+C-0+BEN&amp;floor=ll1">/?path=floorplan&amp;library=LL&amp;classmark=General+Literature+C-0+BEN&amp;floor=ll1</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=General+Science+A-1+BRY&amp;floor=ll1">/?path=floorplan&amp;library=LL&amp;classmark=General+Science+A-1+BRY&amp;floor=ll1</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=Geography+N-0+JAC&amp;floor=ll2">/?path=floorplan&amp;library=LL&amp;classmark=Geography+N-0+JAC&amp;floor=ll2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=Geology+G-0+KLE&amp;floor=ll2">/?path=floorplan&amp;library=LL&amp;classmark=Geology+G-0+KLE&amp;floor=ll2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=German+Q-1+HIL&amp;floor=llhdc">/?path=floorplan&amp;library=LL&amp;classmark=German+Q-1+HIL&amp;floor=llhdc</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=Greek+A-0.27+RHO&amp;floor=ll2">/?path=floorplan&amp;library=LL&amp;classmark=Greek+A-0.27+RHO&amp;floor=ll2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=History%2Bof%2BScience%2BC-9%2BLAM/J&amp;floor=ll2">/?path=floorplan&amp;library=LL&amp;classmark=History%2Bof%2BScience%2BC-9%2BLAM/J&amp;floor=ll2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=History+of+Science+E-1+KLI&amp;floor=ll2">/?path=floorplan&amp;library=LL&amp;classmark=History+of+Science+E-1+KLI&amp;floor=ll2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=Italian%2BG-2%2BLEO/W&amp;floor=ll2">/?path=floorplan&amp;library=LL&amp;classmark=Italian%2BG-2%2BLEO/W&amp;floor=ll2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=Italian+W-0+MAR&amp;floor=ll2">/?path=floorplan&amp;library=LL&amp;classmark=Italian+W-0+MAR&amp;floor=ll2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=Latin%2BD-1.3%2BVIR/H&amp;floor=ll2">/?path=floorplan&amp;library=LL&amp;classmark=Latin%2BD-1.3%2BVIR/H&amp;floor=ll2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=Latin+C-7.01+CAT%2FS&amp;floor=ll2">/?path=floorplan&amp;library=LL&amp;classmark=Latin+C-7.01+CAT%2FS&amp;floor=ll2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=Law+B-3.6+BAR&amp;floor=ll2">/?path=floorplan&amp;library=LL&amp;classmark=Law+B-3.6+BAR&amp;floor=ll2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=Linguistics+Q-0+NOR&amp;floor=llhdc">/?path=floorplan&amp;library=LL&amp;classmark=Linguistics+Q-0+NOR&amp;floor=llhdc</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=LL+HDC+Maps+Old+Series+20&amp;floor=llhdc">/?path=floorplan&amp;library=LL&amp;classmark=LL+HDC+Maps+Old+Series+20&amp;floor=llhdc</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=Management+A-3+BAA&amp;floor=ll2">/?path=floorplan&amp;library=LL&amp;classmark=Management+A-3+BAA&amp;floor=ll2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=Materials+E-4+DOI&amp;floor=ll2">/?path=floorplan&amp;library=LL&amp;classmark=Materials+E-4+DOI&amp;floor=ll2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=Mathematics+A-1.2+KRE&amp;floor=ll2">/?path=floorplan&amp;library=LL&amp;classmark=Mathematics+A-1.2+KRE&amp;floor=ll2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=Mechanical+Engineering+L-0+PUG&amp;floor=ll2">/?path=floorplan&amp;library=LL&amp;classmark=Mechanical+Engineering+L-0+PUG&amp;floor=ll2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=Modern%2BHistory%2BC-1.06%2BWOM/M&amp;floor=ll2">/?path=floorplan&amp;library=LL&amp;classmark=Modern%2BHistory%2BC-1.06%2BWOM/M&amp;floor=ll2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=Modern+History+V-0.1+FRI&amp;floor=ll2">/?path=floorplan&amp;library=LL&amp;classmark=Modern+History+V-0.1+FRI&amp;floor=ll2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=Music%2BC-1%2BTCH/P&amp;floor=ll2">/?path=floorplan&amp;library=LL&amp;classmark=Music%2BC-1%2BTCH/P&amp;floor=ll2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=Music+K-1+BLA&amp;floor=ll2">/?path=floorplan&amp;library=LL&amp;classmark=Music+K-1+BLA&amp;floor=ll2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=Philosophy%2BD-4.1%2BLOC/M&amp;floor=ll3">/?path=floorplan&amp;library=LL&amp;classmark=Philosophy%2BD-4.1%2BLOC/M&amp;floor=ll3</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=Philosophy+A-0.05+SAI&amp;floor=ll3">/?path=floorplan&amp;library=LL&amp;classmark=Philosophy+A-0.05+SAI&amp;floor=ll3</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=Physics+A-1+TIP&amp;floor=ll3">/?path=floorplan&amp;library=LL&amp;classmark=Physics+A-1+TIP&amp;floor=ll3</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=Politics%2BH-7.3%2BOBA/R&amp;floor=ll3">/?path=floorplan&amp;library=LL&amp;classmark=Politics%2BH-7.3%2BOBA/R&amp;floor=ll3</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=Politics+A-1+AXF&amp;floor=ll3">/?path=floorplan&amp;library=LL&amp;classmark=Politics+A-1+AXF&amp;floor=ll3</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=Semitic+T-0.21+BRU&amp;floor=ll3">/?path=floorplan&amp;library=LL&amp;classmark=Semitic+T-0.21+BRU&amp;floor=ll3</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=Skills+A-1+COT&amp;floor=ll1">/?path=floorplan&amp;library=LL&amp;classmark=Skills+A-1+COT&amp;floor=ll1</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=Sociology+H-7.5+LYO&amp;floor=ll3">/?path=floorplan&amp;library=LL&amp;classmark=Sociology+H-7.5+LYO&amp;floor=ll3</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=Spanish%2BP-36%2BGUI/S&amp;floor=ll3">/?path=floorplan&amp;library=LL&amp;classmark=Spanish%2BP-36%2BGUI/S&amp;floor=ll3</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=Spanish+G-85.5+VEG&amp;floor=llhdc">/?path=floorplan&amp;library=LL&amp;classmark=Spanish+G-85.5+VEG&amp;floor=llhdc</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=Textiles+D-1+POS&amp;floor=ll3">/?path=floorplan&amp;library=LL&amp;classmark=Textiles+D-1+POS&amp;floor=ll3</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=Theatre%2BQ-11%2BVIS/N&amp;floor=ll3">/?path=floorplan&amp;library=LL&amp;classmark=Theatre%2BQ-11%2BVIS/N&amp;floor=ll3</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=Theatre+E-2+CAL&amp;floor=ll3">/?path=floorplan&amp;library=LL&amp;classmark=Theatre+E-2+CAL&amp;floor=ll3</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=Theology+A-3+STU&amp;floor=ll3">/?path=floorplan&amp;library=LL&amp;classmark=Theology+A-3+STU&amp;floor=ll3</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=Transport+G-3+WIL&amp;floor=ll3">/?path=floorplan&amp;library=LL&amp;classmark=Transport+G-3+WIL&amp;floor=ll3</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=Video+Art+GRA&amp;floor=llhdc">/?path=floorplan&amp;library=LL&amp;classmark=Video+Art+GRA&amp;floor=llhdc</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=Zoology+E-4+KRE&amp;floor=ll3">/?path=floorplan&amp;library=LL&amp;classmark=Zoology+E-4+KRE&amp;floor=ll3</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=Sociology+N-1+MAY&amp;floor=ll3">/?path=floorplan&amp;library=LL&amp;classmark=Sociology+N-1+MAY&amp;floor=ll3</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=English+K-0.31+TOD&amp;floor=ll1">/?path=floorplan&amp;library=LL&amp;classmark=English+K-0.31+TOD&amp;floor=ll1</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=Scandinavian+A-0.5+CAM&amp;floor=ll3">/?path=floorplan&amp;library=LL&amp;classmark=Scandinavian+A-0.5+CAM&amp;floor=ll3</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=Philosophy+B-5+PLA%2FS&amp;floor=ll3">/?path=floorplan&amp;library=LL&amp;classmark=Philosophy+B-5+PLA%2FS&amp;floor=ll3</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=Politics+H-4.9+STO&amp;floor=ll3">/?path=floorplan&amp;library=LL&amp;classmark=Politics+H-4.9+STO&amp;floor=ll3</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=Education+370.1523+MEY&amp;floor=ll1">/?path=floorplan&amp;library=LL&amp;classmark=Education+370.1523+MEY&amp;floor=ll1</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=Economics+Q-1+CAT&amp;floor=ll1">/?path=floorplan&amp;library=LL&amp;classmark=Economics+Q-1+CAT&amp;floor=ll1</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=Management+E-11+ARN&amp;floor=ll2">/?path=floorplan&amp;library=LL&amp;classmark=Management+E-11+ARN&amp;floor=ll2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=Theology+J-2.1+MUH%2FB&amp;floor=ll3">/?path=floorplan&amp;library=LL&amp;classmark=Theology+J-2.1+MUH%2FB&amp;floor=ll3</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=Modern+History+P-9.51+THA%2FM&amp;floor=ll2">/?path=floorplan&amp;library=LL&amp;classmark=Modern+History+P-9.51+THA%2FM&amp;floor=ll2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=Chemical+Engineering+A-1+COU&amp;floor=ll1">/?path=floorplan&amp;library=LL&amp;classmark=Chemical+Engineering+A-1+COU&amp;floor=ll1</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=Politics+D-0+SJO&amp;floor=ll3">/?path=floorplan&amp;library=LL&amp;classmark=Politics+D-0+SJO&amp;floor=ll3</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=English+P-50+RHY&amp;floor=ll1">/?path=floorplan&amp;library=LL&amp;classmark=English+P-50+RHY&amp;floor=ll1</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=Modern+History+G-9.203+HIT%2FW&amp;floor=ll2">/?path=floorplan&amp;library=LL&amp;classmark=Modern+History+G-9.203+HIT%2FW&amp;floor=ll2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=English+P-50+RHY&amp;floor=ll1">/?path=floorplan&amp;library=LL&amp;classmark=English+P-50+RHY&amp;floor=ll1</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=Modern+History+L-6.1+LEN&amp;floor=ll2">/?path=floorplan&amp;library=LL&amp;classmark=Modern+History+L-6.1+LEN&amp;floor=ll2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=General+Literature+B-6.5+SAI&amp;floor=ll1">/?path=floorplan&amp;library=LL&amp;classmark=General+Literature+B-6.5+SAI&amp;floor=ll1</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=Modern+History+R-2+JAC&amp;floor=ll2">/?path=floorplan&amp;library=LL&amp;classmark=Modern+History+R-2+JAC&amp;floor=ll2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=Modern+History+T-1.2+MAN&amp;floor=ll2">/?path=floorplan&amp;library=LL&amp;classmark=Modern+History+T-1.2+MAN&amp;floor=ll2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=English+P-50+RHY&amp;floor=ll1">/?path=floorplan&amp;library=LL&amp;classmark=English+P-50+RHY&amp;floor=ll1</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=CD+CLASSICAL+BEE&amp;floor=llhdc">/?path=floorplan&amp;library=LL&amp;classmark=CD+CLASSICAL+BEE&amp;floor=llhdc</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=Geology+A-1+MAR&amp;floor=ll2">/?path=floorplan&amp;library=LL&amp;classmark=Geology+A-1+MAR&amp;floor=ll2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=English+A-0.01+WAS&amp;floor=llafr">/?path=floorplan&amp;library=LL&amp;classmark=English+A-0.01+WAS&amp;floor=llafr</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=Modern+History+C-2.03+TIL&amp;floor=ll2">/?path=floorplan&amp;library=LL&amp;classmark=Modern+History+C-2.03+TIL&amp;floor=ll2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=Linguistics+H-0+COM&amp;floor=ll2">/?path=floorplan&amp;library=LL&amp;classmark=Linguistics+H-0+COM&amp;floor=ll2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=History+of+Science+G-4+BAS&amp;floor=ll2">/?path=floorplan&amp;library=LL&amp;classmark=History+of+Science+G-4+BAS&amp;floor=ll2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=Mathematics+F-0+BOS&amp;floor=ll2">/?path=floorplan&amp;library=LL&amp;classmark=Mathematics+F-0+BOS&amp;floor=ll2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=Linguistics+P-20+BRI&amp;floor=ll2">/?path=floorplan&amp;library=LL&amp;classmark=Linguistics+P-20+BRI&amp;floor=ll2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=Textiles+F-1+EIS&amp;floor=ll3">/?path=floorplan&amp;library=LL&amp;classmark=Textiles+F-1+EIS&amp;floor=ll3</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=Modern+History+N-97.88+AND&amp;floor=ll2">/?path=floorplan&amp;library=LL&amp;classmark=Modern+History+N-97.88+AND&amp;floor=ll2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=Modern+History+T-1.2+MAN&amp;floor=ll2">/?path=floorplan&amp;library=LL&amp;classmark=Modern+History+T-1.2+MAN&amp;floor=ll2</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=English+U-35+FIT&amp;floor=ll1">/?path=floorplan&amp;library=LL&amp;classmark=English+U-35+FIT&amp;floor=ll1</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=Sociology+F-17+HOS&amp;floor=ll3">/?path=floorplan&amp;library=LL&amp;classmark=Sociology+F-17+HOS&amp;floor=ll3</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=Art+B-0+HAU&amp;floor=ll1">/?path=floorplan&amp;library=LL&amp;classmark=Art+B-0+HAU&amp;floor=ll1</a></li>
+  
+    <li><a href="http://localhost:4000/?path=floorplan&amp;library=LL&amp;classmark=General+Literature+F-2+WOO&amp;floor=ll1">/?path=floorplan&amp;library=LL&amp;classmark=General+Literature+F-2+WOO&amp;floor=ll1</a></li>
+  
+  </ul>
+
+</div>
+
+    </main>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+
+
+<script src="http://localhost:4000/assets/scripts/bundle.min.js"></script>
+</body>
+</html>
