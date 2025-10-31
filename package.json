@@ -25,9 +25,12 @@
     "@allmaps/transform": "^1.0.0-beta.48",
     "fast-xml-parser": "^5.2.5",
     "sharp": "^0.34.4",
-    "uglify-js": "^3.17.4"
+    "uglify-js": "^3.17.4",
+    "webpack": "^5.102.1",
+    "webpack-cli": "^6.0.1"
   },
   "dependencies": {
+    "leaflet": "^2.0.0-alpha.1",
     "svg-parser": "^2.0.4"
   }
 }

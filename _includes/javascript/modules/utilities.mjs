@@ -1,14 +1,4 @@
-/**
- * Creates text for the popups
- */
-function buildFeaturePopup( feature ) {
-    let popupText = '<strong>' + feature.properties.name + '</strong>';
-    if ( feature.properties.desc && feature.properties.desc !== '' ) {
-        popupText += '<br>' + feature.properties.desc;
-    }
-    return popupText;
-}
-
+import { floorplans } from './config.mjs';
 /**
  * Selects a floor from the dropdown list
  * @param {String} floorid
@@ -40,22 +30,6 @@ function selectShelf( floor, shelfName ) {
 }
 
 /**
- * This takes the ID of a feature in a geoJSON layer
- * and returns the layer object which contains the feature
- * @param {String} featureid
- * @returns {Object} layer
- */
-function getFeature( featureid ) {
-    let feature = false;
-    floorplans.map.eachLayer( layer => {
-        if ( layer.id && layer.id === featureid ) {
-            feature = layer;
-        }
-    });
-    return feature;
-}
-
-/**
  * This selects a feature by firing the mouseover event on the feature
  * layer. It then highlights the feature in the selecter control by
  * focussing it.
@@ -69,6 +43,22 @@ function selectFeature( featureid ) {
             fb.focus();
         }
     }
+}
+
+/**
+ * This takes the ID of a feature in a geoJSON layer
+ * and returns the layer object which contains the feature
+ * @param {String} featureid
+ * @returns {Object} layer
+ */
+function getFeature( featureid ) {
+    let feature = false;
+    floorplans.map.eachLayer( layer => {
+        if ( layer.id && layer.id === featureid ) {
+            feature = layer;
+        }
+    });
+    return feature;
 }
 
 /**
@@ -122,6 +112,17 @@ function resetFeatures() {
             }
         });
     }
+}
+
+/**
+ * Creates text for the popups
+ */
+function buildFeaturePopup( feature ) {
+    let popupText = '<strong>' + feature.properties.name + '</strong>';
+    if ( feature.properties.desc && feature.properties.desc !== '' ) {
+        popupText += '<br>' + feature.properties.desc;
+    }
+    return popupText;
 }
 
 /**
@@ -260,3 +261,5 @@ function fplog( message ) {
         console.log( now.getHours() + ':' + now.getMinutes().toString().padStart(2, '0') + ':' + now.getSeconds().toString().padStart(2, '0') + '.' + now.getMilliseconds().toString().padStart(3, '0') + ' ' + message );
     }
 }
+
+export { selectFloor, selectShelf, selectFeature, getFeature, highlightFeature, resetFeatures, getSVGIcon, buildFeaturePopup, getJSON, fplog };

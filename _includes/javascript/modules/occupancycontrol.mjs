@@ -1,44 +1,41 @@
+import { floorplans } from './config.mjs';
+import { getJSON } from './utilities.mjs';
+import { Control, DomUtil, DomEvent } from 'leaflet';
 /**
  * Displays occupancy data for two libraries
- * Set up data container
  */
-floorplans.occupancyData = {
-    "Edward Boyle": {
-        "floorid": "edwardboyle",
-        "capacity": 1800,
-        "occupancy": 0
-    },
-    "Laidlaw": {
-        "floorid": "laidlaw",
-        "capacity": 640,
-        "occupancy": 0
-    }
-};
 
+class Occupancy extends Control {
+	static {
+		// @section
+		// @aka Control.Zoom options
+		this.setDefaultOptions({
+			// @option position: String = 'topleft'
+			// The position of the control (one of the map corners). Possible values are `'topleft'`,
+			// `'topright'`, `'bottomleft'` or `'bottomright'`
+			position: 'topleft',
+		});
+	}
+
+    onAdd(map) {
+        let du = new DomUtil();
+        let container = du.create( 'div', 'hidden' );
+        container.setAttribute( 'id', 'occupancyContainer' );
+        for( lib in floorplans.occupancyData ) {
+            du.create( 'p', 'hidden '+floorplans.occupancyData[lib].floorid+'msg', container );
+        }
+        return container;
+    }
+
+}
 /**
  * Adds a control to the floorplans to display occupancy
  */
+
 document.addEventListener( 'fpmapready', e => {
-    L.Control.Occupancy = L.Control.extend({
-        onAdd: function(map) {
-            let c = L.DomUtil.create( 'div', 'hidden' );
-            c.setAttribute( 'id', 'occupancyContainer' );
-            for( lib in floorplans.occupancyData ) {
-                L.DomUtil.create( 'p', 'hidden '+floorplans.occupancyData[lib].floorid+'msg', c );
-            }
-            return c;
-        },
+    const occupancyControl = new Control.Occupancy( { position: 'topleft' } )
     
-        onRemove: function(map) {
-            // Nothing to do here
-        }
-    });
-    
-    L.control.occupancy = function( opts ) {
-        return new L.Control.Occupancy( opts );
-    }
-    
-    L.control.occupancy({ position: 'topleft' }).addTo( floorplans.map );
+    occupancyControl.addTo( floorplans.map );
 
     updateOccupancy();
     setInterval( updateOccupancy, 60000 );
@@ -73,7 +70,8 @@ function updateOccupancy() {
 }
 
 document.addEventListener( 'DOMContentLoaded', () => {
-    L.DomEvent.on( floorselecter, 'change', function(){
+    let de = new DomEvent();
+    de.on( floorselecter, 'change', function(){
         let c = document.getElementById('occupancyContainer');
         if ( this.options[this.selectedIndex].value !== '' ) {
             let floorid = this.options[this.selectedIndex].value;
@@ -100,3 +98,5 @@ function showOccupancyMessage( floorid ) {
         c.classList.add('hidden');
     }
 }
+
+export { showOccupancyMessage, Occupancy };

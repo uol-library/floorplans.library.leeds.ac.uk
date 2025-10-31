@@ -1,3 +1,4 @@
+import { floorplans } from './config.mjs';
 /**
  * Functions to help with routing:
  * - what to load into the app initially
@@ -171,26 +172,22 @@ function getFloorID( param ) {
  * @returns {Object} feature details
  */
 function getFeatureFromClassmark( library, floorName, classmark ) {
-    let features = getFeatures();
     let ret = false;
-    if ( library === 'health-sciences' ) {
-
-    }
-    for ( let i = 0; i < features.length; i++ ) {
+    for ( let i = 0; i < floorplans.features.length; i++ ) {
         let libraryRE = getLibraryRegex( library, floorName );
-        if ( features[i][1].match( libraryRE ) ) {
-            let featureRE = getFeatureRegex( features[i][0] );
+        if ( floorplans.features[i][1].match( libraryRE ) ) {
+            let featureRE = getFeatureRegex( floorplans.features[i][0] );
             let featureDetails = false;
             if ( library === 'health-sciences' ) {
-                if ( classmark === features[i][0] ) {
-                    featureDetails = features[i][1].split( '-' );
+                if ( classmark === floorplans.features[i][0] ) {
+                    featureDetails = floorplans.features[i][1].split( '-' );
                 }
             } else if ( classmark.match( featureRE ) ) {
-                featureDetails = features[i][1].split( '-' );
+                featureDetails = floorplans.features[i][1].split( '-' );
             }
             if ( featureDetails ) {
                 ret = {
-                    "name": features[i][0],
+                    "name": floorplans.features[i][0],
                     "library": featureDetails[0],
                     "floorid": featureDetails[0] + '-' + featureDetails[1],
                     "featureid": 'shelf-' + featureDetails[2]
@@ -206,7 +203,7 @@ function getFeatureFromClassmark( library, floorName, classmark ) {
  * Takes a feature name and creates a RegEx to match against a Primo classmark
  * 
  * @param {String} featureName - Feature name
- * @returns {String} Regualr Expression
+ * @returns {Object} Regular Expression
  */
 function getFeatureRegex( featureName ) {
     // replace some characters in feature names
@@ -225,11 +222,18 @@ function getFeatureRegex( featureName ) {
     return new RegExp('^' + featureName + '.*$', 'i');
 }
 
+/**
+ * Builds a Regular expressioin to match against libraries and floors in the
+ * floorplans.features data structure
+ * @param {String} library 
+ * @param {String} floorName 
+ * @returns {Object} Regular Expression
+ */
 function getLibraryRegex( library, floorName ) {
     if ( ! floorName ) {
-        return '^'+library + '.*$';
+        return new RegExp('^'+library + '.*$', 'i');
     } else {
-        return '^'+library + '-' + floorName + '.*$';
+        return new RegExp('^'+library + '-' + floorName + '.*$', 'i');
     }
 }
 
@@ -281,3 +285,5 @@ function normaliseClassmark( classmark, params ) {
     }
     return classmark;
 }
+
+export { getStartParams };

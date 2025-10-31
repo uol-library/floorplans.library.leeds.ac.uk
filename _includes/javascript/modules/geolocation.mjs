@@ -1,3 +1,4 @@
+import { floorplans } from './config.mjs';
 document.addEventListener( "DOMContentLoaded", e => {
 	checkGeoAvailable();
 });

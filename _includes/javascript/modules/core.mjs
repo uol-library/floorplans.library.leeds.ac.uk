@@ -1,11 +1,24 @@
+import { 
+    Control,
+    CRS,
+    GeoJSON,
+    ImageOverlay,
+    LatLngBounds,
+    LayerGroup,
+    Map,
+    Polygon,
+    SVGOverlay
+} from 'leaflet';
+import { setupSelecterControl, buildFeatureSelects, sortFeatureSelects } from './selectercontrol.mjs';
+import { showOccupancyMessage } from './occupancycontrol.mjs';
+import { getStartParams } from './routing.mjs';
+import { fplog } from './utilities.mjs';
+import { floorplans } from './config.mjs';
 
-
-canUseLocalStorage = function() { return false };
-
-document.addEventListener( "DOMContentLoaded", function() {
+function setupMap() {
 	/* create the map - disable zoom control so we can add it to top right */
-	floorplans.map = new L.Map('floorplan', {
-		crs: L.CRS.Simple,
+	floorplans.map = new Map('floorplan', {
+		crs: new CRS.Simple(),
 		zoom: floorplans.imgconf.startZoom,
 		center: [ floorplans.imgconf.startLat, floorplans.imgconf.startLng ],
 		minZoom: floorplans.imgconf.minZoom,
@@ -15,7 +28,7 @@ document.addEventListener( "DOMContentLoaded", function() {
     floorplans.map.attributionControl.setPrefix( '<a href="https://leafletjs.com" target="external" title="A JavaScript library for interactive maps" aria-label="Leaflet - a JavaScript library for interactive maps"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="12" height="8"><path fill="#4C7BE1" d="M0 0h12v4H0z"></path><path fill="#FFD500" d="M0 4h12v3H0z"></path><path fill="#E0BC00" d="M0 7h12v1H0z"></path></svg> Leaflet</a>' );
 
 	/* Add zoom control to to right */
-	L.control.zoom( { position: 'topright' } ).addTo( floorplans.map );
+	floorplans.zoomctl = new Control.Zoom( { position: 'topright' } ).addTo( floorplans.map );
 	/* find the maximum image dimensions */
 	floorplans.imagelayers.forEach( lib => {
 		lib.floors.forEach( f => {
@@ -24,7 +37,7 @@ document.addEventListener( "DOMContentLoaded", function() {
 		});
 	});
 	/* set the bounds of the map to the longest sides */
-	floorplans.mapBounds = new L.LatLngBounds(
+	floorplans.mapBounds = new LatLngBounds(
 		floorplans.map.unproject( [ 0, floorplans.maxHeight ], floorplans.imgconf.maxZoom ),
 		floorplans.map.unproject( [ floorplans.maxWidth, 0 ], floorplans.imgconf.maxZoom )
 	);
@@ -40,7 +53,7 @@ document.addEventListener( "DOMContentLoaded", function() {
 	loadStartFloor();
     /* fire loaded event */
     document.dispatchEvent( new Event( 'fpmapready' ) );
-});
+}
        
         
 /**
@@ -62,7 +75,7 @@ var addFloorLayer = function( floor ) {
             /* get the image */
             let im = new Image();
             /* set the map bounds */
-            floor.imageBounds = L.latLngBounds(
+            floor.imageBounds = new LatLngBounds(
                 floorplans.map.unproject([ 0, 0 ], floorplans.imgconf.maxZoom),
                 floorplans.map.unproject([ floor.width, floor.height ], floorplans.imgconf.maxZoom)
             );
@@ -73,8 +86,8 @@ var addFloorLayer = function( floor ) {
              */
             im.onload = function() {
                 fplog( 'addFloorLayer - image loaded for ' + floor.floorname );
-                let floorimg = L.imageOverlay( floor.imageurl, floor.imageBounds );
-                let floorlayer = L.layerGroup([floorimg]);
+                let floorimg = new ImageOverlay( floor.imageurl, floor.imageBounds );
+                let floorlayer = new LayerGroup([floorimg]);
                 
                 getJSON({
                     "url": floor.dataurl,
@@ -83,25 +96,15 @@ var addFloorLayer = function( floor ) {
                         let shelfClassID = 1;
                         let featureClass = 'leaflet-interactive';
                         floor.selecters = {};
-                        floor.iconlayer = L.layerGroup();
+                        floor.iconlayer = new LayerGroup();
                         fplog( 'addFloorLayer - GeoJSON loaded for ' + floor.floorname );
-                        floor.features = L.geoJSON( data, {
+                        floor.features = new GeoJSON( data, {
                             /**
                              * Add event handlers to features, and collect the features
                              * in arrays so we can build the selecters
                              */
                             onEachFeature: function( feature, layer ) {
                                 layer.id = feature.properties.type + feature.id;
-                                /**
-                                 * Add icons to the map
-                                 * TODO: This will currently add an icon, but the bounds are not set correctly.
-                                 * Ideally the GeoJSON would contain a point feature for each icon, but for now
-                                 * we will just use the polygon bounds.
-                                 */
-                                // if ( feature.properties.type === 'icon' ) {
-                                //     floor.iconlayer.addLayer( L.svgOverlay(getSVGIcon(feature.properties.icon), layer._latlngs) );
-                                //     return;    
-                                // }
                                 /**
                                  * Add icons to features on the map. These are SVG overlays which are positioned
                                  * in the centre of each GeoJSON Polygon. At the moment, this accesses the _latlngs
@@ -112,14 +115,14 @@ var addFloorLayer = function( floor ) {
                                 let featureIcon = feature.properties.hasOwnProperty('icon') ? feature.properties.icon : false;
                                 if ( feature.properties.type === 'location' && featureIcon ) {
                                     layer._latlngs.forEach(pp => {
-                                        let poly = L.polygon(pp);
+                                        let poly = new Polygon(pp);
                                         let polyBounds = poly.getBounds();
                                         let polyCentre = polyBounds.getCenter();
                                         let polyCentrePoint = floorplans.map.latLngToContainerPoint(polyCentre);
                                         let topLeftPoint = polyCentrePoint.add({x: -2.5, y: -2.5});
                                         let bottomRightPoint = polyCentrePoint.add({x: 2.5, y: 2.5});
-                                        let svgBounds = L.latLngBounds( floorplans.map.containerPointToLatLng(topLeftPoint), floorplans.map.containerPointToLatLng(bottomRightPoint) );
-                                        floor.iconlayer.addLayer( L.svgOverlay(getSVGIcon(featureIcon), svgBounds) );
+                                        let svgBounds = new LatLngBounds( floorplans.map.containerPointToLatLng(topLeftPoint), floorplans.map.containerPointToLatLng(bottomRightPoint) );
+                                        floor.iconlayer.addLayer( new SVGOverlay(getSVGIcon(featureIcon), svgBounds) );
                                     });
                                 }
                                 /**
@@ -222,3 +225,5 @@ function loadStartFloor() {
         });
     }
 }
+
+export { setupMap };
