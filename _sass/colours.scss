@@ -51,56 +51,74 @@ $separatorcolor: $color-grey--medium;
 $bg: $color-white;
 $fg: $color-black;
 
-/* links */
-$linkcolor: $color-link;
-$linkcolor-active: $color-link--active;
-$linkcolor-visited: $color-link--visited;
-$linkcolor-hover: $color-link--hover;
 
-/* geolocation button */
-$geobuttoncolor: $color-black;
-$geobuttonbg: $color-white;
-$geobuttoncolor-hover: $color-black--dark;
-$geobuttonbg-hover: $color-white;
-$geobuttoncolor-disabled: $color-grey--dark;
-$geobuttonbg-disabled: $color-grey;
-$geobuttoncolor-active: $color-white;
-$geobuttonbg-active: $color-blue;
 
-/* menu/close button */
-$menubutton: $color-black;
-$menubutton-bg: $color-white;
-$menubutton-hover: $color-black;
-$menubutton-bg-hover: $color-grey--light;
 
-$white: $color-white;
-$black: $color-black;
-$lightgrey: $color-grey--light;
-$midgrey: $color-grey--medium;
-$darkgrey: $color-grey--dark;
+:root {
+    --white: #{$color-white};
+    --lightgrey: #{$color-grey--light};
 
-$shelf-classes: 'd1' 'd2' 'd3' 'd4' 'd5' 'd6' 'd7' 'd8' 'd9' 'd10' 'd11' 'd12' 'd13' 'd14' 'd15' 'd16' 'd17' 'd18' 'd19' 'd20' 'd21' 'd22' 'd23' 'd24';
-$shelf-colors: '#ff3b8d' '#009e8c' '#ff426c' '#00999a' '#ff4647' '#0098a9' '#fd4d00' '#0094b4' '#d57300' '#0092c5' '#b98300' '#008fdb' '#9c8b00' '#0089fc' '#819300' '#657eff' '#5c9b00' '#9b70ff' '#00a21f' '#d150ff' '#00a05a' '#f911e0' '#009f78' '#ff2fb2';
-@each $cls in $shelf-classes {
-    $i: index($shelf-classes, $cls);
-    $c: nth($shelf-colors, $i);
-	path.#{$cls} {
-		fill: #{$c};
-		color: #{$c};
-	}
-	ul.selecter__list li.#{$cls}.item-shelf button {
-		&::before {
-		    background-color: #{$c};
-			opacity: 0.5;
-		}
-		&:hover, &:focus {
-			border-color: #{$c};
-			&::before {
-				opacity: 0.75;
-			}
-		}
-	}
-}
-path.location {
-	fill: #aaa;
+    /* occupancy numbers */
+    --occupancyno: #{$color-brand--dark};
+    
+    /* links */
+    --linkcolor: #{$color-link};
+    --linkcolor-active: #{$color-link--active};
+    --linkcolor-visited: #{$color-link--visited};
+    --linkcolor-hover: #{$color-link--hover};
+
+    /* menu/close button */
+    --menubutton: #{$color-black};
+    --menubutton-bg: #{$color-white};
+    --menubutton-hover: #{$color-black};
+    --menubutton-bg-hover: #{$color-grey--light};
+
+    /* geolocation button */
+    --geobuttoncolor: #{$color-black};
+    --geobuttonbg: #{$color-white};
+    --geobuttoncolor-hover: #{$color-black--dark};
+    --geobuttonbg-hover: #{$color-white};
+    --geobuttoncolor-disabled: #{$color-grey--dark};
+    --geobuttonbg-disabled: #{$color-grey};
+    --geobuttoncolor-active: #{$color-white};
+    --geobuttonbg-active: #{$color-blue};
+
+    /* selecter buttons */
+    --selecterbuttoncolor: #{$color-black};
+    --selecterbuttonbg: #{$color-white};
+    --selecterbuttonborder: #{$color-white};
+    --selecterbuttoncolor-hover: #{$color-black--dark};
+    --selecterbuttonbg-hover: #{$color-grey--light};
+    --selecterbuttonborder-hover: #{$color-grey};
+
+    /* area colours */
+    --groupspacearea: 255, 134, 28;
+    --silentspacearea: 28, 172, 255;
+    --publicspacearea: 255, 221, 0;
+    --staffarea: 204,204,204;
+    /* shelf colours */
+    --d1: #ff3b8d;
+    --d2: #009e8c;
+    --d3: #ff426c;
+    --d4: #00999a;
+    --d5: #ff4647;
+    --d6: #0098a9;
+    --d7: #fd4d00;
+    --d8: #0094b4;
+    --d9: #d57300;
+    --d10: #0092c5;
+    --d11: #b98300;
+    --d12: #008fdb;
+    --d13: #9c8b00;
+    --d14: #0089fc;
+    --d15: #819300;
+    --d16: #657eff;
+    --d17: #5c9b00;
+    --d18: #9b70ff;
+    --d19: #00a21f;
+    --d20: #d150ff;
+    --d21: #00a05a;
+    --d22: #f911e0;
+    --d23: #009f78;
+    --d24: #ff2fb2;
 }

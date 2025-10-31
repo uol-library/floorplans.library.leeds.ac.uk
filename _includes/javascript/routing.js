@@ -173,12 +173,22 @@ function getFloorID( param ) {
 function getFeatureFromClassmark( library, floorName, classmark ) {
     let features = getFeatures();
     let ret = false;
+    if ( library === 'health-sciences' ) {
+
+    }
     for ( let i = 0; i < features.length; i++ ) {
         let libraryRE = getLibraryRegex( library, floorName );
         if ( features[i][1].match( libraryRE ) ) {
             let featureRE = getFeatureRegex( features[i][0] );
-            if ( classmark.match( featureRE ) ) {
-                let featureDetails = features[i][1].split( '-' );
+            let featureDetails = false;
+            if ( library === 'health-sciences' ) {
+                if ( classmark === features[i][0] ) {
+                    featureDetails = features[i][1].split( '-' );
+                }
+            } else if ( classmark.match( featureRE ) ) {
+                featureDetails = features[i][1].split( '-' );
+            }
+            if ( featureDetails ) {
                 ret = {
                     "name": features[i][0],
                     "library": featureDetails[0],
@@ -205,7 +215,14 @@ function getFeatureRegex( featureName ) {
     if ( featureName.indexOf(', ') !== -1 ) {
         featureName = '(' + ( featureName.split( ', ' ).join( '|' ) ) + ')';
     }
-    return '^' + featureName + '.*$';
+    // special cases
+    if ( featureName.startsWith('Modern History A') ) {
+        featureName = 'Modern History [A-O]';
+    }
+    if ( featureName.startsWith('Modern History P') ) {
+        featureName = 'Modern History [P-Z]';
+    }
+    return new RegExp('^' + featureName + '.*$', 'i');
 }
 
 function getLibraryRegex( library, floorName ) {
@@ -224,7 +241,7 @@ function getLibraryRegex( library, floorName ) {
  * @returns 
  */
 function normaliseClassmark( classmark, params ) {
-    classmark = decodeURIComponent( classmark );
+    classmark = decodeURIComponent( classmark.replace(/\+/g, '%20') );
     if ( classmark.match( '^Video' ) ) {
         return 'DVD';
     }
@@ -253,6 +270,11 @@ function normaliseClassmark( classmark, params ) {
             case 'health-sciences':
                 if ( classmark.match( 'Pamphlet' ) ) {
                     return 'Pamphlets';
+                } else {
+                    var classmark_parts = classmark.match( /.* (Abstract|AVC|BF|BL|BM|GN|HM|HV|Pamphlets|Periodicals|Psychology|QA|QB|QC|QD|QH|QL|QP|QS|QT|QU|QV|QW|QY|QZ|Reference|Requested Items|Statistics|WA|WB|WC|WD|WE|WF|WG|WH|WI|WJ|WK|WL|WM|WN|WO|WP|WQ|WR|WS|WT|WU|WV|WW|WX|WY|WZ|Q|Z|W) .*/ );
+                    if ( classmark_parts !== null ) {
+                        return classmark_parts[1];
+                    }
                 }
                 break;
         }

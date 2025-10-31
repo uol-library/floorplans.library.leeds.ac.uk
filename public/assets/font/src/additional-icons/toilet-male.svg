@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="53.649563mm"
+   height="136.94833mm"
+   viewBox="0 0 53.649563 136.94833"
+   version="1.1"
+   id="svg27"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="toilet-male.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview29"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="0.72159091"
+     inkscape:cx="101.85827"
+     inkscape:cy="355.46457"
+     inkscape:window-width="1920"
+     inkscape:window-height="1057"
+     inkscape:window-x="1920"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs24" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-78.041886,-54.359167)">
+    <path
+       d="m 104.86534,76.793188 c 6.19655,0 11.21569,-5.024438 11.21569,-11.215688 0,-6.193895 -5.02179,-11.218333 -11.21569,-11.218333 -6.196538,0 -11.215683,5.027083 -11.215683,11.218333 -0.0026,6.193896 5.019145,11.215688 11.215683,11.215688 z m 12.39044,2.873375 c 7.92956,0 14.43567,6.43202 14.43567,14.36952 v 34.782127 c 0,2.71462 -2.13254,4.91066 -4.84452,4.91066 -2.71198,0 -4.91067,-2.19604 -4.91067,-4.91066 V 97.457146 h -2.52942 v 87.267524 c 0,3.63537 -2.9792,6.58283 -6.60929,6.58283 -3.63273,0 -6.58019,-2.94746 -6.58019,-6.58283 v -50.67565 h -2.6961 v 50.67565 c 0,3.63537 -2.9501,6.58283 -6.582833,6.58283 -3.630083,0 -6.609291,-2.94746 -6.609291,-6.58283 V 97.457146 h -2.529417 v 31.361064 c 0,2.71462 -2.198687,4.91066 -4.913312,4.91066 -2.711979,0 -4.844521,-2.19604 -4.844521,-4.91066 V 94.036083 c 0,-7.934854 6.498167,-14.36952 14.435666,-14.36952 z"
+       id="path2"
+       style="overflow:hidden;fill:currentColor;stroke-width:0.264583" />
+  </g>
+</svg>

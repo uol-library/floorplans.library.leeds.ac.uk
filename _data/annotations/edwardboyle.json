@@ -1,0 +1,176 @@
+{
+  "type": "AnnotationPage",
+  "@context": "http://www.w3.org/ns/anno.jsonld",
+  "items": [
+    {
+      "id": "https://annotations.allmaps.org/maps/475f8ceb0d0861fc",
+      "type": "Annotation",
+      "@context": [
+        "http://iiif.io/api/extension/georef/1/context.json",
+        "http://iiif.io/api/presentation/3/context.json"
+      ],
+      "created": "2025-06-24T19:05:34.928Z",
+      "modified": "2025-06-24T19:05:34.928Z",
+      "motivation": "georeferencing",
+      "target": {
+        "type": "SpecificResource",
+        "source": {
+          "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13",
+          "type": "ImageService3",
+          "height": 2775,
+          "width": 5003,
+          "partOf": [
+            {
+              "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/canvas/p1",
+              "type": "Canvas",
+              "label": {
+                "en": [
+                  "Edward Boyle Library - level 13"
+                ]
+              },
+              "partOf": [
+                {
+                  "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/manifest.json",
+                  "type": "Manifest",
+                  "label": {
+                    "en": [
+                      "Edward Boyle Library - level 13"
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "selector": {
+          "type": "SvgSelector",
+          "value": "<svg width=\"5003\" height=\"2775\"><polygon points=\"0,0 0,2775 5003,2775 5003,0\" /></svg>"
+        }
+      },
+      "body": {
+        "type": "FeatureCollection",
+        "transformation": {
+          "type": "helmert"
+        },
+        "features": [
+          {
+            "type": "Feature",
+            "properties": {
+              "resourceCoords": [
+                218,
+                2678
+              ]
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                -1.5545462,
+                53.8057901
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "resourceCoords": [
+                4524,
+                107
+              ]
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                -1.5549714,
+                53.806362
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "resourceCoords": [
+                4982,
+                1199
+              ]
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                -1.5548168,
+                53.8064229
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "resourceCoords": [
+                4987,
+                1592
+              ]
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                -1.5547115,
+                53.8064191
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "resourceCoords": [
+                4529,
+                2673
+              ]
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                -1.5545225,
+                53.8063659
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "resourceCoords": [
+                218,
+                134
+              ]
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                -1.5549585,
+                53.8057926
+              ]
+            }
+          }
+        ],
+        "_allmaps": {
+          "id": "https://annotations.allmaps.org/maps/475f8ceb0d0861fc",
+          "version": "https://annotations.allmaps.org/maps/475f8ceb0d0861fc@35a28ce990abe090",
+          "image": {
+            "id": "https://annotations.allmaps.org/images/969bdf8c4a184130",
+            "version": "https://annotations.allmaps.org/images/969bdf8c4a184130@a493c3613f840fd0",
+            "canvases": [
+              {
+                "id": "https://annotations.allmaps.org/canvases/98e8627ad48bd9ef",
+                "manifests": [
+                  {
+                    "id": "https://annotations.allmaps.org/manifests/238775949f6735d8"
+                  }
+                ]
+              }
+            ]
+          },
+          "scale": 157.417542,
+          "area": 560.26
+        }
+      }
+    }
+  ]
+}

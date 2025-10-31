@@ -13,7 +13,7 @@ featuresJSON.forEach( filename => {
         jsondata.features.forEach( feature => {
             let featureid = path.parse( filename ).name + '-' + feature.id;
             if ( feature.properties.type === 'shelf' ) {
-                classmarks.push( [ feature.properties.name, featureid ] )
+                classmarks.push( [ feature.properties.name, featureid ] );
             }
         });
     }

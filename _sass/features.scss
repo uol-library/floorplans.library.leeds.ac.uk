@@ -1,0 +1,117 @@
+$shelf-classes: 'd1' 'd2' 'd3' 'd4' 'd5' 'd6' 'd7' 'd8' 'd9' 'd10' 'd11' 'd12' 'd13' 'd14' 'd15' 'd16' 'd17' 'd18' 'd19' 'd20' 'd21' 'd22' 'd23' 'd24';
+@each $cls in $shelf-classes {
+	path.#{$cls} {
+		fill: var(--#{$cls});
+		color: var(--#{$cls});
+		stroke-width: 0;
+	}
+	ul.selecter__list li.item-shelf button.#{$cls} {
+		&::before {
+		    background-color: var(--#{$cls});
+			opacity: 0.5;
+		}
+		&:hover, &:focus {
+			border-color: var(--#{$cls});
+			&::before {
+				opacity: 0.75;
+			}
+		}
+	}
+}
+path {
+	&.group-space-location,
+	&.group-space {
+	    fill: rgb(var(--groupspacearea));
+		stroke: rgb(var(--groupspacearea));
+	}
+	&.silent-space-location,
+	&.silent-space {
+		fill: rgb(var(--silentspacearea));
+		stroke: rgb(var(--silentspacearea));
+	}
+	&.public-space-location,
+	&.public-space {
+		fill: rgb(var(--publicspacearea));
+		stroke: rgb(var(--publicspacearea));
+	}
+	&.staff-location,
+	&.staff {
+		fill: rgb(var(--staffarea));
+		stroke: rgb(var(--staffarea));
+	}
+	&.group-space,
+	&.silent-space,
+	&.public-space,
+	&.staff {
+		stroke-width: 2;
+	}
+	&.silent-space-location,
+	&.group-space-location,
+	&.public-space-location {
+		stroke-width: 4;
+	}
+}
+ul.selecter__list li button {
+	border: .1rem solid var(--selecterbuttonborder);
+	background: var(--selecterbuttonbg);
+
+    &.public-space {
+		&::before {
+			border: 3px solid rgb(var(--publicspacearea));
+			background: rgba(var(--publicspacearea), 0.2)
+		}
+		&:hover, &:focus {
+			background: rgba(var(--publicspacearea), 0.2);
+			&::before {
+				background: rgba(var(--publicspacearea), 0.4);
+			}
+		}
+	}
+    &.group-space {
+		&::before {
+			border: 3px solid rgb(var(--groupspacearea));
+			background: rgba(var(--groupspacearea), 0.2 );
+		}
+		&:hover, &:focus {
+			background: rgba(var(--groupspacearea), 0.2 );
+			&::before {
+				background: rgba(var(--groupspacearea), 0.4 );
+			}
+		}
+	}
+    &.silent-space {
+		&::before {
+			border: 3px solid rgb(var(--silentspacearea));
+			background: rgba(var(--silentspacearea), 0.2);
+		}
+		&:hover, &:focus {
+			background: rgba(var(--silentspacearea), 0.2);
+			&::before {
+				background: rgba(var(--silentspacearea), 0.4);
+			}
+		}
+	}
+	&.staff {
+		&::before {
+			border: 3px solid rgb(var(--staffarea));
+			background: rgba(var(--staffarea), 0.2);
+		}
+		&:hover, &:focus {
+			background: rgba(var(--staffarea), 0.2);
+			&::before {
+				background: rgba(var(--staffarea), 0.4);
+			}
+		}
+	}
+	&.locationbutton {
+		&::before {
+			/*display: inline-block;*/
+			margin-right: 1em;
+		}
+		&:hover, &:focus {
+			border: .1rem solid var(--selecterbuttonborder-hover);
+			background: var(--selecterbuttonbg-hover);
+		}
+	}
+}
+

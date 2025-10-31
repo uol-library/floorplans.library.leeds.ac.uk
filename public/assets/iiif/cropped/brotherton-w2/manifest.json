@@ -1,0 +1,1736 @@
+{
+    "@context": "http://iiif.io/api/presentation/3/context.json",
+    "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/manifest.json",
+    "type": "Manifest",
+    "label": {
+        "en": [
+            "Brotherton Library West Wing - level 3"
+        ]
+    },
+    "items": [
+        {
+            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+            "type": "Canvas",
+            "width": 5496,
+            "height": 6320,
+            "label": {
+                "en": [
+                    "Brotherton Library West Wing - level 3"
+                ]
+            },
+            "items": [
+                {
+                    "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/1",
+                    "type": "AnnotationPage",
+                    "items": [
+                        {
+                            "@context": "http://iiif.io/api/presentation/3/context.json",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/1/image",
+                            "type": "Annotation",
+                            "motivation": "painting",
+                            "target": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                            "body": {
+                                "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/full/max/0/default.jpg",
+                                "type": "Image",
+                                "label": {
+                                    "en": [
+                                        "Brotherton Library West Wing - level 3"
+                                    ]
+                                },
+                                "format": "image/jpeg",
+                                "service": [
+                                    {
+                                        "@context": "http://iiif.io/api/image/2/context.json",
+                                        "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2",
+                                        "type": "ImageService3",
+                                        "profile": "level0",
+                                        "protocol": "http://iiif.io/api/image",
+                                        "tiles": [
+                                            {
+                                                "scaleFactors": [
+                                                    1,
+                                                    2,
+                                                    4,
+                                                    8,
+                                                    16,
+                                                    32
+                                                ],
+                                                "width": 1024,
+                                                "height": 1024
+                                            }
+                                        ],
+                                        "width": 5496,
+                                        "height": 6320
+                                    }
+                                ],
+                                "width": 5496,
+                                "height": 6320
+                            }
+                        }
+                    ]
+                }
+            ],
+            "annotations": [
+                {
+                    "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2",
+                    "type": "AnnotationPage",
+                    "items": [
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation1-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Stack Abstracts",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='1622,4334 1739,4333 1739,3709 1622,3709'><title>Stack Abstracts</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation2-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Stack Ancient History",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='1739,4334 1872,4333 1872,3709 1739,3709'><title>Stack Ancient History</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation3-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Stack Anthropology",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='1908,4334 2074,4334 2074,3709 1908,3709'><title>Stack Anthropology</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation4-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Stack Archaeology",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='2074,4334 2253,4333 2253,3709 2074,3709'><title>Stack Archaeology</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation5-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Stack Architecture",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='2317,4334 2459,4333 2459,3709 2317,3709'><title>Stack Architecture</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation6-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Stack Art",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='2459,4334 2572,4333 2572,3709 2459,3709'><title>Stack Art</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation7-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Stack Cartularies",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='2609,4334 2700,4333 2700,3709 2609,3709'><title>Stack Cartularies</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation8-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Stack Celtic",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='2700,4334 2772,4333 2772,3709 2700,3709'><title>Stack Celtic</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation9-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Stack Chinese",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='2772,4334 2865,4333 2865,3709 2772,3709'><title>Stack Chinese</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation10-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Stack Communications Studies",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='3013,4334 3135,4333 3135,3709 3013,3709'><title>Stack Communications Studies</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation11-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Stack Danish",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='3135,4334 3200,4333 3200,3709 3135,3709'><title>Stack Danish</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation12-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Stack Dobree",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='3200,4334 3283,4333 3283,3709 3200,3709'><title>Stack Dobree</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation13-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Stack English",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='3283,4334 3620,4333 3620,3709 3283,3709'><title>Stack English</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation14-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Stack French",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='3900,4276 4005,4276 4005,3595 3900,3595'><title>Stack French</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation15-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Stack Fulford",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='4005,4276 4093,4276 4093,3595 4005,3595'><title>Stack Fulford</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation16-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Stack General Classics",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='4093,4276 4173,4276 4173,3595 4093,3595'><title>Stack General Classics</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation17-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Stack General Literature",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='4173,4276 4269,4276 4269,3595 4173,3595'><title>Stack General Literature</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation18-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Stack Greek",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='4315,4210 4419,4210 4419,3595 4315,3595'><title>Stack Greek</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation19-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Stack Holden",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='4419,4210 4521,4210 4521,3595 4419,3595'><title>Stack Holden</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation20-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Stack Hong Kong",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='4654,4273 4654,3596 4733,3596 4733,4273'><title>Stack Hong Kong</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation21-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Stack Icelandic",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='4733,4273 4733,3596 4800,3596 4800,4273'><title>Stack Icelandic</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation22-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Stack Korean",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='4800,4273 4800,3596 4877,3596 4877,4273'><title>Stack Korean</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation23-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Stack Latin",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='4877,4273 4877,3596 4957,3596 4957,4273'><title>Stack Latin</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation24-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Stack Lattimore",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='4957,4273 4957,3596 5027,3596 5027,4273'><title>Stack Lattimore</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation25-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Stack Modern History",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='1622,3627 1765,3627 1765,2989 1622,2989'><title>Stack Modern History</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation26-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Stack Mongolian",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='1765,3627 1850,3627 1850,2989 1765,2989'><title>Stack Mongolian</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation27-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Stack Music",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='1850,3627 1930,3627 1930,2989 1850,2989'><title>Stack Music</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation28-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Stack Norwegian",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='1930,3627 2016,3627 2016,2989 1930,2989'><title>Stack Norwegian</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation29-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Stack Numismatics",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='2016,3627 2099,3627 2099,2989 2016,2989'><title>Stack Numismatics</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation30-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Stack Philosophy",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='2099,3627 2250,3627 2250,2989 2099,2989'><title>Stack Philosophy</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation31-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Stack Scandinavian",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='2317,3627 2572,3627 2572,2989 2317,2989'><title>Stack Scandinavian</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation32-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Stack Slavonic",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='2611,3627 2733,3627 2733,2989 2611,2989'><title>Stack Slavonic</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation33-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Stack Swedish",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='2733,3627 2865,3627 2865,2989 2733,2989'><title>Stack Swedish</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation34-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Stack Textiles",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='2989,3627 3085,3627 3085,2989 2989,2989'><title>Stack Textiles</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation35-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Stack Theology",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='3085,3627 3173,3627 3173,2989 3085,2989'><title>Stack Theology</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation36-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Stack Yearbooks",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='3173,3627 3309,3627 3309,2989 3173,2989'><title>Stack Yearbooks</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation37-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "All Stack Large A-Z",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='3309,3627 3619,3627 3619,2989 3309,2989'><title>All Stack Large A-Z</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation38-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "General Classics Journals",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='2884,266 2884,384 3547,384 3547,266'><title>General Classics Journals</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation39-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "French Journals",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='2884,477 2884,582 3547,582 3547,477'><title>French Journals</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation40-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "English Journals",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='2884,675 2884,771 3547,771 3547,675'><title>English Journals</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation41-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Communications Studies Journals",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='2884,872 2884,1045 3547,1045 3547,872'><title>Communications Studies Journals</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation42-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Chinese Journals",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='2884,1146 2884,1242 3547,1242 3547,1146'><title>Chinese Journals</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation43-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Celtic Journals",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='2884,1341 2884,1427 3547,1427 3547,1341'><title>Celtic Journals</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation44-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Canada Journals",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='2884,1536 2884,1632 3547,1632 3547,1536'><title>Canada Journals</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation45-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Bibliography Journals",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='2884,1725 2884,1811 3547,1811 3547,1725'><title>Bibliography Journals</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation46-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Art Journals",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='2884,1920 2884,1994 3547,1994 3547,1920'><title>Art Journals</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation47-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Architecture Journals",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='2884,2112 2884,2184 3547,2184 3547,2112'><title>Architecture Journals</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation48-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Anthropology Journals",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='2884,2301 2884,2384 3547,2384 3547,2301'><title>Anthropology Journals</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation49-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Ancient History Journals",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='2884,2496 2884,2573 3547,2573 3547,2496'><title>Ancient History Journals</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation50-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "General Journals",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='3752,266 3752,355 4637,355 4637,266'><title>General Journals</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation51-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "General Languages Journals",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='3752,355 3752,426 4637,426 4637,355'><title>General Languages Journals</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation52-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "General Literature Journals",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='3752,426 3752,493 4637,493 4637,426'><title>General Literature Journals</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation53-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "German Journals",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='3752,560 3752,632 4637,632 4637,560'><title>German Journals</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation54-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Holden Journals",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='3752,632 3752,688 4637,688 4637,632'><title>Holden Journals</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation55-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Italian Journals",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='3752,688 3752,781 4637,781 4637,688'><title>Italian Journals</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation56-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Japanese Journals",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='3752,829 3752,899 4637,899 4637,829'><title>Japanese Journals</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation57-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Korean Journals",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='3752,899 3752,960 4637,960 4637,899'><title>Korean Journals</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation58-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Lattimore Journals",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='3752,960 3752,1040 4637,1040 4637,960'><title>Lattimore Journals</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation59-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Linguistics Journals",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='3752,1085 3752,1155 4637,1155 4637,1085'><title>Linguistics Journals</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation60-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Modern History Journals",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='3752,1155 3752,1232 4637,1232 4637,1155'><title>Modern History Journals</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation61-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Mongolian Journals",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='3752,1232 3752,1304 4637,1304 4637,1232'><title>Mongolian Journals</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation62-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Music Journals",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='3752,1347 3752,1424 4637,1424 4637,1347'><title>Music Journals</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation63-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Numismatics Journals",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='3752,1424 3752,1494 4637,1494 4637,1424'><title>Numismatics Journals</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation64-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Philosophy Journals",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='3752,1494 3752,1571 4637,1571 4637,1494'><title>Philosophy Journals</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation65-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Portugese Journals",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='3752,1610 3752,1699 4637,1699 4637,1610'><title>Portugese Journals</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation66-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Scandinavian Journals",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='3752,1699 3752,1763 4637,1763 4637,1699'><title>Scandinavian Journals</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation67-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Semitic Journals",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='3752,1763 3752,1834 4637,1834 4637,1763'><title>Semitic Journals</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation68-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Slavonic Journals",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='3752,1898 3752,1962 4637,1962 4637,1898'><title>Slavonic Journals</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation69-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Spanish Journals",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='3752,1962 3752,2032 4637,2032 4637,1962'><title>Spanish Journals</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation70-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Textiles Journals",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='3752,2032 3752,2096 4637,2096 4637,2032'><title>Textiles Journals</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation71-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Theatre Journals",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='3752,2170 3752,2237 4637,2237 4637,2170'><title>Theatre Journals</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation72-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Theology Journals",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='3752,2237 3752,2301 4637,2301 4637,2237'><title>Theology Journals</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation73-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "YAHS Journals",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='3752,2301 3752,2362 4637,2362 4637,2301'><title>YAHS Journals</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation74-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Yorkshire Journals",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='3752,2432 3752,2496 4637,2496 4637,2432'><title>Yorkshire Journals</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation75-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "All Large Journals & Foreign Newspapers",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='3752,2523 3752,2696 4637,2696 4637,2523'><title>All Large Journals & Foreign Newspapers</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation76-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Art",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='4178,5392 4392,5392 4392,4422 4178,4422'><title>Art</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation77-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Art",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='4490,5392 4636,5392 4636,4422 4490,4422'><title>Art</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation78-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Art",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='4691,5392 4982,5392 4982,4422 4691,4422'><title>Art</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation79-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Art",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='3682,5392 4098,5392 4098,4422 3682,4422'><title>Art</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation80-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Theatre",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='1623,5392 2045,5392 2045,4422 1623,4422'><title>Theatre</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation81-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Textiles",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='2082,5392 2231,5392 2231,4422 2082,4422'><title>Textiles</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation82-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Music",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='2640,5392 2897,5392 2897,4422 2640,4422'><title>Music</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation83-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Music",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='2303,5392 2557,5392 2557,4422 2303,4422'><title>Music</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation84-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Communications Studies",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='2998,5392 3414,5392 3414,4422 2998,4422'><title>Communications Studies</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation85-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Communications Studies",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='3471,5392 3617,5392 3617,4422 3471,4422'><title>Communications Studies</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation86-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Recently Returned",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='4982,5392 5114,5392 5114,4422 4982,4422'><title>Recently Returned</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1/2/annotation87-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Silent Study Area & Library PCs",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5496,6320'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='1600,5608 1600,6072 3664,6066 3664,5608'><title>Silent Study Area & Library PCs</title></polygon></g></svg>"
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -3,7 +3,7 @@
     margin: 0;
     font-size: 1rem;
     padding: .5rem;
-    background: $white;
+    background: var(--white);
     margin-left: 0;
     .floorplans-selecter {
         padding: .5rem;
@@ -15,7 +15,6 @@
         width:100%;
     }
 	ul.selecter__list {
-        background: $lightgrey;
 		max-height: 20vh;
 		overflow: auto;
 		list-style: none;
@@ -43,11 +42,6 @@
                 display: block;
 				width: 100%;
 				text-align: left;
-				border: .1rem solid #fff;
-				background: #fff;
-				&:hover, &:focus {
-					background: #efefef;
-				}
 			}
 		}
 	}
@@ -63,8 +57,13 @@
     top: 10vh;
     width: 80vw;
     height: 80vh;
-    background: $white;
+    background: var(--white);
     z-index: 1000001;
+    textarea.geojson-container {
+        border: none;
+        width: 100%;
+        height: 100%;
+    }
 }
 .leaflet-tooltip-top:before, 
 .leaflet-tooltip-bottom:before, 

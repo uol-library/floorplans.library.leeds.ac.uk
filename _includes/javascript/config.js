@@ -25,6 +25,7 @@ const floorplans = {
 	maxWidth: 0,
 	controls: null,
 	infoPanel: null,
+	currentFloor: false,
 	palette: [
 		'#ff3b8d',
 		'#009e8c',

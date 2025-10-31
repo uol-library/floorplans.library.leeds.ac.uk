@@ -13,7 +13,6 @@ document.addEventListener( "DOMContentLoaded", function() {
 		zoomControl: false
 	});
     floorplans.map.attributionControl.setPrefix( '<a href="https://leafletjs.com" target="external" title="A JavaScript library for interactive maps" aria-label="Leaflet - a JavaScript library for interactive maps"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="12" height="8"><path fill="#4C7BE1" d="M0 0h12v4H0z"></path><path fill="#FFD500" d="M0 4h12v3H0z"></path><path fill="#E0BC00" d="M0 7h12v1H0z"></path></svg> Leaflet</a>' );
-    floorplans.map.pm.setGlobalOptions({ snappable: false });
 
 	/* Add zoom control to to right */
 	L.control.zoom( { position: 'topright' } ).addTo( floorplans.map );
@@ -86,7 +85,6 @@ document.addEventListener( "DOMContentLoaded", function() {
                         addFloorLayer( floor )
                         .then( ( floorlayer ) => {
                             /* add the floor layer to the map and center it */
-                            floorplans.activeFloorLayer = floorlayer;
                             floorlayer.addTo( floorplans.map );
                             floorplans.map.fitBounds( floor.imageBounds );
                             floorplans.map.setView( floor.imageBounds.getCenter() );
@@ -110,11 +108,15 @@ document.addEventListener( "DOMContentLoaded", function() {
             L.DomUtil.remove( exportdiv );
         });
         let ta = L.DomUtil.create( 'textarea', 'geojson-container', exportdiv );
-        ta.textContent = JSON.stringify(floorplans.activeFloorLayer.toGeoJSON());
+        ta.textContent = JSON.stringify(floorplans.map.pm.getGeomanLayers(true).toGeoJSON(), null, 4);
         L.DomUtil.toFront( exportdiv );
     });
     
+    //floorplans.map.pm.enableGlobalRotateMode();
     floorplans.map.pm.addControls();
+    floorplans.map.pm.setGlobalOptions({
+        snappable: false
+    });
 
     /* fire loaded event */
     document.dispatchEvent( new Event( 'fpmapready' ) );
@@ -196,6 +198,7 @@ var addFloorLayer = function( floor ) {
                             }
                         });
                         /* add the features geoJSON layer to the LayerGroup */
+                        floor.features.options.pmIgnore = false;
                         floorlayer.addLayer( floor.features );
                         fplog( "Added shelf features for "+floor.floorname );
                         /* store the LayerGroup in the floor object for later... */
@@ -209,19 +212,7 @@ var addFloorLayer = function( floor ) {
         });
     }
 };
-L.LayerGroup.prototype.addLayerOrg = L.LayerGroup.prototype.addLayer;
-L.LayerGroup.prototype.addLayer = function (layer) {
-  layer.addEventParent(this);
-  this.addLayerOrg(layer);
-  return this.fire("layeradd", { layer: layer });
-};
 
-L.LayerGroup.prototype.removeLayerOrg = L.LayerGroup.prototype.removeLayer;
-L.LayerGroup.prototype.removeLayer = function (layer) {
-  layer.removeEventParent(this);
-  this.removeLayerOrg(layer);
-  return this.fire("layerremove", { layer: layer });
-};
 
 /**
  * Selects a floor from the dropdown list
@@ -273,16 +264,16 @@ function highlightFeature( e ) {
 }
 
 function makeFeatureEditable( e ) {
-    console.log(e.target.pm.getOptions());
-    return;
+    // console.log(e.target.pm.getOptions());
+    // return;
 
     let layer = e.target;
     layer.options.pmIgnore = false;
     L.PM.reInitLayer(layer);
 }
 function makeFeaturesNonEditable( e ) {
-    console.log(e.target);
-    return;
+    // console.log(e.target);
+    // return;
     floorplans.map.eachLayer(layer => {
         layer.options.pmIgnore = true;
     });

@@ -54,6 +54,10 @@ This repository contains a refactored version of the floorplans which adopts the
 
 The floorplans can be integrated with [spacefinder](https://spacefinder.leeds.ac.uk/) once they have been georeferenced. However, georeferencing the plans means that all the GeoJSON for the shelves needs to be georeferenced as well, and all text and icons removed from the images.
 
+### Image cleanup
+
+For the 0.7 release, all images had the bulk of the text removed, with just a few icons remaining. At the same time, a set of icons were used in SVGOverlays on the floorplans to indicate the types of spaces which are highlighted on the plans. Once the use of icons on the floorplans has been tested thoroughly, the remaining icons will be removed from the images and Icons will replace them. Once this work is complete, the floorplan images can be converted to SVG files or to GeoJSON.
+
 ### Georeferencing using Allmaps
 
 [Allmaps](htps://allmaps.org/) makes it easier to curate, georeference and explore collections of digitized maps, but can also be used to georeference any IIIF images. The floorplan images have been converted to IIIF Level0 images for this purpose, retaining their shelving as IIIF Annotations (with many thanks to [Jules Schoonman](https://www.tudelft.nl/en/staff/j.a.schoonman/) who helped with the initial conversion of the plans to SVG files, and has helped me a great deal with the georeferencing of the plans).
@@ -86,3 +90,7 @@ The URLs of the manifests of these images can then be used in the [Allmaps edito
 * https://allmaps.xyz/images/447034c419b2ef5b/{z}/{x}/{y}@2x.png
 
 Both the Health Sciences library and the West wing of the Brotherton are proving tricky because I'm not sure where exactly they are on OpenStreetMap(!). The same applies to St. James Hospital library, but I don't have the plans for that one (yet).
+
+### Icons
+
+The floorplans have started using an icon font made using fontello. All the files needed for the font are in the `assets/font/src` folder, including any custom icons and the fontello configuration file. In addition, icons are included in the plans as inline SVG overlays - these are generated from a set of SVG icons in the `assets/icons` folder, which are in turn generated either using FontForge or [https://iconly.io/tools/font-to-icons-converter](https://iconly.io/tools/font-to-icons-converter).

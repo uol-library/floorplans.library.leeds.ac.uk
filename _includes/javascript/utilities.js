@@ -1,4 +1,146 @@
 /**
+ * Creates text for the popups
+ */
+function buildFeaturePopup( feature ) {
+    let popupText = '<strong>' + feature.properties.name + '</strong>';
+    if ( feature.properties.desc && feature.properties.desc !== '' ) {
+        popupText += '<br>' + feature.properties.desc;
+    }
+    return popupText;
+}
+
+/**
+ * Selects a floor from the dropdown list
+ * @param {String} floorid
+ */
+function selectFloor( floorid ) {
+    let sel = document.getElementById( 'floorselecter' );
+    if ( sel ) {
+        for (var i = 0; i < sel.options.length; i++) {
+            if ( sel.options[i].value === floorid ) {
+                sel.options[i].selected = true;
+            }
+        }
+    }
+}
+
+/**
+ * Selects a feature on the floor from the list of features
+ *
+ * @uses selectFeature()
+ * @param {Object} floor - used to access the lists of features
+ * @param {string} shelfName - the Label for the given feature
+ */
+function selectShelf( floor, shelfName ) {
+    floor.selecters.shelf.forEach( s => {
+        if ( s.label.match( shelfName ) ) {
+            selectFeature( s.value );
+        }
+    });
+}
+
+/**
+ * This takes the ID of a feature in a geoJSON layer
+ * and returns the layer object which contains the feature
+ * @param {String} featureid
+ * @returns {Object} layer
+ */
+function getFeature( featureid ) {
+    let feature = false;
+    floorplans.map.eachLayer( layer => {
+        if ( layer.id && layer.id === featureid ) {
+            feature = layer;
+        }
+    });
+    return feature;
+}
+
+/**
+ * This selects a feature by firing the mouseover event on the feature
+ * layer. It then highlights the feature in the selecter control by
+ * focussing it.
+ */
+function selectFeature( featureid ) {
+    let layer = getFeature( featureid );
+    if ( layer !== false ) {
+        layer.fire( 'mouseover', {}, true );
+        let fb = document.querySelector('button[data-featureid="'+featureid+'"]');
+        if ( fb ) {
+            fb.focus();
+        }
+    }
+}
+
+/**
+ * Highlights a feature on the plan
+ * @param {Event} e
+ */
+function highlightFeature( e ) {
+    resetFeatures();
+    let layer = e.target;
+    if ( layer.id ) {
+        let fb = document.querySelector('button[data-featureid="'+layer.id+'"]');
+        if ( fb ) {
+            fb.focus();
+        }
+        if ( layer.id.startsWith('area') ) {
+            floorplans.map.closePopup();
+            layer.openTooltip();
+            layer.setStyle({ fillOpacity: 0.4, opacity: 1 } );
+            return;
+        } else {
+            layer.setStyle({ fillOpacity: 0.75, opacity: 1 } );
+        }
+    }
+    // GeoJSON multiple polygons
+    if ( layer.feature && layer.feature.geometry && layer.feature.geometry.coordinates && layer.feature.geometry.coordinates.length > 1 ) {
+        // not sure how to handle this!
+        if ( e.latlng ) {
+            layer.openPopup( e.latlng );
+        } else {
+            layer.openPopup();
+        }
+        // layer.openPopup( polylabel( layer.feature.geometry.coordinates ) );
+    } else {
+        layer.openPopup();
+    }
+}
+
+/**
+ * Reset the highlight for all features on the current floor
+ *
+ */
+function resetFeatures() {
+    if ( floorplans.currentFloor && floorplans.currentFloor.features ) {
+        floorplans.currentFloor.features.eachLayer( function( layer ) {
+            if ( layer.id ) {
+                if ( layer.id.startsWith('area') ) {
+                    layer.setStyle({ fillOpacity: 0.2, opacity: 0 } );
+                } else {
+                    layer.setStyle({ fillOpacity: 0.5, opacity: 0 } );
+                }
+            }
+        });
+    }
+}
+
+/**
+ * Get an SVG icon by name
+ * @param {String} icon
+ * @returns SVG Element or false if not found
+ */
+function getSVGIcon(icon) {
+    if ( floorplans.icons.hasOwnProperty(icon) ) {
+        const svgElement = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+        svgElement.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
+        svgElement.setAttribute('viewBox', floorplans.icons[icon].viewBox);
+        svgElement.innerHTML = floorplans.icons[icon].path;
+        return svgElement;
+    }
+    return false;
+}
+
+/**
  * Checks to see if localStorage is available
  * 
  * @param {string} type (localStorage or sessionStorage)
@@ -108,25 +250,6 @@ function getWithExpiry( key ) {
     }
 }
 
-/**
- * Gets an SVG file to be used in an SVG Overlay
- */
-function getSVG( url, callback ) {
-	const oReq = new XMLHttpRequest();
-    oReq.addEventListener( 'load', function() {
-        let parser = new DOMParser();
-        try {
-            let SVGremote = parser.parseFromString( this.responseText, 'image/svg+xml' );
-            let errorNode = SVGremote.querySelector('parsererror');
-            if ( ! errorNode ) {
-    		    let SVGElement = SVGremote.documentElement;
-                callback( SVGElement );
-            }
-        } catch(e) {}
-    });
-    oReq.open( "GET", url );
-    oReq.send();
-}
 /**
  * Logs messages to console if debug flag is set
  * @param {string} message

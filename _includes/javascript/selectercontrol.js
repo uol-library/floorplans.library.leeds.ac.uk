@@ -46,6 +46,15 @@ function setupSelecterControl() {
         });
     });
 
+    /* areas */
+    let areaSelecter = L.DomUtil.create( 'div', 'hidden', floorplans.controls );
+    areaSelecter.setAttribute( 'id', 'areaselecter' );
+    let areaselecterHeading = L.DomUtil.create( 'h3', '', areaSelecter );
+    areaselecterHeading.textContent = 'Study Areas';
+    /* area selecter list */
+    let areaselecterList = L.DomUtil.create( 'ul', 'selecter__list', areaSelecter );
+    areaselecterList.setAttribute( 'id', 'areaselecterlist' );
+
     /* shelf selecter drop-down - subjects */
     let shelfSelecter = L.DomUtil.create( 'div', 'hidden', floorplans.controls );
     shelfSelecter.setAttribute( 'id', 'shelfselecter' );
@@ -72,8 +81,11 @@ function setupSelecterControl() {
                 floorplans.map.removeLayer( layer );
             });
             /* empty the current lists */
-            ['shelfselecter', 'locationselecter' ].forEach( s => {
-                L.DomUtil.empty( L.DomUtil.get( s + 'list' ) );
+            ['areaselecter', 'shelfselecter', 'locationselecter' ].forEach( s => {
+                let listcontainer = L.DomUtil.get( s + 'list' );
+                if ( listcontainer && listcontainer.hasChildNodes() ) {
+                    L.DomUtil.empty( listcontainer );
+                }
                 L.DomUtil.addClass( L.DomUtil.get( s ), 'hidden' );
             });
             /* go through data looking for a floor to match the dropdown value */
@@ -88,6 +100,7 @@ function setupSelecterControl() {
                             sortFeatureSelects( floor );
                             /* add the floor layer to the map and center it */
                             floorlayer.addTo( floorplans.map );
+                            floorplans.currentFloor = floor;
                             floorplans.map.fitBounds( floor.imageBounds );
                             floorplans.map.setView( floor.imageBounds.getCenter() );
                             fplog( 'Added layer for floor '+floor.floorname );
@@ -130,9 +143,13 @@ function buildFeatureSelects( floor ) {
          */
         if ( floor.selecters[s].length ) {
             floor.selecters[s].forEach( o => {
-                let itemli = L.DomUtil.create('li', o.class + ' item-' + s, list );
-                itemli.setAttribute( 'data-sortkey', o.label.toLowerCase().replace( /\W/g, '' ) );
-                let itembutton = L.DomUtil.create('button', 'shelfbutton', itemli );
+                let itemli = L.DomUtil.create('li', 'item-' + s, list );
+                itemli.setAttribute( 'data-sortkey', o.label.toLowerCase().replace( /\W/g, '' ).replace( /(8|13)([1-9])$/, '$10$2' ) );
+                let itemClass = s+'button ' + o.class;
+                if ( o.icon && o.icon !== '' ) {
+                    itemClass += ' icon-' + o.icon;
+                }
+                let itembutton = L.DomUtil.create('button', itemClass, itemli );
                 itembutton.innerText = o.label;
                 itembutton.setAttribute( 'data-featureid', o.value );
                 /* add event to highlight a feature */
@@ -145,6 +162,11 @@ function buildFeatureSelects( floor ) {
                     let layer = getFeature( e.target.getAttribute( 'data-featureid' ) );
                     layer.fire( 'mouseout', {}, true );
                 });
+                if ( o.desc && o.desc !== '' && !o.icon ) {
+                    itembutton.title = o.desc;
+                    //let desc = L.DomUtil.create('span', 'feature-description', itemli );
+                    //desc.innerText = o.desc;
+                }
             });
             /* show the selecter */
             L.DomUtil.removeClass( listcontainer, 'hidden' );
@@ -172,34 +194,3 @@ function sortFeatureSelects( floor ) {
     }
 }
 
-/**
- * This takes the ID of a feature in a geoJSON layer
- * and returns the layer object which cointains the feature
- * @param {String} featureid 
- * @returns {Object} layer
- */
-function getFeature( featureid ) {
-    let feature = false;
-    floorplans.map.eachLayer( layer => {
-        if ( layer.id && layer.id === featureid ) {
-            feature = layer;
-        }
-    });
-    return feature;
-}
-
-/**
- * This selects a feature by firing the mouseover event on the feature
- * layer. It then highlights the feature in the selecter control by 
- * focussing it.
- */
-function selectFeature( featureid ) {
-    let layer = getFeature( featureid );
-    if ( layer !== false ) {
-        layer.fire( 'mouseover', {}, true );
-        let fb = document.querySelector('button[data-featureid="'+featureid+'"]');
-        if ( fb ) {
-            fb.focus();
-        }
-    }
-}

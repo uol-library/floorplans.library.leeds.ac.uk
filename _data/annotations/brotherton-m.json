@@ -1,0 +1,144 @@
+{
+  "type": "AnnotationPage",
+  "@context": "http://www.w3.org/ns/anno.jsonld",
+  "items": [
+    {
+      "id": "https://annotations.allmaps.org/maps/9aca7c5eb91e90bc",
+      "type": "Annotation",
+      "@context": [
+        "http://iiif.io/api/extension/georef/1/context.json",
+        "http://iiif.io/api/presentation/3/context.json"
+      ],
+      "created": "2025-06-24T19:10:29.695Z",
+      "modified": "2025-06-24T19:10:29.695Z",
+      "motivation": "georeferencing",
+      "target": {
+        "type": "SpecificResource",
+        "source": {
+          "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-m1",
+          "type": "ImageService3",
+          "height": 4700,
+          "width": 4611,
+          "partOf": [
+            {
+              "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-m1/canvas/p1",
+              "type": "Canvas",
+              "label": {
+                "en": [
+                  "Brotherton Library Main Building - level 1"
+                ]
+              },
+              "partOf": [
+                {
+                  "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-m1/manifest.json",
+                  "type": "Manifest",
+                  "label": {
+                    "en": [
+                      "Brotherton Library Main Building - level 1"
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "selector": {
+          "type": "SvgSelector",
+          "value": "<svg width=\"4611\" height=\"4700\"><polygon points=\"0,0 0,4700 4611,4700 4611,0\" /></svg>"
+        }
+      },
+      "body": {
+        "type": "FeatureCollection",
+        "transformation": {
+          "type": "helmert"
+        },
+        "features": [
+          {
+            "type": "Feature",
+            "properties": {
+              "resourceCoords": [
+                3370,
+                280
+              ]
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                -1.5537085,
+                53.8080091
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "resourceCoords": [
+                1269,
+                273
+              ]
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                -1.5537085,
+                53.8078078
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "resourceCoords": [
+                3158,
+                4407
+              ]
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                -1.5530228,
+                53.8079778
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "resourceCoords": [
+                1405,
+                4379
+              ]
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                -1.5530365,
+                53.8078008
+              ]
+            }
+          }
+        ],
+        "_allmaps": {
+          "id": "https://annotations.allmaps.org/maps/9aca7c5eb91e90bc",
+          "version": "https://annotations.allmaps.org/maps/9aca7c5eb91e90bc@a6c8be2ef57d781a",
+          "image": {
+            "id": "https://annotations.allmaps.org/images/33166be070f36f94",
+            "version": "https://annotations.allmaps.org/images/33166be070f36f94@9aa2c7364c38da09",
+            "canvases": [
+              {
+                "id": "https://annotations.allmaps.org/canvases/afe26074d1677350",
+                "manifests": [
+                  {
+                    "id": "https://annotations.allmaps.org/manifests/0a5d3292ecc2cab5"
+                  }
+                ]
+              }
+            ]
+          },
+          "scale": 99.480531,
+          "area": 2189.86
+        }
+      }
+    }
+  ]
+}
