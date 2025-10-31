@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <meta http-equiv="Expires" content="0"/><meta name="description" content="The University of Leeds Library Floor Plans are an application using the Leaflet mapping library to enable indoor wayfinding in the University's library spaces."><meta name="robots" content="noindex"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/">
+    <meta name="DC.Title" content="University of Leeds Library Floor Plans">
+    <meta name="DC.Description" content="The University of Leeds Library Floor Plans are an application using the Leaflet mapping library to enable indoor wayfinding in the University's library spaces.">
+    <meta name="DC.Creator" content="University of Leeds">
+    <meta name="DC.Publisher" content="University of Leeds">
+    <meta name="DCTERMS.Created" content="2022-06-06">
+    <meta name="DCTERMS.Modified" content="2022-10-13">
+    <meta name="DC.Type" content="InteractiveResource">
+    <meta name="DC.Subject" scheme="DCTERMS.LCSH" content="Digital mapping">
+    <meta name="DC.Subject" scheme="DCTERMS.LCSH" content="College Campuses">
+    <meta name="DCTERMS.Spatial" content="University of Leeds campus">
+    <meta name="DC.Identifier" content="https://dev-floorplans.library.leeds.ac.uk">
+    <meta name="DC.Language" content="en">
+    <title>University of Leeds Library Floor Plans</title>
+    <link rel="stylesheet" href="https://dev-floorplans.library.leeds.ac.uk/assets/css/editor-style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin=""/>
+    <link rel="stylesheet" href="https://unpkg.com/@geoman-io/leaflet-geoman-free@2.17.0/dist/leaflet-geoman.css"/>
+    <script src="https://dev-floorplans.library.leeds.ac.uk/assets/scripts/config.js"></script>
+    
+    <link rel="apple-touch-icon" sizes="57x57" href="https://dev-floorplans.library.leeds.ac.uk/assets/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="https://dev-floorplans.library.leeds.ac.uk/assets/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://dev-floorplans.library.leeds.ac.uk/assets/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://dev-floorplans.library.leeds.ac.uk/assets/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://dev-floorplans.library.leeds.ac.uk/assets/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://dev-floorplans.library.leeds.ac.uk/assets/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="https://dev-floorplans.library.leeds.ac.uk/assets/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://dev-floorplans.library.leeds.ac.uk/assets/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://dev-floorplans.library.leeds.ac.uk/assets/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="https://dev-floorplans.library.leeds.ac.uk/assets/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://dev-floorplans.library.leeds.ac.uk/assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="https://dev-floorplans.library.leeds.ac.uk/assets/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://dev-floorplans.library.leeds.ac.uk/assets/favicons/favicon-16x16.png">
+    <!-- <link rel="manifest" href="https://dev-floorplans.library.leeds.ac.uk/assets/favicons/manifest.json"> -->
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="https://dev-floorplans.library.leeds.ac.uk/assets/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    
+
+</head>
+
+<body>
+  <main id="maincontainer">
+    <div class="iiif">
+    <h1>Original images</h1>
+
+<h2>Brotherton Library</h2>
+<ul class="iiif-floors">
+  
+    <li>
+        <h3>Brotherton Library Main Building - level 1</h3>
+        <div class="iiif-links">
+            
+            <figure><img src="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/brotherton-m1/full/159,188/0/default.jpg" title="Brotherton Library Main Building - level 1" /></figure>
+            <div>
+                <p>Image: 
+                    <a href="http://iiif.gdmrdigital.com/openseadragon/index.html?image=https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/original/brotherton-m1/info.json" target="_blank">View image in OpenSeaDragon</a>
+                </p>
+                <p>Manifest: 
+                    <a href="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/brotherton-m1/manifest.json">JSON-LD</a> | 
+                    <a href="https://projectmirador.org/embed/?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/brotherton-m1/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/brotherton-m1/manifest.json" target="_blank">View in Mirador</a> | 
+                    <a href="https://uv-v3.netlify.app/#?c=&amp;m=&amp;s=&amp;cv=&amp;manifest=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/brotherton-m1/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/brotherton-m1/manifest.json" target="_blank">View in Universal Viewer</a>        | 
+                    <a href="https://ncsu-libraries.github.io/annona/tools/#/display?url=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/brotherton-m1/manifest.json&amp;viewtype=iiif-storyboard&amp;settings=%7B%22fullpage%22%3Atrue%7D" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/brotherton-m1/manifest.json" target="_blank">View in Annona</a> | 
+                    <a href="https://samvera-labs.github.io/clover-iiif/docs/viewer/demo?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/brotherton-m1/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/brotherton-m1/manifest.json" target="_blank">View in Clover</a> | 
+                    <a href="https://demo.viewer.glycerine.io/viewer?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/brotherton-m1/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/brotherton-m1/manifest.json" target="_blank">View in Glycerine Viewer</a> | 
+                    <a href="https://theseusviewer.org/?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/brotherton-m1/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/brotherton-m1/manifest.json" target="_blank">View in Theseus</a> | 
+                    <a href="http://codh.rois.ac.jp/software/iiif-curation-viewer/demo/?manifest=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/brotherton-m1/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/brotherton-m1/manifest.json" target="_blank">View in IIIF Curation Viewer</a>
+                </p>
+            </div>
+        </div>
+    </li>
+  
+    <li>
+        <h3>Brotherton Library Main Building - level 2</h3>
+        <div class="iiif-links">
+            
+            <figure><img src="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/brotherton-m2/full/159,183/0/default.jpg" title="Brotherton Library Main Building - level 2" /></figure>
+            <div>
+                <p>Image: 
+                    <a href="http://iiif.gdmrdigital.com/openseadragon/index.html?image=https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/original/brotherton-m2/info.json" target="_blank">View image in OpenSeaDragon</a>
+                </p>
+                <p>Manifest: 
+                    <a href="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/brotherton-m2/manifest.json">JSON-LD</a> | 
+                    <a href="https://projectmirador.org/embed/?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/brotherton-m2/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/brotherton-m2/manifest.json" target="_blank">View in Mirador</a> | 
+                    <a href="https://uv-v3.netlify.app/#?c=&amp;m=&amp;s=&amp;cv=&amp;manifest=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/brotherton-m2/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/brotherton-m2/manifest.json" target="_blank">View in Universal Viewer</a>        | 
+                    <a href="https://ncsu-libraries.github.io/annona/tools/#/display?url=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/brotherton-m2/manifest.json&amp;viewtype=iiif-storyboard&amp;settings=%7B%22fullpage%22%3Atrue%7D" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/brotherton-m2/manifest.json" target="_blank">View in Annona</a> | 
+                    <a href="https://samvera-labs.github.io/clover-iiif/docs/viewer/demo?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/brotherton-m2/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/brotherton-m2/manifest.json" target="_blank">View in Clover</a> | 
+                    <a href="https://demo.viewer.glycerine.io/viewer?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/brotherton-m2/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/brotherton-m2/manifest.json" target="_blank">View in Glycerine Viewer</a> | 
+                    <a href="https://theseusviewer.org/?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/brotherton-m2/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/brotherton-m2/manifest.json" target="_blank">View in Theseus</a> | 
+                    <a href="http://codh.rois.ac.jp/software/iiif-curation-viewer/demo/?manifest=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/brotherton-m2/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/brotherton-m2/manifest.json" target="_blank">View in IIIF Curation Viewer</a>
+                </p>
+            </div>
+        </div>
+    </li>
+  
+    <li>
+        <h3>Brotherton Library Main Building - level 3</h3>
+        <div class="iiif-links">
+            
+            <figure><img src="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/brotherton-m3/full/159,181/0/default.jpg" title="Brotherton Library Main Building - level 3" /></figure>
+            <div>
+                <p>Image: 
+                    <a href="http://iiif.gdmrdigital.com/openseadragon/index.html?image=https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/original/brotherton-m3/info.json" target="_blank">View image in OpenSeaDragon</a>
+                </p>
+                <p>Manifest: 
+                    <a href="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/brotherton-m3/manifest.json">JSON-LD</a> | 
+                    <a href="https://projectmirador.org/embed/?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/brotherton-m3/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/brotherton-m3/manifest.json" target="_blank">View in Mirador</a> | 
+                    <a href="https://uv-v3.netlify.app/#?c=&amp;m=&amp;s=&amp;cv=&amp;manifest=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/brotherton-m3/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/brotherton-m3/manifest.json" target="_blank">View in Universal Viewer</a>        | 
+                    <a href="https://ncsu-libraries.github.io/annona/tools/#/display?url=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/brotherton-m3/manifest.json&amp;viewtype=iiif-storyboard&amp;settings=%7B%22fullpage%22%3Atrue%7D" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/brotherton-m3/manifest.json" target="_blank">View in Annona</a> | 
+                    <a href="https://samvera-labs.github.io/clover-iiif/docs/viewer/demo?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/brotherton-m3/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/brotherton-m3/manifest.json" target="_blank">View in Clover</a> | 
+                    <a href="https://demo.viewer.glycerine.io/viewer?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/brotherton-m3/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/brotherton-m3/manifest.json" target="_blank">View in Glycerine Viewer</a> | 
+                    <a href="https://theseusviewer.org/?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/brotherton-m3/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/brotherton-m3/manifest.json" target="_blank">View in Theseus</a> | 
+                    <a href="http://codh.rois.ac.jp/software/iiif-curation-viewer/demo/?manifest=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/brotherton-m3/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/brotherton-m3/manifest.json" target="_blank">View in IIIF Curation Viewer</a>
+                </p>
+            </div>
+        </div>
+    </li>
+  
+    <li>
+        <h3>Brotherton Library Main Building - level 4</h3>
+        <div class="iiif-links">
+            
+            <figure><img src="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/brotherton-m4/full/159,192/0/default.jpg" title="Brotherton Library Main Building - level 4" /></figure>
+            <div>
+                <p>Image: 
+                    <a href="http://iiif.gdmrdigital.com/openseadragon/index.html?image=https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/original/brotherton-m4/info.json" target="_blank">View image in OpenSeaDragon</a>
+                </p>
+                <p>Manifest: 
+                    <a href="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/brotherton-m4/manifest.json">JSON-LD</a> | 
+                    <a href="https://projectmirador.org/embed/?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/brotherton-m4/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/brotherton-m4/manifest.json" target="_blank">View in Mirador</a> | 
+                    <a href="https://uv-v3.netlify.app/#?c=&amp;m=&amp;s=&amp;cv=&amp;manifest=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/brotherton-m4/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/brotherton-m4/manifest.json" target="_blank">View in Universal Viewer</a>        | 
+                    <a href="https://ncsu-libraries.github.io/annona/tools/#/display?url=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/brotherton-m4/manifest.json&amp;viewtype=iiif-storyboard&amp;settings=%7B%22fullpage%22%3Atrue%7D" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/brotherton-m4/manifest.json" target="_blank">View in Annona</a> | 
+                    <a href="https://samvera-labs.github.io/clover-iiif/docs/viewer/demo?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/brotherton-m4/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/brotherton-m4/manifest.json" target="_blank">View in Clover</a> | 
+                    <a href="https://demo.viewer.glycerine.io/viewer?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/brotherton-m4/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/brotherton-m4/manifest.json" target="_blank">View in Glycerine Viewer</a> | 
+                    <a href="https://theseusviewer.org/?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/brotherton-m4/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/brotherton-m4/manifest.json" target="_blank">View in Theseus</a> | 
+                    <a href="http://codh.rois.ac.jp/software/iiif-curation-viewer/demo/?manifest=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/brotherton-m4/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/brotherton-m4/manifest.json" target="_blank">View in IIIF Curation Viewer</a>
+                </p>
+            </div>
+        </div>
+    </li>
+  
+    <li>
+        <h3>Brotherton Library West Wing - level 3</h3>
+        <div class="iiif-links">
+            
+            <figure><img src="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/brotherton-w2/full/159,217/0/default.jpg" title="Brotherton Library West Wing - level 3" /></figure>
+            <div>
+                <p>Image: 
+                    <a href="http://iiif.gdmrdigital.com/openseadragon/index.html?image=https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/original/brotherton-w2/info.json" target="_blank">View image in OpenSeaDragon</a>
+                </p>
+                <p>Manifest: 
+                    <a href="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/brotherton-w2/manifest.json">JSON-LD</a> | 
+                    <a href="https://projectmirador.org/embed/?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/brotherton-w2/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/brotherton-w2/manifest.json" target="_blank">View in Mirador</a> | 
+                    <a href="https://uv-v3.netlify.app/#?c=&amp;m=&amp;s=&amp;cv=&amp;manifest=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/brotherton-w2/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/brotherton-w2/manifest.json" target="_blank">View in Universal Viewer</a>        | 
+                    <a href="https://ncsu-libraries.github.io/annona/tools/#/display?url=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/brotherton-w2/manifest.json&amp;viewtype=iiif-storyboard&amp;settings=%7B%22fullpage%22%3Atrue%7D" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/brotherton-w2/manifest.json" target="_blank">View in Annona</a> | 
+                    <a href="https://samvera-labs.github.io/clover-iiif/docs/viewer/demo?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/brotherton-w2/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/brotherton-w2/manifest.json" target="_blank">View in Clover</a> | 
+                    <a href="https://demo.viewer.glycerine.io/viewer?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/brotherton-w2/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/brotherton-w2/manifest.json" target="_blank">View in Glycerine Viewer</a> | 
+                    <a href="https://theseusviewer.org/?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/brotherton-w2/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/brotherton-w2/manifest.json" target="_blank">View in Theseus</a> | 
+                    <a href="http://codh.rois.ac.jp/software/iiif-curation-viewer/demo/?manifest=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/brotherton-w2/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/brotherton-w2/manifest.json" target="_blank">View in IIIF Curation Viewer</a>
+                </p>
+            </div>
+        </div>
+    </li>
+  
+    <li>
+        <h3>Brotherton Library West Wing - level 3</h3>
+        <div class="iiif-links">
+            
+            <figure><img src="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/brotherton-w3/full/158,211/0/default.jpg" title="Brotherton Library West Wing - level 3" /></figure>
+            <div>
+                <p>Image: 
+                    <a href="http://iiif.gdmrdigital.com/openseadragon/index.html?image=https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/original/brotherton-w3/info.json" target="_blank">View image in OpenSeaDragon</a>
+                </p>
+                <p>Manifest: 
+                    <a href="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/brotherton-w3/manifest.json">JSON-LD</a> | 
+                    <a href="https://projectmirador.org/embed/?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/brotherton-w3/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/brotherton-w3/manifest.json" target="_blank">View in Mirador</a> | 
+                    <a href="https://uv-v3.netlify.app/#?c=&amp;m=&amp;s=&amp;cv=&amp;manifest=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/brotherton-w3/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/brotherton-w3/manifest.json" target="_blank">View in Universal Viewer</a>        | 
+                    <a href="https://ncsu-libraries.github.io/annona/tools/#/display?url=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/brotherton-w3/manifest.json&amp;viewtype=iiif-storyboard&amp;settings=%7B%22fullpage%22%3Atrue%7D" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/brotherton-w3/manifest.json" target="_blank">View in Annona</a> | 
+                    <a href="https://samvera-labs.github.io/clover-iiif/docs/viewer/demo?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/brotherton-w3/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/brotherton-w3/manifest.json" target="_blank">View in Clover</a> | 
+                    <a href="https://demo.viewer.glycerine.io/viewer?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/brotherton-w3/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/brotherton-w3/manifest.json" target="_blank">View in Glycerine Viewer</a> | 
+                    <a href="https://theseusviewer.org/?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/brotherton-w3/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/brotherton-w3/manifest.json" target="_blank">View in Theseus</a> | 
+                    <a href="http://codh.rois.ac.jp/software/iiif-curation-viewer/demo/?manifest=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/brotherton-w3/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/brotherton-w3/manifest.json" target="_blank">View in IIIF Curation Viewer</a>
+                </p>
+            </div>
+        </div>
+    </li>
+  
+  </ul>
+
+<h2>Edward Boyle Library</h2>
+<ul class="iiif-floors">
+  
+    <li>
+        <h3>Edward Boyle Library - level 8</h3>
+        <div class="iiif-links">
+            
+            <figure><img src="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/edwardboyle-8/full/157,81/0/default.jpg" title="Edward Boyle Library - level 8" /></figure>
+            <div>
+                <p>Image: 
+                    <a href="http://iiif.gdmrdigital.com/openseadragon/index.html?image=https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/original/edwardboyle-8/info.json" target="_blank">View image in OpenSeaDragon</a>
+                </p>
+                <p>Manifest: 
+                    <a href="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/edwardboyle-8/manifest.json">JSON-LD</a> | 
+                    <a href="https://projectmirador.org/embed/?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/edwardboyle-8/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-8/manifest.json" target="_blank">View in Mirador</a> | 
+                    <a href="https://uv-v3.netlify.app/#?c=&amp;m=&amp;s=&amp;cv=&amp;manifest=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/edwardboyle-8/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-8/manifest.json" target="_blank">View in Universal Viewer</a>        | 
+                    <a href="https://ncsu-libraries.github.io/annona/tools/#/display?url=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/edwardboyle-8/manifest.json&amp;viewtype=iiif-storyboard&amp;settings=%7B%22fullpage%22%3Atrue%7D" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-8/manifest.json" target="_blank">View in Annona</a> | 
+                    <a href="https://samvera-labs.github.io/clover-iiif/docs/viewer/demo?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/edwardboyle-8/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-8/manifest.json" target="_blank">View in Clover</a> | 
+                    <a href="https://demo.viewer.glycerine.io/viewer?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/edwardboyle-8/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-8/manifest.json" target="_blank">View in Glycerine Viewer</a> | 
+                    <a href="https://theseusviewer.org/?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/edwardboyle-8/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-8/manifest.json" target="_blank">View in Theseus</a> | 
+                    <a href="http://codh.rois.ac.jp/software/iiif-curation-viewer/demo/?manifest=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/edwardboyle-8/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-8/manifest.json" target="_blank">View in IIIF Curation Viewer</a>
+                </p>
+            </div>
+        </div>
+    </li>
+  
+    <li>
+        <h3>Edward Boyle Library - level 9</h3>
+        <div class="iiif-links">
+            
+            <figure><img src="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/edwardboyle-9/full/157,85/0/default.jpg" title="Edward Boyle Library - level 9" /></figure>
+            <div>
+                <p>Image: 
+                    <a href="http://iiif.gdmrdigital.com/openseadragon/index.html?image=https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/original/edwardboyle-9/info.json" target="_blank">View image in OpenSeaDragon</a>
+                </p>
+                <p>Manifest: 
+                    <a href="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/edwardboyle-9/manifest.json">JSON-LD</a> | 
+                    <a href="https://projectmirador.org/embed/?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/edwardboyle-9/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-9/manifest.json" target="_blank">View in Mirador</a> | 
+                    <a href="https://uv-v3.netlify.app/#?c=&amp;m=&amp;s=&amp;cv=&amp;manifest=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/edwardboyle-9/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-9/manifest.json" target="_blank">View in Universal Viewer</a>        | 
+                    <a href="https://ncsu-libraries.github.io/annona/tools/#/display?url=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/edwardboyle-9/manifest.json&amp;viewtype=iiif-storyboard&amp;settings=%7B%22fullpage%22%3Atrue%7D" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-9/manifest.json" target="_blank">View in Annona</a> | 
+                    <a href="https://samvera-labs.github.io/clover-iiif/docs/viewer/demo?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/edwardboyle-9/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-9/manifest.json" target="_blank">View in Clover</a> | 
+                    <a href="https://demo.viewer.glycerine.io/viewer?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/edwardboyle-9/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-9/manifest.json" target="_blank">View in Glycerine Viewer</a> | 
+                    <a href="https://theseusviewer.org/?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/edwardboyle-9/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-9/manifest.json" target="_blank">View in Theseus</a> | 
+                    <a href="http://codh.rois.ac.jp/software/iiif-curation-viewer/demo/?manifest=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/edwardboyle-9/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-9/manifest.json" target="_blank">View in IIIF Curation Viewer</a>
+                </p>
+            </div>
+        </div>
+    </li>
+  
+    <li>
+        <h3>Edward Boyle Library - level 10</h3>
+        <div class="iiif-links">
+            
+            <figure><img src="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/edwardboyle-10/full/157,73/0/default.jpg" title="Edward Boyle Library - level 10" /></figure>
+            <div>
+                <p>Image: 
+                    <a href="http://iiif.gdmrdigital.com/openseadragon/index.html?image=https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/original/edwardboyle-10/info.json" target="_blank">View image in OpenSeaDragon</a>
+                </p>
+                <p>Manifest: 
+                    <a href="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/edwardboyle-10/manifest.json">JSON-LD</a> | 
+                    <a href="https://projectmirador.org/embed/?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/edwardboyle-10/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-10/manifest.json" target="_blank">View in Mirador</a> | 
+                    <a href="https://uv-v3.netlify.app/#?c=&amp;m=&amp;s=&amp;cv=&amp;manifest=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/edwardboyle-10/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-10/manifest.json" target="_blank">View in Universal Viewer</a>        | 
+                    <a href="https://ncsu-libraries.github.io/annona/tools/#/display?url=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/edwardboyle-10/manifest.json&amp;viewtype=iiif-storyboard&amp;settings=%7B%22fullpage%22%3Atrue%7D" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-10/manifest.json" target="_blank">View in Annona</a> | 
+                    <a href="https://samvera-labs.github.io/clover-iiif/docs/viewer/demo?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/edwardboyle-10/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-10/manifest.json" target="_blank">View in Clover</a> | 
+                    <a href="https://demo.viewer.glycerine.io/viewer?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/edwardboyle-10/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-10/manifest.json" target="_blank">View in Glycerine Viewer</a> | 
+                    <a href="https://theseusviewer.org/?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/edwardboyle-10/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-10/manifest.json" target="_blank">View in Theseus</a> | 
+                    <a href="http://codh.rois.ac.jp/software/iiif-curation-viewer/demo/?manifest=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/edwardboyle-10/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-10/manifest.json" target="_blank">View in IIIF Curation Viewer</a>
+                </p>
+            </div>
+        </div>
+    </li>
+  
+    <li>
+        <h3>Edward Boyle Library - level 11</h3>
+        <div class="iiif-links">
+            
+            <figure><img src="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/edwardboyle-11/full/157,89/0/default.jpg" title="Edward Boyle Library - level 11" /></figure>
+            <div>
+                <p>Image: 
+                    <a href="http://iiif.gdmrdigital.com/openseadragon/index.html?image=https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/original/edwardboyle-11/info.json" target="_blank">View image in OpenSeaDragon</a>
+                </p>
+                <p>Manifest: 
+                    <a href="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/edwardboyle-11/manifest.json">JSON-LD</a> | 
+                    <a href="https://projectmirador.org/embed/?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/edwardboyle-11/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/manifest.json" target="_blank">View in Mirador</a> | 
+                    <a href="https://uv-v3.netlify.app/#?c=&amp;m=&amp;s=&amp;cv=&amp;manifest=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/edwardboyle-11/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/manifest.json" target="_blank">View in Universal Viewer</a>        | 
+                    <a href="https://ncsu-libraries.github.io/annona/tools/#/display?url=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/edwardboyle-11/manifest.json&amp;viewtype=iiif-storyboard&amp;settings=%7B%22fullpage%22%3Atrue%7D" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/manifest.json" target="_blank">View in Annona</a> | 
+                    <a href="https://samvera-labs.github.io/clover-iiif/docs/viewer/demo?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/edwardboyle-11/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/manifest.json" target="_blank">View in Clover</a> | 
+                    <a href="https://demo.viewer.glycerine.io/viewer?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/edwardboyle-11/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/manifest.json" target="_blank">View in Glycerine Viewer</a> | 
+                    <a href="https://theseusviewer.org/?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/edwardboyle-11/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/manifest.json" target="_blank">View in Theseus</a> | 
+                    <a href="http://codh.rois.ac.jp/software/iiif-curation-viewer/demo/?manifest=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/edwardboyle-11/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/manifest.json" target="_blank">View in IIIF Curation Viewer</a>
+                </p>
+            </div>
+        </div>
+    </li>
+  
+    <li>
+        <h3>Edward Boyle Library - level 12</h3>
+        <div class="iiif-links">
+            
+            <figure><img src="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/edwardboyle-12/full/157,92/0/default.jpg" title="Edward Boyle Library - level 12" /></figure>
+            <div>
+                <p>Image: 
+                    <a href="http://iiif.gdmrdigital.com/openseadragon/index.html?image=https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/original/edwardboyle-12/info.json" target="_blank">View image in OpenSeaDragon</a>
+                </p>
+                <p>Manifest: 
+                    <a href="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/edwardboyle-12/manifest.json">JSON-LD</a> | 
+                    <a href="https://projectmirador.org/embed/?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/edwardboyle-12/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/manifest.json" target="_blank">View in Mirador</a> | 
+                    <a href="https://uv-v3.netlify.app/#?c=&amp;m=&amp;s=&amp;cv=&amp;manifest=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/edwardboyle-12/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/manifest.json" target="_blank">View in Universal Viewer</a>        | 
+                    <a href="https://ncsu-libraries.github.io/annona/tools/#/display?url=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/edwardboyle-12/manifest.json&amp;viewtype=iiif-storyboard&amp;settings=%7B%22fullpage%22%3Atrue%7D" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/manifest.json" target="_blank">View in Annona</a> | 
+                    <a href="https://samvera-labs.github.io/clover-iiif/docs/viewer/demo?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/edwardboyle-12/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/manifest.json" target="_blank">View in Clover</a> | 
+                    <a href="https://demo.viewer.glycerine.io/viewer?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/edwardboyle-12/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/manifest.json" target="_blank">View in Glycerine Viewer</a> | 
+                    <a href="https://theseusviewer.org/?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/edwardboyle-12/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/manifest.json" target="_blank">View in Theseus</a> | 
+                    <a href="http://codh.rois.ac.jp/software/iiif-curation-viewer/demo/?manifest=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/edwardboyle-12/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/manifest.json" target="_blank">View in IIIF Curation Viewer</a>
+                </p>
+            </div>
+        </div>
+    </li>
+  
+    <li>
+        <h3>Edward Boyle Library - level 13</h3>
+        <div class="iiif-links">
+            
+            <figure><img src="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/edwardboyle-13/full/157,88/0/default.jpg" title="Edward Boyle Library - level 13" /></figure>
+            <div>
+                <p>Image: 
+                    <a href="http://iiif.gdmrdigital.com/openseadragon/index.html?image=https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/original/edwardboyle-13/info.json" target="_blank">View image in OpenSeaDragon</a>
+                </p>
+                <p>Manifest: 
+                    <a href="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/edwardboyle-13/manifest.json">JSON-LD</a> | 
+                    <a href="https://projectmirador.org/embed/?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/edwardboyle-13/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-13/manifest.json" target="_blank">View in Mirador</a> | 
+                    <a href="https://uv-v3.netlify.app/#?c=&amp;m=&amp;s=&amp;cv=&amp;manifest=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/edwardboyle-13/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-13/manifest.json" target="_blank">View in Universal Viewer</a>        | 
+                    <a href="https://ncsu-libraries.github.io/annona/tools/#/display?url=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/edwardboyle-13/manifest.json&amp;viewtype=iiif-storyboard&amp;settings=%7B%22fullpage%22%3Atrue%7D" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-13/manifest.json" target="_blank">View in Annona</a> | 
+                    <a href="https://samvera-labs.github.io/clover-iiif/docs/viewer/demo?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/edwardboyle-13/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-13/manifest.json" target="_blank">View in Clover</a> | 
+                    <a href="https://demo.viewer.glycerine.io/viewer?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/edwardboyle-13/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-13/manifest.json" target="_blank">View in Glycerine Viewer</a> | 
+                    <a href="https://theseusviewer.org/?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/edwardboyle-13/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-13/manifest.json" target="_blank">View in Theseus</a> | 
+                    <a href="http://codh.rois.ac.jp/software/iiif-curation-viewer/demo/?manifest=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/edwardboyle-13/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-13/manifest.json" target="_blank">View in IIIF Curation Viewer</a>
+                </p>
+            </div>
+        </div>
+    </li>
+  
+  </ul>
+
+<h2>Health Sciences Library</h2>
+<ul class="iiif-floors">
+  
+    <li>
+        <h3>Health Sciences Library</h3>
+        <div class="iiif-links">
+            
+            <figure><img src="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/health-sciences/full/120,186/0/default.jpg" title="Health Sciences Library" /></figure>
+            <div>
+                <p>Image: 
+                    <a href="http://iiif.gdmrdigital.com/openseadragon/index.html?image=https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/original/health-sciences/info.json" target="_blank">View image in OpenSeaDragon</a>
+                </p>
+                <p>Manifest: 
+                    <a href="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/health-sciences/manifest.json">JSON-LD</a> | 
+                    <a href="https://projectmirador.org/embed/?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/health-sciences/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/health-sciences/manifest.json" target="_blank">View in Mirador</a> | 
+                    <a href="https://uv-v3.netlify.app/#?c=&amp;m=&amp;s=&amp;cv=&amp;manifest=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/health-sciences/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/health-sciences/manifest.json" target="_blank">View in Universal Viewer</a>        | 
+                    <a href="https://ncsu-libraries.github.io/annona/tools/#/display?url=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/health-sciences/manifest.json&amp;viewtype=iiif-storyboard&amp;settings=%7B%22fullpage%22%3Atrue%7D" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/health-sciences/manifest.json" target="_blank">View in Annona</a> | 
+                    <a href="https://samvera-labs.github.io/clover-iiif/docs/viewer/demo?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/health-sciences/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/health-sciences/manifest.json" target="_blank">View in Clover</a> | 
+                    <a href="https://demo.viewer.glycerine.io/viewer?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/health-sciences/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/health-sciences/manifest.json" target="_blank">View in Glycerine Viewer</a> | 
+                    <a href="https://theseusviewer.org/?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/health-sciences/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/health-sciences/manifest.json" target="_blank">View in Theseus</a> | 
+                    <a href="http://codh.rois.ac.jp/software/iiif-curation-viewer/demo/?manifest=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/health-sciences/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/health-sciences/manifest.json" target="_blank">View in IIIF Curation Viewer</a>
+                </p>
+            </div>
+        </div>
+    </li>
+  
+  </ul>
+
+<h2>Laidlaw Library</h2>
+<ul class="iiif-floors">
+  
+    <li>
+        <h3>Laidlaw Library - Ground Floor</h3>
+        <div class="iiif-links">
+            
+            <figure><img src="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/laidlaw-ground/full/157,82/0/default.jpg" title="Laidlaw Library - Ground Floor" /></figure>
+            <div>
+                <p>Image: 
+                    <a href="http://iiif.gdmrdigital.com/openseadragon/index.html?image=https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/original/laidlaw-ground/info.json" target="_blank">View image in OpenSeaDragon</a>
+                </p>
+                <p>Manifest: 
+                    <a href="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/laidlaw-ground/manifest.json">JSON-LD</a> | 
+                    <a href="https://projectmirador.org/embed/?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/laidlaw-ground/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-ground/manifest.json" target="_blank">View in Mirador</a> | 
+                    <a href="https://uv-v3.netlify.app/#?c=&amp;m=&amp;s=&amp;cv=&amp;manifest=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/laidlaw-ground/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-ground/manifest.json" target="_blank">View in Universal Viewer</a>        | 
+                    <a href="https://ncsu-libraries.github.io/annona/tools/#/display?url=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/laidlaw-ground/manifest.json&amp;viewtype=iiif-storyboard&amp;settings=%7B%22fullpage%22%3Atrue%7D" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-ground/manifest.json" target="_blank">View in Annona</a> | 
+                    <a href="https://samvera-labs.github.io/clover-iiif/docs/viewer/demo?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/laidlaw-ground/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-ground/manifest.json" target="_blank">View in Clover</a> | 
+                    <a href="https://demo.viewer.glycerine.io/viewer?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/laidlaw-ground/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-ground/manifest.json" target="_blank">View in Glycerine Viewer</a> | 
+                    <a href="https://theseusviewer.org/?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/laidlaw-ground/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-ground/manifest.json" target="_blank">View in Theseus</a> | 
+                    <a href="http://codh.rois.ac.jp/software/iiif-curation-viewer/demo/?manifest=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/laidlaw-ground/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-ground/manifest.json" target="_blank">View in IIIF Curation Viewer</a>
+                </p>
+            </div>
+        </div>
+    </li>
+  
+    <li>
+        <h3>Laidlaw Library - First Floor</h3>
+        <div class="iiif-links">
+            
+            <figure><img src="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/laidlaw-first/full/157,81/0/default.jpg" title="Laidlaw Library - First Floor" /></figure>
+            <div>
+                <p>Image: 
+                    <a href="http://iiif.gdmrdigital.com/openseadragon/index.html?image=https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/original/laidlaw-first/info.json" target="_blank">View image in OpenSeaDragon</a>
+                </p>
+                <p>Manifest: 
+                    <a href="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/laidlaw-first/manifest.json">JSON-LD</a> | 
+                    <a href="https://projectmirador.org/embed/?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/laidlaw-first/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-first/manifest.json" target="_blank">View in Mirador</a> | 
+                    <a href="https://uv-v3.netlify.app/#?c=&amp;m=&amp;s=&amp;cv=&amp;manifest=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/laidlaw-first/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-first/manifest.json" target="_blank">View in Universal Viewer</a>        | 
+                    <a href="https://ncsu-libraries.github.io/annona/tools/#/display?url=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/laidlaw-first/manifest.json&amp;viewtype=iiif-storyboard&amp;settings=%7B%22fullpage%22%3Atrue%7D" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-first/manifest.json" target="_blank">View in Annona</a> | 
+                    <a href="https://samvera-labs.github.io/clover-iiif/docs/viewer/demo?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/laidlaw-first/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-first/manifest.json" target="_blank">View in Clover</a> | 
+                    <a href="https://demo.viewer.glycerine.io/viewer?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/laidlaw-first/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-first/manifest.json" target="_blank">View in Glycerine Viewer</a> | 
+                    <a href="https://theseusviewer.org/?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/laidlaw-first/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-first/manifest.json" target="_blank">View in Theseus</a> | 
+                    <a href="http://codh.rois.ac.jp/software/iiif-curation-viewer/demo/?manifest=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/laidlaw-first/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-first/manifest.json" target="_blank">View in IIIF Curation Viewer</a>
+                </p>
+            </div>
+        </div>
+    </li>
+  
+    <li>
+        <h3>Laidlaw Library - Second Floor</h3>
+        <div class="iiif-links">
+            
+            <figure><img src="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/laidlaw-second/full/157,81/0/default.jpg" title="Laidlaw Library - Second Floor" /></figure>
+            <div>
+                <p>Image: 
+                    <a href="http://iiif.gdmrdigital.com/openseadragon/index.html?image=https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/original/laidlaw-second/info.json" target="_blank">View image in OpenSeaDragon</a>
+                </p>
+                <p>Manifest: 
+                    <a href="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/laidlaw-second/manifest.json">JSON-LD</a> | 
+                    <a href="https://projectmirador.org/embed/?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/laidlaw-second/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/manifest.json" target="_blank">View in Mirador</a> | 
+                    <a href="https://uv-v3.netlify.app/#?c=&amp;m=&amp;s=&amp;cv=&amp;manifest=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/laidlaw-second/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/manifest.json" target="_blank">View in Universal Viewer</a>        | 
+                    <a href="https://ncsu-libraries.github.io/annona/tools/#/display?url=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/laidlaw-second/manifest.json&amp;viewtype=iiif-storyboard&amp;settings=%7B%22fullpage%22%3Atrue%7D" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/manifest.json" target="_blank">View in Annona</a> | 
+                    <a href="https://samvera-labs.github.io/clover-iiif/docs/viewer/demo?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/laidlaw-second/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/manifest.json" target="_blank">View in Clover</a> | 
+                    <a href="https://demo.viewer.glycerine.io/viewer?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/laidlaw-second/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/manifest.json" target="_blank">View in Glycerine Viewer</a> | 
+                    <a href="https://theseusviewer.org/?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/laidlaw-second/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/manifest.json" target="_blank">View in Theseus</a> | 
+                    <a href="http://codh.rois.ac.jp/software/iiif-curation-viewer/demo/?manifest=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/laidlaw-second/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/manifest.json" target="_blank">View in IIIF Curation Viewer</a>
+                </p>
+            </div>
+        </div>
+    </li>
+  
+    <li>
+        <h3>Laidlaw Library - Third Floor</h3>
+        <div class="iiif-links">
+            
+            <figure><img src="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/laidlaw-third/full/157,109/0/default.jpg" title="Laidlaw Library - Third Floor" /></figure>
+            <div>
+                <p>Image: 
+                    <a href="http://iiif.gdmrdigital.com/openseadragon/index.html?image=https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/original/laidlaw-third/info.json" target="_blank">View image in OpenSeaDragon</a>
+                </p>
+                <p>Manifest: 
+                    <a href="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/laidlaw-third/manifest.json">JSON-LD</a> | 
+                    <a href="https://projectmirador.org/embed/?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/laidlaw-third/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-third/manifest.json" target="_blank">View in Mirador</a> | 
+                    <a href="https://uv-v3.netlify.app/#?c=&amp;m=&amp;s=&amp;cv=&amp;manifest=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/laidlaw-third/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-third/manifest.json" target="_blank">View in Universal Viewer</a>        | 
+                    <a href="https://ncsu-libraries.github.io/annona/tools/#/display?url=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/laidlaw-third/manifest.json&amp;viewtype=iiif-storyboard&amp;settings=%7B%22fullpage%22%3Atrue%7D" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-third/manifest.json" target="_blank">View in Annona</a> | 
+                    <a href="https://samvera-labs.github.io/clover-iiif/docs/viewer/demo?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/laidlaw-third/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-third/manifest.json" target="_blank">View in Clover</a> | 
+                    <a href="https://demo.viewer.glycerine.io/viewer?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/laidlaw-third/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-third/manifest.json" target="_blank">View in Glycerine Viewer</a> | 
+                    <a href="https://theseusviewer.org/?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/laidlaw-third/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-third/manifest.json" target="_blank">View in Theseus</a> | 
+                    <a href="http://codh.rois.ac.jp/software/iiif-curation-viewer/demo/?manifest=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/original/laidlaw-third/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-third/manifest.json" target="_blank">View in IIIF Curation Viewer</a>
+                </p>
+            </div>
+        </div>
+    </li>
+  
+  </ul>
+
+<h1>Cropped images</h1>
+
+<h2>Brotherton Library</h2>
+<ul class="iiif-floors">
+  
+    <li>
+        <h3>Brotherton Library Main Building - level 1</h3>
+        <div class="iiif-links">
+            
+            <figure><img src="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-m1/full/145,147/0/default.jpg" title="Brotherton Library Main Building - level 1" /></figure>
+            <div>
+                <p>Image: 
+                    <a href="http://iiif.gdmrdigital.com/openseadragon/index.html?image=https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-m1/info.json" target="_blank">View image in OpenSeaDragon</a>
+                </p>
+                <p>Manifest: 
+                    <a href="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-m1/manifest.json">JSON-LD</a> | 
+                    <a href="https://projectmirador.org/embed/?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-m1/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/brotherton-m1/manifest.json" target="_blank">View in Mirador</a> | 
+                    <a href="https://uv-v3.netlify.app/#?c=&amp;m=&amp;s=&amp;cv=&amp;manifest=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-m1/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/brotherton-m1/manifest.json" target="_blank">View in Universal Viewer</a>        | 
+                    <a href="https://ncsu-libraries.github.io/annona/tools/#/display?url=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-m1/manifest.json&amp;viewtype=iiif-storyboard&amp;settings=%7B%22fullpage%22%3Atrue%7D" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/brotherton-m1/manifest.json" target="_blank">View in Annona</a> | 
+                    <a href="https://samvera-labs.github.io/clover-iiif/docs/viewer/demo?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-m1/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/brotherton-m1/manifest.json" target="_blank">View in Clover</a> | 
+                    <a href="https://demo.viewer.glycerine.io/viewer?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-m1/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/brotherton-m1/manifest.json" target="_blank">View in Glycerine Viewer</a> | 
+                    <a href="https://theseusviewer.org/?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-m1/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/brotherton-m1/manifest.json" target="_blank">View in Theseus</a> | 
+                    <a href="http://codh.rois.ac.jp/software/iiif-curation-viewer/demo/?manifest=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-m1/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/brotherton-m1/manifest.json" target="_blank">View in IIIF Curation Viewer</a>
+                </p>
+            </div>
+        </div>
+    </li>
+  
+    <li>
+        <h3>Brotherton Library Main Building - level 2</h3>
+        <div class="iiif-links">
+            
+            <figure><img src="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-m2/full/145,147/0/default.jpg" title="Brotherton Library Main Building - level 2" /></figure>
+            <div>
+                <p>Image: 
+                    <a href="http://iiif.gdmrdigital.com/openseadragon/index.html?image=https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-m2/info.json" target="_blank">View image in OpenSeaDragon</a>
+                </p>
+                <p>Manifest: 
+                    <a href="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-m2/manifest.json">JSON-LD</a> | 
+                    <a href="https://projectmirador.org/embed/?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-m2/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/brotherton-m2/manifest.json" target="_blank">View in Mirador</a> | 
+                    <a href="https://uv-v3.netlify.app/#?c=&amp;m=&amp;s=&amp;cv=&amp;manifest=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-m2/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/brotherton-m2/manifest.json" target="_blank">View in Universal Viewer</a>        | 
+                    <a href="https://ncsu-libraries.github.io/annona/tools/#/display?url=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-m2/manifest.json&amp;viewtype=iiif-storyboard&amp;settings=%7B%22fullpage%22%3Atrue%7D" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/brotherton-m2/manifest.json" target="_blank">View in Annona</a> | 
+                    <a href="https://samvera-labs.github.io/clover-iiif/docs/viewer/demo?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-m2/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/brotherton-m2/manifest.json" target="_blank">View in Clover</a> | 
+                    <a href="https://demo.viewer.glycerine.io/viewer?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-m2/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/brotherton-m2/manifest.json" target="_blank">View in Glycerine Viewer</a> | 
+                    <a href="https://theseusviewer.org/?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-m2/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/brotherton-m2/manifest.json" target="_blank">View in Theseus</a> | 
+                    <a href="http://codh.rois.ac.jp/software/iiif-curation-viewer/demo/?manifest=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-m2/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/brotherton-m2/manifest.json" target="_blank">View in IIIF Curation Viewer</a>
+                </p>
+            </div>
+        </div>
+    </li>
+  
+    <li>
+        <h3>Brotherton Library Main Building - level 3</h3>
+        <div class="iiif-links">
+            
+            <figure><img src="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-m3/full/145,147/0/default.jpg" title="Brotherton Library Main Building - level 3" /></figure>
+            <div>
+                <p>Image: 
+                    <a href="http://iiif.gdmrdigital.com/openseadragon/index.html?image=https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-m3/info.json" target="_blank">View image in OpenSeaDragon</a>
+                </p>
+                <p>Manifest: 
+                    <a href="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-m3/manifest.json">JSON-LD</a> | 
+                    <a href="https://projectmirador.org/embed/?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-m3/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/brotherton-m3/manifest.json" target="_blank">View in Mirador</a> | 
+                    <a href="https://uv-v3.netlify.app/#?c=&amp;m=&amp;s=&amp;cv=&amp;manifest=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-m3/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/brotherton-m3/manifest.json" target="_blank">View in Universal Viewer</a>        | 
+                    <a href="https://ncsu-libraries.github.io/annona/tools/#/display?url=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-m3/manifest.json&amp;viewtype=iiif-storyboard&amp;settings=%7B%22fullpage%22%3Atrue%7D" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/brotherton-m3/manifest.json" target="_blank">View in Annona</a> | 
+                    <a href="https://samvera-labs.github.io/clover-iiif/docs/viewer/demo?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-m3/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/brotherton-m3/manifest.json" target="_blank">View in Clover</a> | 
+                    <a href="https://demo.viewer.glycerine.io/viewer?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-m3/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/brotherton-m3/manifest.json" target="_blank">View in Glycerine Viewer</a> | 
+                    <a href="https://theseusviewer.org/?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-m3/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/brotherton-m3/manifest.json" target="_blank">View in Theseus</a> | 
+                    <a href="http://codh.rois.ac.jp/software/iiif-curation-viewer/demo/?manifest=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-m3/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/brotherton-m3/manifest.json" target="_blank">View in IIIF Curation Viewer</a>
+                </p>
+            </div>
+        </div>
+    </li>
+  
+    <li>
+        <h3>Brotherton Library Main Building - level 4</h3>
+        <div class="iiif-links">
+            
+            <figure><img src="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-m4/full/145,147/0/default.jpg" title="Brotherton Library Main Building - level 4" /></figure>
+            <div>
+                <p>Image: 
+                    <a href="http://iiif.gdmrdigital.com/openseadragon/index.html?image=https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-m4/info.json" target="_blank">View image in OpenSeaDragon</a>
+                </p>
+                <p>Manifest: 
+                    <a href="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-m4/manifest.json">JSON-LD</a> | 
+                    <a href="https://projectmirador.org/embed/?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-m4/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/brotherton-m4/manifest.json" target="_blank">View in Mirador</a> | 
+                    <a href="https://uv-v3.netlify.app/#?c=&amp;m=&amp;s=&amp;cv=&amp;manifest=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-m4/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/brotherton-m4/manifest.json" target="_blank">View in Universal Viewer</a>        | 
+                    <a href="https://ncsu-libraries.github.io/annona/tools/#/display?url=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-m4/manifest.json&amp;viewtype=iiif-storyboard&amp;settings=%7B%22fullpage%22%3Atrue%7D" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/brotherton-m4/manifest.json" target="_blank">View in Annona</a> | 
+                    <a href="https://samvera-labs.github.io/clover-iiif/docs/viewer/demo?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-m4/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/brotherton-m4/manifest.json" target="_blank">View in Clover</a> | 
+                    <a href="https://demo.viewer.glycerine.io/viewer?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-m4/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/brotherton-m4/manifest.json" target="_blank">View in Glycerine Viewer</a> | 
+                    <a href="https://theseusviewer.org/?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-m4/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/brotherton-m4/manifest.json" target="_blank">View in Theseus</a> | 
+                    <a href="http://codh.rois.ac.jp/software/iiif-curation-viewer/demo/?manifest=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-m4/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/brotherton-m4/manifest.json" target="_blank">View in IIIF Curation Viewer</a>
+                </p>
+            </div>
+        </div>
+    </li>
+  
+    <li>
+        <h3>Brotherton Library West Wing - level 3</h3>
+        <div class="iiif-links">
+            
+            <figure><img src="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/full/172,198/0/default.jpg" title="Brotherton Library West Wing - level 3" /></figure>
+            <div>
+                <p>Image: 
+                    <a href="http://iiif.gdmrdigital.com/openseadragon/index.html?image=https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/info.json" target="_blank">View image in OpenSeaDragon</a>
+                </p>
+                <p>Manifest: 
+                    <a href="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/manifest.json">JSON-LD</a> | 
+                    <a href="https://projectmirador.org/embed/?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/brotherton-w2/manifest.json" target="_blank">View in Mirador</a> | 
+                    <a href="https://uv-v3.netlify.app/#?c=&amp;m=&amp;s=&amp;cv=&amp;manifest=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/brotherton-w2/manifest.json" target="_blank">View in Universal Viewer</a>        | 
+                    <a href="https://ncsu-libraries.github.io/annona/tools/#/display?url=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/manifest.json&amp;viewtype=iiif-storyboard&amp;settings=%7B%22fullpage%22%3Atrue%7D" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/brotherton-w2/manifest.json" target="_blank">View in Annona</a> | 
+                    <a href="https://samvera-labs.github.io/clover-iiif/docs/viewer/demo?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/brotherton-w2/manifest.json" target="_blank">View in Clover</a> | 
+                    <a href="https://demo.viewer.glycerine.io/viewer?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/brotherton-w2/manifest.json" target="_blank">View in Glycerine Viewer</a> | 
+                    <a href="https://theseusviewer.org/?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/brotherton-w2/manifest.json" target="_blank">View in Theseus</a> | 
+                    <a href="http://codh.rois.ac.jp/software/iiif-curation-viewer/demo/?manifest=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w2/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/brotherton-w2/manifest.json" target="_blank">View in IIIF Curation Viewer</a>
+                </p>
+            </div>
+        </div>
+    </li>
+  
+    <li>
+        <h3>Brotherton Library West Wing - level 3</h3>
+        <div class="iiif-links">
+            
+            <figure><img src="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w3/full/172,198/0/default.jpg" title="Brotherton Library West Wing - level 3" /></figure>
+            <div>
+                <p>Image: 
+                    <a href="http://iiif.gdmrdigital.com/openseadragon/index.html?image=https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w3/info.json" target="_blank">View image in OpenSeaDragon</a>
+                </p>
+                <p>Manifest: 
+                    <a href="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w3/manifest.json">JSON-LD</a> | 
+                    <a href="https://projectmirador.org/embed/?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w3/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/brotherton-w3/manifest.json" target="_blank">View in Mirador</a> | 
+                    <a href="https://uv-v3.netlify.app/#?c=&amp;m=&amp;s=&amp;cv=&amp;manifest=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w3/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/brotherton-w3/manifest.json" target="_blank">View in Universal Viewer</a>        | 
+                    <a href="https://ncsu-libraries.github.io/annona/tools/#/display?url=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w3/manifest.json&amp;viewtype=iiif-storyboard&amp;settings=%7B%22fullpage%22%3Atrue%7D" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/brotherton-w3/manifest.json" target="_blank">View in Annona</a> | 
+                    <a href="https://samvera-labs.github.io/clover-iiif/docs/viewer/demo?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w3/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/brotherton-w3/manifest.json" target="_blank">View in Clover</a> | 
+                    <a href="https://demo.viewer.glycerine.io/viewer?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w3/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/brotherton-w3/manifest.json" target="_blank">View in Glycerine Viewer</a> | 
+                    <a href="https://theseusviewer.org/?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w3/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/brotherton-w3/manifest.json" target="_blank">View in Theseus</a> | 
+                    <a href="http://codh.rois.ac.jp/software/iiif-curation-viewer/demo/?manifest=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-w3/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/brotherton-w3/manifest.json" target="_blank">View in IIIF Curation Viewer</a>
+                </p>
+            </div>
+        </div>
+    </li>
+  
+  </ul>
+
+<h2>Edward Boyle Library</h2>
+<ul class="iiif-floors">
+  
+    <li>
+        <h3>Edward Boyle Library - level 8</h3>
+        <div class="iiif-links">
+            
+            <figure><img src="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-8/full/157,87/0/default.jpg" title="Edward Boyle Library - level 8" /></figure>
+            <div>
+                <p>Image: 
+                    <a href="http://iiif.gdmrdigital.com/openseadragon/index.html?image=https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-8/info.json" target="_blank">View image in OpenSeaDragon</a>
+                </p>
+                <p>Manifest: 
+                    <a href="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-8/manifest.json">JSON-LD</a> | 
+                    <a href="https://projectmirador.org/embed/?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-8/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-8/manifest.json" target="_blank">View in Mirador</a> | 
+                    <a href="https://uv-v3.netlify.app/#?c=&amp;m=&amp;s=&amp;cv=&amp;manifest=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-8/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-8/manifest.json" target="_blank">View in Universal Viewer</a>        | 
+                    <a href="https://ncsu-libraries.github.io/annona/tools/#/display?url=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-8/manifest.json&amp;viewtype=iiif-storyboard&amp;settings=%7B%22fullpage%22%3Atrue%7D" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-8/manifest.json" target="_blank">View in Annona</a> | 
+                    <a href="https://samvera-labs.github.io/clover-iiif/docs/viewer/demo?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-8/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-8/manifest.json" target="_blank">View in Clover</a> | 
+                    <a href="https://demo.viewer.glycerine.io/viewer?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-8/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-8/manifest.json" target="_blank">View in Glycerine Viewer</a> | 
+                    <a href="https://theseusviewer.org/?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-8/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-8/manifest.json" target="_blank">View in Theseus</a> | 
+                    <a href="http://codh.rois.ac.jp/software/iiif-curation-viewer/demo/?manifest=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-8/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-8/manifest.json" target="_blank">View in IIIF Curation Viewer</a>
+                </p>
+            </div>
+        </div>
+    </li>
+  
+    <li>
+        <h3>Edward Boyle Library - level 9</h3>
+        <div class="iiif-links">
+            
+            <figure><img src="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-9/full/157,87/0/default.jpg" title="Edward Boyle Library - level 9" /></figure>
+            <div>
+                <p>Image: 
+                    <a href="http://iiif.gdmrdigital.com/openseadragon/index.html?image=https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-9/info.json" target="_blank">View image in OpenSeaDragon</a>
+                </p>
+                <p>Manifest: 
+                    <a href="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-9/manifest.json">JSON-LD</a> | 
+                    <a href="https://projectmirador.org/embed/?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-9/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-9/manifest.json" target="_blank">View in Mirador</a> | 
+                    <a href="https://uv-v3.netlify.app/#?c=&amp;m=&amp;s=&amp;cv=&amp;manifest=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-9/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-9/manifest.json" target="_blank">View in Universal Viewer</a>        | 
+                    <a href="https://ncsu-libraries.github.io/annona/tools/#/display?url=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-9/manifest.json&amp;viewtype=iiif-storyboard&amp;settings=%7B%22fullpage%22%3Atrue%7D" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-9/manifest.json" target="_blank">View in Annona</a> | 
+                    <a href="https://samvera-labs.github.io/clover-iiif/docs/viewer/demo?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-9/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-9/manifest.json" target="_blank">View in Clover</a> | 
+                    <a href="https://demo.viewer.glycerine.io/viewer?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-9/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-9/manifest.json" target="_blank">View in Glycerine Viewer</a> | 
+                    <a href="https://theseusviewer.org/?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-9/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-9/manifest.json" target="_blank">View in Theseus</a> | 
+                    <a href="http://codh.rois.ac.jp/software/iiif-curation-viewer/demo/?manifest=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-9/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-9/manifest.json" target="_blank">View in IIIF Curation Viewer</a>
+                </p>
+            </div>
+        </div>
+    </li>
+  
+    <li>
+        <h3>Edward Boyle Library - level 10</h3>
+        <div class="iiif-links">
+            
+            <figure><img src="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-10/full/157,87/0/default.jpg" title="Edward Boyle Library - level 10" /></figure>
+            <div>
+                <p>Image: 
+                    <a href="http://iiif.gdmrdigital.com/openseadragon/index.html?image=https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-10/info.json" target="_blank">View image in OpenSeaDragon</a>
+                </p>
+                <p>Manifest: 
+                    <a href="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-10/manifest.json">JSON-LD</a> | 
+                    <a href="https://projectmirador.org/embed/?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-10/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-10/manifest.json" target="_blank">View in Mirador</a> | 
+                    <a href="https://uv-v3.netlify.app/#?c=&amp;m=&amp;s=&amp;cv=&amp;manifest=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-10/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-10/manifest.json" target="_blank">View in Universal Viewer</a>        | 
+                    <a href="https://ncsu-libraries.github.io/annona/tools/#/display?url=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-10/manifest.json&amp;viewtype=iiif-storyboard&amp;settings=%7B%22fullpage%22%3Atrue%7D" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-10/manifest.json" target="_blank">View in Annona</a> | 
+                    <a href="https://samvera-labs.github.io/clover-iiif/docs/viewer/demo?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-10/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-10/manifest.json" target="_blank">View in Clover</a> | 
+                    <a href="https://demo.viewer.glycerine.io/viewer?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-10/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-10/manifest.json" target="_blank">View in Glycerine Viewer</a> | 
+                    <a href="https://theseusviewer.org/?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-10/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-10/manifest.json" target="_blank">View in Theseus</a> | 
+                    <a href="http://codh.rois.ac.jp/software/iiif-curation-viewer/demo/?manifest=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-10/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-10/manifest.json" target="_blank">View in IIIF Curation Viewer</a>
+                </p>
+            </div>
+        </div>
+    </li>
+  
+    <li>
+        <h3>Edward Boyle Library - level 11</h3>
+        <div class="iiif-links">
+            
+            <figure><img src="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-11/full/157,87/0/default.jpg" title="Edward Boyle Library - level 11" /></figure>
+            <div>
+                <p>Image: 
+                    <a href="http://iiif.gdmrdigital.com/openseadragon/index.html?image=https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-11/info.json" target="_blank">View image in OpenSeaDragon</a>
+                </p>
+                <p>Manifest: 
+                    <a href="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-11/manifest.json">JSON-LD</a> | 
+                    <a href="https://projectmirador.org/embed/?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-11/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/manifest.json" target="_blank">View in Mirador</a> | 
+                    <a href="https://uv-v3.netlify.app/#?c=&amp;m=&amp;s=&amp;cv=&amp;manifest=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-11/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/manifest.json" target="_blank">View in Universal Viewer</a>        | 
+                    <a href="https://ncsu-libraries.github.io/annona/tools/#/display?url=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-11/manifest.json&amp;viewtype=iiif-storyboard&amp;settings=%7B%22fullpage%22%3Atrue%7D" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/manifest.json" target="_blank">View in Annona</a> | 
+                    <a href="https://samvera-labs.github.io/clover-iiif/docs/viewer/demo?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-11/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/manifest.json" target="_blank">View in Clover</a> | 
+                    <a href="https://demo.viewer.glycerine.io/viewer?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-11/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/manifest.json" target="_blank">View in Glycerine Viewer</a> | 
+                    <a href="https://theseusviewer.org/?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-11/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/manifest.json" target="_blank">View in Theseus</a> | 
+                    <a href="http://codh.rois.ac.jp/software/iiif-curation-viewer/demo/?manifest=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-11/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-11/manifest.json" target="_blank">View in IIIF Curation Viewer</a>
+                </p>
+            </div>
+        </div>
+    </li>
+  
+    <li>
+        <h3>Edward Boyle Library - level 12</h3>
+        <div class="iiif-links">
+            
+            <figure><img src="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-12/full/157,87/0/default.jpg" title="Edward Boyle Library - level 12" /></figure>
+            <div>
+                <p>Image: 
+                    <a href="http://iiif.gdmrdigital.com/openseadragon/index.html?image=https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-12/info.json" target="_blank">View image in OpenSeaDragon</a>
+                </p>
+                <p>Manifest: 
+                    <a href="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-12/manifest.json">JSON-LD</a> | 
+                    <a href="https://projectmirador.org/embed/?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-12/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/manifest.json" target="_blank">View in Mirador</a> | 
+                    <a href="https://uv-v3.netlify.app/#?c=&amp;m=&amp;s=&amp;cv=&amp;manifest=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-12/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/manifest.json" target="_blank">View in Universal Viewer</a>        | 
+                    <a href="https://ncsu-libraries.github.io/annona/tools/#/display?url=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-12/manifest.json&amp;viewtype=iiif-storyboard&amp;settings=%7B%22fullpage%22%3Atrue%7D" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/manifest.json" target="_blank">View in Annona</a> | 
+                    <a href="https://samvera-labs.github.io/clover-iiif/docs/viewer/demo?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-12/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/manifest.json" target="_blank">View in Clover</a> | 
+                    <a href="https://demo.viewer.glycerine.io/viewer?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-12/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/manifest.json" target="_blank">View in Glycerine Viewer</a> | 
+                    <a href="https://theseusviewer.org/?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-12/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/manifest.json" target="_blank">View in Theseus</a> | 
+                    <a href="http://codh.rois.ac.jp/software/iiif-curation-viewer/demo/?manifest=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-12/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-12/manifest.json" target="_blank">View in IIIF Curation Viewer</a>
+                </p>
+            </div>
+        </div>
+    </li>
+  
+    <li>
+        <h3>Edward Boyle Library - level 13</h3>
+        <div class="iiif-links">
+            
+            <figure><img src="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/full/157,87/0/default.jpg" title="Edward Boyle Library - level 13" /></figure>
+            <div>
+                <p>Image: 
+                    <a href="http://iiif.gdmrdigital.com/openseadragon/index.html?image=https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/info.json" target="_blank">View image in OpenSeaDragon</a>
+                </p>
+                <p>Manifest: 
+                    <a href="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/manifest.json">JSON-LD</a> | 
+                    <a href="https://projectmirador.org/embed/?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-13/manifest.json" target="_blank">View in Mirador</a> | 
+                    <a href="https://uv-v3.netlify.app/#?c=&amp;m=&amp;s=&amp;cv=&amp;manifest=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-13/manifest.json" target="_blank">View in Universal Viewer</a>        | 
+                    <a href="https://ncsu-libraries.github.io/annona/tools/#/display?url=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/manifest.json&amp;viewtype=iiif-storyboard&amp;settings=%7B%22fullpage%22%3Atrue%7D" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-13/manifest.json" target="_blank">View in Annona</a> | 
+                    <a href="https://samvera-labs.github.io/clover-iiif/docs/viewer/demo?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-13/manifest.json" target="_blank">View in Clover</a> | 
+                    <a href="https://demo.viewer.glycerine.io/viewer?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-13/manifest.json" target="_blank">View in Glycerine Viewer</a> | 
+                    <a href="https://theseusviewer.org/?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-13/manifest.json" target="_blank">View in Theseus</a> | 
+                    <a href="http://codh.rois.ac.jp/software/iiif-curation-viewer/demo/?manifest=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/edwardboyle-13/manifest.json" target="_blank">View in IIIF Curation Viewer</a>
+                </p>
+            </div>
+        </div>
+    </li>
+  
+  </ul>
+
+<h2>Health Sciences Library</h2>
+<ul class="iiif-floors">
+  
+    <li>
+        <h3>Health Sciences Library</h3>
+        <div class="iiif-links">
+            
+            <figure><img src="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/health-sciences/full/120,186/0/default.jpg" title="Health Sciences Library" /></figure>
+            <div>
+                <p>Image: 
+                    <a href="http://iiif.gdmrdigital.com/openseadragon/index.html?image=https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/health-sciences/info.json" target="_blank">View image in OpenSeaDragon</a>
+                </p>
+                <p>Manifest: 
+                    <a href="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/health-sciences/manifest.json">JSON-LD</a> | 
+                    <a href="https://projectmirador.org/embed/?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/health-sciences/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/health-sciences/manifest.json" target="_blank">View in Mirador</a> | 
+                    <a href="https://uv-v3.netlify.app/#?c=&amp;m=&amp;s=&amp;cv=&amp;manifest=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/health-sciences/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/health-sciences/manifest.json" target="_blank">View in Universal Viewer</a>        | 
+                    <a href="https://ncsu-libraries.github.io/annona/tools/#/display?url=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/health-sciences/manifest.json&amp;viewtype=iiif-storyboard&amp;settings=%7B%22fullpage%22%3Atrue%7D" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/health-sciences/manifest.json" target="_blank">View in Annona</a> | 
+                    <a href="https://samvera-labs.github.io/clover-iiif/docs/viewer/demo?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/health-sciences/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/health-sciences/manifest.json" target="_blank">View in Clover</a> | 
+                    <a href="https://demo.viewer.glycerine.io/viewer?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/health-sciences/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/health-sciences/manifest.json" target="_blank">View in Glycerine Viewer</a> | 
+                    <a href="https://theseusviewer.org/?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/health-sciences/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/health-sciences/manifest.json" target="_blank">View in Theseus</a> | 
+                    <a href="http://codh.rois.ac.jp/software/iiif-curation-viewer/demo/?manifest=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/health-sciences/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/health-sciences/manifest.json" target="_blank">View in IIIF Curation Viewer</a>
+                </p>
+            </div>
+        </div>
+    </li>
+  
+  </ul>
+
+<h2>Laidlaw Library</h2>
+<ul class="iiif-floors">
+  
+    <li>
+        <h3>Laidlaw Library - Ground Floor</h3>
+        <div class="iiif-links">
+            
+            <figure><img src="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/laidlaw-ground/full/157,82/0/default.jpg" title="Laidlaw Library - Ground Floor" /></figure>
+            <div>
+                <p>Image: 
+                    <a href="http://iiif.gdmrdigital.com/openseadragon/index.html?image=https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/laidlaw-ground/info.json" target="_blank">View image in OpenSeaDragon</a>
+                </p>
+                <p>Manifest: 
+                    <a href="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/laidlaw-ground/manifest.json">JSON-LD</a> | 
+                    <a href="https://projectmirador.org/embed/?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/laidlaw-ground/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-ground/manifest.json" target="_blank">View in Mirador</a> | 
+                    <a href="https://uv-v3.netlify.app/#?c=&amp;m=&amp;s=&amp;cv=&amp;manifest=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/laidlaw-ground/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-ground/manifest.json" target="_blank">View in Universal Viewer</a>        | 
+                    <a href="https://ncsu-libraries.github.io/annona/tools/#/display?url=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/laidlaw-ground/manifest.json&amp;viewtype=iiif-storyboard&amp;settings=%7B%22fullpage%22%3Atrue%7D" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-ground/manifest.json" target="_blank">View in Annona</a> | 
+                    <a href="https://samvera-labs.github.io/clover-iiif/docs/viewer/demo?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/laidlaw-ground/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-ground/manifest.json" target="_blank">View in Clover</a> | 
+                    <a href="https://demo.viewer.glycerine.io/viewer?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/laidlaw-ground/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-ground/manifest.json" target="_blank">View in Glycerine Viewer</a> | 
+                    <a href="https://theseusviewer.org/?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/laidlaw-ground/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-ground/manifest.json" target="_blank">View in Theseus</a> | 
+                    <a href="http://codh.rois.ac.jp/software/iiif-curation-viewer/demo/?manifest=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/laidlaw-ground/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-ground/manifest.json" target="_blank">View in IIIF Curation Viewer</a>
+                </p>
+            </div>
+        </div>
+    </li>
+  
+    <li>
+        <h3>Laidlaw Library - First Floor</h3>
+        <div class="iiif-links">
+            
+            <figure><img src="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/laidlaw-first/full/157,82/0/default.jpg" title="Laidlaw Library - First Floor" /></figure>
+            <div>
+                <p>Image: 
+                    <a href="http://iiif.gdmrdigital.com/openseadragon/index.html?image=https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/laidlaw-first/info.json" target="_blank">View image in OpenSeaDragon</a>
+                </p>
+                <p>Manifest: 
+                    <a href="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/laidlaw-first/manifest.json">JSON-LD</a> | 
+                    <a href="https://projectmirador.org/embed/?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/laidlaw-first/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-first/manifest.json" target="_blank">View in Mirador</a> | 
+                    <a href="https://uv-v3.netlify.app/#?c=&amp;m=&amp;s=&amp;cv=&amp;manifest=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/laidlaw-first/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-first/manifest.json" target="_blank">View in Universal Viewer</a>        | 
+                    <a href="https://ncsu-libraries.github.io/annona/tools/#/display?url=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/laidlaw-first/manifest.json&amp;viewtype=iiif-storyboard&amp;settings=%7B%22fullpage%22%3Atrue%7D" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-first/manifest.json" target="_blank">View in Annona</a> | 
+                    <a href="https://samvera-labs.github.io/clover-iiif/docs/viewer/demo?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/laidlaw-first/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-first/manifest.json" target="_blank">View in Clover</a> | 
+                    <a href="https://demo.viewer.glycerine.io/viewer?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/laidlaw-first/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-first/manifest.json" target="_blank">View in Glycerine Viewer</a> | 
+                    <a href="https://theseusviewer.org/?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/laidlaw-first/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-first/manifest.json" target="_blank">View in Theseus</a> | 
+                    <a href="http://codh.rois.ac.jp/software/iiif-curation-viewer/demo/?manifest=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/laidlaw-first/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-first/manifest.json" target="_blank">View in IIIF Curation Viewer</a>
+                </p>
+            </div>
+        </div>
+    </li>
+  
+    <li>
+        <h3>Laidlaw Library - Second Floor</h3>
+        <div class="iiif-links">
+            
+            <figure><img src="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/laidlaw-second/full/157,82/0/default.jpg" title="Laidlaw Library - Second Floor" /></figure>
+            <div>
+                <p>Image: 
+                    <a href="http://iiif.gdmrdigital.com/openseadragon/index.html?image=https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/laidlaw-second/info.json" target="_blank">View image in OpenSeaDragon</a>
+                </p>
+                <p>Manifest: 
+                    <a href="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/laidlaw-second/manifest.json">JSON-LD</a> | 
+                    <a href="https://projectmirador.org/embed/?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/laidlaw-second/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/manifest.json" target="_blank">View in Mirador</a> | 
+                    <a href="https://uv-v3.netlify.app/#?c=&amp;m=&amp;s=&amp;cv=&amp;manifest=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/laidlaw-second/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/manifest.json" target="_blank">View in Universal Viewer</a>        | 
+                    <a href="https://ncsu-libraries.github.io/annona/tools/#/display?url=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/laidlaw-second/manifest.json&amp;viewtype=iiif-storyboard&amp;settings=%7B%22fullpage%22%3Atrue%7D" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/manifest.json" target="_blank">View in Annona</a> | 
+                    <a href="https://samvera-labs.github.io/clover-iiif/docs/viewer/demo?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/laidlaw-second/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/manifest.json" target="_blank">View in Clover</a> | 
+                    <a href="https://demo.viewer.glycerine.io/viewer?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/laidlaw-second/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/manifest.json" target="_blank">View in Glycerine Viewer</a> | 
+                    <a href="https://theseusviewer.org/?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/laidlaw-second/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/manifest.json" target="_blank">View in Theseus</a> | 
+                    <a href="http://codh.rois.ac.jp/software/iiif-curation-viewer/demo/?manifest=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/laidlaw-second/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-second/manifest.json" target="_blank">View in IIIF Curation Viewer</a>
+                </p>
+            </div>
+        </div>
+    </li>
+  
+    <li>
+        <h3>Laidlaw Library - Third Floor</h3>
+        <div class="iiif-links">
+            
+            <figure><img src="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/laidlaw-third/full/157,82/0/default.jpg" title="Laidlaw Library - Third Floor" /></figure>
+            <div>
+                <p>Image: 
+                    <a href="http://iiif.gdmrdigital.com/openseadragon/index.html?image=https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/laidlaw-third/info.json" target="_blank">View image in OpenSeaDragon</a>
+                </p>
+                <p>Manifest: 
+                    <a href="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/laidlaw-third/manifest.json">JSON-LD</a> | 
+                    <a href="https://projectmirador.org/embed/?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/laidlaw-third/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-third/manifest.json" target="_blank">View in Mirador</a> | 
+                    <a href="https://uv-v3.netlify.app/#?c=&amp;m=&amp;s=&amp;cv=&amp;manifest=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/laidlaw-third/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-third/manifest.json" target="_blank">View in Universal Viewer</a>        | 
+                    <a href="https://ncsu-libraries.github.io/annona/tools/#/display?url=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/laidlaw-third/manifest.json&amp;viewtype=iiif-storyboard&amp;settings=%7B%22fullpage%22%3Atrue%7D" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-third/manifest.json" target="_blank">View in Annona</a> | 
+                    <a href="https://samvera-labs.github.io/clover-iiif/docs/viewer/demo?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/laidlaw-third/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-third/manifest.json" target="_blank">View in Clover</a> | 
+                    <a href="https://demo.viewer.glycerine.io/viewer?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/laidlaw-third/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-third/manifest.json" target="_blank">View in Glycerine Viewer</a> | 
+                    <a href="https://theseusviewer.org/?iiif-content=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/laidlaw-third/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-third/manifest.json" target="_blank">View in Theseus</a> | 
+                    <a href="http://codh.rois.ac.jp/software/iiif-curation-viewer/demo/?manifest=https://dev-floorplans.library.leeds.ac.uk/assets/iiif/cropped/laidlaw-third/manifest.json" data-iiif-content="https://dev-floorplans.library.leeds.ac.uk/assets/iiif/laidlaw-third/manifest.json" target="_blank">View in IIIF Curation Viewer</a>
+                </p>
+            </div>
+        </div>
+    </li>
+  
+  </ul>
+
+
+    </div>
+  </main>
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+<script src="https://unpkg.com/@geoman-io/leaflet-geoman-free@2.17.0/dist/leaflet-geoman.js" integrity="sha256-pX70+HFTovwMt6Er9D4aTigqATNq8Cz/bY8Zj3DH66g=" crossorigin="anonymous"></script>
+
+<script src="https://dev-floorplans.library.leeds.ac.uk/assets/scripts/editor-bundle.js"></script>
+</body>
+</html>

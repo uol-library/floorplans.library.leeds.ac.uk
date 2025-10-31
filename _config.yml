@@ -6,9 +6,9 @@ description: >-
   to enable indoor wayfinding in the University's
   library spaces.
 environment: development
-url: "https://uol-library.github.io"
-baseurl: "/floorplans.library.leeds.ac.uk"
-destination: _site/
+url: "https://dev-floorplans.library.leeds.ac.uk"
+baseurl: ""
+destination: public/
 host: "localhost"
 google_analytics: ""
 photo_dir: "/assets/photos/"
