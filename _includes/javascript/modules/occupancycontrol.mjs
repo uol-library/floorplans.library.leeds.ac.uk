@@ -69,9 +69,8 @@ function updateOccupancy() {
     getJSON( options );
 }
 
-document.addEventListener( 'DOMContentLoaded', () => {
-    let de = new DomEvent();
-    de.on( floorselecter, 'change', function(){
+document.addEventListener( 'fpmapready', () => {
+    new DomEvent().on( floorselecter, 'change', function(){
         let c = document.getElementById('occupancyContainer');
         if ( this.options[this.selectedIndex].value !== '' ) {
             let floorid = this.options[this.selectedIndex].value;

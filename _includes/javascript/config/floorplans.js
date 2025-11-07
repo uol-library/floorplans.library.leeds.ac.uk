@@ -26,7 +26,7 @@ const floorplans = {
 	controls: null,
 	infoPanel: null,
 	currentFloor: false,
-	occupancyData = {
+	occupancyData: {
 		"Edward Boyle": {
 			"floorid": "edwardboyle",
 			"capacity": 1800,

@@ -18,7 +18,8 @@ export const floorplans = {
 		startLat: 0,
 		startLng: 0,
 		paddingTopLeft: [300,0],
-		paddingBottomRight: [0,0]
+		paddingBottomRight: [0,0],
+		baseURL: 'http://localhost:4000/floorplans.library.leeds.ac.uk/'
 	},
 	maxHeight: 0,
 	maxWidth: 0,
