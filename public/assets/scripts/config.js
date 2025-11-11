@@ -19,7 +19,7 @@ const floorplans = {
 		startLng: 0,
 		paddingTopLeft: [300,0],
 		paddingBottomRight: [0,0],
-		baseURL: 'https://dev-floorplans.library.leeds.ac.uk'
+		baseURL: 'http://localhost:4000'
 	},
 	maxHeight: 0,
 	maxWidth: 0,
