@@ -77,7 +77,7 @@ var addFloorLayer = function( floor ) {
                 let floorlayer = L.layerGroup([floorimg]);
                 
                 getJSON({
-                    "url": floor.dataurl,
+                    "url": floorplans.baseURL + floor.dataurl,
                     "key": floor.floorid,
                     "callback": function( data ) {
                         let shelfClassID = 1;
@@ -170,7 +170,7 @@ var addFloorLayer = function( floor ) {
                     }
                 });
             }
-            im.src = floor.imageurl;
+            im.src = floorplans.baseURL + floor.imageurl;
         });
     }
 };
