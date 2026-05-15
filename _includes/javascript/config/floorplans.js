@@ -7,6 +7,7 @@ const floorplans = {
 		startLat: 53.80790461539562,
 		startLng: -1.5534367612770303,
 	},
+	baseURL: '{{ site.url }}{{site.baseurl}}',
 	mapBounds: null,
 	map: null,
 	osm: null,
@@ -18,8 +19,7 @@ const floorplans = {
 		startLat: 0,
 		startLng: 0,
 		paddingTopLeft: [300,0],
-		paddingBottomRight: [0,0],
-		baseURL: '{{ site.url }}{{site.baseurl}}'
+		paddingBottomRight: [0,0]
 	},
 	maxHeight: 0,
 	maxWidth: 0,
