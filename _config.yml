@@ -31,6 +31,7 @@ exclude:
   - package*
   - Gemfile*
   - README.md
+  - LICENSE
   - public
   - node_modules
   - sync.sh
