@@ -1022,7 +1022,7 @@
             "type": "Feature",
             "id": 23,
             "properties": {
-                "name": "Laptop Locker Availability",
+                "name": "Laptop Lockers",
                 "type": "location",
                 "desc": "",
                 "icon": "laptop",

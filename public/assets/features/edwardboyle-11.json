@@ -2292,7 +2292,7 @@
                 "type": "location",
                 "desc": "",
                 "icon": "prayer",
-                "class": "group-space-location icon-prayer"
+                "class": "group-space-location"
             },
             "geometry": {
                 "type": "Polygon",

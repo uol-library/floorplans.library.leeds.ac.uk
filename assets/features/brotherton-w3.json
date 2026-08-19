@@ -92,44 +92,6 @@
         },
         {
             "type": "Feature",
-            "id": 2,
-            "properties": {
-                "name": "Desktop computers",
-                "type": "location",
-                "desc": "",
-                "icon": "monitor",
-                "class": "group-space-location"
-            },
-            "geometry": {
-                "type": "Polygon",
-                "coordinates": [
-                    [
-                        [
-                            62.125,
-                            -111.5
-                        ],
-                        [
-                            67.06,
-                            -111.5
-                        ],
-                        [
-                            67.0625,
-                            -131.125
-                        ],
-                        [
-                            62.5,
-                            -131
-                        ],
-                        [
-                            62.125,
-                            -111.5
-                        ]
-                    ]
-                ]
-            }
-        },
-        {
-            "type": "Feature",
             "id": 3,
             "properties": {
                 "name": "Print, Copy, Scan",
@@ -170,10 +132,10 @@
             "type": "Feature",
             "id": 4,
             "properties": {
-                "name": "IT Cluster",
+                "name": "Bring Your Own Device (BYOD) Zone",
                 "type": "location",
                 "desc": "",
-                "icon": "monitor",
+                "icon": "byod",
                 "class": "group-space-location"
             },
             "geometry": {
