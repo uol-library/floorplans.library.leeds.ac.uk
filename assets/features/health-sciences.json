@@ -15,18 +15,6 @@
                 "coordinates": [
                     [
                         [
-                            105.125,
-                            -60.996165
-                        ],
-                        [
-                            105.125,
-                            -68.36918
-                        ],
-                        [
-                            80.125,
-                            -68.244214
-                        ],
-                        [
                             80.125,
                             -89.613461
                         ],
@@ -79,64 +67,28 @@
                             -99.735736
                         ],
                         [
-                            49.25,
-                            -99.61077
-                        ],
-                        [
-                            49.25,
-                            -106.858819
-                        ],
-                        [
-                            63.5,
-                            -106.858819
-                        ],
-                        [
-                            63.25,
-                            -72.743003
-                        ],
-                        [
-                            63.03125,
-                            -72
-                        ],
-                        [
-                            62.25,
-                            -71.743272
-                        ],
-                        [
                             49.1875,
-                            -71.812483
+                            -99.6875
                         ],
                         [
-                            49.1875,
-                            -68.437483
+                            49.21875,
+                            -83.46875
                         ],
                         [
-                            39.75,
-                            -68.494147
+                            63.53125,
+                            -83.46875
                         ],
                         [
-                            39.75,
-                            -77.741657
+                            63.46875,
+                            -79.15625
                         ],
                         [
-                            17.5,
-                            -77.813694
+                            80.09375,
+                            -79.125
                         ],
                         [
-                            17.625,
-                            -86.811272
-                        ],
-                        [
-                            0.5,
-                            -86.747578
-                        ],
-                        [
-                            0.375,
-                            -61.065965
-                        ],
-                        [
-                            105.125,
-                            -60.996165
+                            80.125,
+                            -89.613461
                         ]
                     ]
                 ]
@@ -154,28 +106,6 @@
             "geometry": {
                 "type": "Polygon",
                 "coordinates": [
-                    [
-                        [
-                            49.21875,
-                            -106.889951
-                        ],
-                        [
-                            49.21875,
-                            -83.458759
-                        ],
-                        [
-                            63.40625,
-                            -83.458759
-                        ],
-                        [
-                            63.40625,
-                            -106.889951
-                        ],
-                        [
-                            49.21875,
-                            -106.889951
-                        ]
-                    ],
                     [
                         [
                             80.21875,
@@ -229,19 +159,83 @@
                         ],
                         [
                             76.65625,
-                            -4.502044
+                            -4.59375
                         ],
                         [
                             76.71875,
                             -23.403206
                         ],
                         [
-                            81.96875,
-                            -23.403206
+                            82.0625,
+                            -23.5
                         ],
                         [
                             82,
                             -61.01808
+                        ],
+                        [
+                            105.0625,
+                            -61.125
+                        ],
+                        [
+                            105.09375,
+                            -68.375
+                        ],
+                        [
+                            80.21875,
+                            -68.46875
+                        ],
+                        [
+                            80.0625,
+                            -79.1875
+                        ],
+                        [
+                            63.40625,
+                            -79.21875
+                        ],
+                        [
+                            63.53125,
+                            -72.59375
+                        ],
+                        [
+                            63.3125,
+                            -72
+                        ],
+                        [
+                            62.75,
+                            -71.875
+                        ],
+                        [
+                            49.3125,
+                            -71.90625
+                        ],
+                        [
+                            49.21875,
+                            -68.53125
+                        ],
+                        [
+                            39.8125,
+                            -68.46875
+                        ],
+                        [
+                            39.6875,
+                            -77.8125
+                        ],
+                        [
+                            17.4375,
+                            -77.875
+                        ],
+                        [
+                            17.40625,
+                            -86.71875
+                        ],
+                        [
+                            0.46875,
+                            -86.78125
+                        ],
+                        [
+                            0.625,
+                            -61.09375
                         ],
                         [
                             46.0625,
@@ -279,6 +273,44 @@
         },
         {
             "type": "Feature",
+            "id": 79,
+            "properties": {
+                "name": "Wellbeing area",
+                "type": "location",
+                "desc": "",
+                "icon": "wellbeing",
+                "class": "silent-space-location"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            49.25,
+                            -107.0625
+                        ],
+                        [
+                            49.25,
+                            -83.5
+                        ],
+                        [
+                            63.53125,
+                            -83.5
+                        ],
+                        [
+                            63.40625,
+                            -107.0625
+                        ],
+                        [
+                            49.25,
+                            -107.0625
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
             "properties": {
                 "name": "Staff Area",
                 "type": "area",
@@ -290,16 +322,16 @@
                 "coordinates": [
                     [
                         [
-                            17.5625,
-                            -77.872881
+                            17.4375,
+                            -77.84375
                         ],
                         [
-                            49.0625,
-                            -77.935364
+                            49.1875,
+                            -77.875
                         ],
                         [
-                            49.125,
-                            -99.67951
+                            49.21875,
+                            -99.65625
                         ],
                         [
                             27.6875,
@@ -314,8 +346,8 @@
                             -106.115278
                         ],
                         [
-                            17.5625,
-                            -77.872881
+                            17.4375,
+                            -77.84375
                         ]
                     ],
                     [
@@ -408,24 +440,32 @@
                     ],
                     [
                         [
-                            49.125,
-                            -71.875034
+                            62.71875,
+                            -71.90625
                         ],
                         [
-                            63,
-                            -72
+                            63.28125,
+                            -72.0625
                         ],
                         [
-                            63.4375,
-                            -83.438324
+                            63.53125,
+                            -72.59375
+                        ],
+                        [
+                            63.53125,
+                            -83.5
                         ],
                         [
                             49.3125,
                             -83.375841
                         ],
                         [
-                            49.125,
-                            -71.875034
+                            49.375,
+                            -71.9375
+                        ],
+                        [
+                            62.71875,
+                            -71.90625
                         ]
                     ]
                 ]
@@ -4249,142 +4289,6 @@
         },
         {
             "type": "Feature",
-            "id": 67,
-            "properties": {
-                "name": "Reception",
-                "type": "location",
-                "desc": "",
-                "icon": "enquiries",
-                "class": "staff-location"
-            },
-            "geometry": {
-                "type": "Polygon",
-                "coordinates": [
-                    [
-                        [
-                            49.125,
-                            -71.875034
-                        ],
-                        [
-                            63,
-                            -72
-                        ],
-                        [
-                            63.4375,
-                            -83.438324
-                        ],
-                        [
-                            49.3125,
-                            -83.375841
-                        ],
-                        [
-                            49.125,
-                            -71.875034
-                        ]
-                    ]
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "id": 68,
-            "properties": {
-                "name": "Print, Copy, Scan",
-                "type": "location",
-                "desc": "Find out more about Print, scan and copy at the Library, including how and where you can print, copy and scan and buying print credit <a class=\"external\" target=\"_blank\" href=\"https://myprint.leeds.ac.uk/user\">on the MyPrint website</a>",
-                "icon": "print",
-                "class": "silent-space-location"
-            },
-            "geometry": {
-                "type": "Polygon",
-                "coordinates": [
-                    [
-                        [
-                            83.5,
-                            -95
-                        ],
-                        [
-                            87.1,
-                            -95
-                        ],
-                        [
-                            87.1,
-                            -101.5
-                        ],
-                        [
-                            83.5,
-                            -101.5
-                        ],
-                        [
-                            83.5,
-                            -95
-                        ]
-                    ]
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "id": 70,
-            "properties": {
-                "name": "Desktop computers",
-                "type": "location",
-                "desc": "",
-                "icon": "monitor",
-                "class": "group-space-location"
-            },
-            "geometry": {
-                "type": "Polygon",
-                "coordinates": [
-                    [
-                        [
-                            46.3125,
-                            -4.875
-                        ],
-                        [
-                            59.375,
-                            -4.875
-                        ],
-                        [
-                            59.375,
-                            -23.1875
-                        ],
-                        [
-                            46.3125,
-                            -23.1875
-                        ],
-                        [
-                            46.3125,
-                            -4.875
-                        ]
-                    ],
-                    [
-                        [
-                            59.75,
-                            -4.875
-                        ],
-                        [
-                            76.3125,
-                            -4.875
-                        ],
-                        [
-                            76.3125,
-                            -23.1875
-                        ],
-                        [
-                            59.75,
-                            -23.1875
-                        ],
-                        [
-                            59.75,
-                            -4.875
-                        ]
-                    ]
-                ]
-            }
-        },
-        {
-            "type": "Feature",
             "id": 72,
             "properties": {
                 "name": "Self Issue Units",
@@ -4398,12 +4302,12 @@
                 "coordinates": [
                     [
                         [
-                            63.625,
-                            -75.437517
+                            63.5,
+                            -79.15625
                         ],
                         [
-                            67,
-                            -75.5
+                            66.90625,
+                            -79.125
                         ],
                         [
                             67,
@@ -4414,8 +4318,8 @@
                             -82.562483
                         ],
                         [
-                            63.625,
-                            -75.437517
+                            63.5,
+                            -79.15625
                         ]
                     ],
                     [
@@ -4438,66 +4342,6 @@
                         [
                             83.5,
                             -95
-                        ]
-                    ]
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "id": 74,
-            "properties": {
-                "name": "Print, Copy, Scan",
-                "type": "location",
-                "desc": "Find out more about Print, scan and copy at the Library, including how and where you can print, copy and scan and buying print credit <a class=\"external\" target=\"_blank\" href=\"https://myprint.leeds.ac.uk/user\">on the MyPrint website</a>",
-                "icon": "print",
-                "class": "group-space-location"
-            },
-            "geometry": {
-                "type": "Polygon",
-                "coordinates": [
-                    [
-                        [
-                            50,
-                            -24
-                        ],
-                        [
-                            50,
-                            -30
-                        ],
-                        [
-                            46,
-                            -30
-                        ],
-                        [
-                            46,
-                            -24
-                        ],
-                        [
-                            50,
-                            -24
-                        ]
-                    ],
-                    [
-                        [
-                            49.3,
-                            -92.9
-                        ],
-                        [
-                            52.8,
-                            -92.9
-                        ],
-                        [
-                            52.8,
-                            -96.7
-                        ],
-                        [
-                            49.3,
-                            -96.7
-                        ],
-                        [
-                            49.3,
-                            -92.9
                         ]
                     ]
                 ]
@@ -4507,35 +4351,57 @@
             "type": "Feature",
             "id": 75,
             "properties": {
-                "name": "Self Issue Units",
+                "name": "Print, Copy, Scan",
                 "type": "location",
-                "desc": "Find out more about Self-service at the Library, including what exactly can be done during self-service hours <a class=\"external\" target=\"_blank\" href=\"https://library.leeds.ac.uk/self-service/\">on the Library website.</a>",
-                "icon": "selfissue",
-                "class": "group-space-location"
+                "desc": "Find out more about Print, scan and copy at the Library, including how and where you can print, copy and scan and buying print credit <a class=\"external\" target=\"_blank\" href=\"https://myprint.leeds.ac.uk/user\">on the MyPrint website</a>",
+                "icon": "print",
+                "class": "silent-space-location"
             },
             "geometry": {
                 "type": "Polygon",
                 "coordinates": [
                     [
                         [
-                            49.3,
-                            -89.5
+                            83.5,
+                            -95
                         ],
                         [
-                            52.8,
-                            -89.5
+                            87.1,
+                            -95
+                        ],
+                        [
+                            87.1,
+                            -101.5
+                        ],
+                        [
+                            83.5,
+                            -101.5
+                        ],
+                        [
+                            83.5,
+                            -95
+                        ]
+                    ],
+                    [
+                        [
+                            49.3,
+                            -92.9
                         ],
                         [
                             52.8,
                             -92.9
                         ],
                         [
-                            49.3,
-                            -92.9
+                            52.8,
+                            -96.7
                         ],
                         [
                             49.3,
-                            -89.5
+                            -96.7
+                        ],
+                        [
+                            49.3,
+                            -92.9
                         ]
                     ]
                 ]
@@ -4545,7 +4411,7 @@
             "type": "Feature",
             "id": 76,
             "properties": {
-                "name": "Laptop Locker Availability",
+                "name": "Laptop Lockers",
                 "type": "location",
                 "desc": "",
                 "icon": "lock",
@@ -4564,12 +4430,12 @@
                             -90
                         ],
                         [
-                            101,
-                            -96
+                            101.0625,
+                            -92.90625
                         ],
                         [
-                            95,
-                            -96
+                            95.0625,
+                            -93.0625
                         ],
                         [
                             95,
@@ -4625,7 +4491,7 @@
                 "type": "location",
                 "desc": "",
                 "icon": "book-return",
-                "class": "silent-space-location"
+                "class": "group-space-location"
             },
             "geometry": {
                 "type": "Polygon",
@@ -4650,6 +4516,387 @@
                         [
                             24.3125,
                             -61.374983
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 80,
+            "properties": {
+                "name": "Group Study Pods",
+                "type": "location",
+                "desc": "",
+                "icon": "group",
+                "class": "group-space-location"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            94.9375,
+                            -4.78125
+                        ],
+                        [
+                            101.84375,
+                            -4.78125
+                        ],
+                        [
+                            101.84375,
+                            -10.28125
+                        ],
+                        [
+                            94.9375,
+                            -10.28125
+                        ],
+                        [
+                            94.9375,
+                            -4.78125
+                        ]
+                    ],
+                    [
+                        [
+                            108.84375,
+                            -4.78125
+                        ],
+                        [
+                            101.8125,
+                            -4.78125
+                        ],
+                        [
+                            101.8125,
+                            -10.28125
+                        ],
+                        [
+                            108.84375,
+                            -10.28125
+                        ],
+                        [
+                            108.84375,
+                            -4.78125
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 81,
+            "properties": {
+                "name": "Individual Study Pods",
+                "type": "location",
+                "desc": "",
+                "icon": "cube",
+                "class": "group-space-location"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            55.8125,
+                            -39.53125
+                        ],
+                        [
+                            55.875,
+                            -36.625
+                        ],
+                        [
+                            58,
+                            -36.625
+                        ],
+                        [
+                            58,
+                            -39.53125
+                        ],
+                        [
+                            55.8125,
+                            -39.53125
+                        ]
+                    ],
+                    [
+                        [
+                            55.875,
+                            -42.46875
+                        ],
+                        [
+                            55.875,
+                            -39.53125
+                        ],
+                        [
+                            58,
+                            -39.53125
+                        ],
+                        [
+                            58,
+                            -42.46875
+                        ],
+                        [
+                            55.875,
+                            -42.46875
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 82,
+            "properties": {
+                "name": "Desktop Computers",
+                "type": "location",
+                "desc": "",
+                "icon": "monitor",
+                "class": "group-space-location"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            77.875,
+                            -68.53125
+                        ],
+                        [
+                            80.0625,
+                            -68.53125
+                        ],
+                        [
+                            80.0625,
+                            -79.09375
+                        ],
+                        [
+                            77.875,
+                            -79.09375
+                        ],
+                        [
+                            77.875,
+                            -68.53125
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 83,
+            "properties": {
+                "name": "Bring Your Own Device (BYOD) Zone",
+                "type": "location",
+                "desc": "",
+                "icon": "byod",
+                "class": "group-space-location"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            46.25,
+                            -23.4375
+                        ],
+                        [
+                            46.25,
+                            -4.75
+                        ],
+                        [
+                            76.8125,
+                            -4.75
+                        ],
+                        [
+                            76.8125,
+                            -23.4375
+                        ],
+                        [
+                            46.25,
+                            -23.4375
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Individual Study Booths",
+                "type": "location",
+                "desc": "",
+                "icon": "cube",
+                "class": "silent-space-location"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            77,
+                            -131
+                        ],
+                        [
+                            77,
+                            -126.875
+                        ],
+                        [
+                            80.5,
+                            -126.875
+                        ],
+                        [
+                            80.5,
+                            -131
+                        ],
+                        [
+                            77,
+                            -131
+                        ]
+                    ],
+                    [
+                        [
+                            77,
+                            -135.4375
+                        ],
+                        [
+                            77,
+                            -131
+                        ],
+                        [
+                            80.5,
+                            -131
+                        ],
+                        [
+                            80.5,
+                            -135.4375
+                        ],
+                        [
+                            77,
+                            -135.4375
+                        ]
+                    ],
+                    [
+                        [
+                            73.15,
+                            -131
+                        ],
+                        [
+                            73.15,
+                            -126.875
+                        ],
+                        [
+                            77,
+                            -126.875
+                        ],
+                        [
+                            77,
+                            -131
+                        ],
+                        [
+                            73.15,
+                            -131
+                        ]
+                    ],
+                    [
+                        [
+                            73.15,
+                            -135.4375
+                        ],
+                        [
+                            73.15,
+                            -131
+                        ],
+                        [
+                            77,
+                            -131
+                        ],
+                        [
+                            77,
+                            -135.4375
+                        ],
+                        [
+                            73.15,
+                            -135.4375
+                        ]
+                    ],
+                    [
+                        [
+                            51,
+                            -131
+                        ],
+                        [
+                            51,
+                            -126.875
+                        ],
+                        [
+                            54.5,
+                            -126.875
+                        ],
+                        [
+                            54.5,
+                            -131
+                        ],
+                        [
+                            51,
+                            -131
+                        ]
+                    ],
+                    [
+                        [
+                            51,
+                            -135.4375
+                        ],
+                        [
+                            51,
+                            -131
+                        ],
+                        [
+                            54.5,
+                            -131
+                        ],
+                        [
+                            54.5,
+                            -135.4375
+                        ],
+                        [
+                            51,
+                            -135.4375
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 84,
+            "properties": {
+                "name": "Prayer Room",
+                "type": "location",
+                "desc": "",
+                "icon": "prayer",
+                "class": "group-space-location"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            17.6875,
+                            -106.125
+                        ],
+                        [
+                            17.6875,
+                            -101.96875
+                        ],
+                        [
+                            27.6875,
+                            -101.96875
+                        ],
+                        [
+                            27.6875,
+                            -106.125
+                        ],
+                        [
+                            17.6875,
+                            -106.125
                         ]
                     ]
                 ]
