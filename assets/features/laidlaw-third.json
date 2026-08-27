@@ -1789,6 +1789,44 @@
                     ]
                 ]
             }
+        },
+        {
+            "type": "Feature",
+            "id": 24,
+            "properties": {
+                "name": "Water Dispenser",
+                "type": "location",
+                "desc": "",
+                "icon": "water",
+                "class": "silent-space-location"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            66.15625,
+                            -26.376455
+                        ],
+                        [
+                            66.15625,
+                            -24.252027
+                        ],
+                        [
+                            68.78125,
+                            -24.252027
+                        ],
+                        [
+                            68.78125,
+                            -26.376455
+                        ],
+                        [
+                            66.15625,
+                            -26.376455
+                        ]
+                    ]
+                ]
+            }
         }
     ]
 }
