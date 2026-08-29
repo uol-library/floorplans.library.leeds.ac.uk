@@ -7,6 +7,7 @@ const floorplans = {
 		startLat: 53.80790461539562,
 		startLng: -1.5534367612770303,
 	},
+	version: '0.8',
 	mapBounds: null,
 	map: null,
 	osm: null,

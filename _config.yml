@@ -11,6 +11,7 @@ baseurl: ""
 destination: public/
 host: "localhost"
 port: 4001
+version: "0.8"
 google_analytics: ""
 photo_dir: "/assets/photos/"
 lang: "en"
