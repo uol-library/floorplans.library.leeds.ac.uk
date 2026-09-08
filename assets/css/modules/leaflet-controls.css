@@ -1,0 +1,167 @@
+#floorplan-controls {
+    position: relative;
+    margin: 0;
+    font-size: 1rem;
+    width: $controlsWidth;
+    padding: .5rem;
+    background: var(--white);
+    margin-left: 0;
+    transition: margin-left .3s linear;
+    &.closed {
+        margin-left: -($controlsWidth - 12px);
+    }
+    .menubar {
+        width: $controlsWidth;
+        background: transparent;
+        position: absolute;
+        left: 32px;
+        top: 0;
+        z-index:801;
+        padding:0;
+    }
+    .floorplans-selecter {
+        padding: .5rem;
+        border: 0;
+        z-index:802;
+    }
+    .floorplans-selecter-header {
+        font-size: 1.1rem;
+        font-weight: bold;
+        width: 100%;
+        padding: 0 .5rem;
+        background: transparent;
+    }
+    .selecter__label, h3 {
+        display: block;
+        font-size: 1rem;
+        font-weight: bold;
+        width: 100%;
+        margin: .4rem 0;
+    }
+    .selecter__select {
+        font-size: 1rem;
+        width:100%;
+    }
+	ul.selecter__list {
+		max-height: 20vh;
+		overflow: auto;
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		li {
+			padding: .1rem;
+            &.item-shelf,
+            &.item-area {
+                button {
+                    padding: .2rem .2rem .2rem 2.2rem;
+                    &::before {
+                        content: " ";
+                        position: absolute;
+                        display: inline-block;
+                        margin: 0;
+                        left: 0;
+                        top: 0;
+                        bottom: 0;
+                        width: 2em;
+                    }
+                }
+            }
+            button {
+                position: relative;
+                display: flex;
+				width: 100%;
+				text-align: left;
+                &:focus {
+                  outline: none;
+                }
+            }
+            span.feature-description {
+                display: block;
+                background: var(--white);
+                font-size: .8rem;
+                margin: 0;
+                padding-left:2.2rem;
+                font-style: italic;
+            }
+		}
+	}
+}
+@media (min-height:20rem) {
+	#floorplan-controls ul.selecter__list {
+		max-height: 23vh;
+    }
+}
+@media (min-height:25rem) {
+	#floorplan-controls ul.selecter__list {
+		max-height: 25vh;
+    }
+}
+@media (min-height:30rem) {
+	#floorplan-controls ul.selecter__list {
+		max-height: 27vh;
+    }
+}
+@media (min-height:35rem) {
+	#floorplan-controls ul.selecter__list {
+		max-height: 29vh;
+    }
+}
+@media (min-height:40rem) {
+	#floorplan-controls ul.selecter__list {
+		max-height: 31vh;
+    }
+}
+@media (min-height:45rem) {
+	#floorplan-controls ul.selecter__list {
+		max-height: 33vh;
+    }
+}
+
+.geo-button {
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 4px;
+    padding: 0;
+    margin: 0;
+    font-size: 1.5rem;
+    background: var(--geobuttonbg);
+    color: var(--geobuttoncolor);
+    user-select: none;
+    cursor: pointer;
+    &::before {
+        margin:0;
+    }
+    &:hover {
+        background: var(--geobuttonbg-hover);
+        color: var(--geobuttoncolor-hover);
+    }
+    &.active {
+        background: var(--geobuttonbg-active);
+        color: var(--geobuttoncolor-active);
+    }
+    &[disabled] {
+        cursor: default;
+        background: var(--geobuttonbg-disabled);
+        color: var(--geobuttoncolor-disabled);
+    }
+}
+.leaflet-tooltip-top:before, 
+.leaflet-tooltip-bottom:before, 
+.leaflet-tooltip-left:before, 
+.leaflet-tooltip-right:before {
+    border: none !important;
+}
+.feature-tooltip {
+    max-width: 400px;
+    white-space: normal !important;
+    overflow-wrap: break-word;
+}
+#occupancyContainer {
+    background: white;
+    padding: .5em 2em;
+    margin: 0 4em;
+    font-size: 1rem;
+    strong {
+        color: var(--occupancyno);
+    }
+}
