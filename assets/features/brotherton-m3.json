@@ -447,7 +447,7 @@
             "properties": {
                 "name": "Pamphlets",
                 "type": "shelf",
-                "class": "d2",
+                "class": "d3",
                 "desc": ""
             },
             "geometry": {
@@ -496,7 +496,7 @@
             "properties": {
                 "name": "Large Latin",
                 "type": "shelf",
-                "class": "d1",
+                "class": "d5",
                 "desc": ""
             },
             "geometry": {
@@ -541,7 +541,7 @@
             "properties": {
                 "name": "Large Greek",
                 "type": "shelf",
-                "class": "d2",
+                "class": "d4",
                 "desc": ""
             },
             "geometry": {
@@ -586,7 +586,7 @@
             "properties": {
                 "name": "Large General Classics",
                 "type": "shelf",
-                "class": "d1",
+                "class": "d9",
                 "desc": ""
             },
             "geometry": {
@@ -1248,7 +1248,7 @@
             "properties": {
                 "name": "Recently Returned",
                 "type": "shelf",
-                "class": "d5",
+                "class": "d7",
                 "desc": ""
             },
             "geometry": {

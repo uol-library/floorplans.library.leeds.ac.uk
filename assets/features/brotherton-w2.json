@@ -96,7 +96,7 @@
             "properties": {
                 "name": "Stack Abstracts",
                 "type": "shelf",
-                "class": "d2",
+                "class": "d7",
                 "desc": ""
             },
             "geometry": {
@@ -133,7 +133,7 @@
             "properties": {
                 "name": "Stack Ancient History",
                 "type": "shelf",
-                "class": "d1",
+                "class": "d8",
                 "desc": ""
             },
             "geometry": {
@@ -170,7 +170,7 @@
             "properties": {
                 "name": "Stack Anthropology",
                 "type": "shelf",
-                "class": "d2",
+                "class": "d3",
                 "desc": ""
             },
             "geometry": {
@@ -207,7 +207,7 @@
             "properties": {
                 "name": "Stack Archaeology",
                 "type": "shelf",
-                "class": "d1",
+                "class": "d4",
                 "desc": ""
             },
             "geometry": {
@@ -244,7 +244,7 @@
             "properties": {
                 "name": "Stack Architecture",
                 "type": "shelf",
-                "class": "d2",
+                "class": "d5",
                 "desc": ""
             },
             "geometry": {
@@ -281,7 +281,7 @@
             "properties": {
                 "name": "Stack Art",
                 "type": "shelf",
-                "class": "d1",
+                "class": "d6",
                 "desc": ""
             },
             "geometry": {
@@ -318,7 +318,7 @@
             "properties": {
                 "name": "Stack Cartularies",
                 "type": "shelf",
-                "class": "d3",
+                "class": "d7",
                 "desc": ""
             },
             "geometry": {
@@ -355,7 +355,7 @@
             "properties": {
                 "name": "Stack Celtic",
                 "type": "shelf",
-                "class": "d1",
+                "class": "d8",
                 "desc": ""
             },
             "geometry": {
@@ -392,7 +392,7 @@
             "properties": {
                 "name": "Stack Chinese",
                 "type": "shelf",
-                "class": "d3",
+                "class": "d9",
                 "desc": ""
             },
             "geometry": {
@@ -429,7 +429,7 @@
             "properties": {
                 "name": "Stack Communications Studies",
                 "type": "shelf",
-                "class": "d5",
+                "class": "d2",
                 "desc": ""
             },
             "geometry": {
@@ -466,7 +466,7 @@
             "properties": {
                 "name": "Stack Danish",
                 "type": "shelf",
-                "class": "d4",
+                "class": "d1",
                 "desc": ""
             },
             "geometry": {
@@ -503,7 +503,7 @@
             "properties": {
                 "name": "Stack Dobree",
                 "type": "shelf",
-                "class": "d5",
+                "class": "d3",
                 "desc": ""
             },
             "geometry": {
@@ -540,7 +540,7 @@
             "properties": {
                 "name": "Stack English",
                 "type": "shelf",
-                "class": "d4",
+                "class": "d5",
                 "desc": ""
             },
             "geometry": {
@@ -577,7 +577,7 @@
             "properties": {
                 "name": "Stack French",
                 "type": "shelf",
-                "class": "d5",
+                "class": "d4",
                 "desc": ""
             },
             "geometry": {
@@ -614,7 +614,7 @@
             "properties": {
                 "name": "Stack Fulford",
                 "type": "shelf",
-                "class": "d4",
+                "class": "d9",
                 "desc": ""
             },
             "geometry": {
@@ -651,7 +651,7 @@
             "properties": {
                 "name": "Stack General Classics",
                 "type": "shelf",
-                "class": "d5",
+                "class": "d6",
                 "desc": ""
             },
             "geometry": {
@@ -688,7 +688,7 @@
             "properties": {
                 "name": "Stack General Literature",
                 "type": "shelf",
-                "class": "d6",
+                "class": "d8",
                 "desc": ""
             },
             "geometry": {
@@ -762,7 +762,7 @@
             "properties": {
                 "name": "Stack Holden",
                 "type": "shelf",
-                "class": "d8",
+                "class": "d2",
                 "desc": ""
             },
             "geometry": {
@@ -799,7 +799,7 @@
             "properties": {
                 "name": "Stack Hong Kong",
                 "type": "shelf",
-                "class": "d9",
+                "class": "d4",
                 "desc": ""
             },
             "geometry": {
@@ -873,7 +873,7 @@
             "properties": {
                 "name": "Stack Korean",
                 "type": "shelf",
-                "class": "d9",
+                "class": "d6",
                 "desc": ""
             },
             "geometry": {
@@ -947,7 +947,7 @@
             "properties": {
                 "name": "Stack Lattimore",
                 "type": "shelf",
-                "class": "d2",
+                "class": "d3",
                 "desc": ""
             },
             "geometry": {
@@ -984,7 +984,7 @@
             "properties": {
                 "name": "Stack Modern History",
                 "type": "shelf",
-                "class": "d2",
+                "class": "d9",
                 "desc": ""
             },
             "geometry": {
@@ -1021,7 +1021,7 @@
             "properties": {
                 "name": "Stack Mongolian",
                 "type": "shelf",
-                "class": "d1",
+                "class": "d7",
                 "desc": ""
             },
             "geometry": {
@@ -1058,7 +1058,7 @@
             "properties": {
                 "name": "Stack Music",
                 "type": "shelf",
-                "class": "d2",
+                "class": "d5",
                 "desc": ""
             },
             "geometry": {
@@ -1132,7 +1132,7 @@
             "properties": {
                 "name": "Stack Numismatics",
                 "type": "shelf",
-                "class": "d2",
+                "class": "d5",
                 "desc": ""
             },
             "geometry": {
@@ -1169,7 +1169,7 @@
             "properties": {
                 "name": "Stack Philosophy",
                 "type": "shelf",
-                "class": "d1",
+                "class": "d3",
                 "desc": ""
             },
             "geometry": {
@@ -1206,7 +1206,7 @@
             "properties": {
                 "name": "Stack Scandinavian",
                 "type": "shelf",
-                "class": "d3",
+                "class": "d4",
                 "desc": ""
             },
             "geometry": {
@@ -1243,7 +1243,7 @@
             "properties": {
                 "name": "Stack Slavonic",
                 "type": "shelf",
-                "class": "d1",
+                "class": "d8",
                 "desc": ""
             },
             "geometry": {
@@ -1280,7 +1280,7 @@
             "properties": {
                 "name": "Stack Swedish",
                 "type": "shelf",
-                "class": "d3",
+                "class": "d7",
                 "desc": ""
             },
             "geometry": {
@@ -1317,7 +1317,7 @@
             "properties": {
                 "name": "Stack Textiles",
                 "type": "shelf",
-                "class": "d5",
+                "class": "d6",
                 "desc": ""
             },
             "geometry": {
@@ -1354,7 +1354,7 @@
             "properties": {
                 "name": "Stack Theology",
                 "type": "shelf",
-                "class": "d4",
+                "class": "d5",
                 "desc": ""
             },
             "geometry": {
@@ -1391,7 +1391,7 @@
             "properties": {
                 "name": "Stack Yearbooks",
                 "type": "shelf",
-                "class": "d5",
+                "class": "d1",
                 "desc": ""
             },
             "geometry": {
@@ -1872,7 +1872,7 @@
             "properties": {
                 "name": "Ancient History Journals",
                 "type": "shelf",
-                "class": "d2",
+                "class": "d5",
                 "desc": ""
             },
             "geometry": {
@@ -2501,7 +2501,7 @@
             "properties": {
                 "name": "Scandinavian Journals",
                 "type": "shelf",
-                "class": "d7",
+                "class": "d9",
                 "desc": ""
             },
             "geometry": {
@@ -2612,7 +2612,7 @@
             "properties": {
                 "name": "Spanish Journals",
                 "type": "shelf",
-                "class": "d8",
+                "class": "d4",
                 "desc": ""
             },
             "geometry": {
@@ -2723,7 +2723,7 @@
             "properties": {
                 "name": "Theology Journals",
                 "type": "shelf",
-                "class": "d2",
+                "class": "d5",
                 "desc": ""
             },
             "geometry": {
@@ -2871,7 +2871,7 @@
             "properties": {
                 "name": "Art",
                 "type": "shelf",
-                "class": "d1",
+                "class": "d5",
                 "desc": ""
             },
             "geometry": {
@@ -3166,7 +3166,7 @@
             "properties": {
                 "name": "Recently Returned",
                 "type": "shelf",
-                "class": "d3",
+                "class": "d7",
                 "desc": ""
             },
             "geometry": {

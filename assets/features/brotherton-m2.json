@@ -361,7 +361,7 @@
             "properties": {
                 "name": "Philosophy",
                 "type": "shelf",
-                "class": "d2",
+                "class": "d1",
                 "desc": ""
             },
             "geometry": {
@@ -470,7 +470,7 @@
             "properties": {
                 "name": "Large Modern History",
                 "type": "shelf",
-                "class": "d2",
+                "class": "d4",
                 "desc": ""
             },
             "geometry": {
@@ -555,7 +555,7 @@
             "properties": {
                 "name": "Modern History A-R",
                 "type": "shelf",
-                "class": "d1",
+                "class": "d2",
                 "desc": ""
             },
             "geometry": {
@@ -1490,7 +1490,7 @@
             "properties": {
                 "name": "French",
                 "type": "shelf",
-                "class": "d1",
+                "class": "d5",
                 "desc": ""
             },
             "geometry": {
@@ -1635,7 +1635,7 @@
             "properties": {
                 "name": "Recently Returned",
                 "type": "shelf",
-                "class": "d3",
+                "class": "d7",
                 "desc": ""
             },
             "geometry": {

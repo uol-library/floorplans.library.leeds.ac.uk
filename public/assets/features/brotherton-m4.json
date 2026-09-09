@@ -277,7 +277,7 @@
             "properties": {
                 "name": "General Literature",
                 "type": "shelf",
-                "class": "d2",
+                "class": "d5",
                 "desc": ""
             },
             "geometry": {
@@ -322,7 +322,7 @@
             "properties": {
                 "name": "Bibliography",
                 "type": "shelf",
-                "class": "d3",
+                "class": "d2",
                 "desc": ""
             },
             "geometry": {
@@ -491,7 +491,7 @@
             "properties": {
                 "name": "Recently returned",
                 "type": "shelf",
-                "class": "d4",
+                "class": "d7",
                 "desc": ""
             },
             "geometry": {
@@ -536,7 +536,7 @@
             "properties": {
                 "name": "English",
                 "type": "shelf",
-                "class": "d5",
+                "class": "d6",
                 "desc": ""
             },
             "geometry": {

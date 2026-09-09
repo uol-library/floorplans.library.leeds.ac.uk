@@ -316,7 +316,7 @@
             "properties": {
                 "name": "YAHS",
                 "type": "shelf",
-                "class": "d2",
+                "class": "d7",
                 "desc": ""
             },
             "geometry": {
@@ -817,7 +817,7 @@
             "properties": {
                 "name": "Slavonic",
                 "type": "shelf",
-                "class": "d2",
+                "class": "d9",
                 "desc": ""
             },
             "geometry": {
@@ -1229,7 +1229,7 @@
             "properties": {
                 "name": "Italian",
                 "type": "shelf",
-                "class": "d3",
+                "class": "d8",
                 "desc": ""
             },
             "geometry": {
@@ -1576,7 +1576,7 @@
             "properties": {
                 "name": "Recently Returned",
                 "type": "shelf",
-                "class": "d5",
+                "class": "d7",
                 "desc": ""
             },
             "geometry": {
@@ -1699,7 +1699,7 @@
             "properties": {
                 "name": "CD, DVD (All Subjects)",
                 "type": "shelf",
-                "class": "d1",
+                "class": "d5",
                 "desc": ""
             },
             "geometry": {

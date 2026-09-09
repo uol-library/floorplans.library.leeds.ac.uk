@@ -477,7 +477,7 @@
             "properties": {
                 "name": "Official Publications",
                 "type": "shelf",
-                "class": "d2",
+                "class": "d1",
                 "desc": ""
             },
             "geometry": {
@@ -646,7 +646,7 @@
             "properties": {
                 "name": "Stack",
                 "type": "shelf",
-                "class": "d3",
+                "class": "d2",
                 "desc": ""
             },
             "geometry": {
@@ -1101,7 +1101,7 @@
             "properties": {
                 "name": "Maps",
                 "type": "shelf",
-                "class": "d4",
+                "class": "d1",
                 "desc": ""
             },
             "geometry": {
@@ -1160,7 +1160,7 @@
             "properties": {
                 "name": "Stack Large",
                 "type": "shelf",
-                "class": "d6",
+                "class": "d1",
                 "desc": ""
             },
             "geometry": {
@@ -1219,7 +1219,7 @@
             "properties": {
                 "name": "Journal",
                 "type": "shelf",
-                "class": "d5",
+                "class": "d2",
                 "desc": ""
             },
             "geometry": {
@@ -2752,7 +2752,7 @@
             "properties": {
                 "name": "Reshelving Area",
                 "type": "shelf",
-                "class": "d6",
+                "class": "d1",
                 "desc": ""
             },
             "geometry": {
@@ -2944,28 +2944,6 @@
             "geometry": {
                 "type": "Polygon",
                 "coordinates": [
-                    [
-                        [
-                            137,
-                            -47
-                        ],
-                        [
-                            137,
-                            -51
-                        ],
-                        [
-                            140,
-                            -51
-                        ],
-                        [
-                            140,
-                            -47
-                        ],
-                        [
-                            137,
-                            -47
-                        ]
-                    ],
                     [
                         [
                             96.28125,
@@ -3478,28 +3456,6 @@
                         ],
                         [
                             100.75,
-                            -47
-                        ]
-                    ],
-                    [
-                        [
-                            55.40625,
-                            -47
-                        ],
-                        [
-                            55.40625,
-                            -41
-                        ],
-                        [
-                            59.15625,
-                            -41
-                        ],
-                        [
-                            59.15625,
-                            -47
-                        ],
-                        [
-                            55.40625,
                             -47
                         ]
                     ]

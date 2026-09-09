@@ -447,7 +447,7 @@
             "properties": {
                 "name": "Pamphlets",
                 "type": "shelf",
-                "class": "d1",
+                "class": "d3",
                 "desc": ""
             },
             "geometry": {
@@ -496,7 +496,7 @@
             "properties": {
                 "name": "Large Latin",
                 "type": "shelf",
-                "class": "d2",
+                "class": "d5",
                 "desc": ""
             },
             "geometry": {
@@ -541,7 +541,7 @@
             "properties": {
                 "name": "Large Greek",
                 "type": "shelf",
-                "class": "d3",
+                "class": "d4",
                 "desc": ""
             },
             "geometry": {
@@ -586,7 +586,7 @@
             "properties": {
                 "name": "Large General Classics",
                 "type": "shelf",
-                "class": "d4",
+                "class": "d9",
                 "desc": ""
             },
             "geometry": {
@@ -635,7 +635,7 @@
             "properties": {
                 "name": "Large Ancient History",
                 "type": "shelf",
-                "class": "d5",
+                "class": "d2",
                 "desc": ""
             },
             "geometry": {
@@ -692,7 +692,7 @@
             "properties": {
                 "name": "General Reference",
                 "type": "shelf",
-                "class": "d6",
+                "class": "d1",
                 "desc": ""
             },
             "geometry": {
@@ -839,7 +839,7 @@
             "properties": {
                 "name": "Atlases",
                 "type": "shelf",
-                "class": "d7",
+                "class": "d3",
                 "desc": ""
             },
             "geometry": {
@@ -884,7 +884,7 @@
             "properties": {
                 "name": "Latin",
                 "type": "shelf",
-                "class": "d8",
+                "class": "d1",
                 "desc": ""
             },
             "geometry": {
@@ -997,7 +997,7 @@
             "properties": {
                 "name": "Greek",
                 "type": "shelf",
-                "class": "d9",
+                "class": "d3",
                 "desc": ""
             },
             "geometry": {
@@ -1078,7 +1078,7 @@
             "properties": {
                 "name": "General Classics",
                 "type": "shelf",
-                "class": "d10",
+                "class": "d5",
                 "desc": ""
             },
             "geometry": {
@@ -1135,7 +1135,7 @@
             "properties": {
                 "name": "Ancient History",
                 "type": "shelf",
-                "class": "d11",
+                "class": "d4",
                 "desc": ""
             },
             "geometry": {
@@ -1248,7 +1248,7 @@
             "properties": {
                 "name": "Recently Returned",
                 "type": "shelf",
-                "class": "d12",
+                "class": "d7",
                 "desc": ""
             },
             "geometry": {
@@ -1285,7 +1285,7 @@
             "properties": {
                 "name": "Journals",
                 "type": "shelf",
-                "class": "d13",
+                "class": "d4",
                 "desc": ""
             },
             "geometry": {
@@ -1337,28 +1337,6 @@
             "geometry": {
                 "type": "Polygon",
                 "coordinates": [
-                    [
-                        [
-                            70.75,
-                            -15.8125
-                        ],
-                        [
-                            75.1875,
-                            -15.5
-                        ],
-                        [
-                            75.2,
-                            -27.1
-                        ],
-                        [
-                            71.0625,
-                            -28.4375
-                        ],
-                        [
-                            70.75,
-                            -15.8125
-                        ]
-                    ],
                     [
                         [
                             72.125,
@@ -1671,6 +1649,90 @@
                         [
                             131.6875,
                             -82.5
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 22,
+            "properties": {
+                "name": "Accessible Pod",
+                "type": "location",
+                "desc": "",
+                "icon": "cubes",
+                "class": "silent-space-location"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            68.46875,
+                            -10.00148
+                        ],
+                        [
+                            75.25,
+                            -10.126447
+                        ],
+                        [
+                            75.09375,
+                            -16.783176
+                        ],
+                        [
+                            68.1875,
+                            -16.658176
+                        ],
+                        [
+                            68.46875,
+                            -10.00148
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 23,
+            "properties": {
+                "name": "Laptop Lockers",
+                "type": "location",
+                "desc": "",
+                "icon": "laptop",
+                "class": "silent-space-location"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            64.75,
+                            -3.563358
+                        ],
+                        [
+                            69.3125,
+                            -2.250084
+                        ],
+                        [
+                            73.3125,
+                            -1.7188
+                        ],
+                        [
+                            75.03125,
+                            -1.563896
+                        ],
+                        [
+                            75.15625,
+                            -4.909084
+                        ],
+                        [
+                            65.53125,
+                            -7.002271
+                        ],
+                        [
+                            64.75,
+                            -3.563358
                         ]
                     ]
                 ]
