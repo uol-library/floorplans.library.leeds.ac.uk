@@ -3,6 +3,7 @@
     "features": [
         {
             "type": "Feature",
+            "id": 1,
             "properties": {
                 "name": "Silent Space",
                 "type": "area",

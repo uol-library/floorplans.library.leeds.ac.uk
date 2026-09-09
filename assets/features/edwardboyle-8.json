@@ -1101,7 +1101,7 @@
             "properties": {
                 "name": "Maps",
                 "type": "shelf",
-                "class": "d1",
+                "class": "d4",
                 "desc": ""
             },
             "geometry": {
@@ -1160,7 +1160,7 @@
             "properties": {
                 "name": "Stack Large",
                 "type": "shelf",
-                "class": "d1",
+                "class": "d5",
                 "desc": ""
             },
             "geometry": {
@@ -1219,7 +1219,7 @@
             "properties": {
                 "name": "Journal",
                 "type": "shelf",
-                "class": "d2",
+                "class": "d8",
                 "desc": ""
             },
             "geometry": {
@@ -2752,7 +2752,7 @@
             "properties": {
                 "name": "Reshelving Area",
                 "type": "shelf",
-                "class": "d1",
+                "class": "d7",
                 "desc": ""
             },
             "geometry": {

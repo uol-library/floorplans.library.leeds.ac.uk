@@ -508,7 +508,7 @@
             "properties": {
                 "name": "Large",
                 "type": "shelf",
-                "class": "d2",
+                "class": "d1",
                 "desc": ""
             },
             "geometry": {
@@ -559,7 +559,7 @@
             "properties": {
                 "name": "Colour Chemistry",
                 "type": "shelf",
-                "class": "d1",
+                "class": "d9",
                 "desc": ""
             },
             "geometry": {
@@ -679,7 +679,7 @@
             "properties": {
                 "name": "Electrical Engineering",
                 "type": "shelf",
-                "class": "d1",
+                "class": "d6",
                 "desc": ""
             },
             "geometry": {
@@ -730,7 +730,7 @@
             "properties": {
                 "name": "Zoology",
                 "type": "shelf",
-                "class": "d2",
+                "class": "d5",
                 "desc": ""
             },
             "geometry": {
@@ -799,7 +799,7 @@
             "properties": {
                 "name": "Food",
                 "type": "shelf",
-                "class": "d1",
+                "class": "d7",
                 "desc": ""
             },
             "geometry": {
@@ -850,7 +850,7 @@
             "properties": {
                 "name": "Fuel",
                 "type": "shelf",
-                "class": "d3",
+                "class": "d9",
                 "desc": ""
             },
             "geometry": {
@@ -883,7 +883,7 @@
             "properties": {
                 "name": "General Biology",
                 "type": "shelf",
-                "class": "d1",
+                "class": "d8",
                 "desc": ""
             },
             "geometry": {
@@ -1213,7 +1213,7 @@
             "properties": {
                 "name": "History of Science",
                 "type": "shelf",
-                "class": "d5",
+                "class": "d6",
                 "desc": ""
             },
             "geometry": {
@@ -1318,7 +1318,7 @@
             "properties": {
                 "name": "Materials",
                 "type": "shelf",
-                "class": "d4",
+                "class": "d8",
                 "desc": ""
             },
             "geometry": {
@@ -1774,7 +1774,7 @@
             "properties": {
                 "name": "Atlas Case",
                 "type": "shelf",
-                "class": "d9",
+                "class": "d3",
                 "desc": ""
             },
             "geometry": {
@@ -1958,7 +1958,7 @@
             "properties": {
                 "name": "Chemical Engineering",
                 "type": "shelf",
-                "class": "d2",
+                "class": "d5",
                 "desc": ""
             },
             "geometry": {

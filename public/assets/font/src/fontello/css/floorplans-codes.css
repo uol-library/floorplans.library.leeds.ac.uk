@@ -9,6 +9,7 @@
 .icon-undo:before { content: '\e807'; } /* '' */
 .icon-selfissue:before { content: '\e808'; } /* '' */
 .icon-ticket:before { content: '\e809'; } /* '' */
+.icon-byod:before { content: '\e80c'; } /* '' */
 .icon-mortarboard:before { content: '\e810'; } /* '' */
 .icon-recycle:before { content: '\e811'; } /* '' */
 .icon-lock:before { content: '\e812'; } /* '' */
