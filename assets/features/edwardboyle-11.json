@@ -2253,7 +2253,7 @@
         },
         {
             "type": "Feature",
-            "id": 30,
+            "id": 29,
             "properties": {
                 "name": "Engineering",
                 "type": "shelf",
@@ -2286,7 +2286,7 @@
         },
         {
             "type": "Feature",
-            "id": 31,
+            "id": 30,
             "properties": {
                 "name": "Prayer Room",
                 "type": "location",
@@ -2348,7 +2348,7 @@
         },
         {
             "type": "Feature",
-            "id": 32,
+            "id": 31,
             "properties": {
                 "name": "Print, Copy, Scan",
                 "type": "location",
@@ -2408,7 +2408,7 @@
         },
         {
             "type": "Feature",
-            "id": 33,
+            "id": 32,
             "properties": {
                 "name": "Desktop computers",
                 "type": "location",
@@ -2468,7 +2468,7 @@
         },
         {
             "type": "Feature",
-            "id": 34,
+            "id": 33,
             "properties": {
                 "name": "Water Dispenser",
                 "type": "location",

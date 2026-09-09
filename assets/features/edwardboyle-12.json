@@ -1812,7 +1812,7 @@
         },
         {
             "type": "Feature",
-            "id": 17,
+            "id": 14,
             "properties": {
                 "name": "Print, Copy, Scan",
                 "type": "location",
@@ -1872,7 +1872,7 @@
         },
         {
             "type": "Feature",
-            "id": 18,
+            "id": 15,
             "properties": {
                 "name": "Desktop computers",
                 "type": "location",
@@ -1932,7 +1932,7 @@
         },
         {
             "type": "Feature",
-            "id": 21,
+            "id": 16,
             "properties": {
                 "name": "Water Dispenser",
                 "type": "location",

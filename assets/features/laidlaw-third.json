@@ -1525,7 +1525,7 @@
         },
         {
             "type": "Feature",
-            "id": 19,
+            "id": 21,
             "properties": {
                 "name": "Prayer Room",
                 "type": "location",
@@ -1563,7 +1563,7 @@
         },
         {
             "type": "Feature",
-            "id": 20,
+            "id": 22,
             "properties": {
                 "name": "Print, Copy, Scan",
                 "type": "location",
@@ -1601,7 +1601,7 @@
         },
         {
             "type": "Feature",
-            "id": 21,
+            "id": 23,
             "properties": {
                 "name": "Desktop computers",
                 "type": "location",
@@ -1639,7 +1639,7 @@
         },
         {
             "type": "Feature",
-            "id": 22,
+            "id": 24,
             "properties": {
                 "name": "Accessible Student Study 2",
                 "type": "location",
@@ -1677,7 +1677,7 @@
         },
         {
             "type": "Feature",
-            "id": 23,
+            "id": 25,
             "properties": {
                 "name": "Bring Your Own Device (BYOD) Zone",
                 "type": "location",
@@ -1839,7 +1839,7 @@
         },
         {
             "type": "Feature",
-            "id": 24,
+            "id": 26,
             "properties": {
                 "name": "Water Dispenser",
                 "type": "location",

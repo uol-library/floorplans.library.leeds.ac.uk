@@ -1378,7 +1378,7 @@
         },
         {
             "type": "Feature",
-            "id": 25,
+            "id": 24,
             "properties": {
                 "name": "Law",
                 "type": "shelf",
@@ -1445,7 +1445,7 @@
         },
         {
             "type": "Feature",
-            "id": 26,
+            "id": 25,
             "properties": {
                 "name": "Linguistics",
                 "type": "shelf",
@@ -1504,7 +1504,7 @@
         },
         {
             "type": "Feature",
-            "id": 27,
+            "id": 26,
             "properties": {
                 "name": "Management",
                 "type": "shelf",
@@ -1585,7 +1585,7 @@
         },
         {
             "type": "Feature",
-            "id": 28,
+            "id": 27,
             "properties": {
                 "name": "Materials",
                 "type": "shelf",
@@ -1622,7 +1622,7 @@
         },
         {
             "type": "Feature",
-            "id": 29,
+            "id": 28,
             "properties": {
                 "name": "Mathematics",
                 "type": "shelf",
@@ -1667,7 +1667,7 @@
         },
         {
             "type": "Feature",
-            "id": 30,
+            "id": 29,
             "properties": {
                 "name": "Mechanical Engineering",
                 "type": "shelf",
@@ -1704,7 +1704,7 @@
         },
         {
             "type": "Feature",
-            "id": 31,
+            "id": 30,
             "properties": {
                 "name": "Mining",
                 "type": "shelf",
@@ -1741,7 +1741,7 @@
         },
         {
             "type": "Feature",
-            "id": 23,
+            "id": 31,
             "properties": {
                 "name": "Group Booths",
                 "type": "location",
@@ -1779,7 +1779,7 @@
         },
         {
             "type": "Feature",
-            "id": 24,
+            "id": 32,
             "properties": {
                 "name": "Group Room 7",
                 "type": "location",
@@ -1817,7 +1817,7 @@
         },
         {
             "type": "Feature",
-            "id": 26,
+            "id": 33,
             "properties": {
                 "name": "Print, Copy, Scan",
                 "type": "location",
@@ -1855,7 +1855,7 @@
         },
         {
             "type": "Feature",
-            "id": 27,
+            "id": 34,
             "properties": {
                 "name": "Desktop computers",
                 "type": "location",
@@ -1893,7 +1893,7 @@
         },
         {
             "type": "Feature",
-            "id": 28,
+            "id": 35,
             "properties": {
                 "name": "Accessible Student Study 1",
                 "type": "location",
@@ -1931,7 +1931,7 @@
         },
         {
             "type": "Feature",
-            "id": 29,
+            "id": 36,
             "properties": {
                 "name": "Bring Your Own Device (BYOD) Zone",
                 "type": "location",
@@ -2093,7 +2093,7 @@
         },
         {
             "type": "Feature",
-            "id": 30,
+            "id": 37,
             "properties": {
                 "name": "Water Dispenser",
                 "type": "location",

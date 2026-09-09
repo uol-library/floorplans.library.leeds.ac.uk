@@ -273,7 +273,7 @@
         },
         {
             "type": "Feature",
-            "id": 79,
+            "id": 3,
             "properties": {
                 "name": "Wellbeing area",
                 "type": "location",
@@ -469,7 +469,8 @@
                         ]
                     ]
                 ]
-            }
+            },
+            "id": 4
         },
         {
             "type": "Feature",
@@ -4213,7 +4214,7 @@
         },
         {
             "type": "Feature",
-            "id": 63,
+            "id": 62,
             "properties": {
                 "name": "Group Study Room 1",
                 "type": "location",
@@ -4251,7 +4252,7 @@
         },
         {
             "type": "Feature",
-            "id": 66,
+            "id": 63,
             "properties": {
                 "name": "Wolfson Room",
                 "type": "location",
@@ -4289,7 +4290,7 @@
         },
         {
             "type": "Feature",
-            "id": 72,
+            "id": 64,
             "properties": {
                 "name": "Self Issue Units",
                 "type": "location",
@@ -4349,7 +4350,7 @@
         },
         {
             "type": "Feature",
-            "id": 75,
+            "id": 65,
             "properties": {
                 "name": "Print, Copy, Scan",
                 "type": "location",
@@ -4409,7 +4410,7 @@
         },
         {
             "type": "Feature",
-            "id": 76,
+            "id": 66,
             "properties": {
                 "name": "Laptop Lockers",
                 "type": "location",
@@ -4447,7 +4448,7 @@
         },
         {
             "type": "Feature",
-            "id": 77,
+            "id": 67,
             "properties": {
                 "name": "Group Study Room 2",
                 "type": "location",
@@ -4485,7 +4486,7 @@
         },
         {
             "type": "Feature",
-            "id": 78,
+            "id": 68,
             "properties": {
                 "name": "Book Return",
                 "type": "location",
@@ -4523,7 +4524,7 @@
         },
         {
             "type": "Feature",
-            "id": 80,
+            "id": 69,
             "properties": {
                 "name": "Group Study Pods",
                 "type": "location",
@@ -4583,7 +4584,7 @@
         },
         {
             "type": "Feature",
-            "id": 81,
+            "id": 70,
             "properties": {
                 "name": "Individual Study Pods",
                 "type": "location",
@@ -4643,7 +4644,7 @@
         },
         {
             "type": "Feature",
-            "id": 82,
+            "id": 71,
             "properties": {
                 "name": "Desktop Computers",
                 "type": "location",
@@ -4681,7 +4682,7 @@
         },
         {
             "type": "Feature",
-            "id": 83,
+            "id": 72,
             "properties": {
                 "name": "Bring Your Own Device (BYOD) Zone",
                 "type": "location",
@@ -4862,11 +4863,12 @@
                         ]
                     ]
                 ]
-            }
+            },
+            "id": 73
         },
         {
             "type": "Feature",
-            "id": 84,
+            "id": 74,
             "properties": {
                 "name": "Prayer Room",
                 "type": "location",
