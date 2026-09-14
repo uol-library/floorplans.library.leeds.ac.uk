@@ -26,6 +26,7 @@ const floorplans = {
 	controls: null,
 	infoPanel: null,
 	currentFloor: false,
+	canUseLocalStorage: function() { return false },
 	palette: [
 		'#ff3b8d',
 		'#009e8c',

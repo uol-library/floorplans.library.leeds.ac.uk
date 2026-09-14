@@ -1,5 +1,5 @@
 ---
 ---
-{% include javascript/config.js %}
+export {% include javascript/config.js %}
 {% include javascript/features.js %}
 {% include javascript/icons.js %}

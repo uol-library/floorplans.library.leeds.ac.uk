@@ -57,4 +57,12 @@
     --d7: #9b70ff;
     --d8: #00a21f;
     --d9: #d150ff;
+
+    /* modal */
+    --modal-bg: #ffffff;
+    --modal-overlay: rgba(0, 0, 0, 0.5);
+    --modal-header-bg: #f5f5f5;
+    --modal-header-color: #212121;
+    --modal-footer-bg: #f5f5f5;
+    --modal-footer-color: #212121;
 }

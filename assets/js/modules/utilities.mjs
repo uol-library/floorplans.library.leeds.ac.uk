@@ -1,3 +1,4 @@
+import { floorplans } from './config.mjs';
 /**
  * Creates text for the popups
  */
@@ -147,7 +148,7 @@ function getSVGIcon(icon) {
  * @returns {boolean}
  */
  function storageAvailable( type ) {
-    if ( ! canUseLocalStorage() ) {
+    if ( ! floorplans.canUseLocalStorage() ) {
         return false;
     }
     var storage;

@@ -19,13 +19,14 @@ const floorplans = {
 		startLng: 0,
 		paddingTopLeft: [300,0],
 		paddingBottomRight: [0,0],
-		baseURL: 'https://floorplans.library.leeds.ac.uk'
+		baseURL: 'http://localhost:4001'
 	},
 	maxHeight: 0,
 	maxWidth: 0,
 	controls: null,
 	infoPanel: null,
 	currentFloor: false,
+	canUseLocalStorage: function() { return false },
 	palette: [
 		'#ff3b8d',
 		'#009e8c',

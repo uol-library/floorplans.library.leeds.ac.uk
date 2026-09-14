@@ -15,10 +15,18 @@
     {%- endif -%}
     {% include dc.html %}
     <title>{{ site.title }}</title>
-    <link rel="stylesheet" href="{{ "/assets/css/editor-style.css" | absolute_url }}">
+    <link rel="stylesheet" href="{{ "/assets/css/editor.css" | absolute_url }}">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin=""/>
     <link rel="stylesheet" href="https://unpkg.com/@geoman-io/leaflet-geoman-free@2.17.0/dist/leaflet-geoman.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-polydraw@latest/dist/polydraw.css"/>
     <script src="{{ "/assets/scripts/config.js" | absolute_url }}"></script>
+    <script type="importmap">
+    {
+        "imports": {
+            "a11y-dialog": "https://cdn.jsdelivr.net/npm/a11y-dialog@8/dist/a11y-dialog.esm.min.js"
+        }
+    }
+    </script>
     {% include favicons.html %}
     {% include custom-head.html %}
 </head>
