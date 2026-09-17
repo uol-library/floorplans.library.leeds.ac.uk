@@ -273,7 +273,7 @@
         },
         {
             "type": "Feature",
-            "id": 3,
+            "id": 79,
             "properties": {
                 "name": "Wellbeing area",
                 "type": "location",
@@ -469,8 +469,7 @@
                         ]
                     ]
                 ]
-            },
-            "id": 4
+            }
         },
         {
             "type": "Feature",
@@ -478,7 +477,7 @@
             "properties": {
                 "name": "Abstracts",
                 "type": "shelf",
-                "class": "d2",
+                "class": "d1",
                 "desc": ""
             },
             "geometry": {
@@ -537,7 +536,7 @@
             "properties": {
                 "name": "Periodicals",
                 "type": "shelf",
-                "class": "d1",
+                "class": "d2",
                 "desc": ""
             },
             "geometry": {
@@ -860,7 +859,7 @@
             "properties": {
                 "name": "Psychology",
                 "type": "shelf",
-                "class": "d2",
+                "class": "d3",
                 "desc": ""
             },
             "geometry": {
@@ -1103,7 +1102,7 @@
             "properties": {
                 "name": "Reference",
                 "type": "shelf",
-                "class": "d1",
+                "class": "d4",
                 "desc": ""
             },
             "geometry": {
@@ -1140,7 +1139,7 @@
             "properties": {
                 "name": "Statistics",
                 "type": "shelf",
-                "class": "d2",
+                "class": "d5",
                 "desc": ""
             },
             "geometry": {
@@ -1177,7 +1176,7 @@
             "properties": {
                 "name": "BF - Psychology",
                 "type": "shelf",
-                "class": "d1",
+                "class": "d6",
                 "desc": ""
             },
             "geometry": {
@@ -1266,7 +1265,7 @@
             "properties": {
                 "name": "BL - Religions",
                 "type": "shelf",
-                "class": "d3",
+                "class": "d7",
                 "desc": ""
             },
             "geometry": {
@@ -1303,7 +1302,7 @@
             "properties": {
                 "name": "BM - Judaism",
                 "type": "shelf",
-                "class": "d1",
+                "class": "d8",
                 "desc": ""
             },
             "geometry": {
@@ -1340,7 +1339,7 @@
             "properties": {
                 "name": "GN - Anthropology",
                 "type": "shelf",
-                "class": "d3",
+                "class": "d9",
                 "desc": ""
             },
             "geometry": {
@@ -1377,7 +1376,7 @@
             "properties": {
                 "name": "HM - Sociology",
                 "type": "shelf",
-                "class": "d5",
+                "class": "d10",
                 "desc": ""
             },
             "geometry": {
@@ -1414,7 +1413,7 @@
             "properties": {
                 "name": "HV - Social Services",
                 "type": "shelf",
-                "class": "d4",
+                "class": "d11",
                 "desc": ""
             },
             "geometry": {
@@ -1451,7 +1450,7 @@
             "properties": {
                 "name": "QA - Mathematics",
                 "type": "shelf",
-                "class": "d5",
+                "class": "d12",
                 "desc": ""
             },
             "geometry": {
@@ -1488,7 +1487,7 @@
             "properties": {
                 "name": "QB - Astronomy",
                 "type": "shelf",
-                "class": "d4",
+                "class": "d13",
                 "desc": ""
             },
             "geometry": {
@@ -1525,7 +1524,7 @@
             "properties": {
                 "name": "QC - Physics",
                 "type": "shelf",
-                "class": "d5",
+                "class": "d14",
                 "desc": ""
             },
             "geometry": {
@@ -1562,7 +1561,7 @@
             "properties": {
                 "name": "QD - Chemistry",
                 "type": "shelf",
-                "class": "d4",
+                "class": "d15",
                 "desc": ""
             },
             "geometry": {
@@ -1599,7 +1598,7 @@
             "properties": {
                 "name": "QH - Biology",
                 "type": "shelf",
-                "class": "d5",
+                "class": "d16",
                 "desc": ""
             },
             "geometry": {
@@ -1636,7 +1635,7 @@
             "properties": {
                 "name": "QL - Zoology",
                 "type": "shelf",
-                "class": "d6",
+                "class": "d17",
                 "desc": ""
             },
             "geometry": {
@@ -1673,7 +1672,7 @@
             "properties": {
                 "name": "QP - Physiology",
                 "type": "shelf",
-                "class": "d7",
+                "class": "d18",
                 "desc": ""
             },
             "geometry": {
@@ -1710,7 +1709,7 @@
             "properties": {
                 "name": "QS - Human Anatomy",
                 "type": "shelf",
-                "class": "d8",
+                "class": "d19",
                 "desc": ""
             },
             "geometry": {
@@ -1791,7 +1790,7 @@
             "properties": {
                 "name": "QT - Human Physiology",
                 "type": "shelf",
-                "class": "d9",
+                "class": "d20",
                 "desc": ""
             },
             "geometry": {
@@ -1850,7 +1849,7 @@
             "properties": {
                 "name": "QU - Biochemistry, Cell Biology and Genetics",
                 "type": "shelf",
-                "class": "d8",
+                "class": "d21",
                 "desc": ""
             },
             "geometry": {
@@ -1909,7 +1908,7 @@
             "properties": {
                 "name": "QV -Pharmacology",
                 "type": "shelf",
-                "class": "d9",
+                "class": "d22",
                 "desc": ""
             },
             "geometry": {
@@ -1998,7 +1997,7 @@
             "properties": {
                 "name": "QW - Microbiology and Immunology",
                 "type": "shelf",
-                "class": "d1",
+                "class": "d23",
                 "desc": ""
             },
             "geometry": {
@@ -2057,7 +2056,7 @@
             "properties": {
                 "name": "QY - Clinical Pathology",
                 "type": "shelf",
-                "class": "d2",
+                "class": "d24",
                 "desc": ""
             },
             "geometry": {
@@ -2094,7 +2093,7 @@
             "properties": {
                 "name": "QZ - Pathology and Oncology",
                 "type": "shelf",
-                "class": "d2",
+                "class": "d1",
                 "desc": ""
             },
             "geometry": {
@@ -2175,7 +2174,7 @@
             "properties": {
                 "name": "WQ - Obstetrics",
                 "type": "shelf",
-                "class": "d1",
+                "class": "d2",
                 "desc": ""
             },
             "geometry": {
@@ -2234,7 +2233,7 @@
             "properties": {
                 "name": "WA - Patients and Primary Care",
                 "type": "shelf",
-                "class": "d2",
+                "class": "d3",
                 "desc": ""
             },
             "geometry": {
@@ -2403,7 +2402,7 @@
             "properties": {
                 "name": "WB - Practice of Medicine",
                 "type": "shelf",
-                "class": "d1",
+                "class": "d4",
                 "desc": ""
             },
             "geometry": {
@@ -2514,7 +2513,7 @@
             "properties": {
                 "name": "WC - Communicable Diseases",
                 "type": "shelf",
-                "class": "d2",
+                "class": "d5",
                 "desc": ""
             },
             "geometry": {
@@ -2581,7 +2580,7 @@
             "properties": {
                 "name": "WD - Disorders of Systemic, Metabolic or Environmental Origin",
                 "type": "shelf",
-                "class": "d1",
+                "class": "d6",
                 "desc": ""
             },
             "geometry": {
@@ -2618,7 +2617,7 @@
             "properties": {
                 "name": "WE - Musculoskeletal System",
                 "type": "shelf",
-                "class": "d3",
+                "class": "d7",
                 "desc": ""
             },
             "geometry": {
@@ -2699,7 +2698,7 @@
             "properties": {
                 "name": "WF - Respiratory System",
                 "type": "shelf",
-                "class": "d1",
+                "class": "d8",
                 "desc": ""
             },
             "geometry": {
@@ -2744,7 +2743,7 @@
             "properties": {
                 "name": "WG - Cardiovascular System",
                 "type": "shelf",
-                "class": "d3",
+                "class": "d9",
                 "desc": ""
             },
             "geometry": {
@@ -2803,7 +2802,7 @@
             "properties": {
                 "name": "WH - Haemic and Lymphatic Systems",
                 "type": "shelf",
-                "class": "d5",
+                "class": "d10",
                 "desc": ""
             },
             "geometry": {
@@ -2840,7 +2839,7 @@
             "properties": {
                 "name": "WI - Digestive System",
                 "type": "shelf",
-                "class": "d4",
+                "class": "d11",
                 "desc": ""
             },
             "geometry": {
@@ -2877,7 +2876,7 @@
             "properties": {
                 "name": "WJ - Urogenital System",
                 "type": "shelf",
-                "class": "d5",
+                "class": "d12",
                 "desc": ""
             },
             "geometry": {
@@ -2922,7 +2921,7 @@
             "properties": {
                 "name": "WK - Endocrine System",
                 "type": "shelf",
-                "class": "d4",
+                "class": "d13",
                 "desc": ""
             },
             "geometry": {
@@ -2959,7 +2958,7 @@
             "properties": {
                 "name": "WL - Nervous System",
                 "type": "shelf",
-                "class": "d5",
+                "class": "d14",
                 "desc": ""
             },
             "geometry": {
@@ -3048,7 +3047,7 @@
             "properties": {
                 "name": "WM - Psychiatry",
                 "type": "shelf",
-                "class": "d4",
+                "class": "d15",
                 "desc": ""
             },
             "geometry": {
@@ -3181,7 +3180,7 @@
             "properties": {
                 "name": "WN - Radiology. Diagnostic Imaging",
                 "type": "shelf",
-                "class": "d5",
+                "class": "d16",
                 "desc": ""
             },
             "geometry": {
@@ -3240,7 +3239,7 @@
             "properties": {
                 "name": "WO - Surgery",
                 "type": "shelf",
-                "class": "d6",
+                "class": "d17",
                 "desc": ""
             },
             "geometry": {
@@ -3307,7 +3306,7 @@
             "properties": {
                 "name": "WP - Gynecology",
                 "type": "shelf",
-                "class": "d7",
+                "class": "d18",
                 "desc": ""
             },
             "geometry": {
@@ -3344,7 +3343,7 @@
             "properties": {
                 "name": "Q - General Sciences",
                 "type": "shelf",
-                "class": "d8",
+                "class": "d19",
                 "desc": ""
             },
             "geometry": {
@@ -3381,7 +3380,7 @@
             "properties": {
                 "name": "WR - Dermatology",
                 "type": "shelf",
-                "class": "d9",
+                "class": "d20",
                 "desc": ""
             },
             "geometry": {
@@ -3419,7 +3418,7 @@
                 "name": "WS - Pediatrics",
                 "type": "shelf",
                 "subject": "",
-                "class": "d8",
+                "class": "d21",
                 "desc": ""
             },
             "geometry": {
@@ -3486,7 +3485,7 @@
             "properties": {
                 "name": "WT - Geriatrics, Chronic Disease",
                 "type": "shelf",
-                "class": "d9",
+                "class": "d22",
                 "desc": ""
             },
             "geometry": {
@@ -3545,7 +3544,7 @@
             "properties": {
                 "name": "WU - Dentistry, Oral Surgery",
                 "type": "shelf",
-                "class": "d1",
+                "class": "d23",
                 "desc": ""
             },
             "geometry": {
@@ -3612,7 +3611,7 @@
             "properties": {
                 "name": "WV - Otolaryngology",
                 "type": "shelf",
-                "class": "d2",
+                "class": "d24",
                 "desc": ""
             },
             "geometry": {
@@ -3671,7 +3670,7 @@
             "properties": {
                 "name": "WW - Ophthalmology",
                 "type": "shelf",
-                "class": "d2",
+                "class": "d1",
                 "desc": ""
             },
             "geometry": {
@@ -3708,7 +3707,7 @@
             "properties": {
                 "name": "WX - Hospitals and Other Health Facilities",
                 "type": "shelf",
-                "class": "d1",
+                "class": "d2",
                 "desc": ""
             },
             "geometry": {
@@ -3767,7 +3766,7 @@
             "properties": {
                 "name": "WY - Nursing",
                 "type": "shelf",
-                "class": "d2",
+                "class": "d3",
                 "desc": ""
             },
             "geometry": {
@@ -3900,7 +3899,7 @@
             "properties": {
                 "name": "WZ - History of Medicine",
                 "type": "shelf",
-                "class": "d1",
+                "class": "d4",
                 "desc": ""
             },
             "geometry": {
@@ -3937,7 +3936,7 @@
             "properties": {
                 "name": "W - General Medicine, Health Professions",
                 "type": "shelf",
-                "class": "d2",
+                "class": "d5",
                 "desc": ""
             },
             "geometry": {
@@ -4048,7 +4047,7 @@
             "properties": {
                 "name": "Z - Information Skills",
                 "type": "shelf",
-                "class": "d1",
+                "class": "d6",
                 "desc": ""
             },
             "geometry": {
@@ -4085,7 +4084,7 @@
             "properties": {
                 "name": "Requested Items",
                 "type": "shelf",
-                "class": "d3",
+                "class": "d7",
                 "desc": ""
             },
             "geometry": {
@@ -4122,7 +4121,7 @@
             "properties": {
                 "name": "AVC - Audio-Visual Collection",
                 "type": "shelf",
-                "class": "d1",
+                "class": "d8",
                 "desc": ""
             },
             "geometry": {
@@ -4159,7 +4158,7 @@
             "properties": {
                 "name": "Pamphlets",
                 "type": "shelf",
-                "class": "d3",
+                "class": "d9",
                 "desc": ""
             },
             "geometry": {
@@ -4214,7 +4213,7 @@
         },
         {
             "type": "Feature",
-            "id": 62,
+            "id": 63,
             "properties": {
                 "name": "Group Study Room 1",
                 "type": "location",
@@ -4252,7 +4251,7 @@
         },
         {
             "type": "Feature",
-            "id": 63,
+            "id": 66,
             "properties": {
                 "name": "Wolfson Room",
                 "type": "location",
@@ -4290,7 +4289,7 @@
         },
         {
             "type": "Feature",
-            "id": 64,
+            "id": 72,
             "properties": {
                 "name": "Self Issue Units",
                 "type": "location",
@@ -4350,7 +4349,7 @@
         },
         {
             "type": "Feature",
-            "id": 65,
+            "id": 75,
             "properties": {
                 "name": "Print, Copy, Scan",
                 "type": "location",
@@ -4410,7 +4409,7 @@
         },
         {
             "type": "Feature",
-            "id": 66,
+            "id": 76,
             "properties": {
                 "name": "Laptop Lockers",
                 "type": "location",
@@ -4448,7 +4447,7 @@
         },
         {
             "type": "Feature",
-            "id": 67,
+            "id": 77,
             "properties": {
                 "name": "Group Study Room 2",
                 "type": "location",
@@ -4486,7 +4485,7 @@
         },
         {
             "type": "Feature",
-            "id": 68,
+            "id": 78,
             "properties": {
                 "name": "Book Return",
                 "type": "location",
@@ -4524,7 +4523,7 @@
         },
         {
             "type": "Feature",
-            "id": 69,
+            "id": 80,
             "properties": {
                 "name": "Group Study Pods",
                 "type": "location",
@@ -4584,7 +4583,7 @@
         },
         {
             "type": "Feature",
-            "id": 70,
+            "id": 81,
             "properties": {
                 "name": "Individual Study Pods",
                 "type": "location",
@@ -4644,7 +4643,7 @@
         },
         {
             "type": "Feature",
-            "id": 71,
+            "id": 82,
             "properties": {
                 "name": "Desktop Computers",
                 "type": "location",
@@ -4682,7 +4681,7 @@
         },
         {
             "type": "Feature",
-            "id": 72,
+            "id": 83,
             "properties": {
                 "name": "Bring Your Own Device (BYOD) Zone",
                 "type": "location",
@@ -4863,12 +4862,11 @@
                         ]
                     ]
                 ]
-            },
-            "id": 73
+            }
         },
         {
             "type": "Feature",
-            "id": 74,
+            "id": 84,
             "properties": {
                 "name": "Prayer Room",
                 "type": "location",

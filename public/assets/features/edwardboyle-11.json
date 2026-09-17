@@ -559,7 +559,7 @@
             "properties": {
                 "name": "Colour Chemistry",
                 "type": "shelf",
-                "class": "d9",
+                "class": "d2",
                 "desc": ""
             },
             "geometry": {
@@ -592,7 +592,7 @@
             "properties": {
                 "name": "Computer Studies",
                 "type": "shelf",
-                "class": "d2",
+                "class": "d3",
                 "desc": ""
             },
             "geometry": {
@@ -679,7 +679,7 @@
             "properties": {
                 "name": "Electrical Engineering",
                 "type": "shelf",
-                "class": "d6",
+                "class": "d4",
                 "desc": ""
             },
             "geometry": {
@@ -799,7 +799,7 @@
             "properties": {
                 "name": "Food",
                 "type": "shelf",
-                "class": "d7",
+                "class": "d6",
                 "desc": ""
             },
             "geometry": {
@@ -850,7 +850,7 @@
             "properties": {
                 "name": "Fuel",
                 "type": "shelf",
-                "class": "d9",
+                "class": "d7",
                 "desc": ""
             },
             "geometry": {
@@ -988,7 +988,7 @@
             "properties": {
                 "name": "General Science",
                 "type": "shelf",
-                "class": "d3",
+                "class": "d9",
                 "desc": ""
             },
             "geometry": {
@@ -1021,7 +1021,7 @@
             "properties": {
                 "name": "Geography",
                 "type": "shelf",
-                "class": "d5",
+                "class": "d10",
                 "desc": ""
             },
             "geometry": {
@@ -1144,7 +1144,7 @@
             "properties": {
                 "name": "Geology",
                 "type": "shelf",
-                "class": "d4",
+                "class": "d11",
                 "desc": ""
             },
             "geometry": {
@@ -1213,7 +1213,7 @@
             "properties": {
                 "name": "History of Science",
                 "type": "shelf",
-                "class": "d6",
+                "class": "d12",
                 "desc": ""
             },
             "geometry": {
@@ -1318,7 +1318,7 @@
             "properties": {
                 "name": "Materials",
                 "type": "shelf",
-                "class": "d8",
+                "class": "d13",
                 "desc": ""
             },
             "geometry": {
@@ -1387,7 +1387,7 @@
             "properties": {
                 "name": "Mathematics",
                 "type": "shelf",
-                "class": "d5",
+                "class": "d14",
                 "desc": ""
             },
             "geometry": {
@@ -1536,7 +1536,7 @@
             "properties": {
                 "name": "Mechanical Engineering",
                 "type": "shelf",
-                "class": "d4",
+                "class": "d15",
                 "desc": ""
             },
             "geometry": {
@@ -1613,7 +1613,7 @@
             "properties": {
                 "name": "Mining",
                 "type": "shelf",
-                "class": "d5",
+                "class": "d16",
                 "desc": ""
             },
             "geometry": {
@@ -1654,7 +1654,7 @@
             "properties": {
                 "name": "Physics",
                 "type": "shelf",
-                "class": "d6",
+                "class": "d17",
                 "desc": ""
             },
             "geometry": {
@@ -1723,7 +1723,7 @@
             "properties": {
                 "name": "Recently Returned",
                 "type": "shelf",
-                "class": "d7",
+                "class": "d18",
                 "desc": ""
             },
             "geometry": {
@@ -1774,7 +1774,7 @@
             "properties": {
                 "name": "Atlas Case",
                 "type": "shelf",
-                "class": "d3",
+                "class": "d20",
                 "desc": ""
             },
             "geometry": {
@@ -1807,7 +1807,7 @@
             "properties": {
                 "name": "Applied Biology",
                 "type": "shelf",
-                "class": "d8",
+                "class": "d21",
                 "desc": ""
             },
             "geometry": {
@@ -1848,7 +1848,7 @@
             "properties": {
                 "name": "Astronomy",
                 "type": "shelf",
-                "class": "d9",
+                "class": "d22",
                 "desc": ""
             },
             "geometry": {
@@ -1899,7 +1899,7 @@
             "properties": {
                 "name": "Botany",
                 "type": "shelf",
-                "class": "d1",
+                "class": "d23",
                 "desc": ""
             },
             "geometry": {
@@ -1958,7 +1958,7 @@
             "properties": {
                 "name": "Chemical Engineering",
                 "type": "shelf",
-                "class": "d5",
+                "class": "d24",
                 "desc": ""
             },
             "geometry": {
@@ -2009,7 +2009,7 @@
             "properties": {
                 "name": "Chemistry",
                 "type": "shelf",
-                "class": "d2",
+                "class": "d1",
                 "desc": ""
             },
             "geometry": {
@@ -2086,7 +2086,7 @@
             "properties": {
                 "name": "Civil Engineering",
                 "type": "shelf",
-                "class": "d1",
+                "class": "d2",
                 "desc": ""
             },
             "geometry": {
@@ -2155,7 +2155,7 @@
             "properties": {
                 "name": "Sports Science",
                 "type": "shelf",
-                "class": "d2",
+                "class": "d3",
                 "desc": ""
             },
             "geometry": {
@@ -2188,7 +2188,7 @@
             "properties": {
                 "name": "Transport",
                 "type": "shelf",
-                "class": "d1",
+                "class": "d4",
                 "desc": ""
             },
             "geometry": {
@@ -2246,39 +2246,6 @@
                         [
                             40.468,
                             -70.562
-                        ]
-                    ]
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "id": 29,
-            "properties": {
-                "name": "Engineering",
-                "type": "shelf",
-                "class": "d1",
-                "desc": ""
-            },
-            "geometry": {
-                "type": "Polygon",
-                "coordinates": [
-                    [
-                        [
-                            85.12,
-                            -18.34
-                        ],
-                        [
-                            85.77,
-                            -18.34
-                        ],
-                        [
-                            85.77,
-                            -30.53
-                        ],
-                        [
-                            85.12,
-                            -30.53
                         ]
                     ]
                 ]
@@ -2287,6 +2254,39 @@
         {
             "type": "Feature",
             "id": 30,
+            "properties": {
+                "name": "Engineering",
+                "type": "shelf",
+                "class": "d6",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            85.12,
+                            -18.34
+                        ],
+                        [
+                            85.77,
+                            -18.34
+                        ],
+                        [
+                            85.77,
+                            -30.53
+                        ],
+                        [
+                            85.12,
+                            -30.53
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 31,
             "properties": {
                 "name": "Prayer Room",
                 "type": "location",
@@ -2348,7 +2348,7 @@
         },
         {
             "type": "Feature",
-            "id": 31,
+            "id": 32,
             "properties": {
                 "name": "Print, Copy, Scan",
                 "type": "location",
@@ -2408,7 +2408,7 @@
         },
         {
             "type": "Feature",
-            "id": 32,
+            "id": 33,
             "properties": {
                 "name": "Desktop computers",
                 "type": "location",
@@ -2468,7 +2468,7 @@
         },
         {
             "type": "Feature",
-            "id": 33,
+            "id": 34,
             "properties": {
                 "name": "Water Dispenser",
                 "type": "location",

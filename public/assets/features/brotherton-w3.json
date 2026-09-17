@@ -92,7 +92,7 @@
         },
         {
             "type": "Feature",
-            "id": 2,
+            "id": 3,
             "properties": {
                 "name": "Print, Copy, Scan",
                 "type": "location",
@@ -152,7 +152,7 @@
         },
         {
             "type": "Feature",
-            "id": 3,
+            "id": 4,
             "properties": {
                 "name": "Bring Your Own Device (BYOD) Zone",
                 "type": "location",

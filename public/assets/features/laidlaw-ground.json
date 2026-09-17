@@ -784,7 +784,7 @@
         },
         {
             "type": "Feature",
-            "id": 8,
+            "id": 15,
             "properties": {
                 "name": "Print, Copy, Scan",
                 "type": "location",
@@ -822,7 +822,7 @@
         },
         {
             "type": "Feature",
-            "id": 9,
+            "id": 17,
             "properties": {
                 "name": "Reception",
                 "type": "location",
@@ -868,7 +868,7 @@
         },
         {
             "type": "Feature",
-            "id": 10,
+            "id": 18,
             "properties": {
                 "name": "Self Issue Units",
                 "type": "location",
@@ -906,7 +906,7 @@
         },
         {
             "type": "Feature",
-            "id": 11,
+            "id": 19,
             "properties": {
                 "name": "Weston Room",
                 "type": "location",
@@ -960,7 +960,7 @@
         },
         {
             "type": "Feature",
-            "id": 12,
+            "id": 20,
             "properties": {
                 "name": "Desktop computers",
                 "type": "location",
@@ -1020,7 +1020,7 @@
         },
         {
             "type": "Feature",
-            "id": 13,
+            "id": 23,
             "properties": {
                 "name": "Laptop Lockers",
                 "type": "location",
@@ -1058,7 +1058,7 @@
         },
         {
             "type": "Feature",
-            "id": 14,
+            "id": 24,
             "properties": {
                 "name": "Water Dispenser",
                 "type": "location",
@@ -1096,7 +1096,7 @@
         },
         {
             "type": "Feature",
-            "id": 15,
+            "id": 25,
             "properties": {
                 "name": "Skills Pods",
                 "type": "location",
