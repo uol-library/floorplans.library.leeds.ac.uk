@@ -1,0 +1,235 @@
+{
+    "@context": "http://iiif.io/api/presentation/3/context.json",
+    "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-m4/manifest.json",
+    "type": "Manifest",
+    "label": {
+        "en": [
+            "Brotherton Library Main Building - level 4"
+        ]
+    },
+    "items": [
+        {
+            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-m4/canvas/p1",
+            "type": "Canvas",
+            "width": 4611,
+            "height": 4700,
+            "label": {
+                "en": [
+                    "Brotherton Library Main Building - level 4"
+                ]
+            },
+            "items": [
+                {
+                    "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-m4/canvas/p1/1",
+                    "type": "AnnotationPage",
+                    "items": [
+                        {
+                            "@context": "http://iiif.io/api/presentation/3/context.json",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-m4/canvas/p1/1/image",
+                            "type": "Annotation",
+                            "motivation": "painting",
+                            "target": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-m4/canvas/p1",
+                            "body": {
+                                "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-m4/full/max/0/default.jpg",
+                                "type": "Image",
+                                "label": {
+                                    "en": [
+                                        "Brotherton Library Main Building - level 4"
+                                    ]
+                                },
+                                "format": "image/jpeg",
+                                "service": [
+                                    {
+                                        "@context": "http://iiif.io/api/image/2/context.json",
+                                        "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-m4",
+                                        "type": "ImageService3",
+                                        "profile": "level0",
+                                        "protocol": "http://iiif.io/api/image",
+                                        "tiles": [
+                                            {
+                                                "scaleFactors": [
+                                                    1,
+                                                    2,
+                                                    4,
+                                                    8,
+                                                    16,
+                                                    32
+                                                ],
+                                                "width": 1024,
+                                                "height": 1024
+                                            }
+                                        ],
+                                        "width": 4611,
+                                        "height": 4700
+                                    }
+                                ],
+                                "width": 4611,
+                                "height": 4700
+                            }
+                        }
+                    ]
+                }
+            ],
+            "annotations": [
+                {
+                    "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-m4/canvas/p1/2",
+                    "type": "AnnotationPage",
+                    "items": [
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-m4/canvas/p1/2/annotation1-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Large",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-m4/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,4611,4700'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='3038,3556 2970,3593 2900,3626 3182,4407 3321,4345 3449,4281'><title>Large</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-m4/canvas/p1/2/annotation2-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "General Literature",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-m4/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,4611,4700'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='3273,3392 3160,3479 3038,3556 3449,4281 3600,4182 3840,3993'><title>General Literature</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-m4/canvas/p1/2/annotation3-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Bibliography",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-m4/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,4611,4700'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='1616,3583 1604,3578 1571,3560 1539,3541 1507,3522 1476,3502 1446,3482 1417,3461 1389,3439 1361,3417 1334,3394 1307,3371 1282,3348 1257,3323 1233,3299 1209,3273 1187,3248 1165,3222 1143,3195 1123,3168 1103,3141 1084,3113 1066,3085 1048,3057 1031,3028 1015,2999 1000,2970 985,2940 971,2910 958,2880 945,2850 933,2819 922,2788 921,2784 131,3075 136,3082 153,3129 172,3176 192,3222 212,3269 234,3314 257,3359 280,3404 305,3448 331,3492 358,3535 386,3578 415,3620 445,3662 476,3702 508,3743 541,3782 575,3821 610,3859 646,3897 683,3934 722,3970 761,4005 801,4039 842,4073 884,4106 928,4138 972,4169 1017,4199 1064,4228 1111,4256 1159,4284 1209,4310 1233,4318'><title>Bibliography</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-m4/canvas/p1/2/annotation4-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Recently returned",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-m4/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,4611,4700'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='1708,3626 1659,3604 1616,3583 1233,4318 1313,4356 1416,4402'><title>Recently returned</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-m4/canvas/p1/2/annotation5-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "English",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-m4/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,4611,4700'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='921,2784 901,2726 892,2694 884,2662 876,2630 869,2598 863,2566 857,2534 852,2502 848,2469 844,2437 841,2404 839,2372 837,2339 836,2307 836,2274 836,2242 837,2209 839,2177 842,2144 845,2112 848,2079 853,2047 858,2015 864,1983 870,1951 877,1920 885,1888 893,1857 902,1826 911,1795 922,1765 933,1734 944,1704 956,1674 969,1645 982,1616 996,1587 1011,1558 1026,1530 1042,1502 1059,1474 1076,1447 1094,1421 1112,1394 1131,1368 1151,1343 1171,1318 1192,1293 1213,1269 1235,1246 1258,1223 1281,1200 1305,1178 1330,1157 1355,1136 1381,1116 1407,1096 1434,1078 1461,1059 1489,1041 1518,1024 1547,1008 1577,992 1607,977 1638,963 1256,223 1204,251 1152,281 1102,311 1054,342 1006,374 959,407 913,441 869,476 826,511 784,547 743,584 703,622 664,660 626,699 590,739 554,779 520,820 486,862 454,904 423,947 393,990 365,1034 337,1078 310,1123 285,1168 260,1214 237,1260 215,1307 194,1354 174,1401 155,1449 137,1497 120,1545 105,1593 90,1642 77,1691 64,1741 53,1790 43,1840 34,1890 26,1940 19,1990 13,2040 8,2090 4,2141 2,2191 0,2242 0,2292 0,2342 2,2393 4,2443 8,2493 13,2543 19,2593 26,2643 34,2693 43,2742 53,2792 64,2841 76,2889 90,2938 104,2986 131,3075'><title>English</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-m4/canvas/p1/2/annotation6-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "English",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-m4/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,4611,4700'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='3004,981 3088,1028 3167,1080 3242,1137 3313,1200 3380,1268 3443,1340 3502,1418 3556,1501 3607,1590 3653,1683 3687,1764 3715,1845 3739,1929 3757,2013 3770,2099 3777,2185 3780,2273 3777,2363 3768,2453 3755,2545 3719,2692 3673,2830 3615,2959 3546,3080 3466,3193 3375,3297 3273,3392 3840,3993 3946,3896 4094,3732 4224,3553 4337,3360 4432,3153 4511,2931 4572,2695 4593,2554 4605,2414 4609,2275 4605,2137 4593,2001 4572,1865 4543,1730 4506,1597 4461,1464 4407,1333 4338,1194 4262,1063 4179,937 4089,819 3992,707 3887,602 3775,503 3656,411 3530,326 3396,247'><title>English</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-m4/canvas/p1/2/annotation7-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Special Collections",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-m4/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,4611,4700'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='2669,799 2993,919 3337,283 3333,-185 2669,-185'><title>Special Collections</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-m4/canvas/p1/2/annotation8-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Library PCs",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/brotherton-m4/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,4611,4700'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='2053,4163 2533,4163 2533,4419 2053,4419'><title>Library PCs</title></polygon></g></svg>"
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -50,6 +50,32 @@ This repository contains a refactored version of the floorplans which adopts the
 * Data for each floor is loaded in the form of an image file (for the floor layout) and GeoJSON data file (for shelves and other points of interest).
 * Tools to select floors and highlight shelves are added via a custom Leaflet control
 
+## Building the site
+
+The site is built with Jekyll into two directories, both of which are committed to the repository:
+
+* `public/` - production build (`_config.yml`, https://floorplans.library.leeds.ac.uk)
+* `public-dev/` - development build (`_config-dev.yml`, https://dev-floorplans.library.leeds.ac.uk, debug logging enabled)
+
+A pre-commit hook in `.githooks/` rebuilds both from the staged files and adds the output to the commit. Enable it once after cloning with:
+
+```sh
+git config core.hooksPath .githooks
+```
+
+To skip the build for a single commit, use `SKIP_JEKYLL_BUILD=1 git commit ...`. To build manually:
+
+```sh
+JEKYLL_ENV=production bundle exec jekyll build --config _config.yml
+JEKYLL_ENV=development bundle exec jekyll build --config _config-dev.yml
+```
+
+To run the site locally at http://localhost:4001 without touching either build directory, use `npm run serve`. This layers `_config-local.yml` over the development config and builds into `_site/`, which is not committed:
+
+```sh
+bundle exec jekyll serve --config _config-dev.yml,_config-local.yml
+```
+
 ## Future plans
 
 The floorplans can be integrated with [spacefinder](https://spacefinder.leeds.ac.uk/) once they have been georeferenced. However, georeferencing the plans means that all the GeoJSON for the shelves needs to be georeferenced as well, and all text and icons removed from the images.

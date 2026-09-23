@@ -467,7 +467,7 @@
             "id": 4,
             "properties": {
                 "name": "Print, Copy, Scan",
-                "type": "location",
+                "type": "service",
                 "desc": "Find out more about Print, scan and copy at the Library, including how and where you can print, copy and scan and buying print credit <a class=\"external\" target=\"_blank\" href=\"https://myprint.leeds.ac.uk/user\">on the MyPrint website</a>",
                 "icon": "print",
                 "class": "group-space-location"
@@ -527,7 +527,7 @@
             "id": 5,
             "properties": {
                 "name": "Research Support Team (Meeting Room)",
-                "type": "location",
+                "type": "service",
                 "desc": "",
                 "icon": "group",
                 "class": "staff-location"
@@ -565,7 +565,7 @@
             "id": 6,
             "properties": {
                 "name": "Group Study Room 13.14",
-                "type": "location",
+                "type": "service",
                 "desc": "",
                 "icon": "cubes",
                 "class": "group-space-location"
@@ -603,7 +603,7 @@
             "id": 7,
             "properties": {
                 "name": "Group Study Room 13.15",
-                "type": "location",
+                "type": "service",
                 "desc": "",
                 "icon": "cubes",
                 "class": "group-space-location"
@@ -641,7 +641,7 @@
             "id": 8,
             "properties": {
                 "name": "Group Study Room 13.16",
-                "type": "location",
+                "type": "service",
                 "desc": "",
                 "icon": "cubes",
                 "class": "group-space-location"
@@ -679,7 +679,7 @@
             "id": 9,
             "properties": {
                 "name": "Group Study Room 13.17",
-                "type": "location",
+                "type": "service",
                 "desc": "",
                 "icon": "cubes",
                 "class": "group-space-location"
@@ -717,7 +717,7 @@
             "id": 10,
             "properties": {
                 "name": "Group Study Room 13.18",
-                "type": "location",
+                "type": "service",
                 "desc": "",
                 "icon": "cubes",
                 "class": "group-space-location"
@@ -763,7 +763,7 @@
             "id": 11,
             "properties": {
                 "name": "Group Study Room 13.19",
-                "type": "location",
+                "type": "service",
                 "desc": "",
                 "icon": "cubes",
                 "class": "group-space-location"
@@ -801,7 +801,7 @@
             "id": 12,
             "properties": {
                 "name": "Group Study Room 13.20",
-                "type": "location",
+                "type": "service",
                 "desc": "",
                 "icon": "cubes",
                 "class": "group-space-location"
@@ -839,7 +839,7 @@
             "id": 13,
             "properties": {
                 "name": "Research Meeting Room 1",
-                "type": "location",
+                "type": "service",
                 "desc": "",
                 "icon": "group",
                 "class": "group-space-location"
@@ -885,7 +885,7 @@
             "id": 14,
             "properties": {
                 "name": "Research Meeting Room 2",
-                "type": "location",
+                "type": "service",
                 "desc": "",
                 "icon": "group",
                 "class": "group-space-location"
@@ -939,7 +939,7 @@
             "id": 15,
             "properties": {
                 "name": "Individual Study 13.1",
-                "type": "location",
+                "type": "service",
                 "desc": "",
                 "icon": "cube",
                 "class": "silent-space-location"
@@ -977,7 +977,7 @@
             "id": 16,
             "properties": {
                 "name": "Individual Study 13.2",
-                "type": "location",
+                "type": "service",
                 "desc": "",
                 "icon": "cube",
                 "class": "silent-space-location"
@@ -1015,7 +1015,7 @@
             "id": 17,
             "properties": {
                 "name": "Individual Study 13.3",
-                "type": "location",
+                "type": "service",
                 "desc": "",
                 "icon": "cube",
                 "class": "silent-space-location"
@@ -1053,7 +1053,7 @@
             "id": 18,
             "properties": {
                 "name": "Individual Study 13.4",
-                "type": "location",
+                "type": "service",
                 "desc": "",
                 "icon": "cube",
                 "class": "silent-space-location"
@@ -1091,7 +1091,7 @@
             "id": 19,
             "properties": {
                 "name": "Individual Study 13.5",
-                "type": "location",
+                "type": "service",
                 "desc": "",
                 "icon": "cube",
                 "class": "silent-space-location"
@@ -1129,7 +1129,7 @@
             "id": 20,
             "properties": {
                 "name": "Individual Study 13.6",
-                "type": "location",
+                "type": "service",
                 "desc": "",
                 "icon": "cube",
                 "class": "silent-space-location"
@@ -1167,7 +1167,7 @@
             "id": 21,
             "properties": {
                 "name": "Individual Study 13.7",
-                "type": "location",
+                "type": "service",
                 "desc": "",
                 "icon": "cube",
                 "class": "silent-space-location"
@@ -1205,7 +1205,7 @@
             "id": 22,
             "properties": {
                 "name": "Individual Study 13.8",
-                "type": "location",
+                "type": "service",
                 "desc": "",
                 "icon": "cube",
                 "class": "silent-space-location"
@@ -1243,7 +1243,7 @@
             "id": 23,
             "properties": {
                 "name": "Individual Study 13.9",
-                "type": "location",
+                "type": "service",
                 "desc": "",
                 "icon": "cube",
                 "class": "silent-space-location"
@@ -1281,7 +1281,7 @@
             "id": 24,
             "properties": {
                 "name": "Individual Study 13.10",
-                "type": "location",
+                "type": "service",
                 "desc": "",
                 "icon": "cube",
                 "class": "silent-space-location"
@@ -1319,7 +1319,7 @@
             "id": 25,
             "properties": {
                 "name": "Individual Study 13.11",
-                "type": "location",
+                "type": "service",
                 "desc": "",
                 "icon": "cube",
                 "class": "silent-space-location"
@@ -1357,7 +1357,7 @@
             "id": 26,
             "properties": {
                 "name": "Individual Study 13.12",
-                "type": "location",
+                "type": "service",
                 "desc": "",
                 "icon": "cube",
                 "class": "silent-space-location"
@@ -1395,7 +1395,7 @@
             "id": 27,
             "properties": {
                 "name": "Lockers",
-                "type": "location",
+                "type": "service",
                 "desc": "",
                 "icon": "lock",
                 "class": "group-space-location"
@@ -1433,7 +1433,7 @@
             "id": 28,
             "properties": {
                 "name": "Water Dispenser",
-                "type": "location",
+                "type": "service",
                 "desc": "",
                 "icon": "water",
                 "class": "group-space-location"
@@ -1490,10 +1490,10 @@
         },
         {
             "type": "Feature",
-            "id": 31,
+            "id": 29,
             "properties": {
                 "name": "Research Support Advisors",
-                "type": "location",
+                "type": "service",
                 "desc": "",
                 "icon": "group",
                 "class": "staff-location"
@@ -1521,6 +1521,98 @@
                         [
                             38.91,
                             -56.84
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 30,
+            "properties": {
+                "name": "Research Data Management Team",
+                "type": "service",
+                "desc": "",
+                "icon": "group",
+                "class": "staff-location"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            28.88,
+                            -62.38
+                        ],
+                        [
+                            38.38,
+                            -62.38
+                        ],
+                        [
+                            38.38,
+                            -75.25
+                        ],
+                        [
+                            28.88,
+                            -75.25
+                        ],
+                        [
+                            28.88,
+                            -62.38
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 31,
+            "properties": {
+                "name": "Research Support Team",
+                "type": "service",
+                "desc": "",
+                "icon": "group",
+                "class": "staff-location"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            38.91,
+                            -65
+                        ],
+                        [
+                            64.16,
+                            -65
+                        ],
+                        [
+                            64.16,
+                            -75.65
+                        ],
+                        [
+                            71.84,
+                            -75.65
+                        ],
+                        [
+                            71.84,
+                            -83.56
+                        ],
+                        [
+                            49.47,
+                            -83.56
+                        ],
+                        [
+                            49.47,
+                            -75.22
+                        ],
+                        [
+                            38.91,
+                            -75.22
+                        ],
+                        [
+                            38.91,
+                            -65
                         ]
                     ]
                 ]
@@ -1530,100 +1622,8 @@
             "type": "Feature",
             "id": 32,
             "properties": {
-                "name": "Research Data Management Team",
-                "type": "location",
-                "desc": "",
-                "icon": "group",
-                "class": "staff-location"
-            },
-            "geometry": {
-                "type": "Polygon",
-                "coordinates": [
-                    [
-                        [
-                            28.88,
-                            -62.38
-                        ],
-                        [
-                            38.38,
-                            -62.38
-                        ],
-                        [
-                            38.38,
-                            -75.25
-                        ],
-                        [
-                            28.88,
-                            -75.25
-                        ],
-                        [
-                            28.88,
-                            -62.38
-                        ]
-                    ]
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "id": 33,
-            "properties": {
-                "name": "Research Support Team",
-                "type": "location",
-                "desc": "",
-                "icon": "group",
-                "class": "staff-location"
-            },
-            "geometry": {
-                "type": "Polygon",
-                "coordinates": [
-                    [
-                        [
-                            38.91,
-                            -65
-                        ],
-                        [
-                            64.16,
-                            -65
-                        ],
-                        [
-                            64.16,
-                            -75.65
-                        ],
-                        [
-                            71.84,
-                            -75.65
-                        ],
-                        [
-                            71.84,
-                            -83.56
-                        ],
-                        [
-                            49.47,
-                            -83.56
-                        ],
-                        [
-                            49.47,
-                            -75.22
-                        ],
-                        [
-                            38.91,
-                            -75.22
-                        ],
-                        [
-                            38.91,
-                            -65
-                        ]
-                    ]
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "id": 34,
-            "properties": {
                 "name": "Desktop computers",
-                "type": "location",
+                "type": "service",
                 "desc": "",
                 "icon": "monitor",
                 "class": "group-space-location"

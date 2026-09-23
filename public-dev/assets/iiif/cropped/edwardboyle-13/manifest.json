@@ -1,0 +1,748 @@
+{
+    "@context": "http://iiif.io/api/presentation/3/context.json",
+    "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/manifest.json",
+    "type": "Manifest",
+    "label": {
+        "en": [
+            "Edward Boyle Library - level 13"
+        ]
+    },
+    "items": [
+        {
+            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/canvas/p1",
+            "type": "Canvas",
+            "width": 5003,
+            "height": 2775,
+            "label": {
+                "en": [
+                    "Edward Boyle Library - level 13"
+                ]
+            },
+            "items": [
+                {
+                    "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/canvas/p1/1",
+                    "type": "AnnotationPage",
+                    "items": [
+                        {
+                            "@context": "http://iiif.io/api/presentation/3/context.json",
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/canvas/p1/1/image",
+                            "type": "Annotation",
+                            "motivation": "painting",
+                            "target": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/canvas/p1",
+                            "body": {
+                                "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/full/max/0/default.jpg",
+                                "type": "Image",
+                                "label": {
+                                    "en": [
+                                        "Edward Boyle Library - level 13"
+                                    ]
+                                },
+                                "format": "image/jpeg",
+                                "service": [
+                                    {
+                                        "@context": "http://iiif.io/api/image/2/context.json",
+                                        "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13",
+                                        "type": "ImageService3",
+                                        "profile": "level0",
+                                        "protocol": "http://iiif.io/api/image",
+                                        "tiles": [
+                                            {
+                                                "scaleFactors": [
+                                                    1,
+                                                    2,
+                                                    4,
+                                                    8,
+                                                    16,
+                                                    32
+                                                ],
+                                                "width": 1024,
+                                                "height": 1024
+                                            }
+                                        ],
+                                        "width": 5003,
+                                        "height": 2775
+                                    }
+                                ],
+                                "width": 5003,
+                                "height": 2775
+                            }
+                        }
+                    ]
+                }
+            ],
+            "annotations": [
+                {
+                    "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/canvas/p1/2",
+                    "type": "AnnotationPage",
+                    "items": [
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/canvas/p1/2/annotation1-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Silent Study",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5003,2775'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='2558,253 4342,253 4342,851 2558,851'><title>Silent Study</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/canvas/p1/2/annotation2-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Silent Study",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5003,2775'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='2319,2132 4342,2132 4342,2724 2319,2724'><title>Silent Study</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/canvas/p1/2/annotation3-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Print Zone",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5003,2775'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='1699,1135 1790,1135 1790,1278 1699,1278'><title>Print Zone</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/canvas/p1/2/annotation4-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Print Zone",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5003,2775'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='1699,1706 1790,1706 1790,1867 1699,1867'><title>Print Zone</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/canvas/p1/2/annotation5-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Research Support Team (Meeting Room)",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5003,2775'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='2075,2131 2302,2131 2302,2451 2075,2451'><title>Research Support Team (Meeting Room)</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/canvas/p1/2/annotation6-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Group Study Room 13.14",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5003,2775'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='931,866 1185,866 1185,1112 931,1112'><title>Group Study Room 13.14</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/canvas/p1/2/annotation7-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Group Study Room 13.15",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5003,2775'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='1203,866 1586,866 1586,1112 1203,1112'><title>Group Study Room 13.15</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/canvas/p1/2/annotation8-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Group Study Room 13.16",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5003,2775'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='1588,253 1816,253 1816,508 1588,508'><title>Group Study Room 13.16</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/canvas/p1/2/annotation9-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Group Study Room 13.17",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5003,2775'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='1835,253 2061,253 2061,508 1835,508'><title>Group Study Room 13.17</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/canvas/p1/2/annotation10-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Group Study Room 13.18",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5003,2775'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='2077,253 2546,253 2546,469 2207,469 2207,508 2077,508'><title>Group Study Room 13.18</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/canvas/p1/2/annotation11-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Group Study Room 13.19",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5003,2775'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='2224,489 2546,489 2546,654 2224,654'><title>Group Study Room 13.19</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/canvas/p1/2/annotation12-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Group Study Room 13.20",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5003,2775'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='2224,672 2546,672 2546,850 2224,850'><title>Group Study Room 13.20</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/canvas/p1/2/annotation13-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Research Meeting Room 1",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5003,2775'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='224,1390 793,1390 793,1733 729,1733 783,2331 224,2331'><title>Research Meeting Room 1</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/canvas/p1/2/annotation14-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Research Meeting Room 2",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5003,2775'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='224,649 783,649 727,1249 837,1249 837,1354 714,1354 711,1372 224,1372'><title>Research Meeting Room 2</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/canvas/p1/2/annotation15-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Individual Study 13.1",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5003,2775'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='4358,253 4492,253 4492,360 4358,360'><title>Individual Study 13.1</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/canvas/p1/2/annotation16-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Individual Study 13.2",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5003,2775'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='4358,374 4492,374 4492,509 4358,509'><title>Individual Study 13.2</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/canvas/p1/2/annotation17-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Individual Study 13.3",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5003,2775'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='4358,523 4492,523 4492,658 4358,658'><title>Individual Study 13.3</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/canvas/p1/2/annotation18-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Individual Study 13.4",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5003,2775'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='4358,672 4492,672 4492,849 4358,849'><title>Individual Study 13.4</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/canvas/p1/2/annotation19-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Individual Study 13.5",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5003,2775'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='4358,864 4492,864 4492,996 4358,996'><title>Individual Study 13.5</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/canvas/p1/2/annotation20-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Individual Study 13.6",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5003,2775'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='4358,1010 4492,1010 4492,1132 4358,1132'><title>Individual Study 13.6</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/canvas/p1/2/annotation21-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Individual Study 13.7",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5003,2775'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='4358,1836 4492,1836 4492,1969 4358,1969'><title>Individual Study 13.7</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/canvas/p1/2/annotation22-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Individual Study 13.8",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5003,2775'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='4358,1983 4492,1983 4492,2114 4358,2114'><title>Individual Study 13.8</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/canvas/p1/2/annotation23-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Individual Study 13.9",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5003,2775'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='4358,2127 4492,2127 4492,2309 4358,2309'><title>Individual Study 13.9</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/canvas/p1/2/annotation24-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Individual Study 13.10",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5003,2775'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='4358,2323 4492,2323 4492,2454 4358,2454'><title>Individual Study 13.10</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/canvas/p1/2/annotation25-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Individual Study 13.11",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5003,2775'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='4358,2468 4492,2468 4492,2606 4358,2606'><title>Individual Study 13.11</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/canvas/p1/2/annotation26-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Individual Study 13.12",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5003,2775'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='4358,2620 4492,2620 4492,2725 4358,2725'><title>Individual Study 13.12</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/canvas/p1/2/annotation27-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Lockers",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5003,2775'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='1793,1688 1944,1688 1944,1857 1793,1857'><title>Lockers</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/canvas/p1/2/annotation28-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Water Dispenser",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5003,2775'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='801,1154 962,1154 962,1230 907,1230 907,1267 851,1267 851,1231 801,1231'><title>Water Dispenser</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/canvas/p1/2/annotation29-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Water Dispenser",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5003,2775'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='4179,1550 4377,1550 4377,1619 4179,1619'><title>Water Dispenser</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/canvas/p1/2/annotation30-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Group Study Area",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5003,2775'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='1607,526 2203,526 2203,847 929,847 929,515 1070,515 1070,539 1116,539 1116,515 1512,515 1512,570 1607,570'><title>Group Study Area</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/canvas/p1/2/annotation31-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Research Support Advisors",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5003,2775'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='1247,1870 1580,1870 1580,2115 1247,2115'><title>Research Support Advisors</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/canvas/p1/2/annotation32-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Research Data Management Team",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5003,2775'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='926,2047 1230,2047 1230,2459 926,2459'><title>Research Data Management Team</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/canvas/p1/2/annotation33-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Research Support Team",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5003,2775'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='1247,2131 2055,2131 2055,2472 2301,2472 2301,2725 1585,2725 1585,2458 1247,2458'><title>Research Support Team</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/canvas/p1/2/annotation34-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Guest PC",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5003,2775'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='1705,1871 1895,1871 1895,1921 1705,1921'><title>Guest PC</title></polygon></g></svg>"
+                                }
+                            }
+                        },
+                        {
+                            "id": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/canvas/p1/2/annotation35-svg",
+                            "type": "Annotation",
+                            "motivation": "tagging",
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "Guest PC",
+                                "language": "en",
+                                "format": "text/plain"
+                            },
+                            "target": {
+                                "type": "SpecificResource",
+                                "source": "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/edwardboyle-13/canvas/p1",
+                                "selector": {
+                                    "type": "SvgSelector",
+                                    "value": "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0,0,5003,2775'><g><polygon fill='rgba(200,50,50,0.4)' stroke='rgba(200,50,50,0.8)' points='1705,1039 1895,1039 1895,1121 1705,1121'><title>Guest PC</title></polygon></g></svg>"
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

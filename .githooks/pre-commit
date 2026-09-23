@@ -1,0 +1,41 @@
+#!/bin/sh
+#
+# Builds the production (public/) and development (public-dev/) Jekyll sites
+# from the files staged for commit, and adds the build output to the commit.
+#
+# Enable once per clone with:  git config core.hooksPath .githooks
+# Skip for a single commit with:  SKIP_JEKYLL_BUILD=1 git commit ...
+# (or git commit --no-verify, which skips all hooks)
+
+set -e
+
+if [ "$SKIP_JEKYLL_BUILD" = "1" ]; then
+    echo "pre-commit: SKIP_JEKYLL_BUILD set - not building sites"
+    exit 0
+fi
+
+root="$(git rev-parse --show-toplevel)"
+cd "$root"
+
+# nothing to do if the only staged changes are build output
+if ! git diff --cached --name-only | grep -qvE '^(public|public-dev)/'; then
+    exit 0
+fi
+
+# export the staged versions of the source files (excluding previous build output)
+# so that unstaged changes in the working tree don't end up in the build
+src="$(mktemp -d)"
+trap 'rm -rf "$src"' EXIT
+git ls-files -z | grep -zvE '^(public|public-dev)/' | git checkout-index -z --stdin --prefix="$src/"
+
+export BUNDLE_GEMFILE="$root/Gemfile"
+
+echo "pre-commit: building production site in public/"
+JEKYLL_ENV=production bundle exec jekyll build --quiet \
+    --source "$src" --config "$src/_config.yml" --destination "$root/public"
+
+echo "pre-commit: building development site in public-dev/"
+JEKYLL_ENV=development bundle exec jekyll build --quiet \
+    --source "$src" --config "$src/_config-dev.yml" --destination "$root/public-dev"
+
+git add -A public public-dev

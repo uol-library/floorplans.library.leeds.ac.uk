@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="64.027199mm"
+   height="138.2263mm"
+   viewBox="0 0 64.027199 138.2263"
+   version="1.1"
+   id="svg90"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="toilet-female.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview92"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="0.72159091"
+     inkscape:cx="144.8189"
+     inkscape:cy="599.37008"
+     inkscape:window-width="1920"
+     inkscape:window-height="1057"
+     inkscape:window-x="1920"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs87" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-66.619734,10.446484)">
+    <g
+       id="g67"
+       style="overflow:hidden;fill:currentColor"
+       transform="matrix(0.26458333,0,0,0.26458333,-5.6898149,-10.470296)">
+      <path
+         d="m 394.36,85.76 c -23.87,0 -43.19,-19.17 -43.19,-42.83 0,-23.66 19.32,-42.84 43.19,-42.84 23.84,0 43.17,19.18 43.17,42.84 0,23.67 -19.33,42.83 -43.17,42.83 z"
+         id="path4" />
+      <path
+         d="m 361.4,95.19 c 0,0 -39.63,-1.48 -53.21,45.85 l -34.02,118.41 c -3.24,11.07 2.88,19.53 12.54,22.3 9.67,2.79 19.56,-2.09 22.1,-10.96 l 33.07,-115.42 9.02,-0.01 -57.36,199.87 53.97,0.01 0.04,0.04 v 146.7 c 0,11.16 9.57,20.49 21.25,20.54 10.3,0.04 21.16,-10.39 21.16,-21.57 v 0.04 -145.76 h 8.65 v 145.75 -0.04 c 0,11.17 10.87,21.6 21.16,21.57 11.7,-0.05 21.27,-9.38 21.27,-20.54 v -146.7 l 0.04,-0.04 53.98,-0.01 -57.35,-199.87 9.01,0.01 33.06,115.42 c 2.53,8.86 12.43,13.74 22.08,10.96 9.68,-2.77 15.8,-11.23 12.55,-22.3 L 480.4,141.04 C 466.82,93.71 427.19,95.19 427.19,95.19 Z"
+         id="path8" />
+    </g>
+  </g>
+</svg>

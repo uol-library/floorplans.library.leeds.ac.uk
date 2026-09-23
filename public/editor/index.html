@@ -20,10 +20,17 @@
     <meta name="DC.Identifier" content="https://floorplans.library.leeds.ac.uk">
     <meta name="DC.Language" content="en">
     <title>University of Leeds Library Floor Plans</title>
-    <link rel="stylesheet" href="https://floorplans.library.leeds.ac.uk/assets/css/editor-style.css">
+    <link rel="stylesheet" href="https://floorplans.library.leeds.ac.uk/assets/css/editor.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin=""/>
     <link rel="stylesheet" href="https://unpkg.com/@geoman-io/leaflet-geoman-free@2.17.0/dist/leaflet-geoman.css"/>
-    <script src="https://floorplans.library.leeds.ac.uk/assets/scripts/config.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-polydraw@latest/dist/polydraw.css"/>
+    <script type="importmap">
+    {
+        "imports": {
+            "a11y-dialog": "https://cdn.jsdelivr.net/npm/a11y-dialog@8/dist/a11y-dialog.esm.min.js"
+        }
+    }
+    </script>
     
     <link rel="apple-touch-icon" sizes="57x57" href="https://floorplans.library.leeds.ac.uk/assets/favicons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="https://floorplans.library.leeds.ac.uk/assets/favicons/apple-icon-60x60.png">
@@ -42,9 +49,7 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="https://floorplans.library.leeds.ac.uk/assets/favicons/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-        <link rel="stylesheet" href="https://floorplans.library.leeds.ac.uk/assets/css/style.css">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin=""/>
-    <script src="https://floorplans.library.leeds.ac.uk/assets/scripts/config.js"></script>
+    
 
 </head>
 
@@ -54,7 +59,29 @@
         <div id="floorplan"></div>
     </main>
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
-<script src="https://unpkg.com/@geoman-io/leaflet-geoman-free@2.17.0/dist/leaflet-geoman.js" integrity="sha256-pX70+HFTovwMt6Er9D4aTigqATNq8Cz/bY8Zj3DH66g=" crossorigin="anonymous"></script><script src="https://floorplans.library.leeds.ac.uk/assets/scripts/editor-bundle.min.js"></script>
+<script src="https://unpkg.com/@geoman-io/leaflet-geoman-free@2.17.0/dist/leaflet-geoman.js" integrity="sha256-pX70+HFTovwMt6Er9D4aTigqATNq8Cz/bY8Zj3DH66g=" crossorigin="anonymous"></script>
+
+
+<div id="fp-dialog" aria-labelledby="fp-dialog-title" aria-hidden="true" class="dialog-container">
+    <div data-a11y-dialog-hide class="dialog-overlay"></div>
+    <div role="document" class="dialog-content">
+        <header>
+            <h2 id="fp-dialog-title">GeoJSON Editor</h2>
+            <button type="button" data-a11y-dialog-hide aria-label="Close dialog" id="fp-dialog-close" class="dialog-close">
+                &times;
+            </button>
+        </header>
+        
+        <div id="fp-dialog-content">
+
+        </div>
+    </div>
+</div>
+
+
+
+<script src="https://floorplans.library.leeds.ac.uk/assets/js/editor.js" type="module"></script>
+
 </body>
 </html>
 
