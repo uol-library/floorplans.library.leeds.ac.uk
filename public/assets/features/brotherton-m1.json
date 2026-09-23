@@ -316,7 +316,7 @@
             "properties": {
                 "name": "YAHS",
                 "type": "shelf",
-                "class": "d1",
+                "class": "d7",
                 "desc": ""
             },
             "geometry": {
@@ -397,7 +397,7 @@
             "properties": {
                 "name": "Theology",
                 "type": "shelf",
-                "class": "d2",
+                "class": "d1",
                 "desc": ""
             },
             "geometry": {
@@ -610,7 +610,7 @@
             "properties": {
                 "name": "Chinese E-V",
                 "type": "shelf",
-                "class": "d3",
+                "class": "d2",
                 "desc": ""
             },
             "geometry": {
@@ -691,11 +691,11 @@
         },
         {
             "type": "Feature",
-            "id": 19,
+            "id": 5,
             "properties": {
                 "name": "Chinese V-Z",
                 "type": "shelf",
-                "class": "d3",
+                "class": "d2",
                 "desc": ""
             },
             "geometry": {
@@ -756,11 +756,11 @@
         },
         {
             "type": "Feature",
-            "id": 5,
+            "id": 6,
             "properties": {
                 "name": "Japanese",
                 "type": "shelf",
-                "class": "d4",
+                "class": "d1",
                 "desc": ""
             },
             "geometry": {
@@ -813,11 +813,11 @@
         },
         {
             "type": "Feature",
-            "id": 6,
+            "id": 7,
             "properties": {
                 "name": "Slavonic",
                 "type": "shelf",
-                "class": "d5",
+                "class": "d9",
                 "desc": ""
             },
             "geometry": {
@@ -934,11 +934,11 @@
         },
         {
             "type": "Feature",
-            "id": 7,
+            "id": 8,
             "properties": {
                 "name": "Semitic",
                 "type": "shelf",
-                "class": "d6",
+                "class": "d1",
                 "desc": ""
             },
             "geometry": {
@@ -1047,11 +1047,11 @@
         },
         {
             "type": "Feature",
-            "id": 8,
+            "id": 9,
             "properties": {
                 "name": "Linguistics",
                 "type": "shelf",
-                "class": "d7",
+                "class": "d3",
                 "desc": ""
             },
             "geometry": {
@@ -1132,11 +1132,11 @@
         },
         {
             "type": "Feature",
-            "id": 9,
+            "id": 10,
             "properties": {
                 "name": "General Languages",
                 "type": "shelf",
-                "class": "d8",
+                "class": "d1",
                 "desc": ""
             },
             "geometry": {
@@ -1225,11 +1225,11 @@
         },
         {
             "type": "Feature",
-            "id": 10,
+            "id": 11,
             "properties": {
                 "name": "Italian",
                 "type": "shelf",
-                "class": "d9",
+                "class": "d8",
                 "desc": ""
             },
             "geometry": {
@@ -1406,11 +1406,11 @@
         },
         {
             "type": "Feature",
-            "id": 11,
+            "id": 12,
             "properties": {
                 "name": "Microfilm",
                 "type": "shelf",
-                "class": "d10",
+                "class": "d5",
                 "desc": ""
             },
             "geometry": {
@@ -1463,11 +1463,11 @@
         },
         {
             "type": "Feature",
-            "id": 12,
+            "id": 13,
             "properties": {
                 "name": "German",
                 "type": "shelf",
-                "class": "d11",
+                "class": "d4",
                 "desc": ""
             },
             "geometry": {
@@ -1572,11 +1572,11 @@
         },
         {
             "type": "Feature",
-            "id": 13,
+            "id": 14,
             "properties": {
                 "name": "Recently Returned",
                 "type": "shelf",
-                "class": "d12",
+                "class": "d7",
                 "desc": ""
             },
             "geometry": {
@@ -1617,10 +1617,10 @@
         },
         {
             "type": "Feature",
-            "id": 14,
+            "id": 15,
             "properties": {
                 "name": "Microfilm Store",
-                "type": "location",
+                "type": "service",
                 "desc": "",
                 "icon": "film",
                 "class": "silent-space-location"
@@ -1695,11 +1695,11 @@
         },
         {
             "type": "Feature",
-            "id": 15,
+            "id": 16,
             "properties": {
                 "name": "CD, DVD (All Subjects)",
                 "type": "shelf",
-                "class": "d6",
+                "class": "d5",
                 "desc": ""
             },
             "geometry": {
@@ -1792,7 +1792,7 @@
         },
         {
             "type": "Feature",
-            "id": 16,
+            "id": 17,
             "properties": {
                 "name": "Public Space",
                 "type": "area",
@@ -1943,11 +1943,11 @@
         },
         {
             "type": "Feature",
-            "id": 17,
+            "id": 18,
             "properties": {
                 "name": "Spanish",
                 "type": "shelf",
-                "class": "d19",
+                "class": "d8",
                 "desc": ""
             },
             "geometry": {
@@ -2084,11 +2084,11 @@
         },
         {
             "type": "Feature",
-            "id": 18,
+            "id": 19,
             "properties": {
                 "name": "Portuguese",
                 "type": "shelf",
-                "class": "d11",
+                "class": "d4",
                 "desc": ""
             },
             "geometry": {

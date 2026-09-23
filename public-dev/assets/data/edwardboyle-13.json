@@ -1,0 +1,543 @@
+{
+  "shelves": { "type": "FeatureCollection", "features": [] },
+  "locations": {
+    "markers": [
+      {
+        "id": 1,
+        "lat": -8.5,
+        "lng": 103.75,
+        "content": "Silent Study",
+        "title": "Silent Study",
+        "moreInfo": "",
+        "area": [
+          [-6.31, 79.88],
+          [-6.31, 135.625],
+          [-25, 135.625],
+          [-25, 79.88]
+        ]
+      },
+      {
+        "id": 2,
+        "lat": -67.88,
+        "lng": 99,
+        "content": "Silent Study",
+        "title": "Silent Study",
+        "moreInfo": "",
+        "area": [
+          [-65.03, 72.41],
+          [-65.03, 135.625],
+          [-83.53, 135.625],
+          [-83.53, 72.41]
+        ]
+      },
+      {
+        "id": 3,
+        "lat": -33.34,
+        "lng": 54.59,
+        "content": "Print Zone",
+        "title": "Print Zone",
+        "moreInfo": "Find out more about Print, scan and copy at the Library, including how and where you can print, copy and scan and buying print credit on the IT website.",
+        "area": [
+          [-33.88, 53.03],
+          [-33.88, 55.88],
+          [-38.34, 55.88],
+          [-38.34, 53.03]
+        ]
+      },
+      {
+        "id": 4,
+        "lat": -51.47,
+        "lng": 54.59,
+        "content": "Print Zone",
+        "title": "Print Zone",
+        "moreInfo": "Find out more about Print, scan and copy at the Library, including how and where you can print, copy and scan and buying print credit on the IT website.",
+        "area": [
+          [-51.72, 53.03],
+          [-51.72, 55.88],
+          [-56.75, 55.88],
+          [-56.75, 53.03]
+        ]
+      },
+      {
+        "id": 5,
+        "lat": -67,
+        "lng": 68.44,
+        "roomid": 83,
+        "content": "Research Support Team (Meeting Room)",
+        "title": "Research Support Team (Meeting Room)",
+        "moreInfo": "",
+        "area": [
+          [-65, 64.78],
+          [-65, 71.88],
+          [-75, 71.88],
+          [-75, 64.78]
+        ]
+      },
+      {
+        "id": 6,
+        "lat": -26.2,
+        "lng": 33,
+        "roomid": 84,
+        "content": "Group Study Room 13.14",
+        "title": "Group Study Room 13.14",
+        "moreInfo": "",
+        "area": [
+          [-25.46, 29.03],
+          [-25.46, 36.97],
+          [-33.15, 36.97],
+          [-33.15, 29.03]
+        ]
+      },
+      {
+        "id": 7,
+        "lat": -26.2,
+        "lng": 43.28,
+        "roomid": 96,
+        "content": "Group Study Room 13.15",
+        "title": "Group Study Room 13.15",
+        "moreInfo": "",
+        "area": [
+          [-25.46, 37.53],
+          [-25.46, 49.5],
+          [-33.15, 49.5],
+          [-33.15, 37.53]
+        ]
+      },
+      {
+        "id": 8,
+        "lat": -7.25,
+        "lng": 53.06,
+        "roomid": 97,
+        "content": "Group Study Room 13.16",
+        "title": "Group Study Room 13.16",
+        "moreInfo": "",
+        "area": [
+          [-6.31, 49.56],
+          [-6.31, 56.69],
+          [-14.28, 56.69],
+          [-14.28, 49.56]
+        ]
+      },
+      {
+        "id": 9,
+        "lat": -7.25,
+        "lng": 60.84,
+        "roomid": 98,
+        "content": "Group Study Room 13.17",
+        "title": "Group Study Room 13.17",
+        "moreInfo": "",
+        "area": [
+          [-6.31, 57.28],
+          [-6.31, 64.34],
+          [-14.28, 64.34],
+          [-14.28, 57.28]
+        ]
+      },
+      {
+        "id": 10,
+        "lat": -7.25,
+        "lng": 71.66,
+        "roomid": 99,
+        "content": "Group Study Room 13.18",
+        "title": "Group Study Room 13.18",
+        "moreInfo": "",
+        "area": [
+          [-6.31, 64.84],
+          [-6.31, 79.5],
+          [-13.06, 79.5],
+          [-13.06, 68.91],
+          [-14.28, 68.91],
+          [-14.28, 64.84]
+        ]
+      },
+      {
+        "id": 11,
+        "lat": -14.46,
+        "lng": 71.47,
+        "roomid": 100,
+        "content": "Group Study Room 13.19",
+        "title": "Group Study Room 13.19",
+        "moreInfo": "",
+        "area": [
+          [-13.68, 69.44],
+          [-13.68, 79.5],
+          [-18.84, 79.5],
+          [-18.84, 69.44]
+        ]
+      },
+      {
+        "id": 12,
+        "lat": -20.4,
+        "lng": 71.47,
+        "roomid": 101,
+        "content": "Group Study Room 13.20",
+        "title": "Group Study Room 13.20",
+        "moreInfo": "",
+        "area": [
+          [-19.4, 69.44],
+          [-19.4, 79.5],
+          [-24.96, 79.5],
+          [-24.96, 69.44]
+        ]
+      },
+      {
+        "id": 13,
+        "lat": -49.125,
+        "lng": 14.875,
+        "roomid": 88,
+        "content": "Research Meeting Room 1",
+        "title": "Research Meeting Room 1",
+        "moreInfo": "",
+        "area": [
+          [-41.84, 6.94],
+          [-41.84, 24.72],
+          [-52.56, 24.72],
+          [-52.56, 22.72],
+          [-71.25, 24.41],
+          [-71.25, 6.94]
+        ]
+      },
+      {
+        "id": 14,
+        "lat": -22.06,
+        "lng": 14.875,
+        "roomid": 88,
+        "content": "Research Meeting Room 2",
+        "title": "Research Meeting Room 2",
+        "moreInfo": "",
+        "area": [
+          [-18.69, 6.94],
+          [-18.69, 24.41],
+          [-37.44, 22.66],
+          [-37.44, 26.09],
+          [-40.72, 26.09],
+          [-40.72, 22.25],
+          [-41.28, 22.16],
+          [-41.28, 6.94]
+        ]
+      },
+      {
+        "id": 15,
+        "lat": -6.59,
+        "lng": 138.22,
+        "roomid": 82,
+        "content": "Individual Study 13.1",
+        "title": "Individual Study 13.1",
+        "moreInfo": "",
+        "area": [
+          [-6.31, 136.13],
+          [-6.31, 140.31],
+          [-9.66, 140.31],
+          [-9.66, 136.13]
+        ]
+      },
+      {
+        "id": 16,
+        "lat": -11,
+        "lng": 138.22,
+        "roomid": 85,
+        "content": "Individual Study 13.2",
+        "title": "Individual Study 13.2",
+        "moreInfo": "",
+        "area": [
+          [-10.09, 136.13],
+          [-10.09, 140.31],
+          [-14.31, 140.31],
+          [-14.31, 136.13]
+        ]
+      },
+      {
+        "id": 17,
+        "lat": -15.44,
+        "lng": 138.22,
+        "roomid": 86,
+        "content": "Individual Study 13.3",
+        "title": "Individual Study 13.3",
+        "moreInfo": "",
+        "area": [
+          [-14.75, 136.13],
+          [-14.75, 140.31],
+          [-18.97, 140.31],
+          [-18.97, 136.13]
+        ]
+      },
+      {
+        "id": 18,
+        "lat": -20.41,
+        "lng": 138.22,
+        "roomid": 87,
+        "content": "Individual Study 13.4",
+        "title": "Individual Study 13.4",
+        "moreInfo": "",
+        "area": [
+          [-19.41, 136.13],
+          [-19.41, 140.31],
+          [-24.94, 140.31],
+          [-24.94, 136.13]
+        ]
+      },
+      {
+        "id": 19,
+        "lat": -26.13,
+        "lng": 138.22,
+        "roomid": 88,
+        "content": "Individual Study 13.5",
+        "title": "Individual Study 13.5",
+        "moreInfo": "",
+        "area": [
+          [-25.41, 136.13],
+          [-25.41, 140.31],
+          [-29.53, 140.31],
+          [-29.53, 136.13]
+        ]
+      },
+      {
+        "id": 20,
+        "lat": -30.47,
+        "lng": 138.22,
+        "roomid": 89,
+        "content": "Individual Study 13.6",
+        "title": "Individual Study 13.6",
+        "moreInfo": "",
+        "area": [
+          [-29.97, 136.13],
+          [-29.97, 140.31],
+          [-33.78, 140.31],
+          [-33.78, 136.13]
+        ]
+      },
+      {
+        "id": 21,
+        "lat": -56.28,
+        "lng": 138.22,
+        "roomid": 90,
+        "content": "Individual Study 13.7",
+        "title": "Individual Study 13.7",
+        "moreInfo": "",
+        "area": [
+          [-55.78, 136.13],
+          [-55.78, 140.31],
+          [-59.94, 140.31],
+          [-59.94, 136.13]
+        ]
+      },
+      {
+        "id": 22,
+        "lat": -60.94,
+        "lng": 138.22,
+        "roomid": 91,
+        "content": "Individual Study 13.8",
+        "title": "Individual Study 13.8",
+        "moreInfo": "",
+        "area": [
+          [-60.38, 136.13],
+          [-60.38, 140.31],
+          [-64.47, 140.31],
+          [-64.47, 136.13]
+        ]
+      },
+      {
+        "id": 23,
+        "lat": -66.44,
+        "lng": 138.22,
+        "roomid": 92,
+        "content": "Individual Study 13.9",
+        "title": "Individual Study 13.9",
+        "moreInfo": "",
+        "area": [
+          [-64.88, 136.13],
+          [-64.88, 140.31],
+          [-70.56, 140.31],
+          [-70.56, 136.13]
+        ]
+      },
+      {
+        "id": 24,
+        "lat": -71.47,
+        "lng": 138.22,
+        "roomid": 93,
+        "content": "Individual Study 13.10",
+        "title": "Individual Study 13.10",
+        "moreInfo": "",
+        "area": [
+          [-71, 136.13],
+          [-71, 140.31],
+          [-75.09, 140.31],
+          [-75.09, 136.13]
+        ]
+      },
+      {
+        "id": 25,
+        "lat": -76.06,
+        "lng": 138.22,
+        "roomid": 94,
+        "content": "Individual Study 13.11",
+        "title": "Individual Study 13.11",
+        "moreInfo": "",
+        "area": [
+          [-75.53, 136.13],
+          [-75.53, 140.31],
+          [-79.84, 140.31],
+          [-79.84, 136.13]
+        ]
+      },
+      {
+        "id": 26,
+        "lat": -80.53,
+        "lng": 138.22,
+        "roomid": 95,
+        "content": "Individual Study 13.12",
+        "title": "Individual Study 13.12",
+        "moreInfo": "",
+        "area": [
+          [-80.28, 136.13],
+          [-80.28, 140.31],
+          [-83.56, 140.31],
+          [-83.56, 136.13]
+        ]
+      },
+      {
+        "id": 27,
+        "lat": -52.8,
+        "lng": 58.5,
+        "content": "Lockers",
+        "title": "Lockers",
+        "moreInfo": "",
+        "area": [
+          [-51.16, 55.97],
+          [-51.16, 60.69],
+          [-56.44, 60.69],
+          [-56.44, 55.97]
+        ]
+      },
+      {
+        "id": 28,
+        "lat": -34.44,
+        "lng": 27.44,
+        "content": "Water Dispenser",
+        "title": "Water Dispenser",
+        "moreInfo": "",
+        "area": [
+          [-34.47, 24.97],
+          [-34.47, 30],
+          [-36.84, 30],
+          [-36.84, 28.28],
+          [-38, 28.28],
+          [-38, 26.53],
+          [-36.88, 26.53],
+          [-36.88, 24.97]
+        ]
+      },
+      {
+        "id": 29,
+        "lat": -46.88,
+        "lng": 134.25,
+        "content": "Water Dispenser",
+        "title": "Water Dispenser",
+        "moreInfo": "",
+        "area": [
+          [-46.84, 130.53],
+          [-46.84, 136.72],
+          [-49, 136.72],
+          [-49, 130.53]
+        ]
+      },
+      {
+        "id": 30,
+        "lat": -17.5,
+        "lng": 48.78,
+        "content": "Group Study Area",
+        "title": "Group Study Area",
+        "moreInfo": "",
+        "area": [
+          [-14.84, 50.16],
+          [-14.84, 68.78],
+          [-24.88, 68.78],
+          [-24.88, 28.97],
+          [-14.5, 28.97],
+          [-14.5, 33.38],
+          [-15.25, 33.38],
+          [-15.25, 34.81],
+          [-14.5, 34.81],
+          [-14.5, 47.19],
+          [-16.22, 47.19],
+          [-16.22, 50.16]
+        ]
+      },
+      {
+        "id": 31,
+        "lat": -58.3,
+        "lng": 44.19,
+        "content": "Research Support Advisors",
+        "title": "Research Support Advisors",
+        "moreInfo": "",
+        "area": [
+          [-56.84, 38.91],
+          [-56.84, 49.31],
+          [-64.5, 49.31],
+          [-64.5, 38.91]
+        ]
+      },
+      {
+        "id": 32,
+        "lat": -65.53,
+        "lng": 33.47,
+        "content": "Research Data Management Team",
+        "title": "Research Data Management Team",
+        "moreInfo": "",
+        "area": [
+          [-62.38, 28.88],
+          [-62.38, 38.38],
+          [-75.25, 38.38],
+          [-75.25, 28.88]
+        ]
+      },
+      {
+        "id": 33,
+        "lat": -70,
+        "lng": 56,
+        "content": "Research Support Team",
+        "title": "Research Support Team",
+        "moreInfo": "",
+        "area": [
+          [-65, 38.91],
+          [-65, 64.16],
+          [-75.65, 64.16],
+          [-75.65, 71.84],
+          [-83.56, 71.84],
+          [-83.56, 49.47],
+          [-75.22, 49.47],
+          [-75.22, 38.91]
+        ]
+      },
+      {
+        "id": 34,
+        "lat": -57.6,
+        "lng": 56.2,
+        "content": "Guest PC",
+        "title": "Guest PC",
+        "moreInfo": "",
+        "area": [
+          [-56.88, 53.22],
+          [-56.88, 59.16],
+          [-58.45, 59.16],
+          [-58.45, 53.22]
+        ]
+      },
+      {
+        "id": 35,
+        "lat": -32.1,
+        "lng": 56.5,
+        "content": "Guest PC",
+        "title": "Guest PC",
+        "moreInfo": "",
+        "area": [
+          [-30.88, 53.22],
+          [-30.88, 59.16],
+          [-33.45, 59.16],
+          [-33.45, 53.22]
+        ]
+      }
+    ]
+  }
+}

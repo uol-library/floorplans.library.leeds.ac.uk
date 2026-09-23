@@ -20,6 +20,15 @@
     <meta name="DC.Identifier" content="https://floorplans.library.leeds.ac.uk">
     <meta name="DC.Language" content="en">
     <title>University of Leeds Library Floor Plans</title>
+    <link rel="stylesheet" href="https://floorplans.library.leeds.ac.uk/assets/css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@2.0.0-alpha.1/dist/leaflet.css"/>
+    <script type="importmap">
+    {
+        "imports": {
+            "leaflet": "https://unpkg.com/leaflet@2.0.0-alpha.1/dist/leaflet.js"
+        }
+    }
+    </script>
     
     <link rel="apple-touch-icon" sizes="57x57" href="https://floorplans.library.leeds.ac.uk/assets/favicons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="https://floorplans.library.leeds.ac.uk/assets/favicons/apple-icon-60x60.png">
@@ -38,9 +47,7 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="https://floorplans.library.leeds.ac.uk/assets/favicons/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-        <link rel="stylesheet" href="https://floorplans.library.leeds.ac.uk/assets/css/style.css">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin=""/>
-    <script src="https://floorplans.library.leeds.ac.uk/assets/scripts/config.js"></script>
+    
 
 </head>
 
@@ -886,7 +893,11 @@
 </div>
 
     </main>
-    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script><script src="https://floorplans.library.leeds.ac.uk/assets/scripts/bundle.min.js?v=0.8"></script>
+    
+
+
+
+<script type="module" src="https://floorplans.library.leeds.ac.uk/assets/js/main.js"></script>
 
 </body>
 </html>

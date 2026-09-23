@@ -1,0 +1,220 @@
+path {
+	&.d1, &.d2, &.d3, &.d4, &.d5, &.d6, &.d7, &.d8, &.d9 {
+		stroke-width: 0;
+	}
+	&.d1 {
+		fill: var(--d1);
+		color: var(--d1);
+	}
+	&.d2 {
+		fill: var(--d2);
+		color: var(--d2);
+	}
+	&.d3 {
+		fill: var(--d3);
+		color: var(--d3);
+	}
+	&.d4 {
+		fill: var(--d4);
+		color: var(--d4);
+	}
+	&.d5 {
+		fill: var(--d5);
+		color: var(--d5);
+	}
+	&.d6 {
+		fill: var(--d6);
+		color: var(--d6);
+	}
+	&.d7 {
+		fill: var(--d7);
+		color: var(--d7);
+	}
+	&.d8 {
+		fill: var(--d8);
+		color: var(--d8);
+	}
+	&.d9 {
+		fill: var(--d9);
+		color: var(--d9);
+	}
+}
+ul.selecter__list li.item-shelf button {
+	&.d1, &.d2, &.d3, &.d4, &.d5, &.d6, &.d7, &.d8, &.d9 {
+		&::before {
+			opacity: 0.5;
+			&:hover, &:focus {
+				opacity: 0.75;
+			}
+		}
+	}
+	&.d1 {
+		&::before {
+			background-color: var(--d1);
+		}
+		&:hover, &:focus {
+			border-color: var(--d1);
+		}
+	}
+	&.d2 {
+		&::before {
+			background-color: var(--d2);
+		}
+		&:hover, &:focus {
+			border-color: var(--d2);
+		}
+	}
+	&.d3 {
+		&::before {
+			background-color: var(--d3);
+		}
+		&:hover, &:focus {
+			border-color: var(--d3);
+		}
+	}
+	&.d4 {
+		&::before {
+			background-color: var(--d4);
+		}
+		&:hover, &:focus {
+			border-color: var(--d4);
+		}
+	}
+	&.d5 {
+		&::before {
+			background-color: var(--d5);
+		}
+		&:hover, &:focus {
+			border-color: var(--d5);
+		}
+	}
+	&.d6 {
+		&::before {
+			background-color: var(--d6);
+		}
+		&:hover, &:focus {
+			border-color: var(--d6);
+		}
+	}
+	&.d7 {
+		&::before {
+			background-color: var(--d7);
+		}
+		&:hover, &:focus {
+			border-color: var(--d7);
+		}
+	}
+	&.d8 {
+		&::before {
+			background-color: var(--d8);
+		}
+		&:hover, &:focus {
+			border-color: var(--d8);
+		}
+	}
+	&.d9 {
+		&::before {
+			background-color: var(--d9);
+		}
+		&:hover, &:focus {
+			border-color: var(--d9);
+		}
+	}
+}
+path {
+	&.group-space-location,
+	&.group-space {
+	    fill: rgb(var(--groupspacearea));
+		stroke: rgb(var(--groupspacearea));
+	}
+	&.silent-space-location,
+	&.silent-space {
+		fill: rgb(var(--silentspacearea));
+		stroke: rgb(var(--silentspacearea));
+	}
+	&.public-space-location,
+	&.public-space {
+		fill: rgb(var(--publicspacearea));
+		stroke: rgb(var(--publicspacearea));
+	}
+	&.staff-location,
+	&.staff {
+		fill: rgb(var(--staffarea));
+		stroke: rgb(var(--staffarea));
+	}
+	&.group-space,
+	&.silent-space,
+	&.public-space,
+	&.staff {
+		stroke-width: 2;
+	}
+	&.silent-space-location,
+	&.group-space-location,
+	&.public-space-location {
+		stroke-width: 4;
+	}
+}
+ul.selecter__list li button {
+	border: .1rem solid var(--selecterbuttonborder);
+	background: var(--selecterbuttonbg);
+
+    &.public-space {
+		&::before {
+			border: 3px solid rgb(var(--publicspacearea));
+			background: rgba(var(--publicspacearea), 0.2)
+		}
+		&:hover, &:focus {
+			background: rgba(var(--publicspacearea), 0.2);
+			&::before {
+				background: rgba(var(--publicspacearea), 0.4);
+			}
+		}
+	}
+    &.group-space {
+		&::before {
+			border: 3px solid rgb(var(--groupspacearea));
+			background: rgba(var(--groupspacearea), 0.2 );
+		}
+		&:hover, &:focus {
+			background: rgba(var(--groupspacearea), 0.2 );
+			&::before {
+				background: rgba(var(--groupspacearea), 0.4 );
+			}
+		}
+	}
+    &.silent-space {
+		&::before {
+			border: 3px solid rgb(var(--silentspacearea));
+			background: rgba(var(--silentspacearea), 0.2);
+		}
+		&:hover, &:focus {
+			background: rgba(var(--silentspacearea), 0.2);
+			&::before {
+				background: rgba(var(--silentspacearea), 0.4);
+			}
+		}
+	}
+	&.staff {
+		&::before {
+			border: 3px solid rgb(var(--staffarea));
+			background: rgba(var(--staffarea), 0.2);
+		}
+		&:hover, &:focus {
+			background: rgba(var(--staffarea), 0.2);
+			&::before {
+				background: rgba(var(--staffarea), 0.4);
+			}
+		}
+	}
+	&.servicebutton {
+		&::before {
+			/*display: inline-block;*/
+			margin-right: 1em;
+		}
+		&:hover, &:focus {
+			border: .1rem solid var(--selecterbuttonborder-hover);
+			background: var(--selecterbuttonbg-hover);
+		}
+	}
+}
+

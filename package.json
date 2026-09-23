@@ -3,12 +3,12 @@
   "version": "0.0.1",
   "description": "University of Leeds Library floorplans",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "minify": "node _scripts/minify.js",
-    "updateClassmarks": "node _scripts/getClassmarks.js",
+    "build": "node _scripts/compressPNG.js && node _scripts/writeFeatureMaps.js && node _scripts/writeIcons.js",
     "makeManifests": "node _scripts/makeManifests.js",
     "geo": "node _scripts/georeferenceFeatures.mjs",
-    "icons": "node _scripts/makeIcons.js"
+    "serve": "bundle exec jekyll serve --config _config-dev.yml,_config-local.yml"
   },
   "repository": {
     "type": "git",
@@ -22,11 +22,9 @@
   "homepage": "https://github.com/uol-library/floorplans",
   "devDependencies": {
     "@allmaps/transform": "^1.0.0-beta.48",
+    "fast-xml-builder": "^1.3.1",
     "fast-xml-parser": "^5.2.5",
     "sharp": "^0.34.4",
     "uglify-js": "^3.17.4"
-  },
-  "dependencies": {
-    "svg-parser": "^2.0.4"
   }
 }

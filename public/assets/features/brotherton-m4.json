@@ -277,7 +277,7 @@
             "properties": {
                 "name": "General Literature",
                 "type": "shelf",
-                "class": "d2",
+                "class": "d5",
                 "desc": ""
             },
             "geometry": {
@@ -322,7 +322,7 @@
             "properties": {
                 "name": "Bibliography",
                 "type": "shelf",
-                "class": "d3",
+                "class": "d2",
                 "desc": ""
             },
             "geometry": {
@@ -491,7 +491,7 @@
             "properties": {
                 "name": "Recently returned",
                 "type": "shelf",
-                "class": "d4",
+                "class": "d7",
                 "desc": ""
             },
             "geometry": {
@@ -536,7 +536,7 @@
             "properties": {
                 "name": "English",
                 "type": "shelf",
-                "class": "d5",
+                "class": "d6",
                 "desc": ""
             },
             "geometry": {
@@ -1054,7 +1054,7 @@
             "id": 7,
             "properties": {
                 "name": "Cultural Collections",
-                "type": "location",
+                "type": "service",
                 "desc": "",
                 "icon": "book",
                 "class": "silent-space-location"
@@ -1096,7 +1096,7 @@
             "id": 8,
             "properties": {
                 "name": "Desktop computers",
-                "type": "location",
+                "type": "service",
                 "desc": "",
                 "icon": "monitor",
                 "class": "silent-space-location"

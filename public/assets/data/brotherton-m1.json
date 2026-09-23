@@ -504,7 +504,7 @@
       "id": 13,
       "properties": {
         "name": "Microfilm Store",
-        "type": "location",
+        "type": "service",
         "desc": "",
         "class": "location"
       },

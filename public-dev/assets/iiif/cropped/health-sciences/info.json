@@ -1,0 +1,33 @@
+{
+  "tiles" : [ {
+    "scaleFactors" : [ 32, 16, 8, 4, 2, 1 ],
+    "width" : 1024,
+    "height" : 1024
+  } ],
+  "protocol" : "http://iiif.io/api/image",
+  "sizes" : [ {
+    "width" : 120,
+    "height" : 186
+  }, {
+    "width" : 240,
+    "height" : 372
+  }, {
+    "width" : 480,
+    "height" : 744
+  }, {
+    "width" : 960,
+    "height" : 1488
+  }, {
+    "width" : 1920,
+    "height" : 2976
+  }, {
+    "width" : 3840,
+    "height" : 5952
+  } ],
+  "profile" : "level0",
+  "width" : 3840,
+  "id" : "https://uol-library.github.io/floorplans.library.leeds.ac.uk/assets/iiif/cropped/health-sciences",
+  "type" : "ImageService3",
+  "@context" : "http://iiif.io/api/image/3/context.json",
+  "height" : 5952
+}

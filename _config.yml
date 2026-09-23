@@ -33,7 +33,9 @@ exclude:
   - Gemfile*
   - README.md
   - LICENSE
+  - index.js
   - public
+  - public-dev
   - node_modules
   - sync.sh
   - vendor

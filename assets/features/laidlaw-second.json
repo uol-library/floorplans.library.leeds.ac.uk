@@ -353,7 +353,7 @@
             "properties": {
                 "name": "Education",
                 "type": "shelf",
-                "class": "d8",
+                "class": "d1",
                 "desc": ""
             },
             "geometry": {
@@ -412,7 +412,7 @@
             "properties": {
                 "name": "Electrical Engineering",
                 "type": "shelf",
-                "class": "d9",
+                "class": "d3",
                 "desc": ""
             },
             "geometry": {
@@ -424,8 +424,8 @@
                             -25.875
                         ],
                         [
-                            76.3125,
-                            -26.03125
+                            78.65625,
+                            -15.28125
                         ],
                         [
                             78.09375,
@@ -449,7 +449,7 @@
             "properties": {
                 "name": "Engineering",
                 "type": "shelf",
-                "class": "d3",
+                "class": "d2",
                 "desc": ""
             },
             "geometry": {
@@ -486,7 +486,7 @@
             "properties": {
                 "name": "English",
                 "type": "shelf",
-                "class": "d11",
+                "class": "d4",
                 "desc": ""
             },
             "geometry": {
@@ -633,7 +633,7 @@
             "properties": {
                 "name": "Food",
                 "type": "shelf",
-                "class": "d12",
+                "class": "d5",
                 "desc": ""
             },
             "geometry": {
@@ -678,7 +678,7 @@
             "properties": {
                 "name": "French",
                 "type": "shelf",
-                "class": "d1",
+                "class": "d2",
                 "desc": ""
             },
             "geometry": {
@@ -737,7 +737,7 @@
             "properties": {
                 "name": "Fuel",
                 "type": "shelf",
-                "class": "d18",
+                "class": "d7",
                 "desc": ""
             },
             "geometry": {
@@ -774,7 +774,7 @@
             "properties": {
                 "name": "General Biology",
                 "type": "shelf",
-                "class": "d17",
+                "class": "d6",
                 "desc": ""
             },
             "geometry": {
@@ -841,7 +841,7 @@
             "properties": {
                 "name": "General Classics",
                 "type": "shelf",
-                "class": "d22",
+                "class": "d9",
                 "desc": ""
             },
             "geometry": {
@@ -878,7 +878,7 @@
             "properties": {
                 "name": "General Languages",
                 "type": "shelf",
-                "class": "d23",
+                "class": "d1",
                 "desc": ""
             },
             "geometry": {
@@ -911,11 +911,11 @@
         },
         {
             "type": "Feature",
-            "id": 13,
+            "id": 4,
             "properties": {
                 "name": "Geography",
                 "type": "shelf",
-                "class": "d7",
+                "class": "d3",
                 "desc": ""
             },
             "geometry": {
@@ -970,11 +970,11 @@
         },
         {
             "type": "Feature",
-            "id": 14,
+            "id": 5,
             "properties": {
                 "name": "General Literature",
                 "type": "shelf",
-                "class": "d12",
+                "class": "d5",
                 "desc": ""
             },
             "geometry": {
@@ -1015,11 +1015,11 @@
         },
         {
             "type": "Feature",
-            "id": 15,
+            "id": 7,
             "properties": {
                 "name": "General Science",
                 "type": "shelf",
-                "class": "d10",
+                "class": "d5",
                 "desc": ""
             },
             "geometry": {
@@ -1052,11 +1052,11 @@
         },
         {
             "type": "Feature",
-            "id": 16,
+            "id": 9,
             "properties": {
                 "name": "Geology",
                 "type": "shelf",
-                "class": "d3",
+                "class": "d2",
                 "desc": ""
             },
             "geometry": {
@@ -1101,7 +1101,7 @@
             "properties": {
                 "name": "German",
                 "type": "shelf",
-                "class": "d19",
+                "class": "d8",
                 "desc": ""
             },
             "geometry": {
@@ -1138,7 +1138,7 @@
             "properties": {
                 "name": "Greek",
                 "type": "shelf",
-                "class": "d10",
+                "class": "d5",
                 "desc": ""
             },
             "geometry": {
@@ -1197,7 +1197,7 @@
             "properties": {
                 "name": "History of Science",
                 "type": "shelf",
-                "class": "d3",
+                "class": "d2",
                 "desc": ""
             },
             "geometry": {
@@ -1234,7 +1234,7 @@
             "properties": {
                 "name": "Icelandic",
                 "type": "shelf",
-                "class": "d23",
+                "class": "d1",
                 "desc": ""
             },
             "geometry": {
@@ -1271,7 +1271,7 @@
             "properties": {
                 "name": "Italian",
                 "type": "shelf",
-                "class": "d3",
+                "class": "d2",
                 "desc": ""
             },
             "geometry": {
@@ -1304,11 +1304,11 @@
         },
         {
             "type": "Feature",
-            "id": 22,
+            "id": 10,
             "properties": {
                 "name": "Japanese",
                 "type": "shelf",
-                "class": "d1",
+                "class": "d2",
                 "desc": ""
             },
             "geometry": {
@@ -1345,7 +1345,7 @@
             "properties": {
                 "name": "Latin",
                 "type": "shelf",
-                "class": "d4",
+                "class": "d1",
                 "desc": ""
             },
             "geometry": {
@@ -1378,11 +1378,11 @@
         },
         {
             "type": "Feature",
-            "id": 25,
+            "id": 24,
             "properties": {
                 "name": "Law",
                 "type": "shelf",
-                "class": "d16",
+                "class": "d5",
                 "desc": ""
             },
             "geometry": {
@@ -1445,11 +1445,11 @@
         },
         {
             "type": "Feature",
-            "id": 26,
+            "id": 25,
             "properties": {
                 "name": "Linguistics",
                 "type": "shelf",
-                "class": "d9",
+                "class": "d3",
                 "desc": ""
             },
             "geometry": {
@@ -1497,6 +1497,87 @@
                         [
                             74.90625,
                             -73
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 26,
+            "properties": {
+                "name": "Management",
+                "type": "shelf",
+                "class": "d4",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            74.3125,
+                            -72.9375
+                        ],
+                        [
+                            74.3125,
+                            -56.09375
+                        ],
+                        [
+                            74.90625,
+                            -56.09375
+                        ],
+                        [
+                            74.90625,
+                            -72.9375
+                        ],
+                        [
+                            74.3125,
+                            -72.9375
+                        ]
+                    ],
+                    [
+                        [
+                            70.96875,
+                            -72.9375
+                        ],
+                        [
+                            70.96875,
+                            -56.09375
+                        ],
+                        [
+                            72.09375,
+                            -56.09375
+                        ],
+                        [
+                            72.09375,
+                            -72.9375
+                        ],
+                        [
+                            70.96875,
+                            -72.9375
+                        ]
+                    ],
+                    [
+                        [
+                            68.1875,
+                            -72.96875
+                        ],
+                        [
+                            68.1875,
+                            -70.75
+                        ],
+                        [
+                            68.6875,
+                            -70.75
+                        ],
+                        [
+                            68.6875,
+                            -72.96875
+                        ],
+                        [
+                            68.1875,
+                            -72.96875
                         ]
                     ]
                 ]
@@ -1506,9 +1587,9 @@
             "type": "Feature",
             "id": 27,
             "properties": {
-                "name": "Management",
+                "name": "Materials",
                 "type": "shelf",
-                "class": "d15",
+                "class": "d4",
                 "desc": ""
             },
             "geometry": {
@@ -1516,68 +1597,24 @@
                 "coordinates": [
                     [
                         [
-                            74.3125,
-                            -72.9375
+                            68.15625,
+                            -70.875
                         ],
                         [
-                            74.3125,
-                            -56.09375
-                        ],
-                        [
-                            74.90625,
-                            -56.09375
-                        ],
-                        [
-                            74.90625,
-                            -72.9375
-                        ],
-                        [
-                            74.3125,
-                            -72.9375
-                        ]
-                    ],
-                    [
-                        [
-                            70.96875,
-                            -72.9375
-                        ],
-                        [
-                            70.96875,
-                            -56.09375
-                        ],
-                        [
-                            72.09375,
-                            -56.09375
-                        ],
-                        [
-                            72.09375,
-                            -72.9375
-                        ],
-                        [
-                            70.96875,
-                            -72.9375
-                        ]
-                    ],
-                    [
-                        [
-                            68.1875,
-                            -72.96875
-                        ],
-                        [
-                            68.1875,
-                            -70.75
+                            68.15625,
+                            -68.6875
                         ],
                         [
                             68.6875,
-                            -70.75
+                            -68.6875
                         ],
                         [
                             68.6875,
-                            -72.96875
+                            -70.875
                         ],
                         [
-                            68.1875,
-                            -72.96875
+                            68.15625,
+                            -70.875
                         ]
                     ]
                 ]
@@ -1587,46 +1624,9 @@
             "type": "Feature",
             "id": 28,
             "properties": {
-                "name": "Materials",
-                "type": "shelf",
-                "class": "d13",
-                "desc": ""
-            },
-            "geometry": {
-                "type": "Polygon",
-                "coordinates": [
-                    [
-                        [
-                            68.15625,
-                            -70.875
-                        ],
-                        [
-                            68.15625,
-                            -68.6875
-                        ],
-                        [
-                            68.6875,
-                            -68.6875
-                        ],
-                        [
-                            68.6875,
-                            -70.875
-                        ],
-                        [
-                            68.15625,
-                            -70.875
-                        ]
-                    ]
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "id": 29,
-            "properties": {
                 "name": "Mathematics",
                 "type": "shelf",
-                "class": "d3",
+                "class": "d2",
                 "desc": ""
             },
             "geometry": {
@@ -1667,11 +1667,11 @@
         },
         {
             "type": "Feature",
-            "id": 30,
+            "id": 29,
             "properties": {
                 "name": "Mechanical Engineering",
                 "type": "shelf",
-                "class": "d4",
+                "class": "d1",
                 "desc": ""
             },
             "geometry": {
@@ -1697,6 +1697,43 @@
                         [
                             67.59375,
                             -70.90625
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 30,
+            "properties": {
+                "name": "Mining",
+                "type": "shelf",
+                "class": "d3",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            67.5625,
+                            -72.9375
+                        ],
+                        [
+                            67.5625,
+                            -70.84375
+                        ],
+                        [
+                            68.125,
+                            -70.84375
+                        ],
+                        [
+                            68.125,
+                            -72.9375
+                        ],
+                        [
+                            67.5625,
+                            -72.9375
                         ]
                     ]
                 ]
@@ -1706,45 +1743,8 @@
             "type": "Feature",
             "id": 31,
             "properties": {
-                "name": "Mining",
-                "type": "shelf",
-                "class": "d9",
-                "desc": ""
-            },
-            "geometry": {
-                "type": "Polygon",
-                "coordinates": [
-                    [
-                        [
-                            67.5625,
-                            -72.9375
-                        ],
-                        [
-                            67.5625,
-                            -70.84375
-                        ],
-                        [
-                            68.125,
-                            -70.84375
-                        ],
-                        [
-                            68.125,
-                            -72.9375
-                        ],
-                        [
-                            67.5625,
-                            -72.9375
-                        ]
-                    ]
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "id": 23,
-            "properties": {
                 "name": "Group Booths",
-                "type": "location",
+                "type": "service",
                 "desc": "",
                 "icon": "group",
                 "class": "group-space-location"
@@ -1779,10 +1779,10 @@
         },
         {
             "type": "Feature",
-            "id": 24,
+            "id": 32,
             "properties": {
                 "name": "Group Room 7",
-                "type": "location",
+                "type": "service",
                 "desc": "",
                 "icon": "cubes",
                 "class": "group-space-location"
@@ -1817,10 +1817,10 @@
         },
         {
             "type": "Feature",
-            "id": 26,
+            "id": 33,
             "properties": {
                 "name": "Print, Copy, Scan",
-                "type": "location",
+                "type": "service",
                 "desc": "Find out more about Print, scan and copy at the Library, including how and where you can print, copy and scan and buying print credit <a class=\"external\" target=\"_blank\" href=\"https://myprint.leeds.ac.uk/user\">on the MyPrint website</a>",
                 "icon": "print",
                 "class": "group-space-location"
@@ -1855,10 +1855,10 @@
         },
         {
             "type": "Feature",
-            "id": 27,
+            "id": 34,
             "properties": {
                 "name": "Desktop computers",
-                "type": "location",
+                "type": "service",
                 "desc": "",
                 "icon": "monitor",
                 "class": "group-space-location"
@@ -1893,10 +1893,10 @@
         },
         {
             "type": "Feature",
-            "id": 28,
+            "id": 35,
             "properties": {
                 "name": "Accessible Student Study 1",
-                "type": "location",
+                "type": "service",
                 "desc": "",
                 "icon": "wheelchair",
                 "class": "group-space-location"
@@ -1931,10 +1931,10 @@
         },
         {
             "type": "Feature",
-            "id": 29,
+            "id": 36,
             "properties": {
                 "name": "Bring Your Own Device (BYOD) Zone",
-                "type": "location",
+                "type": "service",
                 "desc": "",
                 "icon": "byod",
                 "class": "group-space-location"
@@ -2093,10 +2093,10 @@
         },
         {
             "type": "Feature",
-            "id": 30,
+            "id": 37,
             "properties": {
                 "name": "Water Dispenser",
-                "type": "location",
+                "type": "service",
                 "desc": "",
                 "icon": "water",
                 "class": "group-space-location"

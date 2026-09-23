@@ -1,4 +1,4 @@
-const floorplans = {
+export const floorplans = {
 	conf: {
         debug: {% if site.environment == "development" %}true{% else %}false{% endif %},
 		maxZoom: 25,
@@ -27,32 +27,7 @@ const floorplans = {
 	controls: null,
 	infoPanel: null,
 	currentFloor: false,
-	palette: [
-		'#ff3b8d',
-		'#009e8c',
-		'#ff426c',
-		'#00999a',
-		'#ff4647',
-		'#0098a9',
-		'#fd4d00',
-		'#0094b4',
-		'#d57300',
-		'#0092c5',
-		'#b98300',
-		'#008fdb',
-		'#9c8b00',
-		'#0089fc',
-		'#819300',
-		'#657eff',
-		'#5c9b00',
-		'#9b70ff',
-		'#00a21f',
-		'#d150ff',
-		'#00a05a',
-		'#f911e0',
-		'#009f78',
-		'#ff2fb2'
-	]
+	canUseLocalStorage: function() { return false }
 };
 floorplans.imagelayers = [
 	{

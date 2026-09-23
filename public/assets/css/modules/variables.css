@@ -1,0 +1,68 @@
+/**
+ * Colours
+ */
+
+:root {
+    --controls-width: 280px;
+
+    --white: #ffffff;
+    --lightgrey: #eae8e6;
+
+    /* occupancy numbers */
+    --occupancyno: #0a0202;
+    
+    /* links */
+    --linkcolor: #910000;
+    --linkcolor-active: #570000;
+    --linkcolor-visited: #570000;
+    --linkcolor-hover: #0e0c0c;
+
+    /* menu/close button */
+    --menubutton: #212121;
+    --menubutton-bg: #ffffff;
+    --menubutton-hover: #212121;
+    --menubutton-bg-hover: #eae8e6;
+
+    /* geolocation button */
+    --geobuttoncolor: #212121;
+    --geobuttonbg: #ffffff;
+    --geobuttoncolor-hover: #0a0202;
+    --geobuttonbg-hover: #ffffff;
+    --geobuttoncolor-disabled: #6a645d;
+    --geobuttonbg-disabled: #ddd9d5;
+    --geobuttoncolor-active: #ffffff;
+    --geobuttonbg-active: #003a52;
+
+    /* selecter buttons */
+    --selecterbuttoncolor: #212121;
+    --selecterbuttonbg: #ffffff;
+    --selecterbuttonborder: #ffffff;
+    --selecterbuttoncolor-hover: #0a0202;
+    --selecterbuttonbg-hover: #eae8e6;
+    --selecterbuttonborder-hover: #ddd9d5;
+
+    /* area colours */
+    --groupspacearea: 255, 134, 28;
+    --silentspacearea: 28, 172, 255;
+    --publicspacearea: 255, 221, 0;
+    --staffarea: 204,204,204;
+
+    /* shelves */
+    --d1: #009e8c; 
+    --d2: #ff4647; 
+    --d3: #fd4d00;
+    --d4: #9c8b00;
+    --d5: #0089fc;
+    --d6: #5c9b00;
+    --d7: #9b70ff;
+    --d8: #00a21f;
+    --d9: #d150ff;
+
+    /* modal */
+    --modal-bg: #ffffff;
+    --modal-overlay: rgba(0, 0, 0, 0.5);
+    --modal-header-bg: #f5f5f5;
+    --modal-header-color: #212121;
+    --modal-footer-bg: #f5f5f5;
+    --modal-footer-color: #212121;
+}
