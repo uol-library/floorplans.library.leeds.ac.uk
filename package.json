@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "build": "node _scripts/compressPNG.js && node _scripts/writeFeatureMaps.js && node _scripts/writeIcons.js",
+    "build": "node _scripts/compressPNG.js && node _scripts/writeFeatureMaps.js && node _scripts/writeIcons.js && JEKYLL_ENV=production bundle exec jekyll build --quiet --config=_config.yml && JEKYLL_ENV=development bundle exec jekyll build --quiet --config=_config-dev.yml",
     "makeManifests": "node _scripts/makeManifests.js",
     "geo": "node _scripts/georeferenceFeatures.mjs",
     "serve": "bundle exec jekyll serve --config _config-dev.yml,_config-local.yml"
