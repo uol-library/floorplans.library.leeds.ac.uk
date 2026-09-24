@@ -9,6 +9,7 @@
     "makeManifests": "node _scripts/makeManifests.js",
     "geo": "node _scripts/georeferenceFeatures.mjs",
     "serve": "bundle exec jekyll serve --config _config-dev.yml,_config-local.yml"
+    "serveprod": "bundle exec jekyll serve --config _config.yml,_config-local.yml"
   },
   "repository": {
     "type": "git",

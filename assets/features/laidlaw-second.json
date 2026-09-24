@@ -424,8 +424,8 @@
                             -25.875
                         ],
                         [
-                            76.3125,
-                            -26.03125
+                            78.65625,
+                            -15.28125
                         ],
                         [
                             78.09375,
@@ -911,7 +911,7 @@
         },
         {
             "type": "Feature",
-            "id": 13,
+            "id": 4,
             "properties": {
                 "name": "Geography",
                 "type": "shelf",
@@ -970,7 +970,7 @@
         },
         {
             "type": "Feature",
-            "id": 14,
+            "id": 5,
             "properties": {
                 "name": "General Literature",
                 "type": "shelf",
@@ -1015,7 +1015,7 @@
         },
         {
             "type": "Feature",
-            "id": 15,
+            "id": 7,
             "properties": {
                 "name": "General Science",
                 "type": "shelf",
@@ -1052,7 +1052,7 @@
         },
         {
             "type": "Feature",
-            "id": 16,
+            "id": 9,
             "properties": {
                 "name": "Geology",
                 "type": "shelf",
@@ -1304,7 +1304,7 @@
         },
         {
             "type": "Feature",
-            "id": 22,
+            "id": 10,
             "properties": {
                 "name": "Japanese",
                 "type": "shelf",
