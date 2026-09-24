@@ -63,26 +63,42 @@ A pre-commit hook in `.githooks/` rebuilds both from the staged files and adds t
 git config core.hooksPath .githooks
 ```
 
-To skip the build for a single commit, use `SKIP_JEKYLL_BUILD=1 git commit ...`. To build manually:
+To skip the build for a single commit, use `SKIP_JEKYLL_BUILD=1 git commit ...`. 
+
+To build each site manually use the following two commands:
 
 ```sh
 JEKYLL_ENV=production bundle exec jekyll build --config _config.yml
 JEKYLL_ENV=development bundle exec jekyll build --config _config-dev.yml
 ```
 
-To run the site locally at http://localhost:4001 without touching either build directory, use `npm run serve`. This layers `_config-local.yml` over the development config and builds into `_site/`, which is not committed:
+To build both, as well as rebuild image files from sources and create the icons and features data files:
+
+```sh
+npm run build
+```
+
+To run the site locally at without touching either build directory, use `npm run serve` (dev) or `npm run serveprod` (prod). This layers `_config-local.yml` over the development config or production config and builds into `_site/`, which is not committed:
 
 ```sh
 bundle exec jekyll serve --config _config-dev.yml,_config-local.yml
+bundle exec jekyll serve --config _config.yml,_config-local.yml
 ```
 
 ## Future plans
 
-The floorplans can be integrated with [spacefinder](https://spacefinder.leeds.ac.uk/) once they have been georeferenced. However, georeferencing the plans means that all the GeoJSON for the shelves needs to be georeferenced as well, and all text and icons removed from the images.
+The floorplans can be integrated with [spacefinder](https://spacefinder.leeds.ac.uk/) once they have been georeferenced. However, georeferencing the plans means that:
+
+- all text and icons need to be removed from the images, and the images converted to SVG (complete).
+- images and all GeoJSON features need to be georeferenced (partially complete).
+- icons need to be added to the floorplans for stairs, lifts, fire exits, etc.
+- navigation on the floorplans needs to be added so you can switch more easily between floors.
+- Brotherton floorplans for levels 2 and 3 _may_ need to be merged with the west building.
+- geolocation needs to be changed so if someone loads spacefinder in a library - it shows them where they are on which floor.
 
 ### Georeferencing using Allmaps
 
-[Allmaps](htps://allmaps.org/) makes it easier to curate, georeference and explore collections of digitized maps, but can also be used to georeference any IIIF images. The floorplan images have been converted to IIIF Level0 images for this purpose, retaining their shelving as IIIF Annotations (with many thanks to [Jules Schoonman](https://www.tudelft.nl/en/staff/j.a.schoonman/) who helped with the initial conversion of the plans to SVG files, and has helped me a great deal with the georeferencing of the plans).
+[Allmaps](htps://allmaps.org/) makes it easier to curate, georeference and explore collections of digitized maps, but can also be used to georeference any IIIF images. The floorplan images were converted to IIIF Level0 images for this purpose, retaining their shelving as IIIF Annotations (with many thanks to [Jules Schoonman](https://www.tudelft.nl/en/staff/j.a.schoonman/) who helped with the initial conversion of the plans to SVG files, and has helped me a great deal with the georeferencing of the plans).
 
 The IIIF versions of the original floorplans, along with a new set of images which have been made in order to make georeferencing easier, are available here:
 
@@ -111,7 +127,7 @@ The URLs of the manifests of these images can then be used in the [Allmaps edito
 * https://annotations.allmaps.org/images/447034c419b2ef5b.geojson
 * https://allmaps.xyz/images/447034c419b2ef5b/{z}/{x}/{y}@2x.png
 
-Both the Health Sciences library and the West wing of the Brotherton are proving tricky because I'm not sure where exactly they are on OpenStreetMap(!). The same applies to St. James Hospital library, but I don't have the plans for that one (yet).
+Both the Health Sciences library and the West wing of the Brotherton are proving tricky because I'm not sure where exactly they are on OpenStreetMap(!).
 
 ### Icons
 
