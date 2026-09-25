@@ -1,8 +1,9 @@
-# Local development overrides - layered on top of the development config so the
-# site is built in _site/ and the committed public/ and public-dev/ builds are
-# left untouched. jekyll serve replaces site.url with http://localhost:4001
+# Local overrides - layered last, over the base config and optionally the development
+# or production overrides, so the site is built in _site/ and the committed public/
+# and public-dev/ builds are left untouched. jekyll serve replaces site.url with
+# http://localhost:4000
 #
-# bundle exec jekyll serve --config _config-dev.yml,_config-local.yml
+# bundle exec jekyll serve --config _config.yml,_config-dev.yml,_config-local.yml
 destination: _site/
 host: "localhost"
 port: 4000

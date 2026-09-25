@@ -2,19 +2,36 @@ RewriteEngine on
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
+# All other paths are served by the app, which reads the path from the URL (routing.mjs).
+# These are app URLs (/{library}/{floor}/{shelf name}), Primo links
+# (/floorplan?library=...&floor=...&classmark=...) and old URLs (/{library}/floors/{floor}/)
+# Files which exist (including the .mjs modules) are served as normal, and missing assets
+# still return a 404
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^/?floorplan$ /floorplans-broker.php [NC,L]
-
-RewriteCond %{REQUEST_URI} !^/floorplans-broker.php$
-RewriteCond %{REQUEST_URI} !^/$
-RewriteCond %{REQUEST_URI} !^/index.html$
-RewriteCond %{REQUEST_URI} !\.(json|jpe?g|png|css|js|woff2?|txt)$
-RewriteRule ^(.*)$ /index.html?path=$0 [NC,L,R=302,QSA]
+RewriteCond %{REQUEST_URI} !\.(json|jpe?g|png|svg|css|m?js|woff2?|txt|ico|php)$
+RewriteRule ^ /index.html [L]
 
 <IfModule mod_headers.c>
     Header set Permissions-Policy "geolocation=(self), fullscreen=(self), camera=()"
     Header set Referrer-Policy "no-referrer-when-downgrade"
     Header set Strict-Transport-Security "max-age=31536000"
-    Header set Content-Security-Policy "default-src 'none'; script-src 'self' https://unpkg.com/leaflet@1.9.3/dist/leaflet.js; style-src 'self' https://unpkg.com/leaflet@1.9.3/dist/leaflet.css; object-src 'none'; base-uri 'self'; connect-src 'self' https://resources.library.leeds.ac.uk/capacity.json; font-src 'self'; frame-src 'self'; img-src 'self'; manifest-src 'self'; media-src 'self'; form-action 'none'; frame-ancestors https://library.leeds.ac.uk; worker-src 'none';"
+    # Content-Security-Policy for the floorplans app (_includes/head.html, _includes/foot.html)
+    # - Leaflet 2 is loaded from unpkg (script, stylesheet and its images)
+    # - the sha256 hash allows the inline import map in head.html - if the import map
+    #   is changed at all (including whitespace), the hash must be updated. It can be
+    #   generated from the built page, or copied from the error in the browser console
+    # - capacity.json is fetched from the production site (also when on the dev site)
+    # - the app can be embedded in the library website
+    Header set Content-Security-Policy "default-src 'none'; script-src 'self' https://unpkg.com/leaflet@2.0.0-alpha.1/ 'sha256-wmGqw9EA5Ox2lAv7zieyJ/yo3Mqt53CW/7Ea+gm9BlE='; style-src 'self' https://unpkg.com/leaflet@2.0.0-alpha.1/; img-src 'self' https://unpkg.com/leaflet@2.0.0-alpha.1/; font-src 'self'; connect-src 'self' https://floorplans.library.leeds.ac.uk; manifest-src 'self'; frame-src 'none'; media-src 'none'; worker-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'; frame-ancestors 'self' https://library.leeds.ac.uk;"
+
+    # Content-Security-Policy for the editor and IIIF pages (_includes/editor-head.html,
+    # _includes/editor-foot.html), which use Leaflet 1.9, Geoman, Polydraw and a11y-dialog
+    # - the sha256 hash allows the inline import map in editor-head.html (see above)
+    # - inline styles are allowed as the editor plugins may set them
+    <If "%{REQUEST_URI} =~ m#^/(editor|iiif)(/|$)#">
+        Header set Content-Security-Policy "default-src 'none'; script-src 'self' https://unpkg.com/leaflet@1.9.3/ https://unpkg.com/@geoman-io/leaflet-geoman-free@2.17.0/ https://cdn.jsdelivr.net/npm/a11y-dialog@8/ 'sha256-S61d8nPjwlpOhbqu2E5NIuLdp2pJpQC81s2BpJwLUgg='; style-src 'self' 'unsafe-inline' https://unpkg.com/leaflet@1.9.3/ https://unpkg.com/@geoman-io/leaflet-geoman-free@2.17.0/ https://cdn.jsdelivr.net/npm/leaflet-polydraw@latest/; img-src 'self' data: https://unpkg.com/leaflet@1.9.3/ https://unpkg.com/@geoman-io/leaflet-geoman-free@2.17.0/ https://cdn.jsdelivr.net/npm/leaflet-polydraw@latest/; font-src 'self'; connect-src 'self'; manifest-src 'self'; frame-src 'none'; media-src 'none'; worker-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'; frame-ancestors 'self';"
+    </If>
+    Header set Access-Control-Allow-Origin "https://spacefinder.leeds.ac.uk"
+    Header set Vary "Origin"
 </IfModule>

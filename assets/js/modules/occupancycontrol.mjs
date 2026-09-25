@@ -1,140 +1,124 @@
 import { Control, DomUtil } from 'leaflet';
-import { floorplans } from './config.mjs';
 import { getJSON, fplog } from './utilities.mjs';
 
 /**
- * Displays occupancy data for two libraries
- * Set up data container - available is set to true once data has been
- * loaded for a library, so the control is only shown when there is data
+ * Occupancy control
+ * Displays the current occupancy of the library for the floor being viewed.
+ * The control listens for the fpfloorloaded event (dispatched on document when
+ * a floor becomes the current floor) and is hidden if the floor isn't in one of
+ * the libraries in options.libraries, or there is no data for that library.
+ *
+ * Leaflet 2.0 controls are plain ES6 classes extending Control, so this is
+ * added to the map with new OccupancyControl().addTo( map )
  */
-floorplans.occupancyData = {
-    "Edward Boyle": {
-        "floorid": "edwardboyle",
-        "capacity": 1800,
-        "occupancy": 0,
-        "available": false
-    },
-    "Laidlaw": {
-        "floorid": "laidlaw",
-        "capacity": 640,
-        "occupancy": 0,
-        "available": false
-    }
-};
+export class OccupancyControl extends Control {
 
-/* the floor currently selected, so the message can be refreshed when data changes */
-let activeFloorid = '';
-
-/**
- * Custom control to display occupancy. Leaflet 2.0 controls are plain
- * ES6 classes extending Control, rather than Control.extend({...}).
- */
-class OccupancyControl extends Control {
-    onAdd( map ) {
-        let c = DomUtil.create( 'div', 'hidden' );
-        c.setAttribute( 'id', 'occupancyContainer' );
-        for ( let lib in floorplans.occupancyData ) {
-            DomUtil.create( 'p', 'hidden '+floorplans.occupancyData[lib].floorid+'msg', c );
-        }
-        return c;
-    }
-
-    onRemove( map ) {
-        // Nothing to do here
-    }
-}
-
-/**
- * Adds the control to the map once it's ready, and wires up the floor
- * selecter (built by SelecterControl) to show/hide the occupancy message
- */
-document.addEventListener( 'fpmapready', e => {
-    new OccupancyControl({ position: 'topleft' }).addTo( floorplans.map );
-
-    updateOccupancy();
-    setInterval( updateOccupancy, 60000 );
-
-    let floorselecter = document.getElementById( 'floorselecter' );
-    if ( floorselecter ) {
-        floorselecter.addEventListener( 'change', function(){
-            if ( this.options[this.selectedIndex].value !== '' ) {
-                showOccupancyMessage( this.options[this.selectedIndex].value );
+    static {
+        this.setDefaultOptions({
+            position: 'bottomright',
+            url: 'https://floorplans.library.leeds.ac.uk/capacity.json',
+            /* how often to refresh the data (in milliseconds) */
+            interval: 60000,
+            /**
+             * libraries to show occupancy for - keys match those in the capacity
+             * JSON, and floorid is matched against the start of the current floor ID
+             */
+            libraries: {
+                "Edward Boyle": { "floorid": "edwardboyle" },
+                "Laidlaw": { "floorid": "laidlaw" }
             }
         });
     }
-});
 
-/**
- * get occupancy data from remote JSON file and update
- * floorplans.occupancyData
- */
-export function updateOccupancy() {
-    fplog( 'updateOccupancy' );
-    return getJSON({
-        url: "https://floorplans.library.leeds.ac.uk/capacity.json",
-        key: "libraryOccupancy",
-        expires: 0.015
-    })
-    .then(
-        data => {
-            for ( let lib in floorplans.occupancyData ) {
-                let occupancy = data && data.hasOwnProperty( lib ) ? parseInt( data[lib].occupancy ) : NaN;
-                let capacity = data && data.hasOwnProperty( lib ) ? parseInt( data[lib].capacity ) : NaN;
-                if ( ! isNaN( occupancy ) && ! isNaN( capacity ) ) {
-                    fplog( 'Updating occupancy for spaces in '+lib+' to '+occupancy );
-                    floorplans.occupancyData[lib].occupancy = occupancy;
-                    floorplans.occupancyData[lib].capacity = capacity;
-                    floorplans.occupancyData[lib].available = true;
-                    let msgObj = document.querySelector('.'+floorplans.occupancyData[lib].floorid+'msg');
-                    let occupancyMsg = occupancy < 50? "fewer than 50": occupancy.toLocaleString('en');
-                    let capacityMsg = capacity.toLocaleString('en')
-                    msgObj.innerHTML = 'There are currently <strong>'+occupancyMsg+'</strong> people in the <strong>'+lib+' library</strong>, which has a seating capacity of approximately <strong>'+capacityMsg+'</strong>';
-                } else {
-                    fplog("No occupancy data for "+lib);
-                    floorplans.occupancyData[lib].available = false;
+    onAdd( map ) {
+        let container = DomUtil.create( 'div', 'hidden' );
+        container.setAttribute( 'id', 'occupancyContainer' );
+
+        /**
+         * Set up data container - available is set to true once data has been
+         * loaded for a library, so the control is only shown when there is data
+         */
+        this._data = {};
+        for ( let lib in this.options.libraries ) {
+            this._data[lib] = {
+                floorid: this.options.libraries[lib].floorid,
+                occupancy: 0,
+                capacity: 0,
+                available: false,
+                msg: DomUtil.create( 'p', 'hidden', container )
+            };
+        }
+
+        /* the floor currently selected, so the message can be refreshed when data changes */
+        this._floorid = '';
+
+        this._onFloorLoaded = e => this.showMessage( e.detail.floor.floorid );
+        document.addEventListener( 'fpfloorloaded', this._onFloorLoaded );
+
+        this.update();
+        this._timer = setInterval( () => this.update(), this.options.interval );
+
+        return container;
+    }
+
+    onRemove( map ) {
+        document.removeEventListener( 'fpfloorloaded', this._onFloorLoaded );
+        clearInterval( this._timer );
+    }
+
+    /**
+     * Gets occupancy data from the remote JSON file and updates the messages
+     */
+    update() {
+        fplog( 'OccupancyControl.update' );
+        return getJSON({
+            url: this.options.url,
+            key: 'libraryOccupancy',
+            expires: 0.015
+        })
+        .then(
+            data => {
+                for ( let lib in this._data ) {
+                    let d = this._data[lib];
+                    let occupancy = data && data.hasOwnProperty( lib ) ? parseInt( data[lib].occupancy ) : NaN;
+                    let capacity = data && data.hasOwnProperty( lib ) ? parseInt( data[lib].capacity ) : NaN;
+                    if ( ! isNaN( occupancy ) && ! isNaN( capacity ) ) {
+                        fplog( 'Updating occupancy for spaces in '+lib+' to '+occupancy );
+                        d.occupancy = occupancy;
+                        d.capacity = capacity;
+                        d.available = true;
+                        let occupancyMsg = occupancy < 50? "fewer than 50": occupancy.toLocaleString('en');
+                        let capacityMsg = capacity.toLocaleString('en');
+                        d.msg.innerHTML = 'There are currently <strong>'+occupancyMsg+'</strong> people in the <strong>'+lib+' library</strong>, which has a seating capacity of approximately <strong>'+capacityMsg+'</strong>';
+                    } else {
+                        fplog("No occupancy data for "+lib);
+                        d.available = false;
+                    }
                 }
+                this.showMessage( this._floorid );
+            },
+            /* hide the control if the data can't be loaded */
+            () => {
+                for ( let lib in this._data ) {
+                    this._data[lib].available = false;
+                }
+                this.showMessage( this._floorid );
             }
-            showOccupancyMessage( activeFloorid );
-        },
-        /* hide the control if the data can't be loaded */
-        () => {
-            for ( let lib in floorplans.occupancyData ) {
-                floorplans.occupancyData[lib].available = false;
-            }
-            showOccupancyMessage( activeFloorid );
-        }
-    );
-}
+        );
+    }
 
-/**
- * Shows the occupancy message for the library on the given floor - the control
- * is hidden if the floor isn't in one of the libraries, or there is no data
- * @param {String} floorid
- */
-export function showOccupancyMessage( floorid ) {
-    activeFloorid = floorid || '';
-    let c = document.getElementById('occupancyContainer');
-    if ( ! c ) {
-        return;
-    }
-    let lib = Object.keys( floorplans.occupancyData ).find( l => activeFloorid.startsWith( floorplans.occupancyData[l].floorid ) );
-    if ( ! lib || ! floorplans.occupancyData[lib].available ) {
-        c.classList.add('hidden');
-        return;
-    }
-    if ( floorid.match( '(edward|laidlaw)' ) ) {
-        c.classList.remove('hidden');
-        let activemsg, inactivemsg;
-        if ( floorid.match( 'edward' ) ) {
-            activemsg = document.querySelector('.edwardboylemsg');
-            inactivemsg = document.querySelector('.laidlawmsg');
-        } else {
-            inactivemsg = document.querySelector('.edwardboylemsg');
-            activemsg = document.querySelector('.laidlawmsg');
+    /**
+     * Shows the occupancy message for the library on the given floor - the control
+     * is hidden if the floor isn't in one of the libraries, or there is no data
+     * @param {String} floorid
+     */
+    showMessage( floorid ) {
+        this._floorid = floorid || '';
+        let active = Object.values( this._data ).find( d => this._floorid.startsWith( d.floorid ) );
+        for ( let lib in this._data ) {
+            this._data[lib].msg.classList.toggle( 'hidden', this._data[lib] !== active );
         }
-        inactivemsg.classList.add('hidden');
-        activemsg.classList.remove('hidden');
-    } else {
-        c.classList.add('hidden');
+        this._container.classList.toggle( 'hidden', ! active || ! active.available );
+        return this;
     }
 }

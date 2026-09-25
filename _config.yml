@@ -1,3 +1,8 @@
+# Base config, used on its own by GitHub Pages for
+# https://uol-library.github.io/floorplans.library.leeds.ac.uk/ (served from a subpath).
+# The production (public/) and development (public-dev/) sites layer their own
+# overrides over this file - see _config_prod.yml and _config-dev.yml - so settings
+# shared by all the sites only need changing here
 title: University of Leeds Library Floor Plans
 email: p.l.edwards@leeds.ac.uk
 description: >-
@@ -6,12 +11,10 @@ description: >-
   to enable indoor wayfinding in the University's
   library spaces.
 environment: production
-url: "https://floorplans.library.leeds.ac.uk"
-baseurl: ""
-destination: public/
+url: "https://uol-library.github.io"
+baseurl: "/floorplans.library.leeds.ac.uk"
 host: "localhost"
-port: 4001
-version: "0.8"
+version: "0.9"
 google_analytics: ""
 photo_dir: "/assets/photos/"
 lang: "en"
@@ -32,10 +35,13 @@ exclude:
   - package*
   - Gemfile*
   - README.md
+  - CHANGELOG.md
   - LICENSE
+  - NOTICE
   - index.js
   - public
   - public-dev
   - node_modules
+  - tests
   - sync.sh
   - vendor

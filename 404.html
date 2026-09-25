@@ -1,0 +1,11 @@
+---
+layout: floorplans
+permalink: /404.html
+sitemap: false
+---
+{%- comment -%}
+    Loads the app for paths which don't exist as files, so app URLs like
+    /brotherton/m2/Philosophy work when using jekyll serve (which serves this page
+    for missing paths). routing.mjs reads the view to load from the URL.
+    On the live site, .htaccess serves index.html for these paths instead.
+{%- endcomment -%}

@@ -52,38 +52,70 @@ This repository contains a refactored version of the floorplans which adopts the
 
 ## Building the site
 
-The site is built with Jekyll into two directories, both of which are committed to the repository:
+The site is built with Jekyll. `_config.yml` holds the full configuration, and the other sites layer a small file of overrides over it (Jekyll merges the config files in the order given):
 
-* `public/` - production build (`_config.yml`, https://floorplans.library.leeds.ac.uk)
-* `public-dev/` - development build (`_config-dev.yml`, https://dev-floorplans.library.leeds.ac.uk, debug logging enabled)
+| Configs | Output | Served at |
+|---|---|---|
+| `_config.yml` | built by GitHub Pages | https://uol-library.github.io/floorplans.library.leeds.ac.uk/ |
+| `_config.yml,_config_prod.yml` | `public/` (committed) | https://floorplans.library.leeds.ac.uk (Apache) |
+| `_config.yml,_config-dev.yml` | `public-dev/` (committed) | https://dev-floorplans.library.leeds.ac.uk (Apache, debug logging enabled) |
 
-A pre-commit hook in `.githooks/` rebuilds both from the staged files and adds the output to the commit. Enable it once after cloning with:
+GitHub Pages always builds the site itself using `_config.yml` alone, so that file is set up for GitHub Pages, which serves the site from a subpath (`baseurl: /floorplans.library.leeds.ac.uk`). `_config_prod.yml` and `_config-dev.yml` only change the `url`, `baseurl` and `destination` (and `environment` for development), so shared settings only need changing in `_config.yml`.
+
+A pre-commit hook in `.githooks/` runs the tests (see [Tests](#tests)) on the staged files, then rebuilds `public/` and `public-dev/` from them and adds the output to the commit. If a test fails, the commit is stopped. Enable the hook once after cloning with:
 
 ```sh
 git config core.hooksPath .githooks
 ```
 
-To skip the build for a single commit, use `SKIP_JEKYLL_BUILD=1 git commit ...`. 
+To skip the tests for a single commit, use `SKIP_TESTS=1 git commit ...`, and to skip the builds, use `SKIP_JEKYLL_BUILD=1 git commit ...`.
 
-To build each site manually use the following two commands:
+To build each site manually:
 
 ```sh
-JEKYLL_ENV=production bundle exec jekyll build --config _config.yml
-JEKYLL_ENV=development bundle exec jekyll build --config _config-dev.yml
+npm run buildProd    # public/
+npm run buildDev     # public-dev/
 ```
 
-To build both, as well as rebuild image files from sources and create the icons and features data files:
+To create the icons and features data files and build both sites:
 
 ```sh
 npm run build
 ```
 
-To run the site locally at without touching either build directory, use `npm run serve` (dev) or `npm run serveprod` (prod). This layers `_config-local.yml` over the development config or production config and builds into `_site/`, which is not committed:
+To rebuild the image files from their sources, use `npm run buildImages`.
+
+To run the site locally without touching either build directory, use one of the following. Each layers `_config-local.yml` last and builds into `_site/`, which is not committed:
 
 ```sh
-bundle exec jekyll serve --config _config-dev.yml,_config-local.yml
-bundle exec jekyll serve --config _config.yml,_config-local.yml
+npm run serve        # development config, at http://localhost:4000/
+npm run serveprod    # production config, at http://localhost:4000/
+npm run servepages   # GitHub Pages config, at http://localhost:4000/floorplans.library.leeds.ac.uk/
 ```
+
+### App URLs
+
+The app uses URLs like `/brotherton/m2/Philosophy` (library, floor and shelf name), which change as floors are selected. On the Apache sites, `.htaccess` serves `index.html` for these paths. On GitHub Pages and with `jekyll serve`, `404.html` loads the app instead (the page works, but the HTTP status is 404).
+
+## Tests
+
+The tests use Node's built-in test runner (Node 22.15 or later, no packages needed). Run them with:
+
+```sh
+npm test
+```
+
+They are in `tests/`:
+
+* `routing.test.mjs` - reading and building app URLs, old URLs, and matching Primo classmarks to shelves
+* `history.test.mjs` - updating the URL and browser history, and the back / forward buttons
+* `redirect.test.mjs` - sending Primo links to the library website (`redirect_primo_links`)
+* `primo-links.test.mjs` - the Primo links from the live logs (`tests/fixtures/primo-links.txt`): none should cause an error, and at least 96% should find a shelf
+* `storage.test.mjs` - `getJSON` caching in localStorage, and `clearStorage`
+* `data.test.mjs` - the floor config and GeoJSON, and that `_includes/javascript/features.js` is up to date (if not, run `npm run buildStatic`)
+* `csp.test.mjs` - that the Content-Security-Policy in `.htaccess` allows the import maps (if an import map changes, update the hash in `.htaccess` to the one in the error)
+
+`assets/js/modules/config.mjs` is a Jekyll template, so `tests/setup.mjs` serves a rendered copy of it to the tests, using the settings in `_config.yml` and `_config_prod.yml`. Browser globals (`window`, `document`, `history`, `localStorage` and `fetch`) are replaced with small fakes in `tests/helpers.mjs`. The Leaflet controls in `core.mjs` and `selectercontrol.mjs` need a browser, so they aren't covered.
 
 ## Future plans
 

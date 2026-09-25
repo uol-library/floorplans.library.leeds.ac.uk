@@ -17,6 +17,7 @@
     <title>{{ site.title }}</title>
     <link rel="stylesheet" href="{{ "/assets/css/main.css" | absolute_url }}">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@2.0.0-alpha.1/dist/leaflet.css"/>
+    {%- comment -%} The Content-Security-Policy in .htaccess (app policy) allows this import map by its sha256 hash - update the hash if this changes {%- endcomment %}
     <script type="importmap">
     {
         "imports": {
@@ -25,5 +26,4 @@
     }
     </script>
     {% include favicons.html %}
-    {% include custom-head.html %}
 </head>
