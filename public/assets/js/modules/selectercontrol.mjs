@@ -98,9 +98,38 @@ export class SelecterControl extends Control {
     }
 
     /**
+     * Whether the selecter panel is open (on screen)
+     * @returns {Boolean}
+     */
+    isOpen() {
+        return ! this._container.classList.contains( 'closed' );
+    }
+
+    /**
+     * Padding to use when fitting bounds to the map, so the floor plan isn't
+     * hidden behind the selecter panel
+     * @returns {Array} [x, y] padding for the top left of the map
+     */
+    getPadding() {
+        return [ this.isOpen() ? this._container.offsetWidth : 0, 0 ];
+    }
+
+    /**
+     * Pans the map by half the width of the panel, so the plan stays centred in
+     * the visible area of the map when the panel is opened or closed
+     * @param {Number} direction - 1 to move the plan left, -1 to move it right
+     */
+    _panForPanel( direction ) {
+        this._map.panBy( [ direction * this._container.offsetWidth / 2, 0 ], { duration: .3 } );
+    }
+
+    /**
      * Opens the selecter panel
      */
     open() {
+        if ( ! this.isOpen() ) {
+            this._panForPanel( -1 );
+        }
         this._container.classList.remove( 'closed' );
         this._menuButton.classList.add( 'close' );
         this._menuButton.setAttribute( 'aria-expanded', 'true' );
@@ -112,6 +141,9 @@ export class SelecterControl extends Control {
      * Shuffles the selecter panel off screen
      */
     close() {
+        if ( this.isOpen() ) {
+            this._panForPanel( 1 );
+        }
         this._container.classList.add( 'closed' );
         this._menuButton.classList.remove( 'close' );
         this._menuButton.setAttribute( 'aria-expanded', 'false' );
@@ -120,7 +152,7 @@ export class SelecterControl extends Control {
     }
 
     toggle() {
-        return this._container.classList.contains( 'closed' ) ? this.open() : this.close();
+        return this.isOpen() ? this.close() : this.open();
     }
 
     /**

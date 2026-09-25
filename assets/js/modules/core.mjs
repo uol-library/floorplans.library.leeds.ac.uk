@@ -101,9 +101,8 @@ export async function loadFloor( floorid = null, shelfname = null, activate = fa
         }
         floorlayer.addTo( floorplans.map );
         floorplans.currentFloor = floor;
-        /* position floor */
-        floorplans.map.fitBounds( floor.imageBounds );
-        floorplans.map.setView( floor.imageBounds.getCenter() );
+        /* position floor in the area of the map not covered by the selecter panel */
+        floorplans.map.fitBounds( floor.imageBounds, { paddingTopLeft: floorplans.selecterControl.getPadding() } );
         /* build the feature lists and select the floor in the selecter */
         floorplans.selecterControl.buildLists( floorid ).selectFloor( floorid );
         /* find the shelf for the classmark */
