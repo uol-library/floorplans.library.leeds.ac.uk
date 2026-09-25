@@ -1,18 +1,15 @@
 #!/bin/sh
 #
-# Builds the production (public/) and development (public-dev/) Jekyll sites
-# from the files staged for commit, and adds the build output to the commit.
+# Runs the tests (npm test) on the files staged for commit, then builds the
+# production (public/) and development (public-dev/) Jekyll sites from them, and
+# adds the build output to the commit. The commit is stopped if a test fails.
 #
 # Enable once per clone with:  git config core.hooksPath .githooks
-# Skip for a single commit with:  SKIP_JEKYLL_BUILD=1 git commit ...
+# Skip the tests for a single commit with:  SKIP_TESTS=1 git commit ...
+# Skip the builds for a single commit with:  SKIP_JEKYLL_BUILD=1 git commit ...
 # (or git commit --no-verify, which skips all hooks)
 
 set -e
-
-if [ "$SKIP_JEKYLL_BUILD" = "1" ]; then
-    echo "pre-commit: SKIP_JEKYLL_BUILD set - not building sites"
-    exit 0
-fi
 
 root="$(git rev-parse --show-toplevel)"
 cd "$root"
@@ -27,6 +24,21 @@ fi
 src="$(mktemp -d)"
 trap 'rm -rf "$src"' EXIT
 git ls-files -z | grep -zvE '^(public|public-dev)/' | git checkout-index -z --stdin --prefix="$src/"
+
+if [ "$SKIP_TESTS" = "1" ]; then
+    echo "pre-commit: SKIP_TESTS set - not running tests"
+elif [ -f "$src/tests/setup.mjs" ]; then
+    echo "pre-commit: running tests"
+    if ! ( cd "$src" && node --import ./tests/setup.mjs --test --test-reporter=dot "tests/**/*.test.mjs" ); then
+        echo "pre-commit: tests failed - commit stopped (use SKIP_TESTS=1 to commit anyway)"
+        exit 1
+    fi
+fi
+
+if [ "$SKIP_JEKYLL_BUILD" = "1" ]; then
+    echo "pre-commit: SKIP_JEKYLL_BUILD set - not building sites"
+    exit 0
+fi
 
 export BUNDLE_GEMFILE="$root/Gemfile"
 

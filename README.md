@@ -62,13 +62,13 @@ The site is built with Jekyll. `_config.yml` holds the full configuration, and t
 
 GitHub Pages always builds the site itself using `_config.yml` alone, so that file is set up for GitHub Pages, which serves the site from a subpath (`baseurl: /floorplans.library.leeds.ac.uk`). `_config_prod.yml` and `_config-dev.yml` only change the `url`, `baseurl` and `destination` (and `environment` for development), so shared settings only need changing in `_config.yml`.
 
-A pre-commit hook in `.githooks/` rebuilds `public/` and `public-dev/` from the staged files and adds the output to the commit. Enable it once after cloning with:
+A pre-commit hook in `.githooks/` runs the tests (see [Tests](#tests)) on the staged files, then rebuilds `public/` and `public-dev/` from them and adds the output to the commit. If a test fails, the commit is stopped. Enable the hook once after cloning with:
 
 ```sh
 git config core.hooksPath .githooks
 ```
 
-To skip the build for a single commit, use `SKIP_JEKYLL_BUILD=1 git commit ...`.
+To skip the tests for a single commit, use `SKIP_TESTS=1 git commit ...`, and to skip the builds, use `SKIP_JEKYLL_BUILD=1 git commit ...`.
 
 To build each site manually:
 
@@ -96,6 +96,26 @@ npm run servepages   # GitHub Pages config, at http://localhost:4000/floorplans.
 ### App URLs
 
 The app uses URLs like `/brotherton/m2/Philosophy` (library, floor and shelf name), which change as floors are selected. On the Apache sites, `.htaccess` serves `index.html` for these paths. On GitHub Pages and with `jekyll serve`, `404.html` loads the app instead (the page works, but the HTTP status is 404).
+
+## Tests
+
+The tests use Node's built-in test runner (Node 22.15 or later, no packages needed). Run them with:
+
+```sh
+npm test
+```
+
+They are in `tests/`:
+
+* `routing.test.mjs` - reading and building app URLs, old URLs, and matching Primo classmarks to shelves
+* `history.test.mjs` - updating the URL and browser history, and the back / forward buttons
+* `redirect.test.mjs` - sending Primo links to the library website (`redirect_primo_links`)
+* `primo-links.test.mjs` - the Primo links from the live logs (`tests/fixtures/primo-links.txt`): none should cause an error, and at least 96% should find a shelf
+* `storage.test.mjs` - `getJSON` caching in localStorage, and `clearStorage`
+* `data.test.mjs` - the floor config and GeoJSON, and that `_includes/javascript/features.js` is up to date (if not, run `npm run buildStatic`)
+* `csp.test.mjs` - that the Content-Security-Policy in `.htaccess` allows the import maps (if an import map changes, update the hash in `.htaccess` to the one in the error)
+
+`assets/js/modules/config.mjs` is a Jekyll template, so `tests/setup.mjs` serves a rendered copy of it to the tests, using the settings in `_config.yml` and `_config_prod.yml`. Browser globals (`window`, `document`, `history`, `localStorage` and `fetch`) are replaced with small fakes in `tests/helpers.mjs`. The Leaflet controls in `core.mjs` and `selectercontrol.mjs` need a browser, so they aren't covered.
 
 ## Future plans
 

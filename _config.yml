@@ -42,5 +42,6 @@ exclude:
   - public
   - public-dev
   - node_modules
+  - tests
   - sync.sh
   - vendor

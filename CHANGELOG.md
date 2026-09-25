@@ -17,6 +17,7 @@ Primo links are now handled entirely by the app, and `floorplans-broker.php` has
 - **New `SelecterControl` methods:** `buildLists( floorid )`, `selectFloor( floorid )`, `isOpen()` and `getPadding()`.
 - **npm scripts:** `buildStatic`, `buildPublic`, `buildDev`, and `build`, which runs all three.
 - **Separate Content-Security-Policy** for the editor and IIIF pages.
+- **Tests** (`npm test`) using Node's built-in test runner. They cover routing and classmark matching, browser history, the Primo redirect, `getJSON` caching, the floor data and the CSP hashes, and check the Primo links from the live logs. The pre-commit hook runs them on the staged files, and stops the commit if one fails.
 - **`404.html`** loads the app, so app URLs work when reloaded under `jekyll serve` and on GitHub Pages.
 - **GitHub Pages support:** the copy at https://uol-library.github.io/floorplans.library.leeds.ac.uk/ now works, including app URLs, under its subpath. `_config.yml` is the full base config, used on its own by GitHub Pages. The production (`_config_prod.yml`) and development (`_config-dev.yml`) configs now only contain the settings they override, and are layered over it. `npm run servepages` previews the GitHub Pages build locally.
 
