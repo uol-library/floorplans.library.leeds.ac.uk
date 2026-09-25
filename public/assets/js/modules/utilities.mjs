@@ -12,21 +12,6 @@ export function buildFeaturePopup( feature ) {
 }
 
 /**
- * Selects a feature on the floor from the list of features
- *
- * @uses selectFeature()
- * @param {Object} floor - used to access the lists of features
- * @param {string} shelfName - the Label for the given feature
- */
-export function selectShelf( floor, shelfName ) {
-    ( floor.selecters.shelf || [] ).forEach( s => {
-        if ( s.label.match( shelfName ) ) {
-            selectFeature( s.value );
-        }
-    });
-}
-
-/**
  * This takes the ID of a feature in a geoJSON layer
  * and returns the layer object which contains the feature
  * @param {String} featureid
@@ -50,7 +35,7 @@ export function getFeature( featureid ) {
 export function selectFeature( featureid ) {
     let layer = getFeature( featureid );
     if ( layer !== false ) {
-        layer.fire( 'mouseover', {}, true );
+        layer.fire( 'pointerover', {}, true );
         let fb = document.querySelector('button[data-featureid="'+featureid+'"]');
         if ( fb ) {
             fb.focus();

@@ -911,7 +911,7 @@
         },
         {
             "type": "Feature",
-            "id": 4,
+            "id": 13,
             "properties": {
                 "name": "Geography",
                 "type": "shelf",
@@ -970,7 +970,7 @@
         },
         {
             "type": "Feature",
-            "id": 5,
+            "id": 14,
             "properties": {
                 "name": "General Literature",
                 "type": "shelf",
@@ -1015,7 +1015,7 @@
         },
         {
             "type": "Feature",
-            "id": 7,
+            "id": 15,
             "properties": {
                 "name": "General Science",
                 "type": "shelf",
@@ -1052,7 +1052,7 @@
         },
         {
             "type": "Feature",
-            "id": 9,
+            "id": 16,
             "properties": {
                 "name": "Geology",
                 "type": "shelf",
@@ -1304,7 +1304,7 @@
         },
         {
             "type": "Feature",
-            "id": 10,
+            "id": 22,
             "properties": {
                 "name": "Japanese",
                 "type": "shelf",

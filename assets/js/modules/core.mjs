@@ -17,9 +17,9 @@ import {
     highlightFeature,
     resetFeatures,
     getSVGIcon,
-    selectShelf
+    selectFeature
 } from './utilities.mjs';
-import { getStartParams } from './routing.mjs';
+import { getStartParams, initHistory } from './routing.mjs';
 import { SelecterControl } from './selectercontrol.mjs';
 import { OccupancyControl } from './occupancycontrol.mjs';
 
@@ -63,9 +63,13 @@ export function initMap() {
     floorplans.selecterControl = new SelecterControl().addTo( floorplans.map );
     /* add the occupancy control (updated when a floor is loaded) */
     floorplans.occupancyControl = new OccupancyControl().addTo( floorplans.map );
+    /* keep the URL and browser history in step with the floor, and handle back / forward */
+    initHistory( params => {
+        loadFloor( params.floorid, params.shelfid, true ).catch( err => fplog( err.message ) );
+    });
     /* load the start floor (from the URL), then preload data for all the other floors */
     let params = getStartParams();
-    loadFloor( params.floorid, params.shelfname, true )
+    loadFloor( params.floorid, params.shelfid, true )
     .catch( err => fplog( err.message ) )
     .finally( () => {
         floorplans.libraries.flatMap( lib => lib.floors ).forEach( f => {
@@ -80,11 +84,11 @@ export function initMap() {
  * Loads a floor and optionally activates it (adds it to the map in place of the
  * current floor and updates the navigation)
  * @param {String} floorid
- * @param {String} shelfname - shelf to select once the floor is activated
+ * @param {String} shelfid - ID of a shelf to select once the floor is activated (e.g. shelf12)
  * @param {Boolean} activate
  * @returns {Promise<Object>} resolves with the floor object
  */
-export async function loadFloor( floorid = null, shelfname = null, activate = false ) {
+export async function loadFloor( floorid = null, shelfid = null, activate = false ) {
     let floor = floorplans.libraries.flatMap( lib => lib.floors ).find( f => f.floorid === floorid );
     if ( ! floor ) {
         throw new Error( 'Floor not found ' + floorid );
@@ -105,11 +109,11 @@ export async function loadFloor( floorid = null, shelfname = null, activate = fa
         floorplans.map.fitBounds( floor.imageBounds, { paddingTopLeft: floorplans.selecterControl.getPadding() } );
         /* build the feature lists and select the floor in the selecter */
         floorplans.selecterControl.buildLists( floorid ).selectFloor( floorid );
-        /* find the shelf for the classmark */
-        if ( shelfname ) {
-            selectShelf( floor, shelfname );
+        /* highlight the shelf (e.g. for the classmark in a Primo link) */
+        if ( shelfid ) {
+            selectFeature( shelfid );
         }
-        document.dispatchEvent( new CustomEvent( 'fpfloorloaded', { detail: { floor: floor, layer: floorlayer } } ) );
+        document.dispatchEvent( new CustomEvent( 'fpfloorloaded', { detail: { floor: floor, layer: floorlayer, shelfid: shelfid } } ) );
         fplog( 'Activated floor ' + floor.floorname );
     }
     return floor;
