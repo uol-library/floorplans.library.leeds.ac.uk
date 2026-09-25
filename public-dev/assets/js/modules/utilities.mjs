@@ -12,21 +12,6 @@ export function buildFeaturePopup( feature ) {
 }
 
 /**
- * Selects a floor from the dropdown list
- * @param {String} floorid
- */
-export function selectFloor( floorid ) {
-    let sel = document.getElementById( 'floorselecter' );
-    if ( sel ) {
-        for (var i = 0; i < sel.options.length; i++) {
-            if ( sel.options[i].value === floorid ) {
-                sel.options[i].selected = true;
-            }
-        }
-    }
-}
-
-/**
  * Selects a feature on the floor from the list of features
  *
  * @uses selectFeature()
@@ -34,7 +19,7 @@ export function selectFloor( floorid ) {
  * @param {string} shelfName - the Label for the given feature
  */
 export function selectShelf( floor, shelfName ) {
-    floor.selecters.shelf.forEach( s => {
+    ( floor.selecters.shelf || [] ).forEach( s => {
         if ( s.label.match( shelfName ) ) {
             selectFeature( s.value );
         }
@@ -219,61 +204,42 @@ function getWithExpiry( key ) {
  * @param {Object} options Information about the JSON file
  * @param {String} options.key Unique key used to store the data in localstorage (required)
  * @param {String} options.url URL of the JSON file (required)
- * @param {Integer} options.expiry How long to cache the results (in hours) default: 24
- * @param {Function} options.callback callback function with one parameter (JSON parsed response)
+ * @param {Number} options.expires How long to cache the results (in hours) default: 24
+ * @returns {Promise<Object>} resolves with the parsed JSON, or rejects with { status, statusText }
  */
-export function getJSON( options ) {
-    return new Promise( ( resolve, reject ) => {
-        if ( ! options.hasOwnProperty( 'key' ) || ! options.hasOwnProperty( 'url' ) ) {
-            reject({
-                status: 'Missing parameters',
-                statusText: 'To fetch a remote JSON file you need to supply a key and a URL in the options parameter'
-            });
+export async function getJSON( options ) {
+    if ( ! options.hasOwnProperty( 'key' ) || ! options.hasOwnProperty( 'url' ) ) {
+        throw {
+            status: 'Missing parameters',
+            statusText: 'To fetch a remote JSON file you need to supply a key and a URL in the options parameter'
+        };
+    }
+    let expires = options.hasOwnProperty( 'expires' ) ? options.expires : 24;
+    let useStorage = storageAvailable( 'localStorage' );
+    let json = useStorage ? getWithExpiry( options.key ) : null;
+    if ( json ) {
+        fplog( `getting data ${options.key} from local storage` );
+    } else {
+        fplog( `getting data ${options.key} from ${options.url}` );
+        let response;
+        try {
+            response = await fetch( options.url );
+        } catch ( err ) {
+            /* network error - fetch only rejects when the request cannot be made */
+            throw { status: 0, statusText: err.message };
         }
-        if ( ! options.hasOwnProperty( 'expires' ) ) {
-            options.expires = 24;
+        if ( ! response.ok ) {
+            throw { status: response.status, statusText: response.statusText };
         }
-        if ( storageAvailable( 'localStorage' ) && getWithExpiry( options.key ) ) {
-            fplog( `getting data ${options.key} from local storage` );
-            let data = JSON.parse( getWithExpiry( options.key ) );
-            if ( options.callback ) {
-                options.callback( data );
-            }
-            resolve( data );
-        } else {
-            fplog( `getting data ${options.key} from ${options.url}` );
-            var xhr = new XMLHttpRequest();
-            xhr.onload = () => {
-                if (xhr.status >= 200 && xhr.status < 300) {
-                    if ( storageAvailable( 'localStorage' ) ) {
-                        var expires = new Date().getTime() + ( options.expires * 60 * 60 * 1000 );
-                        fplog( `storing data ${options.key} in localstorage - expires ${new Date( expires).toLocaleDateString("en-UK")}` );
-                        setWithExpiry( options.key, xhr.responseText, options.expires );
-                    }
-                    let data = JSON.parse( xhr.responseText );
-                    if ( options.callback ) {
-                        options.callback( data );
-                    }
-                    resolve( data );
-                } else {
-                    reject({
-                        status: xhr.status,
-                        statusText: xhr.statusText
-                    });
-                }
-            };
-            xhr.onerror = () => {
-                reject({
-                    status: xhr.status,
-                    statusText: xhr.statusText
-                });
-            };
-            xhr.open( 'GET', options.url );
-            xhr.send();
+        json = await response.text();
+        if ( useStorage ) {
+            let expiryDate = new Date( new Date().getTime() + ( expires * 60 * 60 * 1000 ) );
+            fplog( `storing data ${options.key} in localstorage - expires ${expiryDate.toLocaleDateString("en-UK")}` );
+            setWithExpiry( options.key, json, expires );
         }
-    });
+    }
+    return JSON.parse( json );
 }
-
 
 /**
  * Logs messages to console if debug flag is set

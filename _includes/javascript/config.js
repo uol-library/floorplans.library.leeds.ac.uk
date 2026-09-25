@@ -28,13 +28,15 @@ export const floorplans = {
 	currentFloor: false,
 	canUseLocalStorage: function() { return false }
 };
-floorplans.imagelayers = [
+floorplans.libraries = [
 	{
 		"id": "brotherton",
 		"title": "The Brotherton Library",
 		"floors": [
 			{
 				"floorid": "brotherton-m1",
+				"up": "brotherton-m2",
+				"down": false,
 				"floorname": "Brotherton Library Main building, level 1",
 				"imageurl": floorplans.imgconf.baseURL + "/assets/images/brotherton-m1.png",
 				"dataurl": floorplans.imgconf.baseURL + "/assets/features/brotherton-m1.json",
@@ -43,6 +45,8 @@ floorplans.imagelayers = [
 			},
 			{
 				"floorid": "brotherton-m2",
+				"up": "brotherton-m3",
+				"down": "brotherton-m1",
 				"floorname": "Brotherton Library Main building, level 2",
 				"imageurl": floorplans.imgconf.baseURL + "/assets/images/brotherton-m2.png",
 				"dataurl": floorplans.imgconf.baseURL + "/assets/features/brotherton-m2.json",
@@ -51,6 +55,8 @@ floorplans.imagelayers = [
 			},
 			{
 				"floorid": "brotherton-m3",
+				"up": "brotherton-m4",
+				"down": "brotherton-m2",
 				"floorname": "Brotherton Library Main building, level 3",
 				"imageurl": floorplans.imgconf.baseURL + "/assets/images/brotherton-m3.png",
 				"dataurl": floorplans.imgconf.baseURL + "/assets/features/brotherton-m3.json",
@@ -59,6 +65,8 @@ floorplans.imagelayers = [
 			},
 			{
 				"floorid": "brotherton-m4",
+				"up": false,
+				"down": "brotherton-m3",
 				"floorname": "Brotherton Library Main building, level 4",
 				"imageurl": floorplans.imgconf.baseURL + "/assets/images/brotherton-m4.png",
 				"dataurl": floorplans.imgconf.baseURL + "/assets/features/brotherton-m4.json",
@@ -67,6 +75,8 @@ floorplans.imagelayers = [
 			},
 			{
 				"floorid": "brotherton-w2",
+				"up": "brotherton-w3",
+				"down": false,
 				"floorname": "Brotherton Library West building, level 2",
 				"imageurl": floorplans.imgconf.baseURL + "/assets/images/brotherton-w2.png",
 				"dataurl": floorplans.imgconf.baseURL + "/assets/features/brotherton-w2.json",
@@ -75,6 +85,8 @@ floorplans.imagelayers = [
 			},
 			{
 				"floorid": "brotherton-w3",
+				"up": false,
+				"down": "brotherton-w2",
 				"floorname": "Brotherton Library West building, level 3",
 				"imageurl": floorplans.imgconf.baseURL + "/assets/images/brotherton-w3.png",
 				"dataurl": floorplans.imgconf.baseURL + "/assets/features/brotherton-w3.json",
@@ -89,6 +101,8 @@ floorplans.imagelayers = [
 		"floors": [
 			{
 				"floorid": "edwardboyle-8",
+				"up": "edwardboyle-9",
+				"down": false,
 				"floorname": "Edward Boyle Library, level 8",
 				"imageurl": floorplans.imgconf.baseURL + "/assets/images/edwardboyle-8.png",
 				"dataurl": floorplans.imgconf.baseURL + "/assets/features/edwardboyle-8.json",
@@ -97,6 +111,8 @@ floorplans.imagelayers = [
 			},
 			{
 				"floorid": "edwardboyle-9",
+				"up": "edwardboyle-10",
+				"down": "edwardboyle-8",
 				"floorname": "Edward Boyle Library, level 9",
 				"imageurl": floorplans.imgconf.baseURL + "/assets/images/edwardboyle-9.png",
 				"dataurl": floorplans.imgconf.baseURL + "/assets/features/edwardboyle-9.json",
@@ -105,6 +121,8 @@ floorplans.imagelayers = [
 			},
 			{
 				"floorid": "edwardboyle-10",
+				"up": "edwardboyle-11",
+				"down": "edwardboyle-9",
 				"floorname": "Edward Boyle Library, level 10",
 				"imageurl": floorplans.imgconf.baseURL + "/assets/images/edwardboyle-10.png",
 				"dataurl": floorplans.imgconf.baseURL + "/assets/features/edwardboyle-10.json",
@@ -113,6 +131,8 @@ floorplans.imagelayers = [
 			},
 			{
 				"floorid": "edwardboyle-11",
+				"up": "edwardboyle-12",
+				"down": "edwardboyle-10",
 				"floorname": "Edward Boyle Library, level 11",
 				"imageurl": floorplans.imgconf.baseURL + "/assets/images/edwardboyle-11.png",
 				"dataurl": floorplans.imgconf.baseURL + "/assets/features/edwardboyle-11.json",
@@ -121,6 +141,8 @@ floorplans.imagelayers = [
 			},
 			{
 				"floorid": "edwardboyle-12",
+				"up": "edwardboyle-13",
+				"down": "edwardboyle-11",
 				"floorname": "Edward Boyle Library, level 12",
 				"imageurl": floorplans.imgconf.baseURL + "/assets/images/edwardboyle-12.png",
 				"dataurl": floorplans.imgconf.baseURL + "/assets/features/edwardboyle-12.json",
@@ -129,6 +151,8 @@ floorplans.imagelayers = [
 			},
 			{
 				"floorid": "edwardboyle-13",
+				"up": false,
+				"down": "edwardboyle-12",
 				"floorname": "Edward Boyle Library, level 13",
 				"imageurl": floorplans.imgconf.baseURL + "/assets/images/edwardboyle-13.png",
 				"dataurl": floorplans.imgconf.baseURL + "/assets/features/edwardboyle-13.json",
@@ -143,6 +167,8 @@ floorplans.imagelayers = [
 		"floors": [
 			{
 				"floorid": "health-sciences",
+				"up": false,
+				"down": false,
 				"floorname": "Health Sciences Library",
 				"imageurl": floorplans.imgconf.baseURL + "/assets/images/health-sciences.png",
 				"dataurl": floorplans.imgconf.baseURL + "/assets/features/health-sciences.json",
@@ -157,6 +183,8 @@ floorplans.imagelayers = [
 		"floors": [
 			{
 				"floorid": "laidlaw-ground",
+				"up": "laidlaw-first",
+				"down": false,
 				"floorname": "Laidlaw Library, ground floor",
 				"imageurl": floorplans.imgconf.baseURL + "/assets/images/laidlaw-ground.png",
 				"dataurl": floorplans.imgconf.baseURL + "/assets/features/laidlaw-ground.json",
@@ -165,6 +193,8 @@ floorplans.imagelayers = [
 			},
 			{
 				"floorid": "laidlaw-first",
+				"up": "laidlaw-second",
+				"down": "laidlaw-ground",
 				"floorname": "Laidlaw Library, first floor",
 				"imageurl": floorplans.imgconf.baseURL + "/assets/images/laidlaw-first.png",
 				"dataurl": floorplans.imgconf.baseURL + "/assets/features/laidlaw-first.json",
@@ -173,6 +203,8 @@ floorplans.imagelayers = [
 			},
 			{
 				"floorid": "laidlaw-second",
+				"up": "laidlaw-third",
+				"down": "laidlaw-first",
 				"floorname": "Laidlaw Library, second floor",
 				"imageurl": floorplans.imgconf.baseURL + "/assets/images/laidlaw-second.png",
 				"dataurl": floorplans.imgconf.baseURL + "/assets/features/laidlaw-second.json",
@@ -181,6 +213,8 @@ floorplans.imagelayers = [
 			},
 			{
 				"floorid": "laidlaw-third",
+				"up": false,
+				"down": "laidlaw-second",
 				"floorname": "Laidlaw Library, third floor",
 				"imageurl": floorplans.imgconf.baseURL + "/assets/images/laidlaw-third.png",
 				"dataurl": floorplans.imgconf.baseURL + "/assets/features/laidlaw-third.json",

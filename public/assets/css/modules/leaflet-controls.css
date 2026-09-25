@@ -1,6 +1,13 @@
-/* selecter control - overrides the default leaflet-control margins so it sits flush with the map edge */
+/**
+ * selecter control - overrides the default leaflet-control margins so it sits flush with the map edge.
+ * It takes up the full height of the map, and the lists share the space left under the floor selecter
+ */
 #floorplan-controls.leaflet-control {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    height: 100dvh;
     margin: 0;
     font-size: 1rem;
     width: var(--controls-width);
@@ -38,9 +45,45 @@
         }
     }
     .floorplans-selecter {
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+        min-height: 0;
+        min-width: 0;
+        margin: 0;
         padding: .5rem;
         border: 0;
         z-index:802;
+    }
+    .floorplans-selecter-content {
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+        min-height: 0;
+    }
+    /**
+     * list groups take up the space they need - the study areas list is capped,
+     * and the open subjects / services list shrinks (and scrolls) if there isn't
+     * room for it in the remaining space
+     */
+    .selecter__group:not(.hidden) {
+        flex: none;
+        display: flex;
+        flex-direction: column;
+        min-height: 0;
+        h3 {
+            flex: none;
+        }
+        ul.selecter__list {
+            flex: 1 1 auto;
+            min-height: 0;
+        }
+    }
+    #areaselecter ul.selecter__list {
+        max-height: 25vh;
+    }
+    .selecter__group--toggleable:not(.hidden):not(.collapsed) {
+        flex: 0 1 auto;
     }
     .floorplans-selecter-header {
         font-size: 1.1rem;
@@ -97,7 +140,6 @@
         width:100%;
     }
 	ul.selecter__list {
-		max-height: 20vh;
 		overflow: auto;
 		list-style: none;
 		padding: 0;
@@ -140,37 +182,6 @@
 		}
 	}
 }
-@media (min-height:20rem) {
-	#floorplan-controls ul.selecter__list {
-		max-height: 23vh;
-    }
-}
-@media (min-height:25rem) {
-	#floorplan-controls ul.selecter__list {
-		max-height: 25vh;
-    }
-}
-@media (min-height:30rem) {
-	#floorplan-controls ul.selecter__list {
-		max-height: 27vh;
-    }
-}
-@media (min-height:35rem) {
-	#floorplan-controls ul.selecter__list {
-		max-height: 29vh;
-    }
-}
-@media (min-height:40rem) {
-	#floorplan-controls ul.selecter__list {
-		max-height: 31vh;
-    }
-}
-@media (min-height:45rem) {
-	#floorplan-controls ul.selecter__list {
-		max-height: 33vh;
-    }
-}
-
 .geo-button {
     width: 2.2rem;
     height: 2.2rem;
@@ -213,7 +224,7 @@
 #occupancyContainer {
     background: var(--white);
     padding: .5em 2em;
-    margin: 0 4em;
+    max-width: 30em;
     font-size: 1rem;
     strong {
         color: var(--occupancyno);

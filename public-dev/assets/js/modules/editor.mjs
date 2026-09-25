@@ -21,7 +21,7 @@ export function initEditor() {
     floorplans._dialog = new A11yDialog( document.getElementById('fp-dialog'));
 
 	/* find the maximum image dimensions */
-	floorplans.imagelayers.forEach( lib => {
+	floorplans.libraries.forEach( lib => {
 		lib.floors.forEach( f => {
 			floorplans.maxHeight = Math.max( floorplans.maxHeight, f.height );
 			floorplans.maxWidth = Math.max( floorplans.maxWidth, f.width );
@@ -55,7 +55,7 @@ export function initEditor() {
             /* build the select list to show all available floors */
             let nullopt = L.DomUtil.create( 'option', '', floorselecter );
             nullopt.textContent = "Select a Library / floor";
-            floorplans.imagelayers.forEach( lib => {
+            floorplans.libraries.forEach( lib => {
                 let optgrp = L.DomUtil.create( 'optgroup', '', floorselecter );
                 optgrp.setAttribute( 'label', lib.title );
                 lib.floors.forEach( floor => {
@@ -71,7 +71,7 @@ export function initEditor() {
                         floorplans.map.removeLayer( layer );
                     });
                     /* go through data looking for a floor to match the dropdown value */
-                    floorplans.imagelayers.forEach( lib => {
+                    floorplans.libraries.forEach( lib => {
                         lib.floors.forEach( floor => {
                             if ( floor.floorid == this.options[this.selectedIndex].value ) {
                                 /* add floor layer */
