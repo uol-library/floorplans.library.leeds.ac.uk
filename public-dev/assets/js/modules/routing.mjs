@@ -179,6 +179,69 @@ export function getFloorURL( floorid, shelfid = false ) {
 }
 
 /**
+ * Sends a Primo link (/floorplan?library=...&floor=...&classmark=...) to the
+ * floorplans on the library website, which shows the app in an iframe, e.g.
+ * https://library.leeds.ac.uk/locations/libraries/brotherton?floor=w2&classmark=Theatre%20Q-11%20LYN/C#floorplans-brotherton
+ * This replaces the redirect which was done by floorplans-broker.php, and is
+ * turned on with redirect_primo_links in the Jekyll config. The floor is the one
+ * found for the classmark, so items which have moved are shown on the right floor.
+ *
+ * @returns {Boolean} true if the page is being redirected
+ */
+export function redirectPrimoLink() {
+    if ( ! floorplans.conf.redirectPrimoLinks || isEmbedded() ) {
+        return false;
+    }
+    let params = getStartParams();
+    if ( ! params.path || params.path[0] !== 'floorplan' ) {
+        return false;
+    }
+    window.location.replace( getLibrarySiteURL( params ) );
+    return true;
+}
+
+/**
+ * Builds the URL of the floorplans for a library on the library website
+ *
+ * @param {Object} params - from getStartParams()
+ * @returns {String} URL
+ */
+function getLibrarySiteURL( params ) {
+    let url = 'https://library.leeds.ac.uk/locations/libraries';
+    let pages = {
+        brotherton: 'brotherton',
+        edwardboyle: 'edward-boyle',
+        healthsciences: 'health-sciences',
+        laidlaw: 'laidlaw'
+    };
+    let page = pages[ params.library ];
+    if ( ! page ) {
+        return url;
+    }
+    url += '/' + page;
+    let classmark = new URLSearchParams( window.location.search.replace( /&amp;/g, '&' ) ).get( 'classmark' );
+    /**
+     * The library website uses these to set the URL of the app in its iframe, e.g.
+     * ?floor=w2&classmark=... => /brotherton/floors/w2?classmark=...
+     * The floor is as used in the old URLs, e.g. brotherton-w2 => w2 (empty for
+     * single floor libraries)
+     */
+    let query = [];
+    if ( params.floorid ) {
+        let lib = getLibrary( params.library );
+        let floor = lib.floors.length > 1 ? params.floorid.replace( params.library + '-', '' ) : '';
+        query.push( 'floor=' + encodeURIComponent( floor ) );
+    }
+    if ( classmark ) {
+        query.push( 'classmark=' + encodeURIComponent( classmark ).replace( /%2F/g, '/' ) );
+    }
+    if ( query.length ) {
+        url += '?' + query.join( '&' );
+    }
+    return url + '#floorplans-' + page;
+}
+
+/**
  * Whether the app is embedded in an iframe on another page
  *
  * @returns {Boolean}

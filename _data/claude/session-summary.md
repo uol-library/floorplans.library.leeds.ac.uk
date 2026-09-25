@@ -204,11 +204,13 @@ Files: `.htaccess`, `_includes/head.html`, `_includes/editor-head.html` and `rou
 - **Test before deploying:**
   - Load `/editor/` and look for CSP errors in the console, because the editor's policy hasn't been tested in a browser.
   - After deploying to the dev site, test the library website's iframe.
-- **Cached floor data:** GeoJSON is cached in localStorage for 24 hours under the floor ID. Returning visitors may see the old Laidlaw second floor IDs for up to a day. Adding the site version to the cache key would fix this.
-- **Local development:** `jekyll serve` doesn't read `.htaccess`, so reloading a deep URL such as `/brotherton/m2` returns a 404 locally. A `404.html` that loads the app would fix it.
+- **Cached data:** localStorage keys now include the site `version` from `_config.yml`, and data cached by other versions is cleared, so **bump `version` whenever the GeoJSON changes**. Caching is currently turned off (`canUseLocalStorage` returns `false` in `config.js`), so this only applies once it's turned on.
+- **Local development:** fixed. `404.html` loads the app, so reloading a deep URL such as `/brotherton/m2` works under `jekyll serve`. The response status is still 404.
+- **GitHub Pages copy:** fixed. `_config.yml` is now the GitHub Pages config (`url: https://uol-library.github.io`, `baseurl: /floorplans.library.leeds.ac.uk`), and the production and development builds layer `_config_prod.yml` or `_config-dev.yml` over it. Those two files only override `url`, `baseurl`, `destination` and (for development) `environment`. The occupancy panel will stay hidden there, because `capacity.json` is on the production server, which only allows cross-origin requests from Spacefinder.
 - **Primo data:**
   - Some links contain `{call_number}` where the classmark should be.
   - The floor codes `acq`, `net` and `llafr` aren't mapped to any floor. Ask the Primo team what they should point to.
+- **Primo links on production:** Primo links go to `floorplans.library.leeds.ac.uk/floorplan?…`. The broker used to redirect them to the library website (`library.leeds.ac.uk/locations/libraries/{library}?floor=…&classmark=…#floorplans-{library}`), which builds the iframe URL on its server, e.g. `/brotherton/floors/w2?classmark=…`. `redirectPrimoLink()` in `routing.mjs` now does that redirect, using the floor found for the classmark. It's on in production (`redirect_primo_links: true` in `_config_prod.yml`) and off on the development and GitHub Pages sites. All 1,546 unique Primo links from the logs resolve to the same shelf through the library site as they do directly. **When the iframe is dropped, delete `redirect_primo_links` from `_config_prod.yml`.**
 - **Missing shelves:** Laidlaw HDC and Edward Boyle level 9 have no shelves in the data, and Skills, Archaeology Journals and EDC have no shelf.
 - **`_data/test_urls.json` is not valid JSON.** There's a comma after the last URL in its first group, which could break `tests.md`.
 - **Uncommitted work:** everything from section 7 onwards. The pre-commit hook rebuilds `public/` and `public-dev/` when you commit, or you can run `npm run build`.

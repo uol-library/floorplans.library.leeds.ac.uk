@@ -1,0 +1,11 @@
+# Production overrides for https://floorplans.library.leeds.ac.uk (served by Apache
+# from public/). Layered over the base config in _config.yml:
+#
+# JEKYLL_ENV=production bundle exec jekyll build --config _config.yml,_config_prod.yml
+url: "https://floorplans.library.leeds.ac.uk"
+baseurl: ""
+destination: public/
+# Send Primo links (/floorplan?...) to the floorplans on the library website, which
+# shows the app in an iframe. Remove this when the iframe is dropped, so Primo links
+# open the app directly (as they do on the development and GitHub Pages sites)
+redirect_primo_links: true

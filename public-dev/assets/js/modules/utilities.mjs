@@ -174,7 +174,13 @@ function getWithExpiry( key ) {
     if ( ! itemStr ) {
         return null;
     }
-    const item = JSON.parse( itemStr )
+    let item;
+    try {
+        item = JSON.parse( itemStr );
+    } catch ( e ) {
+        localStorage.removeItem( key );
+        return null;
+    }
     const now = new Date()
     if ( now.getTime() > item.expiry ) {
         localStorage.removeItem( key )
@@ -183,11 +189,60 @@ function getWithExpiry( key ) {
     return item.value;
 }
 
+/* localStorage keys are prefixed with the site version (from _config.yml) */
+const storagePrefix = 'floorplans-' + floorplans.version + '-';
+let storageChecked = false;
+
+/**
+ * Removes items stored by setWithExpiry() from localStorage, unless keep() returns
+ * true for their key. Other items in localStorage are left alone.
+ *
+ * @param {Function} keep - called with each key
+ */
+function removeStoredItems( keep ) {
+    for ( let i = localStorage.length - 1; i >= 0; i-- ) {
+        let key = localStorage.key( i );
+        if ( key === null || keep( key ) ) {
+            continue;
+        }
+        try {
+            let item = JSON.parse( localStorage.getItem( key ) );
+            if ( item && typeof item === 'object' && 'value' in item && 'expiry' in item ) {
+                fplog( `removing data ${key} from local storage` );
+                localStorage.removeItem( key );
+            }
+        } catch ( e ) {
+            /* not stored by setWithExpiry() */
+        }
+    }
+}
+
+/**
+ * Removes data cached in localStorage by other versions of the site, including
+ * versions which didn't prefix their keys
+ */
+function clearOldStorage() {
+    removeStoredItems( key => key.startsWith( storagePrefix ) );
+}
+
+/**
+ * Removes all data cached in localStorage by the app (from any version). Call this
+ * when a user withdraws consent for storing data (see floorplans.canUseLocalStorage)
+ */
+export function clearStorage() {
+    try {
+        removeStoredItems( () => false );
+    } catch ( e ) {
+        /* localStorage isn't available, so there is nothing to remove */
+    }
+}
+
 /**
  * Gets a JSON data file from a remote URL. Utilises localstorage
  * to cache the results.
  * @param {Object} options Information about the JSON file
- * @param {String} options.key Unique key used to store the data in localstorage (required)
+ * @param {String} options.key Unique key used to store the data in localstorage (required) - this is
+ * prefixed with the site version, so data cached by other versions isn't used
  * @param {String} options.url URL of the JSON file (required)
  * @param {Number} options.expires How long to cache the results (in hours) default: 24
  * @returns {Promise<Object>} resolves with the parsed JSON, or rejects with { status, statusText }
@@ -201,7 +256,12 @@ export async function getJSON( options ) {
     }
     let expires = options.hasOwnProperty( 'expires' ) ? options.expires : 24;
     let useStorage = storageAvailable( 'localStorage' );
-    let json = useStorage ? getWithExpiry( options.key ) : null;
+    let key = storagePrefix + options.key;
+    if ( useStorage && ! storageChecked ) {
+        clearOldStorage();
+        storageChecked = true;
+    }
+    let json = useStorage ? getWithExpiry( key ) : null;
     if ( json ) {
         fplog( `getting data ${options.key} from local storage` );
     } else {
@@ -220,7 +280,7 @@ export async function getJSON( options ) {
         if ( useStorage ) {
             let expiryDate = new Date( new Date().getTime() + ( expires * 60 * 60 * 1000 ) );
             fplog( `storing data ${options.key} in localstorage - expires ${expiryDate.toLocaleDateString("en-UK")}` );
-            setWithExpiry( options.key, json, expires );
+            setWithExpiry( key, json, expires );
         }
     }
     return JSON.parse( json );

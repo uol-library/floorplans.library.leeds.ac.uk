@@ -19,7 +19,7 @@ import {
     getSVGIcon,
     selectFeature
 } from './utilities.mjs';
-import { getStartParams, initHistory } from './routing.mjs';
+import { getStartParams, initHistory, redirectPrimoLink } from './routing.mjs';
 import { SelecterControl } from './selectercontrol.mjs';
 import { OccupancyControl } from './occupancycontrol.mjs';
 
@@ -27,6 +27,10 @@ import { OccupancyControl } from './occupancycontrol.mjs';
  * Builds and initialises the map. Called once, from main.js, on DOMContentLoaded.
  */
 export function initMap() {
+    /* Primo links may be sent to the library website instead (see redirectPrimoLink) */
+    if ( redirectPrimoLink() ) {
+        return;
+    }
     /* create the map - disable zoom control so we can add it to top right */
     floorplans.map = new LeafletMap('floorplan', {
         crs: CRS.Simple,

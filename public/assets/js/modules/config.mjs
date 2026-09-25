@@ -1,13 +1,15 @@
 export const floorplans = {
 	conf: {
         debug: false,
+		/* send Primo links (/floorplan?...) to the library website, which shows the app in an iframe (see routing.mjs) */
+		redirectPrimoLinks: true,
 		maxZoom: 25,
 		minZoom: 0,
 		startZoom: 19,
 		startLat: 53.80790461539562,
 		startLng: -1.5534367612770303,
 	},
-	version: '0.8',
+	version: '0.9',
 	mapBounds: null,
 	map: null,
 	osm: null,

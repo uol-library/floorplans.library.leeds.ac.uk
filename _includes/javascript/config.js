@@ -1,6 +1,8 @@
 export const floorplans = {
 	conf: {
         debug: {% if site.environment == "development" %}true{% else %}false{% endif %},
+		/* send Primo links (/floorplan?...) to the library website, which shows the app in an iframe (see routing.mjs) */
+		redirectPrimoLinks: {% if site.redirect_primo_links %}true{% else %}false{% endif %},
 		maxZoom: 25,
 		minZoom: 0,
 		startZoom: 19,

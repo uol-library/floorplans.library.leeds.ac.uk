@@ -5,7 +5,7 @@ This file records notable changes to the Library Floorplans app. The format is b
 
 ## 2026-09-25
 
-Primo links are now handled entirely by the app, and `floorplans-broker.php` has been removed. The app has shareable URLs and supports the browser's back and forward buttons. The floor loading code has been consolidated.
+Primo links are now handled entirely by the app, and `floorplans-broker.php` has been removed. On the production site they still go on to the library website, until its iframe is dropped. The app has shareable URLs and supports the browser's back and forward buttons. The floor loading code has been consolidated.
 
 ### Added
 
@@ -17,17 +17,20 @@ Primo links are now handled entirely by the app, and `floorplans-broker.php` has
 - **New `SelecterControl` methods:** `buildLists( floorid )`, `selectFloor( floorid )`, `isOpen()` and `getPadding()`.
 - **npm scripts:** `buildStatic`, `buildPublic`, `buildDev`, and `build`, which runs all three.
 - **Separate Content-Security-Policy** for the editor and IIIF pages.
+- **`404.html`** loads the app, so app URLs work when reloaded under `jekyll serve` and on GitHub Pages.
+- **GitHub Pages support:** the copy at https://uol-library.github.io/floorplans.library.leeds.ac.uk/ now works, including app URLs, under its subpath. `_config.yml` is the full base config, used on its own by GitHub Pages. The production (`_config_prod.yml`) and development (`_config-dev.yml`) configs now only contain the settings they override, and are layered over it. `npm run servepages` previews the GitHub Pages build locally.
 
 ### Changed
 
 - **Selecter panel layout:** the panel fills the full height of the map. The open subjects or services list sizes to its content and scrolls when there isn't room, and the study areas list is capped at 25vh. List items are slightly smaller (`.875rem`).
 - **The plans move for the selecter panel:** floors are fitted to the area of the map not covered by it, and the map pans when the panel is opened or closed.
 - **Occupancy control:** it moved to the bottom right of the map. Its settings (`url`, `interval`, `libraries`) are now options, and its data is stored on the control instead of in `floorplans.occupancyData`.
-- **`getJSON`** uses `fetch` and no longer takes a `callback` option.
+- **`getJSON`** uses `fetch` and no longer takes a `callback` option. Its localStorage keys are prefixed with the site `version` from `_config.yml` (e.g. `floorplans-0.9-laidlaw-second`), and data cached by other versions is removed. A cached item that can't be parsed is fetched again. The new `clearStorage()` removes everything the app has cached, for when a user withdraws consent.
 - **`addFloorLayer`** stores its promise on the floor, so each floor's image and GeoJSON are only fetched once.
 - **`.htaccess`:** paths that aren't files are rewritten internally to `index.html`, without a redirect. Files that exist, including `.mjs` modules, are served as normal.
 - **Content-Security-Policy:** updated for Leaflet 2 and the inline import map, which is allowed by its hash. `capacity.json` is allowed from the production site. `frame-ancestors` still allows `https://library.leeds.ac.uk`.
 - **`_scripts/checkFeatures.js`** now runs as an ES module, and its messages include the filename.
+- **Licence:** changed from MIT to the Apache License 2.0, to match `package.json`. The copyright notice is now in `NOTICE`.
 
 ### Fixed
 
@@ -42,7 +45,7 @@ Primo links are now handled entirely by the app, and `floorplans-broker.php` has
 
 ### Removed
 
-- **`floorplans-broker.php`:** Primo links now go straight to the app, instead of being redirected to the library website's locations page.
+- **`floorplans-broker.php`:** its redirect to the library website is now done by the app (`redirectPrimoLink()` in `routing.mjs`). This is turned on with `redirect_primo_links: true` in `_config_prod.yml`. The development and GitHub Pages sites open Primo links in the app directly, which is what production will do once the iframe on the library website is dropped.
 - **`loadStartFloor()`, `selectShelf()`, `buildFeatureSelects()` and `sortFeatureSelects()`:** each has been replaced by one of the functions or methods above.
 
 ## 2026-09-23

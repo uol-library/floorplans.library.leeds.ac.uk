@@ -6,14 +6,15 @@
   "type": "module",
   "scripts": {
     "buildStatic": "node _scripts/writeFeatureMaps.js && node _scripts/writeIcons.js",
-    "buildProd": "JEKYLL_ENV=production bundle exec jekyll build --config _config.yml",
-    "buildDev": "JEKYLL_ENV=development bundle exec jekyll build --config _config-dev.yml",
+    "buildProd": "JEKYLL_ENV=production bundle exec jekyll build --config _config.yml,_config_prod.yml",
+    "buildDev": "JEKYLL_ENV=development bundle exec jekyll build --config _config.yml,_config-dev.yml",
     "build": "npm run buildStatic && npm run buildProd && npm run buildDev",
     "buildImages": "node _scripts/compressPNG.js",
     "makeManifests": "node _scripts/makeManifests.js",
     "geo": "node _scripts/georeferenceFeatures.mjs",
-    "serve": "bundle exec jekyll serve --config _config-dev.yml,_config-local.yml",
-    "serveprod": "bundle exec jekyll serve --config _config.yml,_config-local.yml"
+    "serve": "bundle exec jekyll serve --config _config.yml,_config-dev.yml,_config-local.yml",
+    "serveprod": "bundle exec jekyll serve --config _config.yml,_config_prod.yml,_config-local.yml",
+    "servepages": "bundle exec jekyll serve --config _config.yml,_config-local.yml"
   },
   "repository": {
     "type": "git",
