@@ -167,6 +167,7 @@
                 display: flex;
 				width: 100%;
 				text-align: left;
+                font-size: .875rem;
                 &:focus {
                   outline: none;
                 }
