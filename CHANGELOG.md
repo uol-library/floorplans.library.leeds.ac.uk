@@ -15,7 +15,7 @@ Primo links are now handled entirely by the app, and `floorplans-broker.php` has
 - **`OccupancyControl`** is exported and added to the map like any other Leaflet control. It updates when the new `fpfloorloaded` event fires.
 - **`loadFloor( floorid, shelfid, activate )`** in `core.mjs` is now the only code that loads and shows a floor.
 - **New `SelecterControl` methods:** `buildLists( floorid )`, `selectFloor( floorid )`, `isOpen()` and `getPadding()`.
-- **npm scripts:** `buildStatic`, `buildPublic`, `buildDev`, and `build`, which runs all three.
+- **npm scripts:** `buildProd`, `buildDev`, `buildImages`, `serveprod` and `servepages`. `build` runs `buildStatic`, `buildProd` and `buildDev`.
 - **Separate Content-Security-Policy** for the editor and IIIF pages.
 - **Tests** (`npm test`) using Node's built-in test runner. They cover routing and classmark matching, browser history, the Primo redirect, `getJSON` caching, the floor data and the CSP hashes, and check the Primo links from the live logs. The pre-commit hook runs them on the staged files, and stops the commit if one fails.
 - **`404.html`** loads the app, so app URLs work when reloaded under `jekyll serve` and on GitHub Pages.
