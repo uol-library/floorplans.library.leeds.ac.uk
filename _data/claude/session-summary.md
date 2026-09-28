@@ -1,11 +1,11 @@
 # Session summary: 23 and 25 September 2026
 
-These notes cover two Claude Code sessions that refactored the floorplans app on the `develop` branch, after it moved to Leaflet 2.0 and ES modules. `CHANGELOG.md` at the root of the repo has a shorter list of the same changes.
+These notes cover two Claude Code sessions that refactored the floorplans app on the `develop` branch, after it moved to Leaflet 2.0 and ES modules. `CHANGELOG.md` at the root of the repo has a shorter list of the same changes, and `session-transcript.md` in this folder has the full conversations from both sessions.
 
 - **23 September:** made the selecter a native Leaflet control with accordion lists, made `getJSON` return a promise, renamed the `location` feature type to `service`, and set up the committed `public/` and `public-dev/` builds with a pre-commit hook.
-- **25 September:** covers the selecter and occupancy controls, floor loading, `getJSON`, the layout, the build scripts, routing for Primo links (replacing `floorplans-broker.php`), URLs and browser history, shelf data fixes, and the Content-Security-Policy and iframe embedding.
+- **25 September:** covers the selecter and occupancy controls, floor loading, `getJSON`, the layout, the build scripts, routing for Primo links (replacing `floorplans-broker.php`), URLs and browser history, shelf data fixes, the Content-Security-Policy and iframe embedding, the site configs and GitHub Pages, caching and consent, the Primo redirect, tests, and the licence.
 
-The 23 September work and the first part of 25 September are committed, in `186718a`, `ebcbae1` and `a4d9865`. Everything from section 7 onwards is **not committed yet**.
+All of this is committed on `develop`. The last commit of 25 September is `97f1567` ("Added tests"), and the earlier commits are `186718a`, `ebcbae1`, `a4d9865`, `7407984` and `25876dc`.
 
 ## Contents
 
@@ -20,7 +20,12 @@ The 23 September work and the first part of 25 September are committed, in `1867
 8. [URLs and browser history](#8-urls-and-browser-history)
 9. [Shelf data fixes](#9-shelf-data-fixes)
 10. [Content-Security-Policy and iframe embedding](#10-content-security-policy-and-iframe-embedding)
-11. [Open issues and follow-ups](#11-open-issues-and-follow-ups)
+11. [Site configs and GitHub Pages](#11-site-configs-and-github-pages)
+12. [Caching and consent](#12-caching-and-consent)
+13. [Primo links on production](#13-primo-links-on-production)
+14. [Tests and the pre-commit hook](#14-tests-and-the-pre-commit-hook)
+15. [Licence](#15-licence)
+16. [Open issues and follow-ups](#16-open-issues-and-follow-ups)
 
 ---
 
@@ -102,12 +107,17 @@ File: `assets/css/modules/leaflet-controls.css`
 
 File: `package.json`
 
+These scripts have since been renamed and extended, partly by hand. The current scripts are:
+
 | Script | Does |
 |---|---|
-| `buildStatic` | Runs the PNG compression, the feature map script and the icons script (this was the old `build`) |
-| `buildPublic` | `jekyll build --config _config.yml`, which builds `public/` |
-| `buildDev` | `jekyll build --config _config-dev.yml`, which builds `public-dev/` |
-| `build` | Runs all three in order |
+| `test` | Runs the tests (section 14) |
+| `buildStatic` | Writes the feature map and icons data files |
+| `buildImages` | Compresses the floor images |
+| `buildProd` | Builds `public/` (`_config.yml,_config_prod.yml`) |
+| `buildDev` | Builds `public-dev/` (`_config.yml,_config-dev.yml`) |
+| `build` | Runs `buildStatic`, `buildProd` and `buildDev` |
+| `serve`, `serveprod`, `servepages` | Serve the development, production or GitHub Pages build from `_site/` (section 11) |
 
 ## 7. Primo links and routing
 
@@ -199,20 +209,82 @@ Files: `.htaccess`, `_includes/head.html`, `_includes/editor-head.html` and `rou
 - **Hashes:** checked against a fresh Jekyll build. Comments in both head includes say the hash must be updated if the import map changes.
 - **Library website iframe:** the locations page on `https://library.leeds.ac.uk` embeds the app with fixed old-style URLs, one per library: `/brotherton/floors/m3/`, `/edwardboyle/floors/9/`, `/healthsciences/floors/` and `/laidlaw/floors/ground/`. All four load the right floor. Inside an iframe, `initHistory()` replaces the URL instead of adding history entries, because an iframe shares its history with the parent page.
 
-## 11. Open issues and follow-ups
+## 11. Site configs and GitHub Pages
+
+Files: `_config.yml`, `_config_prod.yml`, `_config-dev.yml`, `_config-local.yml`, `404.html` and `README.md`
+
+- **Layered configs:** `_config.yml` is the full base config. The production and development builds layer a small file of overrides over it, and Jekyll merges the files in the order given (nested keys like `dc` are merged, not replaced):
+
+  | Configs | Output | Site |
+  |---|---|---|
+  | `_config.yml` | built by GitHub Pages | https://uol-library.github.io/floorplans.library.leeds.ac.uk/ |
+  | `_config.yml,_config_prod.yml` | `public/` | https://floorplans.library.leeds.ac.uk |
+  | `_config.yml,_config-dev.yml` | `public-dev/` | https://dev-floorplans.library.leeds.ac.uk |
+
+  `_config_prod.yml` only sets `url`, `baseurl`, `destination` and `redirect_primo_links`. `_config-dev.yml` only sets `url`, `baseurl`, `destination` and `environment: development`. Shared settings such as `version` only need changing in `_config.yml`. The layered production build is byte-for-byte identical to the old single-file build. The development site now uses the base `dc.dateModified`.
+- **GitHub Pages:** GitHub Pages only builds from `_config.yml`, so that's set up for it, with `url: https://uol-library.github.io` and `baseurl: /floorplans.library.leeds.ac.uk`. Routing reads and builds URLs under that subpath.
+- **`404.html`:** loads the app, so app URLs work under `jekyll serve` and on GitHub Pages, both of which serve `404.html` for missing paths. The response status is 404, but the page works. On Apache, `.htaccess` serves `index.html` instead.
+- **Serving locally:** `npm run serve`, `serveprod` and `servepages` layer `_config-local.yml` last and build into `_site/`. `servepages` serves at `http://localhost:4000/floorplans.library.leeds.ac.uk/`.
+- **Excluded from the builds:** `CHANGELOG.md`, `NOTICE` and `tests/`.
+
+## 12. Caching and consent
+
+File: `assets/js/modules/utilities.mjs`
+
+- **Versioned keys:** `getJSON()` prefixes its localStorage keys with the site version, e.g. `floorplans-0.9-laidlaw-second`. The first time it runs on a page, it removes data cached by other versions, including the old keys without a version. It only removes items with the `{ value, expiry }` shape that `setWithExpiry()` writes. A cached item that can't be read is fetched again.
+- **`clearStorage()`:** a new export that removes everything the app has cached, from any version. It's for when a user withdraws consent, and it's safe to call when localStorage is blocked.
+- **Consent:** `floorplans.canUseLocalStorage()` in `config.js` currently returns `false`, so caching is off. It will be connected to consent for performance cookies once the app is no longer loaded in the library website's iframe, where a consent banner would be awkward. `getJSON()` checks it on every request, so a change in consent applies straight away.
+
+## 13. Primo links on production
+
+Files: `assets/js/modules/routing.mjs`, `core.mjs`, `_includes/javascript/config.js` and `_config_prod.yml`
+
+- **How Primo links work now:** Primo links point at `floorplans.library.leeds.ac.uk/floorplan?library=…&floor=…&classmark=…`. The PHP broker redirected them to the library website, e.g. `library.leeds.ac.uk/locations/libraries/brotherton?floor=w2&classmark=…#floorplans-brotherton`. That page builds the iframe URL on its server, e.g. `/brotherton/floors/w2?classmark=…`.
+- **`redirectPrimoLink()`:** runs first in `initMap()` and does the same redirect in JavaScript. The library pages are `brotherton`, `edward-boyle`, `health-sciences` and `laidlaw`, and the floor values are as the broker used (`w2`, `11`, `third`, and empty for Health Sciences).
+  - The floor is the one the shelf matching finds, so moved stock goes to the right floor.
+  - Unlike the broker, it passes the floor even when there's no classmark. The library site handles that.
+  - It never redirects inside an iframe, so it can't loop.
+- **Setting:** it's turned on by `redirect_primo_links: true` in `_config_prod.yml`, which `config.js` reads as `floorplans.conf.redirectPrimoLinks`. The development and GitHub Pages sites open Primo links in the app.
+- **Checks:** all 1,546 unique Primo links from the logs resolve to the same shelf through the library site as they do directly. Five real redirects through the live library site gave the expected iframe URLs.
+- **When the iframe is dropped,** delete `redirect_primo_links` from `_config_prod.yml`. Nothing needs to change in Primo.
+
+## 14. Tests and the pre-commit hook
+
+Files: `tests/`, `package.json` and `.githooks/pre-commit`
+
+- **`npm test`:** uses Node's built-in test runner (Node 22.15 or later), with no packages to install. There are 109 tests:
+
+  | File | Covers |
+  |---|---|
+  | `routing.test.mjs` | App, old and hash URLs, 24 Primo classmark cases, and a round trip of every shelf at the root and under the GitHub Pages subpath |
+  | `history.test.mjs` | Replacing and adding history entries, the iframe case, and back / forward |
+  | `redirect.test.mjs` | The library website URLs, when not to redirect, and that every logged Primo link gives the same shelf through the library site |
+  | `primo-links.test.mjs` | The 1,546 logged Primo links: no errors, every known library loads a floor, and at least 96% find a shelf |
+  | `storage.test.mjs` | `getJSON` caching, versioned keys, consent and errors, and `clearStorage()` |
+  | `data.test.mjs` | Floor images and GeoJSON exist, feature IDs are unique with the required properties, and `features.js` is up to date |
+  | `csp.test.mjs` | The import map hashes are in `.htaccess`, and the CSP allows the scripts the import maps load |
+- **How the tests run:** `config.mjs` is a Jekyll template, so `tests/setup.mjs` registers a Node module hook that serves a rendered copy, using the values in `_config.yml` and `_config_prod.yml`. `tests/helpers.mjs` has fakes for `window`, `document`, `history`, `localStorage` and `fetch`. The Leaflet controls aren't covered, because they need a browser.
+- **Checking the tests:** breaking the import map, adding a duplicate shelf ID, or matching generic shelves across the library each made the tests fail.
+- **Fixture:** `tests/fixtures/primo-links.txt` holds the unique Primo link URLs from the live logs for 20 to 25 September 2026, with no other request details.
+- **Pre-commit hook:** it runs the tests on the staged files before building, and stops the commit if one fails. `SKIP_TESTS=1` skips the tests, and `SKIP_JEKYLL_BUILD=1` now only skips the builds.
+
+## 15. Licence
+
+- **Apache License 2.0:** `LICENSE` is now the official Apache License 2.0 text, replacing MIT, which matches `package.json`.
+- **`NOTICE`:** keeps the copyright line from the MIT licence ("Copyright 2025 University of Leeds Library").
+
+## 16. Open issues and follow-ups
 
 - **Test before deploying:**
   - Load `/editor/` and look for CSP errors in the console, because the editor's policy hasn't been tested in a browser.
   - After deploying to the dev site, test the library website's iframe.
-- **Cached data:** localStorage keys now include the site `version` from `_config.yml`, and data cached by other versions is cleared, so **bump `version` whenever the GeoJSON changes**. Caching is currently turned off (`canUseLocalStorage` returns `false` in `config.js`), so this only applies once it's turned on.
-- **Local development:** fixed. `404.html` loads the app, so reloading a deep URL such as `/brotherton/m2` works under `jekyll serve`. The response status is still 404.
-- **GitHub Pages copy:** fixed. `_config.yml` is now the GitHub Pages config (`url: https://uol-library.github.io`, `baseurl: /floorplans.library.leeds.ac.uk`), and the production and development builds layer `_config_prod.yml` or `_config-dev.yml` over it. Those two files only override `url`, `baseurl`, `destination` and (for development) `environment`. The occupancy panel will stay hidden there, because `capacity.json` is on the production server, which only allows cross-origin requests from Spacefinder.
+- **Cached data:** once caching is turned on, **bump `version` in `_config.yml` whenever the GeoJSON changes**, so visitors fetch the new data (section 12).
+- **GitHub Pages occupancy panel:** it stays hidden on GitHub Pages, because `capacity.json` is on the production server, which only allows cross-origin requests from Spacefinder.
 - **Primo data:**
   - Some links contain `{call_number}` where the classmark should be.
   - The floor codes `acq`, `net` and `llafr` aren't mapped to any floor. Ask the Primo team what they should point to.
-- **Primo links on production:** Primo links go to `floorplans.library.leeds.ac.uk/floorplan?…`. The broker used to redirect them to the library website (`library.leeds.ac.uk/locations/libraries/{library}?floor=…&classmark=…#floorplans-{library}`), which builds the iframe URL on its server, e.g. `/brotherton/floors/w2?classmark=…`. `redirectPrimoLink()` in `routing.mjs` now does that redirect, using the floor found for the classmark. It's on in production (`redirect_primo_links: true` in `_config_prod.yml`) and off on the development and GitHub Pages sites. All 1,546 unique Primo links from the logs resolve to the same shelf through the library site as they do directly. **When the iframe is dropped, delete `redirect_primo_links` from `_config_prod.yml`.**
+- **When the library website's iframe is dropped:** delete `redirect_primo_links` from `_config_prod.yml` (section 13), then connect `canUseLocalStorage()` to a consent banner in the app (section 12).
 - **Missing shelves:** Laidlaw HDC and Edward Boyle level 9 have no shelves in the data, and Skills, Archaeology Journals and EDC have no shelf.
-- **`_data/test_urls.json` is not valid JSON.** There's a comma after the last URL in its first group, which could break `tests.md`.
-- **Uncommitted work:** everything from section 7 onwards. The pre-commit hook rebuilds `public/` and `public-dev/` when you commit, or you can run `npm run build`.
+- **Deployment:** everything is committed on `develop`. The committed `public/` and `public-dev/` builds are made by the pre-commit hook.
 - **The editor's floor selecter** has no `.catch`, so a failure to load a floor shows as an unhandled promise rejection in the console. This is from 23 September.
 - **URL behaviour:** only floor loads change the URL; highlighting a shelf doesn't. Going back to a URL with no floor, such as `/`, leaves the current floor on screen.

@@ -304,59 +304,6 @@
         },
         {
             "type": "Feature",
-            "id": 2,
-            "properties": {
-                "name": "Group Space",
-                "type": "area",
-                "desc": "Cold food and covered drinks allowed. Conversation allowed.",
-                "class": "group-space"
-            },
-            "geometry": {
-                "type": "Polygon",
-                "coordinates": [
-                    [
-                        [
-                            57.25,
-                            -39.19
-                        ],
-                        [
-                            63.25,
-                            -34.81
-                        ],
-                        [
-                            70.75,
-                            -31.25
-                        ],
-                        [
-                            62,
-                            -7.13
-                        ],
-                        [
-                            56.15625,
-                            -9.71875
-                        ],
-                        [
-                            50.40625,
-                            -12.875
-                        ],
-                        [
-                            45.4375,
-                            -16
-                        ],
-                        [
-                            40.56,
-                            -19.25
-                        ],
-                        [
-                            57.25,
-                            -39.19
-                        ]
-                    ]
-                ]
-            }
-        },
-        {
-            "type": "Feature",
             "id": 3,
             "properties": {
                 "name": "Philosophy",
@@ -1724,60 +1671,6 @@
             "type": "Feature",
             "id": 11,
             "properties": {
-                "name": "Group Study Room",
-                "type": "service",
-                "desc": "",
-                "icon": "group",
-                "class": "group-space-location"
-            },
-            "geometry": {
-                "type": "Polygon",
-                "coordinates": [
-                    [
-                        [
-                            57.25,
-                            -39.19
-                        ],
-                        [
-                            63.25,
-                            -34.81
-                        ],
-                        [
-                            70.75,
-                            -31.25
-                        ],
-                        [
-                            62,
-                            -7.13
-                        ],
-                        [
-                            56.15625,
-                            -9.71875
-                        ],
-                        [
-                            50.40625,
-                            -12.875
-                        ],
-                        [
-                            45.4375,
-                            -16
-                        ],
-                        [
-                            40.56,
-                            -19.25
-                        ],
-                        [
-                            57.25,
-                            -39.19
-                        ]
-                    ]
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "id": 12,
-            "properties": {
                 "name": "Microfilm Store",
                 "type": "service",
                 "desc": "",
@@ -1806,7 +1699,7 @@
                         ],
                         [
                             120.09375,
-                            -11.78125
+                           -11.78125
                         ],
                         [
                             116.625,
@@ -1842,7 +1735,7 @@
         },
         {
             "type": "Feature",
-            "id": 13,
+            "id": 12,
             "properties": {
                 "name": "Print, Copy, Scan",
                 "type": "service",
@@ -1900,7 +1793,7 @@
         },
         {
             "type": "Feature",
-            "id": 14,
+            "id": 13,
             "properties": {
                 "name": "Public Space",
                 "type": "area",
