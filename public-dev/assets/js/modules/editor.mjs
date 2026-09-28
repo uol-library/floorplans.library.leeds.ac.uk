@@ -66,10 +66,14 @@ export function initEditor() {
             });
             L.DomEvent.on( floorselecter, 'change', function(){
                 if ( this.options[this.selectedIndex].value !== '' ) {
-                    /* remove all layers from map */
-                    floorplans.map.eachLayer( function( layer ) {
-                        floorplans.map.removeLayer( layer );
-                    });
+                    /**
+                     * remove the previous floor from the map - only the floor layer, as
+                     * removing all layers would also remove the editor layer group which
+                     * Geoman adds new features to, so they would disappear when drawn
+                     */
+                    if ( floorplans.currentFloor && floorplans.currentFloor.floorlayer ) {
+                        floorplans.map.removeLayer( floorplans.currentFloor.floorlayer );
+                    }
                     /* go through data looking for a floor to match the dropdown value */
                     floorplans.libraries.forEach( lib => {
                         lib.floors.forEach( floor => {
@@ -79,6 +83,7 @@ export function initEditor() {
                                 .then( ( floorlayer ) => {
                                     /* add the floor layer to the map and center it */
                                     floorlayer.addTo( floorplans.map );
+                                    floorplans.currentFloor = floor;
                                     floorplans.map.fitBounds( floor.imageBounds );
                                     floorplans.map.setView( floor.imageBounds.getCenter() );
                                     fplog( 'Added layer for floor '+floor.floorname );
