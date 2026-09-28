@@ -35,3 +35,17 @@ RewriteRule ^ /index.html [L]
     Header set Access-Control-Allow-Origin "https://spacefinder.leeds.ac.uk"
     Header set Vary "Origin"
 </IfModule>
+
+<IfModule mod_mime.c>
+    AddType application/geo+json              geojson
+    AddType text/javascript                   js mjs
+    AddType application/manifest+json         webmanifest
+    AddType image/svg+xml                     svg svgz
+    AddType image/x-icon                      cur ico
+    AddType font/woff                         woff
+    AddType font/woff2                        woff2
+    AddType application/vnd.ms-fontobject     eot
+    AddType font/ttf                          ttf
+    AddType font/collection                   ttc
+    AddType font/otf                          otf
+</IfModule>
